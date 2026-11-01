@@ -4,13 +4,6 @@ on:
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
-  # Temporary: this token cannot call workflow_dispatch. A push that touches
-  # .github/trigger-scan starts one run. Removed after that run is confirmed.
-  push:
-    branches:
-      - main
-    paths:
-      - .github/trigger-scan
 
 # Pushes made with GITHUB_TOKEN do not trigger pages.yml, so this workflow
 # deploys GitHub Pages itself after it commits a new snapshot.
