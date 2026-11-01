@@ -2061,7 +2061,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 42.315843720461864,
@@ -2077,9 +2077,12 @@
   },
   "edge": false,
   "fill_bar_t": 1793569500000,
-  "trail_stop": 77956.22337488185,
+  "trail_stop": 77789.26337488185,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": 3.32,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-01T23:59+01:00"
  },
  {
   "id": "EURUSD-4h-1793390400000",
@@ -2371,7 +2374,10 @@
    "agree": true,
    "sigRaw": "SELL"
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2261.54,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-15m-1793570400000",
@@ -2469,6 +2475,9 @@
    "agree": true,
    "sigRaw": "SELL"
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 93.98,
+  "tp1_hit": true,
+  "bars_open": 2
  }
 ]
