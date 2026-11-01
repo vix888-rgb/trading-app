@@ -92,7 +92,7 @@
   "score": -65,
   "entry": 3897.7,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 3933.879,
   "tp": [
    3861.521,
@@ -163,7 +163,10 @@
   "strategies": [
    "Turtle 20-bar breakout"
   ],
-  "status": "open"
+  "status": "open",
+  "fill_bar_t": 1793393999000,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "XAUUSD-1d-1793332800000",
@@ -1100,10 +1103,13 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "fill_bar_t": 1793493000000,
-  "tp1_hit": false,
-  "bars_open": 9
+  "tp1_hit": true,
+  "bars_open": 9,
+  "R": 2.0,
+  "exit": "TP2",
+  "closed_at": "2026-11-01T22:44+01:00"
  },
  {
   "id": "SOLUSD-1h-1793484000000",
@@ -1185,9 +1191,12 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
-  "tp1_hit": false,
-  "bars_open": 3
+  "status": "closed",
+  "tp1_hit": true,
+  "bars_open": 3,
+  "R": 2.0,
+  "exit": "TP2",
+  "closed_at": "2026-11-01T22:44+01:00"
  },
  {
   "id": "SOLUSD-4h-1793462400000",
@@ -1522,7 +1531,7 @@
   "strategies": [],
   "status": "open",
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 6
  },
  {
   "id": "GBPUSD-5m-1793395500000",
@@ -1789,7 +1798,7 @@
   "score": -26,
   "entry": 95.895,
   "entry_type": "limit (order block retest)",
-  "filled": false,
+  "filled": true,
   "stop": 96.06018,
   "tp": [
    95.72982,
@@ -1860,7 +1869,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "atr": 0.13452678344139934,
   "filters": {
@@ -1870,7 +1879,13 @@
    "htf": -1,
    "agree": true,
    "sigRaw": "SELL"
-  }
+  },
+  "fill_bar_t": 1793504400000,
+  "trail_stop": 95.77358035032421,
+  "R": 0.74,
+  "exit": "trailing stop",
+  "tp1_hit": true,
+  "closed_at": "2026-11-01T22:44+01:00"
  },
  {
   "id": "SOLUSD-1d-1793404800000",
@@ -1965,5 +1980,199 @@
    "agree": true,
    "sigRaw": "SELL"
   }
+ },
+ {
+  "id": "BTCUSD-5m-1793568900000",
+  "logged": "2026-11-01T22:44+01:00",
+  "bar_t": 1793568900000,
+  "bar_time": "Sun 01 Nov 22:35",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -30,
+  "entry": 77958.005,
+  "entry_type": "limit (order block retest)",
+  "filled": false,
+  "stop": 78008.784,
+  "tp": [
+   77907.226,
+   77856.447,
+   77805.668
+  ],
+  "inv": 77977.83,
+  "votes": [
+   0,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.32,
+   0.0,
+   0.0,
+   1.96,
+   0.0,
+   2.0,
+   0.0,
+   0.3,
+   0.5,
+   0.0,
+   2.0,
+   0.0,
+   1.4,
+   2.0,
+   0.0,
+   0.83,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 42.315843720461864,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 43,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL"
+  },
+  "edge": false
+ },
+ {
+  "id": "EURUSD-4h-1793390400000",
+  "logged": "2026-11-01T22:44+01:00",
+  "bar_t": 1793390400000,
+  "bar_time": "Fri 30 Oct 21:00",
+  "sym": "EURUSD",
+  "tf": "4h",
+  "side": "short",
+  "score": -27,
+  "entry": 1.118319,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 1.122057,
+  "tp": [
+   1.11458,
+   1.110841,
+   1.107102
+  ],
+  "inv": 1.121705,
+  "votes": [
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   1,
+   -1,
+   1,
+   0,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   0.7,
+   0.0,
+   0.0,
+   0.42,
+   0.0,
+   0.39,
+   0.27,
+   0.0,
+   0.3,
+   0.3,
+   0.14,
+   0.0,
+   0.0,
+   0.64,
+   0.0,
+   0.5,
+   0.9,
+   0.62,
+   0.86,
+   1.56,
+   1.17,
+   0.0,
+   2.0,
+   0.12,
+   0.0,
+   0.07,
+   0.8,
+   0.0
+  ],
+  "strategies": [
+   "MTF top-down pullback"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.002348777398027391,
+  "filters": {
+   "carry": -1.38,
+   "carryDir": -1,
+   "vol": true,
+   "atrPct": 74,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL"
+  },
+  "edge": false
  }
 ]
