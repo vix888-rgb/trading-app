@@ -10,7 +10,7 @@
   "score": -65,
   "entry": 3904.5,
   "entry_type": "limit (order block retest)",
-  "filled": false,
+  "filled": true,
   "stop": 3922.815,
   "tp": [
    3886.185,
@@ -79,7 +79,10 @@
    0.43
   ],
   "strategies": [],
-  "status": "open"
+  "status": "open",
+  "fill_bar_t": 1793574000000,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "XAUUSD-1h-1793390400000",
@@ -166,7 +169,7 @@
   "status": "open",
   "fill_bar_t": 1793393999000,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 0
  },
  {
   "id": "XAUUSD-1d-1793332800000",
@@ -2262,7 +2265,7 @@
    0.11
   ],
   "strategies": [],
-  "status": "open",
+  "status": "cancelled",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 89.32552251489928,
@@ -2276,7 +2279,8 @@
    "agree": true,
    "sigRaw": "SELL"
   },
-  "edge": false
+  "edge": false,
+  "exit": "stop hit before fill"
  },
  {
   "id": "ETHUSD-15m-1793570400000",
@@ -2360,7 +2364,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.554365310170995,
@@ -2377,7 +2381,10 @@
   "edge": false,
   "trail_stop": 2261.54,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-02T00:34+01:00"
  },
  {
   "id": "SOLUSD-15m-1793570400000",
@@ -2461,7 +2468,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.26440030546020926,
@@ -2478,6 +2485,9 @@
   "edge": false,
   "trail_stop": 93.98,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-02T00:34+01:00"
  }
 ]
