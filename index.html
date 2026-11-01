@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trading Signal Desk</title>
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#0e1420">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Signals">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<link rel="icon" href="./icons/icon-192.png">
+<style>
+:root{--bg:#0e1420;--card:#161e2e;--line:#26314a;--tx:#e8edf6;--tx2:#9aa6bd;--up:#2ecc71;--dn:#e74c3c;--ac:#4ea1ff;--yl:#f5c542;--warn:#f39c12}
+@media (prefers-color-scheme: light){:root{--bg:#f5f7fb;--card:#fff;--line:#dfe5ef;--tx:#141a26;--tx2:#5b6578}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+h1{font-size:17px;margin:0 auto 0 0}h2{font-size:16px;margin:0 0 10px}
+main{max-width:1200px;margin:0 auto;padding:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.grid{display:grid;gap:12px;grid-template-columns:1fr}@media(min-width:820px){.grid.two{grid-template-columns:1fr 1fr}.grid.four{grid-template-columns:repeat(4,1fr)}}
+.grid.four{grid-template-columns:1fr 1fr}
+select,input,button{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:7px 10px}
+button.on{background:var(--ac);color:#fff;border-color:var(--ac)}button{cursor:pointer}
+.seg{display:flex;flex-wrap:wrap;gap:4px}.seg button{padding:6px 10px}
+.m .v{font-size:22px;font-weight:600}.m .l{color:var(--tx2);font-size:13px}
+.pill{display:inline-block;padding:2px 8px;border-radius:99px;font-size:12px;font-weight:600}
+.b{background:rgba(46,204,113,.15);color:var(--up)}.s{background:rgba(231,76,60,.15);color:var(--dn)}.n{background:rgba(154,166,189,.15);color:var(--tx2)}.w{background:rgba(243,156,18,.15);color:var(--warn)}
+table{width:100%;border-collapse:collapse;font-size:13.5px}th,td{text-align:left;padding:6px 6px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--tx2);font-weight:500}td.r,th.r{text-align:right}
+.scroll{overflow-x:auto}.muted{color:var(--tx2);font-size:13px}.note{border-left:3px solid var(--warn);padding:8px 12px;background:rgba(243,156,18,.08);border-radius:8px;margin-bottom:12px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0}dt{color:var(--tx2)}dd{margin:0}
+svg text{fill:var(--tx2);font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Trading Signal Desk</h1>
+  <select id="sym" aria-label="Symbol"></select>
+  <div class="seg" id="tfs"></div>
+  <button id="refresh" title="Reload latest snapshot and live crypto price">Refresh</button>
+  <label class="muted"><input type="checkbox" id="auto"> auto 60s</label>
+</header>
+<main>
+  <div class="note"><b>Not financial advice.</b> Signals are statistical opinions, not guarantees. Backtests show little to no proven edge, so size small. <span id="gen" class="muted"></span></div>
+  <div class="card"><div class="grid four" id="metrics"></div><div id="live" class="muted" style="margin-top:8px"></div></div>
+  <div class="card"><div id="chart"></div><dl id="session" style="margin-top:10px"></dl></div>
+  <div class="grid two">
+    <div class="card"><h2>Trade plan</h2><dl id="plan"></dl></div>
+    <div class="card"><h2>Position size</h2>
+      <div class="seg" id="mode"><button data-m="fixed" class="on">Fixed $</button><button data-m="pct">% of balance</button></div>
+      <div class="row" id="fixedRow" style="margin:8px 0"><button data-r="20" class="on">$20</button><button data-r="30">$30</button><button data-r="40">$40</button><button data-r="50">$50</button><input id="riskUsd" type="number" value="20" style="width:90px" aria-label="Risk dollars"></div>
+      <div class="row" id="pctRow" style="margin:8px 0;display:none"><label>Balance $ <input id="bal" type="number" value="1000" style="width:110px"></label><label>Risk % <input id="rpct" type="number" value="1" style="width:70px"></label></div>
+      <table id="size"></table><p class="muted" id="sizeNote"></p>
+    </div>
+  </div>
+  <div class="card"><div class="row" style="justify-content:space-between"><h2>Agents</h2><div class="seg" id="agv"><button data-v="all" class="on">All 28</button><button data-v="core">Core 16</button><button data-v="adv">Smart money</button></div></div><div class="scroll"><table id="agents"></table></div><p class="muted" id="regNote"></p></div>
+  <div class="card"><h2>Strategies</h2><div class="scroll"><table id="strats"></table></div><p class="muted">Backtest on loaded bars: entry next bar open, stop 1.5×ATR, target 2R, 48-bar time exit. Past performance only.</p></div>
+  <div class="card"><div class="row" style="justify-content:space-between"><h2>Scanner</h2><div class="seg" id="scanTfs"></div></div><div class="scroll"><table id="scan"></table></div></div>
+  <div class="card"><h2>Performance &amp; self-improvement</h2><div class="scroll"><table id="oos"></table></div><div class="grid two" style="margin-top:12px"><div class="scroll"><table id="pa"></table></div><div class="scroll"><table id="ps"></table></div></div><p class="muted" id="method"></p></div>
+  <div class="card"><h2>Signal journal</h2><p class="muted" id="jstats"></p><div class="scroll"><table id="journal"></table></div></div>
+  <div class="card"><h2>News</h2><div id="news"></div></div>
+  <div class="card"><h2>Data sources &amp; limits</h2><div class="scroll"><table id="src"></table></div>
+  <ul class="muted"><li>Forex, gold and news come from the snapshot file <code>data.json</code>, rebuilt by the refresh pipeline (Yahoo and RSS block in-browser requests). Crypto price below the metrics updates live from Binance in your browser.</li><li>Gold is COMEX futures (GC=F), a close proxy for spot XAU/USD.</li><li>Spot FX has no central volume: OBV and VWAP stay neutral for FX.</li></ul></div>
+</main>
+<script>
+const TFS=["1m","5m","15m","1h","4h","1d"],PRI=["XAUUSD","BTCUSD","EURUSD","USDJPY","USDCHF","EURCHF","ETHUSD","SOLUSD","XRPUSD","GBPUSD"],BIN={BTCUSD:"BTCUSDT",ETHUSD:"ETHUSDT",SOLUSD:"SOLUSDT",XRPUSD:"XRPUSDT"};
+let D=null,S={sym:"XAUUSD",tf:"1h",agv:"all",scanTf:"1h",mode:"fixed",risk:20},timer=null,live=null;
+const $=id=>document.getElementById(id);
+const fp=(x,p)=>x==null||isNaN(x)?"–":Number(x).toLocaleString("en-US",{minimumFractionDigits:p,maximumFractionDigits:p});
+const sigOf=s=>s>=25?"BUY":s<=-25?"SELL":"WAIT";
+const pill=(t,c)=>`<span class="pill ${c}">${t}</span>`;
+const vote=v=>v>0?pill("Bullish","b"):v<0?pill("Bearish","s"):pill("Neutral","n");
+const sigPill=s=>pill(s,s==="BUY"?"b":s==="SELL"?"s":"n");
+const rF=x=>x==null?"–":(x>0?"+":"")+Number(x).toFixed(2)+"R";const pc=x=>x==null?"–":x+"%";
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const strat=a=>a.length?a.map(i=>i>=0?"▲ "+D.strats[i]:"▼ "+D.strats[-i-1]).join(", "):"none";
+function table(el,cols,rows,right){$(el).innerHTML="<tr>"+cols.map((c,i)=>`<th class="${right&&right.includes(i)?"r":""}">${c}</th>`).join("")+"</tr>"+rows.map(r=>"<tr>"+r.map((c,i)=>`<td class="${right&&right.includes(i)?"r":""}">${c}</td>`).join("")+"</tr>").join("")}
+function spec(sym){const r=D.rates;if(sym==="XAUUSD")return{per:100,unit:"lots",step:.01,pip:.1,pl:"pips ($0.10)",note:"1 lot = 100 oz"};if(BIN[sym])return{per:1,unit:sym.slice(0,3),step:sym==="BTCUSD"?.0001:sym==="ETHUSD"?.001:.01,pip:1,pl:"$ points",note:"spot coin units"};if(sym==="USDJPY")return{per:1e5/r.USDJPY,unit:"lots",step:.01,pip:.01,pl:"pips",note:"1 lot = 100,000; JPY converted at "+r.USDJPY};if(sym==="USDCHF"||sym==="EURCHF")return{per:1e5/r.USDCHF,unit:"lots",step:.01,pip:.0001,pl:"pips",note:"1 lot = 100,000; CHF converted at USD/CHF "+r.USDCHF};return{per:1e5,unit:"lots",step:.01,pip:.0001,pl:"pips",note:"1 lot = 100,000 base, quote USD"}}
+function bg(){const p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Belgrade",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());const g=t=>(p.find(x=>x.type===t)||{}).value||"";return{wd:g("weekday"),t:(parseInt(g("hour"))%24)*60+parseInt(g("minute")),label:g("weekday")+" "+g("hour")+":"+g("minute")}}
+const inR=(t,a,b)=>a<=b?t>=a&&t<b:t>=a||t<b;
+function chart(k){const ch=k.ch,b=ch[0],tp=ch[1],dc=v=>v==null?null:b+v*(tp-b)/999;const[O,H,L,C,E2,E5]=[3,4,5,6,7,8].map(i=>ch[i].map(dc));const pl=k.pl;
+ const lv=[[pl[1],"Entry","var(--ac)"],[pl[4],"Stop","var(--dn)"],[pl[7][0],"TP1","var(--up)"],[pl[7][1],"TP2","var(--up)"]];
+ const all=H.concat(L,lv.map(x=>x[0])).filter(v=>v!=null);let lo=Math.min(...all),hi=Math.max(...all),pd=(hi-lo)*.06;lo-=pd;hi+=pd;
+ const W=1000,Hh=340,l=8,r=120,t=10,bb=22,n=C.length,cw=(W-l-r)/n,y=v=>t+(hi-v)/(hi-lo)*(Hh-t-bb),x=i=>l+cw*i+cw/2;
+ const path=a=>a.map((v,i)=>v==null?"":(i?"L":"M")+x(i).toFixed(1)+","+y(v).toFixed(1)).join(" ");
+ let s=`<svg width="100%" viewBox="0 0 ${W} ${Hh}">`;for(let i=0;i<5;i++){const v=lo+(hi-lo)*i/4;s+=`<line x1="${l}" x2="${W-r}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/>`}
+ C.forEach((c,i)=>{const o=O[i],up=c>=o,col=up?"var(--up)":"var(--dn)",y1=y(Math.max(o,c)),y2=y(Math.min(o,c));s+=`<line x1="${x(i)}" x2="${x(i)}" y1="${y(H[i])}" y2="${y(L[i])}" stroke="${col}" stroke-width="1.5"/><rect x="${x(i)-cw*.32}" y="${y1}" width="${cw*.64}" height="${Math.max(1.5,y2-y1)}" fill="${col}"/>`});
+ s+=`<path d="${path(E2)}" fill="none" stroke="var(--yl)" stroke-width="2"/><path d="${path(E5)}" fill="none" stroke="var(--tx2)" stroke-width="2" stroke-dasharray="6 4"/>`;
+ lv.forEach(([v,lab,c])=>{s+=`<line x1="${l}" x2="${W-r}" y1="${y(v)}" y2="${y(v)}" stroke="${c}" stroke-dasharray="4 4" stroke-width="1.5"/><text x="${W-r+6}" y="${y(v)+4}">${lab} ${fp(v,k.p)}</text>`});
+ s+=`<text x="${l}" y="${Hh-5}">${n} closed bars · last ${ch[2]} (Belgrade) · EMA20 yellow, EMA50 dashed</text></svg>`;return s}
+function render(){if(!D)return;const k=D.det[S.sym+"|"+S.tf],m=D.meta[S.sym];$("gen").textContent="Snapshot "+D.gen+" (Belgrade).";
+ if(!k){$("metrics").innerHTML=`<div>No data for ${S.sym} ${S.tf}: source failed at snapshot.</div>`;return}
+ const sg=sigOf(k.score),bull=k.ag.filter(a=>a[0]>0).length,bear=k.ag.filter(a=>a[0]<0).length;
+ $("metrics").innerHTML=[[sigPill(sg),"Consensus, score "+(k.score>0?"+":"")+k.score],[fp(k.last,k.p),m[0]+" · "+k.chg+"% · "+k.lt],[k.reg[0],"Regime · ADX "+k.reg[2]+" · ER "+k.reg[3]],[bull+" / "+bear,"Bullish / bearish agents of 28"]].map(([v,l])=>`<div class="m"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+ $("chart").innerHTML=chart(k);
+ const n=bg(),t=n.t,wd=n.wd,fxc=wd==="Sat"||(wd==="Sun"&&t<1380)||(wd==="Fri"&&t>=1380);
+ const ses=[["Asia",60,600],["London",540,1080],["New York",840,1380]].filter(s=>inR(t,s[1],s[2])).map(s=>s[0]);
+ const kz=[["Asian KZ 02–06",120,360],["London KZ 08–11",480,660],["NY KZ 13–16",780,960],["London close 16–18",960,1080]].filter(s=>inR(t,s[1],s[2])).map(s=>s[0]);
+ $("session").innerHTML=`<dt>Belgrade now</dt><dd>${n.label}</dd><dt>Sessions</dt><dd>${ses.join(", ")||"none"}</dd><dt>Killzone</dt><dd>${kz.join(", ")||"outside killzones"}</dd><dt>FX &amp; gold</dt><dd>${fxc?pill("Closed for weekend","w"):pill("Open","b")}</dd><dt>Source</dt><dd>${esc(m[2])}</dd>`;
+ const pl=k.pl;$("plan").innerHTML=`<dt>Direction</dt><dd>${pill(pl[0]>0?"Long":"Short",pl[0]>0?"b":"s")}${sg==="WAIT"?" conditional (consensus: wait)":""}</dd><dt>Entry</dt><dd>${fp(pl[1],k.p)} · zone ${fp(pl[2][0],k.p)}–${fp(pl[2][1],k.p)} (${pl[3]})</dd><dt>Stop</dt><dd>${fp(pl[4],k.p)} · ${pl[5]}</dd><dt>Invalidation</dt><dd>${fp(pl[6],k.p)}</dd><dt>TP1/2/3</dt><dd>${pl[7].map(v=>fp(v,k.p)).join(" / ")}</dd><dt>R:R</dt><dd>1:1 · 1:2 · 1:3</dd><dt>ATR</dt><dd>${fp(k.atr,k.p+1)}</dd>`;
+ // sizing
+ const sp=spec(S.sym),risk=S.mode==="fixed"?(+$("riskUsd").value||0):(+$("bal").value||0)*(+$("rpct").value||0)/100,dist=Math.abs(pl[1]-pl[4]),raw=risk/(dist*sp.per),size=Math.floor(raw/sp.step+1e-9)*sp.step,mon=v=>size*sp.per*Math.abs(v-pl[1]);
+ const dp=sp.step<.01?4:sp.step<.1?2:2;
+ table("size",["Item","Value"],[["Risk","$"+risk.toFixed(2)],["Stop distance",fp(dist,k.p)+" ("+(dist/sp.pip).toFixed(1)+" "+sp.pl+")"],["Size",size>0?size.toFixed(sp.step<.01?(sp.step<.001?4:3):2)+" "+sp.unit:"below minimum "+sp.step+" "+sp.unit+" (needs "+raw.toFixed(4)+"); min size risks $"+(sp.step*sp.per*dist).toFixed(2)],["Loss at stop","−$"+mon(pl[4]).toFixed(2)],["TP1","+$"+mon(pl[7][0]).toFixed(2)],["TP2","+$"+mon(pl[7][1]).toFixed(2)],["TP3","+$"+mon(pl[7][2]).toFixed(2)],["Pip value / lot",BIN[S.sym]?"$1 per $1 per coin":"$"+(sp.per*sp.pip).toFixed(2)]],[1]);
+ $("sizeNote").textContent=sp.note+". Size rounds down to the broker step; check your broker's contract size.";
+ // agents
+ const idx=k.ag.map((_,i)=>i).filter(i=>S.agv==="all"||(S.agv==="core"?i<16:i>=16));
+ table("agents",["Agent","Vote","Conf","Weight","Tests","Hit","Avg R","Reason"],idx.map(i=>{const a=k.ag[i];return[D.names[i][0],vote(a[0]),a[1],a[3].toFixed(2),a[4]||"–",pc(a[5]),rF(a[6]),esc(a[2])]}),[2,3,4,5,6]);
+ $("regNote").textContent="Weight = walk-forward measured edge on this symbol/timeframe (≈0 = no edge). Regime "+k.reg[0]+": trend agents ×1.5 in trends, oscillators ×1.5 in ranges. News fixed at 0.5.";
+ table("strats",["Strategy","Now","Trades","Win","Avg R","PF","Rule"],k.st.map((s,i)=>[D.strats[i],s[6]?"n/a":s[0]>0?pill("Long "+s[1]+" bars ago","b"):s[0]<0?pill("Short "+s[1]+" bars ago","s"):"no setup",s[2],pc(s[3]),rF(s[4]),s[5]==null?"–":s[5],esc(D.rules[i])]),[2,3,4,5]);
+ // scanner
+ $("scanTfs").innerHTML=TFS.map(x=>`<button data-st="${x}" class="${x===S.scanTf?"on":""}">${x}</button>`).join("");
+ const rows=D.scan.filter(r=>r[1]===S.scanTf&&r[2]!=null).sort((a,b)=>Math.abs(b[2])-Math.abs(a[2]));
+ table("scan",["Symbol","Signal","Score","Bull/bear","Regime","Strategies","Last","Bar"],rows.map(r=>[D.meta[r[0]][0],sigPill(sigOf(r[2])),(r[2]>0?"+":"")+r[2],r[5]+"/"+r[6],r[7],strat(r[8]),fp(r[3],r[10]),r[9]]),[2,6]);
+ // performance
+ const oo=k.oos;table("oos",["Consensus test ("+m[0]+" "+S.tf+")","Trades","Hit","Avg R"],oo?[["Adaptive weights (fit 60% / test 40%)",oo[0],pc(oo[1]),rF(oo[2])],["Equal weights",oo[3],pc(oo[4]),rF(oo[5])]]:[["Not enough history","–","–","–"]],[1,2,3]);
+ table("pa",["Agent (all)","Tests","Hit","Avg R"],D.pa.filter(r=>r[1]>0).sort((a,b)=>b[3]-a[3]).map(r=>[r[0],r[1],pc(r[2]),rF(r[3])]),[1,2,3]);
+ table("ps",["Strategy (all)","Trades","Win","Avg R"],D.ps.slice().sort((a,b)=>b[3]-a[3]).map(r=>[r[0],r[1],pc(r[2]),rF(r[3])]),[1,2,3]);
+ const P=D.prm;$("method").textContent=`Each agent replayed on up to ${P.samples} past bars using only data available then. Win = ${P.tp_atr}×ATR in its direction before ${P.sl_atr}×ATR against within ${P.horizon_bars} bars. Weight = shrunk avg R (k=${P.shrink_k}) ×${P.weight_scale}, cap ${P.weight_max}. Live journal results blend in at ${P.live_blend*100}% after ${P.live_min} closed signals.`;
+ const j=D.jl;$("jstats").textContent=`${j[0]} logged · ${j[1]} open/awaiting fill · ${j[2]} closed`+(j[2]?` · live avg ${rF(j[4])}, ${pc(j[3])} hit`:"");
+ table("journal",["Bar","Symbol","TF","Side","Entry","Stop","TP2","Status","R"],D.j.slice().reverse().map(e=>[e[0],D.meta[e[1]][0],e[2],pill(e[3],e[3]==="long"?"b":"s"),e[4],e[5],e[6],e[7],e[8]==null?"–":rF(e[8])]),[4,5,6,8]);
+ $("news").innerHTML=(D.news[S.sym]||[]).map(nw=>`<div style="margin-bottom:8px">${nw[2]>0?pill("positive","b"):nw[2]<0?pill("negative","s"):pill("neutral","n")} ${esc(nw[1])} <span class="muted">· ${esc(nw[0])} · ${nw[3]}</span></div>`).join("")||'<span class="muted">No matching headlines in this snapshot.</span>';
+ table("src",["Source","Status"],[["Binance public API","live in browser + snapshot"],["Yahoo Finance chart API","snapshot"]].concat(D.ns.map(n=>[n[0],n[1]?n[2]+" headlines":pill("failed","s")])));
+ showLive();}
+async function pollLive(){if(!BIN[S.sym]){live=null;showLive();return}try{const r=await fetch("https://data-api.binance.vision/api/v3/ticker/price?symbol="+BIN[S.sym],{cache:"no-store"});const j=await r.json();live={sym:S.sym,p:+j.price,t:new Date()}}catch(e){live={sym:S.sym,err:true}}showLive()}
+function showLive(){const k=D&&D.det[S.sym+"|"+S.tf];if(!BIN[S.sym]){$("live").textContent="Live price: not available in-browser for FX/gold (snapshot only).";return}if(!live||live.sym!==S.sym){$("live").textContent="Live price: loading…";return}if(live.err){$("live").textContent="Live price: Binance request failed.";return}
+ const pl=k.pl,side=pl[0],hitS=side>0?live.p<=pl[4]:live.p>=pl[4],hitT=side>0?live.p>=pl[7][0]:live.p<=pl[7][0];
+ $("live").innerHTML=`Live ${S.sym}: <b>${fp(live.p,k.p)}</b> (Binance, ${live.t.toLocaleTimeString("en-GB",{timeZone:"Europe/Belgrade"})} Belgrade) · vs snapshot ${((live.p/k.last-1)*100).toFixed(2)}% `+(hitS?pill("beyond plan stop","s"):hitT?pill("past TP1","b"):"")}
+async function load(){try{const r=await fetch("./data.json",{cache:"no-store"});D=await r.json()}catch(e){$("metrics").textContent="Could not load data.json";return}render();pollLive()}
+function initUI(){$("sym").innerHTML=PRI.map(s=>`<option value="${s}">${s}</option>`).join("");$("sym").onchange=e=>{S.sym=e.target.value;live=null;render();pollLive()};
+ $("tfs").innerHTML=TFS.map(x=>`<button data-tf="${x}" class="${x===S.tf?"on":""}">${x}</button>`).join("");
+ document.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.tf){S.tf=b.dataset.tf;document.querySelectorAll("#tfs button").forEach(x=>x.classList.toggle("on",x===b));render()}
+  if(b.dataset.st){S.scanTf=b.dataset.st;render()}
+  if(b.dataset.v){S.agv=b.dataset.v;document.querySelectorAll("#agv button").forEach(x=>x.classList.toggle("on",x===b));render()}
+  if(b.dataset.m){S.mode=b.dataset.m;document.querySelectorAll("#mode button").forEach(x=>x.classList.toggle("on",x===b));$("fixedRow").style.display=S.mode==="fixed"?"flex":"none";$("pctRow").style.display=S.mode==="pct"?"flex":"none";render()}
+  if(b.dataset.r){$("riskUsd").value=b.dataset.r;document.querySelectorAll("#fixedRow button").forEach(x=>x.classList.toggle("on",x===b));render()}});
+ ["riskUsd","bal","rpct"].forEach(id=>$(id).addEventListener("input",render));
+ $("refresh").onclick=load;$("auto").onchange=e=>{clearInterval(timer);if(e.target.checked)timer=setInterval(load,60000)};
+ setInterval(()=>{if(BIN[S.sym])pollLive()},15000);}
+initUI();load();
+if("serviceWorker" in navigator)navigator.serviceWorker.register("./sw.js",{scope:"./"});
+</script>
+</body>
+</html>
