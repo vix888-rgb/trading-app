@@ -1,0 +1,98 @@
+name: Scan signals
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+# Pushes made with GITHUB_TOKEN do not trigger pages.yml, so this workflow
+# deploys GitHub Pages itself after it commits a new snapshot.
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: signal-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Save previous snapshot
+        run: cp data.json /tmp/data.prev.json
+
+      - name: Run pipeline
+        run: bash pipeline/run.sh
+        env:
+          TRADING_ROOT: ${{ github.workspace }}
+          TRADING_PIPELINE: ${{ github.workspace }}/pipeline
+          TRADING_STATE: ${{ github.workspace }}/pipeline/state
+          TRADING_DATA: ${{ github.workspace }}/data.json
+          TRADING_RAW: /tmp/raw.pkl
+
+      - name: Compare signals and send alerts
+        id: decide
+        continue-on-error: true
+        run: python3 pipeline/alerts.py --prev /tmp/data.prev.json --new data.json --snap pipeline/snap3.json --send
+        env:
+          NTFY_URL: https://ntfy.sh/octa-signals-a6368a35
+
+      - name: Commit data.json and state
+        id: commit
+        if: always() && steps.decide.outputs.commit == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json pipeline/state
+          if git diff --cached --quiet; then
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+            echo "Nothing to commit"
+            exit 0
+          fi
+          git commit -m "Auto scan"
+          git push origin HEAD:main
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Stage site without the pipeline
+        if: always() && steps.commit.outputs.pushed == 'true'
+        run: python3 pipeline/stage_site.py .
+
+      - name: Configure GitHub Pages
+        if: always() && steps.commit.outputs.pushed == 'true'
+        uses: actions/configure-pages@v6
+
+      - name: Upload Pages artifact
+        if: always() && steps.commit.outputs.pushed == 'true'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+          include-hidden-files: true
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        if: always() && steps.commit.outputs.pushed == 'true'
+        uses: actions/deploy-pages@v5
+
+      - name: Fail if an alert could not be sent
+        if: always() && steps.decide.outcome == 'failure'
+        run: exit 1
