@@ -67,7 +67,9 @@ svg text{fill:var(--tx2);font-size:12px}
 </main>
 <script>
 const TFS=["1m","5m","15m","1h","4h","1d"],PRI=["XAUUSD","BTCUSD","EURUSD","USDJPY","USDCHF","EURCHF","ETHUSD","SOLUSD","XRPUSD","GBPUSD"],BIN={BTCUSD:"BTCUSDT",ETHUSD:"ETHUSDT",SOLUSD:"SOLUSDT",XRPUSD:"XRPUSDT"};
-let D=null,S={sym:"XAUUSD",tf:"1h",agv:"all",scanTf:"1h",mode:"fixed",risk:20},timer=null,live=null;
+let D=null,S={sym:"XAUUSD",tf:"1h",agv:"all",scanTf:"1h",mode:"fixed",risk:20},timer=null;
+let ws=null,wsGen=0,failN=0,backoff=1000,reconTimer=null,restTimer=null,feed="off";
+let lastPx=null,lastAt=null,shownPx=null,tickDir=0,liveErr=false;
 const $=id=>document.getElementById(id);
 const fp=(x,p)=>x==null||isNaN(x)?"–":Number(x).toLocaleString("en-US",{minimumFractionDigits:p,maximumFractionDigits:p});
 const sigOf=s=>s>=25?"BUY":s<=-25?"SELL":"WAIT";
@@ -79,6 +81,7 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 const strat=a=>a.length?a.map(i=>i>=0?"▲ "+D.strats[i]:"▼ "+D.strats[-i-1]).join(", "):"none";
 function table(el,cols,rows,right){$(el).innerHTML="<tr>"+cols.map((c,i)=>`<th class="${right&&right.includes(i)?"r":""}">${c}</th>`).join("")+"</tr>"+rows.map(r=>"<tr>"+r.map((c,i)=>`<td class="${right&&right.includes(i)?"r":""}">${c}</td>`).join("")+"</tr>").join("")}
 function spec(sym){const r=D.rates;if(sym==="XAUUSD")return{per:100,unit:"lots",step:.01,pip:.1,pl:"pips ($0.10)",note:"1 lot = 100 oz"};if(BIN[sym])return{per:1,unit:sym.slice(0,3),step:sym==="BTCUSD"?.0001:sym==="ETHUSD"?.001:.01,pip:1,pl:"$ points",note:"spot coin units"};if(sym==="USDJPY")return{per:1e5/r.USDJPY,unit:"lots",step:.01,pip:.01,pl:"pips",note:"1 lot = 100,000; JPY converted at "+r.USDJPY};if(sym==="USDCHF"||sym==="EURCHF")return{per:1e5/r.USDCHF,unit:"lots",step:.01,pip:.0001,pl:"pips",note:"1 lot = 100,000; CHF converted at USD/CHF "+r.USDCHF};return{per:1e5,unit:"lots",step:.01,pip:.0001,pl:"pips",note:"1 lot = 100,000 base, quote USD"}}
+function livePair(sym){if(BIN[sym])return BIN[sym];if(sym==="XAUUSD")return "PAXGUSDT";return null}
 function bg(){const p=new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Belgrade",weekday:"short",hour:"2-digit",minute:"2-digit",hour12:false}).formatToParts(new Date());const g=t=>(p.find(x=>x.type===t)||{}).value||"";return{wd:g("weekday"),t:(parseInt(g("hour"))%24)*60+parseInt(g("minute")),label:g("weekday")+" "+g("hour")+":"+g("minute")}}
 const inR=(t,a,b)=>a<=b?t>=a&&t<b:t>=a||t<b;
 function chart(k){const ch=k.ch,b=ch[0],tp=ch[1],dc=v=>v==null?null:b+v*(tp-b)/999;const[O,H,L,C,E2,E5]=[3,4,5,6,7,8].map(i=>ch[i].map(dc));const pl=k.pl;
@@ -92,7 +95,7 @@ function chart(k){const ch=k.ch,b=ch[0],tp=ch[1],dc=v=>v==null?null:b+v*(tp-b)/9
  lv.forEach(([v,lab,c])=>{s+=`<line x1="${l}" x2="${W-r}" y1="${y(v)}" y2="${y(v)}" stroke="${c}" stroke-dasharray="4 4" stroke-width="1.5"/><text x="${W-r+6}" y="${y(v)+4}">${lab} ${fp(v,k.p)}</text>`});
  s+=`<text x="${l}" y="${Hh-5}">${n} closed bars · last ${ch[2]} (Belgrade) · EMA20 yellow, EMA50 dashed</text></svg>`;return s}
 function render(){if(!D)return;const k=D.det[S.sym+"|"+S.tf],m=D.meta[S.sym];$("gen").textContent="Snapshot "+D.gen+" (Belgrade).";
- if(!k){$("metrics").innerHTML=`<div>No data for ${S.sym} ${S.tf}: source failed at snapshot.</div>`;return}
+ if(!k){$("metrics").innerHTML=`<div>No data for ${S.sym} ${S.tf}: source failed at snapshot.</div>`;showLive();return}
  const sg=sigOf(k.score),bull=k.ag.filter(a=>a[0]>0).length,bear=k.ag.filter(a=>a[0]<0).length;
  $("metrics").innerHTML=[[sigPill(sg),"Consensus, score "+(k.score>0?"+":"")+k.score],[fp(k.last,k.p),m[0]+" · "+k.chg+"% · "+k.lt],[k.reg[0],"Regime · ADX "+k.reg[2]+" · ER "+k.reg[3]],[bull+" / "+bear,"Bullish / bearish agents of 28"]].map(([v,l])=>`<div class="m"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
  $("chart").innerHTML=chart(k);
@@ -125,12 +128,34 @@ function render(){if(!D)return;const k=D.det[S.sym+"|"+S.tf],m=D.meta[S.sym];$("
  $("news").innerHTML=(D.news[S.sym]||[]).map(nw=>`<div style="margin-bottom:8px">${nw[2]>0?pill("positive","b"):nw[2]<0?pill("negative","s"):pill("neutral","n")} ${esc(nw[1])} <span class="muted">· ${esc(nw[0])} · ${nw[3]}</span></div>`).join("")||'<span class="muted">No matching headlines in this snapshot.</span>';
  table("src",["Source","Status"],[["Binance public API","live in browser + snapshot"],["Yahoo Finance chart API","snapshot"]].concat(D.ns.map(n=>[n[0],n[1]?n[2]+" headlines":pill("failed","s")])));
  showLive();}
-async function pollLive(){if(!BIN[S.sym]){live=null;showLive();return}try{const r=await fetch("https://data-api.binance.vision/api/v3/ticker/price?symbol="+BIN[S.sym],{cache:"no-store"});const j=await r.json();live={sym:S.sym,p:+j.price,t:new Date()}}catch(e){live={sym:S.sym,err:true}}showLive()}
-function showLive(){const k=D&&D.det[S.sym+"|"+S.tf];if(!BIN[S.sym]){$("live").textContent="Live price: not available in-browser for FX/gold (snapshot only).";return}if(!live||live.sym!==S.sym){$("live").textContent="Live price: loading…";return}if(live.err){$("live").textContent="Live price: Binance request failed.";return}
- const pl=k.pl,side=pl[0],hitS=side>0?live.p<=pl[4]:live.p>=pl[4],hitT=side>0?live.p>=pl[7][0]:live.p<=pl[7][0];
- $("live").innerHTML=`Live ${S.sym}: <b>${fp(live.p,k.p)}</b> (Binance, ${live.t.toLocaleTimeString("en-GB",{timeZone:"Europe/Belgrade"})} Belgrade) · vs snapshot ${((live.p/k.last-1)*100).toFixed(2)}% `+(hitS?pill("beyond plan stop","s"):hitT?pill("past TP1","b"):"")}
-async function load(){try{const r=await fetch("./data.json",{cache:"no-store"});D=await r.json()}catch(e){$("metrics").textContent="Could not load data.json";return}render();pollLive()}
-function initUI(){$("sym").innerHTML=PRI.map(s=>`<option value="${s}">${s}</option>`).join("");$("sym").onchange=e=>{S.sym=e.target.value;live=null;render();pollLive()};
+function hms(d){return d.toLocaleTimeString("en-GB",{timeZone:"Europe/Belgrade",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false})}
+function signedDelta(level,prec){const d=level-shownPx;if(!isFinite(d))return "–";const body=fp(Math.abs(d),prec);return d>0?"+"+body:d<0?"−"+body:body}
+function showLive(){const el=$("live"),pair=livePair(S.sym);
+ if(!pair){el.textContent="Live price: not available in-browser for FX/gold (snapshot only).";return}
+ const gold=S.sym==="XAUUSD",label=gold?"Live gold (PAXG proxy, tracks XAU closely, not exact)":"Live "+S.sym;
+ if(shownPx==null){el.textContent=label+": "+(liveErr?"Binance request failed.":"loading…");return}
+ const k=D&&D.det[S.sym+"|"+S.tf],prec=k?k.p:2,col=tickDir>0?"var(--up)":tickDir<0?"var(--dn)":"inherit",mark=tickDir>0?"▲":tickDir<0?"▼":"•";
+ let html=`${label}: <b style="color:${col}">${mark} ${fp(shownPx,prec)}</b>`;
+ if(k&&k.last){const ch=(shownPx/k.last-1)*100;html+=` · vs snapshot ${(ch>0?"+":"")+ch.toFixed(2)}%`}
+ html+=` · updated ${hms(lastAt)}`;
+ if(k&&k.pl&&k.pl[7]){const pl=k.pl,side=pl[0],hitS=side>0?shownPx<=pl[4]:shownPx>=pl[4],hitT=side>0?shownPx>=pl[7][0]:shownPx<=pl[7][0];
+  html+=` · to entry ${signedDelta(pl[1],prec)} · to SL ${signedDelta(pl[4],prec)} · to TP1 ${signedDelta(pl[7][0],prec)} `+(hitS?pill("beyond plan stop","s"):hitT?pill("past TP1","b"):"");
+ }
+ el.innerHTML=html}
+function paintLive(){if(!livePair(S.sym)||lastPx==null){showLive();return}tickDir=shownPx==null?0:lastPx>shownPx?1:lastPx<shownPx?-1:0;shownPx=lastPx;showLive()}
+function clearFeedTimers(){if(reconTimer){clearTimeout(reconTimer);reconTimer=null}if(restTimer){clearInterval(restTimer);restTimer=null}}
+function closeSocket(){const sock=ws;ws=null;if(!sock)return;sock.onopen=sock.onmessage=sock.onerror=sock.onclose=null;try{sock.close()}catch(e){}}
+function resetQuote(){lastPx=null;lastAt=null;shownPx=null;tickDir=0;liveErr=false}
+function connectLive(sym){wsGen++;clearFeedTimers();closeSocket();failN=0;backoff=1000;feed="off";const pair=livePair(sym);if(!pair){showLive();return}if(document.hidden){feed="paused";showLive();return}openWs(sym,pair)}
+function openWs(sym,pair){if(document.hidden||S.sym!==sym)return;closeSocket();feed="ws";const gen=++wsGen;let sock;try{sock=new WebSocket("wss://data-stream.binance.vision/ws/"+pair.toLowerCase()+"@aggTrade")}catch(e){noteFail(sym,pair,gen);return}ws=sock;let settled=false;
+ const fail=()=>{if(settled||gen!==wsGen)return;settled=true;if(ws===sock)ws=null;noteFail(sym,pair,gen)};
+ sock.onmessage=(ev)=>{if(gen!==wsGen||S.sym!==sym)return;let j;try{j=JSON.parse(ev.data)}catch(e){return}const p=+j.p;if(!isFinite(p))return;lastPx=p;lastAt=new Date();liveErr=false;failN=0;backoff=1000};
+ sock.onerror=fail;sock.onclose=fail}
+function noteFail(sym,pair,gen){if(gen!==wsGen||S.sym!==sym||document.hidden)return;failN++;if(failN>=2){startRest(sym,pair);return}const wait=backoff;backoff=Math.min(backoff*2,30000);reconTimer=setTimeout(()=>{if(gen===wsGen&&S.sym===sym&&!document.hidden)openWs(sym,pair)},wait)}
+function startRest(sym,pair){closeSocket();clearFeedTimers();feed="rest";const pull=async()=>{if(S.sym!==sym||document.hidden)return;try{const r=await fetch("https://data-api.binance.vision/api/v3/ticker/price?symbol="+pair,{cache:"no-store"});const j=await r.json();const p=+j.price;if(!isFinite(p))throw new Error("bad");if(S.sym!==sym)return;lastPx=p;lastAt=new Date();liveErr=false}catch(e){if(S.sym===sym)liveErr=true}};pull();restTimer=setInterval(pull,5000)}
+document.addEventListener("visibilitychange",()=>{if(document.hidden){wsGen++;clearFeedTimers();closeSocket();feed="paused"}else connectLive(S.sym)});
+async function load(){try{const r=await fetch("./data.json",{cache:"no-store"});D=await r.json()}catch(e){$("metrics").textContent="Could not load data.json";return}render()}
+function initUI(){$("sym").innerHTML=PRI.map(s=>`<option value="${s}">${s}</option>`).join("");$("sym").onchange=e=>{S.sym=e.target.value;resetQuote();render();connectLive(S.sym)};
  $("tfs").innerHTML=TFS.map(x=>`<button data-tf="${x}" class="${x===S.tf?"on":""}">${x}</button>`).join("");
  document.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
   if(b.dataset.tf){S.tf=b.dataset.tf;document.querySelectorAll("#tfs button").forEach(x=>x.classList.toggle("on",x===b));render()}
@@ -139,9 +164,8 @@ function initUI(){$("sym").innerHTML=PRI.map(s=>`<option value="${s}">${s}</opti
   if(b.dataset.m){S.mode=b.dataset.m;document.querySelectorAll("#mode button").forEach(x=>x.classList.toggle("on",x===b));$("fixedRow").style.display=S.mode==="fixed"?"flex":"none";$("pctRow").style.display=S.mode==="pct"?"flex":"none";render()}
   if(b.dataset.r){$("riskUsd").value=b.dataset.r;document.querySelectorAll("#fixedRow button").forEach(x=>x.classList.toggle("on",x===b));render()}});
  ["riskUsd","bal","rpct"].forEach(id=>$(id).addEventListener("input",render));
- $("refresh").onclick=load;$("auto").onchange=e=>{clearInterval(timer);if(e.target.checked)timer=setInterval(load,60000)};
- setInterval(()=>{if(BIN[S.sym])pollLive()},15000);}
-initUI();load();
+ $("refresh").onclick=load;$("auto").onchange=e=>{clearInterval(timer);if(e.target.checked)timer=setInterval(load,60000)};}
+initUI();load();connectLive(S.sym);setInterval(paintLive,1000);
 if("serviceWorker" in navigator)navigator.serviceWorker.register("./sw.js",{scope:"./"});
 </script>
 </body>
