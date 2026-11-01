@@ -26,7 +26,7 @@ main{max-width:1200px;margin:0 auto;padding:12px}
 select,input,button{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:7px 10px}
 button.on{background:var(--ac);color:#fff;border-color:var(--ac)}button{cursor:pointer}
 .seg{display:flex;flex-wrap:wrap;gap:4px}.seg button{padding:6px 10px}
-.m .v{font-size:22px;font-weight:600}.m .v .pill{font-size:13px;white-space:normal}.m .l{color:var(--tx2);font-size:13px}
+.m .v{font-size:22px;font-weight:600}.m .v .pill{font-size:13px;white-space:normal}.m .v .muted{font-size:12px;font-weight:500}.m .l{color:var(--tx2);font-size:13px}
 .pill{display:inline-block;padding:2px 8px;border-radius:99px;font-size:12px;font-weight:600}
 .b{background:rgba(46,204,113,.15);color:var(--up)}.s{background:rgba(231,76,60,.15);color:var(--dn)}.n{background:rgba(154,166,189,.15);color:var(--tx2)}.w{background:rgba(243,156,18,.15);color:var(--warn)}
 table{width:100%;border-collapse:collapse;font-size:13.5px}th,td{text-align:left;padding:6px 6px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--tx2);font-weight:500}td.r,th.r{text-align:right}
@@ -68,9 +68,9 @@ svg text{fill:var(--tx2);font-size:12px}
     </div>
   </div>
   <div class="card"><div class="row" style="justify-content:space-between"><h2>Agents</h2><div class="seg" id="agv"><button data-v="all" class="on">All 28</button><button data-v="core">Core 16</button><button data-v="adv">Smart money</button></div></div><div class="scroll"><table id="agents"></table></div><p class="muted" id="regNote"></p></div>
-  <div class="card"><h2>Strategies</h2><div class="scroll"><table id="strats"></table></div><p class="muted">Backtest on loaded bars: entry next bar open, stop 1.5×ATR, target 2R, 48-bar time exit. Past performance only.</p></div>
+  <div class="card"><h2>Strategies</h2><div class="scroll"><table id="strats"></table></div><p class="muted">Backtest on loaded bars: entry next bar open, stop 1.5×ATR, target 2R, 48-bar time exit. Turn-of-month long (1D) exits after 3 bars, not at 2R. Past performance only.</p></div>
   <div class="card"><div class="row" style="justify-content:space-between"><h2>Scanner</h2><div class="seg" id="scanTfs"></div></div><div class="scroll"><table id="scan"></table></div></div>
-  <div class="card"><h2>Backtest</h2><p class="muted">Out-of-sample test results, not guarantees.</p><div class="scroll"><table id="wf"></table></div><p class="muted" id="wfNote"></p></div>
+  <div class="card"><h2>Backtest</h2><p class="muted">Out-of-sample test results, not guarantees.</p><div class="scroll"><table id="wf"></table></div><p class="muted" id="wfNote"></p><div id="wf2"></div></div>
   <div class="card"><h2>Performance &amp; self-improvement</h2><div class="scroll"><table id="oos"></table></div><div class="grid two" style="margin-top:12px"><div class="scroll"><table id="pa"></table></div><div class="scroll"><table id="ps"></table></div></div><p class="muted" id="method"></p></div>
   <div class="card"><h2>Signal journal</h2><p class="muted" id="jstats"></p><div class="scroll"><table id="journal"></table></div></div>
   <div class="card"><h2>News</h2><div id="news"></div></div>
@@ -89,14 +89,15 @@ const sigOf=s=>s>=25?"BUY":s<=-25?"SELL":"WAIT";
 function scanRow(sym,tf){return D&&D.scan?D.scan.find(r=>r[0]===sym&&r[1]===tf):null}
 function rawSig(k){return k.flt&&k.flt.sigRaw?k.flt.sigRaw:sigOf(k.score)}
 function gateOf(k,row){const raw=rawSig(k);const agree=k.flt?!!k.flt.agree:(row&&row.length>12?!!row[12]:true);const gated=row&&row[11]?row[11]:(agree?raw:"WAIT");const disagree=(raw==="BUY"||raw==="SELL")&&!agree;return{raw,gated:disagree?"WAIT":gated,disagree}}
-function signalHtml(g){return g.disagree?`<span class="pill n">WAIT (filters disagree)</span> <span class="muted">${g.raw}</span>`:sigPill(g.gated)}
+function signalHtml(g){const main=g.disagree?`<span class="pill n">WAIT (filters disagree)</span>`:sigPill(g.gated);return main+` <span class="muted">raw ${esc(g.raw)}</span>`}
 function agreesDir(raw,v){if(v==null||raw==="WAIT")return null;if(raw==="BUY")return v>0;if(raw==="SELL")return v<0;return null}
 const yn=ok=>ok==null?pill("n/a","n"):ok?pill("Yes","b"):pill("No","s");
 function dirWord(v){return v==null?"":v>0?"up":v<0?"down":"flat"}
-function showFilters(k){const f=k.flt;if(!f){$("filters").innerHTML="";return}const raw=rawSig(k);$("filters").innerHTML=`<span>Volatility OK ${yn(!!f.vol)} <span class="muted">ATR pctile ${f.atrPct}</span></span><span>Trend agrees ${yn(agreesDir(raw,f.trend))} <span class="muted">${dirWord(f.trend)}</span></span><span>Higher TF agrees ${yn(agreesDir(raw,f.htf))}${f.htf==null?"":` <span class="muted">${dirWord(f.htf)}</span>`}</span>`}
-function showEdge(k){const badge=k.edge?pill("Tested edge","b"):`<span class="pill n">No proven edge on this timeframe</span>`;const o=k.oosf;$("edge").innerHTML=badge+(o?` <span class="muted">OOS ${rF(o.avgR)} · ${o.n} trades</span>`:"")}
-function exitRule(){const p=D.prm2||{};const atr=p.trail_atr!=null?p.trail_atr:3;const bars=p.trail_max_bars!=null?p.trail_max_bars:48;return"Move SL to breakeven at +1R, then trail "+atr+"×ATR, "+bars+"-bar time exit"}
-function scanSigCell(r){const raw=sigOf(r[2]);const agree=r.length>12?r[12]:true;const gated=r[11]||(agree?raw:"WAIT");if((raw==="BUY"||raw==="SELL")&&agree===false)return `<span class="pill n">WAIT (filters disagree)</span> <span class="muted">${raw}</span>`;return sigPill(gated)}
+function carryLine(f){if(!f||(f.carry==null&&f.carryDir==null))return "";const dir=f.carryDir>0?"longs only":f.carryDir<0?"shorts only":"no limit";const pct=f.carry==null||!isFinite(+f.carry)?"n/a":(f.carry>0?"+":"")+Number(f.carry).toFixed(1)+"%";return `<span>Carry: ${pct} → ${dir}</span>`}
+function showFilters(k){const f=k.flt;if(!f){$("filters").innerHTML="";return}const raw=rawSig(k);$("filters").innerHTML=`<span>Volatility OK ${yn(!!f.vol)} <span class="muted">ATR pctile ${f.atrPct==null?"–":f.atrPct}</span></span><span>Trend agrees ${yn(agreesDir(raw,f.trend))} <span class="muted">${dirWord(f.trend)}</span></span><span>Higher TF agrees ${yn(agreesDir(raw,f.htf))}${f.htf==null?"":` <span class="muted">${dirWord(f.htf)}</span>`}</span>${carryLine(f)}`}
+function showEdge(k){const badge=k.edge?pill("Tested edge","b"):`<span class="pill n">No tested edge after costs</span>`;const o=k.oosf;$("edge").innerHTML=badge+(o&&o.avgR!=null&&o.n!=null?` <span class="muted">OOS ${rF(o.avgR)} · ${o.n} trades</span>`:"")}
+function exitRule(){const p=D&&D.prm2;if(!p||p.trail_atr==null||p.trail_max_bars==null)return "Stop to breakeven at +1R, then ATR trailing stop.";return "Stop to breakeven at +1R, then "+p.trail_atr+"×ATR trailing stop (now "+p.trail_atr+"), exit after "+p.trail_max_bars+" bars"}
+function scanSigCell(r){const raw=sigOf(r[2]);const agree=r.length>12?r[12]:true;const gated=r[11]||(agree?raw:"WAIT");const main=(raw==="BUY"||raw==="SELL")&&agree===false?`<span class="pill n">WAIT (filters disagree)</span>`:sigPill(gated);return main+` <span class="muted">raw ${esc(raw)}</span>`}
 const pill=(t,c)=>`<span class="pill ${c}">${t}</span>`;
 const vote=v=>v>0?pill("Bullish","b"):v<0?pill("Bearish","s"):pill("Neutral","n");
 const sigPill=s=>pill(s,s==="BUY"?"b":s==="SELL"?"s":"n");
@@ -138,22 +139,24 @@ function render(){if(!D)return;const k=D.det[S.sym+"|"+S.tf],m=D.meta[S.sym];$("
  const idx=k.ag.map((_,i)=>i).filter(i=>S.agv==="all"||(S.agv==="core"?i<16:i>=16));
  table("agents",["Agent","Vote","Conf","Weight","Tests","Hit","Avg R","Reason"],idx.map(i=>{const a=k.ag[i];return[D.names[i][0],vote(a[0]),a[1],a[3].toFixed(2),a[4]||"–",pc(a[5]),rF(a[6]),esc(a[2])]}),[2,3,4,5,6]);
  $("regNote").textContent="Weight = walk-forward measured edge on this symbol/timeframe (≈0 = no edge). Regime "+k.reg[0]+": trend agents ×1.5 in trends, oscillators ×1.5 in ranges. News fixed at 0.5.";
- table("strats",["Strategy","Now","Trades","Win","Avg R","PF","Rule"],k.st.map((s,i)=>[D.strats[i],s[6]?"n/a":s[0]>0?pill("Long "+s[1]+" bars ago","b"):s[0]<0?pill("Short "+s[1]+" bars ago","s"):"no setup",s[2],pc(s[3]),rF(s[4]),s[5]==null?"–":s[5],esc(D.rules[i])]),[2,3,4,5]);
+ table("strats",["Strategy","Now","Trades","Win","Avg R","PF","Rule"],k.st.map((s,i)=>[D.strats[i]||"–",!s||s[6]?"n/a":s[0]>0?pill("Long "+s[1]+" bars ago","b"):s[0]<0?pill("Short "+s[1]+" bars ago","s"):"no setup",s&&s[2]!=null?s[2]:"–",s?pc(s[3]):"–",s?rF(s[4]):"–",!s||s[5]==null?"–":s[5],esc(D.rules[i]||"")]),[2,3,4,5]);
  // scanner
  $("scanTfs").innerHTML=TFS.map(x=>`<button data-st="${x}" class="${x===S.scanTf?"on":""}">${x}</button>`).join("");
  const rows=D.scan.filter(r=>r[1]===S.scanTf&&r[2]!=null).sort((a,b)=>Math.abs(b[2])-Math.abs(a[2]));
  table("scan",["Symbol","Signal","Score","Bull/bear","Regime","Strategies","Last","Bar"],rows.map(r=>[D.meta[r[0]][0],scanSigCell(r),(r[2]>0?"+":"")+r[2],r[5]+"/"+r[6],r[7],strat(r[8]),fp(r[3],r[10]),r[9]]),[2,6]);
- if(D.wf&&Array.isArray(D.wf.rows)){const order=["5m","15m","1h","4h","1d","all"];const wf=D.wf.rows.filter(r=>r[0]==="after").sort((a,b)=>order.indexOf(a[3])-order.indexOf(b[3]));table("wf",["Timeframe","Trades","Avg R","Profit factor"],wf.map(r=>[r[3]==="all"?"All":r[3],r[4].n,rF(r[4].exp),r[4].pf==null?"–":r[4].pf]),[1,2,3]);$("wfNote").textContent=D.wf.note||""}else{$("wf").innerHTML="";$("wfNote").textContent=""}
+ if(D.wf&&Array.isArray(D.wf.rows)){const order=["5m","15m","1h","4h","1d","all"];const wf=D.wf.rows.filter(r=>r&&r[0]==="after"&&r[4]).sort((a,b)=>order.indexOf(a[3])-order.indexOf(b[3]));table("wf",["Timeframe","Trades","Avg R","Profit factor"],wf.map(r=>[r[3]==="all"?"All":r[3],r[4].n==null?"–":r[4].n,r[4].exp==null?"–":rF(r[4].exp),r[4].pf==null?"–":r[4].pf]),[1,2,3]);$("wfNote").textContent=D.wf.note||""}else if($("wf")){$("wf").innerHTML="";if($("wfNote"))$("wfNote").textContent=""}
+ showRound2();
  // performance
  const oo=k.oos;table("oos",["Consensus test ("+m[0]+" "+S.tf+")","Trades","Hit","Avg R"],oo?[["Adaptive weights (fit 60% / test 40%)",oo[0],pc(oo[1]),rF(oo[2])],["Equal weights",oo[3],pc(oo[4]),rF(oo[5])]]:[["Not enough history","–","–","–"]],[1,2,3]);
  table("pa",["Agent (all)","Tests","Hit","Avg R"],D.pa.filter(r=>r[1]>0).sort((a,b)=>b[3]-a[3]).map(r=>[r[0],r[1],pc(r[2]),rF(r[3])]),[1,2,3]);
  table("ps",["Strategy (all)","Trades","Win","Avg R"],D.ps.slice().sort((a,b)=>b[3]-a[3]).map(r=>[r[0],r[1],pc(r[2]),rF(r[3])]),[1,2,3]);
  const P=D.prm;$("method").textContent=`Each agent replayed on up to ${P.samples} past bars using only data available then. Win = ${P.tp_atr}×ATR in its direction before ${P.sl_atr}×ATR against within ${P.horizon_bars} bars. Weight = shrunk avg R (k=${P.shrink_k}) ×${P.weight_scale}, cap ${P.weight_max}. Live journal results blend in at ${P.live_blend*100}% after ${P.live_min} closed signals.`;
  const j=D.jl;$("jstats").textContent=`${j[0]} logged · ${j[1]} open/awaiting fill · ${j[2]} closed`+(j[2]?` · live avg ${rF(j[4])}, ${pc(j[3])} hit`:"");
- table("journal",["Bar","Symbol","TF","Side","Entry","Stop","TP2","Status","R"],D.j.slice().reverse().map(e=>[e[0],D.meta[e[1]][0],e[2],pill(e[3],e[3]==="long"?"b":"s"),e[4],e[5],e[6],e[7],e[8]==null?"–":rF(e[8])]),[4,5,6,8]);
+ const jCell=v=>v==null||v===""?"–":esc(v);table("journal",["Bar","Symbol","TF","Side","Entry","Stop","TP2","Status","R","Exit","Mode","Trail"],(D.j||[]).slice().reverse().map(e=>[e[0],D.meta[e[1]]?D.meta[e[1]][0]:e[1],e[2],pill(e[3],e[3]==="long"?"b":"s"),e[4],e[5],e[6],e[7],e[8]==null?"–":rF(e[8]),e.length>10?jCell(e[10]):"–",e.length>11?jCell(e[11]):"–",e.length>12?jCell(e[12]):"–"]),[4,5,6,8]);
  $("news").innerHTML=(D.news[S.sym]||[]).map(nw=>`<div style="margin-bottom:8px">${nw[2]>0?pill("positive","b"):nw[2]<0?pill("negative","s"):pill("neutral","n")} ${esc(nw[1])} <span class="muted">· ${esc(nw[0])} · ${nw[3]}</span></div>`).join("")||'<span class="muted">No matching headlines in this snapshot.</span>';
  table("src",["Source","Status"],[["Binance public API","live in browser + snapshot"],["Yahoo Finance chart API","snapshot"]].concat(D.ns.map(n=>[n[0],n[1]?n[2]+" headlines":pill("failed","s")])));
  showLive();}
+function showRound2(){const el=$("wf2");if(!el)return;const w=D&&D.wf2;if(!w){el.innerHTML="";return}const f=w.focus||{},labs=[["before_val","Before validation"],["before_test","Before test"],["after_val","After validation"],["after_test","After test"]];const cells=s=>!s?["–","–","–","–"]:[s.n==null?"–":s.n,s.exp==null?"–":rF(s.exp),s.pf==null?"–":s.pf,s.dd==null?"–":s.dd];const focusRows=labs.filter(([k])=>f[k]).map(([k,lab])=>[lab].concat(cells(f[k])));const combos=Array.isArray(w.per_combo)?w.per_combo.filter(r=>r&&r.length>=4&&r[3]):[];el.innerHTML='<h3 style="font-size:15px;margin:14px 0 6px">Round 2 test</h3>'+(focusRows.length?'<div class="scroll"><table id="wf2focus"></table></div>':"")+(combos.length?'<p class="muted" style="margin-top:8px">Per symbol and timeframe</p><div class="scroll"><table id="wf2combo"></table></div>':"")+(w.note?`<p class="muted">${esc(w.note)}</p>`:"");if(focusRows.length)table("wf2focus",["Slice","Trades","Avg R","Profit factor","Max drawdown"],focusRows,[1,2,3,4]);if(combos.length)table("wf2combo",["Phase","Symbol","TF","Trades","Avg R","PF","Max DD"],combos.map(r=>[esc(r[0]||"–"),esc(D.meta&&D.meta[r[1]]?D.meta[r[1]][0]:(r[1]||"–")),esc(r[2]||"–"),r[3].n==null?"–":r[3].n,r[3].exp==null?"–":rF(r[3].exp),r[3].pf==null?"–":r[3].pf,r[3].dd==null?"–":r[3].dd]),[3,4,5,6])}
 function hms(d){return d.toLocaleTimeString("en-GB",{timeZone:"Europe/Belgrade",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false})}
 function signedDelta(level,prec){const d=level-shownPx;if(!isFinite(d))return "–";const body=fp(Math.abs(d),prec);return d>0?"+"+body:d<0?"−"+body:body}
 function showLive(){const el=$("live"),pair=livePair(S.sym);
