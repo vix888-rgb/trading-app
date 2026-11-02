@@ -5563,7 +5563,7 @@
   "fill_bar_t": 1793648700000,
   "trail_stop": 77464.636,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "XAUUSD-5m-1793648940000",
@@ -6502,7 +6502,7 @@
   "fill_bar_t": 1793650800000,
   "trail_stop": 3961.96,
   "tp1_hit": false,
-  "bars_open": 13
+  "bars_open": 15
  },
  {
   "id": "SOLUSD-5m-1793650800000",
@@ -6702,7 +6702,7 @@
    "Turtle 20-bar breakout",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "cancelled",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 146.35175217817496,
@@ -6732,7 +6732,8 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "exit": "limit not filled"
  },
  {
   "id": "USDJPY-1h-1793649600000",
@@ -6962,7 +6963,7 @@
   "edge": false,
   "trail_stop": 2268.758,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-15m-1793653200000",
@@ -7173,6 +7174,123 @@
    "sigRaw": "SELL",
    "range": {
     "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "BTCUSD-5m-1793655000000",
+  "logged": "2026-11-02T22:40+01:00",
+  "bar_t": 1793655000000,
+  "bar_time": "Mon 02 Nov 22:30",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -30,
+  "entry": 77059.005,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 77238.829,
+  "tp": [
+   76879.181,
+   76699.357,
+   76519.533
+  ],
+  "inv": 77220.0,
+  "votes": [
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.12,
+   0.0
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 125.52747085693056,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 64,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 76714.76,
+    "hi": 77011.0,
+    "src": "1m",
     "alert": false
    },
    "sweep": {
