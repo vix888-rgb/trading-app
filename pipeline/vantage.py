@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Shift published prices onto fresh Vantage quotes from the ntfy price topic.
 
-TradingView posts one JSON bar per symbol to NTFY_PRICE_URL. This step runs
-after data.json is built. For each symbol whose newest quote is at most 15
-minutes old:
+TradingView posts either one JSON bar per symbol or one combined message,
+{"q": {"XAUUSD": ..., ...}, "tf": "5", "t": ...}, to NTFY_PRICE_URL. This step
+runs after data.json is built. For each symbol, the newest quote is kept.
+A quote more than 15 minutes old is dropped:
 
     offset = vantage close − freshest feed last close
 
@@ -161,22 +162,45 @@ def iter_payloads(text):
         yield ev, None
 
 
+def each_quote(body, hint):
+    """Yield (symbol, price, unix time) from one message.
+
+    A dict ``q`` is the combined feed: each known symbol with a positive price
+    shares the message time. JSON null and unknown symbols are skipped. Any
+    other object is the old one-symbol bar (``sym`` plus ``c``, ``bid``, or
+    ``close``).
+    """
+    if not isinstance(body, dict):
+        return
+    ts = quote_time(body, hint)
+    if ts is None:
+        return
+    book = body.get("q")
+    if isinstance(book, dict):
+        for raw, val in book.items():
+            sym = canon_symbol(raw)
+            px = as_price(val)
+            if sym and px is not None:
+                yield sym, px, ts
+        return
+    sym = symbol_of(body)
+    px = price_of(body)
+    if sym and px is not None:
+        yield sym, px, ts
+
+
 def latest_quotes(text, now=None):
     """Newest usable quote per symbol. Quotes older than 15 minutes are dropped."""
     now = time.time() if now is None else float(now)
     best = {}
     for body, hint in iter_payloads(text):
-        sym = symbol_of(body)
-        px = price_of(body)
-        ts = quote_time(body, hint)
-        if not sym or px is None or ts is None:
-            continue
-        age = now - ts
-        if age < -FUTURE_SKEW_SEC or age > MAX_AGE_SEC:
-            continue
-        prev = best.get(sym)
-        if prev is None or ts >= prev[0]:
-            best[sym] = (ts, px)
+        for sym, px, ts in each_quote(body, hint):
+            age = now - ts
+            if age < -FUTURE_SKEW_SEC or age > MAX_AGE_SEC:
+                continue
+            prev = best.get(sym)
+            if prev is None or ts >= prev[0]:
+                best[sym] = (ts, px)
     return {sym: {"time": ts, "price": px} for sym, (ts, px) in best.items()}
 
 

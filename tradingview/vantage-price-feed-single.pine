@@ -1,0 +1,16 @@
+//@version=5
+indicator("Vantage price feed (single)", overlay=true)
+
+// Retired per-symbol feed. One alert per chart, every bar.
+// XAUUSD+ and XAUUSD.r both become XAUUSD.
+// The live script is vantage-price-feed.pine: one 5-minute alert for all six symbols.
+
+_cut(src, ch) =>
+    p = str.pos(src, ch)
+    na(p) ? src : str.substring(src, 0, p)
+
+sym = _cut(_cut(syminfo.ticker, "."), "+")
+
+if barstate.isconfirmed
+    msg = '{"sym":"' + sym + '","tv":"' + syminfo.tickerid + '","bid":' + str.tostring(close) + ',"o":' + str.tostring(open) + ',"h":' + str.tostring(high) + ',"l":' + str.tostring(low) + ',"c":' + str.tostring(close) + ',"tf":"' + timeframe.period + '","t":' + str.tostring(time_close) + '}'
+    alert(msg, alert.freq_once_per_bar_close)

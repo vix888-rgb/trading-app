@@ -1,13 +1,35 @@
 //@version=5
 indicator("Vantage price feed", overlay=true)
 
-// One script for every Vantage chart. XAUUSD+ and XAUUSD.r both become XAUUSD.
-_cut(src, ch) =>
-    p = str.pos(src, ch)
-    na(p) ? src : str.substring(src, 0, p)
+// One alert on one 5-minute chart. The chart symbol does not matter.
+// Each confirmed bar posts all six Vantage closes. A missing close is JSON null.
 
-sym = _cut(_cut(syminfo.ticker, "."), "+")
+px2(v) =>
+    if na(v)
+        "null"
+    else
+        str.tostring(v, "#.##")
 
-if barstate.isconfirmed
-    msg = '{"sym":"' + sym + '","tv":"' + syminfo.tickerid + '","bid":' + str.tostring(close) + ',"o":' + str.tostring(open) + ',"h":' + str.tostring(high) + ',"l":' + str.tostring(low) + ',"c":' + str.tostring(close) + ',"tf":"' + timeframe.period + '","t":' + str.tostring(time_close) + '}'
+px3(v) =>
+    if na(v)
+        "null"
+    else
+        str.tostring(v, "#.###")
+
+px5(v) =>
+    if na(v)
+        "null"
+    else
+        str.tostring(v, "#.#####")
+
+xau = request.security("VANTAGE:XAUUSD", timeframe.period, close)
+btc = request.security("VANTAGE:BTCUSD", timeframe.period, close)
+eur = request.security("VANTAGE:EURUSD", timeframe.period, close)
+jpy = request.security("VANTAGE:USDJPY", timeframe.period, close)
+chf = request.security("VANTAGE:USDCHF", timeframe.period, close)
+ech = request.security("VANTAGE:EURCHF", timeframe.period, close)
+
+if barstate.isconfirmed and not na(time_close)
+    q = '{"q":{"XAUUSD":' + px2(xau) + ',"BTCUSD":' + px2(btc) + ',"EURUSD":' + px5(eur) + ',"USDJPY":' + px3(jpy) + ',"USDCHF":' + px5(chf) + ',"EURCHF":' + px5(ech) + '}'
+    msg = q + ',"tf":"' + timeframe.period + '","t":' + str.tostring(time_close) + '}'
     alert(msg, alert.freq_once_per_bar_close)
