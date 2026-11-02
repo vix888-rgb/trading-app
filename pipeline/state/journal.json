@@ -3605,7 +3605,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00035266707536238097,
@@ -3623,7 +3623,10 @@
   "fill_bar_t": 1793620500000,
   "trail_stop": 1.34171848971857,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 22,
+  "R": 0.54,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-02T14:59+01:00"
  },
  {
   "id": "GBPUSD-15m-1793618100000",
