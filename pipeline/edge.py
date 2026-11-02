@@ -285,3 +285,234 @@ def news_hit(close_ms,events,window=NEWS_WINDOW_MS):
         if abs(int(e["ms"])-int(close_ms))<=window:
             if best is None or abs(int(e["ms"])-int(close_ms))<abs(int(best["ms"])-int(close_ms)): best=e
     return best
+# ---------- Liquidity Entry Zones (point scale, Nov 2026) ----------
+# The indicator labels its inputs "pips", but those numbers are points (1/10 of a pip).
+# Gold pip = 0.1, so a point is 0.01: sweep 30 points = $0.30, range 20 = $0.20,
+# stop 500 = $5, target 1300 = $13 (R:R 2.6).
+# BTC auto pip is assumed to be $1 (a dollar pip, the usual auto/index pip once price
+# is in the thousands — not the 0.01 mintick). A point is then $0.10: sweep $3,
+# minimum range $2, stop $50, target $130. A mintick point ($0.01, stop $5) would
+# sit inside the BTC spread on every bar; that reading is not used.
+LEZ_NAME="Liquidity Entry Zones"
+LEZ_PIP={"XAUUSD":0.1,"PAXG":0.1,"BTCUSD":1.0}
+LEZ_INPUT=(("sweep",30.0),("range",20.0),("sl",500.0),("tp",1300.0))
+LEZ_MODE="point"          # desk + live signals. Research may score other modes; this is the shipped reading.
+LEZ_FILTER=False          # confirmation gate on the current alert. Set from the unseen test.
+LEZ_ALERTS=False          # standalone alerts. Display-only while this stays false.
+LEZ_WINDOW=0              # extra bars before the signal bar that still count as confirmation
+LEZ_EDGE=("XAUUSD|1d","XAUUSD|4h","XAUUSD|1h","BTCUSD|1d","BTCUSD|1h")
+LEZ_RULE=("Inputs are points (1/10 pip). Gold pip 0.1 → sweep $0.30, minimum candle $0.20, stop $5, target $13. "
+          "BTC auto pip assumed $1 → point $0.10 → sweep $3, minimum candle $2, stop $50, target $130. "
+          "EMA50: long only above, short only below. Pivots length 5, last 20 highs and 20 lows. "
+          "Sweep trades past a stored level by the minimum and closes back inside; the sweep candle needs wick ≥35% and body ≤65%. "
+          "Confirm on that bar or within the next 2: bullish (bearish) and a close through the sweep candle's midline. "
+          "Next-bar open, 10-bar cooldown, one position. Desk stats subtract the Vantage round trip plus slippage. "
+          "Unseen test: the point bracket and a wick-stop variant both trail the current system after costs, and the $50 BTC stop sits inside the spread. Display only, no alerts.")
+def lez_point_size(sym):
+    return LEZ_PIP.get(sym,0.0001)/10.0
+def lez_bracket(sym):
+    """(sweep, min range, stop, target) in price units for the point reading."""
+    pt=lez_point_size(sym)
+    return tuple(v*pt for _,v in LEZ_INPUT)
+def lez_friction_parts(sym,px):
+    """Vantage-like round trip (spread + commission) and extra adverse slippage, in price."""
+    px=float(px)
+    if sym in ("XAUUSD","PAXG"): return 0.35,0.10
+    if sym=="BTCUSD": return 0.0006*px,0.0002*px
+    return 0.0,0.0
+def lez_net_r(gross,risk,friction):
+    """R after a cash friction. None when friction would eat more than 25% of the stop (not taken)."""
+    if gross is None or risk is None or risk<=0: return None
+    if friction>0.25*risk: return None
+    return float(gross)-float(friction)/float(risk)
+def lez_basis(sym,mode):
+    sw,rng,sl,tp=lez_bracket(sym)
+    if mode=="point": return f"point bracket from the fill, stop {sl:g}, target {tp:g} (inputs are points = 1/10 pip)"
+    if mode=="atr": return "ATR-scaled point bracket (distances × ATR / median ATR), 50:130 point ratio"
+    if mode=="struct2": return "stop 1 point beyond the sweep wick, target 2R"
+    if mode=="struct3": return "stop 1 point beyond the sweep wick, target 3R"
+    return mode
+def _lez_dists(sym,mode,atr_i,med):
+    sw,rng,sl,tp=lez_bracket(sym)
+    if mode=="atr":
+        if med is None or med<=0 or not (atr_i==atr_i) or atr_i<=0: return None
+        k=float(atr_i)/float(med)
+        return sw*k,rng*k,sl*k,tp*k
+    return sw,rng,sl,tp
+def _lez_quality(o,h,l,c,i,d,min_range):
+    rng=h[i]-l[i]
+    if rng<min_range or rng<=0: return False
+    if abs(c[i]-o[i])/rng>0.65+1e-12: return False
+    wick=(min(o[i],c[i])-l[i]) if d>0 else (h[i]-max(o[i],c[i]))
+    return wick/rng>=0.35-1e-12
+def _lez_confirm(o,c,ema,i,d,mid):
+    if not (ema[i]==ema[i]): return False
+    if d>0: return c[i]>o[i] and c[i]>mid and c[i]>ema[i]
+    return c[i]<o[i] and c[i]<mid and c[i]<ema[i]
+def _lez_walk(o,h,l,c,j0,d,e,stop,tp):
+    """Stop before target. A gap through the stop on the entry bar fills at the open. Returns (gross R, exit index, how)."""
+    n=len(c); risk=abs(e-stop)
+    if risk<=0: return None
+    for j in range(j0,n):
+        hit_sl=(d>0 and l[j]<=stop) or (d<0 and h[j]>=stop)
+        if hit_sl:
+            px=o[j] if (j==j0 and ((d>0 and o[j]<=stop) or (d<0 and o[j]>=stop))) else stop
+            return (d*(px-e)/risk,j,"sl")
+        hit_tp=tp is not None and ((d>0 and h[j]>=tp) or (d<0 and l[j]<=tp))
+        if hit_tp:
+            px=o[j] if (j==j0 and ((d>0 and o[j]>=tp) or (d<0 and o[j]<=tp))) else tp
+            return (d*(px-e)/risk,j,"tp")
+    j=n-1
+    if j<j0: return None
+    return (d*(c[j]-e)/risk,j,"mtm")
+def lez_run(df,sym,tf,mode=None,med=None):
+    """Causal Liquidity Entry Zones. Signal on the confirmation close; fill is the next open. No lookahead."""
+    mode=mode or LEZ_MODE
+    o,h,l,c=df.o.values.astype(float),df.h.values.astype(float),df.l.values.astype(float),df.c.values.astype(float)
+    n=len(c); L=np.zeros(n,bool); S=np.zeros(n,bool)
+    ema=pd.Series(c).ewm(span=50,adjust=False).mean().values
+    A=_atr(df).values
+    if mode=="atr" and med is None:
+        ok=A[60:]
+        ok=ok[np.isfinite(ok)&(ok>0)]
+        med=float(np.median(ok)) if len(ok) else None
+    highs=[]; lows=[]; signals=[]; plans=[]
+    pending=None; last=-10**9; active_until=-1
+    point=lez_point_size(sym)
+    for i in range(n):
+        p=i-5
+        if p>=5:
+            if h[p]==h[p-5:p+6].max() and h[p]>h[p-5:p].max():
+                highs.append(float(h[p]))
+                if len(highs)>20: highs.pop(0)
+            if l[p]==l[p-5:p+6].min() and l[p]<l[p-5:p].min():
+                lows.append(float(l[p]))
+                if len(lows)>20: lows.pop(0)
+        if i<=active_until:
+            pending=None; continue
+        if i<60 or i-last<10: continue
+        fired=False
+        if pending is not None and i<=pending["exp"] and _lez_confirm(o,c,ema,i,pending["d"],pending["mid"]):
+            _lez_take(i,pending,o,h,l,c,L,S,signals,plans,sym,mode,point)
+            last=i; active_until=_lez_block(signals); pending=None; fired=True
+        elif pending is not None and i>=pending["exp"]:
+            pending=None
+        if fired or pending is not None: continue
+        dist=_lez_dists(sym,mode,A[i],med)
+        if dist is None or not (A[i]==A[i]) or A[i]<=0: continue
+        sw,rng,sl,tp=dist
+        if sw<=0 or rng<=0: continue
+        cands=[]
+        for lv in lows:
+            if l[i]<=lv-sw and c[i]>lv: cands.append((lv-l[i],1,lv))
+        for lv in highs:
+            if h[i]>=lv+sw and c[i]<lv: cands.append((h[i]-lv,-1,lv))
+        if not cands: continue
+        cands.sort(key=lambda z: -z[0])
+        # equal penetration on both sides is ambiguous
+        if len(cands)>1 and abs(cands[0][0]-cands[1][0])<=1e-12 and cands[0][1]!=cands[1][1]: continue
+        taken=None
+        for pen,d,lv in cands:
+            if not _lez_quality(o,h,l,c,i,d,rng): continue
+            taken=(d,lv); break
+        if taken is None: continue
+        d,lv=taken
+        if d>0: lows[:]=[x for x in lows if not (l[i]<=x-sw)]
+        else: highs[:]=[x for x in highs if not (h[i]>=x+sw)]
+        rec={"d":d,"mid":float((h[i]+l[i])/2),"exp":i+2,"extreme":float(l[i] if d>0 else h[i]),"sl":float(sl),"tp":float(tp),"sweep":i}
+        if _lez_confirm(o,c,ema,i,d,rec["mid"]):
+            _lez_take(i,rec,o,h,l,c,L,S,signals,plans,sym,mode,point)
+            last=i; active_until=_lez_block(signals)
+        else:
+            pending=rec
+    return {"L":L,"S":S,"signals":signals,"plans":plans,"mode":mode,"med":med}
+def _lez_block(signals):
+    if not signals: return -1
+    j=signals[-1].get("j")
+    return j if j is not None else -1
+def _lez_take(i,rec,o,h,l,c,L,S,signals,plans,sym,mode,point):
+    d=rec["d"]; (L if d>0 else S)[i]=True
+    n=len(c); basis=lez_basis(sym,mode if not str(mode).startswith("struct") else mode)
+    struct=str(mode).startswith("struct")
+    rr=2.0 if mode=="struct2" else 3.0 if mode=="struct3" else None
+    if i+1>=n:
+        e=float(c[i]); stop,tp_px,risk=_lez_prices(e,d,rec,struct,rr,point)
+        plans.append({"i":i,"d":d,"entry":e,"stop":stop,"tp":tp_px,"active":True,"how":None,"basis":basis})
+        signals.append({"i":i,"d":d,"e":None,"risk":risk,"gross":None,"j":None,"how":None})
+        return
+    e=float(o[i+1]); stop,tp_px,risk=_lez_prices(e,d,rec,struct,rr,point)
+    if risk is None or risk<=0 or (stop-e)*d>=0:
+        plans.append({"i":i,"d":d,"entry":e,"stop":stop,"tp":tp_px,"active":False,"how":None,"basis":basis})
+        signals.append({"i":i,"d":d,"e":e,"risk":None,"gross":None,"j":None,"how":"invalid"})
+        return
+    walked=_lez_walk(o,h,l,c,i+1,d,e,stop,tp_px)
+    if walked is None:
+        signals.append({"i":i,"d":d,"e":e,"risk":risk,"gross":None,"j":None,"how":None}); return
+    gross,j,how=walked
+    active=how=="mtm"
+    plans.append({"i":i,"d":d,"entry":e,"stop":float(stop),"tp":float(tp_px),"active":active,"how":how,"basis":basis})
+    signals.append({"i":i,"d":d,"e":e,"risk":float(risk),"gross":float(gross),"j":int(j),"how":how})
+def _lez_prices(e,d,rec,struct,rr,point):
+    if struct:
+        stop=float(rec["extreme"]-d*point)
+        risk=(e-stop)*d
+        if risk<=0: return stop,e,None
+        return stop,float(e+d*rr*risk),float(risk)
+    sl,tp=rec["sl"],rec["tp"]
+    return float(e-d*sl),float(e+d*tp),float(sl)
+_LEZ_CACHE={}
+def lez_cached(df,sym,tf,mode=None,med=None):
+    mode=mode or LEZ_MODE
+    key=(id(df),sym,tf,mode,None if med is None else round(float(med),8))
+    hit=_LEZ_CACHE.get(key)
+    if hit is None:
+        hit=lez_run(df,sym,tf,mode=mode,med=med); _LEZ_CACHE[key]=hit
+    return hit
+def lez_sides(df,sym,tf):
+    p=lez_cached(df,sym,tf); return p["L"],p["S"]
+def lez_recent_dir(pack,i,window=None):
+    if window is None: window=LEZ_WINDOW
+    L,S=pack["L"],pack["S"]; d=0
+    for k in range(max(0,i-int(window)),i+1):
+        if L[k]: d=1
+        elif S[k]: d=-1
+    return d
+def apply_lez(sig,d,sym,tf):
+    """Standalone replaces the alert on the gold/BTC edge. Filter downgrades a side LEZ did not confirm."""
+    if not (LEZ_FILTER or LEZ_ALERTS): return sig,""
+    if f"{sym}|{tf}" not in LEZ_EDGE: return sig,""
+    if LEZ_ALERTS:
+        if d>0: return "BUY",""
+        if d<0: return "SELL",""
+        return "WAIT","lez"
+    if sig=="BUY" and d!=1: return "WAIT","lez"
+    if sig=="SELL" and d!=-1: return "WAIT","lez"
+    return sig,""
+def lez_trade_plan(pack,sym):
+    """Consensus-plan shape for an alert sourced from the latest LEZ setup."""
+    if not pack or not pack.get("plans"): return None
+    pl=pack["plans"][-1]; e,s,t,d=pl["entry"],pl["stop"],pl["tp"],pl["d"]
+    if e is None or s is None or t is None: return None
+    risk=abs(e-s)
+    tps=[e+d*risk,e+d*2*risk,t] if risk>0 else [t,t,t]
+    return {"side":"long" if d>0 else "short","entry":float(e),"zone":[float(e),float(e)],
+            "zoneWhy":"market (liquidity entry zone)","stop":float(s),"stopBasis":pl.get("basis") or lez_basis(sym,pack.get("mode") or LEZ_MODE),
+            "inv":float(s),"tp":[float(x) for x in tps],"rr":[1,2,2.6],"dist":float(risk)}
+def lez_desk_bt(df,sym,tf):
+    """Loaded-bar stats with the Vantage round trip plus slippage. The plan is shown even when the stop is inside the spread."""
+    pack=lez_cached(df,sym,tf); rs=[]; skipped=0
+    for s in pack["signals"]:
+        if s.get("gross") is None or not s.get("risk"): continue
+        spread,slip=lez_friction_parts(sym,s["e"])
+        net=lez_net_r(s["gross"],s["risk"],spread+slip)
+        if net is None: skipped+=1; continue
+        rs.append(net)
+    if not rs: bt={"n":0}
+    else:
+        arr=np.array(rs,float); gw=arr[arr>0].sum(); gl=-arr[arr<0].sum()
+        bt={"n":int(len(arr)),"win":int(round(100*float((arr>0).mean()))),"avgR":round(float(arr.mean()),2),
+            "totR":round(float(arr.sum()),1),"pf":round(float(gw/gl),2) if gl>0 else None}
+    bt["skip"]=skipped
+    pl=pack["plans"][-1] if pack["plans"] else None
+    bt["lez"]=None if pl is None else {"entry":float(pl["entry"]),"stop":float(pl["stop"]),"tp":float(pl["tp"]),"active":bool(pl.get("active"))}
+    return bt

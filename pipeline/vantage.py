@@ -268,6 +268,17 @@ def shift_lv(lv, offset, places):
         lv[key] = add_px(value, offset, places)
 
 
+def shift_st(st, offset, places):
+    """Liquidity Entry Zones prints its own entry, stop and target on the strategy row."""
+    if not isinstance(st, list):
+        return
+    for row in st:
+        if not isinstance(row, list) or len(row) < 10:
+            continue
+        for k in (7, 8, 9):
+            row[k] = add_px(row[k], offset, places)
+
+
 def shift_flt(flt, offset, places):
     """Breakout and sweep levels sit on the same scale as the plan, so a Vantage offset moves them too."""
     if not isinstance(flt, dict):
@@ -306,6 +317,7 @@ def shift_symbol(doc, sym, offset):
         shift_lv(row.get("lv"), offset, places)
         shift_ch(row.get("ch"), offset, places)
         shift_flt(row.get("flt"), offset, places)
+        shift_st(row.get("st"), offset, places)
 
 
 def feed_name(meta, sym):

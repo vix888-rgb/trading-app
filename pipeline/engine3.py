@@ -239,6 +239,10 @@ def main3():
             ltf_tf=edge.LTF.get(tf); ltf_df=raw.get((key,ltf_tf)) if ltf_tf else None
             gate=edge.protect_last(df,tf,key,ltf_df,ltf_tf,CAL,int(df.t.iloc[-1])+int(HSTEP[tf]))
             sig,why=edge.apply_protect(sig,gate)
+            _lez=edge.lez_cached(df,key,tf)
+            _dlez=edge.lez_recent_dir(_lez,len(df)-1)
+            sig,why2=edge.apply_lez(sig,_dlez,key,tf)
+            if why2: why=why2
             flt["range"]=gate["range"]; flt["sweep"]=gate["sweep"]; flt["news"]=gate["news"]; flt["why"]=why
             # latch: a closed bar keeps the signal it got on its first scan (no flip-flop between scans of the same bar)
             lk=f"{key}|{tf}"; bt_=int(df.t.iloc[-1]); prevl=LATCH.get(lk)
@@ -252,10 +256,13 @@ def main3():
                     if dd_ and fv[i_] and ftd[i_]==dd_ and (hdf is None or fhb[i_]==dd_): rf.append(r[4] if dd_>0 else r[5])
                 oo["filtered"]=stats(rf)
             WOUT[f"{key}|{tf}"]=BC[f"{key}|{tf}"] if frozen else {"weights":dict(zip(names,wts)),"stats":dict(zip(names,st_all)),"oos":oo,"samples":len(rec)}
-            L,S=strat_signals(df,tf,raw.get((key,HTF[tf])) if HTF[tf] else None)
+            L,S=strat_signals(df,tf,raw.get((key,HTF[tf])) if HTF[tf] else None,key)
             st=[]; act=[]
             for k in range(len(STRATS)):
-                bt=backtest(df,L[k],S[k]) if STRATS[k]!=edge.TOM_NAME else backtest(df,L[k],S[k],rr=99,maxbars=3); lL=np.where(L[k][-4:])[0]; lS=np.where(S[k][-4:])[0]
+                if STRATS[k]==edge.LEZ_NAME: bt=edge.lez_desk_bt(df,key,tf)
+                elif STRATS[k]==edge.TOM_NAME: bt=backtest(df,L[k],S[k],rr=99,maxbars=3)
+                else: bt=backtest(df,L[k],S[k])
+                lL=np.where(L[k][-4:])[0]; lS=np.where(S[k][-4:])[0]
                 vv=1 if len(lL) and (not len(lS) or lL[-1]>lS[-1]) else (-1 if len(lS) else 0); ago=None
                 if vv: ago=3-int((lL if vv>0 else lS)[-1]); act.append(STRATS[k])
                 if k==3 and tf not in ("5m","15m","1h"): bt={"n":0,"na":1}
@@ -264,6 +271,9 @@ def main3():
                 if STRATS[k]==edge.TOM_NAME and tf!="1d": bt={"n":0,"na":1}
                 st.append([vv,ago,bt])
             pl=plan(df,p,score,a,last,tr,sh,sl,lv)
+            if edge.LEZ_ALERTS and f"{key}|{tf}" in edge.LEZ_EDGE and _dlez!=0 and ((sig=="BUY" and _dlez>0) or (sig=="SELL" and _dlez<0)):
+                _lp=edge.lez_trade_plan(_lez,key)
+                if _lp is not None: pl=_lp
             N=48; tl=df.tail(N); age=int((time.time()*1000-df.t.iloc[-1])/60000)
             plr={k:([R_(x,p) for x in vv_] if isinstance(vv_,list) and k!="rr" else (R_(vv_,p) if isinstance(vv_,(float,np.floating)) else vv_)) for k,vv_ in pl.items()}
             lt=datetime.fromtimestamp(df.t.iloc[-1]/1000,TZ).strftime("%a %d %b %H:%M")

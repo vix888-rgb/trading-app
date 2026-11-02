@@ -93,7 +93,7 @@ const vm = require("vm");
 const html = fs.readFileSync(process.argv[2], "utf8");
 const sw = fs.readFileSync(process.argv[3], "utf8");
 const pine = fs.readFileSync(process.argv[4], "utf8");
-if (!sw.includes('const CACHE = "signal-desk-v9"')) throw new Error("cache is not v9");
+if (!sw.includes('const CACHE = "signal-desk-v10"')) throw new Error("cache is not v10");
 for (const sym of ["VANTAGE:XAUUSD", "VANTAGE:BTCUSD", "VANTAGE:EURUSD", "VANTAGE:USDJPY", "VANTAGE:USDCHF", "VANTAGE:EURCHF"]) {
   if (!pine.includes('request.security("' + sym + '", timeframe.period, close)')) throw new Error("missing " + sym);
 }

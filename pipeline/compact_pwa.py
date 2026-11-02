@@ -34,7 +34,9 @@ for s in d["sym"]:
             pl=t["plan"]; o=t.get("oos")
             det[s["key"]+"|"+tf]={"p":p,"last":t["last"],"chg":t["chg"],"lt":t["lt"],"age":t["age"],"nb":t["nb"],"score":t["score"],"reg":t["reg"],
               "ag":[[a[0],a[1],a[2],a[3],a[4].get("n",0),a[4].get("hit"),a[4].get("avgR")] for a in t["ag"]],
-              "st":[[x[0],x[1],x[2].get("n",0),x[2].get("win"),x[2].get("avgR"),x[2].get("pf"),x[2].get("na",0)] for x in t["st"]],
+              "st":[[x[0],x[1],x[2].get("n",0),x[2].get("win"),x[2].get("avgR"),x[2].get("pf"),x[2].get("na",0),
+                     (x[2].get("lez") or {}).get("entry"),(x[2].get("lez") or {}).get("stop"),(x[2].get("lez") or {}).get("tp"),
+                     1 if (x[2].get("lez") or {}).get("active") else 0] for x in t["st"]],
               "oos":[o["adaptive"].get("n",0),o["adaptive"].get("hit"),o["adaptive"].get("avgR"),o["equal"].get("n",0),o["equal"].get("hit"),o["equal"].get("avgR"),o["test_samples"]] if o else None,
               "pl":[1 if pl["side"]=="long" else -1,pl["entry"],pl["zone"],pl["zoneWhy"],pl["stop"],pl["stopBasis"],pl["inv"],pl["tp"]],
               "atr":t["atr"],"lv":t["lv"],"flt":t.get("flt"),"edge":t.get("edge"),"oosf":(o or {}).get("filtered"),"ch":[base,top,c["t1"],enc(c["o"]),enc(c["h"]),enc(c["l"]),enc(c["c"]),enc(c["e20"]),enc(c["e50"])]}
