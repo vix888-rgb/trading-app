@@ -6502,7 +6502,7 @@
   "fill_bar_t": 1793650800000,
   "trail_stop": 3961.96,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 13
  },
  {
   "id": "SOLUSD-5m-1793650800000",
@@ -6586,7 +6586,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "cancelled",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.3400468085144836,
@@ -6616,7 +6616,8 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "exit": "limit not filled"
  },
  {
   "id": "BTCUSD-5m-1793651400000",
@@ -7052,6 +7053,120 @@
    "carryDir": 0,
    "vol": true,
    "atrPct": 95,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "SOLUSD-5m-1793654400000",
+  "logged": "2026-11-02T22:30+01:00",
+  "bar_t": 1793654400000,
+  "bar_time": "Mon 02 Nov 22:20",
+  "sym": "SOLUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -30,
+  "entry": 92.06,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 92.41491,
+  "tp": [
+   91.70509,
+   91.35018,
+   90.99527
+  ],
+  "inv": 92.11,
+  "votes": [
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   1,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.19,
+   0.0,
+   1.36,
+   0.0,
+   0.2,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.38,
+   0.11,
+   0.0,
+   0.73,
+   0.47,
+   0.0,
+   0.3,
+   1.37,
+   0.2,
+   0.0,
+   0.31,
+   0.0,
+   1.9,
+   0.39,
+   0.0,
+   0.07,
+   1.54,
+   0.0
+  ],
+  "strategies": [
+   "Trend-follow + ADX filter"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.2957575147181894,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 70,
    "trend": -1,
    "htf": -1,
    "agree": true,
