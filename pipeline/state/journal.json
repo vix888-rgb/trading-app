@@ -4965,7 +4965,7 @@
   "edge": false,
   "trail_stop": 92.10960835026076,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "BTCUSD-5m-1793640000000",
@@ -5439,7 +5439,7 @@
   "fill_bar_t": 1793648400000,
   "trail_stop": 1.340932,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 7
  },
  {
   "id": "BTCUSD-15m-1793647800000",
@@ -5557,7 +5557,7 @@
   "fill_bar_t": 1793648700000,
   "trail_stop": 77464.636,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "XAUUSD-5m-1793648940000",
@@ -5641,7 +5641,7 @@
   "strategies": [
    "Turtle 20-bar breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.429008433268205,
@@ -5675,7 +5675,10 @@
   "fill_bar_t": 1793649000000,
   "trail_stop": 3959.708,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 3,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-02T21:20+01:00"
  },
  {
   "id": "XAUUSD-1h-1793646000000",
@@ -5909,7 +5912,10 @@
    },
    "why": ""
   },
-  "edge": true
+  "edge": true,
+  "trail_stop": 77878.895,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "EURUSD-4h-1793635200000",
@@ -6229,6 +6235,123 @@
    "carryDir": 0,
    "vol": true,
    "atrPct": 52,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "BTCUSD-5m-1793650200000",
+  "logged": "2026-11-02T21:20+01:00",
+  "bar_t": 1793650200000,
+  "bar_time": "Mon 02 Nov 21:10",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -30,
+  "entry": 76918.31,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 77080.317,
+  "tp": [
+   76756.303,
+   76594.296,
+   76432.288
+  ],
+  "inv": 77060.01,
+  "votes": [
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.12,
+   0.0
+  ],
+  "strategies": [
+   "Trend-follow + ADX filter",
+   "ICT/SMC sweep + CHoCH",
+   "TSMOM multi-lookback trend",
+   "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 135.38112081778607,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 77,
    "trend": -1,
    "htf": -1,
    "agree": true,
