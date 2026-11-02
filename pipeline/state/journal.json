@@ -3623,7 +3623,7 @@
   "fill_bar_t": 1793620500000,
   "trail_stop": 1.341337,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "GBPUSD-15m-1793618100000",
@@ -4005,7 +4005,7 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.600666311751059,
@@ -4022,7 +4022,10 @@
   "edge": false,
   "trail_stop": 2282.09,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-02T14:19+01:00"
  },
  {
   "id": "SOLUSD-15m-1793623500000",
