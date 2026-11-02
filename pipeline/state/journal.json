@@ -4964,7 +4964,7 @@
   "edge": false,
   "trail_stop": 92.10960835026076,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 32
  },
  {
   "id": "BTCUSD-5m-1793640000000",
@@ -5435,7 +5435,7 @@
   "fill_bar_t": 1793648400000,
   "trail_stop": 1.340349,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 3
  },
  {
   "id": "BTCUSD-15m-1793647800000",
@@ -5528,6 +5528,120 @@
    "carryDir": 0,
    "vol": true,
    "atrPct": 95,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "XAUUSD-5m-1793648940000",
+  "logged": "2026-11-02T21:00+01:00",
+  "bar_t": 1793648940000,
+  "bar_time": "Mon 02 Nov 20:49",
+  "sym": "XAUUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -38,
+  "entry": 3952.85,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 3959.708,
+  "tp": [
+   3945.992,
+   3939.134,
+   3932.276
+  ],
+  "inv": 3965.4,
+  "votes": [
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "weights": [
+   1.57,
+   0.0,
+   0.59,
+   1.17,
+   0.79,
+   0.05,
+   0.33,
+   0.12,
+   0.76,
+   0.12,
+   1.86,
+   0.99,
+   0.0,
+   1.38,
+   0.0,
+   0.0,
+   0.34,
+   0.5,
+   0.46,
+   0.0,
+   0.0,
+   0.28,
+   1.08,
+   0.48,
+   0.03,
+   0.0,
+   0.0,
+   0.84
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 3.429008433268205,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 20,
    "trend": -1,
    "htf": -1,
    "agree": true,
