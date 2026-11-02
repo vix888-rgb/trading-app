@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
+  # One-shot: workflow_dispatch is not available to this token (HTTP 403).
+  # This push trigger starts a single scan of the Vantage change, then is removed.
+  push:
+    branches:
+      - main
 
 # Pushes made with GITHUB_TOKEN do not trigger pages.yml, so this workflow
 # deploys GitHub Pages itself after it commits a new snapshot.
