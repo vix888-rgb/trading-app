@@ -4727,7 +4727,7 @@
   "edge": false,
   "trail_stop": 1.247867901622529,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "GBPUSD-5m-1793638800000",
@@ -4961,7 +4961,7 @@
   "edge": false,
   "trail_stop": 92.82960835026076,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "BTCUSD-5m-1793640000000",
@@ -5180,6 +5180,121 @@
    "htf": -1,
    "agree": true,
    "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "GBPUSD-15m-1793643300000",
+  "logged": "2026-11-02T19:40+01:00",
+  "bar_t": 1793643300000,
+  "bar_time": "Mon 02 Nov 19:15",
+  "sym": "GBPUSD",
+  "tf": "15m",
+  "side": "long",
+  "score": 38,
+  "entry": 1.340644,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.340063,
+  "tp": [
+   1.341226,
+   1.341808,
+   1.34239
+  ],
+  "inv": 1.340159,
+  "votes": [
+   0,
+   -1,
+   -1,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   1,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.86,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.38,
+   0.15,
+   1.59,
+   0.12,
+   0.3,
+   0.94,
+   0.0,
+   0.0,
+   0.16,
+   0.82,
+   0.2,
+   2.0,
+   0.0,
+   0.0,
+   0.01,
+   0.39,
+   0.0,
+   0.0,
+   1.62,
+   0.1
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Squeeze momentum breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0006443243907996873,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 58,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
    "range": {
     "on": false,
     "alert": false
