@@ -172,7 +172,7 @@
   "status": "open",
   "fill_bar_t": 1793393999000,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "XAUUSD-1d-1793332800000",
@@ -1543,7 +1543,7 @@
   "strategies": [],
   "status": "open",
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "GBPUSD-5m-1793395500000",
@@ -2184,7 +2184,7 @@
   "strategies": [
    "MTF top-down pullback"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.002348777398027391,
@@ -2202,7 +2202,10 @@
   "fill_bar_t": 1793592000000,
   "trail_stop": 1.122057,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-02T13:09+01:00"
  },
  {
   "id": "BTCUSD-15m-1793570400000",
@@ -3318,7 +3321,7 @@
   "fill_bar_t": 1793606400000,
   "trail_stop": 96.05044,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "SOLUSD-15m-1793610900000",
@@ -3429,7 +3432,7 @@
   "score": -34,
   "entry": 94.17,
   "entry_type": "limit (order block retest)",
-  "filled": false,
+  "filled": true,
   "stop": 94.32375,
   "tp": [
    94.01625,
@@ -3512,7 +3515,11 @@
    "agree": true,
    "sigRaw": "SELL"
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793620800000,
+  "trail_stop": 94.32375,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "GBPUSD-5m-1793618400000",
@@ -3525,7 +3532,7 @@
   "score": 46,
   "entry": 1.341337,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 1.340631,
   "tp": [
    1.342042,
@@ -3608,7 +3615,11 @@
    "agree": true,
    "sigRaw": "BUY"
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793620500000,
+  "trail_stop": 1.340631,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-15m-1793618100000",
@@ -3804,6 +3815,9 @@
    "agree": true,
    "sigRaw": "BUY"
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 157.895,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
