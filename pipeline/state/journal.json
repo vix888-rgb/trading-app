@@ -4727,7 +4727,7 @@
   "edge": false,
   "trail_stop": 1.247867901622529,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "GBPUSD-5m-1793638800000",
@@ -4961,7 +4961,7 @@
   "edge": false,
   "trail_stop": 92.82960835026076,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "BTCUSD-5m-1793640000000",
@@ -5083,5 +5083,120 @@
   "R": -0.0,
   "exit": "breakeven",
   "closed_at": "2026-11-02T19:20+01:00"
+ },
+ {
+  "id": "BTCUSD-5m-1793643600000",
+  "logged": "2026-11-02T19:30+01:00",
+  "bar_t": 1793643600000,
+  "bar_time": "Mon 02 Nov 19:20",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -36,
+  "entry": 77210.005,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 77629.866,
+  "tp": [
+   76790.144,
+   76370.283,
+   75950.422
+  ],
+  "inv": 77607.53,
+  "votes": [
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.12,
+   0.0
+  ],
+  "strategies": [
+   "Trend-follow + ADX filter",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 148.905705457543,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 82,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
  }
 ]
