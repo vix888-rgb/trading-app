@@ -136,3 +136,152 @@ def sweep_mss_fvg_signals(df,lb=20):
         if hit is None: i+=1; continue
         (L if d>0 else S)[hit]=True; i=hit+1
     return L,S
+# ---------- Nov 2026: pre-breakout protections (range coil, sweep-then-break, USD news window) ----------
+# Alert flags follow research/protect_oos.json (unseen last 40%, chandelier + costs).
+# Range lowered XAUUSD 1d (1.161R → 0.83R, PF 4.18 → 3.48) and BTCUSD 1h, so it is display-only.
+# Sweep left every edge combo's expectancy and profit factor unchanged, so it may block alerts.
+# The USD high-impact window has no multi-month calendar in the week feed, so it stays display-only.
+RANGE_ALERTS=False
+SWEEP_ALERTS=True
+NEWS_ALERTS=False
+LTF={"5m":"1m","15m":"5m","1h":"15m","4h":"1h","1d":"4h"}
+STEP={"1m":60_000,"5m":300_000,"15m":900_000,"1h":3_600_000,"4h":14_400_000,"1d":86_400_000}
+# Prior-N box. ATR caps sit near the 10th–15th percentile of width/ATR (measured on the feeds, Nov 2026).
+# Percent caps are per symbol class. Gold 15m is 0.75% so the 2 Nov coil (~0.35–0.72% on 15m, 2.6×ATR at the 04:00 signal) qualifies.
+RANGE_N={"1m":48,"5m":36,"15m":16,"1h":12,"4h":10,"1d":10}
+RANGE_ATR={"1m":2.6,"5m":3.0,"15m":2.80,"1h":2.55,"4h":2.20,"1d":2.15}
+_PCT={"XAU":{"1m":0.0030,"5m":0.0045,"15m":0.0075,"1h":0.0100,"4h":0.020,"1d":0.035},
+      "BTC":{"1m":0.0050,"5m":0.0080,"15m":0.0120,"1h":0.0150,"4h":0.030,"1d":0.080},
+      "FX":{"1m":0.0008,"5m":0.0012,"15m":0.0020,"1h":0.0030,"4h":0.007,"1d":0.017}}
+# Sweep of a tight box, then a close through the other side. 15m uses 8 bars (~2h): the same clock window as the 20-bar
+# pool on 5m, which is what caught the 2 Nov 14:00 sweep of 3907.8 and the 14:15 break of 3916.4. 5m/1h/4h/1d keep the ICT 20-bar pool.
+SWEEP_LB={"1m":20,"5m":20,"15m":8,"1h":20,"4h":20,"1d":20}
+SWEEP_BRK={"1m":10,"5m":10,"15m":6,"1h":10,"4h":6,"1d":5}
+SWEEP_HOLD={"1m":30,"5m":12,"15m":8,"1h":6,"4h":4,"1d":3}
+NEWS_WINDOW_MS=30*60*1000
+FF_CAL="https://nfs.faireconomy.media/ff_calendar_thisweek.json"
+def _klass(sym):
+    if sym=="XAUUSD": return "XAU"
+    if sym in ("BTCUSD","ETHUSD","SOLUSD","XRPUSD"): return "BTC"
+    return "FX"
+def _pct_cap(sym,tf):
+    return _PCT[_klass(sym)].get(tf,0.02)
+def range_series(df,tf,sym):
+    """Causal tight-range mask. Box is the prior N bars (current bar excluded), so a close through the box is a breakout, not a coil."""
+    n=len(df); z=np.zeros(n,bool); hi=np.full(n,np.nan); lo=np.full(n,np.nan)
+    N=RANGE_N.get(tf); cap=RANGE_ATR.get(tf)
+    if df is None or N is None or n<=N+2: return z,hi,lo
+    rh=df.h.rolling(N).max().shift(1).values; rl=df.l.rolling(N).min().shift(1).values
+    A=_atr(df).values; c=df.c.values; w=rh-rl
+    pct=_pct_cap(sym,tf)
+    inside=(c>rl)&(c<rh)&np.isfinite(w)&(w>0)&np.isfinite(A)&(A>0)
+    tight=inside&((w<=cap*A)|(w<=pct*c))
+    return tight,rh,rl
+def sweep_series(df,tf,sym):
+    """ICT-style sweep (wick through the pool, close back inside) of a tight box, then a close through the opposite side.
+    Returns block_long, block_short, and the swept box (forward-filled while the block is active)."""
+    n=len(df); bL=np.zeros(n,bool); bS=np.zeros(n,bool); lo=np.full(n,np.nan); hi=np.full(n,np.nan)
+    lb=SWEEP_LB.get(tf,20); brk=SWEEP_BRK.get(tf,10); hold=SWEEP_HOLD.get(tf,6); cap=RANGE_ATR.get(tf,3.0)
+    if n<lb+5: return bL,bS,lo,hi
+    h,l,c=df.h.values,df.l.values,df.c.values; A=_atr(df).values
+    hh=pd.Series(h).rolling(lb).max().shift(1).values; ll=pd.Series(l).rolling(lb).min().shift(1).values
+    i=lb+1
+    while i<n:
+        if not (hh[i]==hh[i] and ll[i]==ll[i] and A[i]==A[i] and A[i]>0): i+=1; continue
+        width=hh[i]-ll[i]
+        if width<=0 or width>cap*A[i]: i+=1; continue
+        down=l[i]<ll[i] and c[i]>ll[i]; up=h[i]>hh[i] and c[i]<hh[i]
+        if not down and not up: i+=1; continue
+        side=-1 if down and (not up or (ll[i]-l[i])>=(h[i]-hh[i])) else 1  # -1 swept the low (bullish reversal candidate)
+        rh,rl=float(hh[i]),float(ll[i]); hit=None
+        for k in range(i+1,min(n,i+1+brk)):
+            if side<0 and c[k]>rh: hit=k; break
+            if side>0 and c[k]<rl: hit=k; break
+        if hit is None: i+=1; continue
+        sl=slice(hit,min(n,hit+hold))
+        if side<0: bS[sl]=True  # broke up after a downside sweep → block shorts
+        else: bL[sl]=True
+        hi[sl]=rh; lo[sl]=rl
+        i=hit+1
+    return bL,bS,lo,hi
+def _align_idx(df,other,step,ostep):
+    src=(other.t.values+ostep).astype("int64"); dst=(df.t.values+step).astype("int64")
+    return np.searchsorted(src,dst,side="right")-1
+def protect_masks(df,tf,sym,ltf=None,ltf_tf=None):
+    """Per-bar masks on the signal timeframe. A lower-timeframe coil or sweep counts once that lower bar has closed."""
+    n=len(df)
+    rt,rh,rl=range_series(df,tf,sym); src=np.where(rt,tf,"")
+    bL,bS,slo,shi=sweep_series(df,tf,sym)
+    if ltf is not None and ltf_tf in STEP and tf in STEP and len(ltf)>10:
+        idx=_align_idx(df,ltf,STEP[tf],STEP[ltf_tf]); ok=idx>=0
+        lt,lrh,lrl=range_series(ltf,ltf_tf,sym)
+        use=ok&lt[np.clip(idx,0,None)]
+        # Prefer the tighter box when both timeframes are inside a coil.
+        both=rt&use
+        lhi=lrh[np.clip(idx,0,None)]; llo=lrl[np.clip(idx,0,None)]
+        take_l=use&(~rt|((lhi-llo)<(rh-rl)))
+        rt=rt|use
+        rh=np.where(take_l,lhi,rh); rl=np.where(take_l,llo,rl)
+        src=np.where(take_l,ltf_tf,np.where(rt,tf,src))
+        lbL,lbS,llo2,lhi2=sweep_series(ltf,ltf_tf,sym)
+        jb=np.clip(idx,0,None)
+        addL=ok&lbL[jb]; addS=ok&lbS[jb]
+        slo=np.where(addL|addS,np.where(np.isfinite(llo2[jb]),llo2[jb],slo),slo)
+        shi=np.where(addL|addS,np.where(np.isfinite(lhi2[jb]),lhi2[jb],shi),shi)
+        bL=bL|addL; bS=bS|addS
+    return {"range":rt,"hi":rh,"lo":rl,"src":src,"blockLong":bL,"blockShort":bS,"sHi":shi,"sLo":slo}
+def _box(on,hi,lo,src,alert):
+    if not on or not (hi==hi and lo==lo): return {"on":False,"alert":bool(alert)}
+    return {"on":True,"lo":round(float(lo),8),"hi":round(float(hi),8),"src":str(src or ""),"alert":bool(alert)}
+def protect_last(df,tf,sym,ltf=None,ltf_tf=None,events=None,close_ms=None):
+    """Last closed bar. `events` is the USD high-impact list from load_usd_events. News never picks a direction."""
+    m=protect_masks(df,tf,sym,ltf,ltf_tf); i=len(df)-1
+    news={"on":False,"alert":bool(NEWS_ALERTS)}
+    if events and close_ms:
+        hit=news_hit(close_ms,events)
+        if hit: news={"on":True,"title":hit["title"],"at":hit["at"],"alert":bool(NEWS_ALERTS)}
+    sw_on=bool(m["blockLong"][i] or m["blockShort"][i])
+    sweep={"on":sw_on,"blockLong":bool(m["blockLong"][i]),"blockShort":bool(m["blockShort"][i]),
+           "dir":(1 if m["blockShort"][i] else -1 if m["blockLong"][i] else 0),"alert":bool(SWEEP_ALERTS)}
+    if sw_on and m["sLo"][i]==m["sLo"][i]:
+        sweep["lo"]=round(float(m["sLo"][i]),8); sweep["hi"]=round(float(m["sHi"][i]),8)
+    return {"range":_box(bool(m["range"][i]),m["hi"][i],m["lo"][i],m["src"][i],RANGE_ALERTS),"sweep":sweep,"news":news}
+def apply_protect(sig,gate):
+    """Downgrade BUY/SELL to WAIT only for filters that are armed for alerts. Returns (sig, why)."""
+    if sig not in ("BUY","SELL"): return sig,""
+    if gate["range"]["on"] and RANGE_ALERTS: return "WAIT","range"
+    if sig=="BUY" and gate["sweep"].get("blockLong") and SWEEP_ALERTS: return "WAIT","sweep"
+    if sig=="SELL" and gate["sweep"].get("blockShort") and SWEEP_ALERTS: return "WAIT","sweep"
+    if gate["news"]["on"] and NEWS_ALERTS: return "WAIT","news"
+    return sig,""
+def load_usd_events(cache,now=None):
+    """High-impact USD events from the Forex Factory week feed. Cached 6h. Failure keeps the previous cache, else none.
+    This feed is the calendar the scan can actually read; it does not vote on direction."""
+    now=now or _time.time(); old={}
+    try:
+        if _os.path.exists(cache): old=_json.load(open(cache))
+    except Exception: old={}
+    events=old.get("events") or []
+    if old.get("_ts") and now-old["_ts"]<6*3600: return events
+    try:
+        raw=_ur.urlopen(_ur.Request(FF_CAL,headers={"User-Agent":"Mozilla/5.0"}),timeout=15).read()
+        rows=_json.loads(raw.decode())
+        out=[]
+        for e in rows:
+            if str(e.get("country","")).upper()!="USD": continue
+            if str(e.get("impact","")).lower()!="high": continue
+            ts=pd.Timestamp(e.get("date"))
+            if ts.tzinfo is None: ts=ts.tz_localize("UTC")
+            out.append({"title":str(e.get("title") or "USD")[:80],"at":ts.isoformat(),"ms":int(ts.timestamp()*1000)})
+        _json.dump({"_ts":now,"events":out},open(cache,"w"))
+        return out
+    except Exception:
+        return events
+def news_hit(close_ms,events,window=NEWS_WINDOW_MS):
+    """Title of a high-impact USD event within ±window of this bar's close, else None."""
+    if not events or close_ms is None: return None
+    best=None
+    for e in events:
+        if abs(int(e["ms"])-int(close_ms))<=window:
+            if best is None or abs(int(e["ms"])-int(close_ms))<abs(int(best["ms"])-int(close_ms)): best=e
+    return best

@@ -1,0 +1,487 @@
+{
+ "note": "Unseen last 40% after a 60% barrier weight fit. Exit is the live chandelier (BE at +1R, 4\u00d7ATR trail, 48 bars) after costs. News has no multi-month calendar in the feed, so it is not in this pass and stays display-only.",
+ "live_for_alerts": [
+  "sweep"
+ ],
+ "decision": {
+  "range": false,
+  "sweep": true,
+  "both": false
+ },
+ "pooled": {
+  "base": {
+   "n": 45,
+   "win": 22.2,
+   "exp": 0.093,
+   "pf": 1.19,
+   "dd": 12.6,
+   "tot": 4.2,
+   "t": 0.35
+  },
+  "range": {
+   "n": 42,
+   "win": 23.8,
+   "exp": 0.098,
+   "pf": 1.23,
+   "dd": 10.8,
+   "tot": 4.1,
+   "t": 0.38
+  },
+  "sweep": {
+   "n": 45,
+   "win": 22.2,
+   "exp": 0.093,
+   "pf": 1.19,
+   "dd": 12.6,
+   "tot": 4.2,
+   "t": 0.35
+  },
+  "both": {
+   "n": 42,
+   "win": 23.8,
+   "exp": 0.098,
+   "pf": 1.23,
+   "dd": 10.8,
+   "tot": 4.1,
+   "t": 0.38
+  }
+ },
+ "per_combo": [
+  {
+   "sym": "XAUUSD",
+   "tf": "1d",
+   "bars": 350,
+   "secs": 14.9,
+   "base": {
+    "n": 11,
+    "win": 36.4,
+    "exp": 1.161,
+    "pf": 4.18,
+    "dd": 2.0,
+    "tot": 12.8,
+    "t": 1.33
+   },
+   "range": {
+    "n": 12,
+    "win": 33.3,
+    "exp": 0.83,
+    "pf": 3.48,
+    "dd": 2.0,
+    "tot": 10.0,
+    "t": 1.11
+   },
+   "sweep": {
+    "n": 11,
+    "win": 36.4,
+    "exp": 1.161,
+    "pf": 4.18,
+    "dd": 2.0,
+    "tot": 12.8,
+    "t": 1.33
+   },
+   "both": {
+    "n": 12,
+    "win": 33.3,
+    "exp": 0.83,
+    "pf": 3.48,
+    "dd": 2.0,
+    "tot": 10.0,
+    "t": 1.11
+   },
+   "range_blocked": 19,
+   "sweep_blocked": 0,
+   "err": null
+  },
+  {
+   "sym": "XAUUSD",
+   "tf": "4h",
+   "bars": 350,
+   "secs": 14.9,
+   "base": {
+    "n": 4,
+    "win": 25.0,
+    "exp": -0.359,
+    "pf": 0.29,
+    "dd": 2.0,
+    "tot": -1.4,
+    "t": -0.92
+   },
+   "range": {
+    "n": 3,
+    "win": 33.3,
+    "exp": -0.144,
+    "pf": 0.57,
+    "dd": 1.0,
+    "tot": -0.4,
+    "t": -0.31
+   },
+   "sweep": {
+    "n": 4,
+    "win": 25.0,
+    "exp": -0.359,
+    "pf": 0.29,
+    "dd": 2.0,
+    "tot": -1.4,
+    "t": -0.92
+   },
+   "both": {
+    "n": 3,
+    "win": 33.3,
+    "exp": -0.144,
+    "pf": 0.57,
+    "dd": 1.0,
+    "tot": -0.4,
+    "t": -0.31
+   },
+   "range_blocked": 9,
+   "sweep_blocked": 0,
+   "err": null
+  },
+  {
+   "sym": "XAUUSD",
+   "tf": "1h",
+   "bars": 350,
+   "secs": 14.8,
+   "base": {
+    "n": 0
+   },
+   "range": {
+    "n": 0
+   },
+   "sweep": {
+    "n": 0
+   },
+   "both": {
+    "n": 0
+   },
+   "range_blocked": 0,
+   "sweep_blocked": 0,
+   "err": null
+  },
+  {
+   "sym": "BTCUSD",
+   "tf": "1d",
+   "bars": 350,
+   "secs": 14.8,
+   "base": {
+    "n": 13,
+    "win": 23.1,
+    "exp": -0.008,
+    "pf": 0.98,
+    "dd": 5.1,
+    "tot": -0.1,
+    "t": -0.02
+   },
+   "range": {
+    "n": 12,
+    "win": 25.0,
+    "exp": 0.076,
+    "pf": 1.16,
+    "dd": 4.1,
+    "tot": 0.9,
+    "t": 0.18
+   },
+   "sweep": {
+    "n": 13,
+    "win": 23.1,
+    "exp": -0.008,
+    "pf": 0.98,
+    "dd": 5.1,
+    "tot": -0.1,
+    "t": -0.02
+   },
+   "both": {
+    "n": 12,
+    "win": 25.0,
+    "exp": 0.076,
+    "pf": 1.16,
+    "dd": 4.1,
+    "tot": 0.9,
+    "t": 0.18
+   },
+   "range_blocked": 40,
+   "sweep_blocked": 0,
+   "err": null
+  },
+  {
+   "sym": "BTCUSD",
+   "tf": "1h",
+   "bars": 350,
+   "secs": 15.0,
+   "base": {
+    "n": 8,
+    "win": 12.5,
+    "exp": -0.442,
+    "pf": 0.25,
+    "dd": 3.5,
+    "tot": -3.5,
+    "t": -1.56
+   },
+   "range": {
+    "n": 7,
+    "win": 14.3,
+    "exp": -0.538,
+    "pf": 0.01,
+    "dd": 3.8,
+    "tot": -3.8,
+    "t": -2.78
+   },
+   "sweep": {
+    "n": 8,
+    "win": 12.5,
+    "exp": -0.442,
+    "pf": 0.25,
+    "dd": 3.5,
+    "tot": -3.5,
+    "t": -1.56
+   },
+   "both": {
+    "n": 7,
+    "win": 14.3,
+    "exp": -0.538,
+    "pf": 0.01,
+    "dd": 3.8,
+    "tot": -3.8,
+    "t": -2.78
+   },
+   "range_blocked": 60,
+   "sweep_blocked": 6,
+   "err": null
+  },
+  {
+   "sym": "USDJPY",
+   "tf": "1d",
+   "bars": 350,
+   "secs": 14.8,
+   "base": {
+    "n": 5,
+    "win": 0.0,
+    "exp": -0.469,
+    "pf": 0.0,
+    "dd": 2.3,
+    "tot": -2.3,
+    "t": -2.07
+   },
+   "range": {
+    "n": 4,
+    "win": 0.0,
+    "exp": -0.335,
+    "pf": 0.0,
+    "dd": 1.3,
+    "tot": -1.3,
+    "t": -1.42
+   },
+   "sweep": {
+    "n": 5,
+    "win": 0.0,
+    "exp": -0.469,
+    "pf": 0.0,
+    "dd": 2.3,
+    "tot": -2.3,
+    "t": -2.07
+   },
+   "both": {
+    "n": 4,
+    "win": 0.0,
+    "exp": -0.335,
+    "pf": 0.0,
+    "dd": 1.3,
+    "tot": -1.3,
+    "t": -1.42
+   },
+   "range_blocked": 5,
+   "sweep_blocked": 0,
+   "err": null
+  },
+  {
+   "sym": "USDCHF",
+   "tf": "1d",
+   "bars": 350,
+   "secs": 14.8,
+   "base": {
+    "n": 4,
+    "win": 25.0,
+    "exp": -0.285,
+    "pf": 0.53,
+    "dd": 2.4,
+    "tot": -1.1,
+    "t": -0.53
+   },
+   "range": {
+    "n": 4,
+    "win": 25.0,
+    "exp": -0.3,
+    "pf": 0.5,
+    "dd": 2.4,
+    "tot": -1.2,
+    "t": -0.57
+   },
+   "sweep": {
+    "n": 4,
+    "win": 25.0,
+    "exp": -0.285,
+    "pf": 0.53,
+    "dd": 2.4,
+    "tot": -1.1,
+    "t": -0.53
+   },
+   "both": {
+    "n": 4,
+    "win": 25.0,
+    "exp": -0.3,
+    "pf": 0.5,
+    "dd": 2.4,
+    "tot": -1.2,
+    "t": -0.57
+   },
+   "range_blocked": 6,
+   "sweep_blocked": 0,
+   "err": null
+  }
+ ],
+ "nov2": {
+  "flagged_04h_sell_bar": true,
+  "bars": [
+   {
+    "bar": "Mon 02 Nov 00:00",
+    "close": 3906.6,
+    "range": false,
+    "lo": 3879.3,
+    "hi": 4008.6,
+    "src": "",
+    "blockShort": true
+   },
+   {
+    "bar": "Mon 02 Nov 01:00",
+    "close": 3911.4,
+    "range": false,
+    "lo": 3879.3,
+    "hi": 4002.0,
+    "src": "",
+    "blockShort": false
+   },
+   {
+    "bar": "Mon 02 Nov 02:00",
+    "close": 3917.9,
+    "range": false,
+    "lo": 3879.3,
+    "hi": 3992.9,
+    "src": "",
+    "blockShort": true
+   },
+   {
+    "bar": "Mon 02 Nov 03:00",
+    "close": 3904.1,
+    "range": false,
+    "lo": 3879.3,
+    "hi": 3980.1,
+    "src": "",
+    "blockShort": true
+   },
+   {
+    "bar": "Mon 02 Nov 04:00",
+    "close": 3911.1,
+    "range": true,
+    "lo": 3900.0,
+    "hi": 3924.0,
+    "src": "15m",
+    "blockShort": false
+   },
+   {
+    "bar": "Mon 02 Nov 05:00",
+    "close": 3910.0,
+    "range": true,
+    "lo": 3900.0,
+    "hi": 3924.0,
+    "src": "15m",
+    "blockShort": false
+   },
+   {
+    "bar": "Mon 02 Nov 06:00",
+    "close": 3922.1,
+    "range": true,
+    "lo": 3901.6,
+    "hi": 3928.1,
+    "src": "15m",
+    "blockShort": false
+   },
+   {
+    "bar": "Mon 02 Nov 07:00",
+    "close": 3915.8,
+    "range": true,
+    "lo": 3901.6,
+    "hi": 3928.1,
+    "src": "15m",
+    "blockShort": false
+   },
+   {
+    "bar": "Mon 02 Nov 08:00",
+    "close": 3912.8,
+    "range": true,
+    "lo": 3906.8,
+    "hi": 3928.1,
+    "src": "15m",
+    "blockShort": false
+   },
+   {
+    "bar": "Mon 02 Nov 09:00",
+    "close": 3906.6,
+    "range": true,
+    "lo": 3900.1,
+    "hi": 3928.1,
+    "src": "15m",
+    "blockShort": false
+   },
+   {
+    "bar": "Mon 02 Nov 10:00",
+    "close": 3906.8,
+    "range": true,
+    "lo": 3900.1,
+    "hi": 3926.6,
+    "src": "15m",
+    "blockShort": false
+   },
+   {
+    "bar": "Mon 02 Nov 11:00",
+    "close": 3907.9,
+    "range": true,
+    "lo": 3900.1,
+    "hi": 3919.3,
+    "src": "15m",
+    "blockShort": false
+   },
+   {
+    "bar": "Mon 02 Nov 12:00",
+    "close": 3910.6,
+    "range": true,
+    "lo": 3900.1,
+    "hi": 3916.4,
+    "src": "15m",
+    "blockShort": false
+   },
+   {
+    "bar": "Mon 02 Nov 13:00",
+    "close": 3910.4,
+    "range": true,
+    "lo": 3902.8,
+    "hi": 3916.4,
+    "src": "15m",
+    "blockShort": false
+   },
+   {
+    "bar": "Mon 02 Nov 14:00",
+    "close": 3951.1,
+    "range": false,
+    "lo": 3900.0,
+    "hi": 3928.1,
+    "src": "",
+    "blockShort": true
+   }
+  ],
+  "m15_short_blocks_starting": [
+   "Mon 02 Nov 02:15",
+   "Mon 02 Nov 14:15"
+  ]
+ },
+ "news": "display-only (Forex Factory week feed has no history long enough to score the edge book)"
+}

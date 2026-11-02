@@ -171,6 +171,7 @@ def main3():
         pass
     news,nstatus,raw,srcstat=pickle.load(open(RAW_PKL,"rb"))
     RATES=edge.policy_rates(os.path.join(STATE,"rates.json"))
+    CAL=edge.load_usd_events(os.path.join(STATE,"calendar.json"))
     jobs=[(k,tf) for (k,tf) in raw.keys()]
     REFIT=refit_due(jobs); t0=time.time()
     if REFIT:
@@ -234,6 +235,11 @@ def main3():
             agree=bool(dsg!=0 and fv[-1] and ftd[-1]==dsg and (fhb[-1]==dsg if hdf is not None else True) and (cdir==0 or cdir==dsg))
             flt={"carry":cdiff,"carryDir":cdir,"vol":bool(fv[-1]),"atrPct":None if apct!=apct else round(float(apct)*100),"trend":int(ftd[-1]),"htf":int(fhb[-1]) if hdf is not None else None,"agree":agree,"sigRaw":sig}
             if PRM["filter_mode"] and sig!="WAIT" and not agree: sig="WAIT"
+            # Pre-breakout protections. Display fields are always stored. Only filters that held up out of sample change the alert signal.
+            ltf_tf=edge.LTF.get(tf); ltf_df=raw.get((key,ltf_tf)) if ltf_tf else None
+            gate=edge.protect_last(df,tf,key,ltf_df,ltf_tf,CAL,int(df.t.iloc[-1])+int(HSTEP[tf]))
+            sig,why=edge.apply_protect(sig,gate)
+            flt["range"]=gate["range"]; flt["sweep"]=gate["sweep"]; flt["news"]=gate["news"]; flt["why"]=why
             # latch: a closed bar keeps the signal it got on its first scan (no flip-flop between scans of the same bar)
             lk=f"{key}|{tf}"; bt_=int(df.t.iloc[-1]); prevl=LATCH.get(lk)
             if PRM.get("latch") and prevl and prevl.get("bar_t")==bt_:
@@ -279,7 +285,8 @@ def main3():
     uj,uc=raw.get(("USDJPY","1h")),raw.get(("USDCHF","1h"))
     rates={"USDJPY":None if uj is None else round(float(uj.c.iloc[-1]),5),"USDCHF":None if uc is None else round(float(uc.c.iloc[-1]),5)}
     res={"gen":datetime.now(TZ).strftime("%a %d %b %Y, %H:%M"),"names":[[n_,c_] for n_,c_ in zip(names,catl)],"strats":STRATS,"rules":RULES,"rates":{k:(None if v is None else round(float(v),5)) for k,v in rates.items()},
-         "sym":out,"newsStatus":nstatus,"priceStatus":srcstat,"newsCount":len(news),"journal":J[-40:],"jadded":added,"live":LS,"prm":PRM}
+         "sym":out,"newsStatus":nstatus,"priceStatus":srcstat,"newsCount":len(news),"journal":J[-40:],"jadded":added,"live":LS,
+         "prm":{**PRM,"range_alerts":edge.RANGE_ALERTS,"sweep_alerts":edge.SWEEP_ALERTS,"news_alerts":edge.NEWS_ALERTS}}
     s=json.dumps(res,separators=(",",":"),default=lambda o: float(o) if isinstance(o,(np.floating,np.integer)) else str(o))
     open(SNAP3,"w").write(s); print("ok",len(s),"journal added",added,"total",len(J))
 if __name__=="__main__": main3()
