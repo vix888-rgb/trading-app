@@ -4726,7 +4726,7 @@
   "edge": false,
   "trail_stop": 1.25,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "GBPUSD-5m-1793638800000",
@@ -4951,9 +4951,9 @@
    "why": ""
   },
   "edge": false,
-  "trail_stop": 93.96649,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 93.27,
+  "tp1_hit": true,
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-5m-1793640000000",
@@ -5068,6 +5068,9 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 77356.0,
+  "tp1_hit": true,
+  "bars_open": 2
  }
 ]
