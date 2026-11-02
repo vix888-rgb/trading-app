@@ -82,7 +82,7 @@
   "status": "open",
   "fill_bar_t": 1793574000000,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "XAUUSD-1h-1793390400000",
@@ -169,7 +169,7 @@
   "status": "open",
   "fill_bar_t": 1793393999000,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "XAUUSD-1d-1793332800000",
@@ -526,7 +526,7 @@
   "score": -40,
   "entry": 0.920765,
   "entry_type": "limit (order block retest)",
-  "filled": false,
+  "filled": true,
   "stop": 0.921714,
   "tp": [
    0.919816,
@@ -597,7 +597,10 @@
   "strategies": [
    "Turtle 20-bar breakout"
   ],
-  "status": "open"
+  "status": "open",
+  "fill_bar_t": 1793580300000,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "EURCHF-4h-1793390400000",
@@ -1618,7 +1621,7 @@
   "strategies": [],
   "status": "open",
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 13
  },
  {
   "id": "GBPUSD-15m-1793394900000",
@@ -1704,7 +1707,7 @@
   ],
   "status": "open",
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-4h-1793390400000",
