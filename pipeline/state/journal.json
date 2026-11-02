@@ -82,7 +82,7 @@
   "status": "open",
   "fill_bar_t": 1793574000000,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-1h-1793390400000",
@@ -169,7 +169,7 @@
   "status": "open",
   "fill_bar_t": 1793393999000,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "XAUUSD-1d-1793332800000",
@@ -1534,7 +1534,7 @@
   "strategies": [],
   "status": "open",
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "GBPUSD-5m-1793395500000",
@@ -2489,5 +2489,103 @@
   "R": -0.0,
   "exit": "breakeven",
   "closed_at": "2026-11-02T00:34+01:00"
+ },
+ {
+  "id": "EURUSD-15m-1793394900000",
+  "logged": "2026-11-02T01:05+01:00",
+  "bar_t": 1793394900000,
+  "bar_time": "Fri 30 Oct 22:15",
+  "sym": "EURUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -34,
+  "entry": 1.117069,
+  "entry_type": "limit (order block retest)",
+  "filled": false,
+  "stop": 1.117717,
+  "tp": [
+   1.116421,
+   1.115773,
+   1.115125
+  ],
+  "inv": 1.117319,
+  "votes": [
+   0,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.66,
+   0.0,
+   0.83,
+   1.02,
+   1.02,
+   0.0,
+   1.33,
+   0.36,
+   0.51,
+   0.15,
+   0.0,
+   0.0,
+   0.0,
+   1.43,
+   0.0,
+   0.5,
+   0.67,
+   0.31,
+   1.86,
+   0.0,
+   0.0,
+   0.0,
+   0.46,
+   0.05,
+   0.17,
+   0.41,
+   1.91,
+   0.49
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.000540015996222455,
+  "filters": {
+   "carry": -1.38,
+   "carryDir": -1,
+   "vol": true,
+   "atrPct": 44,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL"
+  },
+  "edge": true
  }
 ]
