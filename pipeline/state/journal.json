@@ -4962,9 +4962,9 @@
    "why": ""
   },
   "edge": false,
-  "trail_stop": 92.56960835026075,
+  "trail_stop": 92.10960835026076,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "BTCUSD-5m-1793640000000",
@@ -5319,7 +5319,7 @@
   "edge": false,
   "trail_stop": 1.340644,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "GBPUSD-5m-1793646600000",
@@ -5332,7 +5332,7 @@
   "score": 28,
   "entry": 1.340932,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 1.340349,
   "tp": [
    1.341515,
@@ -5414,6 +5414,124 @@
    "htf": 1,
    "agree": true,
    "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false,
+  "fill_bar_t": 1793648400000,
+  "trail_stop": 1.340349,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "BTCUSD-15m-1793647800000",
+  "logged": "2026-11-02T20:50+01:00",
+  "bar_t": 1793647800000,
+  "bar_time": "Mon 02 Nov 20:30",
+  "sym": "BTCUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -27,
+  "entry": 76965.755,
+  "entry_type": "limit (order block retest)",
+  "filled": false,
+  "stop": 77464.636,
+  "tp": [
+   76466.874,
+   75967.993,
+   75469.112
+  ],
+  "inv": 78254.17,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.98,
+   0.97,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.0,
+   0.17,
+   0.0,
+   0.42,
+   0.28,
+   0.0,
+   0.16,
+   0.0,
+   0.34,
+   2.0,
+   0.0,
+   0.39,
+   0.0,
+   0.74,
+   0.0,
+   0.0,
+   0.0,
+   0.21
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 249.44047773087308,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 95,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
    "range": {
     "on": false,
     "alert": false
