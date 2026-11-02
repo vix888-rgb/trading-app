@@ -268,6 +268,19 @@ def shift_lv(lv, offset, places):
         lv[key] = add_px(value, offset, places)
 
 
+def shift_flt(flt, offset, places):
+    """Breakout and sweep levels sit on the same scale as the plan, so a Vantage offset moves them too."""
+    if not isinstance(flt, dict):
+        return
+    for key in ("range", "sweep"):
+        box = flt.get(key)
+        if not isinstance(box, dict):
+            continue
+        for px in ("lo", "hi"):
+            if px in box:
+                box[px] = add_px(box[px], offset, places)
+
+
 def shift_ch(ch, offset, places):
     if not isinstance(ch, list) or len(ch) < 2:
         return
@@ -292,6 +305,7 @@ def shift_symbol(doc, sym, offset):
         shift_pl(row.get("pl"), offset, places)
         shift_lv(row.get("lv"), offset, places)
         shift_ch(row.get("ch"), offset, places)
+        shift_flt(row.get("flt"), offset, places)
 
 
 def feed_name(meta, sym):

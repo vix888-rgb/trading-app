@@ -27,7 +27,7 @@ for s in d["sym"]:
         if o and o["equal"].get("n"): agg_sym.setdefault(s["key"],{"a":[],"e":[]})["e"].append((o["equal"]["n"],o["equal"]["hit"],o["equal"]["avgR"]))
         bull=sum(1 for a in t["ag"] if a[0]>0); bear=sum(1 for a in t["ag"] if a[0]<0)
         act=[(i if x[0]>0 else -i-1) for i,x in enumerate(t["st"]) if x[0]!=0]
-        scan.append([s["key"],tf,t["score"],t["last"],t["chg"],bull,bear,t["reg"][0],act,t["lt"],t["p"],t["sig"],(t.get("flt") or {}).get("agree")])
+        scan.append([s["key"],tf,t["score"],t["last"],t["chg"],bull,bear,t["reg"][0],act,t["lt"],t["p"],t["sig"],(t.get("flt") or {}).get("agree"),(t.get("flt") or {}).get("why") or ""])
         if s["key"] in PRI and tf in DTF:
             p=t["p"]; c=t["c"]; allv=[x for k in ("o","h","l","c","e20","e50") for x in c[k][-NB:] if x is not None]; base=min(allv); top=max(allv); sc=999/(top-base)
             enc=lambda arr:[round((x-base)*sc) if x is not None else None for x in arr[-NB:]]
@@ -46,7 +46,7 @@ out={"gen":d["gen"],"names":d["names"],"strats":d["strats"],"rules":d["rules"],"
      "pa":[[n]+comb(v) for n,v in agg_ag.items()],"ps":[[n]+comb(v) for n,v in agg_st.items()],"py":[[k,comb(v["a"]),comb(v["e"])] for k,v in agg_sym.items()],
      "j":J,"jl":[L["total"],L["open"],L["all"].get("n",0),L["all"].get("hit"),L["all"].get("avgR")],
      "prm":{k:d["prm"][k] for k in ("horizon_bars","tp_atr","sl_atr","samples","shrink_k","weight_scale","weight_max","min_samples","fit_frac","live_min","live_blend")},
-     "prm2":{k:d["prm"].get(k) for k in ("filter_mode","exit_mode","trail_atr","trail_max_bars","tested_edge_tfs","carry_filter","tested_edge")},"wf":WF,"wf2":WF2}
+     "prm2":{k:d["prm"].get(k) for k in ("filter_mode","exit_mode","trail_atr","trail_max_bars","tested_edge_tfs","carry_filter","tested_edge","range_alerts","sweep_alerts","news_alerts")},"wf":WF,"wf2":WF2}
 s=json.dumps(out,separators=(",",":"),ensure_ascii=False)
 _parent=os.path.dirname(DATA_JSON)
 if _parent: os.makedirs(_parent,exist_ok=True)
