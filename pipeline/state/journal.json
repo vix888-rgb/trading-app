@@ -172,7 +172,7 @@
   "status": "open",
   "fill_bar_t": 1793393999000,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "XAUUSD-1d-1793332800000",
@@ -602,8 +602,8 @@
   ],
   "status": "open",
   "fill_bar_t": 1793580300000,
-  "tp1_hit": false,
-  "bars_open": 30
+  "tp1_hit": true,
+  "bars_open": 35
  },
  {
   "id": "EURCHF-4h-1793390400000",
@@ -3102,9 +3102,9 @@
    "sigRaw": "BUY"
   },
   "edge": false,
-  "trail_stop": 1.33928,
+  "trail_stop": 1.3397519196707446,
   "tp1_hit": true,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-5m-1793602800000",
@@ -3189,7 +3189,7 @@
    "Turtle 20-bar breakout",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0001859185817573296,
@@ -3205,9 +3205,12 @@
   },
   "edge": false,
   "fill_bar_t": 1793603100000,
-  "trail_stop": 1.3410698899735078,
+  "trail_stop": 1.344029260586606,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 16,
+  "R": 9.94,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-02T10:37+01:00"
  },
  {
   "id": "SOLUSD-1h-1793602800000",
@@ -3220,7 +3223,7 @@
   "score": -52,
   "entry": 94.64,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 96.05044,
   "tp": [
    93.22956,
@@ -3300,6 +3303,108 @@
    "carryDir": 0,
    "vol": true,
    "atrPct": 44,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL"
+  },
+  "edge": false,
+  "fill_bar_t": 1793606400000,
+  "trail_stop": 96.05044,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "SOLUSD-15m-1793610900000",
+  "logged": "2026-11-02T10:37+01:00",
+  "bar_t": 1793610900000,
+  "bar_time": "Mon 02 Nov 10:15",
+  "sym": "SOLUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -56,
+  "entry": 94.95,
+  "entry_type": "limit (order block retest)",
+  "filled": false,
+  "stop": 95.35363,
+  "tp": [
+   94.54637,
+   94.14273,
+   93.7391
+  ],
+  "inv": 94.98,
+  "votes": [
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.61,
+   0.21,
+   0.1,
+   1.34,
+   0.39,
+   0.0,
+   0.33,
+   0.14,
+   0.66,
+   0.0,
+   0.0,
+   1.51,
+   0.0,
+   0.7,
+   0.0,
+   0.0,
+   0.16,
+   0.97,
+   0.2,
+   0.17,
+   0.25,
+   0.0,
+   0.0,
+   0.91,
+   0.54,
+   0.51,
+   0.0,
+   0.21
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.33636087727524644,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 76,
    "trend": -1,
    "htf": -1,
    "agree": true,
