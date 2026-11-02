@@ -103,3 +103,36 @@ def tom_signal(df,tf):
     dt=pd.to_datetime(df.t,unit="ms",utc=True); wk=(dt.dt.weekday>=5).any()
     nxt=dt+(pd.Timedelta(days=1) if wk else pd.offsets.BDay(1))
     return (nxt.dt.month!=dt.dt.month).values
+# ---------- Rebuild (Nov 2026): trader-model research, see research/TRADER_MODELS.md ----------
+SWEEP_NAME="ICT/TJR sweep → MSS → FVG retrace"
+SWEEP_RULE=("Price runs the 20-bar low (high) and closes back inside, then within 10 bars a candle closes beyond the last swing high (low) = market-structure shift, "
+            "leaving a fair value gap in the move → buy (sell) limit at the gap edge, stop beyond the swept extreme (0.5–3×ATR). Out-of-sample on 1h/4h/1D, 6 symbols: "
+            "+0.13R/trade after costs (PF 1.31, 141 trades, not significant); display only, no alerts")
+def _fractal_last(h,l,w=2):
+    n=len(h); lh=np.full(n,np.nan); ll=np.full(n,np.nan)
+    for i in range(w,n-w):
+        if h[i]==h[i-w:i+w+1].max() and h[i]>h[i-w:i].max(): lh[i+w]=h[i]
+        if l[i]==l[i-w:i+w+1].min() and l[i]<l[i-w:i].min(): ll[i+w]=l[i]
+    return pd.Series(lh).ffill().values,pd.Series(ll).ffill().values
+def sweep_mss_fvg_signals(df,lb=20):
+    """Causal: signal is flagged on the MSS bar k (known at its close). Entry is a limit at the FVG edge (plan level), not market."""
+    o,h,l,c=df.o.values,df.h.values,df.l.values,df.c.values; n=len(df); L=np.zeros(n,bool); S=np.zeros(n,bool)
+    if n<lb+10: return L,S
+    A=_atr(df).values; lastH,lastL=_fractal_last(h,l)
+    hh=pd.Series(h).rolling(lb).max().shift(1).values; ll_=pd.Series(l).rolling(lb).min().shift(1).values
+    i=lb+5
+    while i<n:
+        d=1 if (l[i]<ll_[i] and c[i]>ll_[i]) else -1 if (h[i]>hh[i] and c[i]<hh[i]) else 0
+        if d==0: i+=1; continue
+        ext=l[i] if d>0 else h[i]; ref=lastH[i] if d>0 else lastL[i]; hit=None
+        for k in range(i+1,min(n,i+10)):
+            ext=min(ext,l[k]) if d>0 else max(ext,h[k])
+            if ref==ref and ((d>0 and c[k]>ref) or (d<0 and c[k]<ref)):
+                gap=any((l[q]>h[q-2]) if d>0 else (h[q]<l[q-2]) for q in range(i+2,k+1))
+                if gap:
+                    risk=abs(c[k]-ext)
+                    if 0.5*A[k]<=risk<=3.5*A[k]: hit=k
+                break
+        if hit is None: i+=1; continue
+        (L if d>0 else S)[hit]=True; i=hit+1
+    return L,S

@@ -13,6 +13,10 @@ ALERT_TFS = {"1h", "4h", "1d"}
 TF_LABEL = {"1h": "1h", "4h": "4h", "1d": "1D"}
 NTFY_URL = os.environ.get("NTFY_URL", "https://ntfy.sh/octa-signals-a6368a35")
 CLICK = "https://vix888-rgb.github.io/trading-app/"
+# Rebuild (Nov 2026): phone alerts only for combos with a tested edge (set ALERT_EDGE_ONLY=0 to alert every 1h/4h/1D combo),
+# and never twice for the same symbol / timeframe / bar / side (state/alerts_sent.json), even if a signal flips WAIT and back.
+EDGE_ONLY = os.environ.get("ALERT_EDGE_ONLY", "1") != "0"
+SENT_DEFAULT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state", "alerts_sent.json")
 BIN = {"BTCUSD", "ETHUSD", "SOLUSD", "XRPUSD"}
 
 
@@ -39,13 +43,33 @@ def should_commit(changed, prev):
     return age >= 3600
 
 
-def new_signals(prev, new):
+def alert_key(doc, sym, tf, sig):
+    det = (doc.get("det") or {}).get(f"{sym}|{tf}") or {}
+    return f"{sym}|{tf}|{det.get('lt')}|{sig}"
+
+
+def load_sent(path):
+    try:
+        return json.load(open(path))
+    except Exception:
+        return []
+
+
+def new_signals(prev, new, sent=None, edge_only=EDGE_ONLY):
     old, cur = gated_map(prev), gated_map(new)
+    sent = set(sent or [])
     found = []
     for (sym, tf), sig in sorted(cur.items()):
         if tf not in ALERT_TFS or sig not in ("BUY", "SELL"):
             continue
         if old.get((sym, tf)) == sig:
+            continue
+        det = (new.get("det") or {}).get(f"{sym}|{tf}") or {}
+        if edge_only and not det.get("edge"):
+            print(f"skip {sym} {tf} {sig}: no tested edge (ALERT_EDGE_ONLY=1)")
+            continue
+        if alert_key(new, sym, tf, sig) in sent:
+            print(f"skip {sym} {tf} {sig}: already alerted for this bar")
             continue
         found.append((sym, tf, sig, old.get((sym, tf))))
     return found
@@ -180,12 +204,14 @@ def main():
     ap.add_argument("--snap")
     ap.add_argument("--send", action="store_true")
     ap.add_argument("--url", default=NTFY_URL)
+    ap.add_argument("--sent", default=SENT_DEFAULT)
     args = ap.parse_args()
     prev = json.load(open(args.prev))
     new = json.load(open(args.new))
     changed_map = gated_map(prev) != gated_map(new)
     commit = should_commit(changed_map, prev)
-    alerts = new_signals(prev, new)
+    sent = load_sent(args.sent)
+    alerts = new_signals(prev, new, sent)
     print(f"signals_changed={changed_map} commit={commit} new_buy_sell={len(alerts)} gen={new.get('gen')}")
     report_sources(args.snap)
     failed = 0
@@ -197,9 +223,15 @@ def main():
             try:
                 send(title, body, args.url)
                 print(f"sent {title}")
+                sent.append(alert_key(new, sym, tf, sig))
             except Exception as exc:
                 failed += 1
                 print(f"SEND FAILED {title}: {exc}", file=sys.stderr)
+    if args.send:
+        try:
+            json.dump(sent[-500:], open(args.sent, "w"), indent=0)
+        except Exception as exc:
+            print(f"could not save {args.sent}: {exc}", file=sys.stderr)
     write_output(commit, changed_map, len(alerts), failed > 0)
     if failed:
         sys.exit(1)

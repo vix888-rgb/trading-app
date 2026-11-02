@@ -12,11 +12,29 @@ PARAMS_DEFAULT={"version":1,"horizon_bars":12,"tp_atr":1.5,"sl_atr":1.0,"samples
   "journal_tfs":["5m","15m","1h","4h","1d"],"journal_expiry_bars":100,
   "filter_mode":True,"exit_mode":"chandelier","trail_atr":4.0,"trail_max_bars":48,"tested_edge_tfs":["1d"],
   "carry_filter":True,"tested_edge":["XAUUSD|1d","XAUUSD|4h","XAUUSD|1h","BTCUSD|1d","BTCUSD|1h","USDJPY|1d","USDCHF|1d","EURUSD|15m"],"params_round":2}  # Nov-2026 walk-forward additions
+# Rebuild (Nov 2026, round 3): deterministic scans. News no longer votes (headlines changed the score between scans of the same closed bar),
+# limit entries that never fill expire after 12 bars (they blocked new journal entries for up to 100 bars), signals are latched per closed bar.
+PARAMS_DEFAULT.update({"news_weight":0.0,"pending_expiry_bars":12,"latch":True,"refit_max_age_days":8,"params_round":3})
 WPATH=os.path.join(STATE,"weights.json"); JPATH=os.path.join(STATE,"journal.json")
 W=json.load(open(WPATH)) if os.path.exists(WPATH) else {}
 PRM={**PARAMS_DEFAULT,**W.get("params",{})}
 if W.get("params",{}).get("params_round",1)<2:  # round-2 walk-forward update overrides stored values for these keys once
     for _k in ("trail_atr","carry_filter","tested_edge","params_round"): PRM[_k]=PARAMS_DEFAULT[_k]
+if W.get("params",{}).get("params_round",1)<3:  # round-3 rebuild overrides once
+    for _k in ("news_weight","pending_expiry_bars","latch","refit_max_age_days","params_round"): PRM[_k]=PARAMS_DEFAULT[_k]
+LPATH=os.path.join(STATE,"latch.json")
+def refit_due(raw_keys):
+    """Agent weights are refit only by the weekly tune-up (TRADING_REFIT=1), when a combo has no stored weights, or when the last refit is too old.
+    Between refits every 10-minute scan reuses the stored weights, so the same closed bar always gets the same score."""
+    if os.environ.get("TRADING_REFIT")=="1": return True
+    if os.environ.get("TRADING_REFIT")=="0": return False
+    bc=W.get("by_combo",{})
+    if any(f"{k}|{tf}" not in bc for k,tf in raw_keys): return True
+    ra=W.get("refit_at")
+    if not ra: return True
+    try: age=(datetime.now(TZ)-datetime.fromisoformat(ra)).total_seconds()/86400
+    except Exception: return True
+    return age>PRM["refit_max_age_days"]
 HSTEP={"1m":6e4,"5m":3e5,"15m":9e5,"1h":3.6e6,"4h":1.44e7,"1d":8.64e7}
 NEWS_IDX=15
 
@@ -89,7 +107,7 @@ def run_journal(raw,curr,names,stratnames):
                 if (d>0 and b.l<=e["stop"]) or (d<0 and b.h>=e["stop"]): fi=-1; break  # invalidated before fill
                 if (d>0 and b.l<=e["entry"]) or (d<0 and b.h>=e["entry"]): fi=k_; break
             if fi is None:
-                if len(after)>=PRM["journal_expiry_bars"]: e.update({"status":"cancelled","exit":"limit not filled"})
+                if len(after)>=PRM.get("pending_expiry_bars",PRM["journal_expiry_bars"]): e.update({"status":"cancelled","exit":"limit not filled"})
                 continue
             if fi==-1: e.update({"status":"cancelled","exit":"stop hit before fill"}); continue
             e["filled"]=True; e["fill_bar_t"]=int(after.t.iloc[fi]); after=after.iloc[fi:]
@@ -154,9 +172,12 @@ def main3():
     news,nstatus,raw,srcstat=pickle.load(open(RAW_PKL,"rb"))
     RATES=edge.policy_rates(os.path.join(STATE,"rates.json"))
     jobs=[(k,tf) for (k,tf) in raw.keys()]
-    t0=time.time()
-    with Pool(8) as P: R=P.map(adapt_job,jobs)
-    print("adapt secs",round(time.time()-t0))
+    REFIT=refit_due(jobs); t0=time.time()
+    if REFIT:
+        with Pool(8) as P: R=P.map(adapt_job,jobs)
+    else: R=[]
+    print("refit" if REFIT else "weights frozen (reusing state/weights.json)","adapt secs",round(time.time()-t0))
+    LATCH=json.load(open(LPATH)) if (PRM.get("latch") and os.path.exists(LPATH)) else {}; LATCH_OUT={}; BC=W.get("by_combo",{})
     J0=json.load(open(JPATH)) if os.path.exists(JPATH) else []
     out=[]; names=None; curr={}; WOUT={}; oos={}
     HTF={"1m":"15m","5m":"1h","15m":"4h","1h":"4h","4h":"1d","1d":None}
@@ -180,10 +201,11 @@ def main3():
             if names is None: names=[g["agent"] for g in allag]; catl=[cats[x] for x in names]
             rg,rk,adxv,er=regime(df)
             rec=recs.get((key,tf)) or []
-            st_all=fit(rec,len(names))
+            frozen=(not REFIT) and f"{key}|{tf}" in BC and len(BC[f"{key}|{tf}"].get("weights",{}))==len(names)
+            st_all=[BC[f"{key}|{tf}"]["stats"].get(nm_,{"n":0}) for nm_ in names] if frozen else fit(rec,len(names))
             # walk-forward OOS: fit on first part, evaluate consensus on rest
-            cut=int(len(rec)*PRM["fit_frac"]); oo=None
-            if len(rec)>=40:
+            cut=int(len(rec)*PRM["fit_frac"]); oo=BC[f"{key}|{tf}"].get("oos") if frozen else None
+            if len(rec)>=40 and not frozen:
                 wfit=[weight_from(s) for s in fit(rec[:cut],len(names))]; wfit[NEWS_IDX]=0
                 eq=[1.0]*len(names); eq[NEWS_IDX]=0
                 ra=[];re_=[]
@@ -195,7 +217,8 @@ def main3():
                 oo={"adaptive":stats(ra),"equal":stats(re_),"test_samples":len(rec)-cut}
             # live blend
             wts=[]; ls=live_stats(J0,names)["agent"]
-            for k,s in enumerate(st_all):
+            if frozen: wts=[float(BC[f"{key}|{tf}"]["weights"][nm_]) for nm_ in names]; wts[NEWS_IDX]=PRM["news_weight"]
+            for k,s in (enumerate(st_all) if not frozen else []):
                 w_=weight_from(s)
                 if k==NEWS_IDX: w_=PRM["news_weight"]
                 l_=ls.get(names[k])
@@ -211,13 +234,18 @@ def main3():
             agree=bool(dsg!=0 and fv[-1] and ftd[-1]==dsg and (fhb[-1]==dsg if hdf is not None else True) and (cdir==0 or cdir==dsg))
             flt={"carry":cdiff,"carryDir":cdir,"vol":bool(fv[-1]),"atrPct":None if apct!=apct else round(float(apct)*100),"trend":int(ftd[-1]),"htf":int(fhb[-1]) if hdf is not None else None,"agree":agree,"sigRaw":sig}
             if PRM["filter_mode"] and sig!="WAIT" and not agree: sig="WAIT"
-            if oo is not None:  # same OOS samples, adaptive consensus but only when the quality filters agree
+            # latch: a closed bar keeps the signal it got on its first scan (no flip-flop between scans of the same bar)
+            lk=f"{key}|{tf}"; bt_=int(df.t.iloc[-1]); prevl=LATCH.get(lk)
+            if PRM.get("latch") and prevl and prevl.get("bar_t")==bt_:
+                sig,score,flt=prevl["sig"],prevl["score"],prevl.get("flt",flt); flt=dict(flt or {}); flt["latched"]=True
+            LATCH_OUT[lk]={"bar_t":bt_,"sig":sig,"score":score,"flt":{k_:v_ for k_,v_ in flt.items() if k_!="latched"}}
+            if oo is not None and not frozen:  # same OOS samples, adaptive consensus but only when the quality filters agree
                 rf=[]
                 for r in rec[cut:]:
                     s_=consensus(r[1],r[2],r[3],wfit,catl,names); dd_=1 if s_>=PRM["buy_th"] else -1 if s_<=PRM["sell_th"] else 0; i_=r[0]
                     if dd_ and fv[i_] and ftd[i_]==dd_ and (hdf is None or fhb[i_]==dd_): rf.append(r[4] if dd_>0 else r[5])
                 oo["filtered"]=stats(rf)
-            WOUT[f"{key}|{tf}"]={"weights":dict(zip(names,wts)),"stats":dict(zip(names,st_all)),"oos":oo,"samples":len(rec)}
+            WOUT[f"{key}|{tf}"]=BC[f"{key}|{tf}"] if frozen else {"weights":dict(zip(names,wts)),"stats":dict(zip(names,st_all)),"oos":oo,"samples":len(rec)}
             L,S=strat_signals(df,tf,raw.get((key,HTF[tf])) if HTF[tf] else None)
             st=[]; act=[]
             for k in range(len(STRATS)):
@@ -245,7 +273,9 @@ def main3():
     LS=live_stats(J,names)
     json.dump({"updated":datetime.now(TZ).isoformat(timespec="minutes"),"params":PRM,"agents":names,"categories":dict(zip(names,catl)),
                "note":"Per symbol|timeframe agent weights from walk-forward barrier backtest (TP tp_atr×ATR vs SL sl_atr×ATR within horizon_bars), blended with live journal results once live_min closed signals exist. Weekly review may edit 'params' and 'overrides' (agent name -> fixed weight).",
-               "overrides":W.get("overrides",{}),"by_combo":WOUT,"live":LS,"rates":RATES},open(WPATH,"w"),indent=1)
+               "overrides":W.get("overrides",{}),"by_combo":WOUT,"live":LS,"rates":RATES,
+               "refit_at":datetime.now(TZ).isoformat(timespec="minutes") if REFIT else W.get("refit_at")},open(WPATH,"w"),indent=1)
+    if PRM.get("latch"): json.dump(LATCH_OUT,open(LPATH,"w"),separators=(",",":"))
     uj,uc=raw.get(("USDJPY","1h")),raw.get(("USDCHF","1h"))
     rates={"USDJPY":None if uj is None else round(float(uj.c.iloc[-1]),5),"USDCHF":None if uc is None else round(float(uc.c.iloc[-1]),5)}
     res={"gen":datetime.now(TZ).strftime("%a %d %b %Y, %H:%M"),"names":[[n_,c_] for n_,c_ in zip(names,catl)],"strats":STRATS,"rules":RULES,"rates":{k:(None if v is None else round(float(v),5)) for k,v in rates.items()},

@@ -39,6 +39,9 @@ def yahoo(sym, tf):
     if tf == "4h":
         idx = pd.to_datetime(df.t, unit="ms", utc=True); df = df.set_index(idx)
         df = df.resample("4h").agg({"t":"first","o":"first","h":"max","l":"min","c":"last","v":"sum"}).dropna()
+        # Rebuild Nov 2026: drop the 4h bucket that is still forming (its 4h window has not ended yet).
+        # Before this, a 4h "bar" made of 1-3 hourly bars was scored and journaled, so 4h signals repainted.
+        df = df[(df.index.as_unit("ms").asi8 + 4*3600*1000) <= time.time()*1000]
         df = df.reset_index(drop=True)
     df = df.reset_index(drop=True)
     return df.tail(1000).reset_index(drop=True)

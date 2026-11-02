@@ -1,0 +1,119 @@
+=== LONG HISTORY (Binance 5m 2023-01..2026-09; gold=PAXG proxy, EURUSD=EURUSDT weak proxy), train | TEST (unseen 2nd half)
+
+PB Blake (bias+15m FVG key+5m IFVG, 9:30-11:00, DOL 1-3R)
+   ALL3  train n=  85 win= 52.9 exp=  0.027 pf=1.06 dd=7.1 t=0.26 | TEST n= 116 win= 41.4 exp= -0.149 pf=0.73 dd=22.0 t=-1.56
+   BTCUSD train n=  41 win= 58.5 exp=  0.112 pf=1.28 dd=3.9 t=0.74 | TEST n=  55 win= 41.8 exp=  -0.23 pf=0.63 dd=14.9 t=-1.68
+   XAUUSD train n=   5 win= 40.0 exp= -0.218 pf=0.53 dd=1.4 t=-0.56 | TEST n=  43 win= 41.9 exp= -0.061 pf=0.86 dd=6.2 t=-0.41
+   EURUSD train n=  39 win= 48.7 exp=  -0.03 pf=0.94 dd=6.4 t=-0.18 | TEST n=  18 win= 38.9 exp= -0.108 pf=0.81 dd=7.5 t=-0.38
+
+PB Blake fixed 2R
+   ALL3  train n=  84 win= 40.5 exp=  0.146 pf=1.32 dd=7.3 t=1.08 | TEST n= 116 win= 29.3 exp=  -0.18 pf=0.68 dd=23.5 t=-1.78
+   BTCUSD train n=  41 win= 46.3 exp=   0.34 pf=1.81 dd=3.3 t=1.65 | TEST n=  55 win= 21.8 exp= -0.305 pf=0.52 dd=16.8 t=-2.06
+   XAUUSD train n=   5 win= 20.0 exp= -0.418 pf=0.12 dd=2.4 t=-1.51 | TEST n=  43 win= 41.9 exp=  0.021 pf=1.05 dd=4.8 t=0.13
+   EURUSD train n=  38 win= 36.8 exp=  0.012 pf=1.02 dd=4.9 t=0.06 | TEST n=  18 win= 22.2 exp= -0.281 pf=0.53 dd=8.5 t=-1.14
+
+PB Blake + 5m key levels (premarket FVGs)
+   ALL3  train n= 158 win= 47.5 exp= -0.073 pf=0.85 dd=15.0 t=-0.97 | TEST n= 198 win= 42.9 exp= -0.115 pf=0.79 dd=29.2 t=-1.57
+   BTCUSD train n=  67 win= 53.7 exp= -0.012 pf=0.98 dd=9.3 t=-0.1 | TEST n=  89 win= 39.3 exp= -0.268 pf=0.57 dd=25.0 t=-2.57
+   XAUUSD train n=   9 win= 33.3 exp= -0.155 pf=0.61 dd=2.2 t=-0.58 | TEST n=  79 win= 46.8 exp=  0.047 pf=1.11 dd=5.7 t=0.41
+   EURUSD train n=  82 win= 43.9 exp= -0.114 pf=0.77 dd=13.4 t=-1.09 | TEST n=  30 win= 43.3 exp= -0.086 pf=0.85 dd=9.1 t=-0.42
+
+ICT Silver Bullet 10-11 NY (stop beyond FVG, DOL)
+   ALL3  train n=  28 win=  7.1 exp= -0.395 pf=0.64 dd=30.3 t=-0.54 | TEST n=  60 win= 25.0 exp=  0.598 pf=1.7 dd=20.4 t=1.2
+   BTCUSD train n=   4 win=  0.0 exp= -1.194 pf=0.0 dd=4.8 t=-42.21 | TEST n=   3 win= 33.3 exp= -0.266 pf=0.66 dd=2.4 t=-0.29
+   XAUUSD train n=  13 win=  0.0 exp= -1.166 pf=0.0 dd=15.2 t=-79.68 | TEST n=  50 win= 24.0 exp=  0.716 pf=1.83 dd=20.4 t=1.22
+   EURUSD train n=  11 win= 18.2 exp=  0.805 pf=1.85 dd=10.4 t=0.44 | TEST n=   7 win= 28.6 exp=  0.133 pf=1.16 dd=3.5 t=0.15
+
+ICT Silver Bullet 10-11 NY (stop at sweep, DOL)
+   ALL3  train n= 168 win= 44.6 exp= -0.057 pf=0.88 dd=19.2 t=-0.7 | TEST n= 234 win= 42.3 exp= -0.083 pf=0.83 dd=33.2 t=-0.92
+   BTCUSD train n=  63 win= 49.2 exp= -0.022 pf=0.95 dd=7.8 t=-0.17 | TEST n=  87 win= 37.9 exp= -0.292 pf=0.52 dd=27.9 t=-2.78
+   XAUUSD train n=  55 win= 47.3 exp= -0.091 pf=0.8 dd=9.2 t=-0.68 | TEST n=  91 win= 44.0 exp=  0.056 pf=1.13 dd=16.1 t=0.3
+   EURUSD train n=  50 win= 36.0 exp= -0.064 pf=0.88 dd=8.4 t=-0.39 | TEST n=  56 win= 46.4 exp=  0.014 pf=1.03 dd=7.3 t=0.09
+
+TJR sweep->BOS->FVG 9:30-10:30 (DOL)
+   ALL3  train n=  17 win= 47.1 exp=  -0.05 pf=0.89 dd=2.6 t=-0.21 | TEST n=  15 win= 33.3 exp= -0.388 pf=0.4 dd=8.3 t=-1.6
+   BTCUSD train n=   7 win= 57.1 exp=  0.097 pf=1.21 dd=2.4 t=0.23 | TEST n=   9 win= 33.3 exp=  -0.58 pf=0.2 dd=5.4 t=-2.14
+   XAUUSD train n=   4 win= 50.0 exp= -0.018 pf=0.97 dd=2.1 t=-0.03 | TEST n=   4 win=  0.0 exp= -0.767 pf=0.0 dd=3.1 t=-3.02
+   EURUSD train n=   6 win= 33.3 exp= -0.243 pf=0.42 dd=2.4 t=-0.79 | TEST n=   2 win=100.0 exp=  1.233 pf=None dd=0.0 t=None
+
+TJR sweep->BOS->EQ 50% (DOL)
+   ALL3  train n=   8 win= 62.5 exp=  0.258 pf=1.64 dd=2.2 t=0.65 | TEST n=  10 win= 30.0 exp= -0.374 pf=0.51 dd=4.6 t=-1.01
+   BTCUSD train n=   5 win= 80.0 exp=  0.553 pf=3.56 dd=1.1 t=1.34 | TEST n=   7 win= 42.9 exp= -0.094 pf=0.85 dd=2.4 t=-0.19
+   XAUUSD train n=   3 win= 33.3 exp= -0.233 pf=0.68 dd=2.2 t=-0.27 | TEST n=   3 win=  0.0 exp= -1.027 pf=0.0 dd=3.1 t=-260.74
+   EURUSD train n=0 | TEST n=0
+
+Fabio IVB 30-min ORB 1R (both sides)
+   ALL3  train n=1412 win= 49.8 exp= -0.046 pf=0.89 dd=99.9 t=-1.96 | TEST n=1427 win= 50.3 exp= -0.019 pf=0.95 dd=35.7 t=-0.86
+   BTCUSD train n= 472 win= 55.1 exp=  0.047 pf=1.12 dd=16.1 t=1.16 | TEST n= 471 win= 49.7 exp= -0.041 pf=0.9 dd=26.5 t=-1.07
+   XAUUSD train n= 468 win= 45.5 exp= -0.111 pf=0.75 dd=64.1 t=-2.82 | TEST n= 473 win= 49.7 exp= -0.003 pf=0.99 dd=12.6 t=-0.07
+   EURUSD train n= 472 win= 48.7 exp= -0.073 pf=0.84 dd=37.4 t=-1.79 | TEST n= 483 win= 51.6 exp= -0.014 pf=0.97 dd=26.0 t=-0.34
+
+Fabio IVB + VWAP bias
+   ALL3  train n=1412 win= 49.9 exp= -0.044 pf=0.9 dd=97.9 t=-1.9 | TEST n=1427 win= 50.3 exp= -0.019 pf=0.95 dd=35.7 t=-0.86
+   BTCUSD train n= 472 win= 55.1 exp=  0.047 pf=1.12 dd=16.1 t=1.16 | TEST n= 471 win= 49.7 exp= -0.041 pf=0.9 dd=26.5 t=-1.07
+   XAUUSD train n= 468 win= 45.7 exp= -0.107 pf=0.76 dd=62.1 t=-2.71 | TEST n= 473 win= 49.7 exp= -0.003 pf=0.99 dd=12.6 t=-0.07
+   EURUSD train n= 472 win= 48.7 exp= -0.073 pf=0.84 dd=37.4 t=-1.79 | TEST n= 483 win= 51.6 exp= -0.014 pf=0.97 dd=26.0 t=-0.34
+
+Fabio AMT mean-reversion (prior-day VA fail -> POC)
+   ALL3  train n= 237 win= 29.5 exp= -0.196 pf=0.75 dd=60.8 t=-1.92 | TEST n= 300 win= 31.3 exp= -0.123 pf=0.84 dd=56.1 t=-1.25
+   BTCUSD train n=  82 win= 28.0 exp= -0.209 pf=0.74 dd=21.2 t=-1.15 | TEST n=  78 win= 33.3 exp= -0.177 pf=0.77 dd=24.1 t=-0.93
+   XAUUSD train n=  71 win= 25.4 exp= -0.377 pf=0.54 dd=26.8 t=-2.33 | TEST n= 109 win= 26.6 exp= -0.273 pf=0.66 dd=30.2 t=-1.96
+   EURUSD train n=  84 win= 34.5 exp=  -0.03 pf=0.96 dd=17.3 t=-0.17 | TEST n= 113 win= 34.5 exp=  0.059 pf=1.08 dd=14.5 t=0.32
+
+Hougaard School Run London classic 1R
+   ALL3  train n= 989 win= 54.8 exp= -0.028 pf=0.94 dd=97.0 t=-0.91 | TEST n=1145 win= 53.6 exp= -0.038 pf=0.93 dd=60.0 t=-1.3
+   BTCUSD train n= 296 win= 51.4 exp= -0.129 pf=0.77 dd=40.4 t=-2.23 | TEST n= 300 win= 50.0 exp= -0.161 pf=0.72 dd=52.3 t=-2.79
+   XAUUSD train n= 377 win= 48.3 exp= -0.142 pf=0.75 dd=67.0 t=-2.81 | TEST n= 429 win= 55.7 exp=  0.043 pf=1.09 dd=10.1 t=0.91
+   EURUSD train n= 316 win= 65.8 exp=  0.201 pf=1.54 dd=6.4 t=3.81 | TEST n= 416 win= 54.1 exp= -0.034 pf=0.93 dd=32.5 t=-0.7
+
+Hougaard School Run NY classic 1R
+   ALL3  train n=1348 win= 58.2 exp=  0.065 pf=1.15 dd=35.9 t=2.47 | TEST n=1479 win= 54.4 exp=  0.009 pf=1.02 dd=25.0 t=0.35
+   BTCUSD train n= 493 win= 52.9 exp= -0.049 pf=0.9 dd=35.9 t=-1.12 | TEST n= 528 win= 55.1 exp= -0.011 pf=0.98 dd=21.7 t=-0.26
+   XAUUSD train n= 440 win= 57.3 exp=  0.058 pf=1.13 dd=25.2 t=1.27 | TEST n= 474 win= 51.7 exp=  0.001 pf=1.0 dd=17.3 t=0.01
+   EURUSD train n= 415 win= 65.5 exp=  0.206 pf=1.57 dd=7.2 t=4.55 | TEST n= 477 win= 56.2 exp=  0.039 pf=1.08 dd=15.3 t=0.88
+
+Hougaard School Run London runner (BE+trail)
+   ALL3  train n= 989 win= 52.9 exp=  0.072 pf=1.15 dd=141.0 t=1.48 | TEST n=1145 win= 51.2 exp= -0.042 pf=0.92 dd=64.3 t=-1.16
+   BTCUSD train n= 296 win= 45.9 exp= -0.157 pf=0.72 dd=51.5 t=-2.31 | TEST n= 300 win= 46.7 exp=  -0.12 pf=0.79 dd=46.0 t=-1.67
+   XAUUSD train n= 377 win= 48.3 exp= -0.236 pf=0.58 dd=99.6 t=-4.67 | TEST n= 429 win= 53.6 exp=  0.101 pf=1.22 dd=17.4 t=1.54
+   EURUSD train n= 316 win= 64.9 exp=  0.656 pf=2.76 dd=7.1 t=5.52 | TEST n= 416 win= 51.9 exp= -0.133 pf=0.74 dd=62.3 t=-2.63
+
+Hougaard School Run London ANTI 1R
+   ALL3  train n= 930 win= 50.9 exp= -0.106 pf=0.81 dd=106.4 t=-3.25 | TEST n=1108 win= 49.3 exp= -0.125 pf=0.78 dd=147.7 t=-4.19
+   BTCUSD train n= 272 win= 47.1 exp= -0.225 pf=0.63 dd=67.3 t=-3.71 | TEST n= 284 win= 51.4 exp= -0.138 pf=0.76 dd=50.1 t=-2.32
+   XAUUSD train n= 359 win= 63.8 exp=  0.175 pf=1.45 dd=7.4 t=3.49 | TEST n= 427 win= 47.8 exp= -0.114 pf=0.79 dd=66.2 t=-2.37
+   EURUSD train n= 299 win= 38.8 exp= -0.337 pf=0.5 dd=103.5 t=-5.97 | TEST n= 397 win= 49.4 exp= -0.128 pf=0.77 dd=52.7 t=-2.57
+
+ICT Silver Bullet 03-04 NY (London)
+   ALL3  train n=   3 win=  0.0 exp= -1.165 pf=0.0 dd=3.5 t=-21.45 | TEST n=   8 win= 37.5 exp=  6.652 pf=10.15 dd=2.3 t=1.09
+   BTCUSD train n=0 | TEST n=0
+   XAUUSD train n=0 | TEST n=   6 win= 33.3 exp=  7.482 pf=10.82 dd=2.3 t=0.92
+   EURUSD train n=   3 win=  0.0 exp= -1.165 pf=0.0 dd=3.5 t=-21.45 | TEST n=   2 win= 50.0 exp=  4.164 pf=7.68 dd=1.2 t=None
+
+=== NATIVE 60-day 5m (Yahoo FX/gold, Binance BTC), all 6 symbols pooled, whole 60d (too short to split meaningfully)
+PB Blake (bias+15m FVG key+5m IFVG, 9:30-11:00, DOL 1-3R)  n=  12 win= 33.3 exp= -0.391 pf=0.42 dd=6.2 t=-1.44  by sym: XAUUSD:-0.632(1) BTCUSD:-0.49(4) EURUSD:0.915(2) USDJPY:-1.078(2) USDCHF:-0.591(3) EURCHF:-(0)
+PB Blake fixed 2R                                          n=  12 win=  8.3 exp= -0.641 pf=0.08 dd=7.7 t=-3.62  by sym: XAUUSD:-0.632(1) BTCUSD:-0.74(4) EURUSD:-0.085(2) USDJPY:-1.078(2) USDCHF:-0.591(3) EURCHF:-(0)
+PB Blake + 5m key levels (premarket FVGs)                  n=  26 win= 34.6 exp= -0.339 pf=0.5 dd=12.4 t=-1.71  by sym: XAUUSD:-0.632(1) BTCUSD:-0.35(9) EURUSD:0.264(8) USDJPY:-1.065(4) USDCHF:-0.723(4) EURCHF:-(0)
+ICT Silver Bullet 10-11 NY (stop beyond FVG, DOL)          n=  10 win= 10.0 exp= -0.884 pf=0.15 dd=10.4 t=-3.22  by sym: XAUUSD:-1.151(8) BTCUSD:1.579(1) EURUSD:-(0) USDJPY:-1.207(1) USDCHF:-(0) EURCHF:-(0)
+ICT Silver Bullet 10-11 NY (stop at sweep, DOL)            n=  36 win= 30.6 exp= -0.157 pf=0.71 dd=8.2 t=-0.76  by sym: XAUUSD:-0.462(12) BTCUSD:-0.159(7) EURUSD:0.14(7) USDJPY:0.038(7) USDCHF:0.443(2) EURCHF:-1.129(1)
+Fabio IVB 30-min ORB 1R (both sides)                       n= 327 win= 44.3 exp= -0.125 pf=0.72 dd=46.4 t=-2.67  by sym: XAUUSD:-0.12(49) BTCUSD:-0.15(50) EURUSD:-0.13(58) USDJPY:-0.032(57) USDCHF:-0.141(58) EURCHF:-0.183(55)
+Fabio IVB + VWAP bias                                      n= 327 win= 44.3 exp= -0.125 pf=0.72 dd=46.4 t=-2.67  by sym: XAUUSD:-0.12(49) BTCUSD:-0.15(50) EURUSD:-0.13(58) USDJPY:-0.032(57) USDCHF:-0.141(58) EURCHF:-0.183(55)
+Fabio AMT mean-reversion (prior-day VA fail -> POC)        n=  45 win= 17.8 exp=  -0.71 pf=0.24 dd=32.4 t=-5.0  by sym: XAUUSD:-0.644(12) BTCUSD:-0.392(9) EURUSD:-1.116(2) USDJPY:-0.758(13) USDCHF:-0.955(9) EURCHF:-(0)
+Hougaard School Run London classic 1R                      n= 216 win= 45.4 exp= -0.226 pf=0.63 dd=52.6 t=-3.34  by sym: XAUUSD:-0.228(39) BTCUSD:0.024(20) EURUSD:-0.148(34) USDJPY:0.025(48) USDCHF:-0.448(30) EURCHF:-0.515(45)
+Hougaard School Run NY classic 1R                          n= 312 win= 44.6 exp= -0.203 pf=0.66 dd=68.0 t=-3.67  by sym: XAUUSD:-0.069(47) BTCUSD:-0.079(49) EURUSD:-0.121(54) USDJPY:-0.185(56) USDCHF:-0.33(51) EURCHF:-0.411(55)
+Hougaard School Run London runner (BE+trail)               n= 216 win= 41.2 exp= -0.246 pf=0.6 dd=59.2 t=-3.16  by sym: XAUUSD:-0.316(39) BTCUSD:0.245(20) EURUSD:0.099(34) USDJPY:-0.152(48) USDCHF:-0.455(30) EURCHF:-0.625(45)
+Hougaard School Run London ANTI 1R                         n= 202 win= 57.4 exp=  0.009 pf=1.02 dd=20.0 t=0.14  by sym: XAUUSD:0.179(39) BTCUSD:-0.184(20) EURUSD:-0.092(30) USDJPY:-0.19(48) USDCHF:-0.027(26) EURCHF:0.287(39)
+
+=== HTF (same series & unseen half as round-2 baseline)
+ICT/TJR sweep->MSS->FVG, app exit (BE+4ATR trail)    focus  train n=  63 win= 22.2 exp=  0.117 pf=1.25 dd=13.4 t=0.52 | TEST n=  61 win= 32.8 exp=  0.116 pf=1.23 dd=12.6 t=0.55
+ICT/TJR sweep->MSS->FVG, app exit (BE+4ATR trail)    all 18 train n= 151 win= 29.1 exp=  0.331 pf=1.79 dd=7.3 t=2.15 | TEST n= 141 win= 30.5 exp=  0.133 pf=1.31 dd=16.5 t=1.09
+     TEST by combo: BTCUSD1d:-0.615(5); BTCUSD1h:0.203(5); BTCUSD4h:0.536(7); EURCHF1d:-0.163(11); EURCHF1h:0.833(5); EURCHF4h:1.177(5); EURUSD1d:-0.611(7); EURUSD1h:0.178(6); EURUSD4h:-0.14(9); USDCHF1d:0.277(11); USDCHF1h:0.083(15); USDCHF4h:0.389(10); USDJPY1d:1.159(7); USDJPY1h:-0.509(11); USDJPY4h:-0.354(7); XAUUSD1d:0.052(8); XAUUSD1h:-0.169(8); XAUUSD4h:1.498(4)
+ICT/TJR sweep->MSS->FVG, 2R                          focus  train n=  65 win= 36.9 exp=  -0.03 pf=0.95 dd=14.0 t=-0.19 | TEST n=  60 win= 38.3 exp= -0.013 pf=0.98 dd=10.6 t=-0.07
+ICT/TJR sweep->MSS->FVG, 2R                          all 18 train n= 152 win= 45.4 exp=  0.191 pf=1.35 dd=6.5 t=1.69 | TEST n= 141 win= 39.7 exp= -0.012 pf=0.98 dd=19.3 t=-0.11
+     TEST by combo: BTCUSD1d:-0.415(5); BTCUSD1h:-0.108(5); BTCUSD4h:0.775(8); EURCHF1d:-0.281(10); EURCHF1h:1.255(5); EURCHF4h:0.421(5); EURUSD1d:-0.369(7); EURUSD1h:-0.335(6); EURUSD4h:-0.244(9); USDCHF1d:-0.269(10); USDCHF1h:-0.336(15); USDCHF4h:0.162(10); USDJPY1d:0.706(7); USDJPY1h:-0.438(11); USDJPY4h:-0.354(7); XAUUSD1d:-0.055(8); XAUUSD1h:0.116(8); XAUUSD4h:0.795(5)
+PB Blake: same + HTF FVG-respect bias, app exit      focus  train n=   1 win=100.0 exp=  3.574 pf=None dd=0.0 t=None | TEST n=   2 win= 50.0 exp= -0.418 pf=0.17 dd=1.0 t=None
+PB Blake: same + HTF FVG-respect bias, app exit      all 18 train n=  19 win= 15.8 exp= -0.033 pf=0.92 dd=5.6 t=-0.12 | TEST n=  18 win= 22.2 exp= -0.118 pf=0.53 dd=3.6 t=-0.85
+     TEST by combo: BTCUSD1h:-1.027(1); BTCUSD4h:0.126(4); EURCHF4h:0.157(2); EURUSD1h:-0.041(1); EURUSD4h:-0.689(3); USDCHF1h:0.556(2); USDCHF4h:-0.047(1); USDJPY4h:-0.018(2); XAUUSD4h:-0.418(2)
+PB Blake: same + HTF bias, 2R                        focus  train n=   1 win=100.0 exp=  1.983 pf=None dd=0.0 t=None | TEST n=   2 win= 50.0 exp=  0.494 pf=1.98 dd=1.0 t=None
+PB Blake: same + HTF bias, 2R                        all 18 train n=  19 win= 36.8 exp= -0.122 pf=0.82 dd=6.4 t=-0.4 | TEST n=  18 win= 38.9 exp= -0.194 pf=0.69 dd=8.2 t=-0.71
+     TEST by combo: BTCUSD1h:-1.027(1); BTCUSD4h:1.08(4); EURCHF4h:-0.343(2); EURUSD1h:-1.041(1); EURUSD4h:-1.023(3); USDCHF1h:0.056(2); USDCHF4h:-1.047(1); USDJPY4h:-1.018(2); XAUUSD4h:0.494(2)

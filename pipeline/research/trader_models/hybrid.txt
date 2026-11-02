@@ -1,0 +1,9 @@
+train-selected sweep combos: [('BTCUSD', '1h'), ('EURCHF', '1d'), ('EURCHF', '4h'), ('EURUSD', '1h'), ('EURUSD', '4h'), ('USDCHF', '4h'), ('USDJPY', '1d'), ('USDJPY', '1h'), ('USDJPY', '4h'), ('XAUUSD', '1h')]
+TEST baseline focus           {'n': 248, 'win': 24.2, 'exp': 0.319, 'pf': 1.74, 'dd': 11.2, 'tot': 79.0, 't': 2.43}
+TEST sweep, train-selected    {'n': 79, 'win': 27.8, 'exp': 0.095, 'pf': 1.22, 'dd': 8.2, 'tot': 7.5, 't': 0.57}
+TEST baseline + sweep(sel)    {'n': 327, 'win': 25.1, 'exp': 0.264, 'pf': 1.62, 'dd': 14.8, 'tot': 86.5, 't': 2.47}
+TEST baseline + sweep(all18)  {'n': 389, 'win': 26.5, 'exp': 0.251, 'pf': 1.59, 'dd': 13.1, 'tot': 97.8, 't': 2.66}
+TRAIN sweep sel (in-sample)   {'n': 102, 'win': 35.3, 'exp': 0.582, 'pf': 2.51, 'dd': 6.8, 'tot': 59.4, 't': 2.82}
+baseline trades/month ~ 4.7
+hybrid trades/month ~ 6.2
+total R diff hybrid-baseline 7.5 P(<=0) 0.435
