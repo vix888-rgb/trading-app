@@ -5563,7 +5563,7 @@
   "fill_bar_t": 1793648700000,
   "trail_stop": 77464.636,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "XAUUSD-5m-1793648940000",
@@ -6963,7 +6963,7 @@
   "edge": false,
   "trail_stop": 2268.758,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XRPUSD-15m-1793653200000",
@@ -7079,7 +7079,7 @@
   "fill_bar_t": 1793655000000,
   "trail_stop": 1.256317,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "SOLUSD-5m-1793654400000",
@@ -7302,6 +7302,121 @@
     "lo": 76714.76,
     "hi": 77011.0,
     "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "SOLUSD-15m-1793656800000",
+  "logged": "2026-11-02T23:20+01:00",
+  "bar_t": 1793656800000,
+  "bar_time": "Mon 02 Nov 23:00",
+  "sym": "SOLUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -36,
+  "entry": 92.08,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 92.7068,
+  "tp": [
+   91.4532,
+   90.82639,
+   90.19959
+  ],
+  "inv": 92.11,
+  "votes": [
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.61,
+   0.21,
+   0.1,
+   1.34,
+   0.39,
+   0.0,
+   0.33,
+   0.14,
+   0.66,
+   0.0,
+   0.0,
+   1.51,
+   0.0,
+   0.7,
+   0.0,
+   0.0,
+   0.16,
+   0.97,
+   0.2,
+   0.17,
+   0.25,
+   0.0,
+   0.0,
+   0.91,
+   0.54,
+   0.51,
+   0.0,
+   0.21
+  ],
+  "strategies": [
+   "Trend-follow + ADX filter",
+   "ICT/SMC sweep + CHoCH"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.5223359519409363,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 90,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
     "alert": false
    },
    "sweep": {
