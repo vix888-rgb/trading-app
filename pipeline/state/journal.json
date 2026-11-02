@@ -3329,7 +3329,7 @@
   "fill_bar_t": 1793606400000,
   "trail_stop": 93.54843351331891,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "SOLUSD-15m-1793610900000",
@@ -4493,7 +4493,7 @@
   "edge": false,
   "trail_stop": 1.339942,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "XRPUSD-1h-1793631600000",
@@ -4613,7 +4613,7 @@
   "edge": false,
   "trail_stop": 1.265792,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "XRPUSD-5m-1793638200000",
@@ -5563,7 +5563,7 @@
   "fill_bar_t": 1793648700000,
   "trail_stop": 77464.636,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "XAUUSD-5m-1793648940000",
@@ -5921,7 +5921,7 @@
   "edge": true,
   "trail_stop": 77878.895,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "EURUSD-4h-1793635200000",
@@ -6963,7 +6963,7 @@
   "edge": false,
   "trail_stop": 2268.758,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "XRPUSD-15m-1793653200000",
@@ -7079,7 +7079,7 @@
   "fill_bar_t": 1793655000000,
   "trail_stop": 1.256317,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1793654400000",
@@ -7436,7 +7436,7 @@
   "edge": false,
   "trail_stop": 92.7068,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "BTCUSD-5m-1793658600000",
@@ -7449,7 +7449,7 @@
   "score": -34,
   "entry": 76918.01,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 77026.829,
   "tp": [
    76809.191,
@@ -7553,7 +7553,11 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793659500000,
+  "trail_stop": 77026.829,
+  "tp1_hit": false,
+  "bars_open": 3
  },
  {
   "id": "ETHUSD-5m-1793658600000",
@@ -7566,7 +7570,7 @@
   "score": -31,
   "entry": 2255.27,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 2261.534,
   "tp": [
    2249.006,
@@ -7667,6 +7671,10 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793659500000,
+  "trail_stop": 2261.534,
+  "tp1_hit": false,
+  "bars_open": 3
  }
 ]
