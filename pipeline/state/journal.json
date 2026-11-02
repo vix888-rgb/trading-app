@@ -79,10 +79,13 @@
    0.43
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "fill_bar_t": 1793574000000,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-02T03:12+01:00"
  },
  {
   "id": "XAUUSD-1h-1793390400000",
@@ -169,7 +172,7 @@
   "status": "open",
   "fill_bar_t": 1793393999000,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XAUUSD-1d-1793332800000",
@@ -600,7 +603,7 @@
   "status": "open",
   "fill_bar_t": 1793580300000,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 5
  },
  {
   "id": "EURCHF-4h-1793390400000",
@@ -1621,7 +1624,7 @@
   "strategies": [],
   "status": "open",
   "tp1_hit": false,
-  "bars_open": 13
+  "bars_open": 25
  },
  {
   "id": "GBPUSD-15m-1793394900000",
@@ -1707,7 +1710,7 @@
   ],
   "status": "open",
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 8
  },
  {
   "id": "GBPUSD-4h-1793390400000",
@@ -2504,7 +2507,7 @@
   "score": -34,
   "entry": 1.117069,
   "entry_type": "limit (order block retest)",
-  "filled": false,
+  "filled": true,
   "stop": 1.117717,
   "tp": [
    1.116421,
@@ -2589,7 +2592,11 @@
    "agree": true,
    "sigRaw": "SELL"
   },
-  "edge": true
+  "edge": true,
+  "fill_bar_t": 1793581200000,
+  "trail_stop": 1.117717,
+  "tp1_hit": false,
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-4h-1793574000000",
@@ -2868,7 +2875,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "cancelled",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.3817086479077066,
@@ -2882,6 +2889,7 @@
    "agree": true,
    "sigRaw": "SELL"
   },
-  "edge": false
+  "edge": false,
+  "exit": "stop hit before fill"
  }
 ]
