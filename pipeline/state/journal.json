@@ -3329,7 +3329,7 @@
   "fill_bar_t": 1793606400000,
   "trail_stop": 93.54843351331891,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "SOLUSD-15m-1793610900000",
@@ -4493,7 +4493,7 @@
   "edge": false,
   "trail_stop": 1.339942,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "XRPUSD-1h-1793631600000",
@@ -4613,7 +4613,7 @@
   "edge": false,
   "trail_stop": 1.265792,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XRPUSD-5m-1793638200000",
@@ -5563,7 +5563,7 @@
   "fill_bar_t": 1793648700000,
   "trail_stop": 77464.636,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XAUUSD-5m-1793648940000",
@@ -5921,7 +5921,7 @@
   "edge": true,
   "trail_stop": 77878.895,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "EURUSD-4h-1793635200000",
@@ -6502,7 +6502,7 @@
   "fill_bar_t": 1793650800000,
   "trail_stop": 3961.96,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 9
  },
  {
   "id": "SOLUSD-5m-1793650800000",
@@ -6710,6 +6710,233 @@
    "carryDir": 0,
    "vol": true,
    "atrPct": 81,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "USDJPY-1h-1793649600000",
+  "logged": "2026-11-02T22:10+01:00",
+  "bar_t": 1793649600000,
+  "bar_time": "Mon 02 Nov 21:00",
+  "sym": "USDJPY",
+  "tf": "1h",
+  "side": "long",
+  "score": 35,
+  "entry": 157.567,
+  "entry_type": "limit (order block retest)",
+  "filled": false,
+  "stop": 157.192,
+  "tp": [
+   157.943,
+   158.319,
+   158.695
+  ],
+  "inv": 156.957,
+  "votes": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.14,
+   1.33,
+   0.0,
+   0.0,
+   0.33,
+   0.01,
+   0.38,
+   0.15,
+   0.0,
+   0.0,
+   1.1,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.16,
+   0.2,
+   0.0,
+   0.26,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.84,
+   0.0
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.18787302478145096,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 60,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 157.77000427,
+    "hi": 157.94900513,
+    "src": "15m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "ETHUSD-15m-1793652300000",
+  "logged": "2026-11-02T22:10+01:00",
+  "bar_t": 1793652300000,
+  "bar_time": "Mon 02 Nov 21:45",
+  "sym": "ETHUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -25,
+  "entry": 2248.39,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 2268.758,
+  "tp": [
+   2228.022,
+   2207.654,
+   2187.286
+  ],
+  "inv": 2300.0,
+  "votes": [
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.42,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.69,
+   0.0,
+   0.16,
+   0.38,
+   0.98,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.53,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.22,
+   0.0
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 10.184066678238,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 94,
    "trend": -1,
    "htf": -1,
    "agree": true,
