@@ -7,4 +7,3 @@ python3 engine2.py
 python3 engine3.py
 python3 compact3.py
 python3 compact_pwa.py
-python3 vantage.py

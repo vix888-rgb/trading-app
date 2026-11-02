@@ -3,7 +3,6 @@ import json, os, sys, unittest
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np, pandas as pd
 import edge
-from vantage import shift_flt
 
 def frame(rows):
     t0 = 1_700_000_000_000
@@ -72,15 +71,6 @@ class ResearchFlagTest(unittest.TestCase):
         self.assertFalse(edge.NEWS_ALERTS)
         self.assertTrue(doc["nov2"]["flagged_04h_sell_bar"])
         self.assertIn("Mon 02 Nov 14:15", doc["nov2"]["m15_short_blocks_starting"])
-
-class ShiftTest(unittest.TestCase):
-    def test_vantage_offset_moves_breakout_levels(self):
-        flt = {"range": {"on": True, "lo": 3900.0, "hi": 3924.0}, "sweep": {"on": True, "lo": 3907.8, "hi": 3916.4}}
-        shift_flt(flt, -12.5, 2)
-        self.assertEqual(flt["range"]["lo"], 3887.5)
-        self.assertEqual(flt["range"]["hi"], 3911.5)
-        self.assertEqual(flt["sweep"]["lo"], 3895.3)
-        self.assertEqual(flt["sweep"]["hi"], 3903.9)
 
 if __name__ == "__main__":
     unittest.main()

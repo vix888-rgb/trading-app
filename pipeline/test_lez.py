@@ -3,7 +3,6 @@ import json, os, sys, unittest
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import numpy as np, pandas as pd
 import edge
-from vantage import shift_st
 
 def frame(o, h, l, c):
     n = len(c)
@@ -105,12 +104,6 @@ class SignalTest(unittest.TestCase):
         o[83], h[83], l[83], c[83] = 2304.0, 2305.0, 2303.8, 2304.8
         pack = edge.lez_run(frame(o, h, l, c), "XAUUSD", "1h")
         self.assertFalse(any(s["i"] >= 80 for s in pack["signals"]))
-
-    def test_vantage_offset_moves_the_strategy_bracket(self):
-        st = [[1, 0, 4, 50, 0.2, 1.4, 0, 2300.0, 2295.0, 2313.0, 1]]
-        shift_st(st, -12.5, 2)
-        self.assertEqual(st[0][7:], [2287.5, 2282.5, 2300.5, 1])
-        shift_st([[1, 0, 0, None, None, None, 0]], -1, 2)
 
 
 if __name__ == "__main__":

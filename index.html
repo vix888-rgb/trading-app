@@ -77,19 +77,14 @@ tr.fresh td{background:rgba(245,197,66,.16)}
   <div class="card"><h2>Signal journal</h2><p class="muted" id="jstats"></p><div class="scroll"><table id="journal"></table></div></div>
   <div class="card"><h2>News</h2><div id="news"></div></div>
   <div class="card"><h2>Data sources &amp; limits</h2><div class="scroll"><table id="src"></table></div>
-  <ul class="muted"><li>Forex, gold and news come from the snapshot file <code>data.json</code>, rebuilt by the refresh pipeline (Yahoo and RSS block in-browser requests). A Vantage tick under 12 minutes old is the live price and is tagged Vantage. Otherwise crypto and gold keep updating from Binance.</li><li>Analyze chart loads Binance candles in the browser for crypto, and PAXG candles as a labelled proxy for gold. FX uses snapshot candles from <code>data.json</code>.</li><li>Gold is COMEX futures (GC=F), a close proxy for spot XAU/USD. When the scan has a Vantage quote under 15 minutes old, that symbol's price and plan levels are shifted onto the Vantage close.</li><li>Spot FX has no central volume: OBV and VWAP stay neutral for FX.</li></ul></div>
+  <ul class="muted"><li>Forex, gold and news come from the snapshot file <code>data.json</code>, rebuilt by the refresh pipeline (Yahoo and RSS block in-browser requests). Crypto price below the metrics updates live from Binance in your browser.</li><li>Analyze chart loads Binance candles in the browser for crypto, and PAXG candles as a labelled proxy for gold. FX uses snapshot candles from <code>data.json</code>.</li><li>Gold is COMEX futures (GC=F), a close proxy for spot XAU/USD.</li><li>Spot FX has no central volume: OBV and VWAP stay neutral for FX.</li></ul></div>
 </main>
 <script src="./vendor/lightweight-charts.js"></script>
 <script>
 const TFS=["1m","5m","15m","1h","4h","1d"],PRI=["XAUUSD","BTCUSD","EURUSD","USDJPY","USDCHF","EURCHF","ETHUSD","SOLUSD","XRPUSD","GBPUSD"],BIN={BTCUSD:"BTCUSDT",ETHUSD:"ETHUSDT",SOLUSD:"SOLUSDT",XRPUSD:"XRPUSDT"};
 let D=null,S={sym:"XAUUSD",tf:"1h",agv:"all",scanTf:"1h",mode:"fixed",risk:20},timer=null;
 let ws=null,wsGen=0,failN=0,backoff=1000,reconTimer=null,restTimer=null,feed="off";
-let lastPx=null,lastAt=null,shownPx=null,tickDir=0,liveErr=false,shownSrc="";
-const PRICE_SSE="https://ntfy.sh/octa-prices-8223d362/sse";
-const PRICE_POLL="https://ntfy.sh/octa-prices-8223d362/json?poll=1&since=15m";
-const VANTAGE_IDS=["XAUUSD","BTCUSD","EURUSD","USDJPY","USDCHF","EURCHF"];
-const VANTAGE_MS=12*60*1000;
-let vTicks={},priceES=null;
+let lastPx=null,lastAt=null,shownPx=null,tickDir=0,liveErr=false;
 const $=id=>document.getElementById(id);
 const fp=(x,p)=>x==null||isNaN(x)?"–":Number(x).toLocaleString("en-US",{minimumFractionDigits:p,maximumFractionDigits:p});
 const sigOf=s=>s>=25?"BUY":s<=-25?"SELL":"WAIT";
@@ -139,8 +134,7 @@ function render(){if(!D)return;const k=D.det[S.sym+"|"+S.tf],m=D.meta[S.sym];$("
  const n=bg(),t=n.t,wd=n.wd,fxc=wd==="Sat"||(wd==="Sun"&&t<1380)||(wd==="Fri"&&t>=1380);
  const ses=[["Asia",60,600],["London",540,1080],["New York",840,1380]].filter(s=>inR(t,s[1],s[2])).map(s=>s[0]);
  const kz=[["Asian KZ 02–06",120,360],["London KZ 08–11",480,660],["NY KZ 13–16",780,960],["London close 16–18",960,1080]].filter(s=>inR(t,s[1],s[2])).map(s=>s[0]);
- const srcName=(D.px&&D.px[S.sym]&&D.px[S.sym].price_source)||m[2];
- $("session").innerHTML=`<dt>Belgrade now</dt><dd>${n.label}</dd><dt>Sessions</dt><dd>${ses.join(", ")||"none"}</dd><dt>Killzone</dt><dd>${kz.join(", ")||"outside killzones"}</dd><dt>FX &amp; gold</dt><dd>${fxc?pill("Closed for weekend","w"):pill("Open","b")}</dd><dt>Source</dt><dd>${esc(srcName)}</dd>`;
+ $("session").innerHTML=`<dt>Belgrade now</dt><dd>${n.label}</dd><dt>Sessions</dt><dd>${ses.join(", ")||"none"}</dd><dt>Killzone</dt><dd>${kz.join(", ")||"outside killzones"}</dd><dt>FX &amp; gold</dt><dd>${fxc?pill("Closed for weekend","w"):pill("Open","b")}</dd><dt>Source</dt><dd>${esc(m[2])}</dd>`;
  const pl=k.pl;const rg=k.flt&&k.flt.range;const brk=(rg&&rg.on&&isFinite(+rg.lo)&&isFinite(+rg.hi))?`<dt>Breakout</dt><dd>${fp(+rg.lo,k.p)} low · ${fp(+rg.hi,k.p)} high${rg.src?` <span class="muted">${esc(rg.src)} box</span>`:""}</dd>`:"";
  $("plan").innerHTML=`<dt>Direction</dt><dd>${pill(pl[0]>0?"Long":"Short",pl[0]>0?"b":"s")}${g.gated==="WAIT"?" conditional (consensus: wait)":""}</dd><dt>Entry</dt><dd>${fp(pl[1],k.p)} · zone ${fp(pl[2][0],k.p)}–${fp(pl[2][1],k.p)} (${pl[3]})</dd><dt>Stop</dt><dd>${fp(pl[4],k.p)} · ${pl[5]}</dd><dt>Exit</dt><dd>${esc(exitRule())}</dd><dt>Invalidation</dt><dd>${fp(pl[6],k.p)}</dd>${brk}<dt>TP1/2/3</dt><dd>${pl[7].map(v=>fp(v,k.p)).join(" / ")} <span class="muted">reference levels</span></dd><dt>R:R</dt><dd>1:1 · 1:2 · 1:3</dd><dt>ATR</dt><dd>${fp(k.atr,k.p+1)}</dd>`;
  // sizing
@@ -167,31 +161,12 @@ function render(){if(!D)return;const k=D.det[S.sym+"|"+S.tf],m=D.meta[S.sym];$("
  const j=D.jl;$("jstats").textContent=`${j[0]} logged · ${j[1]} open/awaiting fill · ${j[2]} closed`+(j[2]?` · live avg ${rF(j[4])}, ${pc(j[3])} hit`:"");
  const jCell=v=>v==null||v===""?"–":esc(v);table("journal",["Bar","Symbol","TF","Side","Entry","Stop","TP2","Status","R","Exit","Mode","Trail"],(D.j||[]).slice().reverse().map(e=>[e[0],D.meta[e[1]]?D.meta[e[1]][0]:e[1],e[2],pill(e[3],e[3]==="long"?"b":"s"),e[4],e[5],e[6],e[7],e[8]==null?"–":rF(e[8]),e.length>10?jCell(e[10]):"–",e.length>11?jCell(e[11]):"–",e.length>12?jCell(e[12]):"–"]),[4,5,6,8]);
  $("news").innerHTML=(D.news[S.sym]||[]).map(nw=>`<div style="margin-bottom:8px">${nw[2]>0?pill("positive","b"):nw[2]<0?pill("negative","s"):pill("neutral","n")} ${esc(nw[1])} <span class="muted">· ${esc(nw[0])} · ${nw[3]}</span></div>`).join("")||'<span class="muted">No matching headlines in this snapshot.</span>';
- table("src",["Source","Status"],[["Vantage via TradingView webhook","live price when a tick is under 12 min; scan shifts levels when a quote is under 15 min"],["Binance public API","live in browser + snapshot fallback"],["Yahoo Finance chart API","snapshot"]].concat(D.ns.map(n=>[n[0],n[1]?n[2]+" headlines":pill("failed","s")])));
+ table("src",["Source","Status"],[["Binance public API","live in browser + snapshot"],["Yahoo Finance chart API","snapshot"]].concat(D.ns.map(n=>[n[0],n[1]?n[2]+" headlines":pill("failed","s")])));
  showLive();}
 function showRound2(){const el=$("wf2");if(!el)return;const w=D&&D.wf2;if(!w){el.innerHTML="";return}const f=w.focus||{},labs=[["before_val","Before validation"],["before_test","Before test"],["after_val","After validation"],["after_test","After test"]];const cells=s=>!s?["–","–","–","–"]:[s.n==null?"–":s.n,s.exp==null?"–":rF(s.exp),s.pf==null?"–":s.pf,s.dd==null?"–":s.dd];const focusRows=labs.filter(([k])=>f[k]).map(([k,lab])=>[lab].concat(cells(f[k])));const combos=Array.isArray(w.per_combo)?w.per_combo.filter(r=>r&&r.length>=4&&r[3]):[];el.innerHTML='<h3 style="font-size:15px;margin:14px 0 6px">Round 2 test</h3>'+(focusRows.length?'<div class="scroll"><table id="wf2focus"></table></div>':"")+(combos.length?'<p class="muted" style="margin-top:8px">Per symbol and timeframe</p><div class="scroll"><table id="wf2combo"></table></div>':"")+(w.note?`<p class="muted">${esc(w.note)}</p>`:"");if(focusRows.length)table("wf2focus",["Slice","Trades","Avg R","Profit factor","Max drawdown"],focusRows,[1,2,3,4]);if(combos.length)table("wf2combo",["Phase","Symbol","TF","Trades","Avg R","PF","Max DD"],combos.map(r=>[esc(r[0]||"–"),esc(D.meta&&D.meta[r[1]]?D.meta[r[1]][0]:(r[1]||"–")),esc(r[2]||"–"),r[3].n==null?"–":r[3].n,r[3].exp==null?"–":rF(r[3].exp),r[3].pf==null?"–":r[3].pf,r[3].dd==null?"–":r[3].dd]),[3,4,5,6])}
 function hms(d){return d.toLocaleTimeString("en-GB",{timeZone:"Europe/Belgrade",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false})}
-function signedFrom(base,level,prec){const d=level-base;if(base==null||!isFinite(d))return "–";const body=fp(Math.abs(d),prec);return d>0?"+"+body:d<0?"−"+body:body}
-function signedDelta(level,prec){return signedFrom(shownPx,level,prec)}
-function canonTicker(raw){if(raw==null)return "";let s=String(raw).trim().toUpperCase();const i=s.lastIndexOf(":");if(i>=0)s=s.slice(i+1).trim();s=s.split(/[^A-Z0-9]/)[0];return VANTAGE_IDS.includes(s)?s:""}
-function quoteInstant(body,envelope){let t=+body.t;if(!isFinite(t)||t<=0)t=envelope&&+envelope.time;if(!isFinite(t)||t<=0)return null;if(t>1e11)t=t/1000;return new Date(t*1000)}
-function priceNum(v){if(typeof v==="boolean"||v==null||v==="")return NaN;const n=+v;return isFinite(n)&&n>0?n:NaN}
-function noteTick(sym,px,at){if(!sym||!(px>0)||!at)return;const prev=vTicks[sym];if(prev&&prev.at>at)return;vTicks[sym]={px:px,at:at};if(S.sym===sym)paintLive()}
-function ingestPrice(envelope){if(!envelope||(envelope.event&&envelope.event!=="message"))return;let body=envelope.message!=null?envelope.message:envelope;if(typeof body==="string"){const s=body.trim();if(!s)return;try{body=JSON.parse(s)}catch(e){return}}if(!body||typeof body!=="object"||Array.isArray(body))return;const at=quoteInstant(body,envelope);if(!at)return;const q=body.q;if(q&&typeof q==="object"&&!Array.isArray(q)){Object.keys(q).forEach(raw=>noteTick(canonTicker(raw),priceNum(q[raw]),at));return}const sym=canonTicker(body.sym)||canonTicker(body.symbol)||canonTicker(body.tv)||canonTicker(body.ticker);let px=priceNum(body.c);if(!(px>0))px=priceNum(body.bid);if(!(px>0))px=priceNum(body.close);noteTick(sym,px,at)}
-function vantageFresh(sym){const v=vTicks[sym];if(!v||!isFinite(v.px))return null;if(Date.now()-v.at.getTime()>VANTAGE_MS)return null;return v}
-function ingestStreamText(text){const raw=String(text||"").trim();if(!raw)return;if(raw[0]==="["){try{JSON.parse(raw).forEach(ingestPrice)}catch(e){}return}if(raw[0]==="{"&&raw.indexOf("\n")<0){try{ingestPrice(JSON.parse(raw))}catch(e){}return}raw.split(/\n+/).forEach(line=>{const s=line.trim();if(!s)return;try{ingestPrice(JSON.parse(s))}catch(e){}})}
-async function primePrices(){try{const r=await fetch(PRICE_POLL,{cache:"no-store"});if(!r.ok)return;ingestStreamText(await r.text())}catch(e){}}
-function startPriceStream(){primePrices();if(priceES||typeof EventSource==="undefined")return;try{priceES=new EventSource(PRICE_SSE)}catch(e){priceES=null;return}priceES.onmessage=ev=>{try{ingestPrice(JSON.parse(ev.data))}catch(e){}};priceES.onerror=()=>{}}
-function showLive(){const el=$("live");
- const v=vantageFresh(S.sym);
- if(v){const k=D&&D.det[S.sym+"|"+S.tf],prec=k?k.p:2,px=v.px,col=tickDir>0?"var(--up)":tickDir<0?"var(--dn)":"inherit",mark=tickDir>0?"▲":tickDir<0?"▼":"•";
-  let html=`Live ${esc(S.sym)} <span class="pill n">Vantage</span>: <b style="color:${col}">${mark} ${fp(px,prec)}</b>`;
-  if(k&&k.last){const ch=(px/k.last-1)*100;html+=` · vs snapshot ${(ch>0?"+":"")+ch.toFixed(2)}%`}
-  html+=` · updated ${hms(v.at)}`;
-  if(k&&k.pl&&k.pl[7]){const pl=k.pl,side=pl[0],hitS=side>0?px<=pl[4]:px>=pl[4],hitT=side>0?px>=pl[7][0]:px<=pl[7][0];
-   html+=` · to entry ${signedFrom(px,pl[1],prec)} · to SL ${signedFrom(px,pl[4],prec)} · to TP1 ${signedFrom(px,pl[7][0],prec)} `+(hitS?pill("beyond plan stop","s"):hitT?pill("past TP1","b"):"");}
-  el.innerHTML=html;return}
- const pair=livePair(S.sym);
+function signedDelta(level,prec){const d=level-shownPx;if(!isFinite(d))return "–";const body=fp(Math.abs(d),prec);return d>0?"+"+body:d<0?"−"+body:body}
+function showLive(){const el=$("live"),pair=livePair(S.sym);
  if(!pair){el.textContent="Live price: not available in-browser for FX/gold (snapshot only).";return}
  const gold=S.sym==="XAUUSD",label=gold?"Live gold (PAXG proxy, tracks XAU closely, not exact)":"Live "+S.sym;
  if(shownPx==null){el.textContent=label+": "+(liveErr?"Binance request failed.":"loading…");return}
@@ -203,10 +178,10 @@ function showLive(){const el=$("live");
   html+=` · to entry ${signedDelta(pl[1],prec)} · to SL ${signedDelta(pl[4],prec)} · to TP1 ${signedDelta(pl[7][0],prec)} `+(hitS?pill("beyond plan stop","s"):hitT?pill("past TP1","b"):"");
  }
  el.innerHTML=html}
-function paintLive(){const v=vantageFresh(S.sym);if(v){if(shownSrc!=="vantage"){shownPx=null;shownSrc="vantage"}tickDir=shownPx==null?0:v.px>shownPx?1:v.px<shownPx?-1:0;shownPx=v.px;lastAt=v.at;liveErr=false;showLive();return}if(shownSrc==="vantage"){shownPx=null;tickDir=0;shownSrc="feed"}if(!livePair(S.sym)||lastPx==null){showLive();return}tickDir=shownPx==null?0:lastPx>shownPx?1:lastPx<shownPx?-1:0;shownPx=lastPx;showLive()}
+function paintLive(){if(!livePair(S.sym)||lastPx==null){showLive();return}tickDir=shownPx==null?0:lastPx>shownPx?1:lastPx<shownPx?-1:0;shownPx=lastPx;showLive()}
 function clearFeedTimers(){if(reconTimer){clearTimeout(reconTimer);reconTimer=null}if(restTimer){clearInterval(restTimer);restTimer=null}}
 function closeSocket(){const sock=ws;ws=null;if(!sock)return;sock.onopen=sock.onmessage=sock.onerror=sock.onclose=null;try{sock.close()}catch(e){}}
-function resetQuote(){lastPx=null;lastAt=null;shownPx=null;tickDir=0;liveErr=false;shownSrc=""}
+function resetQuote(){lastPx=null;lastAt=null;shownPx=null;tickDir=0;liveErr=false}
 function connectLive(sym){wsGen++;clearFeedTimers();closeSocket();failN=0;backoff=1000;feed="off";const pair=livePair(sym);if(!pair){showLive();return}if(document.hidden){feed="paused";showLive();return}openWs(sym,pair)}
 function openWs(sym,pair){if(document.hidden||S.sym!==sym)return;closeSocket();feed="ws";const gen=++wsGen;let sock;try{sock=new WebSocket("wss://data-stream.binance.vision/ws/"+pair.toLowerCase()+"@aggTrade")}catch(e){noteFail(sym,pair,gen);return}ws=sock;let settled=false;
  const fail=()=>{if(settled||gen!==wsGen)return;settled=true;if(ws===sock)ws=null;noteFail(sym,pair,gen)};
@@ -269,7 +244,7 @@ function initUI(){$("sym").innerHTML=PRI.map(s=>`<option value="${s}">${s}</opti
  ["riskUsd","bal","rpct"].forEach(id=>$(id).addEventListener("input",render));
  $("refresh").onclick=load;$("auto").onchange=e=>{clearInterval(timer);if(e.target.checked)timer=setInterval(load,60000)};
  $("analyze").onclick=()=>{analyze();$("analysisCard").scrollIntoView({block:"nearest"})};$("analysisClose").onclick=()=>{analysisToken++;destroyAnalysisChart();$("analysisCard").style.display="none";$("analyze").disabled=false};}
-initUI();load();connectLive(S.sym);startPriceStream();setInterval(paintLive,1000);setInterval(load,300000);
+initUI();load();connectLive(S.sym);setInterval(paintLive,1000);setInterval(load,300000);
 if("serviceWorker" in navigator)navigator.serviceWorker.register("./sw.js",{scope:"./"});
 </script>
 </body>
