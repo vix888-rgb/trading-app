@@ -4727,7 +4727,7 @@
   "edge": false,
   "trail_stop": 1.247867901622529,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "GBPUSD-5m-1793638800000",
@@ -4809,7 +4809,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00034901997154020766,
@@ -4843,7 +4843,10 @@
   "fill_bar_t": 1793642100000,
   "trail_stop": 1.341544,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-02T19:20+01:00"
  },
  {
   "id": "SOLUSD-5m-1793639400000",
@@ -4958,7 +4961,7 @@
   "edge": false,
   "trail_stop": 92.82960835026076,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "BTCUSD-5m-1793640000000",
@@ -5040,7 +5043,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 151.21569861051603,
@@ -5076,6 +5079,9 @@
   "edge": false,
   "trail_stop": 77356.0,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-02T19:20+01:00"
  }
 ]
