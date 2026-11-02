@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 # Pushes made with GITHUB_TOKEN do not trigger pages.yml, so this workflow
 # deploys GitHub Pages itself after it commits a new snapshot.
