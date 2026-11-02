@@ -172,7 +172,7 @@
   "status": "open",
   "fill_bar_t": 1793393999000,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XAUUSD-1d-1793332800000",
@@ -603,7 +603,7 @@
   "status": "open",
   "fill_bar_t": 1793580300000,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 16
  },
  {
   "id": "EURCHF-4h-1793390400000",
@@ -1540,7 +1540,7 @@
   "strategies": [],
   "status": "open",
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "GBPUSD-5m-1793395500000",
@@ -2584,7 +2584,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.000540015996222455,
@@ -2602,7 +2602,10 @@
   "fill_bar_t": 1793581200000,
   "trail_stop": 1.117717,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 11,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-02T05:52+01:00"
  },
  {
   "id": "XAUUSD-4h-1793574000000",
@@ -2995,6 +2998,6 @@
   "edge": false,
   "trail_stop": 2301.611159002061,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 23
  }
 ]
