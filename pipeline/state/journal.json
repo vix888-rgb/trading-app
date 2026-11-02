@@ -4727,7 +4727,7 @@
   "edge": false,
   "trail_stop": 1.247867901622529,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "GBPUSD-5m-1793638800000",
@@ -4961,7 +4961,7 @@
   "edge": false,
   "trail_stop": 92.82960835026076,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "BTCUSD-5m-1793640000000",
@@ -5313,8 +5313,120 @@
    "why": ""
   },
   "edge": false,
-  "trail_stop": 1.340063,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 1.340644,
+  "tp1_hit": true,
+  "bars_open": 3
+ },
+ {
+  "id": "GBPUSD-5m-1793646600000",
+  "logged": "2026-11-02T20:20+01:00",
+  "bar_t": 1793646600000,
+  "bar_time": "Mon 02 Nov 20:10",
+  "sym": "GBPUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 28,
+  "entry": 1.340932,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 1.340349,
+  "tp": [
+   1.341515,
+   1.342097,
+   1.34268
+  ],
+  "inv": 1.340393,
+  "votes": [
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.33,
+   1.0,
+   0.41,
+   1.45,
+   2.0,
+   2.0,
+   0.36,
+   0.0,
+   0.38,
+   0.15,
+   0.86,
+   2.0,
+   0.0,
+   0.47,
+   2.0,
+   0.0,
+   0.5,
+   0.0,
+   0.2,
+   1.18,
+   0.34,
+   0.64,
+   0.0,
+   1.39,
+   0.09,
+   0.11,
+   0.0,
+   0.0
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00028808898585057455,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 47,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
  }
 ]
