@@ -3328,7 +3328,7 @@
   "fill_bar_t": 1793606400000,
   "trail_stop": 94.64,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "SOLUSD-15m-1793610900000",
@@ -4491,7 +4491,7 @@
   "edge": false,
   "trail_stop": 1.339942,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-1h-1793631600000",
@@ -4611,7 +4611,7 @@
   "edge": false,
   "trail_stop": 1.265792,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "XRPUSD-5m-1793638200000",
@@ -4706,6 +4706,121 @@
    "htf": -1,
    "agree": true,
    "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false,
+  "trail_stop": 1.253964,
+  "tp1_hit": false,
+  "bars_open": 2
+ },
+ {
+  "id": "GBPUSD-5m-1793638800000",
+  "logged": "2026-11-02T18:09+01:00",
+  "bar_t": 1793638800000,
+  "bar_time": "Mon 02 Nov 18:00",
+  "sym": "GBPUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 35,
+  "entry": 1.341544,
+  "entry_type": "limit (order block retest)",
+  "filled": false,
+  "stop": 1.341221,
+  "tp": [
+   1.341866,
+   1.342188,
+   1.342511
+  ],
+  "inv": 1.341274,
+  "votes": [
+   0,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   -1,
+   1
+  ],
+  "weights": [
+   0.33,
+   1.0,
+   0.41,
+   1.45,
+   2.0,
+   2.0,
+   0.36,
+   0.0,
+   0.38,
+   0.15,
+   0.86,
+   2.0,
+   0.0,
+   0.47,
+   2.0,
+   0.0,
+   0.5,
+   0.0,
+   0.2,
+   1.18,
+   0.34,
+   0.64,
+   0.0,
+   1.39,
+   0.09,
+   0.11,
+   0.0,
+   0.0
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00034901997154020766,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 72,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
    "range": {
     "on": false,
     "alert": false
