@@ -3405,7 +3405,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "cancelled",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.33636087727524644,
@@ -3419,7 +3419,8 @@
    "agree": true,
    "sigRaw": "SELL"
   },
-  "edge": false
+  "edge": false,
+  "exit": "limit not filled"
  },
  {
   "id": "SOLUSD-5m-1793618400000",
@@ -3620,9 +3621,9 @@
   },
   "edge": false,
   "fill_bar_t": 1793620500000,
-  "trail_stop": 1.340631,
-  "tp1_hit": false,
-  "bars_open": 6
+  "trail_stop": 1.341337,
+  "tp1_hit": true,
+  "bars_open": 8
  },
  {
   "id": "GBPUSD-15m-1793618100000",
@@ -3825,5 +3826,101 @@
   "R": -1.0,
   "exit": "stop",
   "closed_at": "2026-11-02T13:19+01:00"
+ },
+ {
+  "id": "SOLUSD-5m-1793622600000",
+  "logged": "2026-11-02T13:39+01:00",
+  "bar_t": 1793622600000,
+  "bar_time": "Mon 02 Nov 13:30",
+  "sym": "SOLUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -25,
+  "entry": 94.5,
+  "entry_type": "limit (order block retest)",
+  "filled": false,
+  "stop": 94.6645,
+  "tp": [
+   94.3355,
+   94.171,
+   94.0065
+  ],
+  "inv": 94.64,
+  "votes": [
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.19,
+   0.0,
+   1.36,
+   0.0,
+   0.2,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.38,
+   0.11,
+   0.0,
+   0.73,
+   0.47,
+   0.0,
+   0.3,
+   1.37,
+   0.2,
+   0.0,
+   0.31,
+   0.0,
+   1.9,
+   0.39,
+   0.0,
+   0.07,
+   1.54,
+   0.0
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.163324827978588,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 36,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL"
+  },
+  "edge": false
  }
 ]
