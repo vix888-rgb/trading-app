@@ -3713,7 +3713,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "cancelled",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0006836152771497124,
@@ -3727,7 +3727,8 @@
    "agree": true,
    "sigRaw": "BUY"
   },
-  "edge": false
+  "edge": false,
+  "exit": "limit not filled"
  },
  {
   "id": "USDJPY-5m-1793620200000",
