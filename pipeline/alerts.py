@@ -92,6 +92,11 @@ def lot_for_20(sym, entry, stop, rates):
     return f"{size:.{decimals}f} {unit}"
 
 
+def uses_vantage(doc, sym):
+    px = (doc.get("px") or {}).get(sym) or {}
+    return px.get("price_source") == "Vantage"
+
+
 def message_for(doc, sym, tf, sig):
     det = (doc.get("det") or {}).get(f"{sym}|{tf}") or {}
     pl = det.get("pl") or []
@@ -103,6 +108,7 @@ def message_for(doc, sym, tf, sig):
         tps.append(None)
     edge = bool(det.get("edge"))
     edge_txt = "tested edge: yes" if edge else "tested edge: no — UNTESTED EDGE (no proven edge after costs)"
+    # Entry and stop are already shifted when the scan applied a Vantage offset.
     size = lot_for_20(sym, entry, stop, doc.get("rates") or {})
     body = (
         f"Entry {fmt_px(entry, p)}, SL {fmt_px(stop, p)}, "
@@ -110,6 +116,8 @@ def message_for(doc, sym, tf, sig):
         f"lot size for $20 risk: {size}, {edge_txt}"
     )
     title = f"{sym} {TF_LABEL.get(tf, tf)} {sig}"
+    if uses_vantage(doc, sym):
+        title += " (Vantage)"
     return title, body
 
 
