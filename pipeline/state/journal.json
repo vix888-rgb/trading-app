@@ -5563,7 +5563,7 @@
   "fill_bar_t": 1793648700000,
   "trail_stop": 77464.636,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XAUUSD-5m-1793648940000",
@@ -6397,7 +6397,7 @@
   "score": -45,
   "entry": 3951.0,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 3961.96,
   "tp": [
    3940.04,
@@ -6498,7 +6498,11 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793650800000,
+  "trail_stop": 3961.96,
+  "tp1_hit": false,
+  "bars_open": 3
  },
  {
   "id": "SOLUSD-5m-1793650800000",
@@ -6591,6 +6595,121 @@
    "carryDir": 0,
    "vol": true,
    "atrPct": 91,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "BTCUSD-5m-1793651400000",
+  "logged": "2026-11-02T21:40+01:00",
+  "bar_t": 1793651400000,
+  "bar_time": "Mon 02 Nov 21:30",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -30,
+  "entry": 77059.005,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 77234.627,
+  "tp": [
+   76883.383,
+   76707.761,
+   76532.139
+  ],
+  "inv": 77060.01,
+  "votes": [
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.12,
+   0.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 146.35175217817496,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 81,
    "trend": -1,
    "htf": -1,
    "agree": true,
