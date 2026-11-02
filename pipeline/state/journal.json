@@ -3623,7 +3623,7 @@
   "fill_bar_t": 1793620500000,
   "trail_stop": 1.341337,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "GBPUSD-15m-1793618100000",
@@ -3907,7 +3907,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "cancelled",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.163324827978588,
@@ -3921,7 +3921,8 @@
    "agree": true,
    "sigRaw": "SELL"
   },
-  "edge": false
+  "edge": false,
+  "exit": "limit not filled"
  },
  {
   "id": "ETHUSD-5m-1793623800000",
