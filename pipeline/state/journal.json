@@ -5567,7 +5567,7 @@
   "fill_bar_t": 1793648700000,
   "trail_stop": 77464.636,
   "tp1_hit": false,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "XAUUSD-5m-1793648940000",
@@ -6506,7 +6506,7 @@
   "fill_bar_t": 1793650800000,
   "trail_stop": 3961.96,
   "tp1_hit": false,
-  "bars_open": 34
+  "bars_open": 35
  },
  {
   "id": "SOLUSD-5m-1793650800000",
@@ -6967,7 +6967,7 @@
   "edge": false,
   "trail_stop": 2268.758,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "XRPUSD-15m-1793653200000",
@@ -7083,7 +7083,7 @@
   "fill_bar_t": 1793655000000,
   "trail_stop": 1.2516,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "SOLUSD-5m-1793654400000",
@@ -7440,7 +7440,7 @@
   "edge": false,
   "trail_stop": 92.7068,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "BTCUSD-5m-1793658600000",
@@ -7524,7 +7524,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 105.52338073454315,
@@ -7561,7 +7561,10 @@
   "fill_bar_t": 1793659500000,
   "trail_stop": 76918.01,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 17,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-03T01:20+01:00"
  },
  {
   "id": "ETHUSD-5m-1793658600000",
@@ -7679,7 +7682,7 @@
   "fill_bar_t": 1793659500000,
   "trail_stop": 2261.534,
   "tp1_hit": false,
-  "bars_open": 17
+  "bars_open": 19
  },
  {
   "id": "EURUSD-15m-1793660400000",
@@ -7794,6 +7797,6 @@
   "edge": true,
   "trail_stop": 1.120149,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  }
 ]
