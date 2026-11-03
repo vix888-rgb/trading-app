@@ -5570,7 +5570,7 @@
   "fill_bar_t": 1793648700000,
   "trail_stop": 76965.755,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 43
  },
  {
   "id": "XAUUSD-5m-1793648940000",
@@ -6973,7 +6973,7 @@
   "edge": false,
   "trail_stop": 2268.758,
   "tp1_hit": false,
-  "bars_open": 37
+  "bars_open": 38
  },
  {
   "id": "XRPUSD-15m-1793653200000",
@@ -7449,7 +7449,7 @@
   "edge": false,
   "trail_stop": 92.08,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 33
  },
  {
   "id": "BTCUSD-5m-1793658600000",
@@ -7809,7 +7809,7 @@
   "edge": true,
   "trail_stop": 1.120149,
   "tp1_hit": false,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "XRPUSD-15m-1793666700000",
@@ -9483,7 +9483,7 @@
   "fill_bar_t": 1793685600000,
   "trail_stop": 3937.755,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1793686500000",
@@ -9496,7 +9496,7 @@
   "score": -25,
   "entry": 91.65,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 92.03437,
   "tp": [
    91.26563,
@@ -9598,7 +9598,11 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793687100000,
+  "trail_stop": 92.03437,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "GBPUSD-5m-1793686500000",
