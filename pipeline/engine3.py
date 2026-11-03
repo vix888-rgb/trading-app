@@ -6,6 +6,7 @@ os.environ["TRADING_LOAD_ONLY"] = "1"
 exec(compile(open(os.path.join(_PIPE, "engine2.py"), encoding="utf-8").read(), os.path.join(_PIPE, "engine2.py"), "exec"))
 os.environ.pop("TRADING_LOAD_ONLY", None)
 from paths import STATE, RAW_PKL, SNAP3
+import patterns
 os.makedirs(STATE, exist_ok=True)
 PARAMS_DEFAULT={"version":1,"horizon_bars":12,"tp_atr":1.5,"sl_atr":1.0,"samples":150,"window":300,"shrink_k":30,"weight_scale":10,"weight_max":2.0,
   "min_samples":10,"low_sample_weight":0.3,"news_weight":0.5,"live_blend":0.5,"live_min":10,"buy_th":25,"sell_th":-25,"regime_mult":WT,"fit_frac":0.6,
@@ -262,6 +263,7 @@ def main3():
                 sig,score,flt=prevl["sig"],prevl["score"],prevl.get("flt",flt); flt=dict(flt or {}); flt["latched"]=True
             LATCH_OUT[lk]={"bar_t":bt_,"sig":sig,"score":score,"flt":{k_:v_ for k_,v_ in flt.items() if k_!="latched"}}
             flt=dict(flt or {}); flt["ind"]=edge.indicator_panel(df,hdf,tf,key,HSTEP[tf])  # round 4 indicator panel (display, every scan)
+            flt["pat"]=patterns.panel(df) if key in ("XAUUSD","BTCUSD") and tf in ("1h","4h","1d") else []  # pattern agents, display only
             if oo is not None and not frozen:  # same OOS samples, adaptive consensus but only when the quality filters agree
                 rf=[]
                 for r in rec[cut:]:

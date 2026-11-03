@@ -3,6 +3,7 @@ _PIPE = os.path.dirname(os.path.abspath(__file__))
 if _PIPE not in sys.path: sys.path.insert(0, _PIPE)
 exec(compile(open(os.path.join(_PIPE, "engine.py"), encoding="utf-8").read(), os.path.join(_PIPE, "engine.py"), "exec"))
 import edge
+import patterns
 CAT={"EMA trend (20/50/200)":"T","MACD (12/26/9)":"T","RSI (14)":"M","Stochastic (14/3/3)":"M","Bollinger Bands (20/2)":"M","ADX trend strength (14)":"T","Ichimoku cloud":"T","Supertrend (10/3)":"T","Volume / OBV":"T","VWAP (rolling 50 bars)":"T","Support / resistance":"M","Candlestick patterns":"N","RSI divergence":"M","Multi-timeframe confirmation":"T","Volatility (ATR 14)":"N","News sentiment":"N"}
 def tz_index(df): return pd.to_datetime(df.t,unit="ms",utc=True).dt.tz_convert(TZ)
 def pivots_confirmed(h,l,w=3):
@@ -155,7 +156,13 @@ def regime(df):
     return "Transitional","mixed",x,er
 
 # ---------- strategies + backtest ----------
-STRATS=["Trend-follow + ADX filter","Turtle 20-bar breakout","Range mean reversion","London breakout","ICT/SMC sweep + CHoCH","MTF top-down pullback","Wyckoff spring / upthrust","Squeeze momentum breakout"]+[edge.NEW_STRATS[k] for k in edge.KEEP_NEW]+[edge.TOM_NAME,edge.SWEEP_NAME,edge.LEZ_NAME,edge.BRK_NAME,edge.SQZ_NAME]
+PAT_KEYS=["Wolfe","Harmonic","AB=CD","Wyckoff"]
+PAT_NAMES=["Wolfe Wave (pattern)","Harmonic XABCD: Gartley/Bat/Butterfly/Crab/Shark (pattern)","AB=CD (pattern)","Wyckoff spring/UTAD → SOS/SOW → LPS/LPSY (pattern)"]
+PAT_RULES=["Confirmed 4-bar pivots, legs ≥1 ATR. 1-3-5 and 2-4 converge, 4 overlaps 1, 5 overshoots line 1-3 by ≤1 ATR → trade toward line 1-4. Unseen test: too few trades (12–23), gold 1h negative. Display only",
+ "XABCD at standard ratios (Gartley B .618/D .786, Bat B .382–.5/D .886, Butterfly B .786/D 1.27–1.618, Crab D 1.618, Shark); signal when D is confirmed and still holds. Train negative; display only",
+ "BC .382–.886 of AB, CD = AB ±10%, CD 1.13–2.618 × BC, similar time; signal when D is confirmed. Train +0.46R, test +0.05R; display only",
+ "40-bar trading range ≤8 ATR; spring/UTAD (false break that closes back inside) → SOS/SOW close in the far quartile within 15 bars → first confirmed LPS/LPSY pivot that holds the range → enter. Test +0.08R, gold 1h negative; display only"]
+STRATS=["Trend-follow + ADX filter","Turtle 20-bar breakout","Range mean reversion","London breakout","ICT/SMC sweep + CHoCH","MTF top-down pullback","Wyckoff spring / upthrust","Squeeze momentum breakout"]+[edge.NEW_STRATS[k] for k in edge.KEEP_NEW]+[edge.TOM_NAME,edge.SWEEP_NAME,edge.LEZ_NAME,edge.BRK_NAME,edge.SQZ_NAME]+PAT_NAMES
 RULES=["EMA20>EMA50, ADX>25 with +DI>−DI, close reclaims EMA20 → long (mirror short)",
  "Close breaks prior 20-bar high → long; below 20-bar low → short (Donchian, Turtle System 1)",
  "ADX<20 regime, close outside Bollinger band with RSI<30 / >70 → fade back toward the mean",
@@ -163,7 +170,7 @@ RULES=["EMA20>EMA50, ADX>25 with +DI>−DI, close reclaims EMA20 → long (mirro
  "Sell-side sweep of 20-bar low, then bullish CHoCH within 10 bars → long (mirror short)",
  "Higher-TF EMA20>EMA50 bias; RSI dips under 40 then reclaims it with price above EMA50 → long",
  "Range (ADX<25): wick below 30-bar low, close back inside (volume >1.5× if available) → long",
- "Squeeze on ≥5 bars then releases; momentum positive & rising → long (mirror short)"]+[edge.NEW_RULES[k] for k in edge.KEEP_NEW]+[edge.TOM_RULE,edge.SWEEP_RULE,edge.LEZ_RULE,edge.BRK_RULE,edge.SQZ_RULE]
+ "Squeeze on ≥5 bars then releases; momentum positive & rising → long (mirror short)"]+[edge.NEW_RULES[k] for k in edge.KEEP_NEW]+[edge.TOM_RULE,edge.SWEEP_RULE,edge.LEZ_RULE,edge.BRK_RULE,edge.SQZ_RULE]+PAT_RULES
 def strat_signals(df,tf,htf,sym=None):
     c=df.c; n=len(df); e20,e50=ema(c,20),ema(c,50); X,PDI,NDI=adx(df); R=rsi(c)
     L=[np.zeros(n,bool) for _ in range(8)]; S=[np.zeros(n,bool) for _ in range(8)]
@@ -211,6 +218,8 @@ def strat_signals(df,tf,htf,sym=None):
     L.append(Lz); S.append(Sz)  # Liquidity Entry Zones (point scale). Alerts only if the unseen test earned them.
     Lb,Sb,_,_,_=edge.donchian_signals(df,htf); L.append(Lb); S.append(Sb)  # round 4 (3 Nov 2026): display only
     Lq,Sq=edge.squeeze_signals(df); L.append(Lq); S.append(Sq)            # round 4 (3 Nov 2026): display only
+    PL,PS,_=patterns.all_signals(df)                                       # pattern agents (3 Nov 2026): display only, failed the walk-forward
+    for k_ in PAT_KEYS: L.append(PL[k_]); S.append(PS[k_])
     return L,S
 def backtest(df,Lg,Sg,stopA=1.5,rr=2.0,maxbars=48):
     A=atr(df).values; o,h,l,c=df.o.values,df.h.values,df.l.values,df.c.values; n=len(df); res=[]; i=60
