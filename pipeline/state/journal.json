@@ -11541,7 +11541,7 @@
    "TSMOM multi-lookback trend",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004742260184667554,
@@ -11575,7 +11575,10 @@
   "fill_bar_t": 1793706300000,
   "trail_stop": 1.119392,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 7,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-03T14:51+01:00"
  },
  {
   "id": "XRPUSD-5m-1793707500000",
