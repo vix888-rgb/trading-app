@@ -10114,7 +10114,7 @@
   "edge": false,
   "trail_stop": 3925.5,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "GBPUSD-5m-1793690100000",
@@ -11201,7 +11201,7 @@
   "fill_bar_t": 1793701800000,
   "trail_stop": 2286.109,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-5m-1793696100000",
@@ -11333,7 +11333,7 @@
   "score": 29,
   "entry": 1.340851,
   "entry_type": "limit (order block retest)",
-  "filled": false,
+  "filled": true,
   "stop": 1.340188,
   "tp": [
    1.341515,
@@ -11435,6 +11435,126 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793704500000,
+  "trail_stop": 1.340188,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "EURUSD-15m-1793704500000",
+  "logged": "2026-11-03T12:31+01:00",
+  "bar_t": 1793704500000,
+  "bar_time": "Tue 03 Nov 12:15",
+  "sym": "EURUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -29,
+  "entry": 1.118443,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 1.119392,
+  "tp": [
+   1.117495,
+   1.116546,
+   1.115598
+  ],
+  "inv": 1.120825,
+  "votes": [
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   1
+  ],
+  "weights": [
+   1.54,
+   0.0,
+   0.23,
+   1.52,
+   0.43,
+   0.0,
+   0.48,
+   0.55,
+   0.38,
+   0.15,
+   0.0,
+   0.0,
+   0.0,
+   1.35,
+   0.14,
+   0.0,
+   0.21,
+   0.08,
+   0.39,
+   1.6,
+   0.0,
+   0.45,
+   0.0,
+   0.46,
+   0.0,
+   0.1,
+   0.0,
+   0.27
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "TSMOM multi-lookback trend",
+   "Keltner volatility breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0004742260184667554,
+  "filters": {
+   "carry": -1.38,
+   "carryDir": -1,
+   "vol": true,
+   "atrPct": 29,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": true
  }
 ]
