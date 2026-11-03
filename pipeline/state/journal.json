@@ -11837,7 +11837,7 @@
   "score": 31,
   "entry": 1.340968,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 1.340416,
   "tp": [
    1.34152,
@@ -11941,7 +11941,11 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793719800000,
+  "trail_stop": 1.340416,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "USDJPY-15m-1793714400000",
@@ -12056,7 +12060,7 @@
   "edge": false,
   "trail_stop": 158.27759828245024,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "GBPUSD-5m-1793717700000",
@@ -12528,6 +12532,121 @@
     "on": true,
     "title": "Congressional Elections",
     "at": "2026-11-03T10:16:00-05:00",
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false,
+  "trail_stop": 1.268356,
+  "tp1_hit": false,
+  "bars_open": 2
+ },
+ {
+  "id": "XAUUSD-15m-1793719986000",
+  "logged": "2026-11-03T16:51+01:00",
+  "bar_t": 1793719986000,
+  "bar_time": "Tue 03 Nov 16:33",
+  "sym": "XAUUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -37,
+  "entry": 3941.6,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 3959.415,
+  "tp": [
+   3923.785,
+   3905.971,
+   3888.156
+  ],
+  "inv": 3981.7,
+  "votes": [
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   0,
+   1,
+   -1,
+   1,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.96,
+   0.12,
+   0.01,
+   0.97,
+   0.0,
+   2.0,
+   0.5,
+   0.27,
+   0.68,
+   0.43,
+   0.0,
+   0.0,
+   0.21,
+   1.04,
+   0.79,
+   0.0,
+   0.23,
+   1.13,
+   0.84,
+   0.0,
+   0.24,
+   0.21,
+   0.0,
+   0.39,
+   0.49,
+   0.39,
+   0.0,
+   0.0
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 8.90733112604612,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 78,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
     "alert": false
    },
    "why": ""
