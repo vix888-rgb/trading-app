@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T13:41+01:00",
+ "updated": "2026-11-03T13:51+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13174,13 +13174,13 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 67,
-    "hit": 30,
-    "avgR": -0.101,
+    "n": 68,
+    "hit": 29,
+    "avgR": -0.099,
     "pf": 0.81
    },
    "Stochastic (14/3/3)": {
-    "n": 67,
+    "n": 68,
     "hit": 31,
     "avgR": -0.042,
     "pf": 0.92
@@ -13198,9 +13198,9 @@
     "pf": 1.19
    },
    "Supertrend (10/3)": {
-    "n": 67,
+    "n": 68,
     "hit": 31,
-    "avgR": 0.171,
+    "avgR": 0.169,
     "pf": 1.42
    },
    "Volume / OBV": {
@@ -13216,9 +13216,9 @@
     "pf": 0.8
    },
    "Candlestick patterns": {
-    "n": 34,
-    "hit": 12,
-    "avgR": -0.27,
+    "n": 35,
+    "hit": 11,
+    "avgR": -0.262,
     "pf": 0.56
    },
    "RSI divergence": {
@@ -13240,21 +13240,21 @@
     "pf": 0.31
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 67,
-    "hit": 30,
-    "avgR": 0.13,
+    "n": 68,
+    "hit": 29,
+    "avgR": 0.128,
     "pf": 1.31
    },
    "Order blocks": {
-    "n": 28,
-    "hit": 50,
-    "avgR": 0.513,
+    "n": 29,
+    "hit": 48,
+    "avgR": 0.495,
     "pf": 6.32
    },
    "Fair value gaps": {
-    "n": 50,
+    "n": 51,
     "hit": 22,
-    "avgR": -0.081,
+    "avgR": -0.08,
     "pf": 0.85
    },
    "Liquidity sweeps": {
@@ -13264,9 +13264,9 @@
     "pf": 1.53
    },
    "Volume profile / POC": {
-    "n": 67,
-    "hit": 30,
-    "avgR": 0.082,
+    "n": 68,
+    "hit": 29,
+    "avgR": 0.08,
     "pf": 1.18
    },
    "Anchored VWAP": {
@@ -13276,25 +13276,25 @@
     "pf": 0.57
    },
    "Heikin Ashi trend": {
-    "n": 67,
-    "hit": 27,
-    "avgR": 0.04,
+    "n": 68,
+    "hit": 26,
+    "avgR": 0.039,
     "pf": 1.08
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 67,
-    "hit": 27,
-    "avgR": 0.083,
+    "n": 68,
+    "hit": 26,
+    "avgR": 0.082,
     "pf": 1.18
    },
    "Hull MA (55)": {
-    "n": 67,
+    "n": 68,
     "hit": 24,
     "avgR": 0.001,
     "pf": 1.0
    },
    "Daily pivot points": {
-    "n": 67,
+    "n": 68,
     "hit": 24,
     "avgR": 0.002,
     "pf": 1.0
@@ -13380,9 +13380,9 @@
     "pf": 1.85
    },
    "GBPUSD": {
-    "n": 14,
-    "hit": 29,
-    "avgR": 0.444,
+    "n": 15,
+    "hit": 27,
+    "avgR": 0.415,
     "pf": 2.24
    },
    "EURUSD": {
@@ -13461,12 +13461,12 @@
    }
   },
   "all": {
-   "n": 67,
+   "n": 68,
    "hit": 21,
    "avgR": 0.011,
    "pf": 1.02
   },
-  "open": 22,
+  "open": 21,
   "total": 108
  },
  "rates": {
