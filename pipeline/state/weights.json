@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T23:53+01:00",
+ "updated": "2026-11-04T00:03+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13175,22 +13175,22 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 82,
-    "hit": 28,
-    "avgR": -0.158,
-    "pf": 0.71
+    "n": 83,
+    "hit": 29,
+    "avgR": -0.144,
+    "pf": 0.74
    },
    "Stochastic (14/3/3)": {
-    "n": 82,
+    "n": 83,
     "hit": 34,
-    "avgR": -0.007,
-    "pf": 0.98
+    "avgR": -0.019,
+    "pf": 0.96
    },
    "ADX trend strength (14)": {
-    "n": 43,
-    "hit": 28,
-    "avgR": 0.162,
-    "pf": 1.32
+    "n": 44,
+    "hit": 30,
+    "avgR": 0.181,
+    "pf": 1.36
    },
    "Ichimoku cloud": {
     "n": 71,
@@ -13199,10 +13199,10 @@
     "pf": 1.04
    },
    "Supertrend (10/3)": {
-    "n": 82,
-    "hit": 28,
-    "avgR": 0.069,
-    "pf": 1.16
+    "n": 83,
+    "hit": 29,
+    "avgR": 0.08,
+    "pf": 1.18
    },
    "Volume / OBV": {
     "n": 56,
@@ -13229,22 +13229,22 @@
     "pf": 0.25
    },
    "Multi-timeframe confirmation": {
-    "n": 66,
-    "hit": 20,
-    "avgR": -0.067,
-    "pf": 0.86
+    "n": 67,
+    "hit": 19,
+    "avgR": -0.081,
+    "pf": 0.83
    },
    "News sentiment": {
-    "n": 39,
+    "n": 40,
     "hit": 15,
-    "avgR": -0.344,
-    "pf": 0.39
+    "avgR": -0.36,
+    "pf": 0.37
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 82,
-    "hit": 29,
-    "avgR": 0.078,
-    "pf": 1.18
+    "n": 83,
+    "hit": 30,
+    "avgR": 0.09,
+    "pf": 1.21
    },
    "Order blocks": {
     "n": 30,
@@ -13253,52 +13253,52 @@
     "pf": 6.32
    },
    "Fair value gaps": {
-    "n": 62,
-    "hit": 23,
-    "avgR": -0.11,
-    "pf": 0.79
+    "n": 63,
+    "hit": 22,
+    "avgR": -0.124,
+    "pf": 0.77
    },
    "Liquidity sweeps": {
-    "n": 23,
-    "hit": 48,
-    "avgR": 0.167,
-    "pf": 1.49
+    "n": 24,
+    "hit": 46,
+    "avgR": 0.118,
+    "pf": 1.32
    },
    "Volume profile / POC": {
-    "n": 82,
+    "n": 83,
     "hit": 33,
-    "avgR": 0.07,
-    "pf": 1.16
+    "avgR": 0.057,
+    "pf": 1.13
    },
    "Anchored VWAP": {
-    "n": 68,
-    "hit": 26,
-    "avgR": -0.192,
-    "pf": 0.58
+    "n": 69,
+    "hit": 28,
+    "avgR": -0.175,
+    "pf": 0.61
    },
    "Heikin Ashi trend": {
-    "n": 82,
+    "n": 83,
     "hit": 27,
-    "avgR": -0.014,
-    "pf": 0.97
+    "avgR": -0.025,
+    "pf": 0.95
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 82,
-    "hit": 27,
-    "avgR": 0.045,
-    "pf": 1.1
+    "n": 83,
+    "hit": 28,
+    "avgR": 0.057,
+    "pf": 1.13
    },
    "Hull MA (55)": {
-    "n": 82,
-    "hit": 24,
-    "avgR": -0.056,
-    "pf": 0.89
+    "n": 83,
+    "hit": 25,
+    "avgR": -0.044,
+    "pf": 0.91
    },
    "Daily pivot points": {
-    "n": 82,
-    "hit": 26,
-    "avgR": -0.02,
-    "pf": 0.96
+    "n": 83,
+    "hit": 25,
+    "avgR": -0.032,
+    "pf": 0.94
    },
    "EMA trend (20/50/200)": {
     "n": 49,
@@ -13307,22 +13307,22 @@
     "pf": 1.43
    },
    "RSI (14)": {
-    "n": 53,
-    "hit": 26,
-    "avgR": 0.085,
-    "pf": 1.17
+    "n": 54,
+    "hit": 28,
+    "avgR": 0.101,
+    "pf": 1.2
    },
    "Bollinger Bands (20/2)": {
-    "n": 29,
-    "hit": 14,
-    "avgR": -0.002,
-    "pf": 1.0
+    "n": 30,
+    "hit": 17,
+    "avgR": 0.031,
+    "pf": 1.06
    },
    "Williams %R / CCI": {
-    "n": 29,
-    "hit": 38,
-    "avgR": -0.248,
-    "pf": 0.6
+    "n": 30,
+    "hit": 40,
+    "avgR": -0.207,
+    "pf": 0.65
    },
    "Fibonacci confluence": {
     "n": 13,
@@ -13393,10 +13393,10 @@
     "pf": 0.0
    },
    "USDJPY": {
-    "n": 2,
-    "hit": 50,
-    "avgR": 0.605,
-    "pf": 2.21
+    "n": 3,
+    "hit": 33,
+    "avgR": 0.07,
+    "pf": 1.1
    }
   },
   "strat": {
@@ -13407,10 +13407,10 @@
     "pf": 1.99
    },
    "Wyckoff spring / upthrust": {
-    "n": 3,
-    "hit": 33,
-    "avgR": 0.0,
-    "pf": 1.0
+    "n": 4,
+    "hit": 25,
+    "avgR": -0.25,
+    "pf": 0.67
    },
    "Trend-follow + ADX filter": {
     "n": 10,
@@ -13449,9 +13449,9 @@
     "pf": 0.0
    },
    "Squeeze momentum breakout": {
-    "n": 2,
+    "n": 3,
     "hit": 0,
-    "avgR": -0.5,
+    "avgR": -0.667,
     "pf": 0.0
    },
    "Range mean reversion": {
@@ -13474,12 +13474,12 @@
    }
   },
   "all": {
-   "n": 82,
-   "hit": 21,
-   "avgR": -0.061,
-   "pf": 0.88
+   "n": 83,
+   "hit": 20,
+   "avgR": -0.072,
+   "pf": 0.86
   },
-  "open": 19,
+  "open": 18,
   "total": 122
  },
  "rates": {

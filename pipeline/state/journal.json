@@ -11952,7 +11952,7 @@
   "fill_bar_t": 1793719800000,
   "trail_stop": 1.340968,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "USDJPY-15m-1793714400000",
@@ -12067,7 +12067,7 @@
   "edge": false,
   "trail_stop": 158.441599747294,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 35
  },
  {
   "id": "GBPUSD-5m-1793717700000",
@@ -13463,7 +13463,7 @@
    "Wyckoff spring / upthrust",
    "Squeeze momentum breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.03251612986204119,
@@ -13514,6 +13514,9 @@
   "edge": false,
   "trail_stop": 158.611,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T00:03+01:00"
  }
 ]
