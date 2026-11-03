@@ -11952,7 +11952,7 @@
   "fill_bar_t": 1793719800000,
   "trail_stop": 1.340968,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "USDJPY-15m-1793714400000",
@@ -12067,7 +12067,7 @@
   "edge": false,
   "trail_stop": 158.441599747294,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "GBPUSD-5m-1793717700000",
@@ -12672,7 +12672,7 @@
   "fill_bar_t": 1793720700000,
   "trail_stop": 3959.415,
   "tp1_hit": false,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "SOLUSD-1h-1793718000000",
@@ -13106,7 +13106,7 @@
    "Trend-follow + ADX filter",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.254201179202062,
@@ -13139,7 +13139,10 @@
   "edge": false,
   "trail_stop": 2284.332,
   "tp1_hit": false,
-  "bars_open": 42
+  "bars_open": 42,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-03T21:22+01:00"
  },
  {
   "id": "XAUUSD-1h-1793721600000",
@@ -13372,6 +13375,6 @@
   "fill_bar_t": 1793728800000,
   "trail_stop": 158.61778312753876,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  }
 ]
