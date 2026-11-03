@@ -3333,7 +3333,7 @@
   "fill_bar_t": 1793606400000,
   "trail_stop": 93.54843351331891,
   "tp1_hit": true,
-  "bars_open": 25
+  "bars_open": 26
  },
  {
   "id": "SOLUSD-15m-1793610900000",
@@ -4620,7 +4620,7 @@
   "edge": false,
   "trail_stop": 1.265792,
   "tp1_hit": false,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "XRPUSD-5m-1793638200000",
@@ -5932,7 +5932,7 @@
   "edge": true,
   "trail_stop": 77878.895,
   "tp1_hit": false,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "EURUSD-4h-1793635200000",
@@ -9350,7 +9350,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 13.624844697185573,
@@ -9386,7 +9386,10 @@
   "edge": false,
   "trail_stop": 2266.704,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 3,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-03T11:00+01:00"
  },
  {
   "id": "XAUUSD-5m-1793685588000",
@@ -9504,7 +9507,7 @@
   "fill_bar_t": 1793685600000,
   "trail_stop": 3921.5627751780503,
   "tp1_hit": true,
-  "bars_open": 45
+  "bars_open": 47
  },
  {
   "id": "SOLUSD-5m-1793686500000",
@@ -10108,7 +10111,7 @@
   "edge": false,
   "trail_stop": 3925.5,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "GBPUSD-5m-1793690100000",
@@ -10466,7 +10469,7 @@
   "fill_bar_t": 1793695500000,
   "trail_stop": 1.34131,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "GBPUSD-1h-1793689200000",
@@ -10914,7 +10917,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.3757045920732998,
@@ -10947,7 +10950,10 @@
   "edge": false,
   "trail_stop": 92.41636,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 5,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-03T11:00+01:00"
  },
  {
   "id": "XAUUSD-1h-1793692800000",
@@ -11297,6 +11303,6 @@
   "fill_bar_t": 1793697300000,
   "trail_stop": 1.341364,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 9
  }
 ]
