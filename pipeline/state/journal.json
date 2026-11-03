@@ -12054,9 +12054,9 @@
    "why": ""
   },
   "edge": false,
-  "trail_stop": 158.17359437620024,
+  "trail_stop": 158.27759828245024,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "GBPUSD-5m-1793717700000",
@@ -12302,5 +12302,122 @@
   "exit": "stop",
   "tp1_hit": false,
   "closed_at": "2026-11-03T16:21+01:00"
+ },
+ {
+  "id": "EURUSD-15m-1793718900000",
+  "logged": "2026-11-03T16:31+01:00",
+  "bar_t": 1793718900000,
+  "bar_time": "Tue 03 Nov 16:15",
+  "sym": "EURUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -45,
+  "entry": 1.118693,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 1.120172,
+  "tp": [
+   1.117215,
+   1.115736,
+   1.114257
+  ],
+  "inv": 1.120072,
+  "votes": [
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.54,
+   0.0,
+   0.23,
+   1.52,
+   0.43,
+   0.0,
+   0.48,
+   0.55,
+   0.38,
+   0.15,
+   0.0,
+   0.0,
+   0.0,
+   1.35,
+   0.14,
+   0.0,
+   0.21,
+   0.08,
+   0.39,
+   1.6,
+   0.0,
+   0.45,
+   0.0,
+   0.46,
+   0.0,
+   0.1,
+   0.0,
+   0.27
+  ],
+  "strategies": [
+   "MTF top-down pullback",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0006695768293377913,
+  "filters": {
+   "carry": -1.38,
+   "carryDir": -1,
+   "vol": true,
+   "atrPct": 86,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "Congressional Elections",
+    "at": "2026-11-03T10:16:00-05:00",
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": true
  }
 ]
