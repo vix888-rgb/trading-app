@@ -12518,7 +12518,7 @@
    0.2
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0035218490812137172,
@@ -12553,7 +12553,10 @@
   "edge": false,
   "trail_stop": 1.2754,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 0.26,
+  "exit": "time exit",
+  "closed_at": "2026-11-03T20:42+01:00"
  },
  {
   "id": "XAUUSD-15m-1793719986000",
@@ -12899,7 +12902,7 @@
   "fill_bar_t": 1793723700000,
   "trail_stop": 1.3414,
   "tp1_hit": true,
-  "bars_open": 35
+  "bars_open": 37
  },
  {
   "id": "USDJPY-5m-1793723100000",
@@ -13133,7 +13136,7 @@
   "edge": false,
   "trail_stop": 2284.332,
   "tp1_hit": false,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "XAUUSD-1h-1793721600000",
@@ -13364,8 +13367,8 @@
   },
   "edge": false,
   "fill_bar_t": 1793728800000,
-  "trail_stop": 158.5947728736325,
+  "trail_stop": 158.61778312753876,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  }
 ]
