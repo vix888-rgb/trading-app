@@ -4,6 +4,7 @@ if _PIPE not in sys.path: sys.path.insert(0, _PIPE)
 exec(compile(open(os.path.join(_PIPE, "engine.py"), encoding="utf-8").read(), os.path.join(_PIPE, "engine.py"), "exec"))
 import edge
 import patterns
+import goldfeed
 CAT={"EMA trend (20/50/200)":"T","MACD (12/26/9)":"T","RSI (14)":"M","Stochastic (14/3/3)":"M","Bollinger Bands (20/2)":"M","ADX trend strength (14)":"T","Ichimoku cloud":"T","Supertrend (10/3)":"T","Volume / OBV":"T","VWAP (rolling 50 bars)":"T","Support / resistance":"M","Candlestick patterns":"N","RSI divergence":"M","Multi-timeframe confirmation":"T","Volatility (ATR 14)":"N","News sentiment":"N"}
 def tz_index(df): return pd.to_datetime(df.t,unit="ms",utc=True).dt.tz_convert(TZ)
 def pivots_confirmed(h,l,w=3):
@@ -279,6 +280,19 @@ def main2():
     else:
         news,nstatus=fetch_news(); raw={}; srcstat=[]; SY=SYMBOLS
     for key,label,src,code,mkt in SY:
+        if key=="XAUUSD":
+            # Spot XAU/USD when TWELVEDATA_API_KEY is set; otherwise GC=F minus the last futures-spot offset.
+            try:
+                frames,terr=goldfeed.load_xau(yahoo)
+            except Exception as e:
+                frames,terr={}, {tf:goldfeed.safe_reason(e) for tf in TFS}
+            for tf in TFS:
+                df=frames.get(tf)
+                try:
+                    if df is None or len(df)<150: raise Exception(terr.get(tf) or f"only {0 if df is None else len(df)} candles")
+                    raw[(key,tf)]=df.tail(1000).reset_index(drop=True); srcstat.append([key,tf,1,len(raw[(key,tf)]),""])
+                except Exception as e: srcstat.append([key,tf,0,0,str(e)[:80]])
+            continue
         for tf in TFS:
             try:
                 df=binance(code,tf) if src=="binance" else yahoo(code,tf)
@@ -289,7 +303,7 @@ def main2():
     names=None; out=[]; HTF={"1m":"15m","5m":"1h","15m":"4h","1h":"4h","4h":"1d","1d":None}
     for key,label,src,code,mkt in SYMBOLS:
         nf=news_for(key,news)
-        sd={"key":key,"label":label,"mkt":mkt,"src":("Binance public API "+code) if src=="binance" else ("Yahoo Finance "+code+(" (COMEX gold futures, proxy for spot XAU/USD)" if code=="GC=F" else "")),
+        sd={"key":key,"label":label,"mkt":mkt,"src":goldfeed.feed_label(key,src,code),
             "news":[[i["src"],i["title"],i["link"],i["t"],datetime.fromtimestamp(i["ts"],TZ).strftime("%d %b %H:%M") if i["ts"] else ""] for i in nf["items"]],"tf":{}}
         for tf in TFS:
             df=raw.get((key,tf))

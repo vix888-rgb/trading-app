@@ -6,6 +6,7 @@ os.environ["TRADING_LOAD_ONLY"] = "1"
 exec(compile(open(os.path.join(_PIPE, "engine2.py"), encoding="utf-8").read(), os.path.join(_PIPE, "engine2.py"), "exec"))
 os.environ.pop("TRADING_LOAD_ONLY", None)
 from paths import STATE, RAW_PKL, SNAP3
+import goldfeed
 import patterns
 os.makedirs(STATE, exist_ok=True)
 PARAMS_DEFAULT={"version":1,"horizon_bars":12,"tp_atr":1.5,"sl_atr":1.0,"samples":150,"window":300,"shrink_k":30,"weight_scale":10,"weight_max":2.0,
@@ -193,7 +194,7 @@ def main3():
     recs={(k,tf):r for k,tf,r in R}
     for key,label,src,code,mkt in SYMBOLS:
         nf=news_for(key,news)
-        sd={"key":key,"label":label,"mkt":mkt,"src":("Binance public API "+code) if src=="binance" else ("Yahoo Finance "+code+(" (COMEX gold futures, proxy for spot XAU/USD)" if code=="GC=F" else "")),
+        sd={"key":key,"label":label,"mkt":mkt,"src":goldfeed.feed_label(key,src,code),
             "news":[[i["src"],i["title"],i["link"],i["t"],datetime.fromtimestamp(i["ts"],TZ).strftime("%d %b %H:%M") if i["ts"] else ""] for i in nf["items"]],"tf":{}}
         for tf in TFS:
             df=raw.get((key,tf))
@@ -305,6 +306,8 @@ def main3():
               "c":{"t0":"","t1":datetime.fromtimestamp(tl.t.iloc[-1]/1000,TZ).strftime("%d %b %H:%M"),
                    "o":[R_(x,p) for x in tl.o],"h":[R_(x,p) for x in tl.h],"l":[R_(x,p) for x in tl.l],"c":[R_(x,p) for x in tl.c],"e20":[R_(x,p) for x in ind["e20"].tail(N)],"e50":[R_(x,p) for x in ind["e50"].tail(N)]}}
         out.append(sd)
+    nbase=goldfeed.rebase_open_journal(JPATH)
+    if nbase: print("gold journal on spot scale", nbase)
     J,added=run_journal(raw,curr,names,STRATS)
     LS=live_stats(J,names)
     json.dump({"updated":datetime.now(TZ).isoformat(timespec="minutes"),"params":PRM,"agents":names,"categories":dict(zip(names,catl)),
@@ -315,7 +318,7 @@ def main3():
     uj,uc=raw.get(("USDJPY","1h")),raw.get(("USDCHF","1h"))
     rates={"USDJPY":None if uj is None else round(float(uj.c.iloc[-1]),5),"USDCHF":None if uc is None else round(float(uc.c.iloc[-1]),5)}
     res={"gen":datetime.now(TZ).strftime("%a %d %b %Y, %H:%M"),"names":[[n_,c_] for n_,c_ in zip(names,catl)],"strats":STRATS,"rules":RULES,"rates":{k:(None if v is None else round(float(v),5)) for k,v in rates.items()},
-         "sym":out,"newsStatus":nstatus,"priceStatus":srcstat,"newsCount":len(news),"journal":J[-40:],"jadded":added,"live":LS,
+         "sym":out,"newsStatus":nstatus,"priceStatus":srcstat,"newsCount":len(news),"journal":J[-40:],"jadded":added,"live":LS,"gold":goldfeed.public_meta(),
          "prm":{**PRM,"range_alerts":edge.RANGE_ALERTS,"sweep_alerts":edge.SWEEP_ALERTS,"news_alerts":edge.NEWS_ALERTS}}
     s=json.dumps(res,separators=(",",":"),default=lambda o: float(o) if isinstance(o,(np.floating,np.integer)) else str(o))
     open(SNAP3,"w").write(s); print("ok",len(s),"journal added",added,"total",len(J))

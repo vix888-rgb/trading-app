@@ -54,3 +54,7 @@ jobs:
           SCAN_MAX_ITER_SEC: "540"
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
+          # Spot gold. Empty until the repo secret exists; the pipeline then
+          # uses Yahoo GC=F minus the last futures-spot offset. Never written
+          # to the site or the repo.
+          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}

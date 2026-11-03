@@ -46,7 +46,7 @@ L=d["live"]
 out={"gen":d["gen"],"names":d["names"],"strats":d["strats"],"rules":d["rules"],"rates":d["rates"],"meta":meta,"scan":scan,"det":det,"news":news,
      "ns":[[x["source"],x["ok"],x.get("count",0)] for x in d["newsStatus"]],"nn":d["newsCount"],
      "pa":[[n]+comb(v) for n,v in agg_ag.items()],"ps":[[n]+comb(v) for n,v in agg_st.items()],"py":[[k,comb(v["a"]),comb(v["e"])] for k,v in agg_sym.items()],
-     "j":J,"jl":[L["total"],L["open"],L["all"].get("n",0),L["all"].get("hit"),L["all"].get("avgR")],
+     "j":J,"jl":[L["total"],L["open"],L["all"].get("n",0),L["all"].get("hit"),L["all"].get("avgR")],"gold":d.get("gold"),
      "prm":{k:d["prm"][k] for k in ("horizon_bars","tp_atr","sl_atr","samples","shrink_k","weight_scale","weight_max","min_samples","fit_frac","live_min","live_blend")},
      "prm2":{k:d["prm"].get(k) for k in ("filter_mode","exit_mode","trail_atr","trail_max_bars","tested_edge_tfs","carry_filter","tested_edge","range_alerts","sweep_alerts","news_alerts")},"wf":WF,"wf2":WF2}
 s=json.dumps(out,separators=(",",":"),ensure_ascii=False)
