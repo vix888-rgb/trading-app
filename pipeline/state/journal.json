@@ -10114,7 +10114,7 @@
   "edge": false,
   "trail_stop": 3925.5,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "GBPUSD-5m-1793690100000",
@@ -11089,7 +11089,7 @@
   "score": -26,
   "entry": 2271.755,
   "entry_type": "limit (order block retest)",
-  "filled": false,
+  "filled": true,
   "stop": 2286.109,
   "tp": [
    2257.401,
@@ -11193,7 +11193,11 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793701800000,
+  "trail_stop": 2286.109,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "GBPUSD-5m-1793696100000",
@@ -11313,5 +11317,120 @@
   "R": 0.0,
   "exit": "breakeven",
   "closed_at": "2026-11-03T11:10+01:00"
+ },
+ {
+  "id": "GBPUSD-15m-1793701800000",
+  "logged": "2026-11-03T11:51+01:00",
+  "bar_t": 1793701800000,
+  "bar_time": "Tue 03 Nov 11:30",
+  "sym": "GBPUSD",
+  "tf": "15m",
+  "side": "long",
+  "score": 29,
+  "entry": 1.340851,
+  "entry_type": "limit (order block retest)",
+  "filled": false,
+  "stop": 1.340188,
+  "tp": [
+   1.341515,
+   1.342178,
+   1.342842
+  ],
+  "inv": 1.34059,
+  "votes": [
+   0,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.86,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.38,
+   0.15,
+   1.59,
+   0.12,
+   0.3,
+   0.94,
+   0.0,
+   0.0,
+   0.16,
+   0.82,
+   0.2,
+   2.0,
+   0.0,
+   0.0,
+   0.01,
+   0.39,
+   0.0,
+   0.0,
+   1.62,
+   0.1
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0005529635942034473,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 43,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 1.34059036,
+    "hi": 1.34264243,
+    "src": "15m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
  }
 ]
