@@ -9502,9 +9502,9 @@
   },
   "edge": false,
   "fill_bar_t": 1793685600000,
-  "trail_stop": 3922.4626775218003,
+  "trail_stop": 3921.5627751780503,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 39
  },
  {
   "id": "SOLUSD-5m-1793686500000",
@@ -10108,7 +10108,7 @@
   "edge": false,
   "trail_stop": 3925.5,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "GBPUSD-5m-1793690100000",
@@ -10466,7 +10466,7 @@
   "fill_bar_t": 1793695500000,
   "trail_stop": 1.340514,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-1h-1793689200000",
@@ -10827,7 +10827,7 @@
   "edge": false,
   "trail_stop": 77008.852,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "SOLUSD-15m-1793693700000",
@@ -10944,7 +10944,7 @@
   "edge": false,
   "trail_stop": 92.41636,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XAUUSD-1h-1793692800000",
@@ -11191,7 +11191,7 @@
   "score": 51,
   "entry": 1.341364,
   "entry_type": "limit (order block retest)",
-  "filled": false,
+  "filled": true,
   "stop": 1.340543,
   "tp": [
    1.342184,
@@ -11290,6 +11290,10 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793697300000,
+  "trail_stop": 1.340543,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
