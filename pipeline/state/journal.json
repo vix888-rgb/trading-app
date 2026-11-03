@@ -3333,7 +3333,7 @@
   "fill_bar_t": 1793606400000,
   "trail_stop": 93.54843351331891,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "SOLUSD-15m-1793610900000",
@@ -4464,7 +4464,7 @@
    0.02
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0014494437938969062,
@@ -4497,7 +4497,10 @@
   "edge": false,
   "trail_stop": 1.339942,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 9,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-03T04:00+01:00"
  },
  {
   "id": "XRPUSD-1h-1793631600000",
@@ -4617,7 +4620,7 @@
   "edge": false,
   "trail_stop": 1.265792,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "XRPUSD-5m-1793638200000",
@@ -5567,7 +5570,7 @@
   "fill_bar_t": 1793648700000,
   "trail_stop": 77464.636,
   "tp1_hit": false,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "XAUUSD-5m-1793648940000",
@@ -5925,7 +5928,7 @@
   "edge": true,
   "trail_stop": 77878.895,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "EURUSD-4h-1793635200000",
@@ -6970,7 +6973,7 @@
   "edge": false,
   "trail_stop": 2268.758,
   "tp1_hit": false,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "XRPUSD-15m-1793653200000",
@@ -7446,7 +7449,7 @@
   "edge": false,
   "trail_stop": 92.7068,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "BTCUSD-5m-1793658600000",
@@ -7806,7 +7809,7 @@
   "edge": true,
   "trail_stop": 1.120149,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "XRPUSD-15m-1793666700000",
@@ -7930,5 +7933,360 @@
   "R": -1.0,
   "exit": "stop",
   "closed_at": "2026-11-03T03:50+01:00"
+ },
+ {
+  "id": "BTCUSD-5m-1793674500000",
+  "logged": "2026-11-03T04:00+01:00",
+  "bar_t": 1793674500000,
+  "bar_time": "Tue 03 Nov 03:55",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -26,
+  "entry": 76847.565,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 77056.788,
+  "tp": [
+   76638.342,
+   76429.119,
+   76219.896
+  ],
+  "inv": 77040.01,
+  "votes": [
+   -1,
+   -1,
+   1,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.12,
+   0.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "TSMOM multi-lookback trend",
+   "Keltner volatility breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 111.85399607831535,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 59,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 76700.0,
+    "hi": 77042.01,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "XRPUSD-5m-1793674500000",
+  "logged": "2026-11-03T04:00+01:00",
+  "bar_t": 1793674500000,
+  "bar_time": "Tue 03 Nov 03:55",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -48,
+  "entry": 1.2513,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 1.256191,
+  "tp": [
+   1.246409,
+   1.241519,
+   1.236628
+  ],
+  "inv": 1.2559,
+  "votes": [
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.09,
+   0.0,
+   1.63,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.33,
+   0.0,
+   0.59,
+   1.53,
+   0.94,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   1.03,
+   0.2,
+   0.17,
+   0.46,
+   0.57,
+   0.0,
+   0.45,
+   0.0,
+   0.0,
+   0.0,
+   0.2
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0019378161432294324,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 49,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 1.2477,
+    "hi": 1.2559,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "XRPUSD-15m-1793673900000",
+  "logged": "2026-11-03T04:00+01:00",
+  "bar_t": 1793673900000,
+  "bar_time": "Tue 03 Nov 03:45",
+  "sym": "XRPUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -41,
+  "entry": 1.2484,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.25544,
+  "tp": [
+   1.24136,
+   1.23432,
+   1.227279
+  ],
+  "inv": 1.2549,
+  "votes": [
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.26,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.0,
+   0.77,
+   1.68,
+   0.44,
+   0.0,
+   0.0,
+   0.16,
+   1.18,
+   0.2,
+   1.59,
+   0.22,
+   0.0,
+   0.48,
+   0.39,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "strategies": [
+   "Wyckoff spring / upthrust",
+   "TSMOM multi-lookback trend",
+   "Liquidity Entry Zones"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.003601359256005112,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 72,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 1.2477,
+    "hi": 1.2559,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
  }
 ]
