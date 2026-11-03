@@ -8983,7 +8983,7 @@
    0.84
   ],
   "strategies": [],
-  "status": "open",
+  "status": "cancelled",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.971419996488431,
@@ -9013,7 +9013,8 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "exit": "limit not filled"
  },
  {
   "id": "XRPUSD-5m-1793682900000",
@@ -9345,6 +9346,123 @@
     "lo": 2244.7,
     "hi": 2264.66,
     "src": "15m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false,
+  "trail_stop": 2266.704,
+  "tp1_hit": false,
+  "bars_open": 0
+ },
+ {
+  "id": "XAUUSD-5m-1793685588000",
+  "logged": "2026-11-03T07:10+01:00",
+  "bar_t": 1793685588000,
+  "bar_time": "Tue 03 Nov 06:59",
+  "sym": "XAUUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -69,
+  "entry": 3928.6,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 3937.755,
+  "tp": [
+   3919.445,
+   3910.29,
+   3901.136
+  ],
+  "inv": 3937.1,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.57,
+   0.0,
+   0.59,
+   1.17,
+   0.79,
+   0.05,
+   0.33,
+   0.12,
+   0.76,
+   0.12,
+   1.86,
+   0.99,
+   0.0,
+   1.38,
+   0.0,
+   0.0,
+   0.34,
+   0.5,
+   0.46,
+   0.0,
+   0.0,
+   0.28,
+   1.08,
+   0.48,
+   0.03,
+   0.0,
+   0.0,
+   0.84
+  ],
+  "strategies": [
+   "Keltner volatility breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 4.365669380450066,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 68,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
     "alert": false
    },
    "sweep": {
