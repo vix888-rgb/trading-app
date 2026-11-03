@@ -3333,7 +3333,7 @@
   "fill_bar_t": 1793606400000,
   "trail_stop": 93.54843351331891,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "SOLUSD-15m-1793610900000",
@@ -4620,7 +4620,7 @@
   "edge": false,
   "trail_stop": 1.265792,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "XRPUSD-5m-1793638200000",
@@ -5932,7 +5932,7 @@
   "edge": true,
   "trail_stop": 77878.895,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "EURUSD-4h-1793635200000",
@@ -10114,7 +10114,7 @@
   "edge": false,
   "trail_stop": 3925.5,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "GBPUSD-5m-1793690100000",
@@ -10488,7 +10488,7 @@
   "score": 40,
   "entry": 1.341148,
   "entry_type": "limit (order block retest)",
-  "filled": false,
+  "filled": true,
   "stop": 1.339525,
   "tp": [
    1.342771,
@@ -10592,7 +10592,11 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793700000000,
+  "trail_stop": 1.339525,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "BTCUSD-5m-1793693100000",
@@ -11197,7 +11201,7 @@
   "fill_bar_t": 1793701800000,
   "trail_stop": 2286.109,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-5m-1793696100000",
