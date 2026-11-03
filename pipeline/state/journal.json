@@ -9496,7 +9496,7 @@
   "fill_bar_t": 1793685600000,
   "trail_stop": 3928.6,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 19
  },
  {
   "id": "SOLUSD-5m-1793686500000",
@@ -9826,7 +9826,7 @@
   "strategies": [
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.165271597000403,
@@ -9860,7 +9860,10 @@
   "fill_bar_t": 1793690400000,
   "trail_stop": 2259.22,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-03T08:40+01:00"
  },
  {
   "id": "SOLUSD-5m-1793687700000",
@@ -9976,7 +9979,7 @@
   "fill_bar_t": 1793690700000,
   "trail_stop": 92.62892,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 3
  },
  {
   "id": "XAUUSD-15m-1793688300000",
@@ -10212,6 +10215,120 @@
   "edge": false,
   "trail_stop": 1.341562,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "ETHUSD-5m-1793691300000",
+  "logged": "2026-11-03T08:40+01:00",
+  "bar_t": 1793691300000,
+  "bar_time": "Tue 03 Nov 08:35",
+  "sym": "ETHUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -36,
+  "entry": 2259.22,
+  "entry_type": "limit (order block retest)",
+  "filled": false,
+  "stop": 2264.624,
+  "tp": [
+   2253.816,
+   2248.412,
+   2243.008
+  ],
+  "inv": 2260.6,
+  "votes": [
+   0,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.67,
+   0.5,
+   0.0,
+   0.33,
+   0.0,
+   0.43,
+   0.0,
+   1.27,
+   0.0,
+   0.3,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.92,
+   0.0,
+   0.0,
+   0.75,
+   0.39,
+   0.06,
+   0.0,
+   1.89,
+   0.59
+  ],
+  "strategies": [
+   "Wyckoff spring / upthrust"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 4.503303550763153,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 60,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
  }
 ]
