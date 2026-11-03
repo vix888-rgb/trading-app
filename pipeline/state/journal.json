@@ -11952,7 +11952,7 @@
   "fill_bar_t": 1793719800000,
   "trail_stop": 1.340968,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "USDJPY-15m-1793714400000",
@@ -12067,7 +12067,7 @@
   "edge": false,
   "trail_stop": 158.441599747294,
   "tp1_hit": true,
-  "bars_open": 31
+  "bars_open": 32
  },
  {
   "id": "GBPUSD-5m-1793717700000",
@@ -12672,7 +12672,7 @@
   "fill_bar_t": 1793720700000,
   "trail_stop": 3959.415,
   "tp1_hit": false,
-  "bars_open": 25
+  "bars_open": 26
  },
  {
   "id": "SOLUSD-1h-1793718000000",
@@ -13379,5 +13379,138 @@
   "R": 2.21,
   "exit": "time exit",
   "closed_at": "2026-11-03T23:03+01:00"
+ },
+ {
+  "id": "USDJPY-5m-1793744100000",
+  "logged": "2026-11-03T23:23+01:00",
+  "bar_t": 1793744100000,
+  "bar_time": "Tue 03 Nov 23:15",
+  "sym": "USDJPY",
+  "tf": "5m",
+  "side": "long",
+  "score": 32,
+  "entry": 158.66,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 158.611,
+  "tp": [
+   158.709,
+   158.758,
+   158.806
+  ],
+  "inv": 158.461,
+  "votes": [
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   -1,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.38,
+   0.15,
+   0.33,
+   0.0,
+   0.23,
+   0.38,
+   0.3,
+   0.0,
+   0.16,
+   0.61,
+   0.2,
+   1.11,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.19,
+   0.0
+  ],
+  "strategies": [
+   "Wyckoff spring / upthrust",
+   "Squeeze momentum breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.03251612986204119,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 26,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 158.63299561,
+    "hi": 158.74000549,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 158.37753798,
+    "side200": 1,
+    "stack": 1,
+    "st": -1,
+    "dh": 158.75300598,
+    "dl": 158.63299561,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
