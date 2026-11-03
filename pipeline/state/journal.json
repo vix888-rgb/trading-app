@@ -2735,7 +2735,7 @@
   "score": -33,
   "entry": 1.121113,
   "entry_type": "limit (order block retest)",
-  "filled": false,
+  "filled": true,
   "stop": 1.12796,
   "tp": [
    1.114267,
@@ -2818,7 +2818,11 @@
    "agree": true,
    "sigRaw": "SELL"
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793577600000,
+  "trail_stop": 1.12796,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "SOLUSD-15m-1793579400000",
@@ -6502,7 +6506,7 @@
   "fill_bar_t": 1793650800000,
   "trail_stop": 3961.96,
   "tp1_hit": false,
-  "bars_open": 31
+  "bars_open": 34
  },
  {
   "id": "SOLUSD-5m-1793650800000",
@@ -7557,7 +7561,7 @@
   "fill_bar_t": 1793659500000,
   "trail_stop": 76918.01,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 17
  },
  {
   "id": "ETHUSD-5m-1793658600000",
@@ -7675,7 +7679,7 @@
   "fill_bar_t": 1793659500000,
   "trail_stop": 2261.534,
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 17
  },
  {
   "id": "EURUSD-15m-1793660400000",
