@@ -1547,7 +1547,7 @@
   "strategies": [],
   "status": "open",
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "GBPUSD-5m-1793395500000",
@@ -2722,7 +2722,7 @@
   "fill_bar_t": 1793620800000,
   "trail_stop": 4002.71,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "EURUSD-1d-1793318400000",
@@ -6068,7 +6068,7 @@
   "score": -33,
   "entry": 2280.355,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 2322.277,
   "tp": [
    2238.433,
@@ -6167,7 +6167,11 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793707200000,
+  "trail_stop": 2322.277,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "SOLUSD-4h-1793635200000",
@@ -10571,7 +10575,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0011145086884570207,
@@ -10608,7 +10612,10 @@
   "fill_bar_t": 1793700000000,
   "trail_stop": 1.341148,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 5,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-03T17:02+01:00"
  },
  {
   "id": "BTCUSD-5m-1793693100000",
@@ -11943,9 +11950,9 @@
   },
   "edge": false,
   "fill_bar_t": 1793719800000,
-  "trail_stop": 1.340416,
-  "tp1_hit": false,
-  "bars_open": 1
+  "trail_stop": 1.340968,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "USDJPY-15m-1793714400000",
@@ -12060,7 +12067,7 @@
   "edge": false,
   "trail_stop": 158.27759828245024,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "GBPUSD-5m-1793717700000",
@@ -12318,7 +12325,7 @@
   "score": -45,
   "entry": 1.118693,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 1.120172,
   "tp": [
    1.117215,
@@ -12422,7 +12429,11 @@
    },
    "why": ""
   },
-  "edge": true
+  "edge": true,
+  "fill_bar_t": 1793719800000,
+  "trail_stop": 1.120172,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-5m-1793720100000",
@@ -12539,7 +12550,7 @@
   "edge": false,
   "trail_stop": 1.268356,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-15m-1793719986000",
@@ -12552,7 +12563,7 @@
   "score": -37,
   "entry": 3941.6,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 3959.415,
   "tp": [
    3923.785,
@@ -12630,6 +12641,124 @@
    "carryDir": 0,
    "vol": true,
    "atrPct": 78,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false,
+  "fill_bar_t": 1793720700000,
+  "trail_stop": 3959.415,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "SOLUSD-1h-1793718000000",
+  "logged": "2026-11-03T17:02+01:00",
+  "bar_t": 1793718000000,
+  "bar_time": "Tue 03 Nov 16:00",
+  "sym": "SOLUSD",
+  "tf": "1h",
+  "side": "short",
+  "score": -25,
+  "entry": 94.59,
+  "entry_type": "limit (order block retest)",
+  "filled": false,
+  "stop": 95.54262,
+  "tp": [
+   93.63738,
+   92.68476,
+   91.73214
+  ],
+  "inv": 94.96,
+  "votes": [
+   0,
+   1,
+   1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   1,
+   1,
+   -1,
+   -1
+  ],
+  "weights": [
+   1.11,
+   0.0,
+   0.42,
+   0.97,
+   0.0,
+   0.76,
+   0.73,
+   0.58,
+   0.4,
+   0.36,
+   0.0,
+   0.0,
+   0.0,
+   0.65,
+   0.48,
+   0.0,
+   0.48,
+   0.0,
+   1.0,
+   1.88,
+   1.0,
+   0.0,
+   1.57,
+   0.39,
+   0.27,
+   0.12,
+   0.24,
+   0.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.7938508100539281,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 73,
    "trend": -1,
    "htf": -1,
    "agree": true,
