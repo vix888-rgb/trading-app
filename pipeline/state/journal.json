@@ -9502,9 +9502,9 @@
   },
   "edge": false,
   "fill_bar_t": 1793685600000,
-  "trail_stop": 3924.1626286936753,
+  "trail_stop": 3922.4626775218003,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "SOLUSD-5m-1793686500000",
@@ -9953,7 +9953,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.1928174339687087,
@@ -9987,7 +9987,10 @@
   "fill_bar_t": 1793690700000,
   "trail_stop": 92.13,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 19,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-03T10:10+01:00"
  },
  {
   "id": "XAUUSD-15m-1793688300000",
@@ -10664,7 +10667,7 @@
   "strategies": [
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 98.74982472123556,
@@ -10701,7 +10704,10 @@
   "fill_bar_t": 1793693400000,
   "trail_stop": 76799.78,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-03T10:10+01:00"
  },
  {
   "id": "BTCUSD-15m-1793693700000",
