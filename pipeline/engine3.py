@@ -15,6 +15,11 @@ PARAMS_DEFAULT={"version":1,"horizon_bars":12,"tp_atr":1.5,"sl_atr":1.0,"samples
 # Rebuild (Nov 2026, round 3): deterministic scans. News no longer votes (headlines changed the score between scans of the same closed bar),
 # limit entries that never fill expire after 12 bars (they blocked new journal entries for up to 100 bars), signals are latched per closed bar.
 PARAMS_DEFAULT.update({"news_weight":0.0,"pending_expiry_bars":12,"latch":True,"refit_max_age_days":8,"params_round":3})
+# Round 4 (3 Nov 2026 strategy rebuild): BTC 1h leaves the alert list (unseen test -0.05R/trade, PF 0.91, 75 trades; still shown in the app).
+# plan_mode "tested": the Entry/SL/TP sent and journaled is the plan the walk-forward measured (market at the signal close, 1.5xATR stop,
+# breakeven at +1R, 4xATR chandelier, 48 bars). The old order-block/FVG limit + swing stop ("zone") is shown as an alternative only:
+# its stop tested worse on both halves (VAL +0.38R vs +0.53R, TEST +0.27R vs +0.30R) and limit/pullback entries were rejected in round 2.
+PARAMS_DEFAULT.update({"tested_edge":["XAUUSD|1d","XAUUSD|4h","XAUUSD|1h","BTCUSD|1d","USDJPY|1d","USDCHF|1d","EURUSD|15m"],"plan_mode":"tested","plan_stop_atr":1.5,"params_round":4})
 WPATH=os.path.join(STATE,"weights.json"); JPATH=os.path.join(STATE,"journal.json")
 W=json.load(open(WPATH)) if os.path.exists(WPATH) else {}
 PRM={**PARAMS_DEFAULT,**W.get("params",{})}
@@ -22,6 +27,8 @@ if W.get("params",{}).get("params_round",1)<2:  # round-2 walk-forward update ov
     for _k in ("trail_atr","carry_filter","tested_edge","params_round"): PRM[_k]=PARAMS_DEFAULT[_k]
 if W.get("params",{}).get("params_round",1)<3:  # round-3 rebuild overrides once
     for _k in ("news_weight","pending_expiry_bars","latch","refit_max_age_days","params_round"): PRM[_k]=PARAMS_DEFAULT[_k]
+if W.get("params",{}).get("params_round",1)<4:  # round-4 rebuild overrides once
+    for _k in ("tested_edge","plan_mode","plan_stop_atr","params_round"): PRM[_k]=PARAMS_DEFAULT[_k]
 LPATH=os.path.join(STATE,"latch.json")
 def refit_due(raw_keys):
     """Agent weights are refit only by the weekly tune-up (TRADING_REFIT=1), when a combo has no stored weights, or when the last refit is too old.
@@ -243,12 +250,18 @@ def main3():
             _dlez=edge.lez_recent_dir(_lez,len(df)-1)
             sig,why2=edge.apply_lez(sig,_dlez,key,tf)
             if why2: why=why2
+            # Round 4: Donchian-20 breakout confirmation (gold 1h alerts, BTC 1h display) and London/NY session (BTC 1h).
+            _brkL,_brkS,_,_,_=edge.donchian_signals(df,hdf)
+            _brk=edge.recent_brk(_brkL,_brkS,len(df)-1); _sess=edge.session_ok(df.t.iloc[-1],HSTEP[tf])
+            sig,why3=edge.apply_round4(sig,key,tf,_brk,_sess)
+            if why3: why=why3
             flt["range"]=gate["range"]; flt["sweep"]=gate["sweep"]; flt["news"]=gate["news"]; flt["why"]=why
             # latch: a closed bar keeps the signal it got on its first scan (no flip-flop between scans of the same bar)
             lk=f"{key}|{tf}"; bt_=int(df.t.iloc[-1]); prevl=LATCH.get(lk)
             if PRM.get("latch") and prevl and prevl.get("bar_t")==bt_:
                 sig,score,flt=prevl["sig"],prevl["score"],prevl.get("flt",flt); flt=dict(flt or {}); flt["latched"]=True
             LATCH_OUT[lk]={"bar_t":bt_,"sig":sig,"score":score,"flt":{k_:v_ for k_,v_ in flt.items() if k_!="latched"}}
+            flt=dict(flt or {}); flt["ind"]=edge.indicator_panel(df,hdf,tf,key,HSTEP[tf])  # round 4 indicator panel (display, every scan)
             if oo is not None and not frozen:  # same OOS samples, adaptive consensus but only when the quality filters agree
                 rf=[]
                 for r in rec[cut:]:
@@ -271,6 +284,11 @@ def main3():
                 if STRATS[k]==edge.TOM_NAME and tf!="1d": bt={"n":0,"na":1}
                 st.append([vv,ago,bt])
             pl=plan(df,p,score,a,last,tr,sh,sl,lv)
+            if PRM.get("plan_mode")=="tested":
+                _sd=1 if pl["side"]=="long" else -1; _dist=PRM.get("plan_stop_atr",1.5)*a
+                pl={**pl,"alt":{"entry":R_(pl["entry"],p),"stop":R_(pl["stop"],p),"why":pl["zoneWhy"],"basis":pl["stopBasis"]},"entry":last,"zone":[last,last],
+                    "zoneWhy":"market (tested plan: enter at the close, BE at +1R, 4×ATR trail)","stop":last-_sd*_dist,
+                    "stopBasis":f"{PRM.get('plan_stop_atr',1.5)}×ATR (walk-forward tested)","tp":[last+_sd*k_*_dist for k_ in (1,2,3)],"dist":_dist}
             if edge.LEZ_ALERTS and f"{key}|{tf}" in edge.LEZ_EDGE and _dlez!=0 and ((sig=="BUY" and _dlez>0) or (sig=="SELL" and _dlez<0)):
                 _lp=edge.lez_trade_plan(_lez,key)
                 if _lp is not None: pl=_lp

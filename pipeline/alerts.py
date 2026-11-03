@@ -133,6 +133,8 @@ def message_for(doc, sym, tf, sig):
         f"TP1/TP2/TP3 {fmt_px(tps[0], p)}/{fmt_px(tps[1], p)}/{fmt_px(tps[2], p)}, "
         f"lot size for $20 risk: {size}, {edge_txt}"
     )
+    if len(pl) > 3 and str(pl[3]).startswith("market (tested plan"):
+        body += ", market entry; SL to breakeven at +1R, then 4×ATR trail"
     title = f"{sym} {TF_LABEL.get(tf, tf)} {sig}"
     return title, body
 

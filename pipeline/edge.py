@@ -516,3 +516,62 @@ def lez_desk_bt(df,sym,tf):
     pl=pack["plans"][-1] if pack["plans"] else None
     bt["lez"]=None if pl is None else {"entry":float(pl["entry"]),"stop":float(pl["stop"]),"tp":float(pl["tp"]),"active":bool(pl.get("active"))}
     return bt
+
+# ---------- Strategy rebuild round 4 (3 Nov 2026) ----------
+# Research: pipeline/research/rebuild_2026_11_03/ (CHANGES.md, cand*.py, final_results.json). Harness = round-2 walk-forward (weights refit on the
+# train half only, VAL = 3 folds inside train, TEST = unseen 2nd half, Vantage-like costs).
+# Shipped: (1) Donchian-20 breakout confirmation gate on XAUUSD 1h alerts (BTC 1h display), (2) London+NY session gate on BTC 1h (display),
+# (3) two display-only strategy rows, (4) indicator panel. Rejected and NOT used: structure/swing stops, 2xATR stop, Supertrend exit, EMA200/stack,
+# Supertrend agree, RSI divergence, ADX>=20, AVWAP-1h, agent stability pruning, unions with the new agents (see research log).
+BRK_NAME="Donchian-20 breakout + EMA200 + HTF (round 4)"
+BRK_RULE=("Close breaks the prior 20-bar high (low) while above (below) EMA200 and the higher-TF EMA20/50 bias agrees → long (short). "
+          "Unseen test (gold/BTC 1h/4h/1D + FX dailies): +0.315R/trade, PF 1.70, 249 trades; train folds +0.516R. Display only.")
+SQZ_NAME="TTM squeeze fire + EMA200 (round 4)"
+SQZ_RULE=("Bollinger(20,2) leaves Keltner(20,1.5×ATR) after a squeeze; momentum (LazyBear linreg) > 0 and close > EMA200 → long (mirror short). "
+          "Unseen test +0.50R but train folds only +0.36R and weak on 1h; display only.")
+BRK_GATE=("XAUUSD|1h","BTCUSD|1h")   # consensus 1h BUY/SELL must have a fresh Donchian-20 breakout the same way (last BRK_WINDOW bars)
+BRK_WINDOW=10
+SESSION_GATE=("BTCUSD|1h",)         # 1h signals only when the bar closes 07:00-19:59 London time (London + New York)
+SESSION_HOURS=(7,20)
+LDN=ZoneInfo("Europe/London")
+def donchian_signals(df,htf,n=20):
+    """Causal: prior-n-bar channel (shift 1), EMA200 side and HTF EMA20/50 bias known at the bar's close."""
+    c=df.c; dh=df.h.rolling(n).max().shift(1); dl=df.l.rolling(n).min().shift(1); e200=_ema(c,200)
+    hb=htf_bias(df,htf) if htf is not None else np.zeros(len(df))
+    hok_l=(hb>0) if htf is not None else np.ones(len(df),bool); hok_s=(hb<0) if htf is not None else np.ones(len(df),bool)
+    L=((c>dh)&(c>e200)).values&hok_l; S=((c<dl)&(c<e200)).values&hok_s
+    return L,S,dh.values,dl.values,e200.values
+def ttm_squeeze(df):
+    c=df.c; sma=c.rolling(20).mean(); sd=c.rolling(20).std(ddof=0); a20=_atr(df,20)
+    on=(((sma+2*sd)<(sma+1.5*a20))&((sma-2*sd)>(sma-1.5*a20))).values
+    fire=np.r_[False,on[:-1]&~on[1:]]
+    d=c-((df.h.rolling(20).max()+df.l.rolling(20).min())/2+sma)/2
+    x=np.arange(20); xm=x.mean(); den=((x-xm)**2).sum()
+    mom=d.rolling(20).apply(lambda y: y.mean()+((x-xm)*(y-y.mean())).sum()/den*(19-xm),raw=True).values
+    return on,fire,mom
+def squeeze_signals(df):
+    on,fire,mom=ttm_squeeze(df); e200=_ema(df.c,200).values; c=df.c.values
+    return fire&(mom>0)&(c>e200), fire&(mom<0)&(c<e200)
+def recent_brk(L,S,i,window=BRK_WINDOW):
+    """(long_ok, short_ok): a Donchian breakout that way happened in bars i-window+1..i (same window as the research test)."""
+    a=max(0,i-int(window)+1); return bool(np.asarray(L[a:i+1]).any()), bool(np.asarray(S[a:i+1]).any())
+def session_ok(t_open_ms,step_ms,hours=SESSION_HOURS):
+    h=pd.Timestamp(int(t_open_ms)+int(step_ms),unit="ms",tz="UTC").tz_convert(LDN).hour
+    return hours[0]<=h<hours[1]
+def apply_round4(sig,key,tf,brk,sess_ok):
+    """Downgrade BUY/SELL to WAIT: 'breakout' when the Donchian confirmation is missing, 'session' outside London/NY (BTC 1h)."""
+    if sig not in ("BUY","SELL"): return sig,""
+    k=f"{key}|{tf}"; d=1 if sig=="BUY" else -1
+    if k in BRK_GATE and not (brk[0] if d>0 else brk[1]): return "WAIT","breakout"
+    if k in SESSION_GATE and not sess_ok: return "WAIT","session"
+    return sig,""
+def indicator_panel(df,htf,tf,key,step_ms):
+    """Values shown in the app (display): EMA20/50/200, Supertrend(10,3), Donchian-20, TTM squeeze, session, gate state."""
+    c=df.c; i=len(df)-1; e20=_ema(c,20).iloc[-1]; e50=_ema(c,50).iloc[-1]; e200=_ema(c,200).iloc[-1]
+    st=supertrend_dir(df)[-1]; L,S,dh,dl,_=donchian_signals(df,htf); on,fire,mom=ttm_squeeze(df)
+    bl,bs=recent_brk(L,S,i); bd=1 if bl and not bs else -1 if bs and not bl else (2 if bl and bs else 0); last=float(c.iloc[-1])
+    stack=1 if e20>e50>e200 else -1 if e20<e50<e200 else 0
+    return {"e200":round(float(e200),8),"side200":1 if last>e200 else -1,"stack":stack,"st":int(st),
+            "dh":None if dh[-1]!=dh[-1] else round(float(dh[-1]),8),"dl":None if dl[-1]!=dl[-1] else round(float(dl[-1]),8),"brk":int(bd),
+            "sqz":"on" if on[-1] else ("fired" if fire[-1] else "off"),"mom":None if mom[-1]!=mom[-1] else (1 if mom[-1]>0 else -1),
+            "sess":bool(session_ok(df.t.iloc[-1],step_ms)),"gate":f"{key}|{tf}" in BRK_GATE,"sgate":f"{key}|{tf}" in SESSION_GATE}

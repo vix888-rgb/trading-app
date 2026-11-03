@@ -1,0 +1,1144 @@
+{
+ "ship": {
+  "BASE": {
+   "edge7": {
+    "val": {
+     "base": {
+      "n": 181,
+      "win": 29.3,
+      "exp": 0.529,
+      "pf": 2.16,
+      "dd": 9.8,
+      "tot": 95.8
+     },
+     "new": {
+      "n": 181,
+      "win": 29.3,
+      "exp": 0.529,
+      "pf": 2.16,
+      "dd": 9.8,
+      "tot": 95.8
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.497
+    },
+    "test": {
+     "base": {
+      "n": 291,
+      "win": 25.4,
+      "exp": 0.296,
+      "pf": 1.64,
+      "dd": 16.8,
+      "tot": 86.0
+     },
+     "new": {
+      "n": 291,
+      "win": 25.4,
+      "exp": 0.296,
+      "pf": 1.64,
+      "dd": 16.8,
+      "tot": 86.0
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.511
+    },
+    "ship": true
+   },
+   "edge6_noBTC1h": {
+    "val": {
+     "base": {
+      "n": 145,
+      "win": 29.7,
+      "exp": 0.56,
+      "pf": 2.21,
+      "dd": 7.1,
+      "tot": 81.3
+     },
+     "new": {
+      "n": 145,
+      "win": 29.7,
+      "exp": 0.56,
+      "pf": 2.21,
+      "dd": 7.1,
+      "tot": 81.3
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.492
+    },
+    "test": {
+     "base": {
+      "n": 216,
+      "win": 26.4,
+      "exp": 0.415,
+      "pf": 1.99,
+      "dd": 10.9,
+      "tot": 89.7
+     },
+     "new": {
+      "n": 216,
+      "win": 26.4,
+      "exp": 0.415,
+      "pf": 1.99,
+      "dd": 10.9,
+      "tot": 89.7
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.503
+    },
+    "ship": true
+   }
+  },
+  "R1 Donchian-20 breakout confirmation on 1h (gold+BTC)": {
+   "edge7": {
+    "val": {
+     "base": {
+      "n": 181,
+      "win": 29.3,
+      "exp": 0.529,
+      "pf": 2.16,
+      "dd": 9.8,
+      "tot": 95.8
+     },
+     "new": {
+      "n": 154,
+      "win": 31.8,
+      "exp": 0.689,
+      "pf": 2.64,
+      "dd": 6.2,
+      "tot": 106.1
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.258
+    },
+    "test": {
+     "base": {
+      "n": 291,
+      "win": 25.4,
+      "exp": 0.296,
+      "pf": 1.64,
+      "dd": 16.8,
+      "tot": 86.0
+     },
+     "new": {
+      "n": 263,
+      "win": 24.7,
+      "exp": 0.326,
+      "pf": 1.74,
+      "dd": 13.5,
+      "tot": 85.6
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.436
+    },
+    "ship": true
+   },
+   "edge6_noBTC1h": {
+    "val": {
+     "base": {
+      "n": 145,
+      "win": 29.7,
+      "exp": 0.56,
+      "pf": 2.21,
+      "dd": 7.1,
+      "tot": 81.3
+     },
+     "new": {
+      "n": 132,
+      "win": 32.6,
+      "exp": 0.661,
+      "pf": 2.56,
+      "dd": 6.2,
+      "tot": 87.3
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.349
+    },
+    "test": {
+     "base": {
+      "n": 216,
+      "win": 26.4,
+      "exp": 0.415,
+      "pf": 1.99,
+      "dd": 10.9,
+      "tot": 89.7
+     },
+     "new": {
+      "n": 205,
+      "win": 26.8,
+      "exp": 0.427,
+      "pf": 2.06,
+      "dd": 10.9,
+      "tot": 87.5
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.471
+    },
+    "ship": true
+   }
+  },
+  "R2 = R1 + London/NY session on BTC 1h": {
+   "edge7": {
+    "val": {
+     "base": {
+      "n": 181,
+      "win": 29.3,
+      "exp": 0.529,
+      "pf": 2.16,
+      "dd": 9.8,
+      "tot": 95.8
+     },
+     "new": {
+      "n": 146,
+      "win": 33.6,
+      "exp": 0.752,
+      "pf": 2.82,
+      "dd": 6.2,
+      "tot": 109.7
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.185
+    },
+    "test": {
+     "base": {
+      "n": 291,
+      "win": 25.4,
+      "exp": 0.296,
+      "pf": 1.64,
+      "dd": 16.8,
+      "tot": 86.0
+     },
+     "new": {
+      "n": 249,
+      "win": 25.7,
+      "exp": 0.365,
+      "pf": 1.86,
+      "dd": 12.5,
+      "tot": 90.9
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.358
+    },
+    "ship": true
+   },
+   "edge6_noBTC1h": {
+    "val": {
+     "base": {
+      "n": 145,
+      "win": 29.7,
+      "exp": 0.56,
+      "pf": 2.21,
+      "dd": 7.1,
+      "tot": 81.3
+     },
+     "new": {
+      "n": 132,
+      "win": 32.6,
+      "exp": 0.661,
+      "pf": 2.56,
+      "dd": 6.2,
+      "tot": 87.3
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.349
+    },
+    "test": {
+     "base": {
+      "n": 216,
+      "win": 26.4,
+      "exp": 0.415,
+      "pf": 1.99,
+      "dd": 10.9,
+      "tot": 89.7
+     },
+     "new": {
+      "n": 205,
+      "win": 26.8,
+      "exp": 0.427,
+      "pf": 2.06,
+      "dd": 10.9,
+      "tot": 87.5
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.471
+    },
+    "ship": true
+   }
+  },
+  "R4 Donchian confirmation gold 1h only": {
+   "edge7": {
+    "val": {
+     "base": {
+      "n": 181,
+      "win": 29.3,
+      "exp": 0.529,
+      "pf": 2.16,
+      "dd": 9.8,
+      "tot": 95.8
+     },
+     "new": {
+      "n": 168,
+      "win": 31.5,
+      "exp": 0.606,
+      "pf": 2.42,
+      "dd": 9.8,
+      "tot": 101.8
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.374
+    },
+    "test": {
+     "base": {
+      "n": 291,
+      "win": 25.4,
+      "exp": 0.296,
+      "pf": 1.64,
+      "dd": 16.8,
+      "tot": 86.0
+     },
+     "new": {
+      "n": 280,
+      "win": 25.7,
+      "exp": 0.299,
+      "pf": 1.66,
+      "dd": 16.8,
+      "tot": 83.8
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.483
+    },
+    "ship": true
+   },
+   "edge6_noBTC1h": {
+    "val": {
+     "base": {
+      "n": 145,
+      "win": 29.7,
+      "exp": 0.56,
+      "pf": 2.21,
+      "dd": 7.1,
+      "tot": 81.3
+     },
+     "new": {
+      "n": 132,
+      "win": 32.6,
+      "exp": 0.661,
+      "pf": 2.56,
+      "dd": 6.2,
+      "tot": 87.3
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.349
+    },
+    "test": {
+     "base": {
+      "n": 216,
+      "win": 26.4,
+      "exp": 0.415,
+      "pf": 1.99,
+      "dd": 10.9,
+      "tot": 89.7
+     },
+     "new": {
+      "n": 205,
+      "win": 26.8,
+      "exp": 0.427,
+      "pf": 2.06,
+      "dd": 10.9,
+      "tot": 87.5
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.471
+    },
+    "ship": true
+   }
+  },
+  "U3 base AND Donchian (all gold/BTC TFs)": {
+   "edge7": {
+    "val": {
+     "base": {
+      "n": 181,
+      "win": 29.3,
+      "exp": 0.529,
+      "pf": 2.16,
+      "dd": 9.8,
+      "tot": 95.8
+     },
+     "new": {
+      "n": 140,
+      "win": 34.3,
+      "exp": 0.693,
+      "pf": 2.57,
+      "dd": 7.4,
+      "tot": 97.0
+     },
+     "hurt": [
+      "XAUUSD 1d",
+      "XAUUSD 4h"
+     ],
+     "ok": false,
+     "P_no_gain": 0.265
+    },
+    "test": {
+     "base": {
+      "n": 291,
+      "win": 25.4,
+      "exp": 0.296,
+      "pf": 1.64,
+      "dd": 16.8,
+      "tot": 86.0
+     },
+     "new": {
+      "n": 224,
+      "win": 24.1,
+      "exp": 0.335,
+      "pf": 1.73,
+      "dd": 12.3,
+      "tot": 75.1
+     },
+     "hurt": [
+      "XAUUSD 1d"
+     ],
+     "ok": false,
+     "P_no_gain": 0.407
+    },
+    "ship": false
+   },
+   "edge6_noBTC1h": {
+    "val": {
+     "base": {
+      "n": 145,
+      "win": 29.7,
+      "exp": 0.56,
+      "pf": 2.21,
+      "dd": 7.1,
+      "tot": 81.3
+     },
+     "new": {
+      "n": 118,
+      "win": 35.6,
+      "exp": 0.663,
+      "pf": 2.48,
+      "dd": 7.4,
+      "tot": 78.2
+     },
+     "hurt": [
+      "XAUUSD 1d",
+      "XAUUSD 4h"
+     ],
+     "ok": false,
+     "P_no_gain": 0.361
+    },
+    "test": {
+     "base": {
+      "n": 216,
+      "win": 26.4,
+      "exp": 0.415,
+      "pf": 1.99,
+      "dd": 10.9,
+      "tot": 89.7
+     },
+     "new": {
+      "n": 166,
+      "win": 26.5,
+      "exp": 0.464,
+      "pf": 2.13,
+      "dd": 7.1,
+      "tot": 77.0
+     },
+     "hurt": [
+      "XAUUSD 1d"
+     ],
+     "ok": false,
+     "P_no_gain": 0.417
+    },
+    "ship": false
+   }
+  },
+  "S1 session BTC 1h": {
+   "edge7": {
+    "val": {
+     "base": {
+      "n": 181,
+      "win": 29.3,
+      "exp": 0.529,
+      "pf": 2.16,
+      "dd": 9.8,
+      "tot": 95.8
+     },
+     "new": {
+      "n": 173,
+      "win": 28.9,
+      "exp": 0.553,
+      "pf": 2.18,
+      "dd": 7.5,
+      "tot": 95.6
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.455
+    },
+    "test": {
+     "base": {
+      "n": 291,
+      "win": 25.4,
+      "exp": 0.296,
+      "pf": 1.64,
+      "dd": 16.8,
+      "tot": 86.0
+     },
+     "new": {
+      "n": 275,
+      "win": 25.8,
+      "exp": 0.333,
+      "pf": 1.76,
+      "dd": 13.2,
+      "tot": 91.6
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.414
+    },
+    "ship": true
+   },
+   "edge6_noBTC1h": {
+    "val": {
+     "base": {
+      "n": 145,
+      "win": 29.7,
+      "exp": 0.56,
+      "pf": 2.21,
+      "dd": 7.1,
+      "tot": 81.3
+     },
+     "new": {
+      "n": 145,
+      "win": 29.7,
+      "exp": 0.56,
+      "pf": 2.21,
+      "dd": 7.1,
+      "tot": 81.3
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.492
+    },
+    "test": {
+     "base": {
+      "n": 216,
+      "win": 26.4,
+      "exp": 0.415,
+      "pf": 1.99,
+      "dd": 10.9,
+      "tot": 89.7
+     },
+     "new": {
+      "n": 216,
+      "win": 26.4,
+      "exp": 0.415,
+      "pf": 1.99,
+      "dd": 10.9,
+      "tot": 89.7
+     },
+     "hurt": [],
+     "ok": true,
+     "P_no_gain": 0.503
+    },
+    "ship": true
+   }
+  }
+ },
+ "per_tf": {
+  "BASE|val|XAUUSD 1h": {
+   "n": 38,
+   "win": 23.7,
+   "exp": 0.474,
+   "pf": 1.85,
+   "dd": 7.1,
+   "tot": 18.0
+  },
+  "BASE|val|XAUUSD 4h": {
+   "n": 25,
+   "win": 36.0,
+   "exp": 0.805,
+   "pf": 2.65,
+   "dd": 4.3,
+   "tot": 20.1
+  },
+  "BASE|val|XAUUSD 1d": {
+   "n": 23,
+   "win": 30.4,
+   "exp": 0.472,
+   "pf": 2.19,
+   "dd": 6.2,
+   "tot": 10.9
+  },
+  "BASE|val|BTCUSD 1h": {
+   "n": 36,
+   "win": 27.8,
+   "exp": 0.405,
+   "pf": 1.92,
+   "dd": 8.1,
+   "tot": 14.6
+  },
+  "BASE|val|BTCUSD 4h": {
+   "n": 39,
+   "win": 17.9,
+   "exp": -0.172,
+   "pf": 0.71,
+   "dd": 10.4,
+   "tot": -6.7
+  },
+  "BASE|val|BTCUSD 1d": {
+   "n": 34,
+   "win": 26.5,
+   "exp": 0.67,
+   "pf": 2.73,
+   "dd": 4.0,
+   "tot": 22.8
+  },
+  "BASE|test|XAUUSD 1h": {
+   "n": 45,
+   "win": 22.2,
+   "exp": 0.24,
+   "pf": 1.58,
+   "dd": 5.2,
+   "tot": 10.8
+  },
+  "BASE|test|XAUUSD 4h": {
+   "n": 39,
+   "win": 23.1,
+   "exp": 0.359,
+   "pf": 1.72,
+   "dd": 7.5,
+   "tot": 14.0
+  },
+  "BASE|test|XAUUSD 1d": {
+   "n": 35,
+   "win": 42.9,
+   "exp": 1.066,
+   "pf": 4.36,
+   "dd": 2.0,
+   "tot": 37.3
+  },
+  "BASE|test|BTCUSD 1h": {
+   "n": 75,
+   "win": 22.7,
+   "exp": -0.05,
+   "pf": 0.91,
+   "dd": 14.5,
+   "tot": -3.7
+  },
+  "BASE|test|BTCUSD 4h": {
+   "n": 45,
+   "win": 15.6,
+   "exp": 0.143,
+   "pf": 1.27,
+   "dd": 6.8,
+   "tot": 6.5
+  },
+  "BASE|test|BTCUSD 1d": {
+   "n": 65,
+   "win": 21.5,
+   "exp": 0.32,
+   "pf": 1.76,
+   "dd": 7.8,
+   "tot": 20.8
+  },
+  "R1 Donchian-20 breakout confirmation on 1h (gold+BTC)|val|XAUUSD 1h": {
+   "n": 25,
+   "win": 36.0,
+   "exp": 0.962,
+   "pf": 3.37,
+   "dd": 3.0,
+   "tot": 24.1
+  },
+  "R1 Donchian-20 breakout confirmation on 1h (gold+BTC)|val|XAUUSD 4h": {
+   "n": 25,
+   "win": 36.0,
+   "exp": 0.805,
+   "pf": 2.65,
+   "dd": 4.3,
+   "tot": 20.1
+  },
+  "R1 Donchian-20 breakout confirmation on 1h (gold+BTC)|val|XAUUSD 1d": {
+   "n": 23,
+   "win": 30.4,
+   "exp": 0.472,
+   "pf": 2.19,
+   "dd": 6.2,
+   "tot": 10.9
+  },
+  "R1 Donchian-20 breakout confirmation on 1h (gold+BTC)|val|BTCUSD 1h": {
+   "n": 22,
+   "win": 27.3,
+   "exp": 0.855,
+   "pf": 3.07,
+   "dd": 2.6,
+   "tot": 18.8
+  },
+  "R1 Donchian-20 breakout confirmation on 1h (gold+BTC)|val|BTCUSD 4h": {
+   "n": 39,
+   "win": 17.9,
+   "exp": -0.172,
+   "pf": 0.71,
+   "dd": 10.4,
+   "tot": -6.7
+  },
+  "R1 Donchian-20 breakout confirmation on 1h (gold+BTC)|val|BTCUSD 1d": {
+   "n": 34,
+   "win": 26.5,
+   "exp": 0.67,
+   "pf": 2.73,
+   "dd": 4.0,
+   "tot": 22.8
+  },
+  "R1 Donchian-20 breakout confirmation on 1h (gold+BTC)|test|XAUUSD 1h": {
+   "n": 34,
+   "win": 23.5,
+   "exp": 0.251,
+   "pf": 1.83,
+   "dd": 3.4,
+   "tot": 8.5
+  },
+  "R1 Donchian-20 breakout confirmation on 1h (gold+BTC)|test|XAUUSD 4h": {
+   "n": 39,
+   "win": 23.1,
+   "exp": 0.359,
+   "pf": 1.72,
+   "dd": 7.5,
+   "tot": 14.0
+  },
+  "R1 Donchian-20 breakout confirmation on 1h (gold+BTC)|test|XAUUSD 1d": {
+   "n": 35,
+   "win": 42.9,
+   "exp": 1.066,
+   "pf": 4.36,
+   "dd": 2.0,
+   "tot": 37.3
+  },
+  "R1 Donchian-20 breakout confirmation on 1h (gold+BTC)|test|BTCUSD 1h": {
+   "n": 58,
+   "win": 17.2,
+   "exp": -0.032,
+   "pf": 0.94,
+   "dd": 11.2,
+   "tot": -1.9
+  },
+  "R1 Donchian-20 breakout confirmation on 1h (gold+BTC)|test|BTCUSD 4h": {
+   "n": 45,
+   "win": 15.6,
+   "exp": 0.143,
+   "pf": 1.27,
+   "dd": 6.8,
+   "tot": 6.5
+  },
+  "R1 Donchian-20 breakout confirmation on 1h (gold+BTC)|test|BTCUSD 1d": {
+   "n": 65,
+   "win": 21.5,
+   "exp": 0.32,
+   "pf": 1.76,
+   "dd": 7.8,
+   "tot": 20.8
+  },
+  "R2 = R1 + London/NY session on BTC 1h|val|XAUUSD 1h": {
+   "n": 25,
+   "win": 36.0,
+   "exp": 0.962,
+   "pf": 3.37,
+   "dd": 3.0,
+   "tot": 24.1
+  },
+  "R2 = R1 + London/NY session on BTC 1h|val|XAUUSD 4h": {
+   "n": 25,
+   "win": 36.0,
+   "exp": 0.805,
+   "pf": 2.65,
+   "dd": 4.3,
+   "tot": 20.1
+  },
+  "R2 = R1 + London/NY session on BTC 1h|val|XAUUSD 1d": {
+   "n": 23,
+   "win": 30.4,
+   "exp": 0.472,
+   "pf": 2.19,
+   "dd": 6.2,
+   "tot": 10.9
+  },
+  "R2 = R1 + London/NY session on BTC 1h|val|BTCUSD 1h": {
+   "n": 14,
+   "win": 42.9,
+   "exp": 1.604,
+   "pf": 5.94,
+   "dd": 2.3,
+   "tot": 22.5
+  },
+  "R2 = R1 + London/NY session on BTC 1h|val|BTCUSD 4h": {
+   "n": 39,
+   "win": 17.9,
+   "exp": -0.172,
+   "pf": 0.71,
+   "dd": 10.4,
+   "tot": -6.7
+  },
+  "R2 = R1 + London/NY session on BTC 1h|val|BTCUSD 1d": {
+   "n": 34,
+   "win": 26.5,
+   "exp": 0.67,
+   "pf": 2.73,
+   "dd": 4.0,
+   "tot": 22.8
+  },
+  "R2 = R1 + London/NY session on BTC 1h|test|XAUUSD 1h": {
+   "n": 34,
+   "win": 23.5,
+   "exp": 0.251,
+   "pf": 1.83,
+   "dd": 3.4,
+   "tot": 8.5
+  },
+  "R2 = R1 + London/NY session on BTC 1h|test|XAUUSD 4h": {
+   "n": 39,
+   "win": 23.1,
+   "exp": 0.359,
+   "pf": 1.72,
+   "dd": 7.5,
+   "tot": 14.0
+  },
+  "R2 = R1 + London/NY session on BTC 1h|test|XAUUSD 1d": {
+   "n": 35,
+   "win": 42.9,
+   "exp": 1.066,
+   "pf": 4.36,
+   "dd": 2.0,
+   "tot": 37.3
+  },
+  "R2 = R1 + London/NY session on BTC 1h|test|BTCUSD 1h": {
+   "n": 44,
+   "win": 20.5,
+   "exp": 0.077,
+   "pf": 1.15,
+   "dd": 10.2,
+   "tot": 3.4
+  },
+  "R2 = R1 + London/NY session on BTC 1h|test|BTCUSD 4h": {
+   "n": 45,
+   "win": 15.6,
+   "exp": 0.143,
+   "pf": 1.27,
+   "dd": 6.8,
+   "tot": 6.5
+  },
+  "R2 = R1 + London/NY session on BTC 1h|test|BTCUSD 1d": {
+   "n": 65,
+   "win": 21.5,
+   "exp": 0.32,
+   "pf": 1.76,
+   "dd": 7.8,
+   "tot": 20.8
+  },
+  "R4 Donchian confirmation gold 1h only|val|XAUUSD 1h": {
+   "n": 25,
+   "win": 36.0,
+   "exp": 0.962,
+   "pf": 3.37,
+   "dd": 3.0,
+   "tot": 24.1
+  },
+  "R4 Donchian confirmation gold 1h only|val|XAUUSD 4h": {
+   "n": 25,
+   "win": 36.0,
+   "exp": 0.805,
+   "pf": 2.65,
+   "dd": 4.3,
+   "tot": 20.1
+  },
+  "R4 Donchian confirmation gold 1h only|val|XAUUSD 1d": {
+   "n": 23,
+   "win": 30.4,
+   "exp": 0.472,
+   "pf": 2.19,
+   "dd": 6.2,
+   "tot": 10.9
+  },
+  "R4 Donchian confirmation gold 1h only|val|BTCUSD 1h": {
+   "n": 36,
+   "win": 27.8,
+   "exp": 0.405,
+   "pf": 1.92,
+   "dd": 8.1,
+   "tot": 14.6
+  },
+  "R4 Donchian confirmation gold 1h only|val|BTCUSD 4h": {
+   "n": 39,
+   "win": 17.9,
+   "exp": -0.172,
+   "pf": 0.71,
+   "dd": 10.4,
+   "tot": -6.7
+  },
+  "R4 Donchian confirmation gold 1h only|val|BTCUSD 1d": {
+   "n": 34,
+   "win": 26.5,
+   "exp": 0.67,
+   "pf": 2.73,
+   "dd": 4.0,
+   "tot": 22.8
+  },
+  "R4 Donchian confirmation gold 1h only|test|XAUUSD 1h": {
+   "n": 34,
+   "win": 23.5,
+   "exp": 0.251,
+   "pf": 1.83,
+   "dd": 3.4,
+   "tot": 8.5
+  },
+  "R4 Donchian confirmation gold 1h only|test|XAUUSD 4h": {
+   "n": 39,
+   "win": 23.1,
+   "exp": 0.359,
+   "pf": 1.72,
+   "dd": 7.5,
+   "tot": 14.0
+  },
+  "R4 Donchian confirmation gold 1h only|test|XAUUSD 1d": {
+   "n": 35,
+   "win": 42.9,
+   "exp": 1.066,
+   "pf": 4.36,
+   "dd": 2.0,
+   "tot": 37.3
+  },
+  "R4 Donchian confirmation gold 1h only|test|BTCUSD 1h": {
+   "n": 75,
+   "win": 22.7,
+   "exp": -0.05,
+   "pf": 0.91,
+   "dd": 14.5,
+   "tot": -3.7
+  },
+  "R4 Donchian confirmation gold 1h only|test|BTCUSD 4h": {
+   "n": 45,
+   "win": 15.6,
+   "exp": 0.143,
+   "pf": 1.27,
+   "dd": 6.8,
+   "tot": 6.5
+  },
+  "R4 Donchian confirmation gold 1h only|test|BTCUSD 1d": {
+   "n": 65,
+   "win": 21.5,
+   "exp": 0.32,
+   "pf": 1.76,
+   "dd": 7.8,
+   "tot": 20.8
+  },
+  "U3 base AND Donchian (all gold/BTC TFs)|val|XAUUSD 1h": {
+   "n": 25,
+   "win": 36.0,
+   "exp": 0.962,
+   "pf": 3.37,
+   "dd": 3.0,
+   "tot": 24.1
+  },
+  "U3 base AND Donchian (all gold/BTC TFs)|val|XAUUSD 4h": {
+   "n": 22,
+   "win": 40.9,
+   "exp": 0.735,
+   "pf": 2.45,
+   "dd": 5.8,
+   "tot": 16.2
+  },
+  "U3 base AND Donchian (all gold/BTC TFs)|val|XAUUSD 1d": {
+   "n": 20,
+   "win": 35.0,
+   "exp": 0.365,
+   "pf": 1.9,
+   "dd": 4.9,
+   "tot": 7.3
+  },
+  "U3 base AND Donchian (all gold/BTC TFs)|val|BTCUSD 1h": {
+   "n": 22,
+   "win": 27.3,
+   "exp": 0.855,
+   "pf": 3.07,
+   "dd": 2.6,
+   "tot": 18.8
+  },
+  "U3 base AND Donchian (all gold/BTC TFs)|val|BTCUSD 4h": {
+   "n": 27,
+   "win": 18.5,
+   "exp": 0.074,
+   "pf": 1.15,
+   "dd": 7.3,
+   "tot": 2.0
+  },
+  "U3 base AND Donchian (all gold/BTC TFs)|val|BTCUSD 1d": {
+   "n": 26,
+   "win": 30.8,
+   "exp": 0.815,
+   "pf": 2.75,
+   "dd": 5.0,
+   "tot": 21.2
+  },
+  "U3 base AND Donchian (all gold/BTC TFs)|test|XAUUSD 1h": {
+   "n": 34,
+   "win": 23.5,
+   "exp": 0.251,
+   "pf": 1.83,
+   "dd": 3.4,
+   "tot": 8.5
+  },
+  "U3 base AND Donchian (all gold/BTC TFs)|test|XAUUSD 4h": {
+   "n": 28,
+   "win": 32.1,
+   "exp": 0.585,
+   "pf": 2.76,
+   "dd": 2.2,
+   "tot": 16.4
+  },
+  "U3 base AND Donchian (all gold/BTC TFs)|test|XAUUSD 1d": {
+   "n": 28,
+   "win": 32.1,
+   "exp": 0.987,
+   "pf": 3.11,
+   "dd": 4.0,
+   "tot": 27.6
+  },
+  "U3 base AND Donchian (all gold/BTC TFs)|test|BTCUSD 1h": {
+   "n": 58,
+   "win": 17.2,
+   "exp": -0.032,
+   "pf": 0.94,
+   "dd": 11.2,
+   "tot": -1.9
+  },
+  "U3 base AND Donchian (all gold/BTC TFs)|test|BTCUSD 4h": {
+   "n": 32,
+   "win": 18.8,
+   "exp": 0.171,
+   "pf": 1.28,
+   "dd": 12.4,
+   "tot": 5.5
+  },
+  "U3 base AND Donchian (all gold/BTC TFs)|test|BTCUSD 1d": {
+   "n": 44,
+   "win": 20.5,
+   "exp": 0.399,
+   "pf": 1.82,
+   "dd": 7.1,
+   "tot": 17.6
+  },
+  "S1 session BTC 1h|val|XAUUSD 1h": {
+   "n": 38,
+   "win": 23.7,
+   "exp": 0.474,
+   "pf": 1.85,
+   "dd": 7.1,
+   "tot": 18.0
+  },
+  "S1 session BTC 1h|val|XAUUSD 4h": {
+   "n": 25,
+   "win": 36.0,
+   "exp": 0.805,
+   "pf": 2.65,
+   "dd": 4.3,
+   "tot": 20.1
+  },
+  "S1 session BTC 1h|val|XAUUSD 1d": {
+   "n": 23,
+   "win": 30.4,
+   "exp": 0.472,
+   "pf": 2.19,
+   "dd": 6.2,
+   "tot": 10.9
+  },
+  "S1 session BTC 1h|val|BTCUSD 1h": {
+   "n": 28,
+   "win": 25.0,
+   "exp": 0.513,
+   "pf": 1.99,
+   "dd": 6.8,
+   "tot": 14.4
+  },
+  "S1 session BTC 1h|val|BTCUSD 4h": {
+   "n": 39,
+   "win": 17.9,
+   "exp": -0.172,
+   "pf": 0.71,
+   "dd": 10.4,
+   "tot": -6.7
+  },
+  "S1 session BTC 1h|val|BTCUSD 1d": {
+   "n": 34,
+   "win": 26.5,
+   "exp": 0.67,
+   "pf": 2.73,
+   "dd": 4.0,
+   "tot": 22.8
+  },
+  "S1 session BTC 1h|test|XAUUSD 1h": {
+   "n": 45,
+   "win": 22.2,
+   "exp": 0.24,
+   "pf": 1.58,
+   "dd": 5.2,
+   "tot": 10.8
+  },
+  "S1 session BTC 1h|test|XAUUSD 4h": {
+   "n": 39,
+   "win": 23.1,
+   "exp": 0.359,
+   "pf": 1.72,
+   "dd": 7.5,
+   "tot": 14.0
+  },
+  "S1 session BTC 1h|test|XAUUSD 1d": {
+   "n": 35,
+   "win": 42.9,
+   "exp": 1.066,
+   "pf": 4.36,
+   "dd": 2.0,
+   "tot": 37.3
+  },
+  "S1 session BTC 1h|test|BTCUSD 1h": {
+   "n": 59,
+   "win": 23.7,
+   "exp": 0.032,
+   "pf": 1.06,
+   "dd": 11.0,
+   "tot": 1.9
+  },
+  "S1 session BTC 1h|test|BTCUSD 4h": {
+   "n": 45,
+   "win": 15.6,
+   "exp": 0.143,
+   "pf": 1.27,
+   "dd": 6.8,
+   "tot": 6.5
+  },
+  "S1 session BTC 1h|test|BTCUSD 1d": {
+   "n": 65,
+   "win": 21.5,
+   "exp": 0.32,
+   "pf": 1.76,
+   "dd": 7.8,
+   "tot": 20.8
+  }
+ }
+}

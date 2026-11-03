@@ -155,7 +155,7 @@ def regime(df):
     return "Transitional","mixed",x,er
 
 # ---------- strategies + backtest ----------
-STRATS=["Trend-follow + ADX filter","Turtle 20-bar breakout","Range mean reversion","London breakout","ICT/SMC sweep + CHoCH","MTF top-down pullback","Wyckoff spring / upthrust","Squeeze momentum breakout"]+[edge.NEW_STRATS[k] for k in edge.KEEP_NEW]+[edge.TOM_NAME,edge.SWEEP_NAME,edge.LEZ_NAME]
+STRATS=["Trend-follow + ADX filter","Turtle 20-bar breakout","Range mean reversion","London breakout","ICT/SMC sweep + CHoCH","MTF top-down pullback","Wyckoff spring / upthrust","Squeeze momentum breakout"]+[edge.NEW_STRATS[k] for k in edge.KEEP_NEW]+[edge.TOM_NAME,edge.SWEEP_NAME,edge.LEZ_NAME,edge.BRK_NAME,edge.SQZ_NAME]
 RULES=["EMA20>EMA50, ADX>25 with +DI>−DI, close reclaims EMA20 → long (mirror short)",
  "Close breaks prior 20-bar high → long; below 20-bar low → short (Donchian, Turtle System 1)",
  "ADX<20 regime, close outside Bollinger band with RSI<30 / >70 → fade back toward the mean",
@@ -163,7 +163,7 @@ RULES=["EMA20>EMA50, ADX>25 with +DI>−DI, close reclaims EMA20 → long (mirro
  "Sell-side sweep of 20-bar low, then bullish CHoCH within 10 bars → long (mirror short)",
  "Higher-TF EMA20>EMA50 bias; RSI dips under 40 then reclaims it with price above EMA50 → long",
  "Range (ADX<25): wick below 30-bar low, close back inside (volume >1.5× if available) → long",
- "Squeeze on ≥5 bars then releases; momentum positive & rising → long (mirror short)"]+[edge.NEW_RULES[k] for k in edge.KEEP_NEW]+[edge.TOM_RULE,edge.SWEEP_RULE,edge.LEZ_RULE]
+ "Squeeze on ≥5 bars then releases; momentum positive & rising → long (mirror short)"]+[edge.NEW_RULES[k] for k in edge.KEEP_NEW]+[edge.TOM_RULE,edge.SWEEP_RULE,edge.LEZ_RULE,edge.BRK_RULE,edge.SQZ_RULE]
 def strat_signals(df,tf,htf,sym=None):
     c=df.c; n=len(df); e20,e50=ema(c,20),ema(c,50); X,PDI,NDI=adx(df); R=rsi(c)
     L=[np.zeros(n,bool) for _ in range(8)]; S=[np.zeros(n,bool) for _ in range(8)]
@@ -209,6 +209,8 @@ def strat_signals(df,tf,htf,sym=None):
     else:
         Lz=np.zeros(n,bool); Sz=np.zeros(n,bool)
     L.append(Lz); S.append(Sz)  # Liquidity Entry Zones (point scale). Alerts only if the unseen test earned them.
+    Lb,Sb,_,_,_=edge.donchian_signals(df,htf); L.append(Lb); S.append(Sb)  # round 4 (3 Nov 2026): display only
+    Lq,Sq=edge.squeeze_signals(df); L.append(Lq); S.append(Sq)            # round 4 (3 Nov 2026): display only
     return L,S
 def backtest(df,Lg,Sg,stopA=1.5,rr=2.0,maxbars=48):
     A=atr(df).values; o,h,l,c=df.o.values,df.h.values,df.l.values,df.c.values; n=len(df); res=[]; i=60

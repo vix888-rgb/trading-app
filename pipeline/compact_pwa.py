@@ -39,7 +39,7 @@ for s in d["sym"]:
                      1 if (x[2].get("lez") or {}).get("active") else 0] for x in t["st"]],
               "oos":[o["adaptive"].get("n",0),o["adaptive"].get("hit"),o["adaptive"].get("avgR"),o["equal"].get("n",0),o["equal"].get("hit"),o["equal"].get("avgR"),o["test_samples"]] if o else None,
               "pl":[1 if pl["side"]=="long" else -1,pl["entry"],pl["zone"],pl["zoneWhy"],pl["stop"],pl["stopBasis"],pl["inv"],pl["tp"]],
-              "atr":t["atr"],"lv":t["lv"],"flt":t.get("flt"),"edge":t.get("edge"),"oosf":(o or {}).get("filtered"),"ch":[base,top,c["t1"],enc(c["o"]),enc(c["h"]),enc(c["l"]),enc(c["c"]),enc(c["e20"]),enc(c["e50"])]}
+              "atr":t["atr"],"lv":t["lv"],"flt":t.get("flt"),"plalt":pl.get("alt"),"edge":t.get("edge"),"oosf":(o or {}).get("filtered"),"ch":[base,top,c["t1"],enc(c["o"]),enc(c["h"]),enc(c["l"]),enc(c["c"]),enc(c["e20"]),enc(c["e50"])]}
 news={s["key"]:[[n[0],n[1][:110],n[3],n[4]] for n in s["news"][:6]] for s in d["sym"] if s["key"] in PRI}
 J=[[e["bar_time"],e["sym"],e["tf"],e["side"],e["entry"],e["stop"],e["tp"][1],e["status"] if e.get("filled",True) or e["status"]!="open" else "pending fill",e.get("R"),e.get("tp1_hit",False),e.get("exit"),e.get("exit_mode","tp2"),e.get("trail_stop")] for e in d["journal"]][-200:]
 L=d["live"]
