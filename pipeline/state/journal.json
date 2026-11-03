@@ -12550,7 +12550,7 @@
   "edge": false,
   "trail_stop": 1.268356,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "XAUUSD-15m-1793719986000",
@@ -12793,7 +12793,7 @@
   "score": 26,
   "entry": 1.3414,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 1.340734,
   "tp": [
    1.342065,
@@ -12892,7 +12892,11 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793723700000,
+  "trail_stop": 1.340734,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "USDJPY-5m-1793723100000",
@@ -12992,6 +12996,121 @@
     "lo": 158.41000366,
     "hi": 158.52799988,
     "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "ETHUSD-5m-1793723700000",
+  "logged": "2026-11-03T17:42+01:00",
+  "bar_t": 1793723700000,
+  "bar_time": "Tue 03 Nov 17:35",
+  "sym": "ETHUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 30,
+  "entry": 2294.15,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 2284.332,
+  "tp": [
+   2303.968,
+   2313.786,
+   2323.604
+  ],
+  "inv": 2285.12,
+  "votes": [
+   1,
+   -1,
+   0,
+   1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.67,
+   0.5,
+   0.0,
+   0.33,
+   0.0,
+   0.43,
+   0.0,
+   1.27,
+   0.0,
+   0.3,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.92,
+   0.0,
+   0.0,
+   0.75,
+   0.39,
+   0.06,
+   0.0,
+   1.89,
+   0.59
+  ],
+  "strategies": [
+   "Trend-follow + ADX filter",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 5.254201179202062,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 78,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
     "alert": false
    },
    "sweep": {
