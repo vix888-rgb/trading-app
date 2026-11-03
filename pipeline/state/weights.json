@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T21:52+01:00",
+ "updated": "2026-11-03T22:02+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -56,15 +56,16 @@
    "XAUUSD|4h",
    "XAUUSD|1h",
    "BTCUSD|1d",
-   "BTCUSD|1h",
    "USDJPY|1d",
    "USDCHF|1d",
    "EURUSD|15m"
   ],
-  "params_round": 3,
+  "params_round": 4,
   "pending_expiry_bars": 12,
   "latch": true,
-  "refit_max_age_days": 8
+  "refit_max_age_days": 8,
+  "plan_mode": "tested",
+  "plan_stop_atr": 1.5
  },
  "agents": [
   "EMA trend (20/50/200)",
