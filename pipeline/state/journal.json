@@ -5570,7 +5570,7 @@
   "fill_bar_t": 1793648700000,
   "trail_stop": 77464.636,
   "tp1_hit": false,
-  "bars_open": 33
+  "bars_open": 34
  },
  {
   "id": "XAUUSD-5m-1793648940000",
@@ -6973,7 +6973,7 @@
   "edge": false,
   "trail_stop": 2268.758,
   "tp1_hit": false,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "XRPUSD-15m-1793653200000",
@@ -7449,7 +7449,7 @@
   "edge": false,
   "trail_stop": 92.7068,
   "tp1_hit": false,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "BTCUSD-5m-1793658600000",
@@ -7809,7 +7809,7 @@
   "edge": true,
   "trail_stop": 1.120149,
   "tp1_hit": false,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "XRPUSD-15m-1793666700000",
@@ -8179,7 +8179,7 @@
   "fill_bar_t": 1793675700000,
   "trail_stop": 1.256191,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 13
  },
  {
   "id": "XRPUSD-15m-1793673900000",
@@ -8301,7 +8301,7 @@
   "edge": false,
   "trail_stop": 1.25544,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XAUUSD-5m-1793674800000",
@@ -8504,7 +8504,7 @@
    "Turtle 20-bar breakout",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.22532502710159547,
@@ -8538,7 +8538,10 @@
   "fill_bar_t": 1793675700000,
   "trail_stop": 92.28,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 11,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-03T05:20+01:00"
  },
  {
   "id": "ETHUSD-5m-1793676300000",
@@ -8653,7 +8656,7 @@
   "edge": false,
   "trail_stop": 2257.79,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "BTCUSD-5m-1793676900000",
@@ -8771,7 +8774,7 @@
   "fill_bar_t": 1793677500000,
   "trail_stop": 76999.375,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 7
  },
  {
   "id": "BTCUSD-4h-1793664000000",
