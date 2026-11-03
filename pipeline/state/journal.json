@@ -11952,7 +11952,7 @@
   "fill_bar_t": 1793719800000,
   "trail_stop": 1.340968,
   "tp1_hit": true,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "USDJPY-15m-1793714400000",
@@ -12067,7 +12067,7 @@
   "edge": false,
   "trail_stop": 158.27759828245024,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "GBPUSD-5m-1793717700000",
@@ -12433,7 +12433,7 @@
   "fill_bar_t": 1793719800000,
   "trail_stop": 1.120172,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "XRPUSD-5m-1793720100000",
@@ -12550,7 +12550,7 @@
   "edge": false,
   "trail_stop": 1.268356,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "XAUUSD-15m-1793719986000",
@@ -12666,7 +12666,7 @@
   "fill_bar_t": 1793720700000,
   "trail_stop": 3959.415,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "SOLUSD-1h-1793718000000",
@@ -12877,6 +12877,121 @@
    "sigRaw": "BUY",
    "range": {
     "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "USDJPY-5m-1793723100000",
+  "logged": "2026-11-03T17:32+01:00",
+  "bar_t": 1793723100000,
+  "bar_time": "Tue 03 Nov 17:25",
+  "sym": "USDJPY",
+  "tf": "5m",
+  "side": "long",
+  "score": 25,
+  "entry": 158.419,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 158.353,
+  "tp": [
+   158.485,
+   158.551,
+   158.618
+  ],
+  "inv": 158.41,
+  "votes": [
+   1,
+   -1,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   0,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.38,
+   0.15,
+   0.33,
+   0.0,
+   0.23,
+   0.38,
+   0.3,
+   0.0,
+   0.16,
+   0.61,
+   0.2,
+   1.11,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.19,
+   0.0
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.05516306607375719,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 87,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 158.41000366,
+    "hi": 158.52799988,
+    "src": "1m",
     "alert": false
    },
    "sweep": {
