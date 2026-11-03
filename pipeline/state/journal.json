@@ -9499,7 +9499,7 @@
   "fill_bar_t": 1793685600000,
   "trail_stop": 3928.6,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 26
  },
  {
   "id": "SOLUSD-5m-1793686500000",
@@ -9982,7 +9982,7 @@
   "fill_bar_t": 1793690700000,
   "trail_stop": 92.62892,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 9
  },
  {
   "id": "XAUUSD-15m-1793688300000",
@@ -10216,9 +10216,9 @@
    "why": ""
   },
   "edge": false,
-  "trail_stop": 1.341562,
+  "trail_stop": 1.3416402746957048,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "ETHUSD-5m-1793691300000",
@@ -10553,6 +10553,123 @@
     "lo": 1.34039271,
     "hi": 1.34235394,
     "src": "15m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false
+ },
+ {
+  "id": "BTCUSD-5m-1793693100000",
+  "logged": "2026-11-03T09:10+01:00",
+  "bar_t": 1793693100000,
+  "bar_time": "Tue 03 Nov 09:05",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -32,
+  "entry": 76799.78,
+  "entry_type": "limit (fair value gap fill)",
+  "filled": false,
+  "stop": 76994.182,
+  "tp": [
+   76605.378,
+   76410.975,
+   76216.573
+  ],
+  "inv": 76979.37,
+  "votes": [
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.12,
+   0.0
+  ],
+  "strategies": [
+   "Liquidity Entry Zones"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 98.74982472123556,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 28,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 76678.15,
+    "hi": 76979.37,
+    "src": "1m",
     "alert": false
    },
    "sweep": {
