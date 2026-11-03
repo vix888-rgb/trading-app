@@ -186,16 +186,16 @@
   "tf": "1d",
   "side": "short",
   "score": -88,
-  "entry": 4040.5,
+  "entry": 4031.1648,
   "entry_type": "limit (order block retest)",
   "filled": false,
-  "stop": 4254.506,
+  "stop": 4245.1708,
   "tp": [
-   3826.494,
-   3612.487,
-   3398.481
+   3817.1588,
+   3603.1518,
+   3389.1458
   ],
-  "inv": 4242.3,
+  "inv": 4232.9648,
   "votes": [
    -1,
    -1,
@@ -260,7 +260,9 @@
    "Turtle 20-bar breakout",
    "Squeeze momentum breakout"
   ],
-  "status": "open"
+  "status": "open",
+  "pxBasis": "spot",
+  "pxShift": 9.3352
  },
  {
   "id": "BTCUSD-5m-1793489700000",
@@ -2630,16 +2632,16 @@
   "tf": "4h",
   "side": "short",
   "score": -28,
-  "entry": 3943.15,
+  "entry": 3933.8148,
   "entry_type": "limit (fair value gap fill)",
   "filled": true,
-  "stop": 4002.71,
+  "stop": 3993.3748,
   "tp": [
-   3883.59,
-   3824.029,
-   3764.469
+   3874.2548,
+   3814.6938,
+   3755.1338
   ],
-  "inv": 4097.2,
+  "inv": 4087.8648,
   "votes": [
    -1,
    -1,
@@ -2720,9 +2722,11 @@
   },
   "edge": true,
   "fill_bar_t": 1793620800000,
-  "trail_stop": 4002.71,
+  "trail_stop": 3993.3748,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "pxBasis": "spot",
+  "pxShift": 9.3352
  },
  {
   "id": "EURUSD-1d-1793318400000",
@@ -11915,7 +11919,7 @@
   "strategies": [
    "Turtle 20-bar breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00056643583657138,
@@ -11952,7 +11956,10 @@
   "fill_bar_t": 1793719800000,
   "trail_stop": 1.340968,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 30,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-04T00:23+01:00"
  },
  {
   "id": "USDJPY-15m-1793714400000",
@@ -12067,7 +12074,7 @@
   "edge": false,
   "trail_stop": 158.441599747294,
   "tp1_hit": true,
-  "bars_open": 35
+  "bars_open": 36
  },
  {
   "id": "GBPUSD-5m-1793717700000",
@@ -12567,16 +12574,16 @@
   "tf": "15m",
   "side": "short",
   "score": -37,
-  "entry": 3941.6,
+  "entry": 3932.2648,
   "entry_type": "limit (fair value gap fill)",
   "filled": true,
-  "stop": 3959.415,
+  "stop": 3950.0798,
   "tp": [
-   3923.785,
-   3905.971,
-   3888.156
+   3914.4498,
+   3896.6358,
+   3878.8208
   ],
-  "inv": 3981.7,
+  "inv": 3972.3648,
   "votes": [
    0,
    -1,
@@ -12670,9 +12677,11 @@
   },
   "edge": false,
   "fill_bar_t": 1793720700000,
-  "trail_stop": 3959.415,
+  "trail_stop": 3950.0798,
   "tp1_hit": false,
-  "bars_open": 25
+  "bars_open": 30,
+  "pxBasis": "spot",
+  "pxShift": 9.3352
  },
  {
   "id": "SOLUSD-1h-1793718000000",
@@ -13153,16 +13162,16 @@
   "tf": "1h",
   "side": "short",
   "score": -33,
-  "entry": 3966.05,
+  "entry": 3956.7148,
   "entry_type": "limit (order block retest)",
   "filled": false,
-  "stop": 3984.355,
+  "stop": 3975.0198,
   "tp": [
-   3947.745,
-   3929.44,
-   3911.135
+   3938.4098,
+   3920.1048,
+   3901.7998
   ],
-  "inv": 3981.7,
+  "inv": 3972.3648,
   "votes": [
    -1,
    1,
@@ -13256,7 +13265,9 @@
    },
    "why": ""
   },
-  "edge": true
+  "edge": true,
+  "pxBasis": "spot",
+  "pxShift": 9.3352
  },
  {
   "id": "USDJPY-5m-1793728500000",
