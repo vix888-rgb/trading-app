@@ -14,11 +14,10 @@ permissions:
   contents: write
   actions: write
 
-# One schedule tick: cancel the pre-secret loop (it cannot see TWELVEDATA_API_KEY).
-# Restored to false as soon as the replacement run exists, so later ticks queue.
+# The next run waits here instead of cancelling a commit or push.
 concurrency:
   group: signal-scan
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   scan:
