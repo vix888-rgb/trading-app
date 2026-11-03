@@ -3333,7 +3333,7 @@
   "fill_bar_t": 1793606400000,
   "trail_stop": 93.54843351331891,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "SOLUSD-15m-1793610900000",
@@ -4584,7 +4584,7 @@
   "strategies": [
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00794500376723082,
@@ -4620,7 +4620,10 @@
   "edge": false,
   "trail_stop": 1.265792,
   "tp1_hit": false,
-  "bars_open": 20
+  "bars_open": 20,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-03T14:01+01:00"
  },
  {
   "id": "XRPUSD-5m-1793638200000",
@@ -5932,7 +5935,7 @@
   "edge": true,
   "trail_stop": 77878.895,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "EURUSD-4h-1793635200000",
@@ -10599,7 +10602,7 @@
   "fill_bar_t": 1793700000000,
   "trail_stop": 1.339525,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "BTCUSD-5m-1793693100000",
@@ -10979,7 +10982,7 @@
   "score": -48,
   "entry": 3920.6,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 3949.724,
   "tp": [
    3891.476,
@@ -11083,7 +11086,11 @@
    },
    "why": ""
   },
-  "edge": true
+  "edge": true,
+  "fill_bar_t": 1793707200000,
+  "trail_stop": 3949.724,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "ETHUSD-15m-1793695500000",
@@ -11167,7 +11174,7 @@
   "strategies": [
    "Squeeze momentum breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 7.177048420885446,
@@ -11204,7 +11211,10 @@
   "fill_bar_t": 1793701800000,
   "trail_stop": 2286.109,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 9,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-03T14:01+01:00"
  },
  {
   "id": "GBPUSD-5m-1793696100000",
@@ -11565,7 +11575,7 @@
   "fill_bar_t": 1793706300000,
   "trail_stop": 1.119392,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XRPUSD-5m-1793707500000",
