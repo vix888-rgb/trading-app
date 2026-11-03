@@ -5570,7 +5570,7 @@
   "fill_bar_t": 1793648700000,
   "trail_stop": 77464.636,
   "tp1_hit": false,
-  "bars_open": 31
+  "bars_open": 32
  },
  {
   "id": "XAUUSD-5m-1793648940000",
@@ -6973,7 +6973,7 @@
   "edge": false,
   "trail_stop": 2268.758,
   "tp1_hit": false,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "XRPUSD-15m-1793653200000",
@@ -7449,7 +7449,7 @@
   "edge": false,
   "trail_stop": 92.7068,
   "tp1_hit": false,
-  "bars_open": 21
+  "bars_open": 22
  },
  {
   "id": "BTCUSD-5m-1793658600000",
@@ -7809,7 +7809,7 @@
   "edge": true,
   "trail_stop": 1.120149,
   "tp1_hit": false,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "XRPUSD-15m-1793666700000",
@@ -8179,7 +8179,7 @@
   "fill_bar_t": 1793675700000,
   "trail_stop": 1.256191,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 7
  },
  {
   "id": "XRPUSD-15m-1793673900000",
@@ -8301,7 +8301,7 @@
   "edge": false,
   "trail_stop": 1.25544,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XAUUSD-5m-1793674800000",
@@ -8537,7 +8537,7 @@
   "fill_bar_t": 1793675700000,
   "trail_stop": 92.28,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 7
  },
  {
   "id": "ETHUSD-5m-1793676300000",
@@ -8652,7 +8652,7 @@
   "edge": false,
   "trail_stop": 2257.79,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-5m-1793676900000",
@@ -8665,7 +8665,7 @@
   "score": -36,
   "entry": 76784.15,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 76999.375,
   "tp": [
    76568.925,
@@ -8766,6 +8766,10 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "fill_bar_t": 1793677500000,
+  "trail_stop": 76999.375,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
