@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T09:50+01:00",
+ "updated": "2026-11-03T10:00+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13174,46 +13174,46 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 56,
-    "hit": 29,
-    "avgR": -0.044,
-    "pf": 0.91
+    "n": 57,
+    "hit": 30,
+    "avgR": -0.035,
+    "pf": 0.93
    },
    "Stochastic (14/3/3)": {
-    "n": 56,
-    "hit": 34,
-    "avgR": -0.128,
-    "pf": 0.77
+    "n": 57,
+    "hit": 33,
+    "avgR": -0.133,
+    "pf": 0.76
    },
    "ADX trend strength (14)": {
-    "n": 29,
-    "hit": 24,
-    "avgR": -0.01,
-    "pf": 0.98
+    "n": 30,
+    "hit": 23,
+    "avgR": -0.024,
+    "pf": 0.96
    },
    "Ichimoku cloud": {
-    "n": 49,
-    "hit": 29,
-    "avgR": 0.016,
-    "pf": 1.03
+    "n": 50,
+    "hit": 28,
+    "avgR": 0.006,
+    "pf": 1.01
    },
    "Supertrend (10/3)": {
-    "n": 56,
-    "hit": 34,
-    "avgR": 0.124,
-    "pf": 1.29
+    "n": 57,
+    "hit": 33,
+    "avgR": 0.114,
+    "pf": 1.27
    },
    "Volume / OBV": {
-    "n": 39,
+    "n": 40,
     "hit": 28,
-    "avgR": -0.082,
-    "pf": 0.82
+    "avgR": -0.091,
+    "pf": 0.8
    },
    "VWAP (rolling 50 bars)": {
-    "n": 37,
-    "hit": 22,
-    "avgR": -0.246,
-    "pf": 0.55
+    "n": 38,
+    "hit": 21,
+    "avgR": -0.252,
+    "pf": 0.53
    },
    "Candlestick patterns": {
     "n": 26,
@@ -13222,16 +13222,16 @@
     "pf": 0.28
    },
    "RSI divergence": {
-    "n": 7,
-    "hit": 29,
-    "avgR": -1.563,
-    "pf": 0.15
+    "n": 8,
+    "hit": 38,
+    "avgR": -1.311,
+    "pf": 0.19
    },
    "Multi-timeframe confirmation": {
-    "n": 46,
-    "hit": 22,
-    "avgR": 0.02,
-    "pf": 1.04
+    "n": 47,
+    "hit": 21,
+    "avgR": 0.01,
+    "pf": 1.02
    },
    "News sentiment": {
     "n": 30,
@@ -13240,10 +13240,10 @@
     "pf": 0.35
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 56,
+    "n": 57,
     "hit": 32,
-    "avgR": 0.075,
-    "pf": 1.17
+    "avgR": 0.065,
+    "pf": 1.15
    },
    "Order blocks": {
     "n": 25,
@@ -13258,58 +13258,58 @@
     "pf": 1.09
    },
    "Liquidity sweeps": {
-    "n": 18,
-    "hit": 44,
-    "avgR": 0.173,
-    "pf": 1.46
+    "n": 19,
+    "hit": 47,
+    "avgR": 0.188,
+    "pf": 1.53
    },
    "Volume profile / POC": {
-    "n": 56,
+    "n": 57,
     "hit": 30,
-    "avgR": -0.015,
-    "pf": 0.97
+    "avgR": -0.023,
+    "pf": 0.95
    },
    "Anchored VWAP": {
-    "n": 50,
-    "hit": 28,
-    "avgR": -0.205,
-    "pf": 0.58
+    "n": 51,
+    "hit": 27,
+    "avgR": -0.209,
+    "pf": 0.57
    },
    "Heikin Ashi trend": {
-    "n": 56,
-    "hit": 29,
-    "avgR": -0.034,
-    "pf": 0.93
+    "n": 57,
+    "hit": 28,
+    "avgR": -0.041,
+    "pf": 0.92
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 56,
-    "hit": 29,
-    "avgR": 0.018,
-    "pf": 1.04
+    "n": 57,
+    "hit": 28,
+    "avgR": 0.01,
+    "pf": 1.02
    },
    "Hull MA (55)": {
-    "n": 56,
+    "n": 57,
     "hit": 25,
-    "avgR": -0.08,
-    "pf": 0.85
+    "avgR": -0.086,
+    "pf": 0.84
    },
    "Daily pivot points": {
-    "n": 56,
+    "n": 57,
     "hit": 25,
-    "avgR": -0.079,
-    "pf": 0.85
+    "avgR": -0.085,
+    "pf": 0.84
    },
    "EMA trend (20/50/200)": {
-    "n": 31,
-    "hit": 29,
-    "avgR": 0.214,
-    "pf": 1.51
+    "n": 32,
+    "hit": 28,
+    "avgR": 0.193,
+    "pf": 1.46
    },
    "RSI (14)": {
-    "n": 39,
+    "n": 40,
     "hit": 28,
-    "avgR": 0.082,
-    "pf": 1.16
+    "avgR": 0.068,
+    "pf": 1.14
    },
    "Bollinger Bands (20/2)": {
     "n": 21,
@@ -13362,10 +13362,10 @@
     "pf": null
    },
    "ETHUSD": {
-    "n": 8,
-    "hit": 12,
-    "avgR": -0.409,
-    "pf": 0.35
+    "n": 9,
+    "hit": 11,
+    "avgR": -0.413,
+    "pf": 0.32
    },
    "SOLUSD": {
     "n": 11,
@@ -13461,13 +13461,13 @@
    }
   },
   "all": {
-   "n": 56,
+   "n": 57,
    "hit": 21,
-   "avgR": -0.068,
-   "pf": 0.87
+   "avgR": -0.074,
+   "pf": 0.86
   },
   "open": 28,
-  "total": 101
+  "total": 104
  },
  "rates": {
   "_ts": 1793656196.8946097,
