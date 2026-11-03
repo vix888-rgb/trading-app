@@ -1547,7 +1547,7 @@
   "strategies": [],
   "status": "open",
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "GBPUSD-5m-1793395500000",
@@ -2722,7 +2722,7 @@
   "fill_bar_t": 1793620800000,
   "trail_stop": 4002.71,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "EURUSD-1d-1793318400000",
@@ -3333,7 +3333,7 @@
   "fill_bar_t": 1793606400000,
   "trail_stop": 93.54843351331891,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "SOLUSD-15m-1793610900000",
@@ -4620,7 +4620,7 @@
   "edge": false,
   "trail_stop": 1.265792,
   "tp1_hit": false,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "XRPUSD-5m-1793638200000",
@@ -5932,7 +5932,7 @@
   "edge": true,
   "trail_stop": 77878.895,
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "EURUSD-4h-1793635200000",
@@ -10114,7 +10114,7 @@
   "edge": false,
   "trail_stop": 3925.5,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "GBPUSD-5m-1793690100000",
@@ -10596,7 +10596,7 @@
   "fill_bar_t": 1793700000000,
   "trail_stop": 1.339525,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "BTCUSD-5m-1793693100000",
@@ -11201,7 +11201,7 @@
   "fill_bar_t": 1793701800000,
   "trail_stop": 2286.109,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "GBPUSD-5m-1793696100000",
@@ -11439,7 +11439,7 @@
   "fill_bar_t": 1793704500000,
   "trail_stop": 1.340188,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "EURUSD-15m-1793704500000",
@@ -11452,7 +11452,7 @@
   "score": -29,
   "entry": 1.118443,
   "entry_type": "limit (fair value gap fill)",
-  "filled": false,
+  "filled": true,
   "stop": 1.119392,
   "tp": [
    1.117495,
@@ -11555,6 +11555,10 @@
    },
    "why": ""
   },
-  "edge": true
+  "edge": true,
+  "fill_bar_t": 1793706300000,
+  "trail_stop": 1.119392,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
