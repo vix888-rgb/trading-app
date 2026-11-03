@@ -12054,9 +12054,9 @@
    "why": ""
   },
   "edge": false,
-  "trail_stop": 158.009,
-  "tp1_hit": false,
-  "bars_open": 3
+  "trail_stop": 158.17359437620024,
+  "tp1_hit": true,
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-5m-1793717700000",
@@ -12141,7 +12141,7 @@
    "Turtle 20-bar breakout",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004113720768426772,
@@ -12177,7 +12177,10 @@
   "fill_bar_t": 1793718000000,
   "trail_stop": 1.34177,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-03T16:21+01:00"
  },
  {
   "id": "XRPUSD-5m-1793718300000",
@@ -12261,7 +12264,7 @@
   "strategies": [
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0038202123480679667,
@@ -12293,6 +12296,11 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.273016,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-03T16:21+01:00"
  }
 ]
