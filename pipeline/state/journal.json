@@ -5536,7 +5536,7 @@
   "strategies": [
    "Turtle 20-bar breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 249.44047773087308,
@@ -5570,7 +5570,10 @@
   "fill_bar_t": 1793648700000,
   "trail_stop": 76965.755,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-03T08:50+01:00"
  },
  {
   "id": "XAUUSD-5m-1793648940000",
@@ -6973,7 +6976,7 @@
   "edge": false,
   "trail_stop": 2268.758,
   "tp1_hit": false,
-  "bars_open": 42
+  "bars_open": 43
  },
  {
   "id": "XRPUSD-15m-1793653200000",
@@ -9496,7 +9499,7 @@
   "fill_bar_t": 1793685600000,
   "trail_stop": 3928.6,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 21
  },
  {
   "id": "SOLUSD-5m-1793686500000",
@@ -9979,7 +9982,7 @@
   "fill_bar_t": 1793690700000,
   "trail_stop": 92.62892,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 5
  },
  {
   "id": "XAUUSD-15m-1793688300000",
@@ -10097,7 +10100,7 @@
   "edge": false,
   "trail_stop": 3940.797,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "GBPUSD-5m-1793690100000",
@@ -10215,7 +10218,7 @@
   "edge": false,
   "trail_stop": 1.341562,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1793691300000",
@@ -10299,7 +10302,7 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "cancelled",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.503303550763153,
@@ -10314,6 +10317,125 @@
    "sigRaw": "SELL",
    "range": {
     "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": false,
+  "exit": "stop hit before fill"
+ },
+ {
+  "id": "GBPUSD-15m-1793691000000",
+  "logged": "2026-11-03T08:50+01:00",
+  "bar_t": 1793691000000,
+  "bar_time": "Tue 03 Nov 08:30",
+  "sym": "GBPUSD",
+  "tf": "15m",
+  "side": "long",
+  "score": 38,
+  "entry": 1.34131,
+  "entry_type": "limit (order block retest)",
+  "filled": false,
+  "stop": 1.340514,
+  "tp": [
+   1.342106,
+   1.342902,
+   1.343698
+  ],
+  "inv": 1.34059,
+  "votes": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.86,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.38,
+   0.15,
+   1.59,
+   0.12,
+   0.3,
+   0.94,
+   0.0,
+   0.0,
+   0.16,
+   0.82,
+   0.2,
+   2.0,
+   0.0,
+   0.0,
+   0.01,
+   0.39,
+   0.0,
+   0.0,
+   1.62,
+   0.1
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0005108816201964972,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 33,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 1.3401233,
+    "hi": 1.34235394,
+    "src": "15m",
     "alert": false
    },
    "sweep": {
