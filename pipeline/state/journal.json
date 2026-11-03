@@ -3315,7 +3315,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.6696083783297286,
@@ -3333,7 +3333,10 @@
   "fill_bar_t": 1793606400000,
   "trail_stop": 93.54843351331891,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 29,
+  "R": 0.77,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-03T15:01+01:00"
  },
  {
   "id": "SOLUSD-15m-1793610900000",
@@ -5902,7 +5905,7 @@
    "TSMOM multi-lookback trend",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 391.30255590030015,
@@ -5935,7 +5938,10 @@
   "edge": true,
   "trail_stop": 77878.895,
   "tp1_hit": false,
-  "bars_open": 17
+  "bars_open": 17,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-03T15:01+01:00"
  },
  {
   "id": "EURUSD-4h-1793635200000",
@@ -10600,9 +10606,9 @@
   },
   "edge": false,
   "fill_bar_t": 1793700000000,
-  "trail_stop": 1.339525,
-  "tp1_hit": false,
-  "bars_open": 3
+  "trail_stop": 1.341148,
+  "tp1_hit": true,
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-5m-1793693100000",
@@ -11056,7 +11062,7 @@
    "Keltner volatility breakout",
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 14.56219383128442,
@@ -11090,7 +11096,10 @@
   "fill_bar_t": 1793707200000,
   "trail_stop": 3949.724,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-03T15:01+01:00"
  },
  {
   "id": "ETHUSD-15m-1793695500000",
