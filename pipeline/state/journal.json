@@ -11575,7 +11575,7 @@
   "fill_bar_t": 1793706300000,
   "trail_stop": 1.119392,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "XRPUSD-5m-1793707500000",
@@ -11778,7 +11778,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "cancelled",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.034752746797948965,
@@ -11811,7 +11811,8 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "exit": "stop hit before fill"
  },
  {
   "id": "GBPUSD-15m-1793710800000",
