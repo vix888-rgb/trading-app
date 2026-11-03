@@ -11952,7 +11952,7 @@
   "fill_bar_t": 1793719800000,
   "trail_stop": 1.340968,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "USDJPY-15m-1793714400000",
@@ -12067,7 +12067,7 @@
   "edge": false,
   "trail_stop": 158.27759828245024,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "GBPUSD-5m-1793717700000",
@@ -12433,7 +12433,7 @@
   "fill_bar_t": 1793719800000,
   "trail_stop": 1.120172,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "XRPUSD-5m-1793720100000",
@@ -12550,7 +12550,7 @@
   "edge": false,
   "trail_stop": 1.268356,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "XAUUSD-15m-1793719986000",
@@ -12666,7 +12666,7 @@
   "fill_bar_t": 1793720700000,
   "trail_stop": 3959.415,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "SOLUSD-1h-1793718000000",
@@ -12896,7 +12896,7 @@
   "fill_bar_t": 1793723700000,
   "trail_stop": 1.340734,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 5
  },
  {
   "id": "USDJPY-5m-1793723100000",
@@ -13129,6 +13129,120 @@
   "edge": false,
   "trail_stop": 2284.332,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "XAUUSD-1h-1793721600000",
+  "logged": "2026-11-03T18:02+01:00",
+  "bar_t": 1793721600000,
+  "bar_time": "Tue 03 Nov 17:00",
+  "sym": "XAUUSD",
+  "tf": "1h",
+  "side": "short",
+  "score": -33,
+  "entry": 3966.05,
+  "entry_type": "limit (order block retest)",
+  "filled": false,
+  "stop": 3984.355,
+  "tp": [
+   3947.745,
+   3929.44,
+   3911.135
+  ],
+  "inv": 3981.7,
+  "votes": [
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   1,
+   0,
+   1,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   1,
+   -1,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.14,
+   0.0,
+   0.97,
+   0.0,
+   0.24,
+   0.79,
+   0.0,
+   0.72,
+   0.09,
+   0.0,
+   0.25,
+   0.0,
+   1.14,
+   0.3,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.0,
+   0.34,
+   0.14,
+   0.0,
+   0.39,
+   0.0,
+   0.18,
+   0.0,
+   0.0
+  ],
+  "strategies": [
+   "Wyckoff spring / upthrust"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 17.701612574536913,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 93,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": ""
+  },
+  "edge": true
  }
 ]
