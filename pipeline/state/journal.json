@@ -7654,7 +7654,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.158789122016326,
@@ -7688,7 +7688,10 @@
   "fill_bar_t": 1793659500000,
   "trail_stop": 2261.534,
   "tp1_hit": false,
-  "bars_open": 21
+  "bars_open": 21,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-03T01:40+01:00"
  },
  {
   "id": "EURUSD-15m-1793660400000",
