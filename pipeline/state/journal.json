@@ -9473,7 +9473,7 @@
   "strategies": [
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.365669380450066,
@@ -9507,7 +9507,10 @@
   "fill_bar_t": 1793685600000,
   "trail_stop": 3921.5627751780503,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 1.11,
+  "exit": "time exit",
+  "closed_at": "2026-11-03T11:10+01:00"
  },
  {
   "id": "SOLUSD-5m-1793686500000",
@@ -11269,7 +11272,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003150537630885423,
@@ -11303,6 +11306,9 @@
   "fill_bar_t": 1793697300000,
   "trail_stop": 1.341364,
   "tp1_hit": true,
-  "bars_open": 9
+  "bars_open": 9,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-03T11:10+01:00"
  }
 ]
