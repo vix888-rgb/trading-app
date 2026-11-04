@@ -20983,7 +20983,7 @@
    0.1
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0007692786117126201,
@@ -21031,7 +21031,10 @@
   "edge": false,
   "trail_stop": 1.346119,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 5,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T17:54+01:00"
  },
  {
   "id": "XAUUSD-5m-1793807700000",
@@ -21296,7 +21299,7 @@
   "edge": false,
   "trail_stop": 96.22071,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "XAUUSD-5m-1793810100000",
@@ -21429,7 +21432,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 4053.898,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "BTCUSD-5m-1793810100000",
@@ -21556,7 +21562,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 80293.64,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-5m-1793810100000",
@@ -21677,6 +21686,139 @@
     "brk": 0,
     "sqz": "on",
     "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 2418.842,
+  "tp1_hit": false,
+  "bars_open": 2
+ },
+ {
+  "id": "USDJPY-5m-1793810700000",
+  "logged": "2026-11-04T17:54+01:00",
+  "bar_t": 1793810700000,
+  "bar_time": "Wed 04 Nov 17:45",
+  "sym": "USDJPY",
+  "tf": "5m",
+  "side": "long",
+  "score": 30,
+  "entry": 158.452,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 158.345,
+  "tp": [
+   158.559,
+   158.666,
+   158.773
+  ],
+  "inv": 158.202,
+  "votes": [
+   0,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.38,
+   0.15,
+   0.33,
+   0.0,
+   0.23,
+   0.38,
+   0.3,
+   0.0,
+   0.16,
+   0.61,
+   0.2,
+   1.11,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.19,
+   0.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Wyckoff spring / upthrust"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.07144200753079714,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 46,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 158.30719162,
+    "side200": 1,
+    "stack": 1,
+    "st": -1,
+    "dh": 158.66999817,
+    "dl": 158.32299805,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
     "sess": true,
     "gate": false,
     "sgate": false
