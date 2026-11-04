@@ -695,7 +695,8 @@
   "strategies": [
    "Squeeze momentum breakout"
   ],
-  "status": "open"
+  "status": "cancelled",
+  "exit": "limit not filled"
  },
  {
   "id": "ETHUSD-5m-1793489700000",
@@ -1549,7 +1550,7 @@
   "strategies": [],
   "status": "open",
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "GBPUSD-5m-1793395500000",
@@ -1809,7 +1810,8 @@
   "strategies": [
    "Turtle 20-bar breakout"
   ],
-  "status": "open"
+  "status": "cancelled",
+  "exit": "limit not filled"
  },
  {
   "id": "SOLUSD-5m-1793499300000",
@@ -2724,7 +2726,7 @@
   "fill_bar_t": 1793620800000,
   "trail_stop": 3993.3748,
   "tp1_hit": false,
-  "bars_open": 8,
+  "bars_open": 9,
   "pxBasis": "spot",
   "pxShift": 9.3352
  },
@@ -2826,7 +2828,7 @@
   "fill_bar_t": 1793577600000,
   "trail_stop": 1.12796,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-15m-1793579400000",
@@ -6175,7 +6177,7 @@
   "fill_bar_t": 1793707200000,
   "trail_stop": 2322.277,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "SOLUSD-4h-1793635200000",
@@ -12074,7 +12076,7 @@
   "edge": false,
   "trail_stop": 158.441599747294,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 37
  },
  {
   "id": "GBPUSD-5m-1793717700000",
@@ -12679,7 +12681,7 @@
   "fill_bar_t": 1793720700000,
   "trail_stop": 3950.0798,
   "tp1_hit": false,
-  "bars_open": 32,
+  "bars_open": 33,
   "pxBasis": "spot",
   "pxShift": 9.3352
  },
@@ -13793,7 +13795,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3931.762,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-5m-1793749500000",
@@ -13927,6 +13932,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.342234,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
