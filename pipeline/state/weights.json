@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T20:34+01:00",
+ "updated": "2026-11-04T20:44+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13175,16 +13175,16 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 155,
-    "hit": 39,
-    "avgR": 0.099,
-    "pf": 1.21
+    "n": 156,
+    "hit": 40,
+    "avgR": 0.105,
+    "pf": 1.22
    },
    "Stochastic (14/3/3)": {
-    "n": 155,
+    "n": 156,
     "hit": 32,
-    "avgR": 0.157,
-    "pf": 1.35
+    "avgR": 0.15,
+    "pf": 1.33
    },
    "ADX trend strength (14)": {
     "n": 103,
@@ -13193,34 +13193,34 @@
     "pf": 1.11
    },
    "Ichimoku cloud": {
-    "n": 133,
+    "n": 134,
     "hit": 28,
-    "avgR": 0.071,
-    "pf": 1.14
+    "avgR": 0.063,
+    "pf": 1.12
    },
    "Supertrend (10/3)": {
-    "n": 155,
+    "n": 156,
     "hit": 34,
-    "avgR": 0.184,
-    "pf": 1.42
+    "avgR": 0.189,
+    "pf": 1.44
    },
    "Volume / OBV": {
-    "n": 96,
-    "hit": 34,
-    "avgR": 0.182,
-    "pf": 1.42
+    "n": 97,
+    "hit": 35,
+    "avgR": 0.191,
+    "pf": 1.44
    },
    "VWAP (rolling 50 bars)": {
-    "n": 90,
-    "hit": 31,
-    "avgR": -0.105,
-    "pf": 0.82
+    "n": 91,
+    "hit": 32,
+    "avgR": -0.093,
+    "pf": 0.84
    },
    "Candlestick patterns": {
-    "n": 77,
+    "n": 78,
     "hit": 23,
-    "avgR": -0.298,
-    "pf": 0.54
+    "avgR": -0.307,
+    "pf": 0.53
    },
    "RSI divergence": {
     "n": 17,
@@ -13241,10 +13241,10 @@
     "pf": 0.72
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 155,
-    "hit": 32,
-    "avgR": 0.093,
-    "pf": 1.19
+    "n": 156,
+    "hit": 33,
+    "avgR": 0.098,
+    "pf": 1.21
    },
    "Order blocks": {
     "n": 50,
@@ -13253,52 +13253,52 @@
     "pf": 1.13
    },
    "Fair value gaps": {
-    "n": 122,
-    "hit": 29,
-    "avgR": -0.037,
-    "pf": 0.93
+    "n": 123,
+    "hit": 28,
+    "avgR": -0.045,
+    "pf": 0.92
    },
    "Liquidity sweeps": {
-    "n": 56,
+    "n": 57,
     "hit": 32,
-    "avgR": -0.012,
-    "pf": 0.97
+    "avgR": -0.029,
+    "pf": 0.94
    },
    "Volume profile / POC": {
-    "n": 155,
-    "hit": 35,
-    "avgR": 0.157,
-    "pf": 1.35
+    "n": 156,
+    "hit": 36,
+    "avgR": 0.162,
+    "pf": 1.36
    },
    "Anchored VWAP": {
-    "n": 131,
+    "n": 132,
     "hit": 37,
-    "avgR": 0.118,
-    "pf": 1.28
+    "avgR": 0.125,
+    "pf": 1.3
    },
    "Heikin Ashi trend": {
-    "n": 155,
+    "n": 156,
     "hit": 30,
-    "avgR": 0.159,
-    "pf": 1.35
+    "avgR": 0.164,
+    "pf": 1.37
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 155,
+    "n": 156,
     "hit": 38,
-    "avgR": 0.27,
-    "pf": 1.69
+    "avgR": 0.275,
+    "pf": 1.7
    },
    "Hull MA (55)": {
-    "n": 155,
-    "hit": 35,
-    "avgR": 0.191,
-    "pf": 1.44
+    "n": 156,
+    "hit": 36,
+    "avgR": 0.196,
+    "pf": 1.45
    },
    "Daily pivot points": {
-    "n": 155,
+    "n": 156,
     "hit": 26,
-    "avgR": 0.08,
-    "pf": 1.16
+    "avgR": 0.073,
+    "pf": 1.15
    },
    "EMA trend (20/50/200)": {
     "n": 89,
@@ -13351,10 +13351,10 @@
     "pf": 0.87
    },
    "BTCUSD": {
-    "n": 23,
+    "n": 24,
     "hit": 17,
-    "avgR": -0.04,
-    "pf": 0.92
+    "avgR": -0.08,
+    "pf": 0.84
    },
    "EURCHF": {
     "n": 1,
@@ -13401,10 +13401,10 @@
   },
   "strat": {
    "Turtle 20-bar breakout": {
-    "n": 37,
-    "hit": 19,
-    "avgR": 0.441,
-    "pf": 1.86
+    "n": 38,
+    "hit": 18,
+    "avgR": 0.403,
+    "pf": 1.77
    },
    "Wyckoff spring / upthrust": {
     "n": 11,
@@ -13419,15 +13419,15 @@
     "pf": 0.22
    },
    "TSMOM multi-lookback trend": {
-    "n": 42,
+    "n": 43,
     "hit": 19,
-    "avgR": 0.016,
-    "pf": 1.03
+    "avgR": -0.007,
+    "pf": 0.99
    },
    "MTF top-down pullback": {
-    "n": 6,
+    "n": 7,
     "hit": 0,
-    "avgR": -0.833,
+    "avgR": -0.857,
     "pf": 0.0
    },
    "Keltner volatility breakout": {
@@ -13498,12 +13498,12 @@
    }
   },
   "all": {
-   "n": 155,
+   "n": 156,
    "hit": 22,
-   "avgR": 0.032,
-   "pf": 1.06
+   "avgR": 0.026,
+   "pf": 1.05
   },
-  "open": 11,
+  "open": 10,
   "total": 192
  },
  "rates": {

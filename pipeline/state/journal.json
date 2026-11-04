@@ -21438,7 +21438,7 @@
   "edge": false,
   "trail_stop": 4053.898,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "BTCUSD-5m-1793810100000",
@@ -22737,7 +22737,7 @@
    "MTF top-down pullback",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 152.73311470584366,
@@ -22788,7 +22788,10 @@
   "edge": false,
   "trail_stop": 80139.32,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T20:44+01:00"
  },
  {
   "id": "ETHUSD-5m-1793819100000",
@@ -22922,7 +22925,7 @@
   "edge": false,
   "trail_stop": 2416.007,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1793819700000",
@@ -23054,6 +23057,6 @@
   "edge": false,
   "trail_stop": 94.85027,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  }
 ]
