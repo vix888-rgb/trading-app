@@ -18710,7 +18710,7 @@
   "edge": false,
   "trail_stop": 1.348618,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "USDJPY-5m-1793793900000",
@@ -18792,7 +18792,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.054316203057669855,
@@ -18840,7 +18840,10 @@
   "edge": false,
   "trail_stop": 158.258,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T13:44+01:00"
  },
  {
   "id": "XAUUSD-5m-1793795100000",
@@ -18929,7 +18932,7 @@
    "TSMOM multi-lookback trend",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.9288719385326174,
@@ -18977,7 +18980,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 4039.856,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-04T13:44+01:00"
  },
  {
   "id": "SOLUSD-5m-1793795100000",
@@ -19106,7 +19114,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 93.25027,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-15m-1793794500000",
@@ -19232,6 +19243,138 @@
     "dh": 94.16,
     "dl": 92.63,
     "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 93.53806,
+  "tp1_hit": false,
+  "bars_open": 0
+ },
+ {
+  "id": "USDJPY-5m-1793795700000",
+  "logged": "2026-11-04T13:44+01:00",
+  "bar_t": 1793795700000,
+  "bar_time": "Wed 04 Nov 13:35",
+  "sym": "USDJPY",
+  "tf": "5m",
+  "side": "long",
+  "score": 34,
+  "entry": 158.336,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 158.25,
+  "tp": [
+   158.422,
+   158.507,
+   158.593
+  ],
+  "inv": 158.315,
+  "votes": [
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.38,
+   0.15,
+   0.33,
+   0.0,
+   0.23,
+   0.38,
+   0.3,
+   0.0,
+   0.16,
+   0.61,
+   0.2,
+   1.11,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.19,
+   0.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.05702387807487777,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 42,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 158.22240883,
+    "side200": 1,
+    "stack": 1,
+    "st": -1,
+    "dh": 158.59399414,
+    "dl": 158.24000549,
+    "brk": 0,
     "sqz": "off",
     "mom": -1,
     "sess": true,
