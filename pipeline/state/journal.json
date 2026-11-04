@@ -1550,7 +1550,7 @@
   "strategies": [],
   "status": "open",
   "tp1_hit": false,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "GBPUSD-5m-1793395500000",
@@ -2708,7 +2708,7 @@
    "Turtle 20-bar breakout",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 29.78014611382107,
@@ -2728,7 +2728,10 @@
   "tp1_hit": false,
   "bars_open": 10,
   "pxBasis": "spot",
-  "pxShift": 9.3352
+  "pxShift": 9.3352,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T09:03+01:00"
  },
  {
   "id": "EURUSD-1d-1793318400000",
@@ -6144,7 +6147,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 29.576953203037313,
@@ -6178,7 +6181,10 @@
   "fill_bar_t": 1793707200000,
   "trail_stop": 2280.355,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-04T09:03+01:00"
  },
  {
   "id": "SOLUSD-4h-1793635200000",
@@ -15320,9 +15326,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.344319,
-  "tp1_hit": false,
-  "bars_open": 5
+  "trail_stop": 1.346421,
+  "tp1_hit": true,
+  "bars_open": 6
  },
  {
   "id": "BTCUSD-15m-1793758500000",
@@ -16675,7 +16681,7 @@
   "edge": false,
   "trail_stop": 4004.967912008439,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "SOLUSD-5m-1793768700000",
@@ -16940,7 +16946,7 @@
   "edge": false,
   "trail_stop": 1.2715,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 32
  },
  {
   "id": "GBPUSD-5m-1793771100000",
@@ -17208,7 +17214,7 @@
   "edge": false,
   "trail_stop": 2295.91,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "USDJPY-5m-1793775300000",
@@ -17290,7 +17296,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.08279886287819195,
@@ -17338,7 +17344,10 @@
   "edge": false,
   "trail_stop": 158.017,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T09:03+01:00"
  },
  {
   "id": "XRPUSD-15m-1793774700000",
@@ -17468,6 +17477,135 @@
   "edge": false,
   "trail_stop": 1.28436,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
+ },
+ {
+  "id": "SOLUSD-15m-1793778300000",
+  "logged": "2026-11-04T09:03+01:00",
+  "bar_t": 1793778300000,
+  "bar_time": "Wed 04 Nov 08:45",
+  "sym": "SOLUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -31,
+  "entry": 93.05,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 93.79367,
+  "tp": [
+   92.30633,
+   91.56266,
+   90.81899
+  ],
+  "inv": 93.68,
+  "votes": [
+   0,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   0.61,
+   0.21,
+   0.1,
+   1.34,
+   0.39,
+   0.0,
+   0.33,
+   0.14,
+   0.66,
+   0.0,
+   0.0,
+   1.51,
+   0.0,
+   0.7,
+   0.0,
+   0.0,
+   0.16,
+   0.97,
+   0.2,
+   0.17,
+   0.25,
+   0.0,
+   0.0,
+   0.91,
+   0.54,
+   0.51,
+   0.0,
+   0.21
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.4957805406904856,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 81,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 93.08631092,
+    "side200": -1,
+    "stack": 0,
+    "st": 1,
+    "dh": 93.42,
+    "dl": 89.86,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
