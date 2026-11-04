@@ -19210,7 +19210,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.4387098237343655,
@@ -19260,7 +19260,10 @@
   "edge": false,
   "trail_stop": 93.53806,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T15:54+01:00"
  },
  {
   "id": "USDJPY-5m-1793795700000",
@@ -19802,9 +19805,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 2317.8,
+  "trail_stop": 2368.173422450611,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "SOLUSD-5m-1793798100000",
@@ -20197,9 +20200,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 4032.868,
-  "tp1_hit": false,
-  "bars_open": 12
+  "trail_stop": 4041.424,
+  "tp1_hit": true,
+  "bars_open": 14
  },
  {
   "id": "USDJPY-5m-1793799300000",
@@ -20329,7 +20332,7 @@
   "edge": false,
   "trail_stop": 158.327,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "GBPUSD-5m-1793801100000",
@@ -20598,9 +20601,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 78366.65,
+  "trail_stop": 79220.39113758678,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "XRPUSD-5m-1793802900000",
@@ -20735,6 +20738,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.3030406361678568,
+  "tp1_hit": true,
+  "bars_open": 2
  }
 ]
