@@ -6272,7 +6272,7 @@
    "Turtle 20-bar breakout",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "cancelled",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 1.6259610398393338,
@@ -6302,7 +6302,8 @@
    },
    "why": ""
   },
-  "edge": false
+  "edge": false,
+  "exit": "stop hit before fill"
  },
  {
   "id": "BTCUSD-5m-1793650200000",
@@ -8911,7 +8912,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 738.5131081556844,
@@ -8948,7 +8949,10 @@
   "fill_bar_t": 1793779200000,
   "trail_stop": 79347.276,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T17:04+01:00"
  },
  {
   "id": "XAUUSD-5m-1793678402000",
@@ -15287,7 +15291,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0014007538719056137,
@@ -15335,7 +15339,10 @@
   "edge": false,
   "trail_stop": 1.346421,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 13,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-04T17:04+01:00"
  },
  {
   "id": "BTCUSD-15m-1793758500000",
@@ -18444,7 +18451,7 @@
   "edge": false,
   "trail_stop": 158.05,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1793790300000",
@@ -20341,7 +20348,7 @@
   "edge": false,
   "trail_stop": 158.38053621921708,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "GBPUSD-5m-1793801100000",
@@ -20840,7 +20847,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.1153507505615391,
@@ -20888,7 +20895,10 @@
   "edge": false,
   "trail_stop": 158.493,
   "tp1_hit": true,
-  "bars_open": 3
+  "bars_open": 3,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-04T17:04+01:00"
  },
  {
   "id": "GBPUSD-15m-1793804400000",
@@ -21018,6 +21028,135 @@
   "edge": false,
   "trail_stop": 1.346119,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
+ },
+ {
+  "id": "XAUUSD-5m-1793807700000",
+  "logged": "2026-11-04T17:04+01:00",
+  "bar_t": 1793807700000,
+  "bar_time": "Wed 04 Nov 16:55",
+  "sym": "XAUUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 32,
+  "entry": 4048.948,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 4041.645,
+  "tp": [
+   4056.25,
+   4063.553,
+   4070.855
+  ],
+  "inv": 4029.91,
+  "votes": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   1,
+   -1,
+   1
+  ],
+  "weights": [
+   1.57,
+   0.0,
+   0.59,
+   1.17,
+   0.79,
+   0.05,
+   0.33,
+   0.12,
+   0.76,
+   0.12,
+   1.86,
+   0.99,
+   0.0,
+   1.38,
+   0.0,
+   0.0,
+   0.34,
+   0.5,
+   0.46,
+   0.0,
+   0.0,
+   0.28,
+   1.08,
+   0.48,
+   0.03,
+   0.0,
+   0.0,
+   0.84
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 4.868333828564345,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 48,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 4007.86271995,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 4051.84956,
+    "dl": 4029.90986,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
