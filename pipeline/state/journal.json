@@ -16679,9 +16679,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 4004.967912008439,
+  "trail_stop": 4011.852392008439,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 40
  },
  {
   "id": "SOLUSD-5m-1793768700000",
@@ -16946,7 +16946,7 @@
   "edge": false,
   "trail_stop": 1.2715,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "GBPUSD-5m-1793771100000",
@@ -17214,7 +17214,7 @@
   "edge": false,
   "trail_stop": 2295.91,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "USDJPY-5m-1793775300000",
@@ -17600,6 +17600,140 @@
     "brk": 0,
     "sqz": "off",
     "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 93.79367,
+  "tp1_hit": false,
+  "bars_open": 0
+ },
+ {
+  "id": "USDJPY-5m-1793779500000",
+  "logged": "2026-11-04T09:13+01:00",
+  "bar_t": 1793779500000,
+  "bar_time": "Wed 04 Nov 09:05",
+  "sym": "USDJPY",
+  "tf": "5m",
+  "side": "long",
+  "score": 31,
+  "entry": 158.098,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 157.976,
+  "tp": [
+   158.22,
+   158.342,
+   158.464
+  ],
+  "inv": 158.008,
+  "votes": [
+   0,
+   -1,
+   0,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.38,
+   0.15,
+   0.33,
+   0.0,
+   0.23,
+   0.38,
+   0.3,
+   0.0,
+   0.16,
+   0.61,
+   0.2,
+   1.11,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.19,
+   0.0
+  ],
+  "strategies": [
+   "Trend-follow + ADX filter",
+   "ICT/SMC sweep + CHoCH",
+   "Liquidity Entry Zones"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.08129928738393692,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 64,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 158.12385079,
+    "side200": -1,
+    "stack": 0,
+    "st": 1,
+    "dh": 158.19299316,
+    "dl": 158.00799561,
+    "brk": 0,
+    "sqz": "on",
+    "mom": -1,
     "sess": true,
     "gate": false,
     "sgate": false
