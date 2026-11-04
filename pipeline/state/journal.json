@@ -16071,7 +16071,7 @@
    0.84
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 6.206503902592427,
@@ -16119,7 +16119,10 @@
   "edge": false,
   "trail_stop": 3939.884,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 12,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-04T05:43+01:00"
  },
  {
   "id": "GBPUSD-5m-1793763300000",
@@ -16250,9 +16253,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.345998,
-  "tp1_hit": false,
-  "bars_open": 10
+  "trail_stop": 1.346747,
+  "tp1_hit": true,
+  "bars_open": 12
  },
  {
   "id": "SOLUSD-1h-1793761200000",
@@ -16517,6 +16520,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 92.14123,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
