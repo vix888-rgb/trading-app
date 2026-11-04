@@ -17758,7 +17758,7 @@
   "edge": false,
   "trail_stop": 158.26879699108926,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 44
  },
  {
   "id": "GBPUSD-5m-1793780700000",
@@ -18023,7 +18023,7 @@
   "edge": false,
   "trail_stop": 4037.282,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "BTCUSD-5m-1793784900000",
@@ -18158,7 +18158,7 @@
   "edge": false,
   "trail_stop": 78462.01,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 26
  },
  {
   "id": "XRPUSD-5m-1793784900000",
@@ -18293,7 +18293,7 @@
   "edge": false,
   "trail_stop": 1.2893614800481392,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 26
  },
  {
   "id": "USDJPY-1h-1793782800000",
@@ -18558,6 +18558,133 @@
   "edge": false,
   "trail_stop": 2330.87,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
+ },
+ {
+  "id": "GBPUSD-5m-1793792700000",
+  "logged": "2026-11-04T12:54+01:00",
+  "bar_t": 1793792700000,
+  "bar_time": "Wed 04 Nov 12:45",
+  "sym": "GBPUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 47,
+  "entry": 1.348618,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.348069,
+  "tp": [
+   1.349167,
+   1.349715,
+   1.350264
+  ],
+  "inv": 1.347146,
+  "votes": [
+   1,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.33,
+   1.0,
+   0.41,
+   1.45,
+   2.0,
+   2.0,
+   0.36,
+   0.0,
+   0.38,
+   0.15,
+   0.86,
+   2.0,
+   0.0,
+   0.47,
+   2.0,
+   0.0,
+   0.5,
+   0.0,
+   0.2,
+   1.18,
+   0.34,
+   0.64,
+   0.0,
+   1.39,
+   0.09,
+   0.11,
+   0.0,
+   0.0
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0003658940158370503,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 41,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.34592872,
+    "side200": 1,
+    "stack": 1,
+    "st": -1,
+    "dh": 1.34987378,
+    "dl": 1.34714603,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
