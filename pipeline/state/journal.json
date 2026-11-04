@@ -15335,7 +15335,7 @@
   "edge": false,
   "trail_stop": 1.346421,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "BTCUSD-15m-1793758500000",
@@ -18444,7 +18444,7 @@
   "edge": false,
   "trail_stop": 158.05,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "ETHUSD-5m-1793790300000",
@@ -19625,7 +19625,7 @@
    "TSMOM multi-lookback trend",
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.8414368834280095,
@@ -19675,7 +19675,10 @@
   "edge": false,
   "trail_stop": 93.86216,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T16:04+01:00"
  },
  {
   "id": "ETHUSD-5m-1793797500000",
@@ -19759,7 +19762,7 @@
   "strategies": [
    "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.706644387347301,
@@ -19807,7 +19810,10 @@
   "edge": false,
   "trail_stop": 2368.173422450611,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 20,
+  "R": 7.14,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-04T16:04+01:00"
  },
  {
   "id": "SOLUSD-5m-1793798100000",
@@ -20154,7 +20160,7 @@
    0.84
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.703802938644558,
@@ -20202,7 +20208,10 @@
   "edge": false,
   "trail_stop": 4041.424,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 14,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-04T16:04+01:00"
  },
  {
   "id": "USDJPY-5m-1793799300000",
@@ -20332,7 +20341,7 @@
   "edge": false,
   "trail_stop": 158.327,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "GBPUSD-5m-1793801100000",
@@ -20552,7 +20561,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 110.84721560330537,
@@ -20603,7 +20612,10 @@
   "edge": false,
   "trail_stop": 79220.39113758678,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": 5.13,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-04T16:04+01:00"
  },
  {
   "id": "XRPUSD-5m-1793802900000",
@@ -20739,8 +20751,137 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.3030406361678568,
+  "trail_stop": 1.3035406361678568,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "USDJPY-15m-1793803500000",
+  "logged": "2026-11-04T16:04+01:00",
+  "bar_t": 1793803500000,
+  "bar_time": "Wed 04 Nov 15:45",
+  "sym": "USDJPY",
+  "tf": "15m",
+  "side": "long",
+  "score": 32,
+  "entry": 158.493,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 158.32,
+  "tp": [
+   158.666,
+   158.839,
+   159.012
+  ],
+  "inv": 158.202,
+  "votes": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   -1,
+   1,
+   -1,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   0.07,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.38,
+   0.15,
+   0.0,
+   0.0,
+   0.0,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.77,
+   0.43,
+   0.69,
+   0.0,
+   0.0,
+   0.1,
+   0.39,
+   0.0,
+   0.0,
+   0.8,
+   0.36
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.1153507505615391,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 77,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 158.1281427,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 158.59399414,
+    "dl": 158.20199585,
+    "brk": 0,
+    "sqz": "fired",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
