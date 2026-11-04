@@ -19804,7 +19804,7 @@
   "edge": false,
   "trail_stop": 2310.74,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "SOLUSD-5m-1793798100000",
@@ -20199,7 +20199,7 @@
   "edge": false,
   "trail_stop": 4032.868,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "USDJPY-5m-1793799300000",
@@ -20329,6 +20329,136 @@
   "edge": false,
   "trail_stop": 158.327,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
+ },
+ {
+  "id": "GBPUSD-5m-1793801100000",
+  "logged": "2026-11-04T15:14+01:00",
+  "bar_t": 1793801100000,
+  "bar_time": "Wed 04 Nov 15:05",
+  "sym": "GBPUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 28,
+  "entry": 1.348836,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.348198,
+  "tp": [
+   1.349473,
+   1.350111,
+   1.350748
+  ],
+  "inv": 1.348363,
+  "votes": [
+   0,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   1,
+   1,
+   1,
+   -1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.33,
+   1.0,
+   0.41,
+   1.45,
+   2.0,
+   2.0,
+   0.36,
+   0.0,
+   0.38,
+   0.15,
+   0.86,
+   2.0,
+   0.0,
+   0.47,
+   2.0,
+   0.0,
+   0.5,
+   0.0,
+   0.2,
+   1.18,
+   0.34,
+   0.64,
+   0.0,
+   1.39,
+   0.09,
+   0.11,
+   0.0,
+   0.0
+  ],
+  "strategies": [
+   "ICT/SMC sweep + CHoCH",
+   "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00042499411917223815,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 61,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.34673572,
+    "side200": 1,
+    "stack": 1,
+    "st": -1,
+    "dh": 1.35025656,
+    "dl": 1.34847212,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
