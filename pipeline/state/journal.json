@@ -16119,7 +16119,7 @@
   "edge": false,
   "trail_stop": 3939.884,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "GBPUSD-5m-1793763300000",
@@ -16252,7 +16252,7 @@
   "edge": false,
   "trail_stop": 1.345998,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "SOLUSD-1h-1793761200000",
@@ -16389,5 +16389,134 @@
   "trail_stop": 92.35013,
   "tp1_hit": false,
   "bars_open": 0
+ },
+ {
+  "id": "SOLUSD-5m-1793766300000",
+  "logged": "2026-11-04T05:33+01:00",
+  "bar_t": 1793766300000,
+  "bar_time": "Wed 04 Nov 05:25",
+  "sym": "SOLUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -31,
+  "entry": 91.6,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 92.14123,
+  "tp": [
+   91.05877,
+   90.51754,
+   89.97631
+  ],
+  "inv": 92.2,
+  "votes": [
+   0,
+   1,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.19,
+   0.0,
+   1.36,
+   0.0,
+   0.2,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.38,
+   0.11,
+   0.0,
+   0.73,
+   0.47,
+   0.0,
+   0.3,
+   1.37,
+   0.2,
+   0.0,
+   0.31,
+   0.0,
+   1.9,
+   0.39,
+   0.0,
+   0.07,
+   1.54,
+   0.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.36082030791461644,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 95,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 92.52594478,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 92.2,
+    "dl": 89.86,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
