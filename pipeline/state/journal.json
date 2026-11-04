@@ -13172,7 +13172,7 @@
   "score": -33,
   "entry": 3956.7148,
   "entry_type": "limit (order block retest)",
-  "filled": false,
+  "filled": true,
   "stop": 3975.0198,
   "tp": [
    3938.4098,
@@ -13275,7 +13275,11 @@
   },
   "edge": true,
   "pxBasis": "spot",
-  "pxShift": 9.3352
+  "pxShift": 9.3352,
+  "fill_bar_t": 1793754000000,
+  "trail_stop": 3956.7148,
+  "tp1_hit": true,
+  "bars_open": 1
  },
  {
   "id": "USDJPY-5m-1793728500000",
@@ -14903,7 +14907,7 @@
   "edge": false,
   "trail_stop": 92.49812,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "ETHUSD-15m-1793754900000",
@@ -15035,7 +15039,7 @@
   "edge": false,
   "trail_stop": 2275.504,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "ETHUSD-1h-1793754000000",
