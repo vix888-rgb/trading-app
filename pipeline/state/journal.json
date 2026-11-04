@@ -21438,7 +21438,7 @@
   "edge": false,
   "trail_stop": 4053.898,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 26
  },
  {
   "id": "BTCUSD-5m-1793810100000",
@@ -21701,7 +21701,7 @@
   "edge": false,
   "trail_stop": 2418.842,
   "tp1_hit": false,
-  "bars_open": 24
+  "bars_open": 26
  },
  {
   "id": "USDJPY-5m-1793810700000",
@@ -21969,7 +21969,7 @@
   "edge": false,
   "trail_stop": 1.303064,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "GBPUSD-15m-1793811600000",
@@ -22056,7 +22056,7 @@
    "Wyckoff spring / upthrust",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0008007537316295524,
@@ -22104,7 +22104,10 @@
   "edge": false,
   "trail_stop": 1.346072,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 5,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T19:54+01:00"
  },
  {
   "id": "BTCUSD-5m-1793813100000",
@@ -22237,7 +22240,7 @@
   "edge": false,
   "trail_stop": 80150.873,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "SOLUSD-5m-1793813100000",
@@ -22505,6 +22508,6 @@
   "edge": false,
   "trail_stop": 158.214,
   "tp1_hit": true,
-  "bars_open": 3
+  "bars_open": 4
  }
 ]
