@@ -12650,7 +12650,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 8.90733112604612,
@@ -12686,7 +12686,10 @@
   "tp1_hit": false,
   "bars_open": 38,
   "pxBasis": "spot",
-  "pxShift": 9.3352
+  "pxShift": 9.3352,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T02:33+01:00"
  },
  {
   "id": "SOLUSD-1h-1793718000000",
@@ -13939,9 +13942,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.344234846294417,
+  "trail_stop": 1.345068357646956,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "BTCUSD-5m-1793751300000",
@@ -14756,7 +14759,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3943.724,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-15m-1793754000000",
@@ -14879,6 +14885,138 @@
     "st": -1,
     "dh": 93.93,
     "dl": 91.63,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 92.49812,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "ETHUSD-15m-1793754900000",
+  "logged": "2026-11-04T02:33+01:00",
+  "bar_t": 1793754900000,
+  "bar_time": "Wed 04 Nov 02:15",
+  "sym": "ETHUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -26,
+  "entry": 2262.46,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 2275.504,
+  "tp": [
+   2249.416,
+   2236.372,
+   2223.328
+  ],
+  "inv": 2299.99,
+  "votes": [
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   1,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.42,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.69,
+   0.0,
+   0.16,
+   0.38,
+   0.98,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.53,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.22,
+   0.0
+  ],
+  "strategies": [
+   "Keltner volatility breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 8.695927666858267,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 85,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 2274.79956808,
+    "side200": -1,
+    "stack": 0,
+    "st": -1,
+    "dh": 2299.99,
+    "dl": 2258.84,
     "brk": -1,
     "sqz": "off",
     "mom": -1,
