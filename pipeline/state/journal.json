@@ -18710,7 +18710,7 @@
   "edge": false,
   "trail_stop": 1.348792986169623,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "USDJPY-5m-1793793900000",
@@ -19257,7 +19257,7 @@
   "edge": false,
   "trail_stop": 93.53806,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "USDJPY-5m-1793795700000",
@@ -19801,7 +19801,7 @@
   "edge": false,
   "trail_stop": 2310.74,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "SOLUSD-5m-1793798100000",
@@ -19883,7 +19883,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.22852142919206117,
@@ -19931,7 +19931,10 @@
   "edge": false,
   "trail_stop": 93.08278,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T14:54+01:00"
  },
  {
   "id": "USDJPY-5m-1793798700000",
@@ -20190,7 +20193,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 4032.868,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "USDJPY-5m-1793799300000",
@@ -20317,6 +20323,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 158.218,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
