@@ -20339,9 +20339,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 158.327,
+  "trail_stop": 158.3575412240999,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "GBPUSD-5m-1793801100000",
@@ -20705,7 +20705,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.003464840958035761,
@@ -20753,7 +20753,10 @@
   "edge": false,
   "trail_stop": 1.3275406361678568,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": 6.45,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-04T16:34+01:00"
  },
  {
   "id": "USDJPY-15m-1793803500000",
@@ -20885,7 +20888,7 @@
   "edge": false,
   "trail_stop": 158.32,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-15m-1793804400000",
@@ -21012,6 +21015,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.346119,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
