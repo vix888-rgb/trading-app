@@ -21251,7 +21251,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.5661901053875292,
@@ -21299,7 +21299,10 @@
   "edge": false,
   "trail_stop": 96.22071,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T18:14+01:00"
  },
  {
   "id": "XAUUSD-5m-1793810100000",
@@ -21435,7 +21438,7 @@
   "edge": false,
   "trail_stop": 4053.898,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "BTCUSD-5m-1793810100000",
@@ -21565,7 +21568,7 @@
   "edge": false,
   "trail_stop": 80293.64,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1793810100000",
@@ -21695,7 +21698,7 @@
   "edge": false,
   "trail_stop": 2418.842,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "USDJPY-5m-1793810700000",
@@ -21780,7 +21783,7 @@
    "Turtle 20-bar breakout",
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.07144200753079714,
@@ -21828,6 +21831,9 @@
   "edge": false,
   "trail_stop": 158.345,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T18:14+01:00"
  }
 ]
