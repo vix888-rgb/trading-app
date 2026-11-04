@@ -17573,7 +17573,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.4957805406904856,
@@ -17621,7 +17621,10 @@
   "edge": false,
   "trail_stop": 93.79367,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T11:54+01:00"
  },
  {
   "id": "USDJPY-5m-1793779500000",
@@ -17755,7 +17758,7 @@
   "edge": false,
   "trail_stop": 158.16779906628457,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 32
  },
  {
   "id": "GBPUSD-5m-1793780700000",
@@ -17837,7 +17840,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00044736731120240743,
@@ -17885,7 +17888,10 @@
   "edge": false,
   "trail_stop": 1.348084311959414,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 26,
+  "R": 0.15,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-04T11:54+01:00"
  },
  {
   "id": "XAUUSD-5m-1793781900000",
@@ -18017,7 +18023,7 @@
   "edge": false,
   "trail_stop": 4037.282,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "BTCUSD-5m-1793784900000",
@@ -18152,7 +18158,7 @@
   "edge": false,
   "trail_stop": 78462.01,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "XRPUSD-5m-1793784900000",
@@ -18287,7 +18293,7 @@
   "edge": false,
   "trail_stop": 1.2893614800481392,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "USDJPY-1h-1793782800000",
