@@ -21438,7 +21438,7 @@
   "edge": false,
   "trail_stop": 4053.898,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "BTCUSD-5m-1793810100000",
@@ -21701,7 +21701,7 @@
   "edge": false,
   "trail_stop": 2418.842,
   "tp1_hit": false,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "USDJPY-5m-1793810700000",
@@ -21969,7 +21969,7 @@
   "edge": false,
   "trail_stop": 1.303064,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "GBPUSD-15m-1793811600000",
@@ -22237,7 +22237,7 @@
   "edge": false,
   "trail_stop": 80150.873,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "SOLUSD-5m-1793813100000",
@@ -22321,7 +22321,7 @@
   "strategies": [
    "Turtle 20-bar breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.4062624541745783,
@@ -22369,7 +22369,10 @@
   "edge": false,
   "trail_stop": 95.37061,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 12,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T19:44+01:00"
  },
  {
   "id": "USDJPY-15m-1793813400000",
