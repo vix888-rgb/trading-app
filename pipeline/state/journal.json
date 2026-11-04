@@ -18451,7 +18451,7 @@
   "edge": false,
   "trail_stop": 158.05,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "ETHUSD-5m-1793790300000",
@@ -22520,7 +22520,7 @@
   "edge": false,
   "trail_stop": 158.214,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "SOLUSD-5m-1793818500000",
@@ -23198,7 +23198,7 @@
   "edge": false,
   "trail_stop": 2406.47,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "GBPUSD-15m-1793821500000",
@@ -23331,7 +23331,7 @@
   "edge": false,
   "trail_stop": 1.345801,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "ETHUSD-15m-1793823300000",
@@ -23463,6 +23463,135 @@
   "edge": false,
   "trail_stop": 2398.085,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
+ },
+ {
+  "id": "ETHUSD-1h-1793822400000",
+  "logged": "2026-11-04T22:04+01:00",
+  "bar_t": 1793822400000,
+  "bar_time": "Wed 04 Nov 21:00",
+  "sym": "ETHUSD",
+  "tf": "1h",
+  "side": "long",
+  "score": 51,
+  "entry": 2420.99,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 2381.674,
+  "tp": [
+   2460.306,
+   2499.622,
+   2538.938
+  ],
+  "inv": 2310.0,
+  "votes": [
+   1,
+   1,
+   -1,
+   -1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   1
+  ],
+  "weights": [
+   0.25,
+   0.03,
+   0.42,
+   1.48,
+   0.76,
+   0.78,
+   0.55,
+   0.28,
+   0.39,
+   0.54,
+   0.0,
+   0.8,
+   0.15,
+   0.38,
+   2.0,
+   0.0,
+   0.35,
+   0.0,
+   0.68,
+   0.16,
+   0.47,
+   0.53,
+   0.31,
+   0.99,
+   0.07,
+   0.26,
+   0.27,
+   0.54
+  ],
+  "strategies": [
+   "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 26.21067224846213,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 89,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 2302.22253786,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 2450.0,
+    "dl": 2226.44,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
