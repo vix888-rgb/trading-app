@@ -16673,9 +16673,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3986.602102008439,
+  "trail_stop": 3991.706752008439,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "SOLUSD-5m-1793768700000",
@@ -16940,7 +16940,7 @@
   "edge": false,
   "trail_stop": 1.2715,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "GBPUSD-5m-1793771100000",
@@ -17025,7 +17025,7 @@
    "MTF top-down pullback",
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004198793966742346,
@@ -17073,6 +17073,9 @@
   "edge": false,
   "trail_stop": 1.345682,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T07:23+01:00"
  }
 ]
