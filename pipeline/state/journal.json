@@ -12684,7 +12684,7 @@
   "fill_bar_t": 1793720700000,
   "trail_stop": 3950.0798,
   "tp1_hit": false,
-  "bars_open": 36,
+  "bars_open": 37,
   "pxBasis": "spot",
   "pxShift": 9.3352
  },
@@ -13941,7 +13941,7 @@
   "edge": false,
   "trail_stop": 1.3430047256355424,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "BTCUSD-5m-1793751300000",
@@ -14212,7 +14212,7 @@
   "edge": false,
   "trail_stop": 92.64119,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "BTCUSD-5m-1793752500000",
@@ -14298,7 +14298,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 133.99802408565208,
@@ -14346,7 +14346,10 @@
   "edge": false,
   "trail_stop": 77173.307,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T02:03+01:00"
  },
  {
   "id": "BTCUSD-15m-1793752200000",
@@ -14433,7 +14436,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 196.55401350531557,
@@ -14470,6 +14473,140 @@
     "dh": 78063.3,
     "dl": 77046.42,
     "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 77205.971,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-04T02:03+01:00"
+ },
+ {
+  "id": "XAUUSD-5m-1793753700000",
+  "logged": "2026-11-04T02:03+01:00",
+  "bar_t": 1793753700000,
+  "bar_time": "Wed 04 Nov 01:55",
+  "sym": "XAUUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 43,
+  "entry": 3932.102,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 3925.558,
+  "tp": [
+   3938.647,
+   3945.191,
+   3951.735
+  ],
+  "inv": 3919.724,
+  "votes": [
+   1,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   1.57,
+   0.0,
+   0.59,
+   1.17,
+   0.79,
+   0.05,
+   0.33,
+   0.12,
+   0.76,
+   0.12,
+   1.86,
+   0.99,
+   0.0,
+   1.38,
+   0.0,
+   0.0,
+   0.34,
+   0.5,
+   0.46,
+   0.0,
+   0.0,
+   0.28,
+   1.08,
+   0.48,
+   0.03,
+   0.0,
+   0.0,
+   0.84
+  ],
+  "strategies": [
+   "Liquidity Entry Zones"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 4.362950895034771,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 84,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 3928.34893537,
+    "side200": 1,
+    "stack": 1,
+    "st": -1,
+    "dh": 3939.79876,
+    "dl": 3919.72405,
+    "brk": 0,
     "sqz": "off",
     "mom": -1,
     "sess": false,
