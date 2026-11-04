@@ -16673,9 +16673,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3991.706752008439,
+  "trail_stop": 3995.953052008439,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "SOLUSD-5m-1793768700000",
@@ -16940,7 +16940,7 @@
   "edge": false,
   "trail_stop": 1.2715,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "GBPUSD-5m-1793771100000",
@@ -17077,5 +17077,134 @@
   "R": -1.0,
   "exit": "stop",
   "closed_at": "2026-11-04T07:23+01:00"
+ },
+ {
+  "id": "ETHUSD-5m-1793773500000",
+  "logged": "2026-11-04T07:33+01:00",
+  "bar_t": 1793773500000,
+  "bar_time": "Wed 04 Nov 07:25",
+  "sym": "ETHUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 33,
+  "entry": 2295.91,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 2287.212,
+  "tp": [
+   2304.608,
+   2313.306,
+   2322.004
+  ],
+  "inv": 2288.57,
+  "votes": [
+   1,
+   -1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.67,
+   0.5,
+   0.0,
+   0.33,
+   0.0,
+   0.43,
+   0.0,
+   1.27,
+   0.0,
+   0.3,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.92,
+   0.0,
+   0.0,
+   0.75,
+   0.39,
+   0.06,
+   0.0,
+   1.89,
+   0.59
+  ],
+  "strategies": [
+   "AB=CD (pattern)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 5.7987109218608985,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 66,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 2275.84330893,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 2306.43,
+    "dl": 2267.33,
+    "brk": 1,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
