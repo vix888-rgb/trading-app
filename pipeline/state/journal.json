@@ -16673,9 +16673,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3944.721,
-  "tp1_hit": false,
-  "bars_open": 8
+  "trail_stop": 3964.527232008439,
+  "tp1_hit": true,
+  "bars_open": 10
  },
  {
   "id": "SOLUSD-5m-1793768700000",
@@ -16759,7 +16759,7 @@
   "strategies": [
    "Turtle 20-bar breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.3482336634271899,
@@ -16807,7 +16807,10 @@
   "edge": false,
   "trail_stop": 92.80235,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-04T06:43+01:00"
  },
  {
   "id": "XRPUSD-5m-1793769300000",
@@ -16937,6 +16940,6 @@
   "edge": false,
   "trail_stop": 1.265653,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  }
 ]
