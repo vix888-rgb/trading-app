@@ -12076,7 +12076,7 @@
   "edge": false,
   "trail_stop": 158.441599747294,
   "tp1_hit": true,
-  "bars_open": 37
+  "bars_open": 38
  },
  {
   "id": "GBPUSD-5m-1793717700000",
@@ -12681,7 +12681,7 @@
   "fill_bar_t": 1793720700000,
   "trail_stop": 3950.0798,
   "tp1_hit": false,
-  "bars_open": 33,
+  "bars_open": 34,
   "pxBasis": "spot",
   "pxShift": 9.3352
  },
@@ -13798,7 +13798,7 @@
   "edge": false,
   "trail_stop": 3931.762,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "GBPUSD-5m-1793749500000",
@@ -13933,8 +13933,139 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.342769,
+  "trail_stop": 1.3428058845405717,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "BTCUSD-5m-1793751300000",
+  "logged": "2026-11-04T01:23+01:00",
+  "bar_t": 1793751300000,
+  "bar_time": "Wed 04 Nov 01:15",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -27,
+  "entry": 77256.59,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 77408.495,
+  "tp": [
+   77104.685,
+   76952.78,
+   76800.875
+  ],
+  "inv": 77983.86,
+  "votes": [
+   0,
+   -1,
+   1,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.12,
+   0.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Wyckoff spring / upthrust",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 101.26991503359308,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 59,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 77526.61451864,
+    "side200": -1,
+    "stack": 0,
+    "st": -1,
+    "dh": 77983.86,
+    "dl": 77336.0,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
