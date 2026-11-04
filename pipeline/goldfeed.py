@@ -5,9 +5,12 @@ Credit budget (Basic plan: 1 credit per ``/time_series`` symbol, 8/minute, 800/d
 
 - 1min every scan (the desk still has a 1-minute view): 144
 - 5min every scan: 144
-- 1h about every 30 minutes: 48
+- 1h roughly once an hour, on the first scan after that bar has been closed
+  for 60 seconds, plus the 30-minute refresh. The close fetch resets the
+  refresh timer, so the steady state is still two scans an hour: 48
 
-That is 336 credits/day, under the ~500 target. History lives in
+That is 336 credits/day, under the 800/day plan limit. Fetching 5min, 1min,
+and 1h on every scan is 432/day. History lives in
 ``pipeline/state/gold_feed.json`` so later scans request only the new tail.
 
 Bar boundaries match the candles the app already used:
@@ -20,11 +23,15 @@ Bar boundaries match the candles the app already used:
 - 4h is resampled from 1h the same way ``engine.yahoo`` resampled GC=F:
   pandas ``4h`` on a UTC index (origin start of the UTC day, left-closed),
   so buckets are 00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC. A bucket is
-  kept only after its 4-hour window has ended.
+  kept only after its window has ended and the last hour is in the cache
+  (open time equals the bucket end minus 1h). The same last-hour rule applies
+  to 1D. If that hour never trades (Friday, a holiday, or a maintenance gap),
+  the bucket is kept once the 1h fetch is at least 10 minutes past the end.
 - 1D is resampled from 1h onto America/New_York midnights. Yahoo GC=F daily
   stamps were midnight New York: 04:00 UTC in EDT (27 Oct 2026) and 05:00 UTC
   in EST (3 Nov 2026). The bar closes at the next New York midnight, including
-  the 23h/25h daylight-saving days.
+  the 23h/25h daylight-saving days. The last hour of that bar opens at 23:00
+  New York.
 
 The API key is read from ``TWELVEDATA_API_KEY`` and is never written to state,
 the snapshot, or an error string. If the key is missing, Twelve Data errors,
@@ -60,7 +67,13 @@ NY = "America/New_York"
 
 
 def credits_per_day():
-    """Steady-state credits: 1min and 5min every 10 minutes, 1h every 30 minutes."""
+    """Steady-state credits: 1min and 5min every 10 minutes, 1h twice an hour.
+
+    1h is fetched right after each close and again on the 30-minute refresh.
+    The close fetch restarts that timer, so the two triggers share two scans
+    an hour (``86400 // H1_EVERY``). 5min + 1min + 1h on every scan is
+    ``3 * 144`` = 432, still under the 800/day plan.
+    """
     scans = 24 * 60 * 60 // 600
     hourly = 24 * 60 * 60 // H1_EVERY
     return scans + scans + hourly
@@ -251,6 +264,11 @@ def h1_due(fetched_at, now, n_bars, last_t_ms):
         return True
     if last_t_ms and now * 1000 - (int(last_t_ms) + STEP["1h"]) > 2 * STEP["1h"]:
         return True
+    # The bar after the cached one has been closed for at least 60s. The
+    # 30-minute refresh often misses that scan, which is how a 4h/1D close
+    # was scored without its last hour.
+    if last_t_ms and now * 1000 >= int(last_t_ms) + 2 * STEP["1h"] + 60_000:
+        return True
     return False
 
 
@@ -259,12 +277,17 @@ def _epoch_ms(index):
     return (utc.as_unit("ns").asi8 // 1_000_000).astype("int64")
 
 
-def resample_ohlc(df, rule, step_ms=None, now_ms=None, tz=None):
+def resample_ohlc(df, rule, step_ms=None, now_ms=None, tz=None, complete=None):
     """Aggregate to ``rule``. ``t`` is the bucket open. The open bucket is dropped.
 
     ``tz`` converts the index before resampling so daily bars follow
     America/New_York midnights. Intraday rules stay on UTC (``tz`` is None),
     which matches the previous pandas ``resample('4h')`` call.
+
+    ``complete``, when set, is called with each bucket end in milliseconds.
+    A finished bucket is kept only when it also returns true. Boundaries are
+    unchanged: 4h still ends on the UTC step, and 1D still ends at the next
+    New York midnight (``pd.offsets.Day(1)``).
     """
     if df is None or len(df) == 0:
         return _blank()
@@ -289,6 +312,8 @@ def resample_ohlc(df, rule, step_ms=None, now_ms=None, tz=None):
         ends = starts + pd.offsets.Day(1)
         end_ms = _epoch_ms(ends)
     keep = end_ms <= now_ms
+    if complete is not None:
+        keep = [bool(flag) and bool(complete(int(end))) for flag, end in zip(keep, end_ms)]
     pos = [i for i, flag in enumerate(list(keep)) if flag]
     kept_ms = start_ms[pos]
     agg = agg.iloc[pos]
@@ -361,16 +386,38 @@ def _pull(state, interval, key, now, now_ms, fetch_td, calls):
     return merged
 
 
+def _bucket_ready(h1, fetched_at):
+    """True when a finished 4h/1D bucket has its last hour, or the gap is confirmed.
+
+    The last hour opens at ``bucket_end - 1h``. A Friday or holiday bar never
+    prints that hour; a 1h fetch at least 10 minutes after the bucket end
+    shows the gap is real rather than a late cache.
+    """
+    opens = set()
+    if h1 is not None and len(h1):
+        opens = {int(t) for t in h1.t}
+    fetched_ms = None if fetched_at is None else float(fetched_at) * 1000.0
+
+    def ready(end_ms):
+        end_ms = int(end_ms)
+        if end_ms - STEP["1h"] in opens:
+            return True
+        return fetched_ms is not None and fetched_ms >= end_ms + 600_000
+
+    return ready
+
+
 def _build(state, now_ms):
     m1 = drop_forming(_cached(state, "1min"), STEP["1min"], now_ms)
     m5 = drop_forming(_cached(state, "5min"), STEP["5min"], now_ms)
     h1 = drop_forming(_cached(state, "1h"), STEP["1h"], now_ms)
+    ready = _bucket_ready(h1, (state.get("fetchedAt") or {}).get("1h"))
     frames = {
         "5m": m5,
         "15m": resample_ohlc(m5, "15min", step_ms=STEP["15m"], now_ms=now_ms),
         "1h": h1,
-        "4h": resample_ohlc(h1, "4h", step_ms=STEP["4h"], now_ms=now_ms),
-        "1d": resample_ohlc(h1, "1D", now_ms=now_ms, tz=NY),
+        "4h": resample_ohlc(h1, "4h", step_ms=STEP["4h"], now_ms=now_ms, complete=ready),
+        "1d": resample_ohlc(h1, "1D", now_ms=now_ms, tz=NY, complete=ready),
     }
     terr = {}
     if len(m1) >= MIN_BARS:

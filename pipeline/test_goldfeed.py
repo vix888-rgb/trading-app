@@ -22,8 +22,12 @@ def ms(ts):
 
 class GoldFeed(unittest.TestCase):
     def test_credit_budget(self):
+        # 1h is once an hour right after the close, plus the 30-minute refresh.
+        # Those share two scans an hour, so the steady state stays 336.
         self.assertEqual(goldfeed.credits_per_day(), 336)
-        self.assertLess(goldfeed.credits_per_day(), 500)
+        self.assertLess(goldfeed.credits_per_day(), 800)
+        # 5min + 1min + 1h on every 10-minute scan.
+        self.assertLessEqual(3 * (24 * 60 * 60 // 600), 432)
 
     def test_outputsize_is_small_once_history_is_cached(self):
         step = goldfeed.STEP["5min"]
@@ -42,6 +46,15 @@ class GoldFeed(unittest.TestCase):
         self.assertTrue(goldfeed.h1_due(now - 1800, now, 500, last))
         self.assertTrue(goldfeed.h1_due(None, now, 500, last))
         self.assertTrue(goldfeed.h1_due(now - 600, now, 10, last))
+
+    def test_hourly_fetches_when_the_next_bar_has_closed(self):
+        # 06:03 Europe/Belgrade is 05:03 UTC. The cached bar is 03:00 UTC, so
+        # the 04:00 UTC bar closed at 05:00. Nine minutes since the last fetch
+        # is not enough for the 30-minute refresh; the closed bar still is.
+        now = float(pd.Timestamp("2026-11-04 06:03:00", tz="Europe/Belgrade").timestamp())
+        last = ms("2026-11-04 03:00:00+00:00")
+        self.assertEqual(pd.Timestamp(now, unit="s", tz="UTC").strftime("%H:%M"), "05:03")
+        self.assertTrue(goldfeed.h1_due(now - 9 * 60, now, 500, last))
 
     def test_15m_and_4h_boundaries_match_the_old_clock(self):
         # 5m bars 21:00 through 21:25 UTC. now=21:30 closes the 21:00 and 21:15 buckets.
@@ -208,6 +221,79 @@ class GoldFeed(unittest.TestCase):
     def test_error_text_strips_the_key(self):
         self.assertEqual(goldfeed._reason(goldfeed.TwelveError(400, "bad " + KEY), KEY), "bad")
         self.assertNotIn(KEY, goldfeed._reason(goldfeed.TwelveError(400, "bad " + KEY), KEY))
+
+
+def _state(hours, fetched_at):
+    return {"bars": {"1min": [], "5min": [], "1h": goldfeed._pack(hours)}, "fetchedAt": {"1h": fetched_at}}
+
+
+def _hours(start, end, price=4000.0):
+    n = (int(end) - int(start)) // 3_600_000 + 1
+    return series(3_600_000, n, end, price)
+
+
+def _opens(df):
+    return {int(t) for t in df.t}
+
+
+class ClosedBuckets(unittest.TestCase):
+    def test_incomplete_4h_and_daily_are_not_emitted(self):
+        # 05:00-09:00 Belgrade is 04:00-08:00 UTC. Bars stop on the 3rd hour
+        # (06:00 UTC / 07:00 Belgrade). The fetch is still before the bucket end.
+        hours = _hours(ms("2026-11-03 00:00:00+00:00"), ms("2026-11-04 06:00:00+00:00"))
+        fetched = float(pd.Timestamp("2026-11-04 07:50:00", tz="UTC").timestamp())
+        now = float(pd.Timestamp("2026-11-04 08:03:00", tz="UTC").timestamp())
+        frames, _terr = goldfeed._build(_state(hours, fetched), now * 1000)
+        opens = _opens(frames["4h"])
+        self.assertNotIn(ms("2026-11-04 04:00:00+00:00"), opens)
+        self.assertIn(ms("2026-11-04 00:00:00+00:00"), opens)
+
+        # Tue 3 Nov, scored at 06:03 Belgrade, without the 23:00 New York hour
+        # (04:00 UTC on 4 Nov). The cached tail is the 22:00 NY / 04:00 Belgrade bar.
+        hours = _hours(ms("2026-11-02 00:00:00+00:00"), ms("2026-11-04 03:00:00+00:00"), 3900)
+        fetched = float(pd.Timestamp("2026-11-04 04:50:00", tz="UTC").timestamp())
+        now = float(pd.Timestamp("2026-11-04 06:03:00", tz="Europe/Belgrade").timestamp())
+        frames, _terr = goldfeed._build(_state(hours, fetched), now * 1000)
+        days = _opens(frames["1d"])
+        self.assertNotIn(ms("2026-11-03 05:00:00+00:00"), days)
+        self.assertIn(ms("2026-11-02 05:00:00+00:00"), days)
+
+    def test_buckets_emit_once_the_last_hour_is_present(self):
+        hours = _hours(ms("2026-11-03 00:00:00+00:00"), ms("2026-11-04 07:00:00+00:00"))
+        fetched = float(pd.Timestamp("2026-11-04 07:50:00", tz="UTC").timestamp())
+        now = float(pd.Timestamp("2026-11-04 08:03:00", tz="UTC").timestamp())
+        frames, _terr = goldfeed._build(_state(hours, fetched), now * 1000)
+        h4 = frames["4h"]
+        row = h4[h4.t == ms("2026-11-04 04:00:00+00:00")].iloc[0]
+        last_hour = hours[hours.t == ms("2026-11-04 07:00:00+00:00")].iloc[0]
+        self.assertAlmostEqual(float(row.c), float(last_hour.c))
+
+        hours = _hours(ms("2026-11-02 00:00:00+00:00"), ms("2026-11-04 04:00:00+00:00"), 3900)
+        fetched = float(pd.Timestamp("2026-11-04 04:50:00", tz="UTC").timestamp())
+        now = float(pd.Timestamp("2026-11-04 06:03:00", tz="Europe/Belgrade").timestamp())
+        frames, _terr = goldfeed._build(_state(hours, fetched), now * 1000)
+        day = frames["1d"]
+        row = day[day.t == ms("2026-11-03 05:00:00+00:00")].iloc[0]
+        last_hour = hours[hours.t == ms("2026-11-04 04:00:00+00:00")].iloc[0]
+        self.assertAlmostEqual(float(row.c), float(last_hour.c))
+        ny = pd.Timestamp(int(last_hour.t), unit="ms", tz="UTC").tz_convert("America/New_York")
+        self.assertEqual((ny.hour, ny.minute), (23, 0))
+
+    def test_friday_daily_emits_once_the_fetch_is_past_the_gap(self):
+        # Friday 6 Nov 2026. The last trading hour is 16:00 New York (21:00 UTC).
+        # The daily bucket still ends at Saturday 00:00 NY, which has no 23:00 bar.
+        hours = _hours(ms("2026-11-06 05:00:00+00:00"), ms("2026-11-06 21:00:00+00:00"))
+        bucket_end = ms("2026-11-07 05:00:00+00:00")
+        now = (bucket_end + 600_000) / 1000.0
+        early = (bucket_end + 600_000 - 60_000) / 1000.0
+        held, _terr = goldfeed._build(_state(hours, early), now * 1000)
+        self.assertNotIn(ms("2026-11-06 05:00:00+00:00"), _opens(held["1d"]))
+        frames, _terr = goldfeed._build(_state(hours, now), now * 1000)
+        self.assertIn(ms("2026-11-06 05:00:00+00:00"), _opens(frames["1d"]))
+        day = frames["1d"]
+        row = day[day.t == ms("2026-11-06 05:00:00+00:00")].iloc[0]
+        last_hour = hours[hours.t == ms("2026-11-06 21:00:00+00:00")].iloc[0]
+        self.assertAlmostEqual(float(row.c), float(last_hour.c))
 
 
 if __name__ == "__main__":
