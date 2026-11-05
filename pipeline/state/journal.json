@@ -29733,7 +29733,7 @@
   "edge": false,
   "trail_stop": 90.22322,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "BTCUSD-5m-1793905200000",
@@ -30089,7 +30089,7 @@
   "strategies": [
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 227.99682416176725,
@@ -30137,7 +30137,10 @@
   "edge": false,
   "trail_stop": 76388.005,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-05T20:47+01:00"
  },
  {
   "id": "SOLUSD-15m-1793906100000",
@@ -30266,6 +30269,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 90.43927,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
