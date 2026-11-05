@@ -30546,7 +30546,7 @@
   "edge": false,
   "trail_stop": 1.2167262148674765,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 46
  },
  {
   "id": "ETHUSD-5m-1793908800000",
@@ -30899,7 +30899,7 @@
    0.21
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 393.5388025689407,
@@ -30947,7 +30947,10 @@
   "edge": false,
   "trail_stop": 76081.94,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 12,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-06T00:47+01:00"
  },
  {
   "id": "SOLUSD-15m-1793911500000",
@@ -31077,7 +31080,7 @@
   "edge": false,
   "trail_stop": 90.04,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "BTCUSD-5m-1793913000000",
@@ -31621,5 +31624,132 @@
   "R": 0.74,
   "exit": "trailing stop",
   "closed_at": "2026-11-06T00:27+01:00"
+ },
+ {
+  "id": "ETHUSD-5m-1793922000000",
+  "logged": "2026-11-06T00:47+01:00",
+  "bar_t": 1793922000000,
+  "bar_time": "Fri 06 Nov 00:40",
+  "sym": "ETHUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -30,
+  "entry": 2239.35,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 2252.057,
+  "tp": [
+   2226.643,
+   2213.935,
+   2201.228
+  ],
+  "inv": 2255.65,
+  "votes": [
+   0,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.67,
+   0.5,
+   0.0,
+   0.33,
+   0.0,
+   0.43,
+   0.0,
+   1.27,
+   0.0,
+   0.3,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.92,
+   0.0,
+   0.0,
+   0.75,
+   0.39,
+   0.06,
+   0.0,
+   1.89,
+   0.59
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 8.471652366083338,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 78,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 2302.89157595,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 2243.59,
+    "dl": 2206.28,
+    "brk": -1,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
