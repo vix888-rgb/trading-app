@@ -25872,7 +25872,7 @@
    "Squeeze momentum breakout",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.004611868619300889,
@@ -25920,7 +25920,10 @@
   "edge": false,
   "trail_stop": 1.3087,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 30,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-05T13:46+01:00"
  },
  {
   "id": "XRPUSD-1h-1793851200000",
@@ -26540,7 +26543,7 @@
   "strategies": [
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 10.085018959052933,
@@ -26588,7 +26591,10 @@
   "edge": false,
   "trail_stop": 4118.703,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 27,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-05T13:46+01:00"
  },
  {
   "id": "XAUUSD-5m-1793858700000",
@@ -27808,6 +27814,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.346057,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
