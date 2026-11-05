@@ -449,7 +449,7 @@
   "score": -26,
   "entry": 81110.07,
   "entry_type": "limit (order block retest)",
-  "filled": false,
+  "filled": true,
   "stop": 85219.08,
   "tp": [
    77001.06,
@@ -521,7 +521,10 @@
    "Turtle 20-bar breakout",
    "Squeeze momentum breakout"
   ],
-  "status": "open"
+  "status": "open",
+  "fill_bar_t": 1793750400000,
+  "tp1_hit": true,
+  "bars_open": 1
  },
  {
   "id": "EURCHF-15m-1793394900000",
@@ -883,7 +886,7 @@
   "score": -33,
   "entry": 2357.375,
   "entry_type": "limit (order block retest)",
-  "filled": false,
+  "filled": true,
   "stop": 2540.295,
   "tp": [
    2174.455,
@@ -954,7 +957,10 @@
   "strategies": [
    "Turtle 20-bar breakout"
   ],
-  "status": "open"
+  "status": "open",
+  "fill_bar_t": 1793750400000,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "SOLUSD-5m-1793489700000",
@@ -18451,7 +18457,7 @@
   "edge": false,
   "trail_stop": 158.05,
   "tp1_hit": false,
-  "bars_open": 13
+  "bars_open": 10
  },
  {
   "id": "ETHUSD-5m-1793790300000",
@@ -22520,7 +22526,7 @@
   "edge": false,
   "trail_stop": 158.214,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 8
  },
  {
   "id": "SOLUSD-5m-1793818500000",
@@ -23150,7 +23156,7 @@
   "strategies": [
    "Turtle 20-bar breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.8980908230173235,
@@ -23198,7 +23204,10 @@
   "edge": false,
   "trail_stop": 2421.1576367079306,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 2.05,
+  "exit": "time exit",
+  "closed_at": "2026-11-05T01:04+01:00"
  },
  {
   "id": "GBPUSD-15m-1793821500000",
@@ -23331,7 +23340,7 @@
   "edge": false,
   "trail_stop": 1.345801,
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 0
  },
  {
   "id": "ETHUSD-15m-1793823300000",
@@ -23463,7 +23472,7 @@
   "edge": false,
   "trail_stop": 2417.4,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "ETHUSD-1h-1793822400000",
@@ -23595,7 +23604,7 @@
   "edge": false,
   "trail_stop": 2381.674,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "BTCUSD-5m-1793835300000",
@@ -23727,7 +23736,7 @@
   "edge": false,
   "trail_stop": 80447.295,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "SOLUSD-5m-1793835300000",
@@ -23859,6 +23868,6 @@
   "edge": false,
   "trail_stop": 95.44443,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  }
 ]
