@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T06:44+01:00",
+ "updated": "2026-11-05T06:54+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13175,52 +13175,52 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 176,
+    "n": 179,
     "hit": 41,
-    "avgR": 0.184,
-    "pf": 1.42
+    "avgR": 0.208,
+    "pf": 1.49
    },
    "Stochastic (14/3/3)": {
-    "n": 176,
+    "n": 179,
     "hit": 31,
-    "avgR": 0.144,
-    "pf": 1.32
+    "avgR": 0.169,
+    "pf": 1.38
    },
    "ADX trend strength (14)": {
-    "n": 112,
+    "n": 113,
     "hit": 37,
-    "avgR": 0.057,
-    "pf": 1.12
+    "avgR": 0.1,
+    "pf": 1.21
    },
    "Ichimoku cloud": {
-    "n": 150,
+    "n": 153,
     "hit": 27,
-    "avgR": 0.089,
-    "pf": 1.18
+    "avgR": 0.119,
+    "pf": 1.25
    },
    "Supertrend (10/3)": {
-    "n": 176,
+    "n": 179,
     "hit": 35,
-    "avgR": 0.235,
-    "pf": 1.58
+    "avgR": 0.258,
+    "pf": 1.64
    },
    "Volume / OBV": {
-    "n": 109,
-    "hit": 34,
-    "avgR": 0.16,
+    "n": 111,
+    "hit": 33,
+    "avgR": 0.157,
     "pf": 1.38
    },
    "VWAP (rolling 50 bars)": {
-    "n": 101,
-    "hit": 31,
-    "avgR": -0.104,
+    "n": 102,
+    "hit": 30,
+    "avgR": -0.103,
     "pf": 0.82
    },
    "Candlestick patterns": {
-    "n": 88,
-    "hit": 25,
-    "avgR": -0.219,
-    "pf": 0.66
+    "n": 89,
+    "hit": 26,
+    "avgR": -0.162,
+    "pf": 0.74
    },
    "RSI divergence": {
     "n": 21,
@@ -13229,22 +13229,22 @@
     "pf": 0.3
    },
    "Multi-timeframe confirmation": {
-    "n": 117,
+    "n": 119,
     "hit": 21,
-    "avgR": -0.139,
-    "pf": 0.72
+    "avgR": -0.095,
+    "pf": 0.81
    },
    "News sentiment": {
-    "n": 95,
-    "hit": 25,
-    "avgR": -0.035,
-    "pf": 0.93
+    "n": 96,
+    "hit": 26,
+    "avgR": 0.016,
+    "pf": 1.03
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 176,
+    "n": 179,
     "hit": 34,
-    "avgR": 0.143,
-    "pf": 1.32
+    "avgR": 0.168,
+    "pf": 1.38
    },
    "Order blocks": {
     "n": 57,
@@ -13253,88 +13253,88 @@
     "pf": 1.08
    },
    "Fair value gaps": {
-    "n": 138,
+    "n": 140,
     "hit": 28,
-    "avgR": -0.045,
-    "pf": 0.91
+    "avgR": -0.01,
+    "pf": 0.98
    },
    "Liquidity sweeps": {
-    "n": 66,
+    "n": 67,
     "hit": 27,
-    "avgR": -0.1,
-    "pf": 0.79
+    "avgR": -0.172,
+    "pf": 0.69
    },
    "Volume profile / POC": {
-    "n": 176,
+    "n": 179,
     "hit": 36,
-    "avgR": 0.2,
-    "pf": 1.47
+    "avgR": 0.224,
+    "pf": 1.54
    },
    "Anchored VWAP": {
-    "n": 147,
+    "n": 150,
     "hit": 37,
-    "avgR": 0.14,
-    "pf": 1.33
+    "avgR": 0.169,
+    "pf": 1.4
    },
    "Heikin Ashi trend": {
-    "n": 176,
+    "n": 179,
     "hit": 30,
-    "avgR": 0.157,
-    "pf": 1.35
+    "avgR": 0.182,
+    "pf": 1.41
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 176,
+    "n": 179,
     "hit": 39,
-    "avgR": 0.311,
-    "pf": 1.84
+    "avgR": 0.333,
+    "pf": 1.92
    },
    "Hull MA (55)": {
-    "n": 176,
-    "hit": 37,
-    "avgR": 0.241,
-    "pf": 1.6
+    "n": 179,
+    "hit": 36,
+    "avgR": 0.21,
+    "pf": 1.49
    },
    "Daily pivot points": {
-    "n": 176,
+    "n": 179,
     "hit": 25,
-    "avgR": 0.087,
-    "pf": 1.18
+    "avgR": 0.113,
+    "pf": 1.24
    },
    "EMA trend (20/50/200)": {
-    "n": 102,
-    "hit": 26,
-    "avgR": 0.256,
-    "pf": 1.63
+    "n": 103,
+    "hit": 27,
+    "avgR": 0.3,
+    "pf": 1.75
    },
    "RSI (14)": {
-    "n": 124,
-    "hit": 35,
-    "avgR": 0.101,
-    "pf": 1.19
+    "n": 126,
+    "hit": 36,
+    "avgR": 0.138,
+    "pf": 1.27
    },
    "Bollinger Bands (20/2)": {
-    "n": 69,
-    "hit": 28,
-    "avgR": -0.344,
-    "pf": 0.57
+    "n": 71,
+    "hit": 27,
+    "avgR": -0.403,
+    "pf": 0.52
    },
    "Williams %R / CCI": {
-    "n": 71,
+    "n": 73,
     "hit": 32,
-    "avgR": -0.509,
-    "pf": 0.41
+    "avgR": -0.562,
+    "pf": 0.38
    },
    "Fibonacci confluence": {
-    "n": 27,
-    "hit": 26,
+    "n": 28,
+    "hit": 25,
     "avgR": 0.006,
     "pf": 1.02
    },
    "Support / resistance": {
-    "n": 33,
-    "hit": 45,
-    "avgR": -0.223,
-    "pf": 0.78
+    "n": 34,
+    "hit": 44,
+    "avgR": -0.36,
+    "pf": 0.68
    },
    "Volatility (ATR 14)": {
     "n": 21,
@@ -13345,10 +13345,10 @@
   },
   "sym": {
    "XAUUSD": {
-    "n": 26,
-    "hit": 19,
-    "avgR": 0.283,
-    "pf": 1.57
+    "n": 27,
+    "hit": 22,
+    "avgR": 0.453,
+    "pf": 1.94
    },
    "BTCUSD": {
     "n": 26,
@@ -13369,15 +13369,15 @@
     "pf": 1.31
    },
    "SOLUSD": {
-    "n": 31,
+    "n": 32,
     "hit": 19,
-    "avgR": -0.302,
+    "avgR": -0.292,
     "pf": 0.45
    },
    "XRPUSD": {
-    "n": 18,
-    "hit": 33,
-    "avgR": 0.407,
+    "n": 19,
+    "hit": 32,
+    "avgR": 0.385,
     "pf": 1.73
    },
    "GBPUSD": {
@@ -13401,16 +13401,16 @@
   },
   "strat": {
    "Turtle 20-bar breakout": {
-    "n": 46,
-    "hit": 24,
-    "avgR": 0.529,
-    "pf": 2.06
+    "n": 48,
+    "hit": 25,
+    "avgR": 0.608,
+    "pf": 2.27
    },
    "Wyckoff spring / upthrust": {
-    "n": 14,
-    "hit": 21,
-    "avgR": 0.137,
-    "pf": 1.27
+    "n": 15,
+    "hit": 27,
+    "avgR": 0.453,
+    "pf": 1.97
    },
    "Trend-follow + ADX filter": {
     "n": 16,
@@ -13431,10 +13431,10 @@
     "pf": 0.0
    },
    "Keltner volatility breakout": {
-    "n": 26,
-    "hit": 38,
-    "avgR": 0.972,
-    "pf": 3.81
+    "n": 27,
+    "hit": 41,
+    "avgR": 1.117,
+    "pf": 4.35
    },
    "ICT/SMC sweep + CHoCH": {
     "n": 12,
@@ -13473,10 +13473,10 @@
     "pf": 0.0
    },
    "Donchian-20 breakout + EMA200 + HTF (round 4)": {
-    "n": 20,
-    "hit": 45,
-    "avgR": 1.44,
-    "pf": 6.76
+    "n": 21,
+    "hit": 48,
+    "avgR": 1.604,
+    "pf": 7.74
    },
    "TTM squeeze fire + EMA200 (round 4)": {
     "n": 9,
@@ -13498,13 +13498,13 @@
    }
   },
   "all": {
-   "n": 176,
+   "n": 179,
    "hit": 22,
-   "avgR": 0.046,
-   "pf": 1.09
+   "avgR": 0.072,
+   "pf": 1.15
   },
-  "open": 15,
-  "total": 217
+  "open": 13,
+  "total": 218
  },
  "rates": {
   "_ts": 1793829283.4991465,
