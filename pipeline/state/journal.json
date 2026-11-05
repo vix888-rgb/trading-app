@@ -18409,7 +18409,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.24081622690072943,
@@ -18457,7 +18457,10 @@
   "edge": false,
   "trail_stop": 158.05,
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 15,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-05T03:04+01:00"
  },
  {
   "id": "ETHUSD-5m-1793790300000",
@@ -23343,7 +23346,7 @@
   "edge": false,
   "trail_stop": 1.346765,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "ETHUSD-15m-1793823300000",
@@ -23610,7 +23613,7 @@
   "edge": false,
   "trail_stop": 2381.674,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "BTCUSD-5m-1793835300000",
@@ -24152,9 +24155,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 4101.081749329795,
+  "trail_stop": 4111.756269329795,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "GBPUSD-1h-1793833200000",
@@ -24284,7 +24287,7 @@
   "edge": false,
   "trail_stop": 1.345602,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "XAUUSD-1h-1793836800000",
@@ -24416,9 +24419,9 @@
    "pat": []
   },
   "edge": true,
-  "trail_stop": 4067.608,
-  "tp1_hit": false,
-  "bars_open": 0
+  "trail_stop": 4092.213,
+  "tp1_hit": true,
+  "bars_open": 1
  },
  {
   "id": "ETHUSD-5m-1793840100000",
@@ -24685,9 +24688,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 4101.044,
+  "trail_stop": 4104.711532206815,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-15m-1793841300000",
@@ -24815,9 +24818,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 2401.301,
-  "tp1_hit": false,
-  "bars_open": 1
+  "trail_stop": 2415.17,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-5m-1793842500000",
@@ -24947,8 +24950,8 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 2418.617,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 2425.75,
+  "tp1_hit": true,
+  "bars_open": 4
  }
 ]
