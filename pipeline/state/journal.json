@@ -28098,7 +28098,7 @@
   "edge": false,
   "trail_stop": 158.331,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "SOLUSD-15m-1793884500000",
@@ -28230,7 +28230,7 @@
   "edge": false,
   "trail_stop": 95.9726,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-5m-1793886600000",
@@ -28314,7 +28314,7 @@
   "strategies": [
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.330317866272678,
@@ -28362,7 +28362,10 @@
   "edge": false,
   "trail_stop": 4121.213,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-05T15:36+01:00"
  },
  {
   "id": "XAUUSD-15m-1793886300000",
@@ -28498,7 +28501,7 @@
   "edge": false,
   "trail_stop": 4114.858,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "USDJPY-5m-1793887800000",
@@ -28582,7 +28585,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0545940907686834,
@@ -28633,6 +28636,140 @@
   "edge": false,
   "trail_stop": 158.394,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-05T15:36+01:00"
+ },
+ {
+  "id": "XAUUSD-5m-1793889000000",
+  "logged": "2026-11-05T15:36+01:00",
+  "bar_t": 1793889000000,
+  "bar_time": "Thu 05 Nov 15:30",
+  "sym": "XAUUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 44,
+  "entry": 4133.69,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 4125.796,
+  "tp": [
+   4141.584,
+   4149.477,
+   4157.371
+  ],
+  "inv": 4112.349,
+  "votes": [
+   0,
+   1,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   1,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   1
+  ],
+  "weights": [
+   1.57,
+   0.0,
+   0.59,
+   1.17,
+   0.79,
+   0.05,
+   0.33,
+   0.12,
+   0.76,
+   0.12,
+   1.86,
+   0.99,
+   0.0,
+   1.38,
+   0.0,
+   0.0,
+   0.34,
+   0.5,
+   0.46,
+   0.0,
+   0.0,
+   0.28,
+   1.08,
+   0.48,
+   0.03,
+   0.0,
+   0.0,
+   0.84
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Liquidity Entry Zones",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 5.262455977101412,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 73,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 4110.59232305,
+    "side200": 1,
+    "stack": 0,
+    "st": 1,
+    "dh": 4130.11104,
+    "dl": 4112.34939,
+    "brk": 1,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
