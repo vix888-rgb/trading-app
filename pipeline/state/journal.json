@@ -29277,7 +29277,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0005056267204345938,
@@ -29325,7 +29325,10 @@
   "edge": false,
   "trail_stop": 1.34715,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 18,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-05T19:37+01:00"
  },
  {
   "id": "GBPUSD-1h-1793894400000",
@@ -29727,6 +29730,6 @@
   "edge": false,
   "trail_stop": 90.22322,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  }
 ]
