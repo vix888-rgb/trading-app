@@ -24690,7 +24690,7 @@
   "edge": false,
   "trail_stop": 4116.204792206814,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "ETHUSD-15m-1793841300000",
@@ -25495,7 +25495,7 @@
   "edge": false,
   "trail_stop": 1.349309,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "SOLUSD-5m-1793851500000",
@@ -25625,8 +25625,138 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 95.70551,
-  "tp1_hit": false,
-  "bars_open": 4
+  "trail_stop": 96.07,
+  "tp1_hit": true,
+  "bars_open": 6
+ },
+ {
+  "id": "XRPUSD-5m-1793853300000",
+  "logged": "2026-11-05T05:44+01:00",
+  "bar_t": 1793853300000,
+  "bar_time": "Thu 05 Nov 05:35",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 27,
+  "entry": 1.3096,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.305714,
+  "tp": [
+   1.313486,
+   1.317373,
+   1.321259
+  ],
+  "inv": 1.3057,
+  "votes": [
+   1,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   0,
+   1,
+   1,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.09,
+   0.0,
+   1.63,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.33,
+   0.0,
+   0.59,
+   1.53,
+   0.94,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   1.03,
+   0.2,
+   0.17,
+   0.46,
+   0.57,
+   0.0,
+   0.45,
+   0.0,
+   0.0,
+   0.0,
+   0.2
+  ],
+  "strategies": [
+   "MTF top-down pullback",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0025908396297226934,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 42,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.30257763,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 1.3164,
+    "dl": 1.3046,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
