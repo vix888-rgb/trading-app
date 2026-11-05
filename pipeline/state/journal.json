@@ -24011,9 +24011,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 4084.6837165015263,
+  "trail_stop": 4085.225486501526,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "XAUUSD-15m-1793837700000",
@@ -24409,7 +24409,10 @@
    },
    "pat": []
   },
-  "edge": true
+  "edge": true,
+  "trail_stop": 4067.608,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "ETHUSD-5m-1793840100000",
@@ -24538,6 +24541,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2414.925,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
