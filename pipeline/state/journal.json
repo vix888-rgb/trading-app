@@ -23619,7 +23619,7 @@
   "edge": false,
   "trail_stop": 2381.674,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "BTCUSD-5m-1793835300000",
@@ -24433,7 +24433,7 @@
   "edge": true,
   "trail_stop": 4092.213,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "ETHUSD-5m-1793840100000",
@@ -25920,7 +25920,7 @@
   "edge": false,
   "trail_stop": 1.3087,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "XRPUSD-1h-1793851200000",
@@ -26053,7 +26053,7 @@
   "edge": false,
   "trail_stop": 1.3087,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "SOLUSD-5m-1793855100000",
@@ -26588,7 +26588,7 @@
   "edge": false,
   "trail_stop": 4118.703,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "XAUUSD-5m-1793858700000",
@@ -26720,7 +26720,7 @@
   "edge": false,
   "trail_stop": 4115.076,
   "tp1_hit": false,
-  "bars_open": 45
+  "bars_open": 47
  },
  {
   "id": "SOLUSD-5m-1793858700000",
@@ -27260,6 +27260,136 @@
   "edge": false,
   "trail_stop": 1.314807,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
+ },
+ {
+  "id": "USDJPY-1h-1793869200000",
+  "logged": "2026-11-05T11:06+01:00",
+  "bar_t": 1793869200000,
+  "bar_time": "Thu 05 Nov 10:00",
+  "sym": "USDJPY",
+  "tf": "1h",
+  "side": "long",
+  "score": 25,
+  "entry": 158.321,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 158.016,
+  "tp": [
+   158.626,
+   158.932,
+   159.237
+  ],
+  "inv": 157.779,
+  "votes": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.14,
+   1.33,
+   0.0,
+   0.0,
+   0.33,
+   0.01,
+   0.38,
+   0.15,
+   0.0,
+   0.0,
+   1.1,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.16,
+   0.2,
+   0.0,
+   0.26,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.84,
+   0.0
+  ],
+  "strategies": [
+   "MTF top-down pullback",
+   "Liquidity Entry Zones"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.2036206852050133,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 52,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 157.93300336,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 158.66999817,
+    "dl": 157.77900696,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
