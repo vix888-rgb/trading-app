@@ -25920,7 +25920,7 @@
   "edge": false,
   "trail_stop": 1.3087,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "XRPUSD-1h-1793851200000",
@@ -26588,7 +26588,7 @@
   "edge": false,
   "trail_stop": 4118.703,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "XAUUSD-5m-1793858700000",
@@ -27677,5 +27677,137 @@
   "R": 0.0,
   "exit": "breakeven",
   "closed_at": "2026-11-05T11:56+01:00"
+ },
+ {
+  "id": "GBPUSD-15m-1793880900000",
+  "logged": "2026-11-05T13:36+01:00",
+  "bar_t": 1793880900000,
+  "bar_time": "Thu 05 Nov 13:15",
+  "sym": "GBPUSD",
+  "tf": "15m",
+  "side": "long",
+  "score": 37,
+  "entry": 1.347219,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.346057,
+  "tp": [
+   1.34838,
+   1.349542,
+   1.350703
+  ],
+  "inv": 1.346004,
+  "votes": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.86,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.38,
+   0.15,
+   1.59,
+   0.12,
+   0.3,
+   0.94,
+   0.0,
+   0.0,
+   0.16,
+   0.82,
+   0.2,
+   2.0,
+   0.0,
+   0.0,
+   0.01,
+   0.39,
+   0.0,
+   0.0,
+   1.62,
+   0.1
+  ],
+  "strategies": [
+   "ICT/SMC sweep + CHoCH",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.000774399532163589,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 79,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": true,
+    "blockLong": false,
+    "blockShort": true,
+    "dir": 1,
+    "alert": true,
+    "lo": 1.34520698,
+    "hi": 1.34678316
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.3460454,
+    "side200": 1,
+    "stack": 0,
+    "st": 1,
+    "dh": 1.34918165,
+    "dl": 1.3448633,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
