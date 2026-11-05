@@ -26171,9 +26171,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 95.4819,
-  "tp1_hit": false,
-  "bars_open": 4
+  "trail_stop": 95.84,
+  "tp1_hit": true,
+  "bars_open": 6
  },
  {
   "id": "XRPUSD-5m-1793855700000",
@@ -26301,9 +26301,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.304311,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 1.3081,
+  "tp1_hit": true,
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-5m-1793856300000",
@@ -26388,7 +26388,7 @@
    "Turtle 20-bar breakout",
    "Squeeze momentum breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.913373533810026,
@@ -26433,6 +26433,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 4116.605,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-05T06:44+01:00"
  }
 ]
