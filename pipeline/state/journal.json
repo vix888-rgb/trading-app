@@ -27907,7 +27907,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.04200496710869637,
@@ -27958,7 +27958,10 @@
   "edge": false,
   "trail_stop": 158.382,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-05T14:36+01:00"
  },
  {
   "id": "USDJPY-15m-1793883600000",
@@ -28095,6 +28098,135 @@
   "edge": false,
   "trail_stop": 158.331,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
+ },
+ {
+  "id": "SOLUSD-15m-1793884500000",
+  "logged": "2026-11-05T14:36+01:00",
+  "bar_t": 1793884500000,
+  "bar_time": "Thu 05 Nov 14:15",
+  "sym": "SOLUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -52,
+  "entry": 95.43,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 95.9726,
+  "tp": [
+   94.8874,
+   94.3448,
+   93.8022
+  ],
+  "inv": 96.97,
+  "votes": [
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   1
+  ],
+  "weights": [
+   0.61,
+   0.21,
+   0.1,
+   1.34,
+   0.39,
+   0.0,
+   0.33,
+   0.14,
+   0.66,
+   0.0,
+   0.0,
+   1.51,
+   0.0,
+   0.7,
+   0.0,
+   0.0,
+   0.16,
+   0.97,
+   0.2,
+   0.17,
+   0.25,
+   0.0,
+   0.0,
+   0.91,
+   0.54,
+   0.51,
+   0.0,
+   0.21
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.36173296746097544,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 21,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 94.86099714,
+    "side200": 1,
+    "stack": 1,
+    "st": -1,
+    "dh": 97.08,
+    "dl": 94.93,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
