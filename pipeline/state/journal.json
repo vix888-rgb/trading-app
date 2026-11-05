@@ -28191,7 +28191,7 @@
   "strategies": [
    "Turtle 20-bar breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.36173296746097544,
@@ -28239,7 +28239,10 @@
   "edge": false,
   "trail_stop": 91.89693186984391,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 7,
+  "R": 6.51,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-05T16:37+01:00"
  },
  {
   "id": "XAUUSD-5m-1793886600000",
