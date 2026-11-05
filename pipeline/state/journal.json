@@ -27263,7 +27263,7 @@
   "edge": false,
   "trail_stop": 1.314807,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "USDJPY-1h-1793869200000",
@@ -27527,9 +27527,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 4119.297,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 4124.477,
+  "tp1_hit": true,
+  "bars_open": 4
  },
  {
   "id": "USDJPY-5m-1793874600000",
@@ -27616,7 +27616,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "AB=CD (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.04555856278891213,
@@ -27667,6 +27667,9 @@
   "edge": false,
   "trail_stop": 158.35,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-05T11:56+01:00"
  }
 ]
