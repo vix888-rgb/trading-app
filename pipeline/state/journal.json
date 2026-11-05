@@ -25920,7 +25920,7 @@
   "edge": false,
   "trail_stop": 1.3087,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "XRPUSD-1h-1793851200000",
@@ -26588,7 +26588,7 @@
   "edge": false,
   "trail_stop": 4118.703,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "XAUUSD-5m-1793858700000",
@@ -26672,7 +26672,7 @@
   "strategies": [
    "MTF top-down pullback"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 6.340758448193455,
@@ -26720,7 +26720,10 @@
   "edge": false,
   "trail_stop": 4115.076,
   "tp1_hit": false,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 0.05,
+  "exit": "time exit",
+  "closed_at": "2026-11-05T11:16+01:00"
  },
  {
   "id": "SOLUSD-5m-1793858700000",
@@ -27260,7 +27263,7 @@
   "edge": false,
   "trail_stop": 1.314807,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "USDJPY-1h-1793869200000",
@@ -27390,6 +27393,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 158.016,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
