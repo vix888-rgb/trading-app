@@ -28098,7 +28098,7 @@
   "edge": false,
   "trail_stop": 158.331,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "SOLUSD-15m-1793884500000",
@@ -28230,7 +28230,7 @@
   "edge": false,
   "trail_stop": 95.9726,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XAUUSD-5m-1793886600000",
@@ -28362,7 +28362,7 @@
   "edge": false,
   "trail_stop": 4121.213,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-15m-1793886300000",
@@ -28489,6 +28489,141 @@
     "brk": 0,
     "sqz": "on",
     "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 4114.858,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "USDJPY-5m-1793887800000",
+  "logged": "2026-11-05T15:16+01:00",
+  "bar_t": 1793887800000,
+  "bar_time": "Thu 05 Nov 15:10",
+  "sym": "USDJPY",
+  "tf": "5m",
+  "side": "long",
+  "score": 27,
+  "entry": 158.476,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 158.394,
+  "tp": [
+   158.558,
+   158.64,
+   158.722
+  ],
+  "inv": 158.381,
+  "votes": [
+   1,
+   -1,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   -1,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   1,
+   1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.38,
+   0.15,
+   0.33,
+   0.0,
+   0.23,
+   0.38,
+   0.3,
+   0.0,
+   0.16,
+   0.61,
+   0.2,
+   1.11,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.19,
+   0.0
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0545940907686834,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 51,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 158.32000732,
+    "hi": 158.50300598,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 158.25278166,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 158.50300598,
+    "dl": 158.34300232,
+    "brk": 0,
+    "sqz": "on",
+    "mom": 1,
     "sess": true,
     "gate": false,
     "sgate": false
