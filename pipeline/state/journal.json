@@ -30362,7 +30362,7 @@
   "strategies": [
    "Turtle 20-bar breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.3469204830359138,
@@ -30410,7 +30410,10 @@
   "edge": false,
   "trail_stop": 90.13,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 18,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-05T22:37+01:00"
  },
  {
   "id": "XRPUSD-5m-1793908200000",
@@ -30543,7 +30546,7 @@
   "edge": false,
   "trail_stop": 1.2344262148674765,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "ETHUSD-5m-1793908800000",
@@ -30674,9 +30677,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 2255.267361859661,
+  "trail_stop": 2246.917361859661,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "BTCUSD-5m-1793909400000",
@@ -30941,7 +30944,7 @@
   "edge": false,
   "trail_stop": 76672.248,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "SOLUSD-15m-1793911500000",
@@ -31071,7 +31074,7 @@
   "edge": false,
   "trail_stop": 91.00418,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "BTCUSD-5m-1793913000000",
@@ -31156,7 +31159,7 @@
    "Squeeze momentum breakout",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 181.5205976743848,
@@ -31202,8 +31205,11 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 76331.741,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 76059.46,
+  "tp1_hit": true,
+  "bars_open": 2,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-05T22:37+01:00"
  }
 ]
