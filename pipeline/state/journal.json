@@ -28047,7 +28047,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.07575075676677193,
@@ -28098,7 +28098,10 @@
   "edge": false,
   "trail_stop": 158.331,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 5,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-05T15:46+01:00"
  },
  {
   "id": "SOLUSD-15m-1793884500000",
@@ -28228,9 +28231,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 95.9726,
-  "tp1_hit": false,
-  "bars_open": 4
+  "trail_stop": 95.43,
+  "tp1_hit": true,
+  "bars_open": 5
  },
  {
   "id": "XAUUSD-5m-1793886600000",
@@ -28450,7 +28453,7 @@
    "Squeeze momentum breakout",
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 7.604999277470525,
@@ -28501,7 +28504,10 @@
   "edge": false,
   "trail_stop": 4114.858,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-05T15:46+01:00"
  },
  {
   "id": "USDJPY-5m-1793887800000",
@@ -28725,7 +28731,7 @@
    "Liquidity Entry Zones",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.262455977101412,
@@ -28770,6 +28776,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 4125.796,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-05T15:46+01:00"
  }
 ]
