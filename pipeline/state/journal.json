@@ -25920,7 +25920,7 @@
   "edge": false,
   "trail_stop": 1.3087,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "XRPUSD-1h-1793851200000",
@@ -26588,7 +26588,7 @@
   "edge": false,
   "trail_stop": 4118.703,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "XAUUSD-5m-1793858700000",
@@ -27263,7 +27263,7 @@
   "edge": false,
   "trail_stop": 1.314807,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "USDJPY-1h-1793869200000",
@@ -27526,7 +27526,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 4119.297,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "USDJPY-5m-1793874600000",
@@ -27661,6 +27664,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 158.35,
+  "tp1_hit": true,
+  "bars_open": 2
  }
 ]
