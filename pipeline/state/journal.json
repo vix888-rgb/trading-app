@@ -23619,7 +23619,7 @@
   "edge": false,
   "trail_stop": 2381.674,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "BTCUSD-5m-1793835300000",
@@ -24248,7 +24248,7 @@
    0.02
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0014043635787423896,
@@ -24296,7 +24296,10 @@
   "edge": false,
   "trail_stop": 1.347709,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 7,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-05T09:05+01:00"
  },
  {
   "id": "XAUUSD-1h-1793836800000",
@@ -24430,7 +24433,7 @@
   "edge": true,
   "trail_stop": 4092.213,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "ETHUSD-5m-1793840100000",
@@ -25917,7 +25920,7 @@
   "edge": false,
   "trail_stop": 1.301782,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "XRPUSD-1h-1793851200000",
@@ -26050,7 +26053,7 @@
   "edge": false,
   "trail_stop": 1.292038,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "SOLUSD-5m-1793855100000",
@@ -26585,7 +26588,7 @@
   "edge": false,
   "trail_stop": 4103.575,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "XAUUSD-5m-1793858700000",
@@ -26717,7 +26720,7 @@
   "edge": false,
   "trail_stop": 4115.076,
   "tp1_hit": false,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "SOLUSD-5m-1793858700000",
@@ -26982,7 +26985,7 @@
   "edge": false,
   "trail_stop": 1.3068,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "GBPUSD-5m-1793861100000",
