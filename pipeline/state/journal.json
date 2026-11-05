@@ -23571,7 +23571,7 @@
   "strategies": [
    "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 26.21067224846213,
@@ -23619,7 +23619,10 @@
   "edge": false,
   "trail_stop": 2381.674,
   "tp1_hit": false,
-  "bars_open": 17
+  "bars_open": 17,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-05T16:06+01:00"
  },
  {
   "id": "BTCUSD-5m-1793835300000",
@@ -24433,7 +24436,7 @@
   "edge": true,
   "trail_stop": 4092.213,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "ETHUSD-5m-1793840100000",
@@ -27360,7 +27363,7 @@
    "MTF top-down pullback",
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.2036206852050133,
@@ -27408,7 +27411,10 @@
   "edge": false,
   "trail_stop": 158.016,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-05T16:06+01:00"
  },
  {
   "id": "XAUUSD-5m-1793874600000",
@@ -28231,9 +28237,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 95.43,
+  "trail_stop": 94.06693186984391,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "XAUUSD-5m-1793886600000",
@@ -28865,7 +28871,7 @@
   "strategies": [
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004888159081823388,
@@ -28910,6 +28916,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.346231,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-05T16:06+01:00"
  }
 ]
