@@ -23343,7 +23343,7 @@
   "edge": false,
   "trail_stop": 1.346765,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "ETHUSD-15m-1793823300000",
@@ -23475,7 +23475,7 @@
   "edge": false,
   "trail_stop": 2417.4,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "ETHUSD-1h-1793822400000",
@@ -24011,9 +24011,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 4085.225486501526,
+  "trail_stop": 4100.343916501526,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "XAUUSD-15m-1793837700000",
@@ -24146,9 +24146,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 4078.746,
+  "trail_stop": 4085.7474493297955,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "GBPUSD-1h-1793833200000",
@@ -24496,7 +24496,7 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.19695864673572,
@@ -24544,6 +24544,9 @@
   "edge": false,
   "trail_stop": 2414.925,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-05T02:24+01:00"
  }
 ]
