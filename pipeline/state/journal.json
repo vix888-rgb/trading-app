@@ -2840,7 +2840,7 @@
   "fill_bar_t": 1793577600000,
   "trail_stop": 1.12796,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "SOLUSD-15m-1793579400000",
@@ -23736,7 +23736,7 @@
   "edge": false,
   "trail_stop": 80447.295,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1793835300000",
@@ -23820,7 +23820,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.21704786111055618,
@@ -23868,6 +23868,9 @@
   "edge": false,
   "trail_stop": 95.44443,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-05T01:14+01:00"
  }
 ]
