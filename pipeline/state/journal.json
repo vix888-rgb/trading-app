@@ -33107,7 +33107,7 @@
   "edge": false,
   "trail_stop": 1.2053648970419077,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 43
  },
  {
   "id": "XRPUSD-5m-1793935800000",
@@ -34880,7 +34880,7 @@
   "edge": false,
   "trail_stop": 157.916,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "GBPUSD-5m-1793953200000",
@@ -35818,7 +35818,7 @@
   "edge": false,
   "trail_stop": 2252.462,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "BTCUSD-15m-1793962800000",
@@ -36086,7 +36086,7 @@
   "edge": false,
   "trail_stop": 0.81819,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "GBPUSD-5m-1793968800000",
@@ -36219,8 +36219,274 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.339459,
+  "trail_stop": 1.3393344934127833,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
+ },
+ {
+  "id": "BTCUSD-15m-1793970000000",
+  "logged": "2026-11-06T14:18+01:00",
+  "bar_t": 1793970000000,
+  "bar_time": "Fri 06 Nov 14:00",
+  "sym": "BTCUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -32,
+  "entry": 75906.01,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 76207.454,
+  "tp": [
+   75604.566,
+   75303.122,
+   75001.679
+  ],
+  "inv": 76378.0,
+  "votes": [
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   1,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.98,
+   0.97,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.0,
+   0.17,
+   0.0,
+   0.42,
+   0.28,
+   0.0,
+   0.16,
+   0.0,
+   0.34,
+   2.0,
+   0.0,
+   0.39,
+   0.0,
+   0.74,
+   0.0,
+   0.0,
+   0.0,
+   0.21
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "ICT/SMC sweep + CHoCH"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 200.9625062082006,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 28,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 75882.0,
+    "hi": 76378.0,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "Average Hourly Earnings m/m",
+    "at": "2026-11-06T08:30:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 77359.63976377,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 76378.0,
+    "dl": 75483.76,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
+ },
+ {
+  "id": "EURUSD-5m-1793970600000",
+  "logged": "2026-11-06T14:18+01:00",
+  "bar_t": 1793970600000,
+  "bar_time": "Fri 06 Nov 14:10",
+  "sym": "EURUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -39,
+  "entry": 1.116695,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.117131,
+  "tp": [
+   1.116258,
+   1.115821,
+   1.115384
+  ],
+  "inv": 1.117818,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.15,
+   0.07,
+   1.96,
+   0.13,
+   0.0,
+   0.46,
+   0.06,
+   0.38,
+   0.15,
+   0.85,
+   1.64,
+   0.3,
+   0.38,
+   1.79,
+   0.0,
+   0.2,
+   0.73,
+   0.2,
+   0.3,
+   0.0,
+   0.0,
+   0.0,
+   1.37,
+   0.0,
+   0.0,
+   1.74,
+   0.0
+  ],
+  "strategies": [
+   "Keltner volatility breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0002912599529414475,
+  "filters": {
+   "carry": -1.38,
+   "carryDir": -1,
+   "vol": true,
+   "atrPct": 77,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "Average Hourly Earnings m/m",
+    "at": "2026-11-06T08:30:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.11965897,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.11819303,
+    "dl": 1.11669457,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
