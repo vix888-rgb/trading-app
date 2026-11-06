@@ -36636,7 +36636,7 @@
   "edge": false,
   "trail_stop": 1.1871,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "USDCHF-5m-1793972400000",
@@ -36770,9 +36770,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.819458,
-  "tp1_hit": false,
-  "bars_open": 6
+  "trail_stop": 0.82028,
+  "tp1_hit": true,
+  "bars_open": 8
  },
  {
   "id": "BTCUSD-5m-1793973600000",
@@ -36905,7 +36905,7 @@
   "edge": false,
   "trail_stop": 75929.629,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "USDJPY-5m-1793974200000",
@@ -37036,6 +37036,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 158.271,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
