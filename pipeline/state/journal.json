@@ -37190,7 +37190,7 @@
   "edge": false,
   "trail_stop": 1.115947,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "USDCHF-5m-1793979600000",
@@ -37320,7 +37320,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.819492,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-5m-1793979600000",
@@ -37447,6 +37450,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.337572,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
