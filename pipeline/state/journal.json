@@ -38130,7 +38130,7 @@
   "edge": false,
   "trail_stop": 2233.77,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "BTCUSD-5m-1793983200000",
@@ -38529,7 +38529,7 @@
   "edge": false,
   "trail_stop": 1.1939,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "SOLUSD-5m-1793986200000",
@@ -38659,7 +38659,7 @@
   "edge": false,
   "trail_stop": 90.25,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "BTCUSD-5m-1793986800000",
@@ -38791,7 +38791,7 @@
   "edge": false,
   "trail_stop": 75936.391,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "BTCUSD-15m-1793986200000",
@@ -38921,7 +38921,7 @@
   "edge": false,
   "trail_stop": 76179.922,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-15m-1793986200000",
@@ -39053,7 +39053,7 @@
   "edge": false,
   "trail_stop": 2240.302,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-15m-1793986200000",
@@ -39185,7 +39185,7 @@
   "edge": false,
   "trail_stop": 90.73989,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-5m-1793986800000",
@@ -39317,6 +39317,136 @@
   "edge": false,
   "trail_stop": 1.336362,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
+ },
+ {
+  "id": "USDJPY-15m-1793988000000",
+  "logged": "2026-11-06T19:19+01:00",
+  "bar_t": 1793988000000,
+  "bar_time": "Fri 06 Nov 19:00",
+  "sym": "USDJPY",
+  "tf": "15m",
+  "side": "long",
+  "score": 28,
+  "entry": 158.258,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 158.062,
+  "tp": [
+   158.454,
+   158.651,
+   158.847
+  ],
+  "inv": 157.78,
+  "votes": [
+   0,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.07,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.38,
+   0.15,
+   0.0,
+   0.0,
+   0.0,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.77,
+   0.43,
+   0.69,
+   0.0,
+   0.0,
+   0.1,
+   0.39,
+   0.0,
+   0.0,
+   0.8,
+   0.36
+  ],
+  "strategies": [
+   "Wyckoff spring / upthrust",
+   "Liquidity Entry Zones"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.130884091001866,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 74,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 158.09275758,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 158.65299988,
+    "dl": 157.99299622,
+    "brk": 0,
+    "sqz": "on",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
