@@ -39735,7 +39735,7 @@
   "edge": false,
   "trail_stop": 76030.218,
   "tp1_hit": false,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "SOLUSD-5m-1793991000000",
@@ -40531,7 +40531,7 @@
   "edge": false,
   "trail_stop": 90.33876,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "XRPUSD-5m-1794000600000",
@@ -40613,7 +40613,7 @@
    0.2
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.003037398064975765,
@@ -40661,6 +40661,9 @@
   "edge": false,
   "trail_stop": 1.178956,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-06T22:59+01:00"
  }
 ]
