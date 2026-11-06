@@ -34883,7 +34883,7 @@
   "edge": false,
   "trail_stop": 158.10256040884303,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "GBPUSD-5m-1793953200000",
@@ -36731,7 +36731,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0005482943978106672,
@@ -36781,7 +36781,10 @@
   "edge": false,
   "trail_stop": 0.82028,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 16,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-06T16:19+01:00"
  },
  {
   "id": "BTCUSD-5m-1793973600000",

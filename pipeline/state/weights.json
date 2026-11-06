@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T16:09+01:00",
+ "updated": "2026-11-06T16:19+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13175,31 +13175,31 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 258,
+    "n": 259,
     "hit": 40,
-    "avgR": 0.142,
+    "avgR": 0.141,
     "pf": 1.31
    },
    "Stochastic (14/3/3)": {
-    "n": 258,
+    "n": 259,
     "hit": 32,
     "avgR": 0.135,
     "pf": 1.3
    },
    "ADX trend strength (14)": {
-    "n": 169,
-    "hit": 33,
+    "n": 170,
+    "hit": 32,
     "avgR": 0.002,
     "pf": 1.0
    },
    "Ichimoku cloud": {
-    "n": 221,
+    "n": 222,
     "hit": 25,
-    "avgR": 0.071,
+    "avgR": 0.07,
     "pf": 1.14
    },
    "Supertrend (10/3)": {
-    "n": 258,
+    "n": 259,
     "hit": 32,
     "avgR": 0.138,
     "pf": 1.31
@@ -13217,9 +13217,9 @@
     "pf": 0.83
    },
    "Candlestick patterns": {
-    "n": 125,
-    "hit": 26,
-    "avgR": -0.107,
+    "n": 126,
+    "hit": 25,
+    "avgR": -0.106,
     "pf": 0.82
    },
    "RSI divergence": {
@@ -13229,9 +13229,9 @@
     "pf": 0.41
    },
    "Multi-timeframe confirmation": {
-    "n": 189,
+    "n": 190,
     "hit": 22,
-    "avgR": -0.047,
+    "avgR": -0.046,
     "pf": 0.91
    },
    "News sentiment": {
@@ -13241,7 +13241,7 @@
     "pf": 0.82
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 258,
+    "n": 259,
     "hit": 32,
     "avgR": 0.078,
     "pf": 1.16
@@ -13253,75 +13253,75 @@
     "pf": 1.36
    },
    "Fair value gaps": {
-    "n": 205,
+    "n": 206,
     "hit": 27,
-    "avgR": -0.036,
+    "avgR": -0.035,
     "pf": 0.93
    },
    "Liquidity sweeps": {
-    "n": 93,
+    "n": 94,
     "hit": 31,
     "avgR": -0.008,
     "pf": 0.98
    },
    "Volume profile / POC": {
-    "n": 258,
+    "n": 259,
     "hit": 35,
     "avgR": 0.098,
     "pf": 1.21
    },
    "Anchored VWAP": {
-    "n": 216,
+    "n": 217,
     "hit": 33,
     "avgR": 0.014,
     "pf": 1.03
    },
    "Heikin Ashi trend": {
-    "n": 258,
+    "n": 259,
     "hit": 27,
     "avgR": 0.039,
     "pf": 1.08
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 258,
+    "n": 259,
     "hit": 36,
     "avgR": 0.176,
     "pf": 1.41
    },
    "Hull MA (55)": {
-    "n": 258,
+    "n": 259,
     "hit": 35,
     "avgR": 0.098,
     "pf": 1.21
    },
    "Daily pivot points": {
-    "n": 258,
+    "n": 259,
     "hit": 24,
     "avgR": 0.018,
     "pf": 1.03
    },
    "EMA trend (20/50/200)": {
-    "n": 154,
+    "n": 155,
     "hit": 24,
-    "avgR": 0.13,
+    "avgR": 0.129,
     "pf": 1.29
    },
    "RSI (14)": {
-    "n": 176,
+    "n": 177,
     "hit": 33,
-    "avgR": 0.046,
+    "avgR": 0.045,
     "pf": 1.09
    },
    "Bollinger Bands (20/2)": {
-    "n": 102,
+    "n": 103,
     "hit": 26,
-    "avgR": -0.295,
+    "avgR": -0.292,
     "pf": 0.62
    },
    "Williams %R / CCI": {
-    "n": 104,
-    "hit": 37,
-    "avgR": -0.21,
+    "n": 105,
+    "hit": 36,
+    "avgR": -0.208,
     "pf": 0.7
    },
    "Fibonacci confluence": {
@@ -13337,9 +13337,9 @@
     "pf": 0.76
    },
    "Volatility (ATR 14)": {
-    "n": 31,
+    "n": 32,
     "hit": 16,
-    "avgR": 0.132,
+    "avgR": 0.128,
     "pf": 1.22
    }
   },
@@ -13399,17 +13399,17 @@
     "pf": 0.53
    },
    "USDCHF": {
-    "n": 2,
-    "hit": 50,
-    "avgR": 0.785,
+    "n": 3,
+    "hit": 33,
+    "avgR": 0.523,
     "pf": 2.57
    }
   },
   "strat": {
    "Turtle 20-bar breakout": {
-    "n": 71,
+    "n": 72,
     "hit": 25,
-    "avgR": 0.553,
+    "avgR": 0.545,
     "pf": 2.19
    },
    "Wyckoff spring / upthrust": {
@@ -13437,9 +13437,9 @@
     "pf": 0.01
    },
    "Keltner volatility breakout": {
-    "n": 36,
-    "hit": 33,
-    "avgR": 0.766,
+    "n": 37,
+    "hit": 32,
+    "avgR": 0.745,
     "pf": 2.84
    },
    "ICT/SMC sweep + CHoCH": {
@@ -13479,9 +13479,9 @@
     "pf": 0.0
    },
    "Donchian-20 breakout + EMA200 + HTF (round 4)": {
-    "n": 36,
-    "hit": 33,
-    "avgR": 0.768,
+    "n": 37,
+    "hit": 32,
+    "avgR": 0.747,
     "pf": 2.97
    },
    "TTM squeeze fire + EMA200 (round 4)": {
@@ -13504,12 +13504,12 @@
    }
   },
   "all": {
-   "n": 258,
+   "n": 259,
    "hit": 22,
    "avgR": 0.04,
    "pf": 1.08
   },
-  "open": 11,
+  "open": 10,
   "total": 295
  },
  "rates": {
