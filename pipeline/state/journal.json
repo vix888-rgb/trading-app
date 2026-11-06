@@ -33371,7 +33371,7 @@
   "edge": false,
   "trail_stop": 1.2026241516451215,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "BTCUSD-5m-1793941200000",
@@ -33637,7 +33637,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 75662.592,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-5m-1793945400000",
@@ -33722,7 +33725,7 @@
    "Trend-follow + ADX filter",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.2190846271132914,
@@ -33767,6 +33770,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 89.50863,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-06T07:27+01:00"
  }
 ]
