@@ -37190,7 +37190,7 @@
   "edge": false,
   "trail_stop": 1.115947,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "USDCHF-5m-1793979600000",
@@ -37591,7 +37591,7 @@
   "edge": false,
   "trail_stop": 158.04,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "BTCUSD-5m-1793981400000",
@@ -38124,7 +38124,7 @@
   "edge": false,
   "trail_stop": 2246.26,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "BTCUSD-5m-1793983200000",
@@ -38340,7 +38340,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004212667054032265,
@@ -38382,6 +38382,138 @@
     "brk": 0,
     "sqz": "off",
     "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.33728,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-06T18:19+01:00"
+ },
+ {
+  "id": "XRPUSD-5m-1793985000000",
+  "logged": "2026-11-06T18:19+01:00",
+  "bar_t": 1793985000000,
+  "bar_time": "Fri 06 Nov 18:10",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -37,
+  "entry": 1.1939,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.200676,
+  "tp": [
+   1.187124,
+   1.180348,
+   1.173572
+  ],
+  "inv": 1.1994,
+  "votes": [
+   0,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.09,
+   0.0,
+   1.63,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.33,
+   0.0,
+   0.59,
+   1.53,
+   0.94,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   1.03,
+   0.2,
+   0.17,
+   0.46,
+   0.57,
+   0.0,
+   0.45,
+   0.0,
+   0.0,
+   0.0,
+   0.2
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0045172358742647505,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 85,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.20170406,
+    "side200": -1,
+    "stack": 0,
+    "st": 1,
+    "dh": 1.1997,
+    "dl": 1.1803,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
     "sess": true,
     "gate": false,
     "sgate": false
