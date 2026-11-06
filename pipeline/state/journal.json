@@ -33107,7 +33107,7 @@
   "edge": false,
   "trail_stop": 1.2053648970419077,
   "tp1_hit": true,
-  "bars_open": 43
+  "bars_open": 44
  },
  {
   "id": "XRPUSD-5m-1793935800000",
@@ -34880,7 +34880,7 @@
   "edge": false,
   "trail_stop": 157.916,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "GBPUSD-5m-1793953200000",
@@ -35818,7 +35818,7 @@
   "edge": false,
   "trail_stop": 2252.462,
   "tp1_hit": false,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "BTCUSD-15m-1793962800000",
@@ -36084,9 +36084,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.81819,
+  "trail_stop": 0.8196441934310073,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 26
  },
  {
   "id": "GBPUSD-5m-1793968800000",
@@ -36362,7 +36362,7 @@
   "edge": false,
   "trail_stop": 76207.454,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "EURUSD-5m-1793970600000",
@@ -36499,5 +36499,134 @@
   "exit": "stop",
   "tp1_hit": false,
   "closed_at": "2026-11-06T14:28+01:00"
+ },
+ {
+  "id": "XRPUSD-5m-1793971800000",
+  "logged": "2026-11-06T14:38+01:00",
+  "bar_t": 1793971800000,
+  "bar_time": "Fri 06 Nov 14:30",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -36,
+  "entry": 1.1871,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.192374,
+  "tp": [
+   1.181826,
+   1.176552,
+   1.171277
+  ],
+  "inv": 1.2029,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   -1,
+   1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.09,
+   0.0,
+   1.63,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.33,
+   0.0,
+   0.59,
+   1.53,
+   0.94,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   1.03,
+   0.2,
+   0.17,
+   0.46,
+   0.57,
+   0.0,
+   0.45,
+   0.0,
+   0.0,
+   0.0,
+   0.2
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.003516160128749451,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 43,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "Average Hourly Earnings m/m",
+    "at": "2026-11-06T08:30:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.20925503,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.2029,
+    "dl": 1.1844,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
