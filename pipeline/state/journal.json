@@ -37190,7 +37190,7 @@
   "edge": false,
   "trail_stop": 1.115947,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "USDCHF-5m-1793979600000",
@@ -37408,7 +37408,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004963975579781702,
@@ -37456,7 +37456,10 @@
   "edge": false,
   "trail_stop": 1.336827,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 12,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-06T17:59+01:00"
  },
  {
   "id": "USDJPY-15m-1793979900000",
@@ -38121,7 +38124,7 @@
   "edge": false,
   "trail_stop": 2246.26,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-5m-1793983200000",
@@ -38203,7 +38206,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 224.21300196315738,
@@ -38248,6 +38251,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 76000.33,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-06T17:59+01:00"
  }
 ]
