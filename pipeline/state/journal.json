@@ -32562,7 +32562,7 @@
   "edge": false,
   "trail_stop": 76069.37,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "SOLUSD-5m-1793928600000",
@@ -32833,7 +32833,7 @@
   "edge": false,
   "trail_stop": 90.7017,
   "tp1_hit": false,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "BTCUSD-5m-1793932200000",
@@ -33101,7 +33101,7 @@
   "edge": false,
   "trail_stop": 1.2171648970419078,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "XRPUSD-5m-1793935800000",
@@ -33371,7 +33371,7 @@
   "edge": false,
   "trail_stop": 1.2026241516451215,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "BTCUSD-5m-1793941200000",
@@ -33592,7 +33592,7 @@
    "TSMOM multi-lookback trend",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 126.52152096477747,
@@ -33640,7 +33640,10 @@
   "edge": false,
   "trail_stop": 75662.592,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-06T07:37+01:00"
  },
  {
   "id": "SOLUSD-5m-1793945400000",
