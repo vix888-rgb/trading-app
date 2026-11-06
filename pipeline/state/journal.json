@@ -33107,7 +33107,7 @@
   "edge": false,
   "trail_stop": 1.2053648970419077,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 47
  },
  {
   "id": "XRPUSD-5m-1793935800000",
@@ -34880,7 +34880,7 @@
   "edge": false,
   "trail_stop": 158.10256040884303,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "GBPUSD-5m-1793953200000",
@@ -35816,9 +35816,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 2252.462,
-  "tp1_hit": false,
-  "bars_open": 16
+  "trail_stop": 2239.1,
+  "tp1_hit": true,
+  "bars_open": 17
  },
  {
   "id": "BTCUSD-15m-1793962800000",
@@ -36634,9 +36634,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.192374,
-  "tp1_hit": false,
-  "bars_open": 6
+  "trail_stop": 1.1871,
+  "tp1_hit": true,
+  "bars_open": 8
  },
  {
   "id": "USDCHF-5m-1793972400000",
@@ -36772,7 +36772,7 @@
   "edge": false,
   "trail_stop": 0.819458,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "BTCUSD-5m-1793973600000",
@@ -36895,6 +36895,140 @@
     "dl": 75600.0,
     "brk": 0,
     "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 75929.629,
+  "tp1_hit": false,
+  "bars_open": 2
+ },
+ {
+  "id": "USDJPY-5m-1793974200000",
+  "logged": "2026-11-06T15:19+01:00",
+  "bar_t": 1793974200000,
+  "bar_time": "Fri 06 Nov 15:10",
+  "sym": "USDJPY",
+  "tf": "5m",
+  "side": "long",
+  "score": 33,
+  "entry": 158.4,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 158.271,
+  "tp": [
+   158.529,
+   158.658,
+   158.788
+  ],
+  "inv": 158.27,
+  "votes": [
+   1,
+   -1,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   0,
+   0,
+   1,
+   -1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.38,
+   0.15,
+   0.33,
+   0.0,
+   0.23,
+   0.38,
+   0.3,
+   0.0,
+   0.16,
+   0.61,
+   0.2,
+   1.11,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.19,
+   0.0
+  ],
+  "strategies": [
+   "Trend-follow + ADX filter",
+   "TSMOM multi-lookback trend",
+   "Liquidity Entry Zones"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.08616632150611034,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 75,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 158.08234211,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 158.65299988,
+    "dl": 158.25999451,
+    "brk": 0,
+    "sqz": "on",
     "mom": -1,
     "sess": true,
     "gate": false,
