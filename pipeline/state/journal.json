@@ -36086,7 +36086,7 @@
   "edge": false,
   "trail_stop": 0.81819,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "GBPUSD-5m-1793968800000",
@@ -36173,7 +36173,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0002690865432745894,
@@ -36221,7 +36221,10 @@
   "edge": false,
   "trail_stop": 1.3393344934127833,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": 0.31,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-06T14:28+01:00"
  },
  {
   "id": "BTCUSD-15m-1793970000000",
@@ -36356,7 +36359,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 76207.454,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "EURUSD-5m-1793970600000",
@@ -36440,7 +36446,7 @@
   "strategies": [
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0002912599529414475,
@@ -36487,6 +36493,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.117131,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-06T14:28+01:00"
  }
 ]
