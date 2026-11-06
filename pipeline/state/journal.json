@@ -32788,7 +32788,7 @@
    "Squeeze momentum breakout",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.5944640650002782,
@@ -32836,7 +32836,10 @@
   "edge": false,
   "trail_stop": 90.7017,
   "tp1_hit": false,
-  "bars_open": 43
+  "bars_open": 43,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-06T13:38+01:00"
  },
  {
   "id": "BTCUSD-5m-1793932200000",
@@ -33104,7 +33107,7 @@
   "edge": false,
   "trail_stop": 1.2053648970419077,
   "tp1_hit": true,
-  "bars_open": 39
+  "bars_open": 40
  },
  {
   "id": "XRPUSD-5m-1793935800000",
@@ -34877,7 +34880,7 @@
   "edge": false,
   "trail_stop": 157.916,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "GBPUSD-5m-1793953200000",
@@ -35275,7 +35278,7 @@
   "edge": false,
   "trail_stop": 1.118691238138956,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 46
  },
  {
   "id": "XAUUSD-5m-1793955600000",
@@ -35812,7 +35815,7 @@
   "edge": false,
   "trail_stop": 2252.462,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "BTCUSD-15m-1793962800000",
@@ -35897,7 +35900,7 @@
    "MTF top-down pullback",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 205.4128135741473,
@@ -35945,7 +35948,10 @@
   "edge": false,
   "trail_stop": 76307.499,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-06T13:38+01:00"
  },
  {
   "id": "USDCHF-5m-1793964000000",
@@ -36077,6 +36083,6 @@
   "edge": false,
   "trail_stop": 0.817625,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 14
  }
 ]
