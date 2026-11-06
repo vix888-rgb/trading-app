@@ -32296,7 +32296,7 @@
   "edge": false,
   "trail_stop": 92.17452,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "XRPUSD-1h-1793923200000",
@@ -32428,7 +32428,7 @@
   "edge": false,
   "trail_stop": 1.2195,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "BTCUSD-15m-1793927700000",
@@ -32836,7 +32836,7 @@
   "edge": false,
   "trail_stop": 90.7017,
   "tp1_hit": false,
-  "bars_open": 33
+  "bars_open": 34
  },
  {
   "id": "BTCUSD-5m-1793932200000",
@@ -33104,7 +33104,7 @@
   "edge": false,
   "trail_stop": 1.2053648970419077,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "XRPUSD-5m-1793935800000",
@@ -34877,7 +34877,7 @@
   "edge": false,
   "trail_stop": 157.916,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "GBPUSD-5m-1793953200000",
@@ -35007,7 +35007,7 @@
   "edge": false,
   "trail_stop": 1.340069,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "XRPUSD-5m-1793953800000",
@@ -35270,9 +35270,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.118815931055826,
+  "trail_stop": 1.118691238138956,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "XAUUSD-5m-1793955600000",
@@ -35541,6 +35541,265 @@
   "edge": false,
   "trail_stop": 2259.259,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
+ },
+ {
+  "id": "USDCHF-5m-1793959200000",
+  "logged": "2026-11-06T11:08+01:00",
+  "bar_t": 1793959200000,
+  "bar_time": "Fri 06 Nov 11:00",
+  "sym": "USDCHF",
+  "tf": "5m",
+  "side": "long",
+  "score": 68,
+  "entry": 0.8185,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.81782,
+  "tp": [
+   0.81918,
+   0.81986,
+   0.820539
+  ],
+  "inv": 0.81769,
+  "votes": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.04,
+   0.1,
+   0.18,
+   1.07,
+   0.0,
+   0.73,
+   0.65,
+   0.04,
+   0.38,
+   0.15,
+   0.67,
+   0.08,
+   0.0,
+   0.38,
+   0.0,
+   0.0,
+   0.48,
+   0.0,
+   0.54,
+   0.35,
+   0.0,
+   0.0,
+   0.32,
+   0.58,
+   0.02,
+   0.05,
+   0.38,
+   0.0
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0004532058106495031,
+  "filters": {
+   "carry": 3.92,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 52,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.81684259,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 0.81892002,
+    "dl": 0.81655002,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
+ },
+ {
+  "id": "ETHUSD-15m-1793958300000",
+  "logged": "2026-11-06T11:08+01:00",
+  "bar_t": 1793958300000,
+  "bar_time": "Fri 06 Nov 10:45",
+  "sym": "ETHUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -30,
+  "entry": 2239.1,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 2252.462,
+  "tp": [
+   2225.738,
+   2212.376,
+   2199.014
+  ],
+  "inv": 2250.03,
+  "votes": [
+   0,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   1,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   1,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   1.42,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.69,
+   0.0,
+   0.16,
+   0.38,
+   0.98,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.53,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.22,
+   0.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "ICT/SMC sweep + CHoCH",
+   "Squeeze momentum breakout",
+   "Liquidity Entry Zones"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 8.90809071680796,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 44,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 2299.50161802,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 2247.44,
+    "dl": 2213.47,
+    "brk": 0,
+    "sqz": "fired",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
