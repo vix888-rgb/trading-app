@@ -31759,7 +31759,7 @@
   "edge": false,
   "trail_stop": 2252.057,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "BTCUSD-5m-1793922600000",
@@ -32109,7 +32109,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.004146670448125094,
@@ -32157,6 +32157,9 @@
   "edge": false,
   "trail_stop": 1.22152,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-06T01:47+01:00"
  }
 ]
