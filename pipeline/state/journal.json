@@ -31756,7 +31756,7 @@
   "edge": false,
   "trail_stop": 2252.057,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "BTCUSD-5m-1793922600000",
@@ -32023,5 +32023,134 @@
   "exit": "stop",
   "tp1_hit": false,
   "closed_at": "2026-11-06T01:07+01:00"
+ },
+ {
+  "id": "XRPUSD-5m-1793924400000",
+  "logged": "2026-11-06T01:27+01:00",
+  "bar_t": 1793924400000,
+  "bar_time": "Fri 06 Nov 01:20",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -27,
+  "entry": 1.2153,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.22152,
+  "tp": [
+   1.20908,
+   1.20286,
+   1.19664
+  ],
+  "inv": 1.2273,
+  "votes": [
+   0,
+   1,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.09,
+   0.0,
+   1.63,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.33,
+   0.0,
+   0.59,
+   1.53,
+   0.94,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   1.03,
+   0.2,
+   0.17,
+   0.46,
+   0.57,
+   0.0,
+   0.45,
+   0.0,
+   0.0,
+   0.0,
+   0.2
+  ],
+  "strategies": [
+   "Trend-follow + ADX filter"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.004146670448125094,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 68,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.25497112,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.2217,
+    "dl": 1.2,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
