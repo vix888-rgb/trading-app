@@ -32296,7 +32296,7 @@
   "edge": false,
   "trail_stop": 92.17452,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "XRPUSD-1h-1793923200000",
@@ -32428,7 +32428,7 @@
   "edge": false,
   "trail_stop": 1.2195,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "BTCUSD-15m-1793927700000",
@@ -33107,7 +33107,7 @@
   "edge": false,
   "trail_stop": 1.2053648970419077,
   "tp1_hit": true,
-  "bars_open": 45
+  "bars_open": 46
  },
  {
   "id": "XRPUSD-5m-1793935800000",
@@ -34880,7 +34880,7 @@
   "edge": false,
   "trail_stop": 158.10256040884303,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "GBPUSD-5m-1793953200000",
@@ -35550,7 +35550,7 @@
   "edge": false,
   "trail_stop": 2259.259,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "USDCHF-5m-1793959200000",
@@ -35818,7 +35818,7 @@
   "edge": false,
   "trail_stop": 2252.462,
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "BTCUSD-15m-1793962800000",
@@ -36312,7 +36312,7 @@
    "Turtle 20-bar breakout",
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 200.9625062082006,
@@ -36365,7 +36365,10 @@
   "edge": false,
   "trail_stop": 75906.01,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-06T15:09+01:00"
  },
  {
   "id": "EURUSD-5m-1793970600000",
@@ -36633,7 +36636,7 @@
   "edge": false,
   "trail_stop": 1.192374,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "USDCHF-5m-1793972400000",
@@ -36769,6 +36772,136 @@
   "edge": false,
   "trail_stop": 0.819458,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "BTCUSD-5m-1793973600000",
+  "logged": "2026-11-06T15:09+01:00",
+  "bar_t": 1793973600000,
+  "bar_time": "Fri 06 Nov 15:00",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -37,
+  "entry": 75710.99,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 75929.629,
+  "tp": [
+   75492.351,
+   75273.713,
+   75055.074
+  ],
+  "inv": 76117.64,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   0,
+   1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "weights": [
+   0.0,
+   0.0,
+   0.0,
+   0.97,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.23,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.38,
+   0.0,
+   0.0,
+   0.16,
+   0.0,
+   0.2,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.39,
+   0.0,
+   0.0,
+   0.12,
+   0.0
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend",
+   "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 145.7591315258269,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 52,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 76228.97367186,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 76378.0,
+    "dl": 75600.0,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
