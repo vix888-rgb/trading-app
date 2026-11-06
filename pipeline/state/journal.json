@@ -527,7 +527,7 @@
   "status": "open",
   "fill_bar_t": 1793750400000,
   "tp1_hit": true,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "EURCHF-15m-1793394900000",
@@ -963,7 +963,7 @@
   "status": "open",
   "fill_bar_t": 1793750400000,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-5m-1793489700000",
@@ -2843,7 +2843,7 @@
   "fill_bar_t": 1793577600000,
   "trail_stop": 1.12796,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "SOLUSD-15m-1793579400000",
@@ -29060,9 +29060,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 92.05984,
-  "tp1_hit": false,
-  "bars_open": 7
+  "trail_stop": 90.22,
+  "tp1_hit": true,
+  "bars_open": 8
  },
  {
   "id": "XRPUSD-4h-1793880000000",
@@ -29193,9 +29193,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.282268,
-  "tp1_hit": false,
-  "bars_open": 1
+  "trail_stop": 1.2455,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-5m-1793897400000",
@@ -31083,7 +31083,7 @@
   "edge": false,
   "trail_stop": 90.04,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "BTCUSD-5m-1793913000000",
@@ -31756,7 +31756,7 @@
   "edge": false,
   "trail_stop": 2252.057,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-5m-1793922600000",
@@ -31840,7 +31840,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 206.41318769220257,
@@ -31885,7 +31885,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 76223.2,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-06T01:07+01:00"
  },
  {
   "id": "XRPUSD-5m-1793922600000",
@@ -31967,7 +31972,7 @@
    0.2
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.004376947403407536,
@@ -32012,6 +32017,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.213765,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-06T01:07+01:00"
  }
 ]
