@@ -32514,7 +32514,7 @@
    "ICT/SMC sweep + CHoCH",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 328.6492481665558,
@@ -32562,7 +32562,10 @@
   "edge": false,
   "trail_stop": 76069.37,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 30,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-06T10:18+01:00"
  },
  {
   "id": "SOLUSD-5m-1793928600000",
@@ -32833,7 +32836,7 @@
   "edge": false,
   "trail_stop": 90.7017,
   "tp1_hit": false,
-  "bars_open": 30
+  "bars_open": 31
  },
  {
   "id": "BTCUSD-5m-1793932200000",
@@ -33101,7 +33104,7 @@
   "edge": false,
   "trail_stop": 1.2053648970419077,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "XRPUSD-5m-1793935800000",
@@ -34551,7 +34554,7 @@
    "Wyckoff spring / upthrust",
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.209442447978,
@@ -34599,7 +34602,10 @@
   "edge": false,
   "trail_stop": 2238.614,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 14,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-06T10:18+01:00"
  },
  {
   "id": "BTCUSD-5m-1793952600000",
@@ -34871,7 +34877,7 @@
   "edge": false,
   "trail_stop": 157.916,
   "tp1_hit": true,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-5m-1793953200000",
@@ -35001,7 +35007,7 @@
   "edge": false,
   "trail_stop": 1.340069,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "XRPUSD-5m-1793953800000",
@@ -35266,7 +35272,7 @@
   "edge": false,
   "trail_stop": 1.118944,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "XAUUSD-5m-1793955600000",
@@ -35396,7 +35402,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 4072.709,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-1h-1793952000000",
@@ -35526,6 +35535,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2259.259,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
