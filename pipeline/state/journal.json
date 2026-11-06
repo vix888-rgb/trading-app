@@ -32562,7 +32562,7 @@
   "edge": false,
   "trail_stop": 76069.37,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 25
  },
  {
   "id": "SOLUSD-5m-1793928600000",
@@ -32833,7 +32833,7 @@
   "edge": false,
   "trail_stop": 90.7017,
   "tp1_hit": false,
-  "bars_open": 24
+  "bars_open": 25
  },
  {
   "id": "BTCUSD-5m-1793932200000",
@@ -33099,9 +33099,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.2086648970419078,
+  "trail_stop": 1.2053648970419077,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "XRPUSD-5m-1793935800000",
@@ -33371,7 +33371,7 @@
   "edge": false,
   "trail_stop": 1.1908241516451215,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 44
  },
  {
   "id": "BTCUSD-5m-1793941200000",
@@ -33912,7 +33912,7 @@
   "edge": false,
   "trail_stop": 1.1180097170502257,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "BTCUSD-5m-1793948400000",
@@ -33997,7 +33997,7 @@
    "TSMOM multi-lookback trend",
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 126.3522709257746,
@@ -34048,7 +34048,10 @@
   "edge": false,
   "trail_stop": 75622.508,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-06T08:47+01:00"
  },
  {
   "id": "GBPUSD-5m-1793948400000",
@@ -34270,7 +34273,7 @@
    "Turtle 20-bar breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003698932750914573,
@@ -34306,6 +34309,141 @@
     "st": -1,
     "dh": 1.34278655,
     "dl": 1.34023106,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.340175,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-06T08:47+01:00"
+ },
+ {
+  "id": "GBPUSD-5m-1793950800000",
+  "logged": "2026-11-06T08:47+01:00",
+  "bar_t": 1793950800000,
+  "bar_time": "Fri 06 Nov 08:40",
+  "sym": "GBPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -62,
+  "entry": 1.340105,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.340673,
+  "tp": [
+   1.339537,
+   1.338969,
+   1.338401
+  ],
+  "inv": 1.341094,
+  "votes": [
+   -1,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "weights": [
+   0.33,
+   1.0,
+   0.41,
+   1.45,
+   2.0,
+   2.0,
+   0.36,
+   0.0,
+   0.38,
+   0.15,
+   0.86,
+   2.0,
+   0.0,
+   0.47,
+   2.0,
+   0.0,
+   0.5,
+   0.0,
+   0.2,
+   1.18,
+   0.34,
+   0.64,
+   0.0,
+   1.39,
+   0.09,
+   0.11,
+   0.0,
+   0.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0003786642679339462,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 72,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.34448244,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.34278655,
+    "dl": 1.33960271,
     "brk": -1,
     "sqz": "off",
     "mom": -1,
