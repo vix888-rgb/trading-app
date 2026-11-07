@@ -43821,7 +43821,7 @@
   "edge": false,
   "trail_stop": 4065.752,
   "tp1_hit": false,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "SOLUSD-5m-1794063900000",
@@ -44322,7 +44322,7 @@
    "Turtle 20-bar breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 41.864178193593716,
@@ -44373,7 +44373,10 @@
   "edge": false,
   "trail_stop": 75820.806,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 18,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-07T18:41+01:00"
  },
  {
   "id": "ETHUSD-5m-1794066900000",
@@ -44509,7 +44512,7 @@
   "edge": false,
   "trail_stop": 2237.28,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "SOLUSD-5m-1794067500000",
@@ -44591,7 +44594,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.12692069388621144,
@@ -44639,7 +44642,10 @@
   "edge": false,
   "trail_stop": 89.74038,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 16,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-07T18:41+01:00"
  },
  {
   "id": "XRPUSD-5m-1794067500000",
@@ -44721,7 +44727,7 @@
    0.8
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.002283154810501209,
@@ -44769,6 +44775,9 @@
   "edge": false,
   "trail_stop": 1.162525,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 16,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-07T18:41+01:00"
  }
 ]
