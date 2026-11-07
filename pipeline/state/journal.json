@@ -46027,7 +46027,7 @@
   "edge": false,
   "trail_stop": 2234.94,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "SOLUSD-15m-1794087000000",
@@ -46162,6 +46162,138 @@
   "edge": false,
   "trail_stop": 89.47234,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
+ },
+ {
+  "id": "XAUUSD-5m-1794090300000",
+  "logged": "2026-11-07T23:32+01:00",
+  "bar_t": 1794090300000,
+  "bar_time": "Sat 07 Nov 23:25",
+  "sym": "XAUUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 47,
+  "entry": 4066.07,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 4065.737,
+  "tp": [
+   4066.403,
+   4066.736,
+   4067.069
+  ],
+  "inv": 4065.924,
+  "votes": [
+   1,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.36,
+   0.69,
+   0.08,
+   0.75,
+   0.0,
+   0.0,
+   0.14,
+   0.46,
+   0.28,
+   0.15,
+   0.0,
+   0.0,
+   0.21,
+   0.0,
+   0.16,
+   0.0,
+   0.26,
+   0.44,
+   0.0,
+   0.9,
+   0.55,
+   0.12,
+   0.0,
+   0.03,
+   0.65,
+   0.44,
+   0.12,
+   0.0
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.22216201075825098,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 75,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 4065.92363,
+    "hi": 4066.16738,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 4065.94586395,
+    "side200": 1,
+    "stack": 1,
+    "st": -1,
+    "dh": 4066.16738,
+    "dl": 4065.92349,
+    "brk": 0,
+    "sqz": "on",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
