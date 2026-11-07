@@ -41484,7 +41484,7 @@
   "edge": false,
   "trail_stop": 1.1765461758432922,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "XAUUSD-5m-1794043500000",
@@ -43635,7 +43635,7 @@
    0.8
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0018852592747784335,
@@ -43683,6 +43683,9 @@
   "edge": false,
   "trail_stop": 1.168128,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-07T15:21+01:00"
  }
 ]
