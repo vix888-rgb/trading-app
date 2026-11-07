@@ -45976,7 +45976,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.293453612222729,
@@ -46027,7 +46027,10 @@
   "edge": false,
   "trail_stop": 2234.94,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 3,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-07T23:52+01:00"
  },
  {
   "id": "SOLUSD-15m-1794087000000",
@@ -46162,7 +46165,7 @@
   "edge": false,
   "trail_stop": 89.47234,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-5m-1794090300000",
@@ -46297,6 +46300,136 @@
   "edge": false,
   "trail_stop": 4065.737,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "BTCUSD-15m-1794090600000",
+  "logged": "2026-11-07T23:52+01:00",
+  "bar_t": 1794090600000,
+  "bar_time": "Sat 07 Nov 23:30",
+  "sym": "BTCUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -33,
+  "entry": 75797.23,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 75895.693,
+  "tp": [
+   75698.767,
+   75600.304,
+   75501.84
+  ],
+  "inv": 75891.52,
+  "votes": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.62,
+   0.94,
+   0.99,
+   0.46,
+   0.1,
+   0.64,
+   0.86,
+   0.46,
+   0.65,
+   1.0,
+   0.0,
+   0.13,
+   0.0,
+   0.24,
+   1.01,
+   0.0,
+   0.43,
+   0.77,
+   0.44,
+   0.01,
+   0.55,
+   0.75,
+   0.0,
+   0.03,
+   1.08,
+   0.46,
+   0.0,
+   0.23
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 65.64216069440366,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 20,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 75571.08,
+    "hi": 75812.26,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 76270.22046575,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 75891.52,
+    "dl": 75571.08,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
