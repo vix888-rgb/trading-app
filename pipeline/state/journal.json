@@ -40278,7 +40278,7 @@
   "edge": false,
   "trail_stop": 1.1786676588912177,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 45
  },
  {
   "id": "SOLUSD-4h-1793980800000",
@@ -41165,7 +41165,7 @@
    0.2
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.002739290706808569,
@@ -41213,6 +41213,9 @@
   "edge": false,
   "trail_stop": 1.164709,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-07T07:20+01:00"
  }
 ]
