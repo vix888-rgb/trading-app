@@ -211,7 +211,9 @@ def main3():
             if names is None: names=[g["agent"] for g in allag]; catl=[cats[x] for x in names]
             rg,rk,adxv,er=regime(df)
             rec=recs.get((key,tf)) or []
-            frozen=(not REFIT) and f"{key}|{tf}" in BC and len(BC[f"{key}|{tf}"].get("weights",{}))==len(names)
+            # Weekly tune-up (7 Nov 2026): a refit that gets too few samples (e.g. spot gold 1d has ~209 bars < window 300) keeps the stored
+            # weights for that combo instead of dropping to the flat low-sample weight.
+            frozen=(not REFIT or len(rec)<40) and f"{key}|{tf}" in BC and len(BC[f"{key}|{tf}"].get("weights",{}))==len(names)
             st_all=[BC[f"{key}|{tf}"]["stats"].get(nm_,{"n":0}) for nm_ in names] if frozen else fit(rec,len(names))
             # walk-forward OOS: fit on first part, evaluate consensus on rest
             cut=int(len(rec)*PRM["fit_frac"]); oo=BC[f"{key}|{tf}"].get("oos") if frozen else None
