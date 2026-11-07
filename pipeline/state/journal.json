@@ -41484,7 +41484,7 @@
   "edge": false,
   "trail_stop": 1.1702461758432923,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 41
  },
  {
   "id": "XAUUSD-5m-1794043500000",
@@ -43770,7 +43770,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.2149519346175532,
@@ -43821,7 +43821,10 @@
   "edge": false,
   "trail_stop": 4065.752,
   "tp1_hit": false,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": -0.05,
+  "exit": "time exit",
+  "closed_at": "2026-11-07T19:52+01:00"
  },
  {
   "id": "SOLUSD-5m-1794063900000",
@@ -44913,6 +44916,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 75860.981,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
