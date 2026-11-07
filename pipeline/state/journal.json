@@ -46165,7 +46165,7 @@
   "edge": false,
   "trail_stop": 89.47234,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "XAUUSD-5m-1794090300000",
@@ -46300,7 +46300,7 @@
   "edge": false,
   "trail_stop": 4065.737,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "BTCUSD-15m-1794090600000",
@@ -46433,7 +46433,7 @@
   "edge": false,
   "trail_stop": 75895.693,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XRPUSD-5m-1794092700000",
@@ -46517,7 +46517,7 @@
   "strategies": [
    "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.001697428134040231,
@@ -46565,6 +46565,9 @@
   "edge": false,
   "trail_stop": 1.161346,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-08T00:32+01:00"
  }
 ]
