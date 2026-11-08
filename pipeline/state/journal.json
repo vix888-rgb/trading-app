@@ -49185,7 +49185,7 @@
   "edge": false,
   "trail_stop": 1.1604,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "SOLUSD-5m-1794146100000",
@@ -49318,7 +49318,7 @@
   "edge": false,
   "trail_stop": 89.42999,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "XRPUSD-15m-1794145500000",
@@ -49459,6 +49459,147 @@
   "edge": false,
   "trail_stop": 1.164489,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
+ },
+ {
+  "id": "XAUUSD-15m-1794147300000",
+  "logged": "2026-11-08T15:34+01:00",
+  "bar_t": 1794147300000,
+  "bar_time": "Sun 08 Nov 15:15",
+  "sym": "XAUUSD",
+  "tf": "15m",
+  "side": "long",
+  "score": 55,
+  "entry": 4068.866,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 4068.087,
+  "tp": [
+   4069.644,
+   4070.422,
+   4071.201
+  ],
+  "inv": 4065.925,
+  "votes": [
+   1,
+   1,
+   -1,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   1
+  ],
+  "weights": [
+   0.36,
+   0.69,
+   0.08,
+   0.86,
+   0.29,
+   0.0,
+   0.14,
+   0.46,
+   0.28,
+   0.15,
+   0.78,
+   0.0,
+   0.0,
+   0.3,
+   0.01,
+   0.0,
+   0.26,
+   0.44,
+   0.0,
+   0.01,
+   0.55,
+   0.12,
+   0.24,
+   0.03,
+   0.65,
+   0.44,
+   0.15,
+   0.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Range mean reversion",
+   "Wyckoff spring / upthrust",
+   "Squeeze momentum breakout",
+   "TSMOM multi-lookback trend",
+   "Keltner volatility breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)",
+   "TTM squeeze fire + EMA200 (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.5189379987001717,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 48,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 4065.21522,
+    "hi": 4069.34158,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": true,
+    "blockLong": false,
+    "blockShort": true,
+    "dir": 1,
+    "alert": true,
+    "lo": 4065.92517,
+    "hi": 4066.16904
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 4065.40994919,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 4066.16904,
+    "dl": 4065.92516,
+    "brk": 1,
+    "sqz": "fired",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
