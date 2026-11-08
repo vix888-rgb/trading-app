@@ -46258,7 +46258,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.22216201075825098,
@@ -46309,7 +46309,10 @@
   "edge": false,
   "trail_stop": 4065.737,
   "tp1_hit": false,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": -0.34,
+  "exit": "time exit",
+  "closed_at": "2026-11-08T03:33+01:00"
  },
  {
   "id": "BTCUSD-15m-1794090600000",
@@ -46982,7 +46985,7 @@
   "edge": false,
   "trail_stop": 89.20413559215295,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "SOLUSD-15m-1794101400000",
@@ -47110,8 +47113,8 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 89.48493,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 89.2,
+  "tp1_hit": true,
+  "bars_open": 3
  }
 ]
