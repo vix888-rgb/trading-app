@@ -50155,9 +50155,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 4068.985,
+  "trail_stop": 4069.18718580559,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 42
  },
  {
   "id": "ETHUSD-5m-1794155700000",
@@ -51137,5 +51137,135 @@
   "trail_stop": 76027.113,
   "tp1_hit": false,
   "bars_open": 3
+ },
+ {
+  "id": "XRPUSD-5m-1794164700000",
+  "logged": "2026-11-08T20:15+01:00",
+  "bar_t": 1794164700000,
+  "bar_time": "Sun 08 Nov 20:05",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -65,
+  "entry": 1.1537,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.156902,
+  "tp": [
+   1.150498,
+   1.147296,
+   1.144094
+  ],
+  "inv": 1.1623,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.36,
+   0.96,
+   1.08,
+   0.47,
+   0.0,
+   1.0,
+   1.15,
+   1.46,
+   1.13,
+   0.6,
+   0.0,
+   0.6,
+   0.0,
+   0.69,
+   0.04,
+   0.0,
+   1.12,
+   0.44,
+   0.0,
+   0.01,
+   0.79,
+   0.38,
+   0.0,
+   0.68,
+   1.52,
+   1.44,
+   0.32,
+   0.8
+  ],
+  "strategies": [
+   "ICT/SMC sweep + CHoCH",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0021346231200354737,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 90,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.1604091,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.1623,
+    "dl": 1.1522,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
