@@ -46934,7 +46934,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.08853389803823837,
@@ -46985,7 +46985,10 @@
   "edge": false,
   "trail_stop": 89.18413559215296,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 18,
+  "R": 1.1,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-08T04:13+01:00"
  },
  {
   "id": "SOLUSD-15m-1794101400000",
@@ -47250,7 +47253,7 @@
   "edge": false,
   "trail_stop": 4065.754,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "BTCUSD-5m-1794105900000",
@@ -47610,7 +47613,7 @@
    "TSMOM multi-lookback trend",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0015272736312114865,
@@ -47658,6 +47661,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.160891,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-08T04:13+01:00"
  }
 ]
