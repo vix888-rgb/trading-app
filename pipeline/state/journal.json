@@ -49612,7 +49612,7 @@
   "edge": false,
   "trail_stop": 4068.866,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "XRPUSD-5m-1794148500000",
@@ -49832,7 +49832,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0018967005476702,
@@ -49880,7 +49880,10 @@
   "edge": false,
   "trail_stop": 1.1592868021906808,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 38,
+  "R": 0.32,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-08T19:25+01:00"
  },
  {
   "id": "XRPUSD-15m-1794150900000",
@@ -49965,7 +49968,7 @@
    "Wyckoff spring / upthrust",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.003259428017165598,
@@ -50018,7 +50021,10 @@
   "edge": false,
   "trail_stop": 1.1585,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-08T19:25+01:00"
  },
  {
   "id": "XAUUSD-5m-1794152100000",
@@ -50151,7 +50157,7 @@
   "edge": false,
   "trail_stop": 4068.985,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 32
  },
  {
   "id": "ETHUSD-5m-1794155700000",
@@ -50382,7 +50388,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.11726337266904804,
@@ -50430,7 +50436,10 @@
   "edge": false,
   "trail_stop": 89.34,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 16,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-08T19:25+01:00"
  },
  {
   "id": "ETHUSD-15m-1794156300000",
@@ -50662,7 +50671,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.2354918114155138,
@@ -50710,7 +50719,10 @@
   "edge": false,
   "trail_stop": 89.41324,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-08T19:25+01:00"
  },
  {
   "id": "BTCUSD-15m-1794157200000",
@@ -50796,7 +50808,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 86.72729599944135,
@@ -50844,7 +50856,10 @@
   "edge": false,
   "trail_stop": 75820.091,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 3,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-08T19:25+01:00"
  },
  {
   "id": "ETHUSD-15m-1794159900000",
@@ -50983,6 +50998,138 @@
   "edge": false,
   "trail_stop": 2236.479,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
+ },
+ {
+  "id": "BTCUSD-15m-1794160800000",
+  "logged": "2026-11-08T19:25+01:00",
+  "bar_t": 1794160800000,
+  "bar_time": "Sun 08 Nov 19:00",
+  "sym": "BTCUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -44,
+  "entry": 75892.01,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 76027.113,
+  "tp": [
+   75756.907,
+   75621.804,
+   75486.701
+  ],
+  "inv": 76095.32,
+  "votes": [
+   -1,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.62,
+   0.94,
+   0.99,
+   0.46,
+   0.1,
+   0.64,
+   0.86,
+   0.46,
+   0.65,
+   1.0,
+   0.0,
+   0.13,
+   0.0,
+   0.24,
+   1.01,
+   0.0,
+   0.43,
+   0.77,
+   0.44,
+   0.01,
+   0.55,
+   0.75,
+   0.0,
+   0.03,
+   1.08,
+   0.46,
+   0.0,
+   0.23
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 90.06867089337818,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 59,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 75668.0,
+    "hi": 76095.32,
+    "src": "15m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 76069.98464652,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 76200.0,
+    "dl": 75668.0,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
