@@ -46851,7 +46851,7 @@
   "edge": false,
   "trail_stop": 1.173643,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "SOLUSD-5m-1794101100000",
@@ -49612,7 +49612,7 @@
   "edge": false,
   "trail_stop": 4068.866,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "XRPUSD-5m-1794148500000",
@@ -49880,7 +49880,7 @@
   "edge": false,
   "trail_stop": 1.1592868021906808,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "XRPUSD-15m-1794150900000",
@@ -50018,7 +50018,7 @@
   "edge": false,
   "trail_stop": 1.1585,
   "tp1_hit": true,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "XAUUSD-5m-1794152100000",
@@ -50151,7 +50151,7 @@
   "edge": false,
   "trail_stop": 4068.985,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "ETHUSD-5m-1794155700000",
@@ -50241,7 +50241,7 @@
    "TTM squeeze fire + EMA200 (round 4)",
    "Harmonic XABCD: Gartley/Bat/Butterfly/Crab/Shark (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 1.6127053854494042,
@@ -50292,7 +50292,10 @@
   "edge": false,
   "trail_stop": 2231.4508215417977,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 14,
+  "R": 2.02,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-08T19:05+01:00"
  },
  {
   "id": "SOLUSD-5m-1794156300000",
@@ -50427,7 +50430,7 @@
   "edge": false,
   "trail_stop": 89.34,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "ETHUSD-15m-1794156300000",
@@ -50516,7 +50519,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.432268738768143,
@@ -50569,7 +50572,10 @@
   "edge": false,
   "trail_stop": 2230.8,
   "tp1_hit": true,
-  "bars_open": 3
+  "bars_open": 3,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-08T19:05+01:00"
  },
  {
   "id": "SOLUSD-15m-1794156300000",
@@ -50704,7 +50710,7 @@
   "edge": false,
   "trail_stop": 89.41324,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-15m-1794157200000",
@@ -50838,6 +50844,142 @@
   "edge": false,
   "trail_stop": 75820.091,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
+ },
+ {
+  "id": "ETHUSD-15m-1794159900000",
+  "logged": "2026-11-08T19:05+01:00",
+  "bar_t": 1794159900000,
+  "bar_time": "Sun 08 Nov 18:45",
+  "sym": "ETHUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -43,
+  "entry": 2230.85,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 2236.479,
+  "tp": [
+   2225.221,
+   2219.591,
+   2213.962
+  ],
+  "inv": 2243.56,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   1,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "weights": [
+   0.36,
+   0.83,
+   0.62,
+   0.46,
+   0.0,
+   0.54,
+   0.62,
+   0.46,
+   0.13,
+   0.23,
+   0.0,
+   0.16,
+   0.0,
+   0.09,
+   0.84,
+   0.0,
+   0.33,
+   0.44,
+   0.73,
+   0.01,
+   0.55,
+   0.12,
+   0.0,
+   0.03,
+   1.18,
+   0.44,
+   0.0,
+   0.0
+  ],
+  "strategies": [
+   "Range mean reversion",
+   "TSMOM multi-lookback trend",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 3.7529234550176307,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 57,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 2225.0,
+    "hi": 2243.56,
+    "src": "15m",
+    "alert": false
+   },
+   "sweep": {
+    "on": true,
+    "blockLong": true,
+    "blockShort": false,
+    "dir": -1,
+    "alert": true,
+    "lo": 2235.66,
+    "hi": 2242.14
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 2244.49483945,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 2246.0,
+    "dl": 2225.0,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
