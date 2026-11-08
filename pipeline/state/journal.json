@@ -49273,7 +49273,7 @@
    "Turtle 20-bar breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.13332526329835329,
@@ -49321,7 +49321,10 @@
   "edge": false,
   "trail_stop": 89.42999,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-08T15:54+01:00"
  },
  {
   "id": "XRPUSD-15m-1794145500000",
@@ -49462,7 +49465,7 @@
   "edge": false,
   "trail_stop": 1.164489,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XAUUSD-15m-1794147300000",
@@ -49606,7 +49609,7 @@
   "edge": false,
   "trail_stop": 4068.087,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "XRPUSD-5m-1794148500000",
@@ -49736,6 +49739,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.164754,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
