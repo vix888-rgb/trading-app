@@ -53602,7 +53602,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 75664.282,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "XRPUSD-5m-1794179400000",
@@ -53686,7 +53689,7 @@
   "strategies": [
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.006441886930372229,
@@ -53731,6 +53734,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.133463,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-09T00:26+01:00"
  }
 ]
