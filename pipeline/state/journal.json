@@ -49559,7 +49559,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.5189379987001717,
@@ -49612,7 +49612,10 @@
   "edge": false,
   "trail_stop": 4068.866,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 19,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-08T20:35+01:00"
  },
  {
   "id": "XRPUSD-5m-1794148500000",
@@ -51139,7 +51142,7 @@
   "edge": false,
   "trail_stop": 76027.113,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XRPUSD-5m-1794164700000",
@@ -51272,7 +51275,7 @@
   "edge": false,
   "trail_stop": 1.156902,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "ETHUSD-15m-1794164400000",
@@ -51404,7 +51407,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2238.412,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "SOLUSD-15m-1794164400000",
@@ -51534,7 +51540,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 89.66902,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "XRPUSD-15m-1794164400000",
@@ -51666,6 +51675,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.158971,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
