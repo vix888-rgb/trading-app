@@ -51771,7 +51771,7 @@
   "strategies": [
    "AB=CD (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0019292286652717054,
@@ -51819,7 +51819,10 @@
   "edge": false,
   "trail_stop": 1.100716914661087,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 28,
+  "R": 19.07,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-08T23:15+01:00"
  },
  {
   "id": "ETHUSD-5m-1794168300000",
@@ -52180,7 +52183,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 34.435592509948776,
@@ -52231,7 +52234,10 @@
   "edge": false,
   "trail_stop": 73647.74237003979,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 20,
+  "R": 43.02,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-08T23:15+01:00"
  },
  {
   "id": "ETHUSD-5m-1794170100000",
@@ -52592,7 +52598,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.15307183304538952,
@@ -52640,7 +52646,10 @@
   "edge": false,
   "trail_stop": 85.63228733218155,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 14,
+  "R": 15.84,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-08T23:15+01:00"
  },
  {
   "id": "SOLUSD-15m-1794170700000",
@@ -52986,7 +52995,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 2.2920829792971618,
@@ -53037,7 +53046,10 @@
   "edge": false,
   "trail_stop": 2069.1683319171884,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": 45.27,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-08T23:15+01:00"
  },
  {
   "id": "ETHUSD-1h-1794171600000",
@@ -53171,7 +53183,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2155.34,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "SOLUSD-1h-1794171600000",
@@ -53308,6 +53323,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 87.12668,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
