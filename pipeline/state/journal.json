@@ -48501,7 +48501,7 @@
   "edge": false,
   "trail_stop": 4065.745,
   "tp1_hit": false,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "BTCUSD-5m-1794141900000",
@@ -48856,7 +48856,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 1.1228494261530402,
@@ -48904,7 +48904,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2241.334,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-08T14:14+01:00"
  },
  {
   "id": "XRPUSD-5m-1794142500000",
@@ -49034,6 +49039,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.165963,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
