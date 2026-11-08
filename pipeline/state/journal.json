@@ -35511,7 +35511,7 @@
    0.54
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 21.66626090223142,
@@ -35562,7 +35562,10 @@
   "edge": false,
   "trail_stop": 2259.259,
   "tp1_hit": false,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": -0.39,
+  "exit": "time exit",
+  "closed_at": "2026-11-08T10:04+01:00"
  },
  {
   "id": "USDCHF-5m-1793959200000",
@@ -46848,7 +46851,7 @@
   "edge": false,
   "trail_stop": 1.173643,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "SOLUSD-5m-1794101100000",
@@ -48219,6 +48222,6 @@
   "edge": false,
   "trail_stop": 89.45447,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  }
 ]
