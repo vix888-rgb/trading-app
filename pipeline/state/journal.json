@@ -49612,7 +49612,7 @@
   "edge": false,
   "trail_stop": 4068.866,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "XRPUSD-5m-1794148500000",
@@ -50157,7 +50157,7 @@
   "edge": false,
   "trail_stop": 4068.985,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "ETHUSD-5m-1794155700000",
@@ -50945,7 +50945,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.7529234550176307,
@@ -50998,7 +50998,10 @@
   "edge": false,
   "trail_stop": 2236.479,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-08T19:35+01:00"
  },
  {
   "id": "BTCUSD-15m-1794160800000",
@@ -51130,6 +51133,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 76027.113,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
