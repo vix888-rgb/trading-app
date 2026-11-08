@@ -47070,7 +47070,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.18995071434910468,
@@ -47118,7 +47118,10 @@
   "edge": false,
   "trail_stop": 89.2,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 5,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-08T04:23+01:00"
  },
  {
   "id": "XAUUSD-5m-1794105300000",
@@ -47253,7 +47256,7 @@
   "edge": false,
   "trail_stop": 4065.754,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "BTCUSD-5m-1794105900000",
@@ -47667,5 +47670,138 @@
   "exit": "stop",
   "tp1_hit": false,
   "closed_at": "2026-11-08T04:13+01:00"
+ },
+ {
+  "id": "SOLUSD-15m-1794106800000",
+  "logged": "2026-11-08T04:23+01:00",
+  "bar_t": 1794106800000,
+  "bar_time": "Sun 08 Nov 04:00",
+  "sym": "SOLUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -28,
+  "entry": 89.36,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 89.66639,
+  "tp": [
+   89.05361,
+   88.74722,
+   88.44083
+  ],
+  "inv": 89.85,
+  "votes": [
+   0,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   0,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.36,
+   0.69,
+   0.28,
+   0.46,
+   0.0,
+   0.11,
+   0.18,
+   0.66,
+   0.13,
+   0.18,
+   0.04,
+   0.32,
+   0.0,
+   0.0,
+   0.51,
+   0.0,
+   0.26,
+   0.44,
+   0.0,
+   0.17,
+   0.58,
+   0.12,
+   0.01,
+   0.03,
+   0.65,
+   0.44,
+   0.0,
+   0.0
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend",
+   "Keltner volatility breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.2042594414286206,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 28,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 88.83,
+    "hi": 89.85,
+    "src": "15m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 90.26803272,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 89.85,
+    "dl": 88.83,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
