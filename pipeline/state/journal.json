@@ -62044,7 +62044,7 @@
   "edge": false,
   "trail_stop": 4131.396,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "XRPUSD-15m-1794253500000",
@@ -62258,7 +62258,7 @@
   "strategies": [
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0038250007640783608,
@@ -62306,7 +62306,10 @@
   "edge": false,
   "trail_stop": 1.096938,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-09T21:56+01:00"
  },
  {
   "id": "ETHUSD-5m-1794256800000",
@@ -62436,6 +62439,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2134.141,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
