@@ -57979,7 +57979,7 @@
   "edge": true,
   "trail_stop": 4088.437525309166,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "GBPUSD-15m-1794212100000",
@@ -59010,7 +59010,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 6.219856074331078,
@@ -59058,7 +59058,10 @@
   "edge": false,
   "trail_stop": 4112.651,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 20,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-09T18:06+01:00"
  },
  {
   "id": "XRPUSD-5m-1794224400000",
@@ -60417,7 +60420,7 @@
   "edge": false,
   "trail_stop": 0.919171,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "XAUUSD-5m-1794242400000",
