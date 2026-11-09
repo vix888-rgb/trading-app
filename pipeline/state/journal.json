@@ -59058,7 +59058,7 @@
   "edge": false,
   "trail_stop": 4112.651,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "XRPUSD-5m-1794224400000",
@@ -60417,6 +60417,138 @@
   "edge": false,
   "trail_stop": 0.919171,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 10
+ },
+ {
+  "id": "XAUUSD-5m-1794242400000",
+  "logged": "2026-11-09T17:46+01:00",
+  "bar_t": 1794242400000,
+  "bar_time": "Mon 09 Nov 17:40",
+  "sym": "XAUUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 28,
+  "entry": 4116.175,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 4109.861,
+  "tp": [
+   4122.49,
+   4128.805,
+   4135.119
+  ],
+  "inv": 4106.608,
+  "votes": [
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   0,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.36,
+   0.69,
+   0.08,
+   0.75,
+   0.0,
+   0.0,
+   0.14,
+   0.46,
+   0.28,
+   0.15,
+   0.0,
+   0.0,
+   0.21,
+   0.0,
+   0.16,
+   0.0,
+   0.26,
+   0.44,
+   0.0,
+   0.9,
+   0.55,
+   0.12,
+   0.0,
+   0.03,
+   0.65,
+   0.44,
+   0.12,
+   0.0
+  ],
+  "strategies": [
+   "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 4.209701068200353,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 66,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 4113.19513,
+    "hi": 4130.0128,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 4106.92330938,
+    "side200": 1,
+    "stack": 1,
+    "st": -1,
+    "dh": 4130.0128,
+    "dl": 4113.70274,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
