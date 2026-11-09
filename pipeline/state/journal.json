@@ -60417,7 +60417,7 @@
   "edge": false,
   "trail_stop": 0.919171,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "XAUUSD-5m-1794242400000",
@@ -60501,7 +60501,7 @@
   "strategies": [
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.209701068200353,
@@ -60549,6 +60549,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 4109.861,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-09T17:56+01:00"
  }
 ]
