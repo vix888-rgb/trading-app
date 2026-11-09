@@ -55804,7 +55804,7 @@
   "edge": false,
   "trail_stop": 2142.24,
   "tp1_hit": true,
-  "bars_open": 25
+  "bars_open": 26
  },
  {
   "id": "SOLUSD-1h-1794186000000",
@@ -56203,7 +56203,7 @@
   "edge": false,
   "trail_stop": 1.117693021288976,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "XRPUSD-5m-1794196200000",
@@ -56881,7 +56881,7 @@
   "edge": false,
   "trail_stop": 74818.0,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "ETHUSD-5m-1794201600000",
@@ -57286,7 +57286,7 @@
   "edge": false,
   "trail_stop": 86.79,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "XAUUSD-1h-1794204000000",
@@ -57953,5 +57953,135 @@
   "trail_stop": 4069.101,
   "tp1_hit": false,
   "bars_open": 0
+ },
+ {
+  "id": "GBPUSD-15m-1794212100000",
+  "logged": "2026-11-09T09:36+01:00",
+  "bar_t": 1794212100000,
+  "bar_time": "Mon 09 Nov 09:15",
+  "sym": "GBPUSD",
+  "tf": "15m",
+  "side": "long",
+  "score": 57,
+  "entry": 1.341004,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.340357,
+  "tp": [
+   1.341651,
+   1.342298,
+   1.342945
+  ],
+  "inv": 1.337077,
+  "votes": [
+   0,
+   1,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   -1,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   -1
+  ],
+  "weights": [
+   1.36,
+   0.69,
+   0.76,
+   0.46,
+   0.0,
+   1.0,
+   1.11,
+   0.97,
+   0.28,
+   0.15,
+   0.01,
+   0.23,
+   0.0,
+   0.74,
+   0.01,
+   0.0,
+   0.34,
+   0.44,
+   0.59,
+   0.01,
+   1.04,
+   0.12,
+   0.25,
+   0.03,
+   0.65,
+   0.74,
+   0.0,
+   0.46
+  ],
+  "strategies": [
+   "London breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0004313905173657611,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 20,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.3405569,
+    "side200": 1,
+    "stack": 0,
+    "st": 1,
+    "dh": 1.34028494,
+    "dl": 1.33707714,
+    "brk": 1,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
