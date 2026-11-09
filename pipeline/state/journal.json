@@ -60694,7 +60694,7 @@
   "edge": false,
   "trail_stop": 87.21904,
   "tp1_hit": false,
-  "bars_open": 24
+  "bars_open": 25
  },
  {
   "id": "XRPUSD-5m-1794245400000",
@@ -60965,7 +60965,7 @@
   "edge": false,
   "trail_stop": 1.342534,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 25
  },
  {
   "id": "BTCUSD-5m-1794246000000",
@@ -61996,7 +61996,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.0339747416241005,
@@ -62044,7 +62044,10 @@
   "edge": false,
   "trail_stop": 4131.396,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 0.87,
+  "exit": "time exit",
+  "closed_at": "2026-11-10T00:47+01:00"
  },
  {
   "id": "XRPUSD-15m-1794253500000",
@@ -62716,7 +62719,7 @@
   "edge": false,
   "trail_stop": 4126.016,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "XRPUSD-5m-1794258600000",
@@ -63263,6 +63266,6 @@
   "edge": false,
   "trail_stop": 1.343611,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  }
 ]
