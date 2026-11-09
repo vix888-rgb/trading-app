@@ -58175,7 +58175,7 @@
   "strategies": [
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 158.44839020970588,
@@ -58223,7 +58223,10 @@
   "edge": false,
   "trail_stop": 74469.883,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 18,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-09T12:26+01:00"
  },
  {
   "id": "SOLUSD-15m-1794216600000",
@@ -58572,7 +58575,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0036191371757499234,
@@ -58620,7 +58623,10 @@
   "edge": false,
   "trail_stop": 1.0876,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 14,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-09T12:26+01:00"
  },
  {
   "id": "SOLUSD-5m-1794219000000",
@@ -58706,7 +58712,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.2580113908144457,
@@ -58754,7 +58760,10 @@
   "edge": false,
   "trail_stop": 86.46702,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 12,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-09T12:26+01:00"
  },
  {
   "id": "ETHUSD-5m-1794220200000",
@@ -58836,7 +58845,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.376211414398162,
@@ -58884,6 +58893,9 @@
   "edge": false,
   "trail_stop": 2113.264,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-09T12:26+01:00"
  }
 ]
