@@ -57103,7 +57103,7 @@
    "Squeeze momentum breakout",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.23076173007156148,
@@ -57151,7 +57151,10 @@
   "edge": false,
   "trail_stop": 86.06304692028624,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 34,
+  "R": 3.08,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-09T09:26+01:00"
  },
  {
   "id": "SOLUSD-15m-1794202200000",
@@ -57633,7 +57636,7 @@
    "Turtle 20-bar breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 7.7607803556968395,
@@ -57681,7 +57684,10 @@
   "edge": false,
   "trail_stop": 2104.411,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-09T09:26+01:00"
  },
  {
   "id": "XRPUSD-5m-1794210600000",
@@ -57765,7 +57771,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.004683418259083789,
@@ -57813,7 +57819,10 @@
   "edge": false,
   "trail_stop": 1.092125,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-09T09:26+01:00"
  },
  {
   "id": "XAUUSD-1h-1794207600000",
