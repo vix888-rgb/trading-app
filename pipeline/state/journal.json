@@ -59298,9 +59298,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 4108.8,
+  "trail_stop": 4111.631798239819,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "USDCHF-5m-1794226800000",
@@ -59434,6 +59434,136 @@
   "edge": false,
   "trail_stop": 0.818358,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
+ },
+ {
+  "id": "USDJPY-5m-1794228600000",
+  "logged": "2026-11-09T13:56+01:00",
+  "bar_t": 1794228600000,
+  "bar_time": "Mon 09 Nov 13:50",
+  "sym": "USDJPY",
+  "tf": "5m",
+  "side": "long",
+  "score": 46,
+  "entry": 158.006,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 157.938,
+  "tp": [
+   158.074,
+   158.141,
+   158.209
+  ],
+  "inv": 157.9,
+  "votes": [
+   0,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   1,
+   -1
+  ],
+  "weights": [
+   0.5,
+   0.69,
+   0.26,
+   0.46,
+   0.24,
+   0.61,
+   0.36,
+   0.98,
+   0.28,
+   0.15,
+   0.0,
+   0.98,
+   0.0,
+   0.0,
+   0.54,
+   0.0,
+   0.26,
+   0.45,
+   0.06,
+   0.01,
+   0.85,
+   0.81,
+   0.0,
+   0.03,
+   1.18,
+   0.91,
+   0.0,
+   0.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Wyckoff spring / upthrust"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.04504350139819123,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 28,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 158.11861454,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 158.04499817,
+    "dl": 157.84399414,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
