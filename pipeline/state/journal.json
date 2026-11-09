@@ -55801,7 +55801,7 @@
   "edge": false,
   "trail_stop": 2142.24,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "SOLUSD-1h-1794186000000",
@@ -56198,9 +56198,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.1207930212889758,
+  "trail_stop": 1.117693021288976,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "XRPUSD-5m-1794196200000",
@@ -56330,9 +56330,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.1009766306692061,
+  "trail_stop": 1.0978766306692063,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 40
  },
  {
   "id": "ETHUSD-5m-1794196800000",
@@ -56738,9 +56738,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 74511.78890345029,
+  "trail_stop": 74399.78890345029,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "BTCUSD-15m-1794199500000",
@@ -56872,7 +56872,7 @@
   "edge": false,
   "trail_stop": 74818.0,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "ETHUSD-5m-1794201600000",
@@ -57003,9 +57003,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 2120.576318668972,
+  "trail_stop": 2101.5263186689717,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "SOLUSD-5m-1794201600000",
@@ -57137,9 +57137,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 86.56304692028624,
+  "trail_stop": 86.06304692028624,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "SOLUSD-15m-1794202200000",
@@ -57271,7 +57271,7 @@
   "edge": false,
   "trail_stop": 86.79,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "XAUUSD-1h-1794204000000",
@@ -57398,7 +57398,10 @@
    },
    "pat": []
   },
-  "edge": true
+  "edge": true,
+  "trail_stop": 4094.083,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "BTCUSD-1h-1794204000000",
@@ -57527,6 +57530,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 75021.378,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
