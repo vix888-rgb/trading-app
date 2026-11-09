@@ -53975,7 +53975,7 @@
    "Trend-follow + ADX filter",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 248.59846357895006,
@@ -54023,7 +54023,10 @@
   "edge": false,
   "trail_stop": 74960.318,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-09T01:26+01:00"
  },
  {
   "id": "ETHUSD-1h-1794178800000",
@@ -54698,6 +54701,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.126314,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
