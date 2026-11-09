@@ -54586,7 +54586,7 @@
   "edge": false,
   "trail_stop": 1.1132,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "XRPUSD-5m-1794183000000",
@@ -55810,7 +55810,7 @@
   "edge": false,
   "trail_stop": 2142.24,
   "tp1_hit": true,
-  "bars_open": 43
+  "bars_open": 44
  },
  {
   "id": "SOLUSD-1h-1794186000000",
@@ -55944,7 +55944,7 @@
   "edge": false,
   "trail_stop": 87.8,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "USDCHF-5m-1794190200000",
@@ -56209,7 +56209,7 @@
   "edge": false,
   "trail_stop": 1.1123930212889759,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 41
  },
  {
   "id": "XRPUSD-5m-1794196200000",
@@ -57515,7 +57515,7 @@
   "strategies": [
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 476.91215556597217,
@@ -57563,7 +57563,10 @@
   "edge": false,
   "trail_stop": 75021.378,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 5,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-09T14:06+01:00"
  },
  {
   "id": "ETHUSD-5m-1794208800000",
@@ -57964,7 +57967,7 @@
   "edge": true,
   "trail_stop": 4084.692,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "GBPUSD-15m-1794212100000",
@@ -58097,7 +58100,7 @@
   "edge": false,
   "trail_stop": 1.341004,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "BTCUSD-5m-1794217200000",
@@ -58362,7 +58365,7 @@
   "edge": false,
   "trail_stop": 87.3263,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "ETHUSD-1h-1794214800000",
@@ -58494,7 +58497,7 @@
   "edge": false,
   "trail_stop": 2143.799,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XRPUSD-5m-1794218400000",
@@ -59032,9 +59035,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 4103.321,
-  "tp1_hit": false,
-  "bars_open": 4
+  "trail_stop": 4112.651,
+  "tp1_hit": true,
+  "bars_open": 5
  },
  {
   "id": "XRPUSD-5m-1794224400000",
@@ -59298,9 +59301,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 4111.631798239819,
+  "trail_stop": 4115.204768239819,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "USDCHF-5m-1794226800000",
@@ -59434,7 +59437,7 @@
   "edge": false,
   "trail_stop": 0.818358,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "USDJPY-5m-1794228600000",
@@ -59519,7 +59522,7 @@
    "Turtle 20-bar breakout",
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.04504350139819123,
@@ -59564,6 +59567,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 157.938,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-09T14:06+01:00"
  }
 ]
