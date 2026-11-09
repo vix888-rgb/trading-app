@@ -56164,7 +56164,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.008998255322243963,
@@ -56212,7 +56212,10 @@
   "edge": false,
   "trail_stop": 1.1123930212889759,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 1.59,
+  "exit": "time exit",
+  "closed_at": "2026-11-09T15:46+01:00"
  },
  {
   "id": "XRPUSD-5m-1794196200000",
@@ -58103,7 +58106,7 @@
   "edge": false,
   "trail_stop": 1.341004,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 25
  },
  {
   "id": "BTCUSD-5m-1794217200000",
@@ -58320,7 +58323,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.5308696626772684,
@@ -58368,7 +58371,10 @@
   "edge": false,
   "trail_stop": 87.3263,
   "tp1_hit": false,
-  "bars_open": 19
+  "bars_open": 19,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-09T15:46+01:00"
  },
  {
   "id": "ETHUSD-1h-1794214800000",
@@ -59040,7 +59046,7 @@
   "edge": false,
   "trail_stop": 4112.651,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "XRPUSD-5m-1794224400000",
@@ -59255,7 +59261,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 2.849862940045395,
@@ -59306,7 +59312,10 @@
   "edge": false,
   "trail_stop": 4118.613348239819,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 28,
+  "R": 2.3,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-09T15:46+01:00"
  },
  {
   "id": "USDCHF-5m-1794226800000",
@@ -59799,7 +59808,7 @@
    "Trend-follow + ADX filter",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 137.68832046625138,
@@ -59850,7 +59859,10 @@
   "edge": false,
   "trail_stop": 74634.96,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-09T15:46+01:00"
  },
  {
   "id": "USDCHF-5m-1794233400000",
@@ -59989,7 +60001,7 @@
   "edge": false,
   "trail_stop": 0.81975,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "XRPUSD-5m-1794233400000",
@@ -60073,7 +60085,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0038619424949645673,
@@ -60121,6 +60133,139 @@
   "edge": false,
   "trail_stop": 1.099693,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-09T15:46+01:00"
+ },
+ {
+  "id": "GBPUSD-5m-1794235200000",
+  "logged": "2026-11-09T15:46+01:00",
+  "bar_t": 1794235200000,
+  "bar_time": "Mon 09 Nov 15:40",
+  "sym": "GBPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -39,
+  "entry": 1.341364,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.341865,
+  "tp": [
+   1.340863,
+   1.340362,
+   1.33986
+  ],
+  "inv": 1.34212,
+  "votes": [
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.36,
+   1.03,
+   0.82,
+   0.57,
+   0.41,
+   0.9,
+   1.15,
+   0.58,
+   0.28,
+   0.15,
+   0.0,
+   0.21,
+   0.42,
+   0.64,
+   0.2,
+   0.0,
+   0.89,
+   0.44,
+   0.48,
+   0.01,
+   0.55,
+   0.8,
+   0.15,
+   0.64,
+   1.31,
+   1.44,
+   0.0,
+   0.78
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00033404784008813715,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 88,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 1.3410579,
+    "hi": 1.34239006,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.33993993,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 1.34219182,
+    "dl": 1.34109378,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
