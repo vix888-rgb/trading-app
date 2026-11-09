@@ -56059,7 +56059,7 @@
   "edge": false,
   "trail_stop": 0.82048,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "XRPUSD-15m-1794191400000",
@@ -56192,5 +56192,134 @@
   "trail_stop": 1.1212,
   "tp1_hit": true,
   "bars_open": 4
+ },
+ {
+  "id": "XRPUSD-5m-1794196200000",
+  "logged": "2026-11-09T04:56+01:00",
+  "bar_t": 1794196200000,
+  "bar_time": "Mon 09 Nov 04:50",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -63,
+  "entry": 1.1122,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.118266,
+  "tp": [
+   1.106134,
+   1.100068,
+   1.094001
+  ],
+  "inv": 1.1236,
+  "votes": [
+   -1,
+   1,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.36,
+   0.96,
+   1.08,
+   0.47,
+   0.0,
+   1.0,
+   1.15,
+   1.46,
+   1.13,
+   0.6,
+   0.0,
+   0.6,
+   0.0,
+   0.69,
+   0.04,
+   0.0,
+   1.12,
+   0.44,
+   0.0,
+   0.01,
+   0.79,
+   0.38,
+   0.0,
+   0.68,
+   1.52,
+   1.44,
+   0.32,
+   0.8
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0040441576673015175,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 72,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.13613894,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.1236,
+    "dl": 1.1037,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
