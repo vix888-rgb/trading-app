@@ -60372,7 +60372,7 @@
    0.12
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0007259463763811437,
@@ -60420,7 +60420,10 @@
   "edge": false,
   "trail_stop": 0.919171,
   "tp1_hit": false,
-  "bars_open": 26
+  "bars_open": 26,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-09T19:16+01:00"
  },
  {
   "id": "XAUUSD-5m-1794242400000",
@@ -60691,7 +60694,7 @@
   "edge": false,
   "trail_stop": 87.21904,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XRPUSD-5m-1794245400000",
@@ -60823,7 +60826,7 @@
   "edge": false,
   "trail_stop": 1.101017,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "GBPUSD-15m-1794244500000",
@@ -60959,7 +60962,7 @@
   "edge": false,
   "trail_stop": 1.341711,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "BTCUSD-5m-1794246000000",
@@ -61044,7 +61047,7 @@
    "Turtle 20-bar breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 155.20129855010325,
@@ -61092,7 +61095,10 @@
   "edge": false,
   "trail_stop": 74878.262,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-09T19:16+01:00"
  },
  {
   "id": "SOLUSD-5m-1794246000000",
@@ -61177,7 +61183,7 @@
    "Turtle 20-bar breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.26672613568514464,
@@ -61225,7 +61231,10 @@
   "edge": false,
   "trail_stop": 86.80009,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-09T19:16+01:00"
  },
  {
   "id": "ETHUSD-1h-1794243600000",
@@ -61354,7 +61363,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2159.263,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "SOLUSD-1h-1794243600000",
@@ -61481,6 +61493,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 88.11371,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
