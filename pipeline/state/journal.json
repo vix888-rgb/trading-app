@@ -60694,7 +60694,7 @@
   "edge": false,
   "trail_stop": 87.21904,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XRPUSD-5m-1794245400000",
@@ -60778,7 +60778,7 @@
   "strategies": [
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00421118479980182,
@@ -60826,7 +60826,10 @@
   "edge": false,
   "trail_stop": 1.0947,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 12,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-09T19:46+01:00"
  },
  {
   "id": "GBPUSD-15m-1794244500000",
@@ -60962,7 +60965,7 @@
   "edge": false,
   "trail_stop": 1.341711,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "BTCUSD-5m-1794246000000",
@@ -61626,7 +61629,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 74993.573,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "ETHUSD-15m-1794248100000",
@@ -61756,7 +61762,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2136.833,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "XRPUSD-15m-1794248100000",
@@ -61887,6 +61896,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.097624,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
