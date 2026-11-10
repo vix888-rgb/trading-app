@@ -66694,7 +66694,7 @@
   "edge": false,
   "trail_stop": 0.91978,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "SOLUSD-5m-1794299400000",
@@ -67377,7 +67377,7 @@
   "edge": false,
   "trail_stop": 0.81945,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "ETHUSD-5m-1794301200000",
@@ -68333,7 +68333,7 @@
   "edge": false,
   "trail_stop": 1.0881,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "SOLUSD-5m-1794304800000",
@@ -68465,7 +68465,7 @@
   "edge": false,
   "trail_stop": 85.08334107990123,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "BTCUSD-5m-1794305400000",
@@ -68550,7 +68550,7 @@
    "Trend-follow + ADX filter",
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 111.81534430319428,
@@ -68601,7 +68601,10 @@
   "edge": false,
   "trail_stop": 74404.0,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 12,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-10T12:28+01:00"
  },
  {
   "id": "SOLUSD-15m-1794304800000",
