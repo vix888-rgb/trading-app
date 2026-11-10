@@ -67811,7 +67811,7 @@
   "edge": false,
   "trail_stop": 158.4731605570526,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 37
  },
  {
   "id": "BTCUSD-5m-1794302400000",
@@ -70379,7 +70379,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00745982564096048,
@@ -70431,7 +70431,10 @@
   "edge": false,
   "trail_stop": 1.0609393025638418,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 17,
+  "R": 0.37,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-10T19:39+01:00"
  },
  {
   "id": "USDJPY-5m-1794319800000",
@@ -70981,7 +70984,7 @@
   "edge": false,
   "trail_stop": 2061.367218006311,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "SOLUSD-15m-1794323700000",
@@ -71113,7 +71116,7 @@
   "edge": false,
   "trail_stop": 83.68,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "XAUUSD-5m-1794327000000",
@@ -71243,7 +71246,7 @@
   "edge": false,
   "trail_stop": 4037.5410556279285,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "XRPUSD-5m-1794328800000",
@@ -71593,7 +71596,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 10.420787965842923,
@@ -71641,7 +71644,10 @@
   "edge": false,
   "trail_stop": 2034.861,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 18,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-10T19:39+01:00"
  },
  {
   "id": "GBPUSD-5m-1794329400000",
@@ -71858,7 +71864,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.45078591573125426,
@@ -71906,7 +71912,10 @@
   "edge": false,
   "trail_stop": 82.77618,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 16,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-10T19:39+01:00"
  },
  {
   "id": "XRPUSD-5m-1794330000000",
