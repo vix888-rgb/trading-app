@@ -65316,7 +65316,7 @@
   "edge": false,
   "trail_stop": 74236.20251000373,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 33
  },
  {
   "id": "ETHUSD-15m-1794289500000",
@@ -67803,9 +67803,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 158.18016128947448,
+  "trail_stop": 158.20816116740417,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "BTCUSD-5m-1794302400000",
@@ -69582,7 +69582,7 @@
   "edge": false,
   "trail_stop": 0.82233,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "BTCUSD-1h-1794315600000",
@@ -69719,7 +69719,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 74476.893,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "USDJPY-5m-1794319200000",
@@ -69804,7 +69807,7 @@
    "Turtle 20-bar breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.06286290117126515,
@@ -69851,7 +69854,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 158.483,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-10T15:18+01:00"
  },
  {
   "id": "USDJPY-1h-1794315600000",
@@ -69990,7 +69998,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 158.253,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "ETHUSD-15m-1794318300000",
@@ -70126,7 +70137,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2085.97,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "SOLUSD-15m-1794318300000",
@@ -70257,7 +70271,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 84.90901,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "XRPUSD-15m-1794318300000",
@@ -70387,6 +70404,141 @@
     "brk": -1,
     "sqz": "fired",
     "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.07629,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "USDJPY-5m-1794319800000",
+  "logged": "2026-11-10T15:18+01:00",
+  "bar_t": 1794319800000,
+  "bar_time": "Tue 10 Nov 15:10",
+  "sym": "USDJPY",
+  "tf": "5m",
+  "side": "long",
+  "score": 58,
+  "entry": 158.484,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 158.389,
+  "tp": [
+   158.579,
+   158.674,
+   158.768
+  ],
+  "inv": 158.099,
+  "votes": [
+   1,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   0.5,
+   0.69,
+   0.26,
+   0.46,
+   0.24,
+   0.61,
+   0.36,
+   0.98,
+   0.28,
+   0.15,
+   0.0,
+   0.98,
+   0.0,
+   0.0,
+   0.54,
+   0.0,
+   0.26,
+   0.45,
+   0.06,
+   0.01,
+   0.85,
+   0.81,
+   0.0,
+   0.03,
+   1.18,
+   0.91,
+   0.0,
+   0.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.06317351535143526,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 95,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": true,
+    "blockLong": false,
+    "blockShort": true,
+    "dir": 1,
+    "alert": true,
+    "lo": 158.15800476,
+    "hi": 158.2519989
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 158.09623521,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 158.58200073,
+    "dl": 158.09899902,
+    "brk": 1,
+    "sqz": "off",
+    "mom": 1,
     "sess": true,
     "gate": false,
     "sgate": false
