@@ -60694,7 +60694,7 @@
   "edge": false,
   "trail_stop": 86.49,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 45
  },
  {
   "id": "XRPUSD-5m-1794245400000",
@@ -60965,7 +60965,7 @@
   "edge": false,
   "trail_stop": 1.342534,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 45
  },
  {
   "id": "BTCUSD-5m-1794246000000",
@@ -64762,7 +64762,7 @@
   "edge": false,
   "trail_stop": 1.101119,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "BTCUSD-15m-1794283200000",
@@ -64896,7 +64896,7 @@
   "edge": false,
   "trail_stop": 74893.418,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-5m-1794283800000",
@@ -65115,7 +65115,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 6.550393221761329,
@@ -65163,6 +65163,9 @@
   "edge": false,
   "trail_stop": 2125.156,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-10T05:47+01:00"
  }
 ]
