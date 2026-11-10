@@ -70654,7 +70654,7 @@
    "Wyckoff spring / upthrust",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0007275326640047618,
@@ -70705,7 +70705,10 @@
   "edge": false,
   "trail_stop": 0.919949,
   "tp1_hit": false,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 0.13,
+  "exit": "time exit",
+  "closed_at": "2026-11-10T19:29+01:00"
  },
  {
   "id": "BTCUSD-15m-1794321000000",
@@ -71240,7 +71243,7 @@
   "edge": false,
   "trail_stop": 4037.5410556279285,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 26
  },
  {
   "id": "XRPUSD-5m-1794328800000",
@@ -71638,7 +71641,7 @@
   "edge": false,
   "trail_stop": 2034.861,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "GBPUSD-5m-1794329400000",
@@ -71903,7 +71906,7 @@
   "edge": false,
   "trail_stop": 82.77618,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "XRPUSD-5m-1794330000000",
@@ -72251,7 +72254,7 @@
    0.26
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003630312441671716,
@@ -72302,6 +72305,9 @@
   "edge": false,
   "trail_stop": 0.825825,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-10T19:29+01:00"
  }
 ]
