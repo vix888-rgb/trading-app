@@ -57931,7 +57931,7 @@
    0.48
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 10.39381867270852,
@@ -57979,7 +57979,10 @@
   "edge": true,
   "trail_stop": 4107.431835309166,
   "tp1_hit": true,
-  "bars_open": 25
+  "bars_open": 25,
+  "R": 1.46,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-10T11:08+01:00"
  },
  {
   "id": "GBPUSD-15m-1794212100000",
@@ -61373,9 +61376,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 2159.263,
-  "tp1_hit": false,
-  "bars_open": 15
+  "trail_stop": 2125.82,
+  "tp1_hit": true,
+  "bars_open": 16
  },
  {
   "id": "SOLUSD-1h-1794243600000",
@@ -61503,9 +61506,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 88.11371,
-  "tp1_hit": false,
-  "bars_open": 15
+  "trail_stop": 86.63,
+  "tp1_hit": true,
+  "bars_open": 16
  },
  {
   "id": "BTCUSD-15m-1794248100000",
@@ -63410,7 +63413,7 @@
   "edge": false,
   "trail_stop": 1.120136,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "GBPUSD-4h-1794254400000",
@@ -65313,7 +65316,7 @@
   "edge": false,
   "trail_stop": 74815.84,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "ETHUSD-15m-1794289500000",
@@ -65449,7 +65452,7 @@
   "edge": false,
   "trail_stop": 2115.823835084446,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "SOLUSD-15m-1794290400000",
@@ -66364,7 +66367,7 @@
    "TSMOM multi-lookback trend",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0051717145365438,
@@ -66414,7 +66417,10 @@
   "edge": false,
   "trail_stop": 1.0904,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-10T11:08+01:00"
  },
  {
   "id": "GBPUSD-15m-1794297600000",
@@ -66688,7 +66694,7 @@
   "edge": false,
   "trail_stop": 0.91978,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "SOLUSD-5m-1794299400000",
@@ -66909,7 +66915,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.2997108266221774,
@@ -66957,7 +66963,10 @@
   "edge": false,
   "trail_stop": 85.7,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 5,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-10T11:08+01:00"
  },
  {
   "id": "XRPUSD-5m-1794299400000",
@@ -67368,7 +67377,7 @@
   "edge": false,
   "trail_stop": 0.81945,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "ETHUSD-5m-1794301200000",
@@ -67787,7 +67796,7 @@
   "edge": false,
   "trail_stop": 157.987,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "BTCUSD-5m-1794302400000",
@@ -68056,7 +68065,7 @@
   "edge": false,
   "trail_stop": 2107.24,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "SOLUSD-5m-1794302400000",
@@ -68321,6 +68330,135 @@
   "edge": false,
   "trail_stop": 1.093498,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
+ },
+ {
+  "id": "SOLUSD-5m-1794304800000",
+  "logged": "2026-11-10T11:08+01:00",
+  "bar_t": 1794304800000,
+  "bar_time": "Tue 10 Nov 11:00",
+  "sym": "SOLUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -25,
+  "entry": 85.39,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 85.70625,
+  "tp": [
+   85.07375,
+   84.75749,
+   84.44124
+  ],
+  "inv": 85.7,
+  "votes": [
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.36,
+   0.69,
+   0.08,
+   0.63,
+   0.0,
+   0.0,
+   0.14,
+   0.46,
+   0.13,
+   0.0,
+   0.0,
+   0.04,
+   0.15,
+   0.0,
+   0.01,
+   0.0,
+   0.26,
+   0.44,
+   0.0,
+   0.01,
+   0.84,
+   0.12,
+   0.03,
+   0.03,
+   0.65,
+   0.44,
+   0.59,
+   0.0
+  ],
+  "strategies": [
+   "Trend-follow + ADX filter"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.21083526997530994,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 58,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 86.23719942,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 85.93,
+    "dl": 84.91,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
