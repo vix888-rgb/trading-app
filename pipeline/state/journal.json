@@ -67380,7 +67380,7 @@
   "edge": false,
   "trail_stop": 0.81945,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 46
  },
  {
   "id": "ETHUSD-5m-1794301200000",
@@ -68336,7 +68336,7 @@
   "edge": false,
   "trail_stop": 1.0881,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 40
  },
  {
   "id": "SOLUSD-5m-1794304800000",
@@ -68468,7 +68468,7 @@
   "edge": false,
   "trail_stop": 85.04334107990124,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "BTCUSD-5m-1794305400000",
@@ -68953,7 +68953,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 96.84340992725191,
@@ -69004,7 +69004,10 @@
   "edge": false,
   "trail_stop": 74385.395,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-10T13:58+01:00"
  },
  {
   "id": "ETHUSD-5m-1794314400000",
@@ -69089,7 +69092,7 @@
    "Squeeze momentum breakout",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.8539038728862076,
@@ -69137,6 +69140,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2094.071,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-10T13:58+01:00"
  }
 ]
