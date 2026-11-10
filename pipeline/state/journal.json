@@ -60694,7 +60694,7 @@
   "edge": false,
   "trail_stop": 86.49,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 41
  },
  {
   "id": "XRPUSD-5m-1794245400000",
@@ -60965,7 +60965,7 @@
   "edge": false,
   "trail_stop": 1.342534,
   "tp1_hit": true,
-  "bars_open": 37
+  "bars_open": 38
  },
  {
   "id": "BTCUSD-5m-1794246000000",
@@ -63941,9 +63941,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 2128.516,
-  "tp1_hit": false,
-  "bars_open": 3
+  "trail_stop": 2119.34,
+  "tp1_hit": true,
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-5m-1794280200000",
@@ -64076,7 +64076,7 @@
   "edge": false,
   "trail_stop": 1.344269,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "BTCUSD-15m-1794280500000",
@@ -64199,6 +64199,140 @@
     "st": -1,
     "dh": 75442.01,
     "dl": 74747.19,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 74666.01,
+  "tp1_hit": true,
+  "bars_open": 1
+ },
+ {
+  "id": "BTCUSD-5m-1794282000000",
+  "logged": "2026-11-10T04:47+01:00",
+  "bar_t": 1794282000000,
+  "bar_time": "Tue 10 Nov 04:40",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -37,
+  "entry": 74424.01,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 74581.265,
+  "tp": [
+   74266.755,
+   74109.499,
+   73952.244
+  ],
+  "inv": 74874.01,
+  "votes": [
+   -1,
+   -1,
+   1,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "weights": [
+   0.64,
+   0.69,
+   0.08,
+   0.46,
+   0.67,
+   0.0,
+   0.14,
+   0.46,
+   0.13,
+   0.0,
+   0.56,
+   0.44,
+   0.0,
+   0.0,
+   0.37,
+   0.0,
+   0.26,
+   0.44,
+   0.0,
+   0.48,
+   0.55,
+   0.12,
+   0.0,
+   0.03,
+   0.65,
+   0.44,
+   1.0,
+   0.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Keltner volatility breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 104.83695569268885,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 27,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 74923.92655056,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 75104.8,
+    "dl": 74520.0,
     "brk": -1,
     "sqz": "off",
     "mom": -1,
