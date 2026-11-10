@@ -61378,7 +61378,7 @@
   "edge": false,
   "trail_stop": 2125.82,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "SOLUSD-1h-1794243600000",
@@ -61508,7 +61508,7 @@
   "edge": false,
   "trail_stop": 86.63,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "BTCUSD-15m-1794248100000",
@@ -63413,7 +63413,7 @@
   "edge": false,
   "trail_stop": 1.0989,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "GBPUSD-4h-1794254400000",
@@ -65316,7 +65316,7 @@
   "edge": false,
   "trail_stop": 74815.84,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "ETHUSD-15m-1794289500000",
@@ -65452,7 +65452,7 @@
   "edge": false,
   "trail_stop": 2109.8138350844456,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "SOLUSD-15m-1794290400000",
@@ -67332,7 +67332,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004551040498272943,
@@ -67380,7 +67380,10 @@
   "edge": false,
   "trail_stop": 0.81945,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 1.84,
+  "exit": "time exit",
+  "closed_at": "2026-11-10T14:08+01:00"
  },
  {
   "id": "ETHUSD-5m-1794301200000",
@@ -67799,7 +67802,7 @@
   "edge": false,
   "trail_stop": 157.987,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "BTCUSD-5m-1794302400000",
@@ -68336,7 +68339,7 @@
   "edge": false,
   "trail_stop": 1.0881,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 42
  },
  {
   "id": "SOLUSD-5m-1794304800000",
@@ -68468,7 +68471,7 @@
   "edge": false,
   "trail_stop": 85.04334107990124,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "BTCUSD-5m-1794305400000",
@@ -68739,7 +68742,7 @@
   "edge": false,
   "trail_stop": 85.34,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "XRPUSD-15m-1794304800000",
@@ -68871,7 +68874,7 @@
   "edge": false,
   "trail_stop": 1.090433,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "BTCUSD-5m-1794313800000",
