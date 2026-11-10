@@ -65316,7 +65316,7 @@
   "edge": false,
   "trail_stop": 74815.84,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "ETHUSD-15m-1794289500000",
@@ -65452,7 +65452,7 @@
   "edge": false,
   "trail_stop": 2109.8138350844456,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "SOLUSD-15m-1794290400000",
@@ -67802,7 +67802,7 @@
   "edge": false,
   "trail_stop": 157.987,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "BTCUSD-5m-1794302400000",
@@ -68291,7 +68291,7 @@
    0.8
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.003598509057741317,
@@ -68337,9 +68337,12 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.0881,
+  "trail_stop": 1.0643940362309654,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 3.78,
+  "exit": "time exit",
+  "closed_at": "2026-11-10T14:38+01:00"
  },
  {
   "id": "SOLUSD-5m-1794304800000",
@@ -68423,7 +68426,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.21083526997530994,
@@ -68471,7 +68474,10 @@
   "edge": false,
   "trail_stop": 85.04334107990124,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 40,
+  "R": 1.1,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-10T14:38+01:00"
  },
  {
   "id": "BTCUSD-5m-1794305400000",
@@ -68742,7 +68748,7 @@
   "edge": false,
   "trail_stop": 85.34,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "XRPUSD-15m-1794304800000",
@@ -68874,7 +68880,7 @@
   "edge": false,
   "trail_stop": 1.090433,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "BTCUSD-5m-1794313800000",
@@ -69232,7 +69238,7 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0006450098598283035,
@@ -69285,7 +69291,10 @@
   "edge": false,
   "trail_stop": 0.919383,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-10T14:38+01:00"
  },
  {
   "id": "USDCHF-5m-1794316800000",
@@ -69367,7 +69376,7 @@
    0.26
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00032996372627048517,
@@ -69411,6 +69420,150 @@
     "brk": 0,
     "sqz": "on",
     "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 0.820335,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-10T14:38+01:00"
+ },
+ {
+  "id": "USDCHF-5m-1794317400000",
+  "logged": "2026-11-10T14:38+01:00",
+  "bar_t": 1794317400000,
+  "bar_time": "Tue 10 Nov 14:30",
+  "sym": "USDCHF",
+  "tf": "5m",
+  "side": "long",
+  "score": 72,
+  "entry": 0.82233,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.821547,
+  "tp": [
+   0.823113,
+   0.823897,
+   0.82468
+  ],
+  "inv": 0.82036,
+  "votes": [
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "weights": [
+   0.51,
+   0.69,
+   0.08,
+   0.46,
+   0.0,
+   0.0,
+   0.48,
+   0.8,
+   0.28,
+   0.15,
+   0.0,
+   0.06,
+   0.55,
+   0.32,
+   0.12,
+   0.0,
+   0.54,
+   0.44,
+   0.04,
+   0.03,
+   0.55,
+   0.16,
+   0.0,
+   0.03,
+   0.85,
+   0.8,
+   0.32,
+   0.26
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "ICT/SMC sweep + CHoCH",
+   "Squeeze momentum breakout",
+   "TSMOM multi-lookback trend",
+   "Keltner volatility breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)",
+   "TTM squeeze fire + EMA200 (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0005222636484427755,
+  "filters": {
+   "carry": 3.92,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 94,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": true,
+    "blockLong": false,
+    "blockShort": true,
+    "dir": 1,
+    "alert": true,
+    "lo": 0.82029998,
+    "hi": 0.82102001
+   },
+   "news": {
+    "on": true,
+    "title": "Core CPI m/m",
+    "at": "2026-11-10T08:30:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.81980562,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 0.82112998,
+    "dl": 0.82029998,
+    "brk": 1,
+    "sqz": "fired",
+    "mom": 1,
     "sess": true,
     "gate": false,
     "sgate": false
