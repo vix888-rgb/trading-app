@@ -60694,7 +60694,7 @@
   "edge": false,
   "trail_stop": 87.21904,
   "tp1_hit": false,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "XRPUSD-5m-1794245400000",
@@ -60965,7 +60965,7 @@
   "edge": false,
   "trail_stop": 1.342534,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "BTCUSD-5m-1794246000000",
@@ -62671,7 +62671,7 @@
   "strategies": [
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 8.106018296546509,
@@ -62719,7 +62719,10 @@
   "edge": false,
   "trail_stop": 4126.016,
   "tp1_hit": false,
-  "bars_open": 13
+  "bars_open": 13,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-10T01:47+01:00"
  },
  {
   "id": "XRPUSD-5m-1794258600000",
@@ -63213,7 +63216,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003048278923843743,
@@ -63266,7 +63269,10 @@
   "edge": false,
   "trail_stop": 1.343611,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 7,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-10T01:47+01:00"
  },
  {
   "id": "XRPUSD-1h-1794265200000",
