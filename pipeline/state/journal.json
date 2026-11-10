@@ -66688,7 +66688,7 @@
   "edge": false,
   "trail_stop": 0.91978,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "SOLUSD-5m-1794299400000",
@@ -67368,7 +67368,7 @@
   "edge": false,
   "trail_stop": 0.81945,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "ETHUSD-5m-1794301200000",
@@ -67873,7 +67873,7 @@
    "Keltner volatility breakout",
    "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 130.4687525480988,
@@ -67921,7 +67921,10 @@
   "edge": false,
   "trail_stop": 74500.373,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-10T10:58+01:00"
  },
  {
   "id": "ETHUSD-5m-1794302400000",
@@ -68053,7 +68056,7 @@
   "edge": false,
   "trail_stop": 2107.24,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1794302400000",
@@ -68137,7 +68140,7 @@
   "strategies": [
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.2258528885396361,
@@ -68185,7 +68188,10 @@
   "edge": false,
   "trail_stop": 85.51878,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-10T10:58+01:00"
  },
  {
   "id": "XRPUSD-5m-1794303000000",
@@ -68315,6 +68321,6 @@
   "edge": false,
   "trail_stop": 1.093498,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  }
 ]
