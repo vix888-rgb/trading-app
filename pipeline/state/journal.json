@@ -66224,7 +66224,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0002478946897994528,
@@ -66275,7 +66275,10 @@
   "edge": false,
   "trail_stop": 1.345334,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-10T09:58+01:00"
  },
  {
   "id": "XRPUSD-15m-1794297600000",
@@ -66682,7 +66685,7 @@
   "edge": false,
   "trail_stop": 0.918707,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "SOLUSD-5m-1794299400000",
@@ -66816,7 +66819,7 @@
   "edge": false,
   "trail_stop": 85.90026,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "SOLUSD-15m-1794298500000",
@@ -67082,6 +67085,6 @@
   "edge": false,
   "trail_stop": 1.09304,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  }
 ]
