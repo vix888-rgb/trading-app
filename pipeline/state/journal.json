@@ -65313,7 +65313,7 @@
   "edge": false,
   "trail_stop": 74815.84,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "ETHUSD-15m-1794289500000",
@@ -65449,7 +65449,7 @@
   "edge": false,
   "trail_stop": 2115.823835084446,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "SOLUSD-15m-1794290400000",
@@ -66414,7 +66414,7 @@
   "edge": false,
   "trail_stop": 1.0904,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "GBPUSD-15m-1794297600000",
@@ -66688,7 +66688,7 @@
   "edge": false,
   "trail_stop": 0.91978,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "SOLUSD-5m-1794299400000",
@@ -66957,7 +66957,7 @@
   "edge": false,
   "trail_stop": 85.7,
   "tp1_hit": true,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "XRPUSD-5m-1794299400000",
@@ -67043,7 +67043,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.003026341625331884,
@@ -67091,7 +67091,10 @@
   "edge": false,
   "trail_stop": 1.0885,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-10T10:38+01:00"
  },
  {
   "id": "BTCUSD-5m-1794301200000",
@@ -67365,7 +67368,7 @@
   "edge": false,
   "trail_stop": 0.81945,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1794301200000",
@@ -67784,7 +67787,7 @@
   "edge": false,
   "trail_stop": 157.987,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "BTCUSD-5m-1794302400000",
@@ -67915,7 +67918,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 74500.373,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-5m-1794302400000",
@@ -68044,7 +68050,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2107.24,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-5m-1794302400000",
@@ -68164,6 +68173,136 @@
     "st": -1,
     "dh": 86.36,
     "dl": 84.91,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 85.51878,
+  "tp1_hit": false,
+  "bars_open": 2
+ },
+ {
+  "id": "XRPUSD-5m-1794303000000",
+  "logged": "2026-11-10T10:38+01:00",
+  "bar_t": 1794303000000,
+  "bar_time": "Tue 10 Nov 10:30",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -50,
+  "entry": 1.0881,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.093498,
+  "tp": [
+   1.082702,
+   1.077304,
+   1.071907
+  ],
+  "inv": 1.0916,
+  "votes": [
+   -1,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.36,
+   0.96,
+   1.08,
+   0.47,
+   0.0,
+   1.0,
+   1.15,
+   1.46,
+   1.13,
+   0.6,
+   0.0,
+   0.6,
+   0.0,
+   0.69,
+   0.04,
+   0.0,
+   1.12,
+   0.44,
+   0.0,
+   0.01,
+   0.79,
+   0.38,
+   0.0,
+   0.68,
+   1.52,
+   1.44,
+   0.32,
+   0.8
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.003598509057741317,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 60,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.09689569,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.0999,
+    "dl": 1.0782,
     "brk": -1,
     "sqz": "off",
     "mom": -1,
