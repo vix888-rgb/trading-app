@@ -259,6 +259,10 @@ def main3():
             _brk=edge.recent_brk(_brkL,_brkS,len(df)-1); _sess=edge.session_ok(df.t.iloc[-1],HSTEP[tf])
             sig,why3=edge.apply_round4(sig,key,tf,_brk,_sess)
             if why3: why=why3
+            # Elder daily tide (10 Nov 2026): gold 1h only. Same closed-bar htf_bias the engine already uses; 0 when 1D is missing.
+            _db=edge.htf_bias(df,raw.get((key,"1d")))[-1]
+            sig,why4=edge.apply_daily(sig,key,tf,_db)
+            if why4: why=why4
             flt["range"]=gate["range"]; flt["sweep"]=gate["sweep"]; flt["news"]=gate["news"]; flt["why"]=why
             # latch: a closed bar keeps the signal it got on its first scan (no flip-flop between scans of the same bar)
             lk=f"{key}|{tf}"; bt_=int(df.t.iloc[-1]); prevl=LATCH.get(lk)
@@ -266,6 +270,7 @@ def main3():
                 sig,score,flt=prevl["sig"],prevl["score"],prevl.get("flt",flt); flt=dict(flt or {}); flt["latched"]=True
             LATCH_OUT[lk]={"bar_t":bt_,"sig":sig,"score":score,"flt":{k_:v_ for k_,v_ in flt.items() if k_!="latched"}}
             flt=dict(flt or {}); flt["ind"]=edge.indicator_panel(df,hdf,tf,key,HSTEP[tf])  # round 4 indicator panel (display, every scan)
+            flt["ind"]["d1"]=int(_db); flt["ind"]["dgate"]=f"{key}|{tf}" in edge.DAILY_GATE
             flt["pat"]=patterns.panel(df) if key in ("XAUUSD","BTCUSD") and tf in ("1h","4h","1d") else []  # pattern agents, display only
             if oo is not None and not frozen:  # same OOS samples, adaptive consensus but only when the quality filters agree
                 rf=[]

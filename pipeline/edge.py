@@ -532,6 +532,7 @@ SQZ_RULE=("Bollinger(20,2) leaves Keltner(20,1.5×ATR) after a squeeze; momentum
 BRK_GATE=("XAUUSD|1h","BTCUSD|1h")   # consensus 1h BUY/SELL must have a fresh Donchian-20 breakout the same way (last BRK_WINDOW bars)
 BRK_WINDOW=10
 SESSION_GATE=("BTCUSD|1h",)         # 1h signals only when the bar closes 07:00-19:59 London time (London + New York)
+DAILY_GATE=("XAUUSD|1h",)            # 1h BUY/SELL also needs the 1D EMA20 vs EMA50 bias to agree; walk-forward tested 10 Nov 2026: gold 1h TEST -0.179R->+0.081R, book TEST +0.296->+0.354R PF1.64->1.77
 SESSION_HOURS=(7,20)
 LDN=ZoneInfo("Europe/London")
 def donchian_signals(df,htf,n=20):
@@ -564,6 +565,10 @@ def apply_round4(sig,key,tf,brk,sess_ok):
     k=f"{key}|{tf}"; d=1 if sig=="BUY" else -1
     if k in BRK_GATE and not (brk[0] if d>0 else brk[1]): return "WAIT","breakout"
     if k in SESSION_GATE and not sess_ok: return "WAIT","session"
+    return sig,""
+def apply_daily(sig,key,tf,dbias):
+    """Elder triple-screen: gold 1h BUY/SELL must agree with the last closed 1D EMA20 vs EMA50 bias (htf_bias). 0 waits."""
+    if f"{key}|{tf}" in DAILY_GATE and ((sig=="BUY" and not dbias>0) or (sig=="SELL" and not dbias<0)): return "WAIT","daily"
     return sig,""
 def indicator_panel(df,htf,tf,key,step_ms):
     """Values shown in the app (display): EMA20/50/200, Supertrend(10,3), Donchian-20, TTM squeeze, session, gate state."""
