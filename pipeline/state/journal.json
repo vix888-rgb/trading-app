@@ -65265,7 +65265,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 177.86812750093347,
@@ -65316,7 +65316,10 @@
   "edge": false,
   "trail_stop": 74236.20251000373,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 34,
+  "R": 2.17,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-10T15:49+01:00"
  },
  {
   "id": "ETHUSD-15m-1794289500000",
@@ -67803,9 +67806,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 158.20816116740417,
+  "trail_stop": 158.28115921427917,
   "tp1_hit": true,
-  "bars_open": 21
+  "bars_open": 22
  },
  {
   "id": "BTCUSD-5m-1794302400000",
@@ -69582,7 +69585,7 @@
   "edge": false,
   "trail_stop": 0.82233,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "BTCUSD-1h-1794315600000",
@@ -70088,7 +70091,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 13.346951093458953,
@@ -70140,7 +70143,10 @@
   "edge": false,
   "trail_stop": 2085.97,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-10T15:49+01:00"
  },
  {
   "id": "SOLUSD-15m-1794318300000",
@@ -70274,7 +70280,7 @@
   "edge": false,
   "trail_stop": 84.90901,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XRPUSD-15m-1794318300000",
@@ -70413,7 +70419,7 @@
   "edge": false,
   "trail_stop": 1.07629,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "USDJPY-5m-1794319800000",
@@ -70548,7 +70554,7 @@
   "edge": false,
   "trail_stop": 158.484,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "EURCHF-5m-1794320400000",
@@ -70684,6 +70690,270 @@
   "edge": false,
   "trail_stop": 0.919949,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "BTCUSD-15m-1794321000000",
+  "logged": "2026-11-10T15:49+01:00",
+  "bar_t": 1794321000000,
+  "bar_time": "Tue 10 Nov 15:30",
+  "sym": "BTCUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -36,
+  "entry": 74314.64,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 74777.124,
+  "tp": [
+   73852.156,
+   73389.672,
+   72927.188
+  ],
+  "inv": 74770.01,
+  "votes": [
+   0,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.62,
+   0.94,
+   0.99,
+   0.46,
+   0.1,
+   0.64,
+   0.86,
+   0.46,
+   0.65,
+   1.0,
+   0.0,
+   0.13,
+   0.0,
+   0.24,
+   1.01,
+   0.0,
+   0.43,
+   0.77,
+   0.44,
+   0.01,
+   0.55,
+   0.75,
+   0.0,
+   0.03,
+   1.08,
+   0.46,
+   0.0,
+   0.23
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend",
+   "Keltner volatility breakout",
+   "TTM squeeze fire + EMA200 (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 308.3226726809439,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 92,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": true,
+    "blockLong": true,
+    "blockShort": false,
+    "dir": -1,
+    "alert": true,
+    "lo": 74119.99,
+    "hi": 74466.69
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 74928.32263987,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 74770.01,
+    "dl": 73524.73,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
+ },
+ {
+  "id": "ETHUSD-15m-1794321000000",
+  "logged": "2026-11-10T15:49+01:00",
+  "bar_t": 1794321000000,
+  "bar_time": "Tue 10 Nov 15:30",
+  "sym": "ETHUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -50,
+  "entry": 2081.65,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 2102.413,
+  "tp": [
+   2060.887,
+   2040.125,
+   2019.362
+  ],
+  "inv": 2109.09,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.36,
+   0.83,
+   0.62,
+   0.46,
+   0.0,
+   0.54,
+   0.62,
+   0.46,
+   0.13,
+   0.23,
+   0.0,
+   0.16,
+   0.0,
+   0.09,
+   0.84,
+   0.0,
+   0.33,
+   0.44,
+   0.73,
+   0.01,
+   0.55,
+   0.12,
+   0.0,
+   0.03,
+   1.18,
+   0.44,
+   0.0,
+   0.0
+  ],
+  "strategies": [
+   "Keltner volatility breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 13.84180450157769,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 92,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": true,
+    "blockLong": true,
+    "blockShort": false,
+    "dir": -1,
+    "alert": true,
+    "lo": 2086.39,
+    "hi": 2100.05
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 2140.33909849,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 2109.09,
+    "dl": 2028.32,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
