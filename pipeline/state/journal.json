@@ -72544,7 +72544,7 @@
    "TSMOM multi-lookback trend",
    "AB=CD (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0005811274293149464,
@@ -72595,7 +72595,10 @@
   "edge": false,
   "trail_stop": 0.920568,
   "tp1_hit": false,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": -0.54,
+  "exit": "time exit",
+  "closed_at": "2026-11-10T23:59+01:00"
  },
  {
   "id": "BTCUSD-1h-1794333600000",
