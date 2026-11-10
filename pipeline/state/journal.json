@@ -57979,7 +57979,7 @@
   "edge": true,
   "trail_stop": 4107.431835309166,
   "tp1_hit": true,
-  "bars_open": 21
+  "bars_open": 22
  },
  {
   "id": "GBPUSD-15m-1794212100000",
@@ -61375,7 +61375,7 @@
   "edge": false,
   "trail_stop": 2159.263,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "SOLUSD-1h-1794243600000",
@@ -61505,7 +61505,7 @@
   "edge": false,
   "trail_stop": 88.11371,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "BTCUSD-15m-1794248100000",
@@ -63410,7 +63410,7 @@
   "edge": false,
   "trail_stop": 1.120136,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "GBPUSD-4h-1794254400000",
@@ -64720,7 +64720,7 @@
    "Squeeze momentum breakout",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.005145798769043232,
@@ -64768,7 +64768,10 @@
   "edge": false,
   "trail_stop": 1.101119,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 7,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-10T07:07+01:00"
  },
  {
   "id": "BTCUSD-15m-1794283200000",
@@ -65176,5 +65179,270 @@
   "R": -1.0,
   "exit": "stop",
   "closed_at": "2026-11-10T05:47+01:00"
+ },
+ {
+  "id": "BTCUSD-15m-1794289500000",
+  "logged": "2026-11-10T07:07+01:00",
+  "bar_t": 1794289500000,
+  "bar_time": "Tue 10 Nov 06:45",
+  "sym": "BTCUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -40,
+  "entry": 74815.84,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 75082.642,
+  "tp": [
+   74549.038,
+   74282.236,
+   74015.433
+  ],
+  "inv": 75442.01,
+  "votes": [
+   -1,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.62,
+   0.94,
+   0.99,
+   0.46,
+   0.1,
+   0.64,
+   0.86,
+   0.46,
+   0.65,
+   1.0,
+   0.0,
+   0.13,
+   0.0,
+   0.24,
+   1.01,
+   0.0,
+   0.43,
+   0.77,
+   0.44,
+   0.01,
+   0.55,
+   0.75,
+   0.0,
+   0.03,
+   1.08,
+   0.46,
+   0.0,
+   0.23
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 177.86812750093347,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 51,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 74379.05,
+    "hi": 75154.0,
+    "src": "15m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 75149.61384111,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 75288.42,
+    "dl": 74379.05,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
+ },
+ {
+  "id": "ETHUSD-15m-1794289500000",
+  "logged": "2026-11-10T07:07+01:00",
+  "bar_t": 1794289500000,
+  "bar_time": "Tue 10 Nov 06:45",
+  "sym": "ETHUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -30,
+  "entry": 2125.38,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 2135.06,
+  "tp": [
+   2115.7,
+   2106.02,
+   2096.339
+  ],
+  "inv": 2133.48,
+  "votes": [
+   0,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   0.36,
+   0.83,
+   0.62,
+   0.46,
+   0.0,
+   0.54,
+   0.62,
+   0.46,
+   0.13,
+   0.23,
+   0.0,
+   0.16,
+   0.0,
+   0.09,
+   0.84,
+   0.0,
+   0.33,
+   0.44,
+   0.73,
+   0.01,
+   0.55,
+   0.12,
+   0.0,
+   0.03,
+   1.18,
+   0.44,
+   0.0,
+   0.0
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend",
+   "TTM squeeze fire + EMA200 (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 6.453458771111356,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 53,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 2108.14,
+    "hi": 2130.12,
+    "src": "15m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 2157.87383262,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 2133.48,
+    "dl": 2108.14,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
