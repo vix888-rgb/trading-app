@@ -65316,7 +65316,7 @@
   "edge": false,
   "trail_stop": 74815.84,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "ETHUSD-15m-1794289500000",
@@ -65452,7 +65452,7 @@
   "edge": false,
   "trail_stop": 2109.8138350844456,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "SOLUSD-15m-1794290400000",
@@ -67802,7 +67802,7 @@
   "edge": false,
   "trail_stop": 157.987,
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "BTCUSD-5m-1794302400000",
@@ -68339,7 +68339,7 @@
   "edge": false,
   "trail_stop": 1.0881,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 44
  },
  {
   "id": "SOLUSD-5m-1794304800000",
@@ -68471,7 +68471,7 @@
   "edge": false,
   "trail_stop": 85.04334107990124,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "BTCUSD-5m-1794305400000",
@@ -68742,7 +68742,7 @@
   "edge": false,
   "trail_stop": 85.34,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "XRPUSD-15m-1794304800000",
@@ -68874,7 +68874,7 @@
   "edge": false,
   "trail_stop": 1.090433,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "BTCUSD-5m-1794313800000",
@@ -69149,5 +69149,139 @@
   "exit": "stop",
   "tp1_hit": false,
   "closed_at": "2026-11-10T13:58+01:00"
+ },
+ {
+  "id": "EURCHF-5m-1794316200000",
+  "logged": "2026-11-10T14:18+01:00",
+  "bar_t": 1794316200000,
+  "bar_time": "Tue 10 Nov 14:10",
+  "sym": "EURCHF",
+  "tf": "5m",
+  "side": "long",
+  "score": 25,
+  "entry": 0.92035,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.919383,
+  "tp": [
+   0.921318,
+   0.922285,
+   0.923253
+  ],
+  "inv": 0.91899,
+  "votes": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   0.36,
+   0.69,
+   0.08,
+   0.46,
+   0.0,
+   0.0,
+   0.14,
+   0.46,
+   0.28,
+   0.15,
+   0.09,
+   0.0,
+   0.33,
+   0.86,
+   0.16,
+   0.0,
+   0.26,
+   0.44,
+   0.15,
+   0.01,
+   0.55,
+   0.12,
+   1.0,
+   0.03,
+   0.65,
+   0.44,
+   0.71,
+   0.12
+  ],
+  "strategies": [
+   "Wyckoff spring / upthrust"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0006450098598283035,
+  "filters": {
+   "carry": 2.54,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 69,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 0.91966999,
+    "hi": 0.92133999,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "Core CPI m/m",
+    "at": "2026-11-10T08:30:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.91976524,
+    "side200": 1,
+    "stack": 0,
+    "st": 1,
+    "dh": 0.92106998,
+    "dl": 0.91966999,
+    "brk": 0,
+    "sqz": "on",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
