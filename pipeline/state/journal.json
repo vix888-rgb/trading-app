@@ -60694,7 +60694,7 @@
   "edge": false,
   "trail_stop": 87.21904,
   "tp1_hit": false,
-  "bars_open": 35
+  "bars_open": 36
  },
  {
   "id": "XRPUSD-5m-1794245400000",
@@ -60965,7 +60965,7 @@
   "edge": false,
   "trail_stop": 1.342534,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "BTCUSD-5m-1794246000000",
@@ -63669,6 +63669,136 @@
   "edge": false,
   "trail_stop": 1.343996,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
+ },
+ {
+  "id": "USDCHF-5m-1794277800000",
+  "logged": "2026-11-10T03:37+01:00",
+  "bar_t": 1794277800000,
+  "bar_time": "Tue 10 Nov 03:30",
+  "sym": "USDCHF",
+  "tf": "5m",
+  "side": "long",
+  "score": 45,
+  "entry": 0.81983,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.819421,
+  "tp": [
+   0.820239,
+   0.820648,
+   0.821058
+  ],
+  "inv": 0.81945,
+  "votes": [
+   0,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   -1,
+   1,
+   -1,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   0.51,
+   0.69,
+   0.08,
+   0.46,
+   0.0,
+   0.0,
+   0.48,
+   0.8,
+   0.28,
+   0.15,
+   0.0,
+   0.06,
+   0.55,
+   0.32,
+   0.12,
+   0.0,
+   0.54,
+   0.44,
+   0.04,
+   0.03,
+   0.55,
+   0.16,
+   0.0,
+   0.03,
+   0.85,
+   0.8,
+   0.32,
+   0.26
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0002728212722855533,
+  "filters": {
+   "carry": 3.92,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 33,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 0.81945002,
+    "hi": 0.81989998,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.81972726,
+    "side200": 1,
+    "stack": 0,
+    "st": 1,
+    "dh": 0.81993002,
+    "dl": 0.81904,
+    "brk": 0,
+    "sqz": "on",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
