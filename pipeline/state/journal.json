@@ -83912,7 +83912,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.04544968675376828,
@@ -83965,7 +83965,10 @@
   "edge": false,
   "trail_stop": 159.787,
   "tp1_hit": false,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": -0.57,
+  "exit": "time exit",
+  "closed_at": "2026-11-11T22:42+01:00"
  },
  {
   "id": "XAUUSD-5m-1794419100000",
@@ -84102,7 +84105,7 @@
   "edge": false,
   "trail_stop": 3994.4427393597766,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 46
  },
  {
   "id": "GBPUSD-5m-1794421500000",
