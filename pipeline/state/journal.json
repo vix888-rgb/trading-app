@@ -83280,7 +83280,7 @@
   "edge": false,
   "trail_stop": 0.922262,
   "tp1_hit": false,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "USDJPY-5m-1794414300000",
@@ -85087,7 +85087,7 @@
   "edge": false,
   "trail_stop": 2051.12957535465,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "GBPUSD-5m-1794435900000",
@@ -85501,7 +85501,7 @@
   "edge": false,
   "trail_stop": 73893.10432604332,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "SOLUSD-5m-1794436500000",
@@ -85588,7 +85588,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.19008905236628043,
@@ -85638,7 +85638,10 @@
   "edge": false,
   "trail_stop": 82.95035620946511,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": 4.07,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-12T00:32+01:00"
  },
  {
   "id": "XRPUSD-5m-1794436500000",
@@ -85773,7 +85776,7 @@
   "edge": false,
   "trail_stop": 1.051370431636946,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "ETHUSD-15m-1794436200000",
@@ -85910,7 +85913,7 @@
   "edge": false,
   "trail_stop": 2059.16,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XRPUSD-15m-1794436200000",
@@ -86044,7 +86047,7 @@
   "edge": false,
   "trail_stop": 1.055,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "BTCUSD-15m-1794437100000",
@@ -86186,7 +86189,7 @@
   "edge": false,
   "trail_stop": 73940.51,
   "tp1_hit": true,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "EURUSD-5m-1794437700000",
@@ -86867,7 +86870,7 @@
   "edge": false,
   "trail_stop": 1.328314,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-15m-1794438000000",
@@ -87000,6 +87003,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 83.12983,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
