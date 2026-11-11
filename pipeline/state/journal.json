@@ -72465,7 +72465,7 @@
   "edge": false,
   "trail_stop": 74097.003,
   "tp1_hit": false,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "EURCHF-5m-1794336600000",
@@ -73013,7 +73013,7 @@
   "edge": false,
   "trail_stop": 0.82553,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "XRPUSD-15m-1794356100000",
@@ -73145,7 +73145,7 @@
   "edge": false,
   "trail_stop": 1.062783,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "USDJPY-5m-1794358800000",
@@ -73284,7 +73284,7 @@
   "edge": false,
   "trail_stop": 158.865,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "GBPUSD-1h-1794355200000",
@@ -73645,7 +73645,7 @@
    "Turtle 20-bar breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0001575854446576206,
@@ -73698,7 +73698,10 @@
   "edge": false,
   "trail_stop": 1.11657,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-11T02:39+01:00"
  },
  {
   "id": "ETHUSD-15m-1794358800000",
@@ -73782,7 +73785,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 7.01143481603453,
@@ -73835,7 +73838,10 @@
   "edge": false,
   "trail_stop": 2056.307,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 0,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-11T02:39+01:00"
  },
  {
   "id": "BTCUSD-5m-1794360000000",
@@ -73920,7 +73926,7 @@
    "TSMOM multi-lookback trend",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 96.21933489642264,
@@ -73970,7 +73976,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 73662.339,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-11T02:39+01:00"
  },
  {
   "id": "EURCHF-5m-1794360000000",
@@ -74103,7 +74114,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.921143,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-5m-1794360000000",
@@ -74187,7 +74201,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.16015568521252457,
@@ -74234,6 +74248,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 83.30023,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-11T02:39+01:00"
  }
 ]
