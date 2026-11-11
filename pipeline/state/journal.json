@@ -72465,7 +72465,7 @@
   "edge": false,
   "trail_stop": 74097.003,
   "tp1_hit": false,
-  "bars_open": 39
+  "bars_open": 40
  },
  {
   "id": "EURCHF-5m-1794336600000",
@@ -74126,7 +74126,7 @@
   "edge": false,
   "trail_stop": 0.921143,
   "tp1_hit": false,
-  "bars_open": 38
+  "bars_open": 40
  },
  {
   "id": "SOLUSD-5m-1794360000000",
@@ -74948,7 +74948,7 @@
   "edge": false,
   "trail_stop": 158.672,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "USDJPY-5m-1794369000000",
@@ -75487,6 +75487,140 @@
     "dl": 82.8,
     "brk": 0,
     "sqz": "on",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 83.60166,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "XRPUSD-5m-1794372000000",
+  "logged": "2026-11-11T05:50+01:00",
+  "bar_t": 1794372000000,
+  "bar_time": "Wed 11 Nov 05:40",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -48,
+  "entry": 1.056,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.059905,
+  "tp": [
+   1.052095,
+   1.04819,
+   1.044286
+  ],
+  "inv": 1.0652,
+  "votes": [
+   -1,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.36,
+   0.96,
+   1.08,
+   0.47,
+   0.0,
+   1.0,
+   1.15,
+   1.46,
+   1.13,
+   0.6,
+   0.0,
+   0.6,
+   0.0,
+   0.69,
+   0.04,
+   0.0,
+   1.12,
+   0.44,
+   0.0,
+   0.01,
+   0.79,
+   0.38,
+   0.0,
+   0.68,
+   1.52,
+   1.44,
+   0.32,
+   0.8
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.002603203883523924,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 25,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.06300789,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.0652,
+    "dl": 1.0497,
+    "brk": -1,
+    "sqz": "off",
     "mom": -1,
     "sess": false,
     "gate": false,
