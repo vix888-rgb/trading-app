@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T20:32+01:00",
+ "updated": "2026-11-11T20:42+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13121,14 +13121,14 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 589,
+    "n": 590,
     "hit": 34,
     "avgR": 0.205,
     "pf": 1.35
    },
    "Stochastic (14/3/3)": {
-    "n": 589,
-    "hit": 38,
+    "n": 590,
+    "hit": 37,
     "avgR": 0.284,
     "pf": 1.53
    },
@@ -13139,15 +13139,15 @@
     "pf": 1.42
    },
    "Ichimoku cloud": {
-    "n": 519,
+    "n": 520,
     "hit": 24,
     "avgR": 0.241,
     "pf": 1.46
    },
    "Supertrend (10/3)": {
-    "n": 589,
+    "n": 590,
     "hit": 30,
-    "avgR": 0.263,
+    "avgR": 0.262,
     "pf": 1.48
    },
    "Volume / OBV": {
@@ -13175,9 +13175,9 @@
     "pf": 0.57
    },
    "Multi-timeframe confirmation": {
-    "n": 498,
+    "n": 499,
     "hit": 22,
-    "avgR": 0.36,
+    "avgR": 0.359,
     "pf": 1.7
    },
    "News sentiment": {
@@ -13187,7 +13187,7 @@
     "pf": 1.37
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 589,
+    "n": 590,
     "hit": 29,
     "avgR": 0.326,
     "pf": 1.63
@@ -13199,7 +13199,7 @@
     "pf": 2.21
    },
    "Fair value gaps": {
-    "n": 432,
+    "n": 433,
     "hit": 26,
     "avgR": 0.071,
     "pf": 1.11
@@ -13211,39 +13211,39 @@
     "pf": 0.77
    },
    "Volume profile / POC": {
-    "n": 589,
+    "n": 590,
     "hit": 36,
     "avgR": 0.001,
     "pf": 1.0
    },
    "Anchored VWAP": {
-    "n": 499,
+    "n": 500,
     "hit": 32,
     "avgR": 0.072,
     "pf": 1.11
    },
    "Heikin Ashi trend": {
-    "n": 589,
+    "n": 590,
     "hit": 28,
     "avgR": 0.171,
     "pf": 1.29
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 589,
+    "n": 590,
     "hit": 31,
     "avgR": 0.381,
     "pf": 1.77
    },
    "Hull MA (55)": {
-    "n": 589,
+    "n": 590,
     "hit": 31,
     "avgR": 0.216,
     "pf": 1.38
    },
    "Daily pivot points": {
-    "n": 589,
+    "n": 590,
     "hit": 24,
-    "avgR": 0.135,
+    "avgR": 0.134,
     "pf": 1.22
    },
    "EMA trend (20/50/200)": {
@@ -13327,7 +13327,7 @@
     "pf": 1.51
    },
    "GBPUSD": {
-    "n": 71,
+    "n": 72,
     "hit": 21,
     "avgR": 0.03,
     "pf": 1.06
@@ -13462,12 +13462,12 @@
    }
   },
   "all": {
-   "n": 589,
+   "n": 590,
    "hit": 22,
-   "avgR": 0.333,
+   "avgR": 0.332,
    "pf": 1.64
   },
-  "open": 25,
+  "open": 24,
   "total": 640
  },
  "rates": {
