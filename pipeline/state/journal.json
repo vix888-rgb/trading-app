@@ -72465,7 +72465,7 @@
   "edge": false,
   "trail_stop": 74097.003,
   "tp1_hit": false,
-  "bars_open": 46
+  "bars_open": 47
  },
  {
   "id": "EURCHF-5m-1794336600000",
@@ -74951,7 +74951,7 @@
   "edge": false,
   "trail_stop": 158.672,
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "USDJPY-5m-1794369000000",
@@ -75502,7 +75502,7 @@
   "edge": false,
   "trail_stop": 83.60166,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "XRPUSD-5m-1794372000000",
@@ -75911,7 +75911,7 @@
   "edge": false,
   "trail_stop": 4049.903,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-5m-1794376800000",
@@ -76047,8 +76047,142 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.334448,
-  "tp1_hit": false,
-  "bars_open": 4
+  "trail_stop": 1.334169,
+  "tp1_hit": true,
+  "bars_open": 6
+ },
+ {
+  "id": "EURCHF-5m-1794378600000",
+  "logged": "2026-11-11T07:40+01:00",
+  "bar_t": 1794378600000,
+  "bar_time": "Wed 11 Nov 07:30",
+  "sym": "EURCHF",
+  "tf": "5m",
+  "side": "long",
+  "score": 26,
+  "entry": 0.92219,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.921356,
+  "tp": [
+   0.923024,
+   0.923859,
+   0.924693
+  ],
+  "inv": 0.92155,
+  "votes": [
+   1,
+   1,
+   1,
+   -1,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   1
+  ],
+  "weights": [
+   0.36,
+   0.69,
+   0.08,
+   0.46,
+   0.0,
+   0.0,
+   0.14,
+   0.46,
+   0.28,
+   0.15,
+   0.09,
+   0.0,
+   0.33,
+   0.86,
+   0.16,
+   0.0,
+   0.26,
+   0.44,
+   0.15,
+   0.01,
+   0.55,
+   0.12,
+   1.0,
+   0.03,
+   0.65,
+   0.44,
+   0.71,
+   0.12
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0005562387271576793,
+  "filters": {
+   "carry": 2.54,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 33,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 0.92154998,
+    "hi": 0.92229998,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": true,
+    "blockLong": false,
+    "blockShort": true,
+    "dir": 1,
+    "alert": true,
+    "lo": 0.92157,
+    "hi": 0.92210001
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.92148502,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 0.92229998,
+    "dl": 0.92149001,
+    "brk": 0,
+    "sqz": "on",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
