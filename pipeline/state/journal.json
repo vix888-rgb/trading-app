@@ -29204,7 +29204,7 @@
   "edge": false,
   "trail_stop": 1.1291477958191096,
   "tp1_hit": true,
-  "bars_open": 33
+  "bars_open": 34
  },
  {
   "id": "GBPUSD-5m-1793897400000",
@@ -40432,7 +40432,7 @@
   "edge": false,
   "trail_stop": 89.25704808519117,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "SOLUSD-5m-1793997000000",
@@ -42476,7 +42476,7 @@
   "edge": false,
   "trail_stop": 75984.5,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "ETHUSD-4h-1794038400000",
@@ -42609,7 +42609,7 @@
   "edge": false,
   "trail_stop": 2143.8648140925375,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "XRPUSD-5m-1794054900000",
@@ -61384,7 +61384,7 @@
   "edge": false,
   "trail_stop": 2095.1801337227475,
   "tp1_hit": true,
-  "bars_open": 37
+  "bars_open": 38
  },
  {
   "id": "SOLUSD-1h-1794243600000",
@@ -61514,7 +61514,7 @@
   "edge": false,
   "trail_stop": 85.29656777767022,
   "tp1_hit": true,
-  "bars_open": 37
+  "bars_open": 38
  },
  {
   "id": "BTCUSD-15m-1794248100000",
@@ -63419,7 +63419,7 @@
   "edge": false,
   "trail_stop": 1.0877292733370585,
   "tp1_hit": true,
-  "bars_open": 31
+  "bars_open": 32
  },
  {
   "id": "GBPUSD-4h-1794254400000",
@@ -70022,7 +70022,7 @@
   "edge": false,
   "trail_stop": 158.51,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "ETHUSD-15m-1794318300000",
@@ -72742,7 +72742,7 @@
   "edge": false,
   "trail_stop": 74411.344,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "BTCUSD-1d-1794268800000",
@@ -73429,9 +73429,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.336703,
-  "tp1_hit": false,
-  "bars_open": 6
+  "trail_stop": 1.3349,
+  "tp1_hit": true,
+  "bars_open": 7
  },
  {
   "id": "XAUUSD-5m-1794359400000",
@@ -74954,7 +74954,7 @@
   "edge": false,
   "trail_stop": 158.793,
   "tp1_hit": true,
-  "bars_open": 21
+  "bars_open": 22
  },
  {
   "id": "USDJPY-5m-1794369000000",
@@ -75917,7 +75917,7 @@
   "edge": false,
   "trail_stop": 4049.903,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "GBPUSD-5m-1794376800000",
@@ -76193,9 +76193,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.921356,
-  "tp1_hit": false,
-  "bars_open": 15
+  "trail_stop": 0.92219,
+  "tp1_hit": true,
+  "bars_open": 17
  },
  {
   "id": "USDCHF-5m-1794379200000",
@@ -76602,7 +76602,7 @@
   "edge": false,
   "trail_stop": 0.826582450772831,
   "tp1_hit": true,
-  "bars_open": 9
+  "bars_open": 11
  },
  {
   "id": "SOLUSD-5m-1794380400000",
@@ -77014,7 +77014,7 @@
   "edge": false,
   "trail_stop": 1.115947,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 7
  },
  {
   "id": "SOLUSD-5m-1794381600000",
@@ -77098,7 +77098,7 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.23227363220074593,
@@ -77148,7 +77148,10 @@
   "edge": false,
   "trail_stop": 83.39841,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 5,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-11T09:01+01:00"
  },
  {
   "id": "USDJPY-5m-1794382500000",
@@ -77286,7 +77289,7 @@
   "edge": false,
   "trail_stop": 158.83,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "EURCHF-15m-1794381300000",
@@ -77428,7 +77431,7 @@
   "edge": false,
   "trail_stop": 0.921563,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-5m-1794382500000",
@@ -77566,7 +77569,7 @@
   "edge": false,
   "trail_stop": 1.333423,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "USDCHF-15m-1794382200000",
@@ -77697,7 +77700,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.826664,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "XRPUSD-5m-1794383100000",
@@ -77781,7 +77787,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.002822232032023117,
@@ -77828,6 +77834,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.058933,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-11T09:01+01:00"
  }
 ]
