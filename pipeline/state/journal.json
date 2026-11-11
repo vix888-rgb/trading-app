@@ -82933,7 +82933,7 @@
    "Wyckoff spring / upthrust",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0006653406536712684,
@@ -82988,7 +82988,10 @@
   "edge": false,
   "trail_stop": 0.92343,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 0.61,
+  "exit": "time exit",
+  "closed_at": "2026-11-11T20:12+01:00"
  },
  {
   "id": "USDCHF-4h-1794398400000",
@@ -83536,7 +83539,7 @@
   "edge": false,
   "trail_stop": 1.109755,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "USDCHF-5m-1794416700000",
@@ -83953,7 +83956,7 @@
   "edge": false,
   "trail_stop": 159.787,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "XAUUSD-5m-1794419100000",
@@ -84088,9 +84091,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3998.8304293597766,
+  "trail_stop": 3997.2893293597767,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "GBPUSD-5m-1794421500000",
@@ -84225,6 +84228,140 @@
   "edge": false,
   "trail_stop": 1.327792,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
+ },
+ {
+  "id": "XRPUSD-5m-1794423900000",
+  "logged": "2026-11-11T20:12+01:00",
+  "bar_t": 1794423900000,
+  "bar_time": "Wed 11 Nov 20:05",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -71,
+  "entry": 1.0584,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.063763,
+  "tp": [
+   1.053037,
+   1.047674,
+   1.042311
+  ],
+  "inv": 1.0696,
+  "votes": [
+   0,
+   -1,
+   -1,
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "weights": [
+   1.36,
+   0.96,
+   1.08,
+   0.47,
+   0.0,
+   1.0,
+   1.15,
+   1.46,
+   1.13,
+   0.6,
+   0.0,
+   0.6,
+   0.0,
+   0.69,
+   0.04,
+   0.0,
+   1.12,
+   0.44,
+   0.0,
+   0.01,
+   0.79,
+   0.38,
+   0.0,
+   0.68,
+   1.52,
+   1.44,
+   0.32,
+   0.8
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "TSMOM multi-lookback trend",
+   "Keltner volatility breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0035754213390541854,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 85,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.06300319,
+    "side200": -1,
+    "stack": 0,
+    "st": -1,
+    "dh": 1.0762,
+    "dl": 1.0586,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
