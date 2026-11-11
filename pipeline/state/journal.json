@@ -72465,7 +72465,7 @@
   "edge": false,
   "trail_stop": 74097.003,
   "tp1_hit": false,
-  "bars_open": 38
+  "bars_open": 39
  },
  {
   "id": "EURCHF-5m-1794336600000",
@@ -74126,7 +74126,7 @@
   "edge": false,
   "trail_stop": 0.921143,
   "tp1_hit": false,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "SOLUSD-5m-1794360000000",
@@ -74948,7 +74948,7 @@
   "edge": false,
   "trail_stop": 158.672,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "USDJPY-5m-1794369000000",
@@ -75175,7 +75175,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.17435450581722933,
@@ -75222,7 +75222,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 83.11153,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-11T05:40+01:00"
  },
  {
   "id": "XRPUSD-5m-1794370800000",
@@ -75308,7 +75313,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0025199565977890954,
@@ -75346,6 +75351,142 @@
     "dl": 1.0515,
     "brk": -1,
     "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.05598,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-11T05:40+01:00"
+ },
+ {
+  "id": "SOLUSD-15m-1794370500000",
+  "logged": "2026-11-11T05:40+01:00",
+  "bar_t": 1794370500000,
+  "bar_time": "Wed 11 Nov 05:15",
+  "sym": "SOLUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -25,
+  "entry": 83.03,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 83.60166,
+  "tp": [
+   82.45834,
+   81.88668,
+   81.31501
+  ],
+  "inv": 83.78,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   1,
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "weights": [
+   0.36,
+   0.69,
+   0.28,
+   0.46,
+   0.0,
+   0.11,
+   0.18,
+   0.66,
+   0.13,
+   0.18,
+   0.04,
+   0.32,
+   0.0,
+   0.0,
+   0.51,
+   0.0,
+   0.26,
+   0.44,
+   0.0,
+   0.17,
+   0.58,
+   0.12,
+   0.01,
+   0.03,
+   0.65,
+   0.44,
+   0.0,
+   0.0
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.381107962482173,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 39,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 85.22536842,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 84.07,
+    "dl": 82.8,
+    "brk": 0,
+    "sqz": "on",
     "mom": -1,
     "sess": false,
     "gate": false,
