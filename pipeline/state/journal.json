@@ -74954,7 +74954,7 @@
   "edge": false,
   "trail_stop": 158.793,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 25
  },
  {
   "id": "USDJPY-5m-1794369000000",
@@ -75917,7 +75917,7 @@
   "edge": false,
   "trail_stop": 4049.903,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "GBPUSD-5m-1794376800000",
@@ -76195,7 +76195,7 @@
   "edge": false,
   "trail_stop": 0.92219,
   "tp1_hit": true,
-  "bars_open": 25
+  "bars_open": 27
  },
  {
   "id": "USDCHF-5m-1794379200000",
@@ -76602,7 +76602,7 @@
   "edge": false,
   "trail_stop": 0.8276924084678383,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 21
  },
  {
   "id": "SOLUSD-5m-1794380400000",
@@ -77437,7 +77437,7 @@
   "edge": false,
   "trail_stop": 0.921563,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "GBPUSD-5m-1794382500000",
@@ -77712,7 +77712,7 @@
   "edge": false,
   "trail_stop": 0.82734,
   "tp1_hit": true,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "XRPUSD-5m-1794383100000",
@@ -77982,7 +77982,7 @@
   "edge": false,
   "trail_stop": 1.3328012821941733,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "EURUSD-15m-1794384000000",
@@ -78070,7 +78070,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003805058355130114,
@@ -78120,7 +78120,10 @@
   "edge": true,
   "trail_stop": 1.115076,
   "tp1_hit": true,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-11T09:51+01:00"
  },
  {
   "id": "GBPUSD-15m-1794384000000",
@@ -78258,7 +78261,7 @@
   "edge": false,
   "trail_stop": 1.332658,
   "tp1_hit": true,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "EURUSD-5m-1794386100000",
@@ -78390,7 +78393,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.115522,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-5m-1794386100000",
@@ -78510,6 +78516,278 @@
     "st": 1,
     "dh": 1.0616,
     "dl": 1.0515,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.060931,
+  "tp1_hit": false,
+  "bars_open": 2
+ },
+ {
+  "id": "EURUSD-15m-1794385800000",
+  "logged": "2026-11-11T09:51+01:00",
+  "bar_t": 1794385800000,
+  "bar_time": "Wed 11 Nov 09:30",
+  "sym": "EURUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -71,
+  "entry": 1.1152,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.115872,
+  "tp": [
+   1.114528,
+   1.113856,
+   1.113185
+  ],
+  "inv": 1.116321,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "weights": [
+   0.95,
+   1.27,
+   0.24,
+   0.46,
+   0.17,
+   0.31,
+   0.41,
+   1.04,
+   0.28,
+   0.15,
+   0.0,
+   0.0,
+   0.31,
+   0.0,
+   0.01,
+   0.0,
+   0.8,
+   0.65,
+   0.0,
+   0.01,
+   1.04,
+   0.55,
+   0.17,
+   0.32,
+   1.08,
+   1.19,
+   0.0,
+   0.16
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "London breakout",
+   "TSMOM multi-lookback trend",
+   "Keltner volatility breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00044790245805191825,
+  "filters": {
+   "carry": -1.38,
+   "carryDir": -1,
+   "vol": true,
+   "atrPct": 68,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.11861275,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.11706877,
+    "dl": 1.11420619,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": true
+ },
+ {
+  "id": "USDJPY-5m-1794386700000",
+  "logged": "2026-11-11T09:51+01:00",
+  "bar_t": 1794386700000,
+  "bar_time": "Wed 11 Nov 09:45",
+  "sym": "USDJPY",
+  "tf": "5m",
+  "side": "long",
+  "score": 51,
+  "entry": 158.88,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 158.816,
+  "tp": [
+   158.944,
+   159.009,
+   159.073
+  ],
+  "inv": 158.825,
+  "votes": [
+   1,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   0.5,
+   0.69,
+   0.26,
+   0.46,
+   0.24,
+   0.61,
+   0.36,
+   0.98,
+   0.28,
+   0.15,
+   0.0,
+   0.98,
+   0.0,
+   0.0,
+   0.54,
+   0.0,
+   0.26,
+   0.45,
+   0.06,
+   0.01,
+   0.85,
+   0.81,
+   0.0,
+   0.03,
+   1.18,
+   0.91,
+   0.0,
+   0.0
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.04295183576871139,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 59,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 158.82499695,
+    "hi": 158.93600464,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 158.73505209,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 158.93600464,
+    "dl": 158.75799561,
     "brk": 0,
     "sqz": "off",
     "mom": 1,
