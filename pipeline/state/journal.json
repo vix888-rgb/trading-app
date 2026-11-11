@@ -79538,7 +79538,7 @@
   "edge": false,
   "trail_stop": 1.3289147721021348,
   "tp1_hit": true,
-  "bars_open": 45
+  "bars_open": 46
  },
  {
   "id": "EURCHF-5m-1794392700000",
@@ -81756,7 +81756,7 @@
   "edge": false,
   "trail_stop": 159.622,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "ETHUSD-15m-1794406500000",
@@ -83271,7 +83271,7 @@
   "edge": false,
   "trail_stop": 0.922262,
   "tp1_hit": false,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "USDJPY-5m-1794414300000",
@@ -84052,7 +84052,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.0682473399441195,
@@ -84105,7 +84105,10 @@
   "edge": false,
   "trail_stop": 3994.4427393597766,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 2.89,
+  "exit": "time exit",
+  "closed_at": "2026-11-11T22:52+01:00"
  },
  {
   "id": "GBPUSD-5m-1794421500000",
@@ -84520,6 +84523,141 @@
   "edge": true,
   "trail_stop": 1.109652,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
+ },
+ {
+  "id": "ETHUSD-5m-1794433500000",
+  "logged": "2026-11-11T22:52+01:00",
+  "bar_t": 1794433500000,
+  "bar_time": "Wed 11 Nov 22:45",
+  "sym": "ETHUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -34,
+  "entry": 2075.48,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 2080.863,
+  "tp": [
+   2070.097,
+   2064.715,
+   2059.332
+  ],
+  "inv": 2082.48,
+  "votes": [
+   0,
+   -1,
+   -1,
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.14,
+   1.0,
+   1.0,
+   0.55,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.2,
+   0.52,
+   0.0,
+   1.0,
+   1.18,
+   0.42,
+   0.47,
+   0.07,
+   0.34,
+   0.05,
+   0.88,
+   1.0,
+   1.0,
+   0.9,
+   0.71
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 3.5884054484832184,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 23,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 2074.63,
+    "hi": 2082.48,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 2071.1200751,
+    "side200": 1,
+    "stack": 0,
+    "st": -1,
+    "dh": 2085.11,
+    "dl": 2074.86,
+    "brk": 0,
+    "sqz": "on",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
