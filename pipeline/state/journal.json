@@ -79488,7 +79488,7 @@
    0.46
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0005405273608608664,
@@ -79538,7 +79538,10 @@
   "edge": false,
   "trail_stop": 1.3289147721021348,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 6.34,
+  "exit": "time exit",
+  "closed_at": "2026-11-11T23:22+01:00"
  },
  {
   "id": "EURCHF-5m-1794392700000",
@@ -81756,7 +81759,7 @@
   "edge": false,
   "trail_stop": 159.622,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 31
  },
  {
   "id": "ETHUSD-15m-1794406500000",
@@ -83271,7 +83274,7 @@
   "edge": false,
   "trail_stop": 0.922262,
   "tp1_hit": false,
-  "bars_open": 24
+  "bars_open": 25
  },
  {
   "id": "USDJPY-5m-1794414300000",
@@ -84470,7 +84473,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00034192260583730105,
@@ -84523,7 +84526,10 @@
   "edge": true,
   "trail_stop": 1.109652,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-11T23:22+01:00"
  },
  {
   "id": "ETHUSD-5m-1794433500000",
@@ -84608,7 +84614,7 @@
    "Turtle 20-bar breakout",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.5884054484832184,
@@ -84661,7 +84667,10 @@
   "edge": false,
   "trail_stop": 2075.48,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-11T23:22+01:00"
  },
  {
   "id": "EURUSD-5m-1794434700000",
@@ -84743,7 +84752,7 @@
    0.99
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0001361605397943248,
@@ -84793,7 +84802,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.109344,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-11T23:22+01:00"
  },
  {
   "id": "GBPUSD-5m-1794434700000",
@@ -84877,7 +84891,7 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00020006034788644242,
@@ -84923,6 +84937,143 @@
     "gate": false,
     "sgate": false,
     "d1": 1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.327598,
+  "R": -0.0,
+  "exit": "breakeven",
+  "tp1_hit": true,
+  "closed_at": "2026-11-11T23:22+01:00"
+ },
+ {
+  "id": "ETHUSD-5m-1794435300000",
+  "logged": "2026-11-11T23:22+01:00",
+  "bar_t": 1794435300000,
+  "bar_time": "Wed 11 Nov 23:15",
+  "sym": "ETHUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -26,
+  "entry": 2079.25,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 2084.987,
+  "tp": [
+   2073.513,
+   2067.775,
+   2062.038
+  ],
+  "inv": 2082.48,
+  "votes": [
+   0,
+   -1,
+   0,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   1,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.14,
+   1.0,
+   1.0,
+   0.55,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.2,
+   0.52,
+   0.0,
+   1.0,
+   1.18,
+   0.42,
+   0.47,
+   0.07,
+   0.34,
+   0.05,
+   0.88,
+   1.0,
+   1.0,
+   0.9,
+   0.71
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 3.824893838662569,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 49,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 2070.0,
+    "hi": 2085.11,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 2071.2438827,
+    "side200": 1,
+    "stack": 0,
+    "st": -1,
+    "dh": 2085.11,
+    "dl": 2070.0,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
     "dgate": false
    },
    "pat": []
