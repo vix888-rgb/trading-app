@@ -74076,7 +74076,7 @@
    "Wyckoff spring / upthrust",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0005577554324383736,
@@ -74126,7 +74126,10 @@
   "edge": false,
   "trail_stop": 0.921143,
   "tp1_hit": false,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": -0.01,
+  "exit": "time exit",
+  "closed_at": "2026-11-11T06:30+01:00"
  },
  {
   "id": "SOLUSD-5m-1794360000000",
@@ -75633,7 +75636,7 @@
   "edge": false,
   "trail_stop": 1.059905,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "SOLUSD-5m-1794372600000",
@@ -75717,7 +75720,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.17498258961364263,
@@ -75767,6 +75770,9 @@
   "edge": false,
   "trail_stop": 82.95,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-11T06:30+01:00"
  }
 ]
