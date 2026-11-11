@@ -79793,9 +79793,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.3282330070521735,
+  "trail_stop": 1.328109744646778,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 44
  },
  {
   "id": "USDCHF-5m-1794395100000",
@@ -79928,9 +79928,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.8314151856259798,
+  "trail_stop": 0.8314751478986239,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 42
  },
  {
   "id": "XRPUSD-5m-1794396900000",
@@ -80206,7 +80206,7 @@
   "edge": false,
   "trail_stop": 1.1098015677457054,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "USDJPY-5m-1794401100000",
@@ -80339,9 +80339,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 159.4961194949453,
+  "trail_stop": 159.55510997346093,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "XRPUSD-5m-1794401700000",
@@ -81173,9 +81173,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 4039.471,
+  "trail_stop": 4025.6168597846868,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "ETHUSD-5m-1794404100000",
@@ -81582,7 +81582,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 73827.992,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "USDJPY-15m-1794406500000",
@@ -81714,7 +81717,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 159.493,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "ETHUSD-15m-1794406500000",
@@ -81848,7 +81854,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2059.631,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "XRPUSD-5m-1794407100000",
@@ -81932,7 +81941,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.002890384175970038,
@@ -81979,7 +81988,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.058936,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-11T15:41+01:00"
  },
  {
   "id": "XRPUSD-15m-1794406500000",
@@ -82110,6 +82124,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.062294,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
