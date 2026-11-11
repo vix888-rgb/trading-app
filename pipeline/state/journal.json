@@ -77731,9 +77731,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.8317978336209957,
+  "trail_stop": 0.8318578554982845,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 39
  },
  {
   "id": "XRPUSD-5m-1794383100000",
@@ -78701,7 +78701,7 @@
   "edge": true,
   "trail_stop": 1.1104390755380793,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 35
  },
  {
   "id": "USDJPY-5m-1794386700000",
@@ -79529,7 +79529,7 @@
   "edge": false,
   "trail_stop": 1.3289147721021348,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "EURCHF-5m-1794392700000",
@@ -81143,7 +81143,7 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.274449946171689,
@@ -81196,7 +81196,10 @@
   "edge": false,
   "trail_stop": 4011.958859784687,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 7.32,
+  "exit": "time exit",
+  "closed_at": "2026-11-11T18:31+01:00"
  },
  {
   "id": "ETHUSD-5m-1794404100000",
@@ -81744,7 +81747,7 @@
   "edge": false,
   "trail_stop": 159.622,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "ETHUSD-15m-1794406500000",
@@ -82980,9 +82983,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.922432,
-  "tp1_hit": false,
-  "bars_open": 26
+  "trail_stop": 0.92343,
+  "tp1_hit": true,
+  "bars_open": 28
  },
  {
   "id": "USDCHF-4h-1794398400000",
@@ -83256,7 +83259,7 @@
   "edge": false,
   "trail_stop": 0.922262,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "USDJPY-5m-1794414300000",
@@ -83390,7 +83393,7 @@
   "edge": false,
   "trail_stop": 159.84,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "EURUSD-5m-1794414900000",
@@ -83527,7 +83530,7 @@
   "edge": false,
   "trail_stop": 1.109755,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "USDCHF-5m-1794416700000",
@@ -83662,7 +83665,7 @@
   "edge": false,
   "trail_stop": 0.83323,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-5m-1794416700000",
@@ -83801,6 +83804,6 @@
   "edge": false,
   "trail_stop": 1.327792,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  }
 ]
