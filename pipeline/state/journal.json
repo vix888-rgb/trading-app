@@ -85082,9 +85082,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 2068.4095753546503,
+  "trail_stop": 2062.7195753546503,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "GBPUSD-5m-1794435900000",
@@ -85496,9 +85496,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 74218.01,
+  "trail_stop": 74079.10432604332,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1794436500000",
@@ -85633,9 +85633,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 84.11,
+  "trail_stop": 83.64035620946511,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "XRPUSD-5m-1794436500000",
@@ -85770,7 +85770,7 @@
   "edge": false,
   "trail_stop": 1.0582,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-15m-1794436200000",
@@ -86180,7 +86180,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 74266.457,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "EURUSD-5m-1794437700000",
@@ -86264,7 +86267,7 @@
   "strategies": [
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00024026471485157273,
@@ -86314,7 +86317,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.109623,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-12T00:12+01:00"
  },
  {
   "id": "EURUSD-15m-1794437100000",
@@ -86448,7 +86456,10 @@
    },
    "pat": []
   },
-  "edge": true
+  "edge": true,
+  "trail_stop": 1.10979,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "ETHUSD-1h-1794434400000",
@@ -86580,7 +86591,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 2083.928,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "SOLUSD-1h-1794434400000",
@@ -86709,7 +86723,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 84.8034,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "GBPUSD-15m-1794437100000",
@@ -86841,6 +86858,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.328314,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
