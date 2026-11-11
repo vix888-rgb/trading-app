@@ -74954,7 +74954,7 @@
   "edge": false,
   "trail_stop": 158.793,
   "tp1_hit": true,
-  "bars_open": 31
+  "bars_open": 32
  },
  {
   "id": "USDJPY-5m-1794369000000",
@@ -76608,7 +76608,7 @@
   "edge": false,
   "trail_stop": 0.8283124159827919,
   "tp1_hit": true,
-  "bars_open": 39
+  "bars_open": 41
  },
  {
   "id": "SOLUSD-5m-1794380400000",
@@ -77441,9 +77441,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.921563,
-  "tp1_hit": false,
-  "bars_open": 11
+  "trail_stop": 0.92263,
+  "tp1_hit": true,
+  "bars_open": 12
  },
  {
   "id": "GBPUSD-5m-1794382500000",
@@ -77716,9 +77716,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.82734,
+  "trail_stop": 0.8274978353376095,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "XRPUSD-5m-1794383100000",
@@ -77938,7 +77938,7 @@
   "strategies": [
    "London breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00031082326842247,
@@ -77988,7 +77988,10 @@
   "edge": false,
   "trail_stop": 1.3328012821941733,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 26,
+  "R": 0.57,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-11T11:31+01:00"
  },
  {
   "id": "EURUSD-15m-1794384000000",
@@ -78405,7 +78408,7 @@
   "edge": false,
   "trail_stop": 1.1147747581804996,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "XRPUSD-5m-1794386100000",
@@ -78680,7 +78683,7 @@
   "edge": true,
   "trail_stop": 1.1152,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "USDJPY-5m-1794386700000",
@@ -78817,7 +78820,7 @@
   "edge": false,
   "trail_stop": 158.88,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "ETHUSD-5m-1794389100000",
@@ -79367,7 +79370,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 4052.95,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-15m-1794391200000",
@@ -79492,6 +79498,144 @@
     "gate": false,
     "sgate": false,
     "d1": 1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.333132,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "EURCHF-5m-1794392700000",
+  "logged": "2026-11-11T11:31+01:00",
+  "bar_t": 1794392700000,
+  "bar_time": "Wed 11 Nov 11:25",
+  "sym": "EURCHF",
+  "tf": "5m",
+  "side": "long",
+  "score": 44,
+  "entry": 0.92308,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.921993,
+  "tp": [
+   0.924167,
+   0.925253,
+   0.92634
+  ],
+  "inv": 0.92198,
+  "votes": [
+   1,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   1,
+   1
+  ],
+  "weights": [
+   0.36,
+   0.69,
+   0.08,
+   0.46,
+   0.0,
+   0.0,
+   0.14,
+   0.46,
+   0.28,
+   0.15,
+   0.09,
+   0.0,
+   0.33,
+   0.86,
+   0.16,
+   0.0,
+   0.26,
+   0.44,
+   0.15,
+   0.01,
+   0.55,
+   0.12,
+   1.0,
+   0.03,
+   0.65,
+   0.44,
+   0.71,
+   0.12
+  ],
+  "strategies": [
+   "Wyckoff spring / upthrust",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0007244406748811989,
+  "filters": {
+   "carry": 2.54,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 95,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 0.92194003,
+    "hi": 0.92369998,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.92197201,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 0.92369998,
+    "dl": 0.92198002,
+    "brk": 0,
+    "sqz": "on",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
     "dgate": false
    },
    "pat": []
