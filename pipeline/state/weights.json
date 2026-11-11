@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T19:11+01:00",
+ "updated": "2026-11-11T19:21+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13121,33 +13121,33 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 586,
+    "n": 588,
     "hit": 34,
     "avgR": 0.205,
     "pf": 1.35
    },
    "Stochastic (14/3/3)": {
-    "n": 586,
-    "hit": 38,
-    "avgR": 0.285,
+    "n": 588,
+    "hit": 37,
+    "avgR": 0.284,
     "pf": 1.52
    },
    "ADX trend strength (14)": {
-    "n": 358,
+    "n": 360,
     "hit": 28,
-    "avgR": 0.218,
+    "avgR": 0.216,
     "pf": 1.42
    },
    "Ichimoku cloud": {
-    "n": 517,
-    "hit": 25,
-    "avgR": 0.242,
+    "n": 519,
+    "hit": 24,
+    "avgR": 0.241,
     "pf": 1.46
    },
    "Supertrend (10/3)": {
-    "n": 586,
+    "n": 588,
     "hit": 30,
-    "avgR": 0.263,
+    "avgR": 0.262,
     "pf": 1.47
    },
    "Volume / OBV": {
@@ -13163,21 +13163,21 @@
     "pf": 0.97
    },
    "Candlestick patterns": {
-    "n": 282,
+    "n": 284,
     "hit": 28,
-    "avgR": -0.085,
+    "avgR": -0.084,
     "pf": 0.86
    },
    "RSI divergence": {
-    "n": 78,
+    "n": 79,
     "hit": 38,
-    "avgR": -0.321,
+    "avgR": -0.317,
     "pf": 0.56
    },
    "Multi-timeframe confirmation": {
-    "n": 495,
+    "n": 497,
     "hit": 22,
-    "avgR": 0.361,
+    "avgR": 0.36,
     "pf": 1.7
    },
    "News sentiment": {
@@ -13187,9 +13187,9 @@
     "pf": 1.37
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 586,
+    "n": 588,
     "hit": 29,
-    "avgR": 0.327,
+    "avgR": 0.326,
     "pf": 1.63
    },
    "Order blocks": {
@@ -13199,7 +13199,7 @@
     "pf": 2.2
    },
    "Fair value gaps": {
-    "n": 430,
+    "n": 432,
     "hit": 26,
     "avgR": 0.071,
     "pf": 1.11
@@ -13211,62 +13211,62 @@
     "pf": 0.77
    },
    "Volume profile / POC": {
-    "n": 586,
-    "hit": 37,
+    "n": 588,
+    "hit": 36,
     "avgR": 0.002,
     "pf": 1.0
    },
    "Anchored VWAP": {
-    "n": 497,
+    "n": 498,
     "hit": 32,
     "avgR": 0.071,
     "pf": 1.11
    },
    "Heikin Ashi trend": {
-    "n": 586,
+    "n": 588,
     "hit": 28,
-    "avgR": 0.171,
+    "avgR": 0.17,
     "pf": 1.28
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 586,
+    "n": 588,
     "hit": 31,
-    "avgR": 0.382,
+    "avgR": 0.381,
     "pf": 1.77
    },
    "Hull MA (55)": {
-    "n": 586,
+    "n": 588,
     "hit": 31,
-    "avgR": 0.219,
+    "avgR": 0.218,
     "pf": 1.38
    },
    "Daily pivot points": {
-    "n": 586,
+    "n": 588,
     "hit": 24,
     "avgR": 0.134,
     "pf": 1.22
    },
    "EMA trend (20/50/200)": {
-    "n": 396,
+    "n": 398,
     "hit": 23,
-    "avgR": 0.454,
+    "avgR": 0.451,
     "pf": 1.89
    },
    "RSI (14)": {
-    "n": 418,
+    "n": 420,
     "hit": 29,
-    "avgR": 0.237,
+    "avgR": 0.236,
     "pf": 1.45
    },
    "Bollinger Bands (20/2)": {
-    "n": 267,
+    "n": 269,
     "hit": 27,
     "avgR": 0.092,
     "pf": 1.15
    },
    "Williams %R / CCI": {
-    "n": 260,
-    "hit": 38,
+    "n": 262,
+    "hit": 37,
     "avgR": 0.092,
     "pf": 1.15
    },
@@ -13277,9 +13277,9 @@
     "pf": 0.85
    },
    "Support / resistance": {
-    "n": 121,
+    "n": 122,
     "hit": 51,
-    "avgR": -0.804,
+    "avgR": -0.797,
     "pf": 0.43
    },
    "Volatility (ATR 14)": {
@@ -13327,9 +13327,9 @@
     "pf": 1.51
    },
    "GBPUSD": {
-    "n": 70,
+    "n": 71,
     "hit": 21,
-    "avgR": 0.031,
+    "avgR": 0.03,
     "pf": 1.06
    },
    "EURUSD": {
@@ -13345,17 +13345,17 @@
     "pf": 1.86
    },
    "USDCHF": {
-    "n": 20,
-    "hit": 30,
-    "avgR": 0.878,
+    "n": 21,
+    "hit": 29,
+    "avgR": 0.836,
     "pf": 3.19
    }
   },
   "strat": {
    "Turtle 20-bar breakout": {
-    "n": 176,
+    "n": 177,
     "hit": 21,
-    "avgR": 0.131,
+    "avgR": 0.13,
     "pf": 1.26
    },
    "Squeeze momentum breakout": {
@@ -13377,9 +13377,9 @@
     "pf": 0.24
    },
    "TSMOM multi-lookback trend": {
-    "n": 194,
+    "n": 195,
     "hit": 21,
-    "avgR": 0.512,
+    "avgR": 0.51,
     "pf": 2.04
    },
    "MTF top-down pullback": {
@@ -13413,9 +13413,9 @@
     "pf": 3.18
    },
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace": {
-    "n": 10,
-    "hit": 20,
-    "avgR": -0.362,
+    "n": 11,
+    "hit": 18,
+    "avgR": -0.329,
     "pf": 0.4
    },
    "London breakout": {
@@ -13425,15 +13425,15 @@
     "pf": 1.03
    },
    "Donchian-20 breakout + EMA200 + HTF (round 4)": {
-    "n": 145,
+    "n": 146,
     "hit": 20,
-    "avgR": 0.041,
+    "avgR": 0.04,
     "pf": 1.08
    },
    "TTM squeeze fire + EMA200 (round 4)": {
-    "n": 52,
-    "hit": 31,
-    "avgR": 0.615,
+    "n": 53,
+    "hit": 30,
+    "avgR": 0.603,
     "pf": 2.6
    },
    "AB=CD (pattern)": {
@@ -13462,12 +13462,12 @@
    }
   },
   "all": {
-   "n": 586,
+   "n": 588,
    "hit": 22,
-   "avgR": 0.333,
+   "avgR": 0.332,
    "pf": 1.64
   },
-  "open": 26,
+  "open": 24,
   "total": 638
  },
  "rates": {
