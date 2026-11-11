@@ -83489,7 +83489,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0002776871527116133,
@@ -83542,7 +83542,10 @@
   "edge": false,
   "trail_stop": 1.109755,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 0.59,
+  "exit": "time exit",
+  "closed_at": "2026-11-11T21:42+01:00"
  },
  {
   "id": "USDCHF-5m-1794416700000",
@@ -83959,7 +83962,7 @@
   "edge": false,
   "trail_stop": 159.787,
   "tp1_hit": false,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "XAUUSD-5m-1794419100000",
@@ -84096,7 +84099,7 @@
   "edge": false,
   "trail_stop": 3994.4427393597766,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "GBPUSD-5m-1794421500000",
@@ -84371,6 +84374,6 @@
   "edge": false,
   "trail_stop": 1.063763,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 18
  }
 ]
