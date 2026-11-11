@@ -76195,7 +76195,7 @@
   "edge": false,
   "trail_stop": 0.92219,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 19
  },
  {
   "id": "USDCHF-5m-1794379200000",
@@ -76600,9 +76600,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.826582450772831,
+  "trail_stop": 0.8269124220863076,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 13
  },
  {
   "id": "SOLUSD-5m-1794380400000",
@@ -77014,7 +77014,7 @@
   "edge": false,
   "trail_stop": 1.115947,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 9
  },
  {
   "id": "SOLUSD-5m-1794381600000",
@@ -77289,7 +77289,7 @@
   "edge": false,
   "trail_stop": 158.83,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "EURCHF-15m-1794381300000",
@@ -77519,7 +77519,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00030862206167933394,
@@ -77569,7 +77569,10 @@
   "edge": false,
   "trail_stop": 1.333423,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-11T09:11+01:00"
  },
  {
   "id": "USDCHF-15m-1794382200000",
@@ -77840,5 +77843,136 @@
   "exit": "stop",
   "tp1_hit": false,
   "closed_at": "2026-11-11T09:01+01:00"
+ },
+ {
+  "id": "GBPUSD-5m-1794384300000",
+  "logged": "2026-11-11T09:11+01:00",
+  "bar_t": 1794384300000,
+  "bar_time": "Wed 11 Nov 09:05",
+  "sym": "GBPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -70,
+  "entry": 1.333067,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.333533,
+  "tp": [
+   1.3326,
+   1.332134,
+   1.331668
+  ],
+  "inv": 1.334615,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.36,
+   1.03,
+   0.82,
+   0.57,
+   0.41,
+   0.9,
+   1.15,
+   0.58,
+   0.28,
+   0.15,
+   0.0,
+   0.21,
+   0.42,
+   0.64,
+   0.2,
+   0.0,
+   0.89,
+   0.44,
+   0.48,
+   0.01,
+   0.55,
+   0.8,
+   0.15,
+   0.64,
+   1.31,
+   1.44,
+   0.0,
+   0.78
+  ],
+  "strategies": [
+   "London breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00031082326842247,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 76,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.33544591,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.33461463,
+    "dl": 1.33290672,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": 1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
