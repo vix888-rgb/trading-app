@@ -99353,7 +99353,7 @@
   "edge": false,
   "trail_stop": 1.0347,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "USDJPY-5m-1794492000000",
@@ -99905,7 +99905,7 @@
   "edge": false,
   "trail_stop": 1.3248344741182372,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "BTCUSD-15m-1794492900000",
@@ -100126,7 +100126,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004423167447309906,
@@ -100176,7 +100176,10 @@
   "edge": false,
   "trail_stop": 0.834370709999378,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 3.79,
+  "exit": "time exit",
+  "closed_at": "2026-11-12T19:38+01:00"
  },
  {
   "id": "USDCHF-15m-1794492900000",
@@ -100311,7 +100314,7 @@
   "edge": false,
   "trail_stop": 0.8338390257336176,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "BTCUSD-15m-1794493800000",
@@ -100583,7 +100586,7 @@
   "edge": true,
   "trail_stop": 1.1074009611752025,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "USDJPY-5m-1794494400000",
@@ -101815,7 +101818,7 @@
   "edge": false,
   "trail_stop": 82.49588,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "BTCUSD-15m-1794499200000",
@@ -101947,7 +101950,7 @@
   "edge": false,
   "trail_stop": 72522.639,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "ETHUSD-15m-1794499200000",
@@ -102079,7 +102082,7 @@
   "edge": false,
   "trail_stop": 2034.19,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "XRPUSD-5m-1794500400000",
@@ -102490,7 +102493,7 @@
   "edge": false,
   "trail_stop": 1.323609,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "BTCUSD-5m-1794501600000",
@@ -103032,7 +103035,7 @@
   "edge": false,
   "trail_stop": 1.106072,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "BTCUSD-5m-1794502800000",
@@ -103436,7 +103439,7 @@
   "edge": false,
   "trail_stop": 0.922401,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "EURCHF-15m-1794503700000",
@@ -103571,7 +103574,7 @@
   "edge": false,
   "trail_stop": 0.922214,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-15m-1794504600000",
@@ -103703,7 +103706,7 @@
   "edge": false,
   "trail_stop": 3889.957,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XRPUSD-5m-1794505200000",
