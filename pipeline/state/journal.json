@@ -100167,7 +100167,7 @@
   "edge": false,
   "trail_stop": 0.8336307183344915,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "USDCHF-15m-1794492900000",
@@ -100709,7 +100709,7 @@
   "edge": false,
   "trail_stop": 159.775,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "ETHUSD-15m-1794493800000",
@@ -101475,7 +101475,7 @@
    0.84
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0006801132592639106,
@@ -101525,7 +101525,10 @@
   "edge": false,
   "trail_stop": 0.9226,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-12T17:28+01:00"
  },
  {
   "id": "USDCHF-1h-1794495600000",
@@ -101926,7 +101929,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 72522.639,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "ETHUSD-15m-1794499200000",
@@ -102047,6 +102053,141 @@
     "brk": 0,
     "sqz": "off",
     "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 2034.19,
+  "tp1_hit": false,
+  "bars_open": 0
+ },
+ {
+  "id": "XRPUSD-5m-1794500400000",
+  "logged": "2026-11-12T17:28+01:00",
+  "bar_t": 1794500400000,
+  "bar_time": "Thu 12 Nov 17:20",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -29,
+  "entry": 1.027,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.033276,
+  "tp": [
+   1.020724,
+   1.014448,
+   1.008172
+  ],
+  "inv": 1.0338,
+  "votes": [
+   0,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   1.5,
+   0.28,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.17,
+   0.0,
+   0.0,
+   0.0,
+   1.06,
+   0.14,
+   0.0,
+   1.0,
+   1.0,
+   0.78,
+   1.0,
+   0.75,
+   0.15,
+   0.0,
+   0.6,
+   1.0,
+   1.0,
+   0.36,
+   0.84
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend",
+   "Liquidity Entry Zones"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.004184071569285323,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 90,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.04126314,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 1.0344,
+    "dl": 1.0164,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
     "sess": true,
     "gate": false,
     "sgate": false,
