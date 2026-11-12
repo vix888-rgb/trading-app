@@ -91552,7 +91552,7 @@
   "edge": false,
   "trail_stop": 3983.547,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "XRPUSD-5m-1794452700000",
@@ -91963,7 +91963,7 @@
   "edge": false,
   "trail_stop": 2053.69,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "SOLUSD-5m-1794453300000",
@@ -92098,7 +92098,7 @@
   "edge": false,
   "trail_stop": 83.27,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "EURUSD-5m-1794454500000",
@@ -92589,7 +92589,7 @@
    "Wyckoff spring / upthrust",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.053959582345108364,
@@ -92639,7 +92639,10 @@
   "edge": false,
   "trail_stop": 159.665,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-12T06:42+01:00"
  },
  {
   "id": "EURUSD-5m-1794461100000",
@@ -92725,7 +92728,7 @@
    "Wyckoff spring / upthrust",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00022482509246738933,
@@ -92772,7 +92775,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.108248,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-12T06:42+01:00"
  },
  {
   "id": "USDJPY-15m-1794460500000",
@@ -92903,6 +92911,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 159.6,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
