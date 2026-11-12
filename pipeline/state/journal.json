@@ -89638,7 +89638,7 @@
   "edge": false,
   "trail_stop": 83.63,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "SOLUSD-1h-1794441600000",
@@ -89904,7 +89904,7 @@
   "edge": false,
   "trail_stop": 73818.0,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1794445500000",
@@ -90036,7 +90036,7 @@
   "edge": false,
   "trail_stop": 2060.838,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-15m-1794445200000",
@@ -90297,7 +90297,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 74000.472,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "XRPUSD-5m-1794446700000",
@@ -90428,6 +90431,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.054966,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
