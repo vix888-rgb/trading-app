@@ -104217,7 +104217,7 @@
    "Turtle 20-bar breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.064122599854668,
@@ -104270,7 +104270,10 @@
   "edge": false,
   "trail_stop": 159.742,
   "tp1_hit": false,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 0.03,
+  "exit": "time exit",
+  "closed_at": "2026-11-12T23:59+01:00"
  },
  {
   "id": "USDCHF-5m-1794509400000",
@@ -105218,7 +105221,7 @@
   "edge": false,
   "trail_stop": 81.72081,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "EURUSD-5m-1794522600000",
@@ -105495,7 +105498,7 @@
   "edge": false,
   "trail_stop": 2017.883,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-5m-1794523200000",
@@ -105630,6 +105633,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 71548.461,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
