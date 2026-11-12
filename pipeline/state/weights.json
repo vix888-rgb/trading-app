@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T00:09+01:00",
+ "updated": "2026-11-13T00:19+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13127,15 +13127,15 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 737,
+    "n": 738,
     "hit": 35,
-    "avgR": 0.23,
+    "avgR": 0.231,
     "pf": 1.42
    },
    "Stochastic (14/3/3)": {
-    "n": 737,
+    "n": 738,
     "hit": 37,
-    "avgR": 0.17,
+    "avgR": 0.168,
     "pf": 1.29
    },
    "ADX trend strength (14)": {
@@ -13145,34 +13145,34 @@
     "pf": 1.5
    },
    "Ichimoku cloud": {
-    "n": 660,
+    "n": 661,
     "hit": 25,
-    "avgR": 0.239,
+    "avgR": 0.237,
     "pf": 1.46
    },
    "Supertrend (10/3)": {
-    "n": 737,
+    "n": 738,
     "hit": 31,
-    "avgR": 0.294,
+    "avgR": 0.295,
     "pf": 1.57
    },
    "Volume / OBV": {
-    "n": 447,
+    "n": 448,
     "hit": 27,
-    "avgR": 0.336,
+    "avgR": 0.338,
     "pf": 1.65
    },
    "VWAP (rolling 50 bars)": {
-    "n": 417,
+    "n": 418,
     "hit": 24,
-    "avgR": 0.013,
+    "avgR": 0.01,
     "pf": 1.02
    },
    "Candlestick patterns": {
-    "n": 347,
+    "n": 348,
     "hit": 27,
-    "avgR": -0.184,
-    "pf": 0.72
+    "avgR": -0.186,
+    "pf": 0.71
    },
    "RSI divergence": {
     "n": 99,
@@ -13181,9 +13181,9 @@
     "pf": 0.64
    },
    "Multi-timeframe confirmation": {
-    "n": 644,
+    "n": 645,
     "hit": 23,
-    "avgR": 0.338,
+    "avgR": 0.336,
     "pf": 1.67
    },
    "News sentiment": {
@@ -13193,21 +13193,21 @@
     "pf": 1.2
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 737,
+    "n": 738,
     "hit": 30,
-    "avgR": 0.343,
-    "pf": 1.7
+    "avgR": 0.342,
+    "pf": 1.69
    },
    "Order blocks": {
-    "n": 263,
+    "n": 264,
     "hit": 41,
-    "avgR": 0.44,
-    "pf": 1.96
+    "avgR": 0.435,
+    "pf": 1.95
    },
    "Fair value gaps": {
-    "n": 539,
+    "n": 540,
     "hit": 28,
-    "avgR": 0.157,
+    "avgR": 0.158,
     "pf": 1.27
    },
    "Liquidity sweeps": {
@@ -13217,45 +13217,45 @@
     "pf": 0.72
    },
    "Volume profile / POC": {
-    "n": 737,
+    "n": 738,
     "hit": 37,
-    "avgR": 0.029,
-    "pf": 1.04
+    "avgR": 0.03,
+    "pf": 1.05
    },
    "Anchored VWAP": {
-    "n": 623,
+    "n": 624,
     "hit": 31,
-    "avgR": 0.018,
-    "pf": 1.03
+    "avgR": 0.016,
+    "pf": 1.02
    },
    "Heikin Ashi trend": {
-    "n": 737,
+    "n": 738,
     "hit": 28,
-    "avgR": 0.1,
+    "avgR": 0.098,
     "pf": 1.16
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 737,
+    "n": 738,
     "hit": 33,
-    "avgR": 0.383,
+    "avgR": 0.384,
     "pf": 1.81
    },
    "Hull MA (55)": {
-    "n": 737,
+    "n": 738,
     "hit": 33,
-    "avgR": 0.253,
+    "avgR": 0.254,
     "pf": 1.47
    },
    "Daily pivot points": {
-    "n": 737,
+    "n": 738,
     "hit": 25,
-    "avgR": 0.159,
+    "avgR": 0.157,
     "pf": 1.27
    },
    "EMA trend (20/50/200)": {
-    "n": 518,
-    "hit": 25,
-    "avgR": 0.415,
+    "n": 519,
+    "hit": 24,
+    "avgR": 0.413,
     "pf": 1.84
    },
    "RSI (14)": {
@@ -13321,10 +13321,10 @@
     "pf": 2.67
    },
    "SOLUSD": {
-    "n": 112,
+    "n": 113,
     "hit": 21,
-    "avgR": 0.098,
-    "pf": 1.2
+    "avgR": 0.088,
+    "pf": 1.18
    },
    "XRPUSD": {
     "n": 119,
@@ -13383,10 +13383,10 @@
     "pf": 0.32
    },
    "TSMOM multi-lookback trend": {
-    "n": 245,
+    "n": 246,
     "hit": 21,
-    "avgR": 0.427,
-    "pf": 1.87
+    "avgR": 0.421,
+    "pf": 1.85
    },
    "MTF top-down pullback": {
     "n": 17,
@@ -13449,10 +13449,10 @@
     "pf": 18.3
    },
    "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)": {
-    "n": 11,
-    "hit": 18,
-    "avgR": 0.545,
-    "pf": 1.86
+    "n": 12,
+    "hit": 17,
+    "avgR": 0.417,
+    "pf": 1.62
    },
    "Harmonic XABCD: Gartley/Bat/Butterfly/Crab/Shark (pattern)": {
     "n": 3,
@@ -13468,13 +13468,13 @@
    }
   },
   "all": {
-   "n": 737,
+   "n": 738,
    "hit": 23,
-   "avgR": 0.317,
-   "pf": 1.63
+   "avgR": 0.315,
+   "pf": 1.62
   },
   "open": 32,
-  "total": 795
+  "total": 796
  },
  "rates": {
   "_ts": 1794521936.582436,

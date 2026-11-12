@@ -99908,7 +99908,7 @@
   "edge": false,
   "trail_stop": 1.3248344741182372,
   "tp1_hit": true,
-  "bars_open": 35
+  "bars_open": 36
  },
  {
   "id": "BTCUSD-15m-1794492900000",
@@ -100592,7 +100592,7 @@
   "edge": true,
   "trail_stop": 1.1074009611752025,
   "tp1_hit": true,
-  "bars_open": 33
+  "bars_open": 34
  },
  {
   "id": "USDJPY-5m-1794494400000",
@@ -101824,7 +101824,7 @@
   "edge": false,
   "trail_stop": 82.49588,
   "tp1_hit": false,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "BTCUSD-15m-1794499200000",
@@ -101956,7 +101956,7 @@
   "edge": false,
   "trail_stop": 71994.66,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "ETHUSD-15m-1794499200000",
@@ -102088,7 +102088,7 @@
   "edge": false,
   "trail_stop": 2034.19,
   "tp1_hit": false,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "XRPUSD-5m-1794500400000",
@@ -103589,7 +103589,7 @@
   "edge": false,
   "trail_stop": 0.922214,
   "tp1_hit": false,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "XAUUSD-15m-1794504600000",
@@ -103721,7 +103721,7 @@
   "edge": false,
   "trail_stop": 3889.957,
   "tp1_hit": false,
-  "bars_open": 21
+  "bars_open": 22
  },
  {
   "id": "XRPUSD-5m-1794505200000",
@@ -104951,7 +104951,7 @@
   "edge": false,
   "trail_stop": 159.699,
   "tp1_hit": false,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "USDCHF-5m-1794512400000",
@@ -105171,7 +105171,7 @@
    "TSMOM multi-lookback trend",
    "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.1605371965843078,
@@ -105221,7 +105221,10 @@
   "edge": false,
   "trail_stop": 81.72081,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 14,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-13T00:19+01:00"
  },
  {
   "id": "EURUSD-5m-1794522600000",
@@ -105639,7 +105642,7 @@
   "edge": false,
   "trail_stop": 71548.461,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "EURCHF-5m-1794524400000",
@@ -105766,6 +105769,141 @@
     "dl": 0.92233998,
     "brk": 0,
     "sqz": "on",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 0.922695,
+  "tp1_hit": false,
+  "bars_open": 2
+ },
+ {
+  "id": "ETHUSD-5m-1794525000000",
+  "logged": "2026-11-13T00:19+01:00",
+  "bar_t": 1794525000000,
+  "bar_time": "Fri 13 Nov 00:10",
+  "sym": "ETHUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -29,
+  "entry": 2018.23,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 2023.312,
+  "tp": [
+   2013.148,
+   2008.065,
+   2002.983
+  ],
+  "inv": 2022.56,
+  "votes": [
+   0,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   1,
+   1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   1.67,
+   0.28,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.17,
+   0.41,
+   0.4,
+   0.0,
+   1.24,
+   0.14,
+   0.0,
+   1.0,
+   1.0,
+   0.78,
+   1.0,
+   0.19,
+   0.15,
+   1.0,
+   0.6,
+   1.0,
+   1.0,
+   0.93,
+   0.84
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 3.3881748802440357,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 41,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 2008.92,
+    "hi": 2023.33,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 2024.05382247,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 2022.56,
+    "dl": 2008.92,
+    "brk": 0,
+    "sqz": "off",
     "mom": -1,
     "sess": false,
     "gate": false,
