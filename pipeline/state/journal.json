@@ -86897,7 +86897,7 @@
   "edge": false,
   "trail_stop": 1.3269855979155771,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 33
  },
  {
   "id": "SOLUSD-15m-1794438000000",
@@ -88132,7 +88132,7 @@
   "edge": false,
   "trail_stop": 2056.36,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "SOLUSD-5m-1794441300000",
@@ -88543,7 +88543,7 @@
   "edge": false,
   "trail_stop": 1.0524,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "XRPUSD-1h-1794438000000",
@@ -89094,7 +89094,7 @@
   "edge": true,
   "trail_stop": 1.1086553252685563,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "GBPUSD-5m-1794442500000",
@@ -90180,7 +90180,7 @@
   "edge": false,
   "trail_stop": 83.27,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "BTCUSD-15m-1794446100000",
@@ -90862,7 +90862,7 @@
   "edge": false,
   "trail_stop": 73951.52,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "EURUSD-5m-1794450300000",
@@ -92057,7 +92057,7 @@
    "ICT/SMC sweep + CHoCH",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.2172989494932395,
@@ -92107,7 +92107,10 @@
   "edge": false,
   "trail_stop": 83.27,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 1.01,
+  "exit": "time exit",
+  "closed_at": "2026-11-12T08:23+01:00"
  },
  {
   "id": "EURUSD-5m-1794454500000",
@@ -92512,7 +92515,7 @@
   "edge": false,
   "trail_stop": 3979.371,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "USDJPY-5m-1794459300000",
@@ -92923,7 +92926,7 @@
   "edge": false,
   "trail_stop": 159.6,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "USDJPY-5m-1794462300000",
@@ -93058,7 +93061,7 @@
   "edge": false,
   "trail_stop": 159.714,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "EURUSD-5m-1794464100000",
@@ -93193,7 +93196,7 @@
   "edge": false,
   "trail_stop": 1.108156,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "USDCHF-15m-1794463200000",
@@ -93330,7 +93333,7 @@
   "edge": false,
   "trail_stop": 0.832319,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-5m-1794464100000",
@@ -93741,7 +93744,7 @@
   "edge": false,
   "trail_stop": 0.832699,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-5m-1794467100000",
@@ -93877,6 +93880,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3966.342,
+  "tp1_hit": true,
+  "bars_open": 2
  }
 ]
