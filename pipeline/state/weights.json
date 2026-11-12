@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T04:42+01:00",
+ "updated": "2026-11-12T04:52+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13136,34 +13136,34 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 637,
+    "n": 638,
     "hit": 34,
-    "avgR": 0.237,
-    "pf": 1.42
+    "avgR": 0.235,
+    "pf": 1.41
    },
    "Stochastic (14/3/3)": {
-    "n": 637,
+    "n": 638,
     "hit": 37,
-    "avgR": 0.234,
+    "avgR": 0.232,
     "pf": 1.41
    },
    "ADX trend strength (14)": {
-    "n": 396,
+    "n": 397,
     "hit": 28,
-    "avgR": 0.256,
-    "pf": 1.49
+    "avgR": 0.252,
+    "pf": 1.48
    },
    "Ichimoku cloud": {
-    "n": 567,
+    "n": 568,
     "hit": 24,
-    "avgR": 0.26,
-    "pf": 1.5
+    "avgR": 0.258,
+    "pf": 1.49
    },
    "Supertrend (10/3)": {
-    "n": 637,
+    "n": 638,
     "hit": 30,
-    "avgR": 0.282,
-    "pf": 1.52
+    "avgR": 0.28,
+    "pf": 1.51
    },
    "Volume / OBV": {
     "n": 405,
@@ -13190,34 +13190,34 @@
     "pf": 0.56
    },
    "Multi-timeframe confirmation": {
-    "n": 545,
+    "n": 546,
     "hit": 22,
-    "avgR": 0.371,
-    "pf": 1.73
+    "avgR": 0.369,
+    "pf": 1.72
    },
    "News sentiment": {
-    "n": 378,
+    "n": 379,
     "hit": 26,
-    "avgR": 0.179,
-    "pf": 1.32
+    "avgR": 0.176,
+    "pf": 1.31
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 637,
+    "n": 638,
     "hit": 29,
-    "avgR": 0.344,
+    "avgR": 0.342,
     "pf": 1.67
    },
    "Order blocks": {
-    "n": 217,
+    "n": 218,
     "hit": 38,
-    "avgR": 0.521,
-    "pf": 2.13
+    "avgR": 0.514,
+    "pf": 2.11
    },
    "Fair value gaps": {
-    "n": 466,
+    "n": 467,
     "hit": 27,
-    "avgR": 0.128,
-    "pf": 1.21
+    "avgR": 0.126,
+    "pf": 1.2
    },
    "Liquidity sweeps": {
     "n": 231,
@@ -13226,63 +13226,63 @@
     "pf": 0.72
    },
    "Volume profile / POC": {
-    "n": 637,
+    "n": 638,
     "hit": 37,
-    "avgR": 0.054,
+    "avgR": 0.052,
     "pf": 1.08
    },
    "Anchored VWAP": {
-    "n": 539,
+    "n": 540,
     "hit": 33,
-    "avgR": 0.084,
+    "avgR": 0.082,
     "pf": 1.13
    },
    "Heikin Ashi trend": {
-    "n": 637,
+    "n": 638,
     "hit": 29,
-    "avgR": 0.181,
+    "avgR": 0.179,
     "pf": 1.3
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 637,
+    "n": 638,
     "hit": 32,
-    "avgR": 0.404,
-    "pf": 1.84
+    "avgR": 0.402,
+    "pf": 1.83
    },
    "Hull MA (55)": {
-    "n": 637,
+    "n": 638,
     "hit": 31,
-    "avgR": 0.249,
+    "avgR": 0.247,
     "pf": 1.44
    },
    "Daily pivot points": {
-    "n": 637,
+    "n": 638,
     "hit": 24,
-    "avgR": 0.159,
+    "avgR": 0.157,
     "pf": 1.26
    },
    "EMA trend (20/50/200)": {
-    "n": 431,
+    "n": 432,
     "hit": 23,
-    "avgR": 0.454,
-    "pf": 1.9
+    "avgR": 0.45,
+    "pf": 1.89
    },
    "RSI (14)": {
-    "n": 456,
+    "n": 457,
     "hit": 28,
-    "avgR": 0.25,
-    "pf": 1.48
+    "avgR": 0.247,
+    "pf": 1.47
    },
    "Bollinger Bands (20/2)": {
-    "n": 289,
+    "n": 290,
     "hit": 27,
-    "avgR": 0.068,
-    "pf": 1.11
+    "avgR": 0.064,
+    "pf": 1.1
    },
    "Williams %R / CCI": {
-    "n": 282,
+    "n": 283,
     "hit": 37,
-    "avgR": 0.073,
+    "avgR": 0.077,
     "pf": 1.12
    },
    "Fibonacci confluence": {
@@ -13354,10 +13354,10 @@
     "pf": 3.06
    },
    "USDJPY": {
-    "n": 40,
-    "hit": 25,
-    "avgR": 0.418,
-    "pf": 1.81
+    "n": 41,
+    "hit": 24,
+    "avgR": 0.383,
+    "pf": 1.73
    },
    "USDCHF": {
     "n": 23,
@@ -13458,10 +13458,10 @@
     "pf": 17.97
    },
    "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)": {
-    "n": 9,
-    "hit": 11,
-    "avgR": 0.127,
-    "pf": 1.19
+    "n": 10,
+    "hit": 10,
+    "avgR": 0.014,
+    "pf": 1.02
    },
    "Harmonic XABCD: Gartley/Bat/Butterfly/Crab/Shark (pattern)": {
     "n": 1,
@@ -13477,12 +13477,12 @@
    }
   },
   "all": {
-   "n": 637,
+   "n": 638,
    "hit": 22,
-   "avgR": 0.342,
-   "pf": 1.67
+   "avgR": 0.34,
+   "pf": 1.66
   },
-  "open": 34,
+  "open": 33,
   "total": 697
  },
  "rates": {
