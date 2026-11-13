@@ -111217,7 +111217,7 @@
   "edge": false,
   "trail_stop": 0.92409,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "ETHUSD-5m-1794552600000",
@@ -112527,7 +112527,7 @@
    "TSMOM multi-lookback trend",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.06479475472299359,
@@ -112577,7 +112577,10 @@
   "edge": false,
   "trail_stop": 159.907,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 0.96,
+  "exit": "time exit",
+  "closed_at": "2026-11-13T13:51+01:00"
  },
  {
   "id": "EURUSD-5m-1794559800000",
@@ -112707,9 +112710,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.105963095114057,
+  "trail_stop": 1.105718954489057,
   "tp1_hit": true,
-  "bars_open": 45
+  "bars_open": 47
  },
  {
   "id": "USDJPY-1h-1794556800000",
@@ -112982,7 +112985,7 @@
   "edge": false,
   "trail_stop": 0.83668,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "XAUUSD-5m-1794561300000",
@@ -113809,7 +113812,7 @@
   "edge": false,
   "trail_stop": 1.323505,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "EURCHF-5m-1794566700000",
@@ -113941,7 +113944,7 @@
   "edge": false,
   "trail_stop": 0.92528,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "XRPUSD-15m-1794565800000",
@@ -114076,7 +114079,7 @@
   "edge": false,
   "trail_stop": 1.031261,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "EURUSD-15m-1794566700000",
@@ -114213,7 +114216,7 @@
   "edge": true,
   "trail_stop": 1.105876,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "GBPUSD-1h-1794564000000",
@@ -114622,7 +114625,7 @@
   "edge": false,
   "trail_stop": 159.95,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XAUUSD-4h-1794556800000",
@@ -114884,9 +114887,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.83769,
-  "tp1_hit": false,
-  "bars_open": 6
+  "trail_stop": 0.83814,
+  "tp1_hit": true,
+  "bars_open": 8
  },
  {
   "id": "GBPUSD-5m-1794571500000",
@@ -115157,6 +115160,141 @@
     "gate": false,
     "sgate": false,
     "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.3230856967480236,
+  "tp1_hit": true,
+  "bars_open": 2
+ },
+ {
+  "id": "USDJPY-5m-1794573900000",
+  "logged": "2026-11-13T13:51+01:00",
+  "bar_t": 1794573900000,
+  "bar_time": "Fri 13 Nov 13:45",
+  "sym": "USDJPY",
+  "tf": "5m",
+  "side": "long",
+  "score": 89,
+  "entry": 160.038,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 159.977,
+  "tp": [
+   160.099,
+   160.161,
+   160.222
+  ],
+  "inv": 159.902,
+  "votes": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.0,
+   1.17,
+   1.0,
+   0.81,
+   0.35,
+   1.14,
+   1.0,
+   1.0,
+   1.15,
+   0.2,
+   0.0,
+   0.0,
+   0.0,
+   1.16,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   1.54,
+   0.0,
+   0.14,
+   0.07,
+   0.27,
+   0.47,
+   1.0,
+   1.22,
+   0.41,
+   0.86
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.04093355160342823,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 43,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 159.93899536,
+    "hi": 160.06300354,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 159.8853889,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 160.06300354,
+    "dl": 159.88299561,
+    "brk": 1,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": 1,
     "dgate": false
    },
    "pat": []
