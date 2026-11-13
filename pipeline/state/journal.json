@@ -111223,7 +111223,7 @@
   "edge": false,
   "trail_stop": 0.92409,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 31
  },
  {
   "id": "ETHUSD-5m-1794552600000",
@@ -113959,7 +113959,7 @@
   "edge": false,
   "trail_stop": 0.92528,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 44
  },
  {
   "id": "XRPUSD-15m-1794565800000",
@@ -116589,9 +116589,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.836804,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 0.83766,
+  "tp1_hit": true,
+  "bars_open": 3
  },
  {
   "id": "USDCHF-1h-1794574800000",
@@ -116860,6 +116860,140 @@
     "gate": false,
     "sgate": false,
     "d1": 1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 159.807,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "EURUSD-5m-1794579900000",
+  "logged": "2026-11-13T15:31+01:00",
+  "bar_t": 1794579900000,
+  "bar_time": "Fri 13 Nov 15:25",
+  "sym": "EURUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -70,
+  "entry": 1.105094,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.105596,
+  "tp": [
+   1.104593,
+   1.104092,
+   1.103591
+  ],
+  "inv": 1.107052,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.12,
+   1.0,
+   1.09,
+   1.15,
+   0.35,
+   1.0,
+   1.12,
+   1.0,
+   1.15,
+   0.2,
+   0.0,
+   0.0,
+   0.15,
+   1.94,
+   0.0,
+   0.0,
+   1.19,
+   1.53,
+   1.03,
+   0.36,
+   0.94,
+   0.1,
+   0.06,
+   0.49,
+   1.0,
+   1.0,
+   0.51,
+   1.56
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00033404731018373625,
+  "filters": {
+   "carry": -1.38,
+   "carryDir": -1,
+   "vol": true,
+   "atrPct": 95,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.10612582,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.10705197,
+    "dl": 1.10472822,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
     "dgate": false
    },
    "pat": []
