@@ -113909,7 +113909,7 @@
    0.76
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0006361952267459987,
@@ -113959,7 +113959,10 @@
   "edge": false,
   "trail_stop": 0.92528,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 44,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-13T15:41+01:00"
  },
  {
   "id": "XRPUSD-15m-1794565800000",
@@ -116998,6 +117001,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.105596,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
