@@ -117988,7 +117988,7 @@
   "edge": false,
   "trail_stop": 3892.241,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "XRPUSD-5m-1794583500000",
@@ -118546,7 +118546,7 @@
   "edge": true,
   "trail_stop": 1.104623,
   "tp1_hit": false,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "USDCHF-5m-1794584700000",
@@ -118678,7 +118678,7 @@
   "edge": false,
   "trail_stop": 0.83778,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 42
  },
  {
   "id": "GBPUSD-15m-1794583800000",
@@ -118814,7 +118814,7 @@
   "edge": false,
   "trail_stop": 1.322576,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "BTCUSD-5m-1794585300000",
@@ -119090,7 +119090,7 @@
   "edge": false,
   "trail_stop": 69469.035,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "ETHUSD-5m-1794585300000",
@@ -119364,7 +119364,7 @@
   "edge": false,
   "trail_stop": 1954.975,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "ETHUSD-1h-1794582000000",
@@ -119764,7 +119764,7 @@
   "edge": false,
   "trail_stop": 1.103875,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "SOLUSD-5m-1794587100000",
@@ -120037,7 +120037,7 @@
   "edge": false,
   "trail_stop": 1.3223217723594567,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "XAUUSD-5m-1794588300000",
@@ -120717,7 +120717,7 @@
   "edge": false,
   "trail_stop": 0.837788,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "SOLUSD-5m-1794591300000",
@@ -120851,7 +120851,7 @@
   "edge": false,
   "trail_stop": 80.71802,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "USDJPY-15m-1794591900000",
@@ -121121,7 +121121,7 @@
   "edge": false,
   "trail_stop": 0.924477,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-5m-1794594900000",
@@ -121259,7 +121259,7 @@
   "edge": false,
   "trail_stop": 3888.328,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "BTCUSD-5m-1794594900000",
@@ -121343,7 +121343,7 @@
   "strategies": [
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 138.47962731583675,
@@ -121396,6 +121396,9 @@
   "edge": false,
   "trail_stop": 69056.019,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-13T20:22+01:00"
  }
 ]
