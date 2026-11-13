@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T13:31+01:00",
+ "updated": "2026-11-13T13:41+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13118,13 +13118,13 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 801,
+    "n": 802,
     "hit": 35,
     "avgR": 0.259,
     "pf": 1.47
    },
    "Stochastic (14/3/3)": {
-    "n": 801,
+    "n": 802,
     "hit": 36,
     "avgR": 0.083,
     "pf": 1.13
@@ -13136,15 +13136,15 @@
     "pf": 1.71
    },
    "Ichimoku cloud": {
-    "n": 714,
+    "n": 715,
     "hit": 26,
     "avgR": 0.3,
     "pf": 1.59
    },
    "Supertrend (10/3)": {
-    "n": 801,
+    "n": 802,
     "hit": 32,
-    "avgR": 0.345,
+    "avgR": 0.344,
     "pf": 1.68
    },
    "Volume / OBV": {
@@ -13172,9 +13172,9 @@
     "pf": 0.66
    },
    "Multi-timeframe confirmation": {
-    "n": 706,
+    "n": 707,
     "hit": 24,
-    "avgR": 0.384,
+    "avgR": 0.383,
     "pf": 1.78
    },
    "News sentiment": {
@@ -13184,7 +13184,7 @@
     "pf": 1.26
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 801,
+    "n": 802,
     "hit": 31,
     "avgR": 0.393,
     "pf": 1.82
@@ -13196,7 +13196,7 @@
     "pf": 1.92
    },
    "Fair value gaps": {
-    "n": 585,
+    "n": 586,
     "hit": 29,
     "avgR": 0.237,
     "pf": 1.42
@@ -13208,7 +13208,7 @@
     "pf": 0.64
    },
    "Volume profile / POC": {
-    "n": 801,
+    "n": 802,
     "hit": 36,
     "avgR": 0.001,
     "pf": 1.0
@@ -13220,33 +13220,33 @@
     "pf": 0.97
    },
    "Heikin Ashi trend": {
-    "n": 801,
+    "n": 802,
     "hit": 28,
     "avgR": 0.076,
     "pf": 1.12
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 801,
+    "n": 802,
     "hit": 33,
-    "avgR": 0.426,
+    "avgR": 0.425,
     "pf": 1.91
    },
    "Hull MA (55)": {
-    "n": 801,
+    "n": 802,
     "hit": 33,
     "avgR": 0.306,
     "pf": 1.58
    },
    "Daily pivot points": {
-    "n": 801,
+    "n": 802,
     "hit": 26,
     "avgR": 0.222,
     "pf": 1.39
    },
    "EMA trend (20/50/200)": {
-    "n": 564,
+    "n": 565,
     "hit": 25,
-    "avgR": 0.453,
+    "avgR": 0.452,
     "pf": 1.94
    },
    "RSI (14)": {
@@ -13324,9 +13324,9 @@
     "pf": 1.53
    },
    "GBPUSD": {
-    "n": 91,
+    "n": 92,
     "hit": 24,
-    "avgR": 0.173,
+    "avgR": 0.172,
     "pf": 1.4
    },
    "EURUSD": {
@@ -13350,9 +13350,9 @@
   },
   "strat": {
    "Turtle 20-bar breakout": {
-    "n": 241,
+    "n": 242,
     "hit": 22,
-    "avgR": 0.177,
+    "avgR": 0.176,
     "pf": 1.36
    },
    "Squeeze momentum breakout": {
@@ -13459,13 +13459,13 @@
    }
   },
   "all": {
-   "n": 801,
+   "n": 802,
    "hit": 24,
    "avgR": 0.368,
    "pf": 1.74
   },
   "open": 34,
-  "total": 862
+  "total": 863
  },
  "rates": {
   "_ts": 1794521936.582436,
