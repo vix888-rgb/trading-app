@@ -121224,7 +121224,7 @@
    "ICT/SMC sweep + CHoCH",
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.660843951355328,
@@ -121277,7 +121277,10 @@
   "edge": false,
   "trail_stop": 3882.836,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 1.53,
+  "exit": "time exit",
+  "closed_at": "2026-11-13T23:43+01:00"
  },
  {
   "id": "BTCUSD-5m-1794594900000",
@@ -122667,7 +122670,7 @@
   "edge": false,
   "trail_stop": 78.91241248675546,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "GBPUSD-5m-1794605700000",
@@ -122805,7 +122808,7 @@
   "edge": false,
   "trail_stop": 1.321368,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "ETHUSD-5m-1794606300000",
@@ -123213,7 +123216,7 @@
   "edge": false,
   "trail_stop": 1.0146,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "BTCUSD-5m-1794607500000",
@@ -123479,7 +123482,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 68500.4,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-5m-1794608700000",
@@ -123610,6 +123616,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1933.96,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
