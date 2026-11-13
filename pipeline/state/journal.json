@@ -86590,7 +86590,7 @@
    "TSMOM multi-lookback trend",
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 17.625495223267716,
@@ -86640,7 +86640,10 @@
   "edge": false,
   "trail_stop": 1966.4519808930709,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 38,
+  "R": 3.44,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-13T15:01+01:00"
  },
  {
   "id": "SOLUSD-1h-1794434400000",
@@ -88702,7 +88705,7 @@
   "edge": false,
   "trail_stop": 1.0437941191221813,
   "tp1_hit": true,
-  "bars_open": 37
+  "bars_open": 38
  },
  {
   "id": "GBPUSD-5m-1794441900000",
@@ -89753,7 +89756,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.8919040361428748,
@@ -89803,7 +89806,10 @@
   "edge": false,
   "trail_stop": 81.4876161445715,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 36,
+  "R": 1.6,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-13T15:01+01:00"
  },
  {
   "id": "BTCUSD-5m-1794445500000",
@@ -111217,7 +111223,7 @@
   "edge": false,
   "trail_stop": 0.92409,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "ETHUSD-5m-1794552600000",
@@ -112849,7 +112855,7 @@
   "edge": false,
   "trail_stop": 159.639,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "USDCHF-15m-1794559500000",
@@ -113402,7 +113408,7 @@
   "edge": false,
   "trail_stop": 1.107535,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-5m-1794563700000",
@@ -113953,7 +113959,7 @@
   "edge": false,
   "trail_stop": 0.92528,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "XRPUSD-15m-1794565800000",
@@ -114313,7 +114319,7 @@
    0.94
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0011046944738744378,
@@ -114366,7 +114372,10 @@
   "edge": false,
   "trail_stop": 1.324198,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-13T15:01+01:00"
  },
  {
   "id": "XRPUSD-5m-1794569700000",
@@ -115552,7 +115561,7 @@
    0.76
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 602.1808892752075,
@@ -115604,7 +115613,10 @@
   "edge": false,
   "trail_stop": 70107.631,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 0,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-13T15:01+01:00"
  },
  {
   "id": "EURUSD-5m-1794574500000",
@@ -116565,6 +116577,144 @@
     "st": 1,
     "dh": 0.83898997,
     "dl": 0.83559,
+    "brk": 1,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": 1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 0.836804,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "USDCHF-1h-1794574800000",
+  "logged": "2026-11-13T15:01+01:00",
+  "bar_t": 1794574800000,
+  "bar_time": "Fri 13 Nov 14:00",
+  "sym": "USDCHF",
+  "tf": "1h",
+  "side": "long",
+  "score": 59,
+  "entry": 0.83811,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.836485,
+  "tp": [
+   0.839735,
+   0.84136,
+   0.842985
+  ],
+  "inv": 0.83445,
+  "votes": [
+   1,
+   1,
+   -1,
+   -1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   -1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   0.92,
+   0.35,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.2,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   0.75,
+   0.0,
+   0.14,
+   0.07,
+   0.0,
+   0.47,
+   1.0,
+   1.0,
+   0.41,
+   0.76
+  ],
+  "strategies": [
+   "Keltner volatility breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)",
+   "TTM squeeze fire + EMA200 (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.001083326477345514,
+  "filters": {
+   "carry": 3.92,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 28,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "Core PPI m/m",
+    "at": "2026-11-13T08:30:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.82647783,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 0.83898997,
+    "dl": 0.83364999,
     "brk": 1,
     "sqz": "off",
     "mom": 1,
