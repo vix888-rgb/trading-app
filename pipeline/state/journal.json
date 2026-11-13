@@ -79281,7 +79281,7 @@
   "edge": false,
   "trail_stop": 1.1089191815544712,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 45
  },
  {
   "id": "XAUUSD-5m-1794392100000",
@@ -86637,7 +86637,7 @@
   "edge": false,
   "trail_stop": 1966.4519808930709,
   "tp1_hit": true,
-  "bars_open": 31
+  "bars_open": 32
  },
  {
   "id": "SOLUSD-1h-1794434400000",
@@ -88699,7 +88699,7 @@
   "edge": false,
   "trail_stop": 1.0437941191221813,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 31
  },
  {
   "id": "GBPUSD-5m-1794441900000",
@@ -89800,7 +89800,7 @@
   "edge": false,
   "trail_stop": 81.4876161445715,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "BTCUSD-5m-1794445500000",
@@ -95604,7 +95604,7 @@
   "edge": false,
   "trail_stop": 69161.8158839474,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "ETHUSD-15m-1794483900000",
@@ -101654,7 +101654,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.001062240586285825,
@@ -101706,7 +101706,10 @@
   "edge": false,
   "trail_stop": 0.83465,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 14,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-13T08:10+01:00"
  },
  {
   "id": "SOLUSD-15m-1794498300000",
@@ -104711,9 +104714,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 159.517,
-  "tp1_hit": false,
-  "bars_open": 11
+  "trail_stop": 159.832,
+  "tp1_hit": true,
+  "bars_open": 12
  },
  {
   "id": "ETHUSD-5m-1794510000000",
@@ -106188,7 +106191,7 @@
    "MTF top-down pullback",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0006206293152961681,
@@ -106238,7 +106241,10 @@
   "edge": false,
   "trail_stop": 0.834839,
   "tp1_hit": false,
-  "bars_open": 28
+  "bars_open": 28,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-13T08:10+01:00"
  },
  {
   "id": "BTCUSD-5m-1794527400000",
@@ -110596,7 +110602,7 @@
    1.1
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.374444696236566,
@@ -110646,7 +110652,10 @@
   "edge": false,
   "trail_stop": 3897.068,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-13T08:10+01:00"
  },
  {
   "id": "EURUSD-5m-1794551400000",
@@ -111057,7 +111066,7 @@
   "edge": false,
   "trail_stop": 0.923226,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "EURCHF-15m-1794551400000",
@@ -111196,7 +111205,7 @@
   "edge": false,
   "trail_stop": 0.923067,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "ETHUSD-5m-1794552600000",
@@ -111278,7 +111287,7 @@
    1.07
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 7.562830719467637,
@@ -111325,6 +111334,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1946.474,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-13T08:10+01:00"
  }
 ]
