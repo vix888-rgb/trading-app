@@ -111075,7 +111075,7 @@
   "edge": false,
   "trail_stop": 0.92409,
   "tp1_hit": true,
-  "bars_open": 41
+  "bars_open": 43
  },
  {
   "id": "EURCHF-15m-1794551400000",
@@ -111214,7 +111214,7 @@
   "edge": false,
   "trail_stop": 0.92409,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "ETHUSD-5m-1794552600000",
@@ -111615,7 +111615,7 @@
   "edge": false,
   "trail_stop": 1964.641,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "BTCUSD-5m-1794555600000",
@@ -111972,7 +111972,7 @@
    0.76
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 378.7679343750535,
@@ -112022,7 +112022,10 @@
   "edge": false,
   "trail_stop": 69162.162,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-13T11:21+01:00"
  },
  {
   "id": "EURUSD-5m-1794556800000",
@@ -112289,9 +112292,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.836102534827221,
+  "trail_stop": 0.8363125219907647,
   "tp1_hit": true,
-  "bars_open": 25
+  "bars_open": 27
  },
  {
   "id": "SOLUSD-15m-1794555900000",
@@ -112377,7 +112380,7 @@
    "MTF top-down pullback",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.5719137904220415,
@@ -112427,7 +112430,10 @@
   "edge": false,
   "trail_stop": 80.57787,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-13T11:21+01:00"
  },
  {
   "id": "USDJPY-5m-1794559200000",
@@ -112562,7 +112568,7 @@
   "edge": false,
   "trail_stop": 159.81,
   "tp1_hit": false,
-  "bars_open": 17
+  "bars_open": 19
  },
  {
   "id": "EURUSD-5m-1794559800000",
@@ -112694,7 +112700,7 @@
   "edge": false,
   "trail_stop": 1.106317,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 17
  },
  {
   "id": "USDJPY-1h-1794556800000",
@@ -112967,7 +112973,7 @@
   "edge": false,
   "trail_stop": 0.835871,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XAUUSD-5m-1794561300000",
@@ -113513,6 +113519,141 @@
   "edge": false,
   "trail_stop": 1.323665,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "XAUUSD-5m-1794564900000",
+  "logged": "2026-11-13T11:21+01:00",
+  "bar_t": 1794564900000,
+  "bar_time": "Fri 13 Nov 11:15",
+  "sym": "XAUUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -25,
+  "entry": 3897.31,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 3903.409,
+  "tp": [
+   3891.21,
+   3885.111,
+   3879.011
+  ],
+  "inv": 3903.09,
+  "votes": [
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.33,
+   1.0,
+   1.09,
+   0.35,
+   1.0,
+   1.0,
+   1.23,
+   1.15,
+   0.2,
+   0.0,
+   0.0,
+   0.0,
+   1.27,
+   0.58,
+   0.0,
+   1.0,
+   1.0,
+   0.75,
+   0.0,
+   0.14,
+   0.3,
+   0.0,
+   0.47,
+   1.0,
+   1.26,
+   0.76,
+   1.1
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Wyckoff spring / upthrust"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 4.066355965750873,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 41,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 3893.67783,
+    "hi": 3905.02968,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 3902.43370164,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 3905.02968,
+    "dl": 3889.13449,
+    "brk": 0,
+    "sqz": "on",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
