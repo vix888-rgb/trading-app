@@ -113947,7 +113947,7 @@
   "edge": false,
   "trail_stop": 0.92528,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "XRPUSD-15m-1794565800000",
@@ -115820,7 +115820,7 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.2238663086083004,
@@ -115875,7 +115875,10 @@
   "edge": false,
   "trail_stop": 3888.79,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-13T14:41+01:00"
  },
  {
   "id": "USDJPY-5m-1794575100000",
@@ -116096,7 +116099,7 @@
    1.36
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00033610672695367236,
@@ -116148,7 +116151,10 @@
   "edge": false,
   "trail_stop": 0.837806,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-13T14:41+01:00"
  },
  {
   "id": "EURUSD-5m-1794575700000",
