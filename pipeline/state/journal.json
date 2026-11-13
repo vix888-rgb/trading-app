@@ -118675,7 +118675,7 @@
   "edge": false,
   "trail_stop": 0.83778,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "GBPUSD-15m-1794583800000",
@@ -119761,7 +119761,7 @@
   "edge": false,
   "trail_stop": 1.103875,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "SOLUSD-5m-1794587100000",
@@ -120034,7 +120034,7 @@
   "edge": false,
   "trail_stop": 1.3223217723594567,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "XAUUSD-5m-1794588300000",
@@ -120256,7 +120256,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.05768545119662072,
@@ -120306,7 +120306,10 @@
   "edge": false,
   "trail_stop": 159.854,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 14,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-13T19:12+01:00"
  },
  {
   "id": "SOLUSD-15m-1794587400000",
@@ -120845,7 +120848,7 @@
   "edge": false,
   "trail_stop": 80.71802,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "USDJPY-15m-1794591900000",
@@ -120977,6 +120980,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 159.81,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
