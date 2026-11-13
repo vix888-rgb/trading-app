@@ -117988,7 +117988,7 @@
   "edge": false,
   "trail_stop": 3892.241,
   "tp1_hit": false,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "XRPUSD-5m-1794583500000",
@@ -118546,7 +118546,7 @@
   "edge": true,
   "trail_stop": 1.103631,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "USDCHF-5m-1794584700000",
@@ -118817,7 +118817,7 @@
   "edge": false,
   "trail_stop": 1.322576,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "BTCUSD-5m-1794585300000",
@@ -119093,7 +119093,7 @@
   "edge": false,
   "trail_stop": 68899.65,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "ETHUSD-5m-1794585300000",
@@ -122206,7 +122206,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.005590012656400794,
@@ -122258,7 +122258,10 @@
   "edge": false,
   "trail_stop": 1.0121,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 5,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-13T23:53+01:00"
  },
  {
   "id": "SOLUSD-15m-1794604500000",
@@ -122398,7 +122401,7 @@
   "edge": false,
   "trail_stop": 79.46,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "ETHUSD-5m-1794605700000",
@@ -122670,7 +122673,7 @@
   "edge": false,
   "trail_stop": 78.91241248675546,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "GBPUSD-5m-1794605700000",
@@ -123084,7 +123087,7 @@
   "edge": false,
   "trail_stop": 1935.548,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "XRPUSD-5m-1794606900000",
@@ -123216,7 +123219,7 @@
   "edge": false,
   "trail_stop": 1.0146,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "BTCUSD-5m-1794607500000",
@@ -123485,7 +123488,7 @@
   "edge": false,
   "trail_stop": 68500.4,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "ETHUSD-5m-1794608700000",
@@ -123619,6 +123622,141 @@
   "edge": false,
   "trail_stop": 1933.96,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "XRPUSD-15m-1794609000000",
+  "logged": "2026-11-13T23:53+01:00",
+  "bar_t": 1794609000000,
+  "bar_time": "Fri 13 Nov 23:30",
+  "sym": "XRPUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -63,
+  "entry": 1.011,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.020094,
+  "tp": [
+   1.001906,
+   0.992812,
+   0.983719
+  ],
+  "inv": 1.0298,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "weights": [
+   1.09,
+   1.0,
+   1.0,
+   1.29,
+   0.35,
+   1.0,
+   1.0,
+   1.02,
+   1.04,
+   0.04,
+   0.41,
+   0.0,
+   0.0,
+   1.74,
+   0.15,
+   0.0,
+   1.0,
+   1.03,
+   1.19,
+   0.74,
+   0.14,
+   0.07,
+   0.38,
+   0.47,
+   1.0,
+   1.0,
+   0.41,
+   1.22
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Keltner volatility breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.006062529975290525,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 71,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": true,
+    "blockLong": true,
+    "blockShort": false,
+    "dir": -1,
+    "alert": true,
+    "lo": 1.019,
+    "hi": 1.029
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.03364768,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.0298,
+    "dl": 1.0037,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
