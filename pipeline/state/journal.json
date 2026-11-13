@@ -101925,7 +101925,7 @@
    0.84
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 351.98628334406243,
@@ -101975,7 +101975,10 @@
   "edge": false,
   "trail_stop": 69935.83513337625,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 5.97,
+  "exit": "time exit",
+  "closed_at": "2026-11-13T05:20+01:00"
  },
  {
   "id": "ETHUSD-15m-1794499200000",
@@ -102057,7 +102060,7 @@
    0.84
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 13.00643725773241,
@@ -102107,7 +102110,10 @@
   "edge": false,
   "trail_stop": 1969.0357490309295,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 4.08,
+  "exit": "time exit",
+  "closed_at": "2026-11-13T05:20+01:00"
  },
  {
   "id": "XRPUSD-5m-1794500400000",
@@ -103608,7 +103614,7 @@
   "edge": false,
   "trail_stop": 0.922214,
   "tp1_hit": false,
-  "bars_open": 42
+  "bars_open": 43
  },
  {
   "id": "XAUUSD-15m-1794504600000",
@@ -104973,7 +104979,7 @@
   "edge": false,
   "trail_stop": 159.699,
   "tp1_hit": false,
-  "bars_open": 33
+  "bars_open": 34
  },
  {
   "id": "USDCHF-5m-1794512400000",
@@ -106226,7 +106232,7 @@
   "edge": false,
   "trail_stop": 0.834839,
   "tp1_hit": false,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "BTCUSD-5m-1794527400000",
@@ -108160,7 +108166,7 @@
   "edge": false,
   "trail_stop": 1.0169544633773981,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "USDJPY-5m-1794532200000",
@@ -108706,7 +108712,7 @@
   "edge": false,
   "trail_stop": 69269.00539325444,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 32
  },
  {
   "id": "ETHUSD-5m-1794538800000",
@@ -108838,7 +108844,7 @@
   "edge": false,
   "trail_stop": 1944.3766379425158,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "SOLUSD-5m-1794538800000",
@@ -108970,7 +108976,7 @@
   "edge": false,
   "trail_stop": 79.05987071561633,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "USDJPY-4h-1794528000000",
@@ -109101,7 +109107,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 159.347,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "SOLUSD-15m-1794541500000",
@@ -109233,7 +109242,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 79.32529,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "GBPUSD-4h-1794528000000",
@@ -109368,6 +109380,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.327562,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
