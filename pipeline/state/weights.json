@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T13:01+01:00",
+ "updated": "2026-11-13T13:11+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13118,34 +13118,34 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 800,
+    "n": 801,
     "hit": 35,
-    "avgR": 0.254,
-    "pf": 1.46
+    "avgR": 0.259,
+    "pf": 1.47
    },
    "Stochastic (14/3/3)": {
-    "n": 800,
+    "n": 801,
     "hit": 36,
-    "avgR": 0.088,
-    "pf": 1.14
+    "avgR": 0.083,
+    "pf": 1.13
    },
    "ADX trend strength (14)": {
-    "n": 499,
+    "n": 500,
     "hit": 30,
-    "avgR": 0.345,
-    "pf": 1.69
+    "avgR": 0.353,
+    "pf": 1.71
    },
    "Ichimoku cloud": {
-    "n": 713,
+    "n": 714,
     "hit": 26,
-    "avgR": 0.295,
-    "pf": 1.58
+    "avgR": 0.3,
+    "pf": 1.59
    },
    "Supertrend (10/3)": {
-    "n": 800,
+    "n": 801,
     "hit": 32,
-    "avgR": 0.35,
-    "pf": 1.7
+    "avgR": 0.345,
+    "pf": 1.68
    },
    "Volume / OBV": {
     "n": 482,
@@ -13160,10 +13160,10 @@
     "pf": 1.15
    },
    "Candlestick patterns": {
-    "n": 373,
+    "n": 374,
     "hit": 28,
-    "avgR": -0.181,
-    "pf": 0.73
+    "avgR": -0.169,
+    "pf": 0.75
    },
    "RSI divergence": {
     "n": 110,
@@ -13172,34 +13172,34 @@
     "pf": 0.66
    },
    "Multi-timeframe confirmation": {
-    "n": 705,
+    "n": 706,
     "hit": 24,
-    "avgR": 0.378,
-    "pf": 1.77
+    "avgR": 0.384,
+    "pf": 1.78
    },
    "News sentiment": {
-    "n": 494,
+    "n": 495,
     "hit": 26,
-    "avgR": 0.14,
-    "pf": 1.24
+    "avgR": 0.148,
+    "pf": 1.26
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 800,
+    "n": 801,
     "hit": 31,
-    "avgR": 0.388,
-    "pf": 1.81
+    "avgR": 0.393,
+    "pf": 1.82
    },
    "Order blocks": {
-    "n": 292,
+    "n": 293,
     "hit": 42,
-    "avgR": 0.459,
-    "pf": 1.98
+    "avgR": 0.443,
+    "pf": 1.92
    },
    "Fair value gaps": {
-    "n": 584,
+    "n": 585,
     "hit": 29,
-    "avgR": 0.23,
-    "pf": 1.41
+    "avgR": 0.237,
+    "pf": 1.42
    },
    "Liquidity sweeps": {
     "n": 283,
@@ -13208,40 +13208,40 @@
     "pf": 0.64
    },
    "Volume profile / POC": {
-    "n": 800,
+    "n": 801,
     "hit": 36,
-    "avgR": 0.007,
-    "pf": 1.01
+    "avgR": 0.001,
+    "pf": 1.0
    },
    "Anchored VWAP": {
-    "n": 676,
+    "n": 677,
     "hit": 32,
-    "avgR": -0.025,
-    "pf": 0.96
+    "avgR": -0.018,
+    "pf": 0.97
    },
    "Heikin Ashi trend": {
-    "n": 800,
+    "n": 801,
     "hit": 28,
-    "avgR": 0.071,
-    "pf": 1.11
+    "avgR": 0.076,
+    "pf": 1.12
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 800,
-    "hit": 34,
-    "avgR": 0.431,
-    "pf": 1.94
+    "n": 801,
+    "hit": 33,
+    "avgR": 0.426,
+    "pf": 1.91
    },
    "Hull MA (55)": {
-    "n": 800,
+    "n": 801,
     "hit": 33,
-    "avgR": 0.312,
-    "pf": 1.6
+    "avgR": 0.306,
+    "pf": 1.58
    },
    "Daily pivot points": {
-    "n": 800,
+    "n": 801,
     "hit": 26,
-    "avgR": 0.217,
-    "pf": 1.38
+    "avgR": 0.222,
+    "pf": 1.39
    },
    "EMA trend (20/50/200)": {
     "n": 564,
@@ -13250,22 +13250,22 @@
     "pf": 1.94
    },
    "RSI (14)": {
-    "n": 566,
+    "n": 567,
     "hit": 29,
-    "avgR": 0.254,
-    "pf": 1.5
+    "avgR": 0.261,
+    "pf": 1.51
    },
    "Bollinger Bands (20/2)": {
-    "n": 354,
+    "n": 355,
     "hit": 31,
-    "avgR": 0.081,
-    "pf": 1.13
+    "avgR": 0.092,
+    "pf": 1.15
    },
    "Williams %R / CCI": {
-    "n": 341,
+    "n": 342,
     "hit": 39,
-    "avgR": 0.045,
-    "pf": 1.07
+    "avgR": 0.032,
+    "pf": 1.05
    },
    "Fibonacci confluence": {
     "n": 120,
@@ -13280,10 +13280,10 @@
     "pf": 0.46
    },
    "Volatility (ATR 14)": {
-    "n": 131,
+    "n": 132,
     "hit": 27,
-    "avgR": -0.147,
-    "pf": 0.81
+    "avgR": -0.113,
+    "pf": 0.85
    }
   },
   "sym": {
@@ -13342,10 +13342,10 @@
     "pf": 1.43
    },
    "USDCHF": {
-    "n": 40,
-    "hit": 22,
-    "avgR": 0.454,
-    "pf": 1.86
+    "n": 41,
+    "hit": 24,
+    "avgR": 0.547,
+    "pf": 2.07
    }
   },
   "strat": {
@@ -13459,13 +13459,13 @@
    }
   },
   "all": {
-   "n": 800,
+   "n": 801,
    "hit": 24,
-   "avgR": 0.363,
-   "pf": 1.73
+   "avgR": 0.368,
+   "pf": 1.74
   },
-  "open": 32,
-  "total": 859
+  "open": 34,
+  "total": 862
  },
  "rates": {
   "_ts": 1794521936.582436,
