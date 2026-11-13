@@ -122673,7 +122673,7 @@
   "edge": false,
   "trail_stop": 78.14241248675546,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "GBPUSD-5m-1794605700000",
@@ -123219,7 +123219,7 @@
   "edge": false,
   "trail_stop": 1.0135468556035003,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "BTCUSD-5m-1794607500000",
@@ -123488,7 +123488,7 @@
   "edge": false,
   "trail_stop": 68282.01,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "ETHUSD-5m-1794608700000",
@@ -123572,7 +123572,7 @@
   "strategies": [
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.33336224600215,
@@ -123622,7 +123622,10 @@
   "edge": false,
   "trail_stop": 1925.96,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 12,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-14T00:43+01:00"
  },
  {
   "id": "XRPUSD-15m-1794609000000",
