@@ -111066,7 +111066,7 @@
   "edge": false,
   "trail_stop": 0.923226,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "EURCHF-15m-1794551400000",
@@ -111205,7 +111205,7 @@
   "edge": false,
   "trail_stop": 0.923067,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "ETHUSD-5m-1794552600000",
@@ -111471,7 +111471,7 @@
   "edge": false,
   "trail_stop": 3905.346,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-15m-1794553200000",
@@ -111603,6 +111603,138 @@
   "edge": false,
   "trail_stop": 1964.641,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
+ },
+ {
+  "id": "BTCUSD-5m-1794555600000",
+  "logged": "2026-11-13T08:50+01:00",
+  "bar_t": 1794555600000,
+  "bar_time": "Fri 13 Nov 08:40",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -26,
+  "entry": 68829.62,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 69119.828,
+  "tp": [
+   68539.412,
+   68249.204,
+   67958.996
+  ],
+  "inv": 69371.19,
+  "votes": [
+   -1,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   0.95,
+   0.38,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.04,
+   0.0,
+   0.0,
+   0.0,
+   1.32,
+   0.15,
+   0.0,
+   1.0,
+   1.75,
+   0.75,
+   0.28,
+   0.14,
+   0.07,
+   0.0,
+   0.47,
+   1.0,
+   1.0,
+   0.57,
+   1.08
+  ],
+  "strategies": [
+   "MTF top-down pullback",
+   "Liquidity Entry Zones"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 193.4720670974791,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 66,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 70517.37125413,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 69371.19,
+    "dl": 67904.46,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
