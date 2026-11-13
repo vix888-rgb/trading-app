@@ -111072,7 +111072,7 @@
   "edge": false,
   "trail_stop": 0.923226,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "EURCHF-15m-1794551400000",
@@ -111211,7 +111211,7 @@
   "edge": false,
   "trail_stop": 0.923067,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1794552600000",
@@ -111477,7 +111477,7 @@
   "edge": false,
   "trail_stop": 3905.346,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "ETHUSD-15m-1794553200000",
@@ -111609,7 +111609,7 @@
   "edge": false,
   "trail_stop": 1964.641,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-5m-1794555600000",
@@ -111744,7 +111744,7 @@
   "edge": false,
   "trail_stop": 69119.828,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1794556200000",
@@ -111878,7 +111878,7 @@
   "edge": false,
   "trail_stop": 1945.439,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-15m-1794555900000",
@@ -112007,7 +112007,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 69162.162,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "EURUSD-5m-1794556800000",
@@ -112089,7 +112092,7 @@
    1.56
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00023795727426574899,
@@ -112139,7 +112142,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.106552,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-13T09:20+01:00"
  },
  {
   "id": "USDCHF-5m-1794556800000",
@@ -112268,7 +112276,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.835283,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-15m-1794555900000",
@@ -112401,6 +112412,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 80.57787,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
