@@ -111223,7 +111223,7 @@
   "edge": false,
   "trail_stop": 0.92409,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "ETHUSD-5m-1794552600000",
@@ -113959,7 +113959,7 @@
   "edge": false,
   "trail_stop": 0.92528,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 42
  },
  {
   "id": "XRPUSD-15m-1794565800000",
@@ -116591,7 +116591,7 @@
   "edge": false,
   "trail_stop": 0.836804,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "USDCHF-1h-1794574800000",
@@ -116730,5 +116730,140 @@
   "trail_stop": 0.836485,
   "tp1_hit": false,
   "bars_open": 0
+ },
+ {
+  "id": "USDJPY-15m-1794578400000",
+  "logged": "2026-11-13T15:21+01:00",
+  "bar_t": 1794578400000,
+  "bar_time": "Fri 13 Nov 15:00",
+  "sym": "USDJPY",
+  "tf": "15m",
+  "side": "long",
+  "score": 46,
+  "entry": 159.927,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 159.807,
+  "tp": [
+   160.047,
+   160.167,
+   160.286
+  ],
+  "inv": 159.883,
+  "votes": [
+   0,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.0,
+   1.4,
+   1.0,
+   0.96,
+   0.35,
+   1.17,
+   1.0,
+   1.33,
+   1.15,
+   0.2,
+   0.0,
+   0.23,
+   0.65,
+   1.0,
+   0.32,
+   0.0,
+   1.36,
+   1.0,
+   1.14,
+   0.0,
+   0.52,
+   0.65,
+   0.0,
+   1.25,
+   1.0,
+   1.46,
+   0.41,
+   0.76
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend",
+   "Liquidity Entry Zones"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.07984198374752889,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 48,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 159.77000427,
+    "hi": 160.06300354,
+    "src": "15m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 159.65779625,
+    "side200": 1,
+    "stack": 1,
+    "st": -1,
+    "dh": 160.06300354,
+    "dl": 159.77000427,
+    "brk": 1,
+    "sqz": "on",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": 1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
