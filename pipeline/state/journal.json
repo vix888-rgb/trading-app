@@ -125580,7 +125580,7 @@
   "edge": false,
   "trail_stop": 1912.27,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "XRPUSD-5m-1794624900000",
@@ -125857,7 +125857,7 @@
   "edge": false,
   "trail_stop": 1.004,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "SOLUSD-5m-1794625500000",
@@ -126398,7 +126398,7 @@
   "edge": false,
   "trail_stop": 67801.801,
   "tp1_hit": false,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "BTCUSD-1h-1794636000000",
@@ -127301,7 +127301,7 @@
   "strategies": [
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 146.05961910091247,
@@ -127351,7 +127351,10 @@
   "edge": false,
   "trail_stop": 67384.509,
   "tp1_hit": false,
-  "bars_open": 20
+  "bars_open": 20,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-14T10:54+01:00"
  },
  {
   "id": "ETHUSD-5m-1794642900000",
@@ -127757,6 +127760,6 @@
   "edge": false,
   "trail_stop": 76.32514,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  }
 ]
