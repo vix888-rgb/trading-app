@@ -117991,7 +117991,7 @@
   "edge": false,
   "trail_stop": 3892.241,
   "tp1_hit": false,
-  "bars_open": 44
+  "bars_open": 45
  },
  {
   "id": "XRPUSD-5m-1794583500000",
@@ -119096,7 +119096,7 @@
   "edge": false,
   "trail_stop": 68433.36112679931,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 43
  },
  {
   "id": "ETHUSD-5m-1794585300000",
@@ -122402,9 +122402,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 76.83767898229917,
+  "trail_stop": 76.75767898229917,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "ETHUSD-5m-1794605700000",
@@ -123865,7 +123865,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.26448264242070246,
@@ -123915,7 +123915,10 @@
   "edge": false,
   "trail_stop": 76.0779305696828,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 32,
+  "R": 5.32,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-14T03:54+01:00"
  },
  {
   "id": "XRPUSD-15m-1794613500000",
@@ -124051,7 +124054,7 @@
   "edge": false,
   "trail_stop": 1.0070418638224812,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "XRPUSD-1h-1794610800000",
@@ -124454,7 +124457,7 @@
   "edge": false,
   "trail_stop": 1911.4404192044167,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "XRPUSD-5m-1794622500000",
@@ -125010,7 +125013,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 67828.747,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-5m-1794623700000",
@@ -125142,7 +125148,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1916.822,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-5m-1794623700000",
@@ -125226,7 +125235,7 @@
   "strategies": [
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.004293615149944885,
@@ -125273,6 +125282,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.00544,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-14T03:54+01:00"
  }
 ]
