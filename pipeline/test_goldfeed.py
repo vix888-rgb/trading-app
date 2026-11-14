@@ -146,7 +146,7 @@ class GoldFeed(unittest.TestCase):
             book = {
                 "5min": series(300_000, 600, last_5, 3900),
                 "1min": series(60_000, 200, last_1, 3910),
-                "1h": series(3_600_000, 4000, last_h, 3800),
+                "1h": series(3_600_000, 5000, last_h, 3800),
             }
             sizes = []
 
@@ -294,6 +294,138 @@ class ClosedBuckets(unittest.TestCase):
         row = day[day.t == ms("2026-11-06 05:00:00+00:00")].iloc[0]
         last_hour = hours[hours.t == ms("2026-11-06 21:00:00+00:00")].iloc[0]
         self.assertAlmostEqual(float(row.c), float(last_hour.c))
+
+
+class WeekendBars(unittest.TestCase):
+    """Gold weekend-closure bars (Fri 17:00 ET–Sun 18:00 ET) must not reach indicators."""
+
+    def _weekend_hours(self):
+        # Thursday 12 Nov 13:00 ET (18:00 UTC) through Monday 16 Nov 12:00 ET (17:00 UTC).
+        # November 2026 is EST (UTC-5). Last Friday hour is 16:00 ET = 21:00 UTC.
+        start = ms("2026-11-12 18:00:00+00:00")
+        end = ms("2026-11-16 17:00:00+00:00")
+        hours = _hours(start, end, 3900)
+        t = pd.to_datetime(hours.t, unit="ms", utc=True)
+        ny = t.dt.tz_convert("America/New_York")
+        closed = ((ny.dt.dayofweek == 4) & (ny.dt.hour >= 17)) | (ny.dt.dayofweek == 5) | ((ny.dt.dayofweek == 6) & (ny.dt.hour < 18))
+        # Twelve Data style: tiny synthetic range on closed hours, not always a perfect doji.
+        hours.loc[closed, ["o", "h", "l", "c"]] = 3910.0
+        hours.loc[closed, "h"] = 3910.26
+        hours.loc[closed, "l"] = 3910.00
+        hours.loc[closed, "c"] = 3910.10
+        hours.loc[closed, "v"] = 0.0
+        return hours, closed
+
+    def test_session_window(self):
+        self.assertTrue(goldfeed.session_closed_at(ms("2026-11-13 22:00:00+00:00")))  # Fri 17:00 ET
+        self.assertFalse(goldfeed.session_closed_at(ms("2026-11-13 21:00:00+00:00")))  # Fri 16:00 ET last hour
+        self.assertTrue(goldfeed.session_closed_at(ms("2026-11-14 05:00:00+00:00")))  # Sat
+        self.assertTrue(goldfeed.session_closed_at(ms("2026-11-15 22:00:00+00:00")))  # Sun 17:00 ET
+        self.assertFalse(goldfeed.session_closed_at(ms("2026-11-15 23:00:00+00:00")))  # Sun 18:00 ET reopen
+
+    def test_weekend_hours_are_dropped_before_4h_and_daily(self):
+        hours, closed = self._weekend_hours()
+        now = ms("2026-11-16 18:10:00+00:00")
+        fetched = now / 1000.0
+        frames, _terr = goldfeed._build(_state(hours, fetched), now)
+        kept = _opens(frames["1h"])
+        self.assertIn(ms("2026-11-13 21:00:00+00:00"), kept)  # Fri 16:00 ET
+        self.assertNotIn(ms("2026-11-13 22:00:00+00:00"), kept)  # Fri 17:00 ET
+        self.assertNotIn(ms("2026-11-14 12:00:00+00:00"), kept)  # Saturday
+        self.assertNotIn(ms("2026-11-15 22:00:00+00:00"), kept)  # Sun 17:00 ET
+        self.assertIn(ms("2026-11-15 23:00:00+00:00"), kept)  # Sun 18:00 ET
+        self.assertEqual(len(frames["1h"]), int((~closed).sum()))
+
+        days = _opens(frames["1d"])
+        self.assertIn(ms("2026-11-13 05:00:00+00:00"), days)  # Friday
+        self.assertNotIn(ms("2026-11-14 05:00:00+00:00"), days)  # Saturday, all hours dropped
+        self.assertIn(ms("2026-11-15 05:00:00+00:00"), days)  # Sunday evening session
+        fri = frames["1d"][frames["1d"].t == ms("2026-11-13 05:00:00+00:00")].iloc[0]
+        last_fri = hours[hours.t == ms("2026-11-13 21:00:00+00:00")].iloc[0]
+        self.assertAlmostEqual(float(fri.c), float(last_fri.c))
+        sun = frames["1d"][frames["1d"].t == ms("2026-11-15 05:00:00+00:00")].iloc[0]
+        first_sun = hours[hours.t == ms("2026-11-15 23:00:00+00:00")].iloc[0]
+        last_sun = hours[hours.t == ms("2026-11-16 04:00:00+00:00")].iloc[0]
+        self.assertAlmostEqual(float(sun.o), float(first_sun.o))
+        self.assertAlmostEqual(float(sun.c), float(last_sun.c))
+
+        # Friday 20:00 UTC 4h bucket keeps only the 20:00 and 21:00 hours (16:00 ET still open).
+        h4 = frames["4h"]
+        row = h4[h4.t == ms("2026-11-13 20:00:00+00:00")].iloc[0]
+        self.assertAlmostEqual(float(row.c), float(last_fri.c))
+        self.assertNotIn(ms("2026-11-14 00:00:00+00:00"), _opens(h4))  # Saturday 4h gone
+
+    def test_merge_does_not_cache_weekend_or_zero_range_bars(self):
+        hours, closed = self._weekend_hours()
+        midweek = series(3_600_000, 4, ms("2026-11-12 16:00:00+00:00"), 3880)
+        # A mid-week holiday print: flat, volume 0, should also be dropped.
+        holiday = pd.DataFrame({
+            "t": [ms("2026-11-11 15:00:00+00:00")],
+            "o": [4000.0], "h": [4000.0], "l": [4000.0], "c": [4000.0], "v": [0.0],
+        })
+        merged = goldfeed.merge_bars(midweek, pd.concat([hours, holiday], ignore_index=True))
+        opens = _opens(merged)
+        self.assertNotIn(ms("2026-11-13 22:00:00+00:00"), opens)
+        self.assertNotIn(ms("2026-11-14 12:00:00+00:00"), opens)
+        self.assertNotIn(ms("2026-11-11 15:00:00+00:00"), opens)
+        self.assertIn(ms("2026-11-13 21:00:00+00:00"), opens)
+        self.assertIn(ms("2026-11-12 16:00:00+00:00"), opens)
+        # A mid-week bar with volume 0 but a real range is kept (the feed stores v=0 on every bar).
+        self.assertIn(ms("2026-11-12 16:00:00+00:00"), opens)
+        row = merged[merged.t == ms("2026-11-12 16:00:00+00:00")].iloc[0]
+        self.assertGreater(float(row.h - row.l), 0)
+
+    def test_load_xau_cache_and_frames_skip_weekend_bars(self):
+        hours, closed = self._weekend_hours()
+        # Need >= MIN_BARS of 5m and 1h. Pad with earlier mid-week hours.
+        pad_h = series(3_600_000, 200, ms("2026-11-12 17:00:00+00:00"), 3800)
+        h1 = goldfeed.merge_bars(pad_h, hours)  # already drops weekend from the padded merge...
+        # Rebuild an unfiltered book for the fetch stub, and let load_xau drop them.
+        raw_h = pd.concat([pad_h, hours], ignore_index=True).drop_duplicates("t", keep="last").sort_values("t").reset_index(drop=True)
+        last_5 = ms("2026-11-16 17:55:00+00:00")
+        m5 = series(300_000, 600, last_5, 3900)
+        t5 = pd.to_datetime(m5.t, unit="ms", utc=True).dt.tz_convert("America/New_York")
+        closed5 = ((t5.dt.dayofweek == 4) & (t5.dt.hour >= 17)) | (t5.dt.dayofweek == 5) | ((t5.dt.dayofweek == 6) & (t5.dt.hour < 18))
+        m5.loc[closed5, ["o", "h", "l", "c"]] = 3910.0
+        m5.loc[closed5, "h"] = 3910.26
+        m5.loc[closed5, "l"] = 3910.00
+        m5.loc[closed5, "v"] = 0.0
+        last_1 = ms("2026-11-16 17:59:00+00:00")
+        m1 = series(60_000, 200, last_1, 3910)
+        book = {"5min": m5, "1min": m1, "1h": raw_h}
+        now = ms("2026-11-16 18:10:00+00:00") / 1000.0
+        with tempfile.TemporaryDirectory() as tmp:
+            path = os.path.join(tmp, "gold_feed.json")
+
+            def fetch_td(interval, outputsize, key):
+                self.assertEqual(key, KEY)
+                return book[interval]
+
+            def yahoo(sym, tf):
+                self.assertEqual((sym, tf), ("GC=F", "1h"))
+                fut = raw_h.copy()
+                for col in ("o", "h", "l", "c"):
+                    fut[col] = fut[col] + 9.25
+                return fut
+
+            frames, _terr = goldfeed.load_xau(
+                yahoo, now=now, fetch_td=fetch_td, fetch_px=lambda: 3900, state_path=path, key=KEY,
+            )
+            self.assertNotIn(ms("2026-11-13 22:00:00+00:00"), _opens(frames["1h"]))
+            self.assertIn(ms("2026-11-13 21:00:00+00:00"), _opens(frames["1h"]))
+            self.assertIn(ms("2026-11-15 23:00:00+00:00"), _opens(frames["1h"]))
+            cached = goldfeed._frame(json.load(open(path))["bars"]["1h"])
+            self.assertNotIn(ms("2026-11-13 22:00:00+00:00"), _opens(cached))
+            self.assertNotIn(KEY, open(path).read() + json.dumps(goldfeed.public_meta(path)))
+
+    def test_zero_range_midweek_bar_is_dropped(self):
+        hours = _hours(ms("2026-11-10 00:00:00+00:00"), ms("2026-11-10 20:00:00+00:00"), 4000)
+        hours.loc[hours.t == ms("2026-11-10 15:00:00+00:00"), ["o", "h", "l", "c"]] = 4001.0
+        cleaned = goldfeed.drop_closed_bars(hours, goldfeed.STEP["1h"])
+        self.assertNotIn(ms("2026-11-10 15:00:00+00:00"), _opens(cleaned))
+        self.assertIn(ms("2026-11-10 14:00:00+00:00"), _opens(cleaned))
+        self.assertEqual(len(cleaned), len(hours) - 1)
+
 
 
 if __name__ == "__main__":

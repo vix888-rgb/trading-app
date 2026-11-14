@@ -33,6 +33,15 @@ Bar boundaries match the candles the app already used:
   the 23h/25h daylight-saving days. The last hour of that bar opens at 23:00
   New York.
 
+Weekend and other closed-market bars are dropped before 15m/4h/1D are built
+and before any indicator sees the series. Gold is closed from Friday 17:00 ET
+through Sunday 18:00 ET. Twelve Data still prints those hours (often a tiny
+synthetic range, sometimes perfectly flat), which shrinks live ATR by about
+3× versus the tested GC=F series and adds fake Saturday and Sunday daily
+bars. Zero-range bars (high == low) are also dropped, so a holiday close
+does not shrink ATR either. The last Friday hour (16:00 ET) and the Sunday
+18:00 ET reopen are kept.
+
 The API key is read from ``TWELVEDATA_API_KEY`` and is never written to state,
 the snapshot, or an error string. If the key is missing, Twelve Data errors,
 or it rate-limits, gold falls back to Yahoo ``GC=F`` minus the last measured
@@ -235,6 +244,40 @@ def _pack(df):
     return out
 
 
+
+def session_closed_at(t_ms):
+    """True when ``t_ms`` (UNIX ms) falls in Fri 17:00 ET–Sun 18:00 ET."""
+    t = pd.to_datetime(t_ms, unit="ms", utc=True)
+    if isinstance(t, pd.Series):
+        ny = t.dt.tz_convert(NY)
+        wd, hr = ny.dt.dayofweek, ny.dt.hour
+        return ((wd == 4) & (hr >= 17)) | (wd == 5) | ((wd == 6) & (hr < 18))
+    ny = t.tz_convert(NY)
+    return (ny.dayofweek == 4 and ny.hour >= 17) or ny.dayofweek == 5 or (ny.dayofweek == 6 and ny.hour < 18)
+
+
+def drop_closed_bars(df, step_ms=None):
+    """Drop gold weekend-closure bars and zero-range bars before indicators.
+
+    A bar is dropped when its whole window sits inside the Friday 17:00 ET to
+    Sunday 18:00 ET close, or when high equals low. Passing ``step_ms`` keeps
+    a 4h or 1D bucket that also covers the Sunday 18:00 ET reopen. 1m, 5m, and
+    1h only need the open stamp: if the open is closed, the bar cannot reach
+    the reopen.
+    """
+    if df is None or len(df) == 0:
+        return _blank()
+    t = df.t.astype("int64")
+    closed = session_closed_at(t)
+    if step_ms:
+        closed = closed & session_closed_at(t + int(step_ms) - 1)
+    zero = df.h == df.l
+    keep = ~(closed | zero)
+    if bool(keep.all()):
+        return df.reset_index(drop=True)
+    return df.loc[keep].reset_index(drop=True)
+
+
 def drop_forming(df, step_ms, now_ms):
     if df is None or len(df) == 0:
         return _blank()
@@ -246,7 +289,9 @@ def merge_bars(old, new, cap=CAP):
     if not parts:
         return _blank()
     df = pd.concat(parts, ignore_index=True)
-    return df.drop_duplicates("t", keep="last").sort_values("t").tail(cap).reset_index(drop=True)
+    df = df.drop_duplicates("t", keep="last").sort_values("t")
+    # Cache 1m/5m/1h only. Open time is enough: a closed-session open never reaches Sunday 18:00 ET.
+    return drop_closed_bars(df).tail(cap).reset_index(drop=True)
 
 
 def outputsize_for(last_t_ms, step_ms, now_ms, n_bars=None):
@@ -408,9 +453,9 @@ def _bucket_ready(h1, fetched_at):
 
 
 def _build(state, now_ms):
-    m1 = drop_forming(_cached(state, "1min"), STEP["1min"], now_ms)
-    m5 = drop_forming(_cached(state, "5min"), STEP["5min"], now_ms)
-    h1 = drop_forming(_cached(state, "1h"), STEP["1h"], now_ms)
+    m1 = drop_closed_bars(drop_forming(_cached(state, "1min"), STEP["1min"], now_ms), STEP["1min"])
+    m5 = drop_closed_bars(drop_forming(_cached(state, "5min"), STEP["5min"], now_ms), STEP["5min"])
+    h1 = drop_closed_bars(drop_forming(_cached(state, "1h"), STEP["1h"], now_ms), STEP["1h"])
     ready = _bucket_ready(h1, (state.get("fetchedAt") or {}).get("1h"))
     frames = {
         "5m": m5,
@@ -463,7 +508,9 @@ def _finish_fallback(state, yahoo_fn, now, reason, calls, fetch_px, path):
     for tf in ("1m", "5m", "15m", "1h", "4h", "1d"):
         try:
             df = yahoo_fn("GC=F", tf)
-            frames[tf] = shift_ohlc(df, offset) if offset is not None else df
+            if offset is not None:
+                df = shift_ohlc(df, offset)
+            frames[tf] = drop_closed_bars(df, TF_STEP.get(tf))
         except Exception as err:
             terr[tf] = _safe(err, "")[:80] or "yahoo failed"
     if scale == "spot":
