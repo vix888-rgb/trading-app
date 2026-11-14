@@ -124978,7 +124978,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 207.85787799427172,
@@ -125028,7 +125028,10 @@
   "edge": false,
   "trail_stop": 67287.43151197709,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 40,
+  "R": 0.74,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-14T07:14+01:00"
  },
  {
   "id": "ETHUSD-5m-1794623700000",
@@ -125384,7 +125387,7 @@
    1.07
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 7.721164786173341,
@@ -125434,7 +125437,10 @@
   "edge": false,
   "trail_stop": 1909.6346591446934,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 36,
+  "R": 0.23,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-14T07:14+01:00"
  },
  {
   "id": "ETHUSD-15m-1794624300000",
@@ -125706,7 +125712,7 @@
   "edge": false,
   "trail_stop": 1.004,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "XRPUSD-15m-1794624300000",
@@ -125977,7 +125983,7 @@
   "edge": false,
   "trail_stop": 76.19,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "BTCUSD-15m-1794627900000",
@@ -126114,5 +126120,134 @@
   "trail_stop": 67275.572,
   "tp1_hit": false,
   "bars_open": 8
+ },
+ {
+  "id": "BTCUSD-5m-1794636300000",
+  "logged": "2026-11-14T07:14+01:00",
+  "bar_t": 1794636300000,
+  "bar_time": "Sat 14 Nov 07:05",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -31,
+  "entry": 67284.0,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 67546.834,
+  "tp": [
+   67021.166,
+   66758.332,
+   66495.498
+  ],
+  "inv": 67758.0,
+  "votes": [
+   0,
+   1,
+   1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   0.95,
+   0.38,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.04,
+   0.0,
+   0.0,
+   0.0,
+   1.32,
+   0.15,
+   0.0,
+   1.0,
+   1.75,
+   0.75,
+   0.28,
+   0.14,
+   0.07,
+   0.0,
+   0.47,
+   1.0,
+   1.0,
+   0.57,
+   1.08
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 175.22264514398347,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 66,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 68208.04592383,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 67345.86,
+    "dl": 66678.37,
+    "brk": 0,
+    "sqz": "on",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
