@@ -129960,7 +129960,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.005335371779687236,
@@ -130012,7 +130012,10 @@
   "edge": false,
   "trail_stop": 0.914441487118749,
   "tp1_hit": true,
-  "bars_open": 41
+  "bars_open": 41,
+  "R": 4.58,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-14T23:25+01:00"
  },
  {
   "id": "BTCUSD-15m-1794681900000",
