@@ -126616,7 +126616,7 @@
   "strategies": [
    "Squeeze momentum breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.002515099649203931,
@@ -126666,7 +126666,10 @@
   "edge": false,
   "trail_stop": 0.9900603985968157,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 30,
+  "R": 1.1,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-14T10:44+01:00"
  },
  {
   "id": "ETHUSD-5m-1794639900000",
@@ -127348,7 +127351,7 @@
   "edge": false,
   "trail_stop": 67384.509,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "ETHUSD-5m-1794642900000",
@@ -127751,6 +127754,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 76.32514,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
