@@ -566,6 +566,16 @@ def apply_round4(sig,key,tf,brk,sess_ok):
     if k in BRK_GATE and not (brk[0] if d>0 else brk[1]): return "WAIT","breakout"
     if k in SESSION_GATE and not sess_ok: return "WAIT","session"
     return sig,""
+VOLEXP_GATE=("XAUUSD|4h",)          # weekly tune-up 14 Nov 2026: gold 4h BUY/SELL needs ATR(5) >= ATR(20) on the closed bar (Kaufman / LeBeau-Lucas volatility expansion).
+# Walk-forward (data to 13 Nov, same costs): gold 4h VAL +0.825R n25 -> +1.237R n18, TEST +0.493R n37 -> +0.573R n29; book VAL +0.556 -> +0.602, TEST +0.412 -> +0.421 (PF 2.00 -> 2.06).
+# 7 Nov run on older data agreed (VAL .805 -> .993, TEST .359 -> .499).
+def volexp_ok(df):
+    """True when the last closed bar's ATR(5) >= ATR(20) (Wilder smoothing, same as _atr)."""
+    if len(df)<25: return False
+    return bool(_atr(df,5).iloc[-1]>=_atr(df,20).iloc[-1])
+def apply_volexp(sig,key,tf,ok):
+    if f"{key}|{tf}" in VOLEXP_GATE and sig in ("BUY","SELL") and not ok: return "WAIT","volexp"
+    return sig,""
 def apply_daily(sig,key,tf,dbias):
     """Elder triple-screen: gold 1h BUY/SELL must agree with the last closed 1D EMA20 vs EMA50 bias (htf_bias). 0 waits."""
     if f"{key}|{tf}" in DAILY_GATE and ((sig=="BUY" and not dbias>0) or (sig=="SELL" and not dbias<0)): return "WAIT","daily"

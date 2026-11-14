@@ -37,13 +37,22 @@ def refit_due(raw_keys):
     Between refits every 10-minute scan reuses the stored weights, so the same closed bar always gets the same score."""
     if os.environ.get("TRADING_REFIT")=="1": return True
     if os.environ.get("TRADING_REFIT")=="0": return False
-    bc=W.get("by_combo",{})
-    if any(f"{k}|{tf}" not in bc for k,tf in raw_keys): return True
+    # Weekly tune-up 14 Nov 2026: a combo missing from by_combo (new combo, or one dropped by an old failed fetch) no longer forces a full
+    # refit of every combo; missing_combos() fits only those (see main). Four unscheduled full refits happened 11-13 Nov this way.
     ra=W.get("refit_at")
     if not ra: return True
     try: age=(datetime.now(TZ)-datetime.fromisoformat(ra)).total_seconds()/86400
     except Exception: return True
     return age>PRM["refit_max_age_days"]
+def missing_combos(raw_keys):
+    """Combos with no stored weights: fitted on their own between weekly refits, so the other combos stay frozen."""
+    bc=W.get("by_combo",{})
+    return [(k,tf) for k,tf in raw_keys if f"{k}|{tf}" not in bc]
+def keep_stored(wout,bc):
+    """Carry stored weights for combos not computed this scan (fetch failed), so one failed download never drops a combo from weights.json."""
+    out=dict(wout)
+    for k,v in (bc or {}).items(): out.setdefault(k,v)
+    return out
 HSTEP={"1m":6e4,"5m":3e5,"15m":9e5,"1h":3.6e6,"4h":1.44e7,"1d":8.64e7}
 NEWS_IDX=15
 
@@ -183,10 +192,11 @@ def main3():
     CAL=edge.load_usd_events(os.path.join(STATE,"calendar.json"))
     jobs=[(k,tf) for (k,tf) in raw.keys()]
     REFIT=refit_due(jobs); t0=time.time()
-    if REFIT:
-        with Pool(8) as P: R=P.map(adapt_job,jobs)
+    MISS=[] if REFIT else missing_combos(jobs)
+    if REFIT or MISS:
+        with Pool(8) as P: R=P.map(adapt_job,jobs if REFIT else MISS)
     else: R=[]
-    print("refit" if REFIT else "weights frozen (reusing state/weights.json)","adapt secs",round(time.time()-t0))
+    print("refit" if REFIT else ("weights frozen; fitted missing "+",".join(f"{k}|{t}" for k,t in MISS) if MISS else "weights frozen (reusing state/weights.json)"),"adapt secs",round(time.time()-t0))
     LATCH=json.load(open(LPATH)) if (PRM.get("latch") and os.path.exists(LPATH)) else {}; LATCH_OUT={}; BC=W.get("by_combo",{})
     J0=json.load(open(JPATH)) if os.path.exists(JPATH) else []
     out=[]; names=None; curr={}; WOUT={}; oos={}
@@ -263,6 +273,10 @@ def main3():
             _db=edge.htf_bias(df,raw.get((key,"1d")))[-1]
             sig,why4=edge.apply_daily(sig,key,tf,_db)
             if why4: why=why4
+            # Weekly tune-up 14 Nov 2026: gold 4h volatility-expansion gate (ATR5 >= ATR20 on the closed bar).
+            _vx=edge.volexp_ok(df)
+            sig,why5=edge.apply_volexp(sig,key,tf,_vx)
+            if why5: why=why5
             flt["range"]=gate["range"]; flt["sweep"]=gate["sweep"]; flt["news"]=gate["news"]; flt["why"]=why
             # latch: a closed bar keeps the signal it got on its first scan (no flip-flop between scans of the same bar)
             lk=f"{key}|{tf}"; bt_=int(df.t.iloc[-1]); prevl=LATCH.get(lk)
@@ -270,7 +284,7 @@ def main3():
                 sig,score,flt=prevl["sig"],prevl["score"],prevl.get("flt",flt); flt=dict(flt or {}); flt["latched"]=True
             LATCH_OUT[lk]={"bar_t":bt_,"sig":sig,"score":score,"flt":{k_:v_ for k_,v_ in flt.items() if k_!="latched"}}
             flt=dict(flt or {}); flt["ind"]=edge.indicator_panel(df,hdf,tf,key,HSTEP[tf])  # round 4 indicator panel (display, every scan)
-            flt["ind"]["d1"]=int(_db); flt["ind"]["dgate"]=f"{key}|{tf}" in edge.DAILY_GATE
+            flt["ind"]["d1"]=int(_db); flt["ind"]["dgate"]=f"{key}|{tf}" in edge.DAILY_GATE; flt["ind"]["vx"]=bool(_vx); flt["ind"]["vxgate"]=f"{key}|{tf}" in edge.VOLEXP_GATE
             flt["pat"]=patterns.panel(df) if key in ("XAUUSD","BTCUSD") and tf in ("1h","4h","1d") else []  # pattern agents, display only
             if oo is not None and not frozen:  # same OOS samples, adaptive consensus but only when the quality filters agree
                 rf=[]
@@ -319,7 +333,7 @@ def main3():
     LS=live_stats(J,names)
     json.dump({"updated":datetime.now(TZ).isoformat(timespec="minutes"),"params":PRM,"agents":names,"categories":dict(zip(names,catl)),
                "note":"Per symbol|timeframe agent weights from walk-forward barrier backtest (TP tp_atr×ATR vs SL sl_atr×ATR within horizon_bars), blended with live journal results once live_min closed signals exist. Weekly review may edit 'params' and 'overrides' (agent name -> fixed weight).",
-               "overrides":W.get("overrides",{}),"by_combo":WOUT,"live":LS,"rates":RATES,
+               "overrides":W.get("overrides",{}),"by_combo":keep_stored(WOUT,BC),"live":LS,"rates":RATES,
                "refit_at":datetime.now(TZ).isoformat(timespec="minutes") if REFIT else W.get("refit_at")},open(WPATH,"w"),indent=1)
     if PRM.get("latch"): json.dump(LATCH_OUT,open(LPATH,"w"),separators=(",",":"))
     uj,uc=raw.get(("USDJPY","1h")),raw.get(("USDCHF","1h"))
