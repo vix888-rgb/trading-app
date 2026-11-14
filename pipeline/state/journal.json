@@ -126404,7 +126404,7 @@
   "edge": false,
   "trail_stop": 66343.46842993765,
   "tp1_hit": true,
-  "bars_open": 45
+  "bars_open": 46
  },
  {
   "id": "BTCUSD-1h-1794636000000",
@@ -127714,7 +127714,7 @@
    1.02
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.4167607632239262,
@@ -127766,7 +127766,10 @@
   "edge": false,
   "trail_stop": 73.59704305289571,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 32,
+  "R": 3.36,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-14T18:55+01:00"
  },
  {
   "id": "ETHUSD-15m-1794660300000",
@@ -129125,7 +129128,7 @@
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0060698023771983065,
@@ -129179,7 +129182,10 @@
   "edge": false,
   "trail_stop": 0.9699792095087932,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": 1.33,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-14T18:55+01:00"
  },
  {
   "id": "BTCUSD-5m-1794674100000",
