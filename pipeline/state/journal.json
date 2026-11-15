@@ -135102,7 +135102,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.48664674985192097,
@@ -135154,7 +135154,10 @@
   "edge": false,
   "trail_stop": 71.96997,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 9,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-15T21:46+01:00"
  },
  {
   "id": "ETHUSD-5m-1794767400000",
@@ -135375,7 +135378,7 @@
   "strategies": [
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 254.7592376695995,
@@ -135427,6 +135430,9 @@
   "edge": false,
   "trail_stop": 65084.149,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-15T21:46+01:00"
  }
 ]
