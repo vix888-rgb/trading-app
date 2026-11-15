@@ -42435,7 +42435,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 907.7315603654552,
@@ -42486,7 +42486,10 @@
   "edge": false,
   "trail_stop": 65636.92624146183,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 7.6,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-15T13:06+01:00"
  },
  {
   "id": "ETHUSD-4h-1794038400000",
@@ -42568,7 +42571,7 @@
    0.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 34.46620352313441,
@@ -42619,7 +42622,10 @@
   "edge": false,
   "trail_stop": 1848.9448140925376,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 8.16,
+  "exit": "time exit",
+  "closed_at": "2026-11-15T13:06+01:00"
  },
  {
   "id": "XRPUSD-5m-1794054900000",
