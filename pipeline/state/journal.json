@@ -133060,7 +133060,7 @@
   "edge": false,
   "trail_stop": 1817.1338783655144,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "BTCUSD-5m-1794753000000",
@@ -133147,7 +133147,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 175.38927653773254,
@@ -133199,7 +133199,10 @@
   "edge": false,
   "trail_stop": 64904.42,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-15T15:56+01:00"
  },
  {
   "id": "SOLUSD-5m-1794753000000",
@@ -133338,7 +133341,7 @@
   "edge": false,
   "trail_stop": 71.69,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "XRPUSD-5m-1794753000000",
@@ -133475,6 +133478,141 @@
   "edge": false,
   "trail_stop": 0.961,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "BTCUSD-5m-1794754200000",
+  "logged": "2026-11-15T15:56+01:00",
+  "bar_t": 1794754200000,
+  "bar_time": "Sun 15 Nov 15:50",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -71,
+  "entry": 64904.51,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 65188.309,
+  "tp": [
+   64620.711,
+   64336.911,
+   64053.112
+  ],
+  "inv": 65542.01,
+  "votes": [
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   1,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.23,
+   1.0,
+   1.0,
+   0.43,
+   0.43,
+   1.14,
+   1.62,
+   1.21,
+   1.0,
+   0.68,
+   0.0,
+   0.12,
+   0.0,
+   1.98,
+   0.01,
+   0.0,
+   1.21,
+   1.69,
+   1.68,
+   0.1,
+   0.36,
+   0.18,
+   0.15,
+   0.34,
+   1.19,
+   1.19,
+   0.31,
+   1.98
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Range mean reversion",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 189.19953475620056,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 39,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 65126.52126153,
+    "side200": -1,
+    "stack": 0,
+    "st": -1,
+    "dh": 65800.75,
+    "dl": 64456.01,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
