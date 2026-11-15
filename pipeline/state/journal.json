@@ -134961,7 +134961,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.006281609191939943,
@@ -135015,7 +135015,10 @@
   "edge": false,
   "trail_stop": 0.959222,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 7,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-15T20:46+01:00"
  },
  {
   "id": "SOLUSD-15m-1794765600000",
@@ -135151,7 +135154,7 @@
   "edge": false,
   "trail_stop": 71.96997,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1794767400000",
