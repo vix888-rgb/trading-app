@@ -113432,7 +113432,7 @@
   "edge": false,
   "trail_stop": 1.1046166992848576,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "GBPUSD-5m-1794563700000",
@@ -117310,7 +117310,7 @@
   "edge": false,
   "trail_stop": 0.83652,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "EURCHF-1h-1794578400000",
@@ -117450,7 +117450,7 @@
   "edge": false,
   "trail_stop": 0.923172,
   "tp1_hit": false,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "ETHUSD-5m-1794582300000",
@@ -121736,7 +121736,7 @@
   "edge": false,
   "trail_stop": 1.321475,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "EURUSD-5m-1794603900000",
@@ -132886,7 +132886,7 @@
    "TSMOM multi-lookback trend",
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 27.016654988241495,
@@ -132941,7 +132941,10 @@
   "edge": false,
   "trail_stop": 1830.76,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 24,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-16T16:08+01:00"
  },
  {
   "id": "ETHUSD-5m-1794752400000",
@@ -133921,7 +133924,7 @@
   "edge": false,
   "trail_stop": 73.13579,
   "tp1_hit": false,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "BTCUSD-5m-1794760200000",
@@ -140860,7 +140863,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.012646058308678963,
@@ -140912,7 +140915,10 @@
   "edge": false,
   "trail_stop": 0.971869,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-16T16:08+01:00"
  },
  {
   "id": "EURUSD-5m-1794810000000",
@@ -145123,7 +145129,7 @@
   "edge": true,
   "trail_stop": 1.101815,
   "tp1_hit": false,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "XAUUSD-1h-1794819600000",
@@ -145207,7 +145213,7 @@
   "strategies": [
    "Harmonic XABCD: Gartley/Bat/Butterfly/Crab/Shark (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 17.949592577305133,
@@ -145287,7 +145293,10 @@
   "edge": true,
   "trail_stop": 3882.438,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-16T16:08+01:00"
  },
  {
   "id": "USDJPY-5m-1794823800000",
@@ -146401,9 +146410,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.321055,
-  "tp1_hit": false,
-  "bars_open": 10
+  "trail_stop": 1.320045,
+  "tp1_hit": true,
+  "bars_open": 11
  },
  {
   "id": "ETHUSD-5m-1794832200000",
@@ -148438,7 +148447,7 @@
    1.56
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00038662443708395975,
@@ -148490,7 +148499,10 @@
   "edge": false,
   "trail_stop": 0.8389,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 12,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-16T16:08+01:00"
  },
  {
   "id": "XAUUSD-15m-1794837600000",
@@ -148770,9 +148782,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.319952,
-  "tp1_hit": false,
-  "bars_open": 6
+  "trail_stop": 1.31947,
+  "tp1_hit": true,
+  "bars_open": 8
  },
  {
   "id": "EURUSD-5m-1794839400000",
@@ -148912,8 +148924,8 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.101749,
-  "tp1_hit": false,
-  "bars_open": 4
+  "trail_stop": 1.101322,
+  "tp1_hit": true,
+  "bars_open": 6
  }
 ]
