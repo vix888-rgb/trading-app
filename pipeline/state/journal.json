@@ -46752,7 +46752,7 @@
   "edge": false,
   "trail_stop": 1.1245587136245905,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "XRPUSD-1h-1794096000000",
@@ -72906,9 +72906,9 @@
    "pat": []
   },
   "edge": true,
-  "trail_stop": 72497.80652903825,
+  "trail_stop": 71183.80652903825,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "USDCHF-5m-1794357000000",
@@ -106820,7 +106820,7 @@
   "edge": false,
   "trail_stop": 2019.74,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "SOLUSD-1d-1794441600000",
@@ -106956,7 +106956,7 @@
   "edge": false,
   "trail_stop": 81.72,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "USDCHF-5m-1794529800000",
@@ -114808,7 +114808,7 @@
   "edge": true,
   "trail_stop": 3942.093,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "USDCHF-5m-1794571500000",
@@ -122788,7 +122788,7 @@
    "Wyckoff spring / upthrust",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00020805945877915558,
@@ -122841,7 +122841,10 @@
   "edge": false,
   "trail_stop": 1.321368,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-16T01:07+01:00"
  },
  {
   "id": "ETHUSD-5m-1794606300000",
@@ -132926,7 +132929,7 @@
   "edge": false,
   "trail_stop": 1871.285,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "ETHUSD-5m-1794752400000",
@@ -133906,7 +133909,7 @@
   "edge": false,
   "trail_stop": 73.13579,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "BTCUSD-5m-1794760200000",
@@ -134268,7 +134271,7 @@
    1.81
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.015630331836860297,
@@ -134323,7 +134326,10 @@
   "edge": false,
   "trail_stop": 0.975145,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-16T01:07+01:00"
  },
  {
   "id": "BTCUSD-5m-1794763800000",
