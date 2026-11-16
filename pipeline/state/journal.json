@@ -150609,9 +150609,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3873.798,
-  "tp1_hit": false,
-  "bars_open": 8
+  "trail_stop": 3867.273,
+  "tp1_hit": true,
+  "bars_open": 10
  },
  {
   "id": "USDCHF-5m-1794850200000",
@@ -150745,6 +150745,139 @@
   "edge": false,
   "trail_stop": 0.838749,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "EURUSD-5m-1794851400000",
+  "logged": "2026-11-16T18:59+01:00",
+  "bar_t": 1794851400000,
+  "bar_time": "Mon 16 Nov 18:50",
+  "sym": "EURUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -42,
+  "entry": 1.100594,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.100964,
+  "tp": [
+   1.100225,
+   1.099856,
+   1.099487
+  ],
+  "inv": 1.101443,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   0.64,
+   0.43,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.65,
+   0.0,
+   0.15,
+   1.36,
+   0.5,
+   0.0,
+   1.0,
+   1.79,
+   1.27,
+   0.0,
+   0.01,
+   0.0,
+   0.0,
+   0.34,
+   1.0,
+   1.0,
+   1.09,
+   1.36
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0002461756729498852,
+  "filters": {
+   "carry": -1.38,
+   "carryDir": -1,
+   "vol": true,
+   "atrPct": 71,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.10180542,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.10144293,
+    "dl": 1.1005944,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
