@@ -139797,7 +139797,7 @@
   "edge": false,
   "trail_stop": 0.9631,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 35
  },
  {
   "id": "SOLUSD-5m-1794801600000",
@@ -140070,7 +140070,7 @@
   "edge": false,
   "trail_stop": 72.0,
   "tp1_hit": true,
-  "bars_open": 31
+  "bars_open": 32
  },
  {
   "id": "ETHUSD-5m-1794804600000",
@@ -140341,7 +140341,7 @@
   "edge": false,
   "trail_stop": 1818.67,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "ETHUSD-5m-1794806400000",
@@ -143226,7 +143226,7 @@
    1.57
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004941789897826627,
@@ -143281,7 +143281,10 @@
   "edge": false,
   "trail_stop": 0.83936,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 16,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-16T13:37+01:00"
  },
  {
   "id": "ETHUSD-5m-1794816600000",
@@ -143786,7 +143789,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0007440049806916143,
@@ -143841,7 +143844,10 @@
   "edge": false,
   "trail_stop": 0.923854,
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 15,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-16T13:37+01:00"
  },
  {
   "id": "ETHUSD-5m-1794819000000",
@@ -144534,7 +144540,7 @@
   "edge": false,
   "trail_stop": 1.101807,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "USDCHF-5m-1794821400000",
@@ -145105,7 +145111,7 @@
   "edge": true,
   "trail_stop": 1.101815,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "XAUUSD-1h-1794819600000",
@@ -146102,7 +146108,7 @@
   "edge": false,
   "trail_stop": 64240.257,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "ETHUSD-5m-1794831000000",
@@ -146191,7 +146197,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.379912436060823,
@@ -146241,9 +146247,12 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1801.67,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 1795.1,
+  "tp1_hit": true,
+  "bars_open": 2,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-16T13:37+01:00"
  },
  {
   "id": "GBPUSD-15m-1794830400000",
@@ -146379,6 +146388,410 @@
   "edge": false,
   "trail_stop": 1.321055,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
+ },
+ {
+  "id": "ETHUSD-5m-1794832200000",
+  "logged": "2026-11-16T13:37+01:00",
+  "bar_t": 1794832200000,
+  "bar_time": "Mon 16 Nov 13:30",
+  "sym": "ETHUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -79,
+  "entry": 1795.46,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1802.867,
+  "tp": [
+   1788.053,
+   1780.646,
+   1773.239
+  ],
+  "inv": 1812.41,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.27,
+   1.11,
+   0.43,
+   0.43,
+   1.0,
+   1.0,
+   1.09,
+   1.0,
+   0.6,
+   0.35,
+   0.0,
+   0.07,
+   1.1,
+   0.0,
+   0.0,
+   1.0,
+   1.12,
+   1.36,
+   0.56,
+   0.04,
+   0.0,
+   0.79,
+   0.34,
+   1.0,
+   1.0,
+   0.54,
+   1.1
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 4.938068749644246,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 54,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1812.4521676,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1814.5,
+    "dl": 1787.11,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
+ },
+ {
+  "id": "SOLUSD-5m-1794832200000",
+  "logged": "2026-11-16T13:37+01:00",
+  "bar_t": 1794832200000,
+  "bar_time": "Mon 16 Nov 13:30",
+  "sym": "SOLUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -86,
+  "entry": 70.74,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 71.06213,
+  "tp": [
+   70.41787,
+   70.09573,
+   69.7736
+  ],
+  "inv": 71.7,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.22,
+   1.0,
+   0.62,
+   0.43,
+   1.0,
+   1.0,
+   1.77,
+   1.0,
+   0.6,
+   0.69,
+   0.55,
+   0.15,
+   1.31,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   1.23,
+   0.25,
+   0.0,
+   0.0,
+   0.83,
+   0.34,
+   1.0,
+   1.0,
+   0.31,
+   1.24
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Keltner volatility breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.2147561370312965,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 26,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 71.44490356,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 71.95,
+    "dl": 70.57,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
+ },
+ {
+  "id": "XRPUSD-5m-1794832200000",
+  "logged": "2026-11-16T13:37+01:00",
+  "bar_t": 1794832200000,
+  "bar_time": "Mon 16 Nov 13:30",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -67,
+  "entry": 0.9489,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.953107,
+  "tp": [
+   0.944693,
+   0.940487,
+   0.93628
+  ],
+  "inv": 0.9585,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   0.43,
+   0.43,
+   1.0,
+   1.03,
+   1.67,
+   1.0,
+   0.6,
+   0.0,
+   0.0,
+   0.0,
+   1.02,
+   0.3,
+   0.0,
+   1.0,
+   1.25,
+   1.0,
+   0.27,
+   0.0,
+   0.0,
+   0.0,
+   0.34,
+   1.0,
+   1.0,
+   0.45,
+   1.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Keltner volatility breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0028043340202676963,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 33,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.95640411,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 0.9598,
+    "dl": 0.9455,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
