@@ -113427,9 +113427,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.1047379351323308,
+  "trail_stop": 1.1046166992848576,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "GBPUSD-5m-1794563700000",
@@ -117307,7 +117307,7 @@
   "edge": false,
   "trail_stop": 0.83652,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "EURCHF-1h-1794578400000",
@@ -117447,7 +117447,7 @@
   "edge": false,
   "trail_stop": 0.923172,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "ETHUSD-5m-1794582300000",
@@ -121733,7 +121733,7 @@
   "edge": false,
   "trail_stop": 1.321475,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "EURUSD-5m-1794603900000",
@@ -132938,7 +132938,7 @@
   "edge": false,
   "trail_stop": 1871.285,
   "tp1_hit": false,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "ETHUSD-5m-1794752400000",
@@ -133918,7 +133918,7 @@
   "edge": false,
   "trail_stop": 73.13579,
   "tp1_hit": false,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "BTCUSD-5m-1794760200000",
@@ -137644,7 +137644,7 @@
    "TSMOM multi-lookback trend",
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 9.425325952719726,
@@ -137696,7 +137696,10 @@
   "edge": false,
   "trail_stop": 3871.3221538108787,
   "tp1_hit": true,
-  "bars_open": 37
+  "bars_open": 37,
+  "R": 0.44,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-16T12:07+01:00"
  },
  {
   "id": "EURUSD-5m-1794792600000",
@@ -139791,7 +139794,7 @@
   "edge": false,
   "trail_stop": 0.9631,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "SOLUSD-5m-1794801600000",
@@ -140064,7 +140067,7 @@
   "edge": false,
   "trail_stop": 72.0,
   "tp1_hit": true,
-  "bars_open": 25
+  "bars_open": 26
  },
  {
   "id": "ETHUSD-5m-1794804600000",
@@ -140335,7 +140338,7 @@
   "edge": false,
   "trail_stop": 1818.67,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "ETHUSD-5m-1794806400000",
@@ -140897,7 +140900,7 @@
   "edge": false,
   "trail_stop": 0.971869,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "EURUSD-5m-1794810000000",
@@ -143135,7 +143138,7 @@
   "edge": false,
   "trail_stop": 64721.83,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "USDCHF-15m-1794816000000",
@@ -143272,7 +143275,7 @@
   "edge": false,
   "trail_stop": 0.83936,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "ETHUSD-5m-1794816600000",
@@ -143687,7 +143690,7 @@
   "edge": false,
   "trail_stop": 0.923936,
   "tp1_hit": false,
-  "bars_open": 30
+  "bars_open": 32
  },
  {
   "id": "EURCHF-15m-1794816900000",
@@ -143829,7 +143832,7 @@
   "edge": false,
   "trail_stop": 0.923854,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "ETHUSD-5m-1794819000000",
@@ -144522,7 +144525,7 @@
   "edge": false,
   "trail_stop": 1.101807,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "USDCHF-5m-1794821400000",
@@ -144662,7 +144665,7 @@
   "edge": false,
   "trail_stop": 0.839727,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "GBPUSD-5m-1794821400000",
@@ -145090,7 +145093,7 @@
   "edge": true,
   "trail_stop": 1.101815,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XAUUSD-1h-1794819600000",
@@ -145254,7 +145257,7 @@
   "edge": true,
   "trail_stop": 3882.438,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "USDJPY-5m-1794823800000",
@@ -145391,7 +145394,7 @@
   "edge": false,
   "trail_stop": 159.605,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "GBPUSD-5m-1794823800000",
@@ -145661,7 +145664,7 @@
   "edge": false,
   "trail_stop": 1.319888,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "GBPUSD-15m-1794824100000",
@@ -145799,8 +145802,8 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.321034,
-  "tp1_hit": false,
-  "bars_open": 1
+  "trail_stop": 1.320062,
+  "tp1_hit": true,
+  "bars_open": 2
  }
 ]
