@@ -143641,7 +143641,7 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0006356703294246014,
@@ -143696,7 +143696,10 @@
   "edge": false,
   "trail_stop": 0.923936,
   "tp1_hit": false,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-16T13:28+01:00"
  },
  {
   "id": "EURCHF-15m-1794816900000",
@@ -144531,7 +144534,7 @@
   "edge": false,
   "trail_stop": 1.101807,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "USDCHF-5m-1794821400000",
@@ -146096,7 +146099,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 64240.257,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-5m-1794831000000",
@@ -146234,7 +146240,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1801.67,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-15m-1794830400000",
@@ -146367,6 +146376,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.321055,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
