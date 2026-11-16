@@ -148729,7 +148729,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003214093806173603,
@@ -148784,7 +148784,10 @@
   "edge": false,
   "trail_stop": 1.31947,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-16T16:28+01:00"
  },
  {
   "id": "EURUSD-5m-1794839400000",
@@ -149066,6 +149069,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 71.22288,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
