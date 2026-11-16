@@ -146418,7 +146418,7 @@
   "edge": false,
   "trail_stop": 1.320045,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "ETHUSD-5m-1794832200000",
@@ -149220,7 +149220,7 @@
   "edge": true,
   "trail_stop": 1.101796,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XAUUSD-5m-1794843600000",
@@ -149357,7 +149357,7 @@
   "edge": false,
   "trail_stop": 3865.767,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "XRPUSD-15m-1794843000000",
@@ -149493,7 +149493,7 @@
   "edge": false,
   "trail_stop": 0.962469,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-5m-1794843600000",
@@ -149904,7 +149904,7 @@
   "edge": false,
   "trail_stop": 0.959255,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "GBPUSD-5m-1794846000000",
@@ -150040,7 +150040,7 @@
   "edge": false,
   "trail_stop": 1.319352,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "SOLUSD-15m-1794845700000",
@@ -150171,6 +150171,150 @@
     "d1": -1,
     "dgate": false,
     "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 72.08823,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "XAUUSD-15m-1794846600000",
+  "logged": "2026-11-16T17:49+01:00",
+  "bar_t": 1794846600000,
+  "bar_time": "Mon 16 Nov 17:30",
+  "sym": "XAUUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -51,
+  "entry": 3859.599,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 3871.302,
+  "tp": [
+   3847.896,
+   3836.193,
+   3824.49
+  ],
+  "inv": 3887.605,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.11,
+   1.0,
+   0.43,
+   0.61,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.0,
+   0.0,
+   0.34,
+   1.25,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   1.23,
+   0.0,
+   0.29,
+   0.0,
+   0.44,
+   0.6,
+   1.0,
+   1.06,
+   0.59,
+   1.03
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "ICT/SMC sweep + CHoCH",
+   "Squeeze momentum breakout",
+   "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 7.801947086971714,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 56,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": true,
+    "blockLong": true,
+    "blockShort": false,
+    "dir": -1,
+    "alert": true,
+    "lo": 3861.89851,
+    "hi": 3884.0985
+   },
+   "news": {
+    "on": true,
+    "title": "Fed Chairman Warsh Speaks",
+    "at": "2026-11-16T12:00:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 3893.7166796,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 3887.60468,
+    "dl": 3856.66975,
+    "brk": -1,
+    "sqz": "on",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
     "vxgate": false
    },
    "pat": []
