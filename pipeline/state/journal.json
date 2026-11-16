@@ -146418,7 +146418,7 @@
   "edge": false,
   "trail_stop": 1.320045,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 37
  },
  {
   "id": "ETHUSD-5m-1794832200000",
@@ -150193,7 +150193,7 @@
   "edge": false,
   "trail_stop": 72.08823,
   "tp1_hit": false,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "XAUUSD-15m-1794846600000",
@@ -150702,7 +150702,7 @@
    1.56
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00033418760457812525,
@@ -150754,7 +150754,10 @@
   "edge": false,
   "trail_stop": 0.83925,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 1.92,
+  "exit": "time exit",
+  "closed_at": "2026-11-16T22:39+01:00"
  },
  {
   "id": "EURUSD-5m-1794851400000",
@@ -151170,7 +151173,7 @@
   "edge": false,
   "trail_stop": 0.839045,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "SOLUSD-5m-1794853800000",
@@ -151854,7 +151857,7 @@
   "edge": false,
   "trail_stop": 3865.782,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "EURUSD-15m-1794857400000",
@@ -151993,7 +151996,7 @@
   "edge": true,
   "trail_stop": 1.101079,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "EURCHF-5m-1794858600000",
@@ -152132,7 +152135,7 @@
   "edge": false,
   "trail_stop": 0.923245,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "GBPUSD-5m-1794859800000",
@@ -152269,7 +152272,7 @@
   "edge": false,
   "trail_stop": 1.318722,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "EURUSD-5m-1794860400000",
@@ -152403,6 +152406,6 @@
   "edge": false,
   "trail_stop": 1.100473,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  }
 ]
