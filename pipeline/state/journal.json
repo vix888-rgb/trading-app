@@ -83169,7 +83169,7 @@
   "edge": false,
   "trail_stop": 0.83234,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "EURCHF-15m-1794411900000",
@@ -89552,7 +89552,7 @@
   "edge": false,
   "trail_stop": 1.109385,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "SOLUSD-5m-1794444900000",
@@ -109114,7 +109114,7 @@
   "strategies": [
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.3595536274503634,
@@ -109164,7 +109164,10 @@
   "edge": false,
   "trail_stop": 159.347,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 7,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-16T13:07+01:00"
  },
  {
   "id": "SOLUSD-15m-1794541500000",
@@ -109440,7 +109443,7 @@
   "edge": false,
   "trail_stop": 1.323714,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "XRPUSD-5m-1794545400000",
@@ -113429,7 +113432,7 @@
   "edge": false,
   "trail_stop": 1.1046166992848576,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 25
  },
  {
   "id": "GBPUSD-5m-1794563700000",
@@ -114808,7 +114811,7 @@
   "edge": true,
   "trail_stop": 3895.371,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "USDCHF-5m-1794571500000",
@@ -117307,7 +117310,7 @@
   "edge": false,
   "trail_stop": 0.83652,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "EURCHF-1h-1794578400000",
@@ -117447,7 +117450,7 @@
   "edge": false,
   "trail_stop": 0.923172,
   "tp1_hit": false,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "ETHUSD-5m-1794582300000",
@@ -121733,7 +121736,7 @@
   "edge": false,
   "trail_stop": 1.321475,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "EURUSD-5m-1794603900000",
@@ -132938,7 +132941,7 @@
   "edge": false,
   "trail_stop": 1871.285,
   "tp1_hit": false,
-  "bars_open": 21
+  "bars_open": 22
  },
  {
   "id": "ETHUSD-5m-1794752400000",
@@ -133918,7 +133921,7 @@
   "edge": false,
   "trail_stop": 73.13579,
   "tp1_hit": false,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "BTCUSD-5m-1794760200000",
@@ -139794,7 +139797,7 @@
   "edge": false,
   "trail_stop": 0.9631,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 33
  },
  {
   "id": "SOLUSD-5m-1794801600000",
@@ -140067,7 +140070,7 @@
   "edge": false,
   "trail_stop": 72.0,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "ETHUSD-5m-1794804600000",
@@ -140338,7 +140341,7 @@
   "edge": false,
   "trail_stop": 1818.67,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "ETHUSD-5m-1794806400000",
@@ -140900,7 +140903,7 @@
   "edge": false,
   "trail_stop": 0.971869,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "EURUSD-5m-1794810000000",
@@ -143278,7 +143281,7 @@
   "edge": false,
   "trail_stop": 0.83936,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "ETHUSD-5m-1794816600000",
@@ -143693,7 +143696,7 @@
   "edge": false,
   "trail_stop": 0.923936,
   "tp1_hit": false,
-  "bars_open": 42
+  "bars_open": 44
  },
  {
   "id": "EURCHF-15m-1794816900000",
@@ -143835,7 +143838,7 @@
   "edge": false,
   "trail_stop": 0.923854,
   "tp1_hit": false,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "ETHUSD-5m-1794819000000",
@@ -144528,7 +144531,7 @@
   "edge": false,
   "trail_stop": 1.101807,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "USDCHF-5m-1794821400000",
@@ -144668,7 +144671,7 @@
   "edge": false,
   "trail_stop": 0.839727,
   "tp1_hit": false,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "GBPUSD-5m-1794821400000",
@@ -145096,7 +145099,7 @@
   "edge": true,
   "trail_stop": 1.101815,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "XAUUSD-1h-1794819600000",
@@ -145260,7 +145263,7 @@
   "edge": true,
   "trail_stop": 3882.438,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "USDJPY-5m-1794823800000",
@@ -145670,7 +145673,7 @@
   "edge": false,
   "trail_stop": 1.3198464607994564,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "GBPUSD-15m-1794824100000",
@@ -145810,6 +145813,140 @@
   "edge": false,
   "trail_stop": 1.320062,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 6
+ },
+ {
+  "id": "USDJPY-4h-1794816000000",
+  "logged": "2026-11-16T13:07+01:00",
+  "bar_t": 1794816000000,
+  "bar_time": "Mon 16 Nov 09:00",
+  "sym": "USDJPY",
+  "tf": "4h",
+  "side": "long",
+  "score": 39,
+  "entry": 159.532,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 159.004,
+  "tp": [
+   160.06,
+   160.588,
+   161.117
+  ],
+  "inv": 159.303,
+  "votes": [
+   1,
+   -1,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   0.96,
+   0.43,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.0,
+   0.0,
+   0.91,
+   1.17,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   1.0,
+   0.35,
+   0.14,
+   0.0,
+   0.0,
+   0.34,
+   1.0,
+   1.0,
+   1.31,
+   1.27
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.35215894968685413,
+  "filters": {
+   "carry": 2.84,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 24,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 159.30299377,
+    "hi": 160.18800354,
+    "src": "4h",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 158.21881608,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 160.18800354,
+    "dl": 158.65899658,
+    "brk": 0,
+    "sqz": "on",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": 1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
