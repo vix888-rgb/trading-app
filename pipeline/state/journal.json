@@ -118561,7 +118561,7 @@
   "edge": true,
   "trail_stop": 1.103631,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 41
  },
  {
   "id": "USDCHF-5m-1794584700000",
@@ -118832,7 +118832,7 @@
   "edge": false,
   "trail_stop": 1.322576,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 41
  },
  {
   "id": "BTCUSD-5m-1794585300000",
@@ -120753,7 +120753,7 @@
   "edge": false,
   "trail_stop": 0.837788,
   "tp1_hit": false,
-  "bars_open": 33
+  "bars_open": 34
  },
  {
   "id": "SOLUSD-5m-1794591300000",
@@ -137687,7 +137687,7 @@
   "edge": false,
   "trail_stop": 3891.693,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "EURUSD-5m-1794792600000",
@@ -138664,7 +138664,7 @@
   "edge": false,
   "trail_stop": 1.102592,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "GBPUSD-5m-1794796800000",
@@ -138943,9 +138943,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.32141,
-  "tp1_hit": false,
-  "bars_open": 6
+  "trail_stop": 1.321091,
+  "tp1_hit": true,
+  "bars_open": 8
  },
  {
   "id": "XAUUSD-5m-1794798600000",
@@ -139081,6 +139081,276 @@
   "edge": false,
   "trail_stop": 3879.404,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "BTCUSD-5m-1794799800000",
+  "logged": "2026-11-16T04:37+01:00",
+  "bar_t": 1794799800000,
+  "bar_time": "Mon 16 Nov 04:30",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -30,
+  "entry": 64954.02,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 65203.907,
+  "tp": [
+   64704.133,
+   64454.246,
+   64204.359
+  ],
+  "inv": 65362.01,
+  "votes": [
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   1,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.23,
+   1.0,
+   1.0,
+   0.43,
+   0.43,
+   1.14,
+   1.62,
+   1.21,
+   1.0,
+   0.68,
+   0.0,
+   0.12,
+   0.0,
+   1.98,
+   0.01,
+   0.0,
+   1.21,
+   1.69,
+   1.68,
+   0.1,
+   0.36,
+   0.18,
+   0.15,
+   0.34,
+   1.19,
+   1.19,
+   0.31,
+   1.98
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 166.59143166918741,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 54,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 64937.0,
+    "hi": 65258.01,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 65003.90065364,
+    "side200": -1,
+    "stack": 1,
+    "st": 1,
+    "dh": 65362.01,
+    "dl": 64530.12,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
+ },
+ {
+  "id": "SOLUSD-5m-1794799800000",
+  "logged": "2026-11-16T04:37+01:00",
+  "bar_t": 1794799800000,
+  "bar_time": "Mon 16 Nov 04:30",
+  "sym": "SOLUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -30,
+  "entry": 71.89,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 72.3325,
+  "tp": [
+   71.4475,
+   71.00501,
+   70.56251
+  ],
+  "inv": 72.75,
+  "votes": [
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.22,
+   1.0,
+   0.62,
+   0.43,
+   1.0,
+   1.0,
+   1.77,
+   1.0,
+   0.6,
+   0.69,
+   0.55,
+   0.15,
+   1.31,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   1.23,
+   0.25,
+   0.0,
+   0.0,
+   0.83,
+   0.34,
+   1.0,
+   1.0,
+   0.31,
+   1.24
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend",
+   "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.2949966692069114,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 72,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 71.85988193,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 72.75,
+    "dl": 71.27,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
