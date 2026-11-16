@@ -113429,7 +113429,7 @@
   "edge": false,
   "trail_stop": 1.105344233578986,
   "tp1_hit": true,
-  "bars_open": 21
+  "bars_open": 22
  },
  {
   "id": "GBPUSD-5m-1794563700000",
@@ -117307,7 +117307,7 @@
   "edge": false,
   "trail_stop": 0.83652,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "EURCHF-1h-1794578400000",
@@ -117447,7 +117447,7 @@
   "edge": false,
   "trail_stop": 0.923172,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "ETHUSD-5m-1794582300000",
@@ -121733,7 +121733,7 @@
   "edge": false,
   "trail_stop": 1.32336,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "EURUSD-5m-1794603900000",
@@ -132938,7 +132938,7 @@
   "edge": false,
   "trail_stop": 1871.285,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "ETHUSD-5m-1794752400000",
@@ -133918,7 +133918,7 @@
   "edge": false,
   "trail_stop": 73.13579,
   "tp1_hit": false,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "BTCUSD-5m-1794760200000",
@@ -137696,7 +137696,7 @@
   "edge": false,
   "trail_stop": 3871.3221538108787,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "EURUSD-5m-1794792600000",
@@ -139791,7 +139791,7 @@
   "edge": false,
   "trail_stop": 0.9631,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "SOLUSD-5m-1794801600000",
@@ -140064,7 +140064,7 @@
   "edge": false,
   "trail_stop": 72.0,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "ETHUSD-5m-1794804600000",
@@ -140333,9 +140333,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1833.127,
-  "tp1_hit": false,
-  "bars_open": 15
+  "trail_stop": 1818.67,
+  "tp1_hit": true,
+  "bars_open": 16
  },
  {
   "id": "ETHUSD-5m-1794806400000",
@@ -140611,9 +140611,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 71.61635997137904,
+  "trail_stop": 71.57635997137903,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 44
  },
  {
   "id": "XAUUSD-1h-1794805200000",
@@ -140755,7 +140755,7 @@
   "edge": true,
   "trail_stop": 3864.129,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XRPUSD-1h-1794805200000",
@@ -140891,7 +140891,7 @@
   "edge": false,
   "trail_stop": 0.971869,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "EURUSD-5m-1794810000000",
@@ -142378,7 +142378,7 @@
    "Wyckoff spring / upthrust",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00037386879280533854,
@@ -142433,7 +142433,10 @@
   "edge": true,
   "trail_stop": 1.102293,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 5,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-16T10:07+01:00"
  },
  {
   "id": "USDCHF-15m-1794813300000",
@@ -143126,7 +143129,7 @@
   "edge": false,
   "trail_stop": 65133.865,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "USDCHF-15m-1794816000000",
@@ -143263,7 +143266,7 @@
   "edge": false,
   "trail_stop": 0.838619,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "ETHUSD-5m-1794816600000",
@@ -143536,7 +143539,7 @@
   "edge": false,
   "trail_stop": 64691.29,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "EURCHF-5m-1794817200000",
@@ -143675,7 +143678,7 @@
   "edge": false,
   "trail_stop": 0.923936,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "EURCHF-15m-1794816900000",
@@ -143817,7 +143820,7 @@
   "edge": false,
   "trail_stop": 0.923854,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-5m-1794819000000",
@@ -143948,7 +143951,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1805.25,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-5m-1794819000000",
@@ -144082,6 +144088,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.9524,
+  "tp1_hit": true,
+  "bars_open": 2
  }
 ]
