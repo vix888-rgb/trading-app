@@ -146418,7 +146418,7 @@
   "edge": false,
   "trail_stop": 1.320045,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "ETHUSD-5m-1794832200000",
@@ -149220,7 +149220,7 @@
   "edge": true,
   "trail_stop": 1.101796,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "XAUUSD-5m-1794843600000",
@@ -149444,7 +149444,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.007579648996129634,
@@ -149496,7 +149496,10 @@
   "edge": false,
   "trail_stop": 0.962469,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 5,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-16T18:19+01:00"
  },
  {
   "id": "GBPUSD-5m-1794843600000",
@@ -149994,7 +149997,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003736220857922208,
@@ -150046,7 +150049,10 @@
   "edge": false,
   "trail_stop": 1.319352,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-16T18:19+01:00"
  },
  {
   "id": "SOLUSD-15m-1794845700000",
@@ -150184,7 +150190,7 @@
   "edge": false,
   "trail_stop": 72.08823,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XAUUSD-15m-1794846600000",
@@ -150328,7 +150334,7 @@
   "edge": false,
   "trail_stop": 3871.302,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "EURUSD-5m-1794847800000",
@@ -150412,7 +150418,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00024971464366997225,
@@ -150466,7 +150472,10 @@
   "edge": false,
   "trail_stop": 1.101211,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-16T18:19+01:00"
  },
  {
   "id": "XAUUSD-5m-1794848400000",
@@ -150599,6 +150608,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3873.798,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
