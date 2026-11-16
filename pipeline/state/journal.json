@@ -146418,7 +146418,7 @@
   "edge": false,
   "trail_stop": 1.320045,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "ETHUSD-5m-1794832200000",
@@ -149024,7 +149024,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.6219232069446883,
@@ -149078,7 +149078,10 @@
   "edge": false,
   "trail_stop": 71.22288,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-16T17:38+01:00"
  },
  {
   "id": "EURUSD-15m-1794842100000",
@@ -149217,7 +149220,7 @@
   "edge": true,
   "trail_stop": 1.101796,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-5m-1794843600000",
@@ -149354,7 +149357,7 @@
   "edge": false,
   "trail_stop": 3865.767,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "XRPUSD-15m-1794843000000",
@@ -149490,7 +149493,7 @@
   "edge": false,
   "trail_stop": 0.962469,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "GBPUSD-5m-1794843600000",
@@ -149901,7 +149904,7 @@
   "edge": false,
   "trail_stop": 0.959255,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "GBPUSD-5m-1794846000000",
@@ -150030,6 +150033,144 @@
     "d1": -1,
     "dgate": false,
     "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.319352,
+  "tp1_hit": false,
+  "bars_open": 2
+ },
+ {
+  "id": "SOLUSD-15m-1794845700000",
+  "logged": "2026-11-16T17:38+01:00",
+  "bar_t": 1794845700000,
+  "bar_time": "Mon 16 Nov 17:15",
+  "sym": "SOLUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -60,
+  "entry": 71.11,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 72.08823,
+  "tp": [
+   70.13177,
+   69.15354,
+   68.17531
+  ],
+  "inv": 72.92,
+  "votes": [
+   0,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.29,
+   0.43,
+   0.7,
+   1.0,
+   1.0,
+   1.14,
+   1.0,
+   0.6,
+   0.0,
+   0.0,
+   0.15,
+   1.23,
+   0.0,
+   0.0,
+   1.01,
+   1.4,
+   1.36,
+   0.0,
+   0.0,
+   0.0,
+   0.01,
+   0.34,
+   1.0,
+   1.0,
+   0.62,
+   1.02
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.6521528293198413,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 81,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": true,
+    "blockLong": true,
+    "blockShort": false,
+    "dir": -1,
+    "alert": true,
+    "lo": 70.44,
+    "hi": 71.5
+   },
+   "news": {
+    "on": true,
+    "title": "Fed Chairman Warsh Speaks",
+    "at": "2026-11-16T12:00:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 72.38977633,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 72.92,
+    "dl": 69.93,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
     "vxgate": false
    },
    "pat": []
