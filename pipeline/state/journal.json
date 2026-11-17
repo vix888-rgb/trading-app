@@ -156089,7 +156089,7 @@
   "edge": false,
   "trail_stop": 3870.799,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "EURUSD-5m-1794903000000",
@@ -156313,7 +156313,7 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00029982530731612907,
@@ -156365,7 +156365,10 @@
   "edge": false,
   "trail_stop": 0.83913,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-17T09:49+01:00"
  },
  {
   "id": "USDCHF-15m-1794902400000",
@@ -156501,7 +156504,7 @@
   "edge": false,
   "trail_stop": 0.838766,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-15m-1794902400000",
@@ -156587,7 +156590,7 @@
    "TSMOM multi-lookback trend",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004700304400346117,
@@ -156642,7 +156645,10 @@
   "edge": false,
   "trail_stop": 1.319583,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-17T09:49+01:00"
  },
  {
   "id": "EURUSD-15m-1794903300000",
@@ -156782,6 +156788,9 @@
    },
    "pat": []
   },
-  "edge": true
+  "edge": true,
+  "trail_stop": 1.101225,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
