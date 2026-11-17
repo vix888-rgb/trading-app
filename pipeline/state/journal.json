@@ -152008,7 +152008,7 @@
   "edge": true,
   "trail_stop": 1.1007732545243738,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "EURCHF-5m-1794858600000",
@@ -152563,7 +152563,7 @@
   "edge": false,
   "trail_stop": 0.84006,
   "tp1_hit": true,
-  "bars_open": 25
+  "bars_open": 27
  },
  {
   "id": "BTCUSD-5m-1794873600000",
@@ -153127,7 +153127,7 @@
   "edge": false,
   "trail_stop": 0.839601,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "XAUUSD-5m-1794876600000",
@@ -153692,7 +153692,7 @@
   "edge": false,
   "trail_stop": 159.417,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "EURUSD-5m-1794879600000",
@@ -153774,7 +153774,7 @@
    1.36
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00021655521251097318,
@@ -153826,7 +153826,10 @@
   "edge": false,
   "trail_stop": 1.09983,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-17T03:19+01:00"
  },
  {
   "id": "GBPUSD-15m-1794879000000",
@@ -153970,7 +153973,7 @@
   "edge": false,
   "trail_stop": 1.318552,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-5m-1794880200000",
@@ -154104,6 +154107,139 @@
   "edge": false,
   "trail_stop": 1.318267,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "BTCUSD-5m-1794881400000",
+  "logged": "2026-11-17T03:19+01:00",
+  "bar_t": 1794881400000,
+  "bar_time": "Tue 17 Nov 03:10",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -36,
+  "entry": 64610.2,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 64808.411,
+  "tp": [
+   64411.989,
+   64213.777,
+   64015.566
+  ],
+  "inv": 64932.4,
+  "votes": [
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.23,
+   1.0,
+   1.0,
+   0.43,
+   0.43,
+   1.14,
+   1.62,
+   1.21,
+   1.0,
+   0.68,
+   0.0,
+   0.12,
+   0.0,
+   1.98,
+   0.01,
+   0.0,
+   1.21,
+   1.69,
+   1.68,
+   0.1,
+   0.36,
+   0.18,
+   0.15,
+   0.34,
+   1.19,
+   1.19,
+   0.31,
+   1.98
+  ],
+  "strategies": [
+   "Liquidity Entry Zones"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 132.14095176808547,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 46,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 64848.77428375,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 64932.4,
+    "dl": 64482.47,
+    "brk": 0,
+    "sqz": "on",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
