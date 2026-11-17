@@ -156801,9 +156801,9 @@
    "pat": []
   },
   "edge": true,
-  "trail_stop": 1.1005824406001972,
+  "trail_stop": 1.1003410417888568,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "BTCUSD-5m-1794906000000",
@@ -157871,7 +157871,7 @@
    1.36
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00028016530772479126,
@@ -157921,9 +157921,12 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.099780295821048,
+  "trail_stop": 1.0988155350407136,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 6.89,
+  "exit": "time exit",
+  "closed_at": "2026-11-17T14:39+01:00"
  },
  {
   "id": "ETHUSD-5m-1794907800000",
@@ -158766,9 +158769,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.83952,
+  "trail_stop": 0.839790200455946,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 32
  },
  {
   "id": "EURUSD-1h-1794909600000",
@@ -159731,7 +159734,7 @@
   "edge": false,
   "trail_stop": 3863.456,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "USDCHF-15m-1794919500000",
@@ -159867,9 +159870,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.838903,
-  "tp1_hit": false,
-  "bars_open": 1
+  "trail_stop": 0.83974,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-5m-1794920400000",
@@ -160005,7 +160008,7 @@
   "edge": false,
   "trail_stop": 73.48812,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "GBPUSD-5m-1794921600000",
@@ -160134,6 +160137,148 @@
     "dl": 1.31879139,
     "brk": 0,
     "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.318809,
+  "tp1_hit": true,
+  "bars_open": 2
+ },
+ {
+  "id": "GBPUSD-15m-1794921300000",
+  "logged": "2026-11-17T14:39+01:00",
+  "bar_t": 1794921300000,
+  "bar_time": "Tue 17 Nov 14:15",
+  "sym": "GBPUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -54,
+  "entry": 1.319052,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.319955,
+  "tp": [
+   1.31815,
+   1.317248,
+   1.316346
+  ],
+  "inv": 1.320463,
+  "votes": [
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.1,
+   1.0,
+   0.43,
+   0.7,
+   1.64,
+   1.31,
+   1.55,
+   1.15,
+   0.76,
+   0.0,
+   0.0,
+   0.0,
+   1.28,
+   0.21,
+   0.0,
+   1.25,
+   1.0,
+   1.49,
+   0.0,
+   0.0,
+   0.0,
+   0.15,
+   0.34,
+   1.05,
+   1.05,
+   0.31,
+   1.0
+  ],
+  "strategies": [
+   "Wyckoff spring / upthrust",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.000601453972648289,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 73,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 1.31849587,
+    "hi": 1.31995773,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "Core Retail Sales m/m",
+    "at": "2026-11-17T08:30:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.32055963,
+    "side200": -1,
+    "stack": 0,
+    "st": -1,
+    "dh": 1.3204633,
+    "dl": 1.31865227,
+    "brk": 0,
+    "sqz": "on",
     "mom": -1,
     "sess": true,
     "gate": false,
