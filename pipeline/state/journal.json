@@ -155891,7 +155891,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00027647121710980494,
@@ -155943,7 +155943,10 @@
   "edge": false,
   "trail_stop": 1.319067,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-17T09:29+01:00"
  },
  {
   "id": "XAUUSD-5m-1794903000000",
@@ -156080,7 +156083,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3870.799,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "EURUSD-5m-1794903000000",
@@ -156214,7 +156220,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.100694,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "USDCHF-5m-1794903000000",
@@ -156347,7 +156356,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.83913,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "USDCHF-15m-1794902400000",
@@ -156480,7 +156492,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.838766,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "GBPUSD-15m-1794902400000",
@@ -156618,6 +156633,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.319583,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
