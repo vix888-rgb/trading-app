@@ -163120,7 +163120,7 @@
   "edge": false,
   "trail_stop": 64260.834,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "ETHUSD-5m-1794936600000",
@@ -163202,7 +163202,7 @@
    1.1
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 9.606689075926978,
@@ -163254,7 +163254,10 @@
   "edge": false,
   "trail_stop": 1794.43,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-17T19:29+01:00"
  },
  {
   "id": "XRPUSD-5m-1794936600000",
@@ -163388,7 +163391,7 @@
   "edge": false,
   "trail_stop": 0.962833,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "EURCHF-15m-1794936600000",
@@ -163658,6 +163661,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3872.499,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
