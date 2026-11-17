@@ -156801,9 +156801,9 @@
    "pat": []
   },
   "edge": true,
-  "trail_stop": 1.100594,
+  "trail_stop": 1.1005824406001972,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "BTCUSD-5m-1794906000000",
@@ -157923,7 +157923,7 @@
   "edge": false,
   "trail_stop": 1.1000216946323884,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "ETHUSD-5m-1794907800000",
@@ -158433,7 +158433,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "AB=CD (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003690403733063618,
@@ -158485,7 +158485,10 @@
   "edge": false,
   "trail_stop": 1.319641,
   "tp1_hit": false,
-  "bars_open": 26
+  "bars_open": 26,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-17T13:49+01:00"
  },
  {
   "id": "ETHUSD-15m-1794910500000",
@@ -158765,7 +158768,7 @@
   "edge": false,
   "trail_stop": 0.83952,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "EURUSD-1h-1794909600000",
@@ -159450,7 +159453,7 @@
   "edge": false,
   "trail_stop": 1826.311,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "XAUUSD-5m-1794918600000",
@@ -159581,6 +159584,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3861.077,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
