@@ -157921,9 +157921,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.1000216946323884,
+  "trail_stop": 1.099780295821048,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 46
  },
  {
   "id": "ETHUSD-5m-1794907800000",
@@ -158768,7 +158768,7 @@
   "edge": false,
   "trail_stop": 0.83952,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "EURUSD-1h-1794909600000",
@@ -159731,7 +159731,7 @@
   "edge": false,
   "trail_stop": 3863.456,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "USDCHF-15m-1794919500000",
@@ -160005,6 +160005,146 @@
   "edge": false,
   "trail_stop": 73.48812,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "GBPUSD-5m-1794921600000",
+  "logged": "2026-11-17T14:29+01:00",
+  "bar_t": 1794921600000,
+  "bar_time": "Tue 17 Nov 14:20",
+  "sym": "GBPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -31,
+  "entry": 1.318809,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.319291,
+  "tp": [
+   1.318326,
+   1.317844,
+   1.317361
+  ],
+  "inv": 1.319958,
+  "votes": [
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   1.01,
+   0.43,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.4,
+   0.0,
+   0.56,
+   1.54,
+   0.35,
+   0.0,
+   1.0,
+   1.59,
+   1.0,
+   0.56,
+   0.68,
+   0.09,
+   1.0,
+   0.34,
+   1.0,
+   1.0,
+   0.51,
+   1.54
+  ],
+  "strategies": [
+   "ICT/SMC sweep + CHoCH",
+   "Wyckoff spring / upthrust",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00032167719901378535,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 85,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 1.31865227,
+    "hi": 1.31995773,
+    "src": "5m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "Core Retail Sales m/m",
+    "at": "2026-11-17T08:30:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.31919703,
+    "side200": -1,
+    "stack": 0,
+    "st": -1,
+    "dh": 1.31995773,
+    "dl": 1.31879139,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
