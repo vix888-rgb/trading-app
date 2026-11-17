@@ -113432,7 +113432,7 @@
   "edge": false,
   "trail_stop": 1.1032856083577336,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 37
  },
  {
   "id": "GBPUSD-5m-1794563700000",
@@ -117310,7 +117310,7 @@
   "edge": false,
   "trail_stop": 0.83652,
   "tp1_hit": true,
-  "bars_open": 31
+  "bars_open": 32
  },
  {
   "id": "EURCHF-1h-1794578400000",
@@ -121739,7 +121739,7 @@
   "edge": false,
   "trail_stop": 1.321475,
   "tp1_hit": true,
-  "bars_open": 25
+  "bars_open": 26
  },
  {
   "id": "EURUSD-5m-1794603900000",
@@ -133927,7 +133927,7 @@
   "edge": false,
   "trail_stop": 73.13579,
   "tp1_hit": false,
-  "bars_open": 33
+  "bars_open": 34
  },
  {
   "id": "BTCUSD-5m-1794760200000",
@@ -146418,7 +146418,7 @@
   "edge": false,
   "trail_stop": 1.320045,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 45
  },
  {
   "id": "ETHUSD-5m-1794832200000",
@@ -151863,7 +151863,7 @@
   "edge": false,
   "trail_stop": 3865.782,
   "tp1_hit": true,
-  "bars_open": 21
+  "bars_open": 22
  },
  {
   "id": "EURUSD-15m-1794857400000",
@@ -152002,7 +152002,7 @@
   "edge": true,
   "trail_stop": 1.101079,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "EURCHF-5m-1794858600000",
@@ -152557,7 +152557,7 @@
   "edge": false,
   "trail_stop": 0.839274,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 13
  },
  {
   "id": "BTCUSD-5m-1794873600000",
@@ -152695,7 +152695,7 @@
   "edge": false,
   "trail_stop": 64739.97,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "GBPUSD-5m-1794874800000",
@@ -152974,9 +152974,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.100278,
-  "tp1_hit": false,
-  "bars_open": 4
+  "trail_stop": 1.099989,
+  "tp1_hit": true,
+  "bars_open": 6
  },
  {
   "id": "USDCHF-15m-1794875400000",
@@ -153115,7 +153115,7 @@
   "edge": false,
   "trail_stop": 0.839601,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "XAUUSD-5m-1794876600000",
@@ -153239,6 +153239,145 @@
     "brk": 0,
     "sqz": "off",
     "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 3859.318,
+  "tp1_hit": false,
+  "bars_open": 2
+ },
+ {
+  "id": "GBPUSD-5m-1794877200000",
+  "logged": "2026-11-17T02:09+01:00",
+  "bar_t": 1794877200000,
+  "bar_time": "Tue 17 Nov 02:00",
+  "sym": "GBPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -69,
+  "entry": 1.318061,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.318432,
+  "tp": [
+   1.317691,
+   1.31732,
+   1.316949
+  ],
+  "inv": 1.319226,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   1.01,
+   0.43,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.4,
+   0.0,
+   0.56,
+   1.54,
+   0.35,
+   0.0,
+   1.0,
+   1.59,
+   1.0,
+   0.56,
+   0.68,
+   0.09,
+   1.0,
+   0.34,
+   1.0,
+   1.0,
+   0.51,
+   1.54
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00024708920222182634,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 37,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 1.31800926,
+    "hi": 1.31870461,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.31927609,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.31922638,
+    "dl": 1.31800926,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
     "sess": false,
     "gate": false,
     "sgate": false,
