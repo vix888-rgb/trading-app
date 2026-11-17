@@ -162297,7 +162297,7 @@
   "edge": false,
   "trail_stop": 64214.57,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-15m-1794931200000",
@@ -162439,7 +162439,7 @@
   "edge": false,
   "trail_stop": 1808.272,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "XRPUSD-15m-1794933000000",
@@ -162576,7 +162576,7 @@
   "edge": false,
   "trail_stop": 0.970012,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-5m-1794934800000",
@@ -163120,7 +163120,7 @@
   "edge": false,
   "trail_stop": 64260.834,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "ETHUSD-5m-1794936600000",
@@ -163251,7 +163251,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1794.43,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-5m-1794936600000",
@@ -163372,6 +163375,145 @@
     "brk": 0,
     "sqz": "off",
     "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 0.962833,
+  "tp1_hit": false,
+  "bars_open": 2
+ },
+ {
+  "id": "EURCHF-15m-1794936600000",
+  "logged": "2026-11-17T18:49+01:00",
+  "bar_t": 1794936600000,
+  "bar_time": "Tue 17 Nov 18:30",
+  "sym": "EURCHF",
+  "tf": "15m",
+  "side": "long",
+  "score": 52,
+  "entry": 0.92416,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.922778,
+  "tp": [
+   0.925542,
+   0.926924,
+   0.928306
+  ],
+  "inv": 0.92229,
+  "votes": [
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   0.64,
+   0.43,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.17,
+   0.0,
+   0.0,
+   1.0,
+   0.15,
+   0.0,
+   1.0,
+   1.0,
+   1.0,
+   0.17,
+   0.0,
+   0.0,
+   0.77,
+   0.34,
+   1.0,
+   1.0,
+   0.35,
+   1.0
+  ],
+  "strategies": [
+   "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0009213390328325655,
+  "filters": {
+   "carry": 2.54,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 94,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 0.92229003,
+    "hi": 0.92482001,
+    "src": "15m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.92379402,
+    "side200": 1,
+    "stack": 0,
+    "st": 1,
+    "dh": 0.92482001,
+    "dl": 0.92229003,
+    "brk": 0,
+    "sqz": "on",
+    "mom": 1,
     "sess": true,
     "gate": false,
     "sgate": false,
