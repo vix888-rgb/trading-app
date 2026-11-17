@@ -154351,7 +154351,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 140.11047450370938,
@@ -154403,7 +154403,10 @@
   "edge": false,
   "trail_stop": 64726.966,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-17T04:29+01:00"
  },
  {
   "id": "ETHUSD-5m-1794883800000",
