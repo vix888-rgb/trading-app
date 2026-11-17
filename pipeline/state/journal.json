@@ -164516,7 +164516,7 @@
   "edge": false,
   "trail_stop": 73.1526977268692,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "EURCHF-1h-1794945600000",
@@ -165073,7 +165073,7 @@
   "edge": false,
   "trail_stop": 0.965177,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "EURUSD-5m-1794952800000",
@@ -165486,7 +165486,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.100594,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "EURUSD-15m-1794952800000",
@@ -165621,7 +165624,10 @@
    },
    "pat": []
   },
-  "edge": true
+  "edge": true,
+  "trail_stop": 1.101164,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "GBPUSD-5m-1794953400000",
@@ -165759,6 +165765,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.321086,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
