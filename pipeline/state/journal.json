@@ -157299,7 +157299,7 @@
    1.02
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.1419537786684764,
@@ -157354,7 +157354,10 @@
   "edge": false,
   "trail_stop": 3867.432,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-17T10:59+01:00"
  },
  {
   "id": "BTCUSD-5m-1794906600000",
@@ -157914,7 +157917,7 @@
   "edge": false,
   "trail_stop": 1.101015,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "ETHUSD-5m-1794907800000",
@@ -158052,7 +158055,7 @@
   "edge": false,
   "trail_stop": 1819.236,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-5m-1794908400000",
@@ -158185,6 +158188,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 64604.593,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
