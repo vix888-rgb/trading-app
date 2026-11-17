@@ -163548,7 +163548,7 @@
   "edge": false,
   "trail_stop": 0.922778,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "XAUUSD-15m-1794938400000",
@@ -163682,7 +163682,7 @@
   "edge": false,
   "trail_stop": 3860.681,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "XAUUSD-5m-1794942000000",
@@ -164516,7 +164516,7 @@
   "edge": false,
   "trail_stop": 73.1526977268692,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "EURCHF-1h-1794945600000",
@@ -165073,7 +165073,7 @@
   "edge": false,
   "trail_stop": 0.965177,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "EURUSD-5m-1794952800000",
@@ -165489,7 +165489,7 @@
   "edge": false,
   "trail_stop": 1.100594,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "EURUSD-15m-1794952800000",
@@ -165627,7 +165627,7 @@
   "edge": true,
   "trail_stop": 1.101164,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "GBPUSD-5m-1794953400000",
@@ -165713,7 +165713,7 @@
    "Wyckoff spring / upthrust",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0002526907268886828,
@@ -165768,6 +165768,9 @@
   "edge": false,
   "trail_stop": 1.321086,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-17T23:40+01:00"
  }
 ]
