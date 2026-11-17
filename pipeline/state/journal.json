@@ -156801,9 +156801,9 @@
    "pat": []
   },
   "edge": true,
-  "trail_stop": 1.1003410417888568,
+  "trail_stop": 1.098894437060158,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "BTCUSD-5m-1794906000000",
@@ -158769,9 +158769,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.839790200455946,
+  "trail_stop": 0.8399002306302014,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "EURUSD-1h-1794909600000",
@@ -159732,9 +159732,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3863.456,
+  "trail_stop": 3852.116427671836,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "USDCHF-15m-1794919500000",
@@ -159872,7 +159872,7 @@
   "edge": false,
   "trail_stop": 0.83974,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "SOLUSD-5m-1794920400000",
@@ -159954,7 +159954,7 @@
    1.24
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.22792020123597068,
@@ -160008,7 +160008,10 @@
   "edge": false,
   "trail_stop": 73.48812,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-17T14:49+01:00"
  },
  {
   "id": "GBPUSD-5m-1794921600000",
@@ -160151,7 +160154,7 @@
   "edge": false,
   "trail_stop": 1.318809,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-15m-1794921300000",
@@ -160279,6 +160282,147 @@
     "dl": 1.31865227,
     "brk": 0,
     "sqz": "on",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.319052,
+  "tp1_hit": true,
+  "bars_open": 1
+ },
+ {
+  "id": "XAUUSD-15m-1794922200000",
+  "logged": "2026-11-17T14:49+01:00",
+  "bar_t": 1794922200000,
+  "bar_time": "Tue 17 Nov 14:30",
+  "sym": "XAUUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -79,
+  "entry": 3846.831,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 3857.859,
+  "tp": [
+   3835.804,
+   3824.776,
+   3813.748
+  ],
+  "inv": 3871.205,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.11,
+   1.0,
+   0.43,
+   0.61,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.0,
+   0.0,
+   0.34,
+   1.25,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   1.23,
+   0.0,
+   0.29,
+   0.0,
+   0.44,
+   0.6,
+   1.0,
+   1.06,
+   0.59,
+   1.03
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "TSMOM multi-lookback trend",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)",
+   "TTM squeeze fire + EMA200 (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 7.351779068514846,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 50,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "Core Retail Sales m/m",
+    "at": "2026-11-17T08:30:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 3876.5540584,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 3874.01697,
+    "dl": 3852.76068,
+    "brk": -1,
+    "sqz": "fired",
     "mom": -1,
     "sess": true,
     "gate": false,
