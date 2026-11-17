@@ -162300,7 +162300,7 @@
   "edge": false,
   "trail_stop": 64214.57,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "ETHUSD-15m-1794931200000",
@@ -162388,7 +162388,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 14.234372380228375,
@@ -162442,7 +162442,10 @@
   "edge": false,
   "trail_stop": 1808.272,
   "tp1_hit": false,
-  "bars_open": 19
+  "bars_open": 19,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-17T22:20+01:00"
  },
  {
   "id": "XRPUSD-15m-1794933000000",
@@ -163126,7 +163129,7 @@
   "edge": false,
   "trail_stop": 64260.834,
   "tp1_hit": false,
-  "bars_open": 44
+  "bars_open": 46
  },
  {
   "id": "ETHUSD-5m-1794936600000",
@@ -163539,7 +163542,7 @@
   "edge": false,
   "trail_stop": 0.922778,
   "tp1_hit": false,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "XAUUSD-15m-1794938400000",
@@ -163673,7 +163676,7 @@
   "edge": false,
   "trail_stop": 3860.681,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "XAUUSD-5m-1794942000000",
@@ -163815,7 +163818,7 @@
   "edge": false,
   "trail_stop": 3853.91,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 26
  },
  {
   "id": "SOLUSD-15m-1794941100000",
@@ -163897,7 +163900,7 @@
    1.02
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.6053247978228253,
@@ -163949,7 +163952,10 @@
   "edge": false,
   "trail_stop": 73.37799,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-17T22:20+01:00"
  },
  {
   "id": "USDCHF-15m-1794942000000",
@@ -164085,7 +164091,7 @@
   "edge": false,
   "trail_stop": 0.83863,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "ETHUSD-5m-1794943800000",
@@ -164498,7 +164504,7 @@
   "edge": false,
   "trail_stop": 72.92,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "EURCHF-1h-1794945600000",
@@ -164636,7 +164642,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.922633,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "XRPUSD-5m-1794949200000",
@@ -164770,6 +164779,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.967667,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
