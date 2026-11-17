@@ -151953,7 +151953,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004982152309774675,
@@ -152008,7 +152008,10 @@
   "edge": true,
   "trail_stop": 1.1007732545243738,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 23,
+  "R": 0.41,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-17T04:19+01:00"
  },
  {
   "id": "EURCHF-5m-1794858600000",
@@ -153078,7 +153081,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0006058901393193407,
@@ -153130,7 +153133,10 @@
   "edge": false,
   "trail_stop": 0.839601,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 9,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-17T04:19+01:00"
  },
  {
   "id": "XAUUSD-5m-1794876600000",
@@ -154397,7 +154403,7 @@
   "edge": false,
   "trail_stop": 64726.966,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1794883800000",
@@ -154483,7 +154489,7 @@
    "TSMOM multi-lookback trend",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.471442889369059,
@@ -154535,7 +154541,10 @@
   "edge": false,
   "trail_stop": 1820.317,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-17T04:19+01:00"
  },
  {
   "id": "GBPUSD-15m-1794883500000",
@@ -154669,6 +154678,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.319532,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
