@@ -162023,7 +162023,7 @@
   "edge": false,
   "trail_stop": 0.83896,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "ETHUSD-1h-1794927600000",
@@ -164672,7 +164672,7 @@
   "edge": false,
   "trail_stop": 0.922633,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "XRPUSD-5m-1794949200000",
@@ -165648,7 +165648,7 @@
   "edge": true,
   "trail_stop": 1.0996950378091364,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 35
  },
  {
   "id": "GBPUSD-5m-1794953400000",
@@ -167182,7 +167182,7 @@
   "edge": false,
   "trail_stop": 1.100411,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "USDJPY-15m-1794962700000",
@@ -167460,7 +167460,7 @@
   "edge": false,
   "trail_stop": 1851.334,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "EURUSD-5m-1794964200000",
@@ -168382,7 +168382,7 @@
    "TSMOM multi-lookback trend",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0002027788652994481,
@@ -168437,7 +168437,10 @@
   "edge": false,
   "trail_stop": 1.319672242360917,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 2.11,
+  "exit": "time exit",
+  "closed_at": "2026-11-18T08:01+01:00"
  },
  {
   "id": "XAUUSD-5m-1794971100000",
@@ -169273,7 +169276,7 @@
   "edge": false,
   "trail_stop": 0.9804663745808577,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 44
  },
  {
   "id": "EURUSD-5m-1794972300000",
@@ -169409,7 +169412,7 @@
   "edge": false,
   "trail_stop": 1.0988399673587628,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 42
  },
  {
   "id": "XAUUSD-5m-1794973500000",
@@ -169543,7 +169546,7 @@
   "edge": false,
   "trail_stop": 3798.121,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "USDCHF-15m-1794974400000",
@@ -169677,7 +169680,7 @@
   "edge": false,
   "trail_stop": 0.840163,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "SOLUSD-5m-1794979500000",
@@ -169954,6 +169957,6 @@
   "edge": false,
   "trail_stop": 3798.795,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  }
 ]
