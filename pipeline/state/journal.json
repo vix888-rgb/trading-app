@@ -180548,7 +180548,7 @@
    1.98
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 154.3272820566671,
@@ -180600,7 +180600,10 @@
   "edge": false,
   "trail_stop": 62859.491,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-19T00:43+01:00"
  },
  {
   "id": "EURUSD-5m-1795043100000",
@@ -180737,7 +180740,7 @@
   "edge": false,
   "trail_stop": 1.097943,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "EURCHF-5m-1795043700000",
@@ -180871,6 +180874,139 @@
   "edge": false,
   "trail_stop": 0.924435,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "USDCHF-5m-1795044900000",
+  "logged": "2026-11-19T00:43+01:00",
+  "bar_t": 1795044900000,
+  "bar_time": "Thu 19 Nov 00:35",
+  "sym": "USDCHF",
+  "tf": "5m",
+  "side": "long",
+  "score": 40,
+  "entry": 0.84347,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.842708,
+  "tp": [
+   0.844232,
+   0.844994,
+   0.845757
+  ],
+  "inv": 0.84141,
+  "votes": [
+   0,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   0.9,
+   0.43,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.62,
+   0.0,
+   0.32,
+   1.56,
+   0.01,
+   0.0,
+   1.0,
+   1.0,
+   1.0,
+   0.34,
+   0.26,
+   0.0,
+   0.23,
+   0.34,
+   1.0,
+   1.0,
+   0.31,
+   1.56
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0005081728498691017,
+  "filters": {
+   "carry": 3.92,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 95,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.84254119,
+    "side200": 1,
+    "stack": 0,
+    "st": 1,
+    "dh": 0.84350002,
+    "dl": 0.84136999,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": 1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
