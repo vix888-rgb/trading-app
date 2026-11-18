@@ -163499,7 +163499,7 @@
   "strategies": [
    "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0009213390328325655,
@@ -163554,7 +163554,10 @@
   "edge": false,
   "trail_stop": 0.922778,
   "tp1_hit": false,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": -0.28,
+  "exit": "time exit",
+  "closed_at": "2026-11-18T06:51+01:00"
  },
  {
   "id": "XAUUSD-15m-1794938400000",
@@ -163688,7 +163691,7 @@
   "edge": false,
   "trail_stop": 3810.974434910359,
   "tp1_hit": true,
-  "bars_open": 45
+  "bars_open": 46
  },
  {
   "id": "XAUUSD-5m-1794942000000",
@@ -165642,7 +165645,7 @@
   "edge": true,
   "trail_stop": 1.0999363174111871,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "GBPUSD-5m-1794953400000",
@@ -168431,7 +168434,7 @@
   "edge": false,
   "trail_stop": 1.3199330722864542,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "XAUUSD-5m-1794971100000",
@@ -169267,7 +169270,7 @@
   "edge": false,
   "trail_stop": 0.9804663745808577,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "EURUSD-5m-1794972300000",
@@ -169403,7 +169406,7 @@
   "edge": false,
   "trail_stop": 1.0993225265628643,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "XAUUSD-5m-1794973500000",
@@ -169537,7 +169540,7 @@
   "edge": false,
   "trail_stop": 3798.121,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "USDCHF-15m-1794974400000",
@@ -169671,7 +169674,7 @@
   "edge": false,
   "trail_stop": 0.840163,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1794979500000",
@@ -169759,7 +169762,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.21176083980347205,
@@ -169811,6 +169814,9 @@
   "edge": false,
   "trail_stop": 75.09236,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-18T06:51+01:00"
  }
 ]
