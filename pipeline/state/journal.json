@@ -163554,7 +163554,7 @@
   "edge": false,
   "trail_stop": 0.922778,
   "tp1_hit": false,
-  "bars_open": 31
+  "bars_open": 32
  },
  {
   "id": "XAUUSD-15m-1794938400000",
@@ -163686,9 +163686,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3841.400074910359,
+  "trail_stop": 3840.894234910359,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "XAUUSD-5m-1794942000000",
@@ -165642,7 +165642,7 @@
   "edge": true,
   "trail_stop": 1.0999363174111871,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "GBPUSD-5m-1794953400000",
@@ -165872,7 +165872,7 @@
    "ICT/SMC sweep + CHoCH",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0005696185878799718,
@@ -165924,7 +165924,10 @@
   "edge": false,
   "trail_stop": 0.84077,
   "tp1_hit": true,
-  "bars_open": 31
+  "bars_open": 31,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-18T02:50+01:00"
  },
  {
   "id": "GBPUSD-5m-1794955800000",
@@ -166006,7 +166009,7 @@
    1.54
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0002240634142126704,
@@ -166061,7 +166064,10 @@
   "edge": false,
   "trail_stop": 1.3206798220391138,
   "tp1_hit": true,
-  "bars_open": 31
+  "bars_open": 31,
+  "R": 0.81,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-18T02:50+01:00"
  },
  {
   "id": "EURCHF-5m-1794956400000",
@@ -166752,7 +166758,7 @@
   "edge": false,
   "trail_stop": 0.840259,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "XRPUSD-5m-1794962400000",
@@ -167306,7 +167312,7 @@
   "edge": false,
   "trail_stop": 159.428,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "ETHUSD-1h-1794960000000",
