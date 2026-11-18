@@ -170825,7 +170825,7 @@
   "edge": false,
   "trail_stop": 0.8411,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 32
  },
  {
   "id": "XAUUSD-5m-1794987900000",
@@ -171382,7 +171382,7 @@
   "edge": false,
   "trail_stop": 0.994423,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "GBPUSD-1h-1794988800000",
@@ -172063,7 +172063,10 @@
    },
    "pat": []
   },
-  "edge": true
+  "edge": true,
+  "trail_stop": 1.098646,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "GBPUSD-1h-1794992400000",
@@ -172201,6 +172204,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.318948,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
