@@ -114814,7 +114814,7 @@
   "edge": true,
   "trail_stop": 3895.371,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "USDCHF-5m-1794571500000",
@@ -167040,7 +167040,7 @@
   "edge": true,
   "trail_stop": 3815.884,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "EURUSD-1h-1794960000000",
@@ -168423,9 +168423,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.320332,
-  "tp1_hit": false,
-  "bars_open": 12
+  "trail_stop": 1.320027,
+  "tp1_hit": true,
+  "bars_open": 14
  },
  {
   "id": "XAUUSD-5m-1794971100000",
@@ -168788,7 +168788,7 @@
    "TSMOM multi-lookback trend",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.22029612363603515,
@@ -168840,7 +168840,10 @@
   "edge": false,
   "trail_stop": 74.77,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-18T05:11+01:00"
  },
  {
   "id": "BTCUSD-5m-1794971700000",
@@ -168976,7 +168979,7 @@
   "edge": false,
   "trail_stop": 64601.752,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "USDCHF-5m-1794971700000",
@@ -169255,7 +169258,7 @@
   "edge": false,
   "trail_stop": 0.97395,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "EURUSD-5m-1794972300000",
@@ -169389,9 +169392,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.099875,
-  "tp1_hit": false,
-  "bars_open": 6
+  "trail_stop": 1.099626,
+  "tp1_hit": true,
+  "bars_open": 8
  },
  {
   "id": "XAUUSD-5m-1794973500000",
@@ -169523,8 +169526,8 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3808.686,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 3798.121,
+  "tp1_hit": true,
+  "bars_open": 4
  }
 ]
