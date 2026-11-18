@@ -175842,7 +175842,7 @@
   "edge": false,
   "trail_stop": 3753.922847050833,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "BTCUSD-15m-1795013100000",
@@ -176259,7 +176259,7 @@
   "edge": false,
   "trail_stop": 0.923593,
   "tp1_hit": false,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "EURUSD-5m-1795014900000",
@@ -177727,7 +177727,7 @@
    1.54
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00037057983566290937,
@@ -177779,7 +177779,10 @@
   "edge": false,
   "trail_stop": 1.315584,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 12,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-18T19:13+01:00"
  },
  {
   "id": "USDCHF-5m-1795021500000",
@@ -178456,7 +178459,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.841819,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "EURCHF-1h-1795021200000",
@@ -178592,6 +178598,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.923196,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
