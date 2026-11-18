@@ -170825,7 +170825,7 @@
   "edge": false,
   "trail_stop": 0.8411,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "XAUUSD-5m-1794987900000",
@@ -171330,7 +171330,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.003451189289747465,
@@ -171382,7 +171382,10 @@
   "edge": false,
   "trail_stop": 0.994423,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 18,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-18T11:42+01:00"
  },
  {
   "id": "GBPUSD-1h-1794988800000",
@@ -172341,7 +172344,7 @@
   "edge": false,
   "trail_stop": 1.097758,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-5m-1794997500000",
@@ -172474,6 +172477,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3776.345,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
