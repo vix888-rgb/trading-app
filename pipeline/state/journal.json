@@ -162026,7 +162026,7 @@
   "edge": false,
   "trail_stop": 0.83896,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "ETHUSD-1h-1794927600000",
@@ -167055,7 +167055,7 @@
   "edge": true,
   "trail_stop": 3793.381009226816,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "EURUSD-1h-1794960000000",
@@ -167191,7 +167191,7 @@
   "edge": false,
   "trail_stop": 1.098901,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "USDJPY-15m-1794962700000",
@@ -167469,7 +167469,7 @@
   "edge": false,
   "trail_stop": 1814.6540573594868,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "EURUSD-5m-1794964200000",
@@ -174039,7 +174039,7 @@
   "edge": false,
   "trail_stop": 0.923199,
   "tp1_hit": false,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "ETHUSD-5m-1795007700000",
@@ -174315,7 +174315,7 @@
   "edge": false,
   "trail_stop": 1.3164630173429002,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "EURUSD-15m-1795008600000",
@@ -174591,7 +174591,7 @@
   "edge": false,
   "trail_stop": 1.3165,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XRPUSD-15m-1795010400000",
@@ -175790,7 +175790,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 6.131939262708229,
@@ -175842,7 +175842,10 @@
   "edge": false,
   "trail_stop": 3753.922847050833,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 3.19,
+  "exit": "time exit",
+  "closed_at": "2026-11-18T20:03+01:00"
  },
  {
   "id": "BTCUSD-15m-1795013100000",
@@ -176259,7 +176262,7 @@
   "edge": false,
   "trail_stop": 0.923593,
   "tp1_hit": false,
-  "bars_open": 44
+  "bars_open": 46
  },
  {
   "id": "EURUSD-5m-1795014900000",
@@ -176953,7 +176956,7 @@
   "edge": false,
   "trail_stop": 3753.939,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "ETHUSD-5m-1795017300000",
@@ -177645,7 +177648,7 @@
   "edge": false,
   "trail_stop": 63558.13,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-5m-1795020900000",
@@ -178055,7 +178058,7 @@
   "edge": false,
   "trail_stop": 63869.732,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-15m-1795022100000",
@@ -178191,7 +178194,7 @@
   "edge": false,
   "trail_stop": 1794.619,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-15m-1795022100000",
@@ -178328,7 +178331,7 @@
   "edge": false,
   "trail_stop": 74.86016,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "USDCHF-15m-1795023900000",
@@ -178462,7 +178465,7 @@
   "edge": false,
   "trail_stop": 0.841819,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "EURCHF-1h-1795021200000",
@@ -178601,7 +178604,7 @@
   "edge": false,
   "trail_stop": 0.923196,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "XRPUSD-15m-1795024800000",
@@ -178737,6 +178740,142 @@
   "edge": false,
   "trail_stop": 0.989501,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
+ },
+ {
+  "id": "XAUUSD-5m-1795028100000",
+  "logged": "2026-11-18T20:03+01:00",
+  "bar_t": 1795028100000,
+  "bar_time": "Wed 18 Nov 19:55",
+  "sym": "XAUUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -59,
+  "entry": 3737.847,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 3743.871,
+  "tp": [
+   3731.822,
+   3725.798,
+   3719.774
+  ],
+  "inv": 3743.215,
+  "votes": [
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.18,
+   1.0,
+   0.66,
+   0.43,
+   1.0,
+   1.0,
+   1.16,
+   1.15,
+   0.76,
+   0.0,
+   0.0,
+   0.06,
+   1.09,
+   0.0,
+   0.0,
+   1.09,
+   1.0,
+   1.0,
+   0.45,
+   0.0,
+   0.0,
+   0.1,
+   0.34,
+   1.0,
+   1.0,
+   0.7,
+   1.02
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 4.016129177922874,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 20,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 3734.68778,
+    "hi": 3743.21542,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "FOMC Meeting Minutes",
+    "at": "2026-11-18T14:00:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 3772.66490323,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 3750.65636,
+    "dl": 3729.39509,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
