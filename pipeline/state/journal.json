@@ -163554,7 +163554,7 @@
   "edge": false,
   "trail_stop": 0.922778,
   "tp1_hit": false,
-  "bars_open": 46
+  "bars_open": 47
  },
  {
   "id": "XAUUSD-15m-1794938400000",
@@ -163686,9 +163686,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3811.948024910359,
+  "trail_stop": 3810.974434910359,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 45
  },
  {
   "id": "XAUUSD-5m-1794942000000",
@@ -165642,7 +165642,7 @@
   "edge": true,
   "trail_stop": 1.0999363174111871,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "GBPUSD-5m-1794953400000",
@@ -168096,7 +168096,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 253.15451358498325,
@@ -168148,7 +168148,10 @@
   "edge": false,
   "trail_stop": 64702.432,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-18T06:31+01:00"
  },
  {
   "id": "ETHUSD-15m-1794969000000",
@@ -168232,7 +168235,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 8.66747549187397,
@@ -168284,7 +168287,10 @@
   "edge": false,
   "trail_stop": 1816.251,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-18T06:31+01:00"
  },
  {
   "id": "GBPUSD-5m-1794970500000",
@@ -168425,7 +168431,7 @@
   "edge": false,
   "trail_stop": 1.320027,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "XAUUSD-5m-1794971100000",
@@ -169259,9 +169265,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.9776,
+  "trail_stop": 0.9780663745808578,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 26
  },
  {
   "id": "EURUSD-5m-1794972300000",
@@ -169397,7 +169403,7 @@
   "edge": false,
   "trail_stop": 1.0994432855731793,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "XAUUSD-5m-1794973500000",
@@ -169531,7 +169537,7 @@
   "edge": false,
   "trail_stop": 3798.121,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "USDCHF-15m-1794974400000",
@@ -169665,6 +169671,143 @@
   "edge": false,
   "trail_stop": 0.840163,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
+ },
+ {
+  "id": "SOLUSD-5m-1794979500000",
+  "logged": "2026-11-18T06:31+01:00",
+  "bar_t": 1794979500000,
+  "bar_time": "Wed 18 Nov 06:25",
+  "sym": "SOLUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 46,
+  "entry": 75.41,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 75.09236,
+  "tp": [
+   75.72764,
+   76.04528,
+   76.36292
+  ],
+  "inv": 74.71,
+  "votes": [
+   1,
+   1,
+   1,
+   -1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   1
+  ],
+  "weights": [
+   1.0,
+   1.22,
+   1.0,
+   0.62,
+   0.43,
+   1.0,
+   1.0,
+   1.77,
+   1.0,
+   0.6,
+   0.69,
+   0.55,
+   0.15,
+   1.31,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   1.23,
+   0.25,
+   0.0,
+   0.0,
+   0.83,
+   0.34,
+   1.0,
+   1.0,
+   0.31,
+   1.24
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Wyckoff spring / upthrust",
+   "Squeeze momentum breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)",
+   "TTM squeeze fire + EMA200 (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.21176083980347205,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 23,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 73.95923196,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 75.49,
+    "dl": 74.64,
+    "brk": 1,
+    "sqz": "fired",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
