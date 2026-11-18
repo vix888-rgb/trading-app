@@ -165654,7 +165654,7 @@
   "edge": true,
   "trail_stop": 1.0978888978631525,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 45
  },
  {
   "id": "GBPUSD-5m-1794953400000",
@@ -169695,7 +169695,7 @@
   "edge": false,
   "trail_stop": 0.84101,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "SOLUSD-5m-1794979500000",
@@ -169972,7 +169972,7 @@
   "edge": false,
   "trail_stop": 3785.226,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "GBPUSD-5m-1794985500000",
@@ -170344,7 +170344,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00030252081881443067,
@@ -170396,7 +170396,10 @@
   "edge": false,
   "trail_stop": 1.3162727253727309,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 24,
+  "R": 4.25,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-18T10:31+01:00"
  },
  {
   "id": "GBPUSD-15m-1794985200000",
@@ -170534,7 +170537,7 @@
   "edge": false,
   "trail_stop": 1.3170824730079405,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "EURUSD-5m-1794986700000",
@@ -170673,7 +170676,7 @@
   "edge": false,
   "trail_stop": 1.097237808319056,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "USDCHF-5m-1794986700000",
@@ -170810,7 +170813,7 @@
   "edge": false,
   "trail_stop": 0.8411,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "XAUUSD-5m-1794987900000",
@@ -171178,7 +171181,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.824226864641993,
@@ -171230,7 +171233,10 @@
   "edge": false,
   "trail_stop": 3775.904,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-18T10:31+01:00"
  },
  {
   "id": "XRPUSD-5m-1794992100000",
@@ -171364,7 +171370,7 @@
   "edge": false,
   "trail_stop": 0.994423,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "GBPUSD-1h-1794988800000",
@@ -171505,5 +171511,136 @@
   "trail_stop": 1.317091,
   "tp1_hit": false,
   "bars_open": 0
+ },
+ {
+  "id": "GBPUSD-5m-1794993900000",
+  "logged": "2026-11-18T10:31+01:00",
+  "bar_t": 1794993900000,
+  "bar_time": "Wed 18 Nov 10:25",
+  "sym": "GBPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -32,
+  "entry": 1.316274,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.316839,
+  "tp": [
+   1.31571,
+   1.315146,
+   1.314581
+  ],
+  "inv": 1.316604,
+  "votes": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   1.01,
+   0.43,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.4,
+   0.0,
+   0.56,
+   1.54,
+   0.35,
+   0.0,
+   1.0,
+   1.59,
+   1.0,
+   0.56,
+   0.68,
+   0.09,
+   1.0,
+   0.34,
+   1.0,
+   1.0,
+   0.51,
+   1.54
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00037623990851082186,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 88,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.31921947,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 1.31764448,
+    "dl": 1.31506264,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
