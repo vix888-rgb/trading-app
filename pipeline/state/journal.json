@@ -174318,7 +174318,7 @@
   "edge": false,
   "trail_stop": 1.3164458512052049,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 41
  },
  {
   "id": "EURUSD-15m-1795008600000",
@@ -176962,7 +176962,7 @@
   "edge": false,
   "trail_stop": 3753.939,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "ETHUSD-5m-1795017300000",
@@ -178064,7 +178064,7 @@
   "edge": false,
   "trail_stop": 63349.88,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "ETHUSD-15m-1795022100000",
@@ -178148,7 +178148,7 @@
   "strategies": [
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 13.025740975113957,
@@ -178200,7 +178200,10 @@
   "edge": false,
   "trail_stop": 1775.08,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 23,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-19T00:33+01:00"
  },
  {
   "id": "SOLUSD-15m-1795022100000",
@@ -178337,7 +178340,7 @@
   "edge": false,
   "trail_stop": 73.99,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "USDCHF-15m-1795023900000",
@@ -178749,7 +178752,7 @@
   "edge": false,
   "trail_stop": 0.9791,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "XAUUSD-5m-1795028100000",
@@ -180597,7 +180600,7 @@
   "edge": false,
   "trail_stop": 62859.491,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "EURUSD-5m-1795043100000",
@@ -180734,7 +180737,7 @@
   "edge": false,
   "trail_stop": 1.097943,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "EURCHF-5m-1795043700000",
@@ -180865,6 +180868,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.924435,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
