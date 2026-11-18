@@ -170394,9 +170394,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.3164284127048842,
+  "trail_stop": 1.3162727253727309,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "GBPUSD-15m-1794985200000",
@@ -170673,7 +170673,7 @@
   "edge": false,
   "trail_stop": 1.097237808319056,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "USDCHF-5m-1794986700000",
@@ -170810,7 +170810,7 @@
   "edge": false,
   "trail_stop": 0.8411,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "XAUUSD-5m-1794987900000",
@@ -171230,7 +171230,7 @@
   "edge": false,
   "trail_stop": 3775.904,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "XRPUSD-5m-1794992100000",
@@ -171361,7 +171361,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.994423,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-1h-1794988800000",
@@ -171498,6 +171501,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.317091,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
