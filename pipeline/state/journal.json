@@ -178880,9 +178880,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3737.847,
+  "trail_stop": 3735.2557167116915,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "BTCUSD-5m-1795028700000",
@@ -179023,7 +179023,7 @@
   "edge": false,
   "trail_stop": 63020.695,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "USDCHF-5m-1795028700000",
@@ -179162,9 +179162,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.843078,
-  "tp1_hit": false,
-  "bars_open": 4
+  "trail_stop": 0.84352,
+  "tp1_hit": true,
+  "bars_open": 6
  },
  {
   "id": "EURCHF-5m-1795028700000",
@@ -179305,7 +179305,7 @@
   "edge": false,
   "trail_stop": 0.924361,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1795028700000",
@@ -179446,7 +179446,7 @@
   "edge": false,
   "trail_stop": 1767.152,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "GBPUSD-5m-1795028700000",
@@ -179587,7 +179587,7 @@
   "edge": false,
   "trail_stop": 1.314691,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "EURUSD-5m-1795029900000",
@@ -179724,7 +179724,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.097291,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "EURUSD-15m-1795029300000",
@@ -179862,6 +179865,9 @@
    },
    "pat": []
   },
-  "edge": true
+  "edge": true,
+  "trail_stop": 1.097652,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
