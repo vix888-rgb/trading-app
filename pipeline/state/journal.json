@@ -83169,7 +83169,7 @@
   "edge": false,
   "trail_stop": 0.83234,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "EURCHF-15m-1794411900000",
@@ -89552,7 +89552,7 @@
   "edge": false,
   "trail_stop": 1.1066331357660792,
   "tp1_hit": true,
-  "bars_open": 25
+  "bars_open": 26
  },
  {
   "id": "SOLUSD-5m-1794444900000",
@@ -109443,7 +109443,7 @@
   "edge": false,
   "trail_stop": 1.323714,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "XRPUSD-5m-1794545400000",
@@ -154839,7 +154839,7 @@
   "edge": false,
   "trail_stop": 66931.096,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "ETHUSD-4h-1794873600000",
@@ -155116,7 +155116,7 @@
   "edge": false,
   "trail_stop": 75.88959,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "XRPUSD-4h-1794873600000",
@@ -155198,7 +155198,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.025147247453410133,
@@ -155253,7 +155253,10 @@
   "edge": false,
   "trail_stop": 1.005321,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-18T09:01+01:00"
  },
  {
   "id": "ETHUSD-5m-1794897600000",
@@ -162023,7 +162026,7 @@
   "edge": false,
   "trail_stop": 0.83896,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "ETHUSD-1h-1794927600000",
@@ -164672,7 +164675,7 @@
   "edge": false,
   "trail_stop": 0.922633,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "XRPUSD-5m-1794949200000",
@@ -165646,9 +165649,9 @@
    "pat": []
   },
   "edge": true,
-  "trail_stop": 1.0992128362329034,
+  "trail_stop": 1.0988513936669855,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 39
  },
  {
   "id": "GBPUSD-5m-1794953400000",
@@ -166630,7 +166633,7 @@
   "edge": false,
   "trail_stop": 1893.727,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "USDCHF-15m-1794960000000",
@@ -167180,9 +167183,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.100411,
-  "tp1_hit": false,
-  "bars_open": 6
+  "trail_stop": 1.098901,
+  "tp1_hit": true,
+  "bars_open": 7
  },
  {
   "id": "USDJPY-15m-1794962700000",
@@ -167460,7 +167463,7 @@
   "edge": false,
   "trail_stop": 1851.334,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "EURUSD-5m-1794964200000",
@@ -169689,7 +169692,7 @@
   "edge": false,
   "trail_stop": 0.840163,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "SOLUSD-5m-1794979500000",
@@ -169966,7 +169969,7 @@
   "edge": false,
   "trail_stop": 3785.226,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "GBPUSD-5m-1794985500000",
@@ -170246,9 +170249,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.9947629940377902,
+  "trail_stop": 0.9969629940377902,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "GBPUSD-5m-1794986100000",
@@ -170387,7 +170390,7 @@
   "edge": false,
   "trail_stop": 1.3182,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "GBPUSD-15m-1794985200000",
@@ -170525,7 +170528,7 @@
   "edge": false,
   "trail_stop": 1.318558,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "EURUSD-5m-1794986700000",
@@ -170662,9 +170665,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.098298,
+  "trail_stop": 1.098200304122889,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "USDCHF-5m-1794986700000",
@@ -170801,7 +170804,7 @@
   "edge": false,
   "trail_stop": 0.8411,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "XAUUSD-5m-1794987900000",
@@ -170935,6 +170938,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3772.813,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
