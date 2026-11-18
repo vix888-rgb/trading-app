@@ -174039,7 +174039,7 @@
   "edge": false,
   "trail_stop": 0.923199,
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "ETHUSD-5m-1795007700000",
@@ -174315,7 +174315,7 @@
   "edge": false,
   "trail_stop": 1.3164630173429002,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "EURUSD-15m-1795008600000",
@@ -175703,7 +175703,7 @@
   "edge": false,
   "trail_stop": 0.9824,
   "tp1_hit": true,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "XAUUSD-5m-1795013700000",
@@ -175839,7 +175839,7 @@
   "edge": false,
   "trail_stop": 3758.748737050833,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "BTCUSD-15m-1795013100000",
@@ -175977,7 +175977,7 @@
   "edge": false,
   "trail_stop": 63278.1426732447,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "GBPUSD-5m-1795013700000",
@@ -176253,7 +176253,7 @@
   "edge": false,
   "trail_stop": 0.923593,
   "tp1_hit": false,
-  "bars_open": 24
+  "bars_open": 26
  },
  {
   "id": "EURUSD-5m-1795014900000",
@@ -176669,7 +176669,7 @@
   "edge": false,
   "trail_stop": 1772.0386564790465,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "SOLUSD-15m-1795014000000",
@@ -176807,7 +176807,7 @@
   "edge": false,
   "trail_stop": 73.97065566071845,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "XAUUSD-15m-1795016700000",
@@ -176941,7 +176941,7 @@
   "edge": false,
   "trail_stop": 3753.939,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "ETHUSD-5m-1795017300000",
@@ -177075,7 +177075,7 @@
   "edge": false,
   "trail_stop": 1760.9507573738895,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "USDCHF-15m-1795017600000",
@@ -177209,7 +177209,7 @@
   "edge": false,
   "trail_stop": 0.84269,
   "tp1_hit": true,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "EURUSD-15m-1795018500000",
@@ -177294,7 +177294,7 @@
    "ICT/SMC sweep + CHoCH",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004991378649891421,
@@ -177346,7 +177346,10 @@
   "edge": true,
   "trail_stop": 1.09736,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-18T18:23+01:00"
  },
  {
   "id": "USDCHF-5m-1795020300000",
@@ -177758,7 +177761,7 @@
   "edge": false,
   "trail_stop": 1.315584,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "USDCHF-5m-1795021500000",
@@ -177891,6 +177894,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.842738,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
