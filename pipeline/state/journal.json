@@ -178070,7 +178070,7 @@
   "edge": false,
   "trail_stop": 63349.88,
   "tp1_hit": true,
-  "bars_open": 39
+  "bars_open": 40
  },
  {
   "id": "ETHUSD-15m-1795022100000",
@@ -178346,7 +178346,7 @@
   "edge": false,
   "trail_stop": 73.99,
   "tp1_hit": true,
-  "bars_open": 39
+  "bars_open": 40
  },
  {
   "id": "USDCHF-15m-1795023900000",
@@ -178758,7 +178758,7 @@
   "edge": false,
   "trail_stop": 0.9791,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 37
  },
  {
   "id": "XAUUSD-5m-1795028100000",
@@ -182148,7 +182148,7 @@
   "edge": false,
   "trail_stop": 1.313115405876485,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "GBPUSD-15m-1795050900000",
@@ -182288,7 +182288,7 @@
   "edge": false,
   "trail_stop": 1.3142095196564691,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "EURUSD-5m-1795053300000",
@@ -182425,7 +182425,7 @@
   "edge": false,
   "trail_stop": 1.0966926004638955,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "USDJPY-15m-1795052700000",
@@ -182566,7 +182566,7 @@
   "edge": false,
   "trail_stop": 159.4,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "USDCHF-15m-1795052700000",
@@ -182700,7 +182700,7 @@
   "edge": false,
   "trail_stop": 0.84316,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "XAUUSD-15m-1795055400000",
@@ -182836,7 +182836,7 @@
   "edge": false,
   "trail_stop": 3727.5521220484734,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "USDCHF-5m-1795056900000",
@@ -182975,7 +182975,7 @@
   "edge": false,
   "trail_stop": 0.843511,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "XRPUSD-1h-1795053600000",
@@ -183193,7 +183193,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.002531058760766839,
@@ -183245,7 +183245,10 @@
   "edge": false,
   "trail_stop": 0.962097,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-19T04:33+01:00"
  },
  {
   "id": "EURUSD-15m-1795057200000",
@@ -183383,6 +183386,142 @@
    },
    "pat": []
   },
-  "edge": true
+  "edge": true,
+  "trail_stop": 1.09645,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "XRPUSD-5m-1795058700000",
+  "logged": "2026-11-19T04:33+01:00",
+  "bar_t": 1795058700000,
+  "bar_time": "Thu 19 Nov 04:25",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -40,
+  "entry": 0.9632,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.96707,
+  "tp": [
+   0.95933,
+   0.95546,
+   0.951591
+  ],
+  "inv": 0.9704,
+  "votes": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   0.43,
+   0.43,
+   1.0,
+   1.03,
+   1.67,
+   1.0,
+   0.6,
+   0.0,
+   0.0,
+   0.0,
+   1.02,
+   0.3,
+   0.0,
+   1.0,
+   1.25,
+   1.0,
+   0.27,
+   0.0,
+   0.0,
+   0.0,
+   0.34,
+   1.0,
+   1.0,
+   0.45,
+   1.0
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.002579861757243376,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 25,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.97129849,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 0.9652,
+    "dl": 0.9568,
+    "brk": 0,
+    "sqz": "on",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
