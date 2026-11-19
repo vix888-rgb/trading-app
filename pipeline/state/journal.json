@@ -183697,7 +183697,7 @@
   "edge": false,
   "trail_stop": 0.923923,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "SOLUSD-5m-1795059300000",
@@ -183838,7 +183838,7 @@
   "edge": false,
   "trail_stop": 73.9594288623968,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "USDJPY-5m-1795061100000",
@@ -183974,7 +183974,7 @@
   "edge": false,
   "trail_stop": 159.54,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "XAUUSD-5m-1795061700000",
@@ -184056,7 +184056,7 @@
    1.02
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 6.302398837737658,
@@ -184108,7 +184108,10 @@
   "edge": false,
   "trail_stop": 3734.388,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-19T06:13+01:00"
  },
  {
   "id": "EURUSD-15m-1795060800000",
@@ -184373,6 +184376,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3738.127,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
