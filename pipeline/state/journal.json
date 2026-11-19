@@ -184547,9 +184547,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3713.383713372089,
+  "trail_stop": 3712.0736833720894,
   "tp1_hit": true,
-  "bars_open": 41
+  "bars_open": 42
  },
  {
   "id": "XAUUSD-5m-1795071300000",
@@ -187081,7 +187081,7 @@
   "edge": false,
   "trail_stop": 3692.616752994547,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "SOLUSD-5m-1795094700000",
@@ -187918,7 +187918,7 @@
   "edge": false,
   "trail_stop": 1.3136812989009388,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "BTCUSD-5m-1795100100000",
@@ -188339,7 +188339,7 @@
   "edge": false,
   "trail_stop": 63438.689400587195,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "SOLUSD-5m-1795100700000",
@@ -188850,7 +188850,7 @@
    "Wyckoff spring / upthrust",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0008306490136781758,
@@ -188905,7 +188905,10 @@
   "edge": false,
   "trail_stop": 0.925194,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-19T17:25+01:00"
  },
  {
   "id": "USDCHF-5m-1795102500000",
@@ -189183,7 +189186,7 @@
   "edge": false,
   "trail_stop": 63270.372,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "USDCHF-15m-1795102200000",
@@ -189327,7 +189330,7 @@
   "edge": false,
   "trail_stop": 0.84247,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-15m-1795102200000",
@@ -189469,7 +189472,7 @@
   "edge": false,
   "trail_stop": 1790.454,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "USDCHF-5m-1795103700000",
@@ -189603,7 +189606,7 @@
   "edge": false,
   "trail_stop": 0.842408,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "ETHUSD-1h-1795100400000",
@@ -189879,7 +189882,7 @@
   "edge": false,
   "trail_stop": 74.20426,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "GBPUSD-1h-1795100400000",
@@ -190022,5 +190025,138 @@
   "trail_stop": 1.314142,
   "tp1_hit": false,
   "bars_open": 0
+ },
+ {
+  "id": "EURUSD-5m-1795104900000",
+  "logged": "2026-11-19T17:25+01:00",
+  "bar_t": 1795104900000,
+  "bar_time": "Thu 19 Nov 17:15",
+  "sym": "EURUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -82,
+  "entry": 1.098298,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.098787,
+  "tp": [
+   1.097808,
+   1.097319,
+   1.09683
+  ],
+  "inv": 1.098901,
+  "votes": [
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   0.64,
+   0.43,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.65,
+   0.0,
+   0.15,
+   1.36,
+   0.5,
+   0.0,
+   1.0,
+   1.79,
+   1.27,
+   0.0,
+   0.01,
+   0.0,
+   0.0,
+   0.34,
+   1.0,
+   1.0,
+   1.09,
+   1.36
+  ],
+  "strategies": [
+   "Keltner volatility breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00032618676604360703,
+  "filters": {
+   "carry": -1.38,
+   "carryDir": -1,
+   "vol": true,
+   "atrPct": 95,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.09874652,
+    "side200": -1,
+    "stack": 0,
+    "st": -1,
+    "dh": 1.10047317,
+    "dl": 1.09781539,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
