@@ -191393,7 +191393,7 @@
    "ICT/SMC sweep + CHoCH",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0007175650641903346,
@@ -191445,7 +191445,10 @@
   "edge": false,
   "trail_stop": 0.925194,
   "tp1_hit": false,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": -0.26,
+  "exit": "time exit",
+  "closed_at": "2026-11-19T22:56+01:00"
  },
  {
   "id": "XAUUSD-15m-1795110300000",
@@ -192128,7 +192131,7 @@
   "edge": false,
   "trail_stop": 62167.11834188335,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 34
  },
  {
   "id": "BTCUSD-15m-1795113900000",
@@ -193224,9 +193227,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1758.7476431215518,
+  "trail_stop": 1757.6076431215517,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 26
  },
  {
   "id": "SOLUSD-15m-1795116600000",
@@ -193502,7 +193505,7 @@
   "edge": false,
   "trail_stop": 1.0979269151265219,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "GBPUSD-5m-1795121400000",
@@ -193639,7 +193642,7 @@
   "edge": false,
   "trail_stop": 1.3091286042501336,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "XAUUSD-5m-1795123800000",
@@ -193777,7 +193780,7 @@
   "edge": false,
   "trail_stop": 3631.761,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "EURUSD-15m-1795122900000",
