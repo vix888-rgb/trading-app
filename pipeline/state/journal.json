@@ -162026,7 +162026,7 @@
   "edge": false,
   "trail_stop": 0.83896,
   "tp1_hit": true,
-  "bars_open": 37
+  "bars_open": 38
  },
  {
   "id": "ETHUSD-1h-1794927600000",
@@ -167055,7 +167055,7 @@
   "edge": true,
   "trail_stop": 3759.067769226816,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "EURUSD-1h-1794960000000",
@@ -167191,7 +167191,7 @@
   "edge": false,
   "trail_stop": 1.098901,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "USDJPY-15m-1794962700000",
@@ -167469,7 +167469,7 @@
   "edge": false,
   "trail_stop": 1814.6540573594868,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "EURUSD-5m-1794964200000",
@@ -174597,7 +174597,7 @@
   "edge": false,
   "trail_stop": 1.3165,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "XRPUSD-15m-1795010400000",
@@ -178631,7 +178631,7 @@
   "edge": false,
   "trail_stop": 0.923196,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "XRPUSD-15m-1795024800000",
@@ -182303,7 +182303,7 @@
   "edge": false,
   "trail_stop": 1.3142095196564691,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "EURUSD-5m-1795053300000",
@@ -182584,7 +182584,7 @@
   "edge": false,
   "trail_stop": 159.4,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "USDCHF-15m-1795052700000",
@@ -182718,7 +182718,7 @@
   "edge": false,
   "trail_stop": 0.84316,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "XAUUSD-15m-1795055400000",
@@ -183697,7 +183697,7 @@
   "edge": false,
   "trail_stop": 0.923923,
   "tp1_hit": false,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "SOLUSD-5m-1795059300000",
@@ -183838,7 +183838,7 @@
   "edge": false,
   "trail_stop": 73.9594288623968,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "USDJPY-5m-1795061100000",
@@ -184196,7 +184196,7 @@
    1.31
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003705636683593368,
@@ -184248,7 +184248,10 @@
   "edge": true,
   "trail_stop": 1.096927,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-19T07:03+01:00"
  },
  {
   "id": "XAUUSD-15m-1795063500000",
@@ -184516,6 +184519,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3753.72,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
