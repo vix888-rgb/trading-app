@@ -178764,7 +178764,7 @@
   "edge": false,
   "trail_stop": 0.9791,
   "tp1_hit": true,
-  "bars_open": 41
+  "bars_open": 42
  },
  {
   "id": "XAUUSD-5m-1795028100000",
@@ -182297,7 +182297,7 @@
   "edge": false,
   "trail_stop": 1.3142095196564691,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "EURUSD-5m-1795053300000",
@@ -182379,7 +182379,7 @@
    1.36
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00020054941750280767,
@@ -182434,7 +182434,10 @@
   "edge": false,
   "trail_stop": 1.0966926004638955,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 32,
+  "R": 2.13,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-19T05:53+01:00"
  },
  {
   "id": "USDJPY-15m-1795052700000",
@@ -182575,7 +182578,7 @@
   "edge": false,
   "trail_stop": 159.4,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "USDCHF-15m-1795052700000",
@@ -182709,7 +182712,7 @@
   "edge": false,
   "trail_stop": 0.84316,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "XAUUSD-15m-1795055400000",
@@ -182845,7 +182848,7 @@
   "edge": false,
   "trail_stop": 3727.5521220484734,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "USDCHF-5m-1795056900000",
@@ -182984,7 +182987,7 @@
   "edge": false,
   "trail_stop": 0.843511,
   "tp1_hit": false,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "XRPUSD-1h-1795053600000",
@@ -183679,7 +183682,7 @@
   "edge": false,
   "trail_stop": 0.923923,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "SOLUSD-5m-1795059300000",
@@ -183818,9 +183821,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 73.9294288623968,
+  "trail_stop": 73.9594288623968,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "USDJPY-5m-1795061100000",
@@ -183956,7 +183959,7 @@
   "edge": false,
   "trail_stop": 159.54,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "XAUUSD-5m-1795061700000",
@@ -184090,7 +184093,7 @@
   "edge": false,
   "trail_stop": 3734.388,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "EURUSD-15m-1795060800000",
@@ -184224,6 +184227,6 @@
   "edge": true,
   "trail_stop": 1.096927,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  }
 ]
