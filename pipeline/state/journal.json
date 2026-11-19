@@ -162026,7 +162026,7 @@
   "edge": false,
   "trail_stop": 0.83896,
   "tp1_hit": true,
-  "bars_open": 45
+  "bars_open": 46
  },
  {
   "id": "ETHUSD-1h-1794927600000",
@@ -167055,7 +167055,7 @@
   "edge": true,
   "trail_stop": 3759.067769226816,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 37
  },
  {
   "id": "EURUSD-1h-1794960000000",
@@ -167420,7 +167420,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 20.45601433987175,
@@ -167472,7 +167472,10 @@
   "edge": false,
   "trail_stop": 1814.6540573594868,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 36,
+  "R": 0.2,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-19T15:05+01:00"
  },
  {
   "id": "EURUSD-5m-1794964200000",
@@ -178637,7 +178640,7 @@
   "edge": false,
   "trail_stop": 0.92502,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "XRPUSD-15m-1795024800000",
@@ -182538,7 +182541,7 @@
    "Liquidity Entry Zones",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.07777742006617189,
@@ -182593,7 +182596,10 @@
   "edge": false,
   "trail_stop": 159.65889154043845,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 4.02,
+  "exit": "time exit",
+  "closed_at": "2026-11-19T15:05+01:00"
  },
  {
   "id": "USDCHF-15m-1795052700000",
@@ -184540,7 +184546,7 @@
   "edge": false,
   "trail_stop": 3738.85,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 33
  },
  {
   "id": "XAUUSD-5m-1795071300000",
@@ -185674,7 +185680,7 @@
   "edge": false,
   "trail_stop": 0.924898,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "XRPUSD-5m-1795088700000",
@@ -186515,7 +186521,7 @@
   "edge": false,
   "trail_stop": 0.925283,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "XRPUSD-5m-1795092900000",
@@ -186650,9 +186656,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.985507,
-  "tp1_hit": false,
-  "bars_open": 10
+  "trail_stop": 0.9897,
+  "tp1_hit": true,
+  "bars_open": 12
  },
  {
   "id": "XAUUSD-5m-1795093500000",
@@ -187063,7 +187069,7 @@
   "edge": false,
   "trail_stop": 3722.778,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1795094700000",
@@ -187197,9 +187203,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 74.56212,
-  "tp1_hit": false,
-  "bars_open": 4
+  "trail_stop": 74.83,
+  "tp1_hit": true,
+  "bars_open": 6
  },
  {
   "id": "GBPUSD-15m-1795094100000",
@@ -187284,7 +187290,7 @@
    "ICT/SMC sweep + CHoCH",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0006031548184552054,
@@ -187336,7 +187342,10 @@
   "edge": false,
   "trail_stop": 1.315535,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-19T15:05+01:00"
  },
  {
   "id": "USDJPY-5m-1795095300000",
@@ -187420,7 +187429,7 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.036218938808884736,
@@ -187475,7 +187484,10 @@
   "edge": false,
   "trail_stop": 159.882,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-19T15:05+01:00"
  },
  {
   "id": "GBPUSD-5m-1795095300000",
@@ -187560,7 +187572,7 @@
    "Wyckoff spring / upthrust",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00030603892935926447,
@@ -187612,6 +187624,9 @@
   "edge": false,
   "trail_stop": 1.315357,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-19T15:05+01:00"
  }
 ]
