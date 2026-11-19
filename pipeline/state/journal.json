@@ -184544,9 +184544,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3738.85,
+  "trail_stop": 3730.6178433720893,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 39
  },
  {
   "id": "XAUUSD-5m-1795071300000",
@@ -185625,7 +185625,7 @@
   "strategies": [
    "Squeeze momentum breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.000741281132901205,
@@ -185680,7 +185680,10 @@
   "edge": false,
   "trail_stop": 0.92601,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 14,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-19T16:35+01:00"
  },
  {
   "id": "XRPUSD-5m-1795088700000",
@@ -187073,9 +187076,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3718.968642994547,
+  "trail_stop": 3711.160912994547,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "SOLUSD-5m-1795094700000",
@@ -187775,7 +187778,7 @@
   "edge": false,
   "trail_stop": 0.84321,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "GBPUSD-15m-1795098600000",
@@ -187907,9 +187910,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.314769,
+  "trail_stop": 1.3136812989009388,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "BTCUSD-5m-1795100100000",
@@ -188330,7 +188333,7 @@
   "edge": false,
   "trail_stop": 63660.45,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "SOLUSD-5m-1795100700000",
@@ -188551,7 +188554,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.05070929520366417,
@@ -188603,7 +188606,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 159.842,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-19T16:35+01:00"
  },
  {
   "id": "USDCHF-15m-1795100400000",
@@ -188738,6 +188746,147 @@
     "gate": false,
     "sgate": false,
     "d1": 1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 0.843076,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "EURCHF-15m-1795101300000",
+  "logged": "2026-11-19T16:35+01:00",
+  "bar_t": 1795101300000,
+  "bar_time": "Thu 19 Nov 16:15",
+  "sym": "EURCHF",
+  "tf": "15m",
+  "side": "long",
+  "score": 55,
+  "entry": 0.92644,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.925194,
+  "tp": [
+   0.927686,
+   0.928932,
+   0.930178
+  ],
+  "inv": 0.92552,
+  "votes": [
+   1,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   0.64,
+   0.43,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.17,
+   0.0,
+   0.0,
+   1.0,
+   0.15,
+   0.0,
+   1.0,
+   1.0,
+   1.0,
+   0.17,
+   0.0,
+   0.0,
+   0.77,
+   0.34,
+   1.0,
+   1.0,
+   0.35,
+   1.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Wyckoff spring / upthrust",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0008306490136781758,
+  "filters": {
+   "carry": 2.54,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 73,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 0.92531002,
+    "hi": 0.92746001,
+    "src": "15m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.92494967,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 0.92746001,
+    "dl": 0.92531002,
+    "brk": 1,
+    "sqz": "on",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
     "dgate": false,
     "vx": true,
     "vxgate": false
