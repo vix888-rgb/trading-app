@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T20:26+01:00",
+ "updated": "2026-11-19T20:36+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13109,15 +13109,15 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 1357,
+    "n": 1358,
     "hit": 32,
-    "avgR": 0.107,
+    "avgR": 0.108,
     "pf": 1.19
    },
    "Stochastic (14/3/3)": {
-    "n": 1357,
+    "n": 1358,
     "hit": 38,
-    "avgR": 0.048,
+    "avgR": 0.047,
     "pf": 1.08
    },
    "ADX trend strength (14)": {
@@ -13127,33 +13127,33 @@
     "pf": 1.59
    },
    "Ichimoku cloud": {
-    "n": 1187,
+    "n": 1188,
     "hit": 26,
-    "avgR": 0.217,
+    "avgR": 0.216,
     "pf": 1.43
    },
    "Supertrend (10/3)": {
-    "n": 1357,
+    "n": 1358,
     "hit": 31,
-    "avgR": 0.246,
+    "avgR": 0.247,
     "pf": 1.5
    },
    "Volume / OBV": {
-    "n": 762,
+    "n": 763,
     "hit": 28,
-    "avgR": 0.252,
+    "avgR": 0.25,
     "pf": 1.47
    },
    "VWAP (rolling 50 bars)": {
-    "n": 716,
-    "hit": 27,
-    "avgR": 0.134,
+    "n": 717,
+    "hit": 26,
+    "avgR": 0.132,
     "pf": 1.23
    },
    "Candlestick patterns": {
-    "n": 629,
+    "n": 630,
     "hit": 26,
-    "avgR": -0.234,
+    "avgR": -0.235,
     "pf": 0.65
    },
    "RSI divergence": {
@@ -13163,22 +13163,22 @@
     "pf": 0.8
    },
    "Multi-timeframe confirmation": {
-    "n": 1232,
+    "n": 1233,
     "hit": 24,
-    "avgR": 0.251,
+    "avgR": 0.25,
     "pf": 1.51
    },
    "News sentiment": {
-    "n": 871,
+    "n": 872,
     "hit": 25,
-    "avgR": 0.064,
+    "avgR": 0.063,
     "pf": 1.12
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 1357,
+    "n": 1358,
     "hit": 29,
-    "avgR": 0.199,
-    "pf": 1.39
+    "avgR": 0.198,
+    "pf": 1.38
    },
    "Order blocks": {
     "n": 520,
@@ -13187,9 +13187,9 @@
     "pf": 1.59
    },
    "Fair value gaps": {
-    "n": 978,
+    "n": 979,
     "hit": 31,
-    "avgR": 0.201,
+    "avgR": 0.202,
     "pf": 1.38
    },
    "Liquidity sweeps": {
@@ -13199,52 +13199,52 @@
     "pf": 0.72
    },
    "Volume profile / POC": {
-    "n": 1357,
+    "n": 1358,
     "hit": 35,
-    "avgR": -0.058,
+    "avgR": -0.059,
     "pf": 0.91
    },
    "Anchored VWAP": {
-    "n": 1157,
+    "n": 1158,
     "hit": 31,
     "avgR": -0.063,
     "pf": 0.9
    },
    "Heikin Ashi trend": {
-    "n": 1357,
+    "n": 1358,
     "hit": 28,
-    "avgR": -0.021,
+    "avgR": -0.022,
     "pf": 0.97
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 1357,
+    "n": 1358,
     "hit": 31,
-    "avgR": 0.237,
+    "avgR": 0.238,
     "pf": 1.48
    },
    "Hull MA (55)": {
-    "n": 1357,
+    "n": 1358,
     "hit": 31,
     "avgR": 0.158,
     "pf": 1.29
    },
    "Daily pivot points": {
-    "n": 1357,
+    "n": 1358,
     "hit": 27,
-    "avgR": 0.203,
+    "avgR": 0.202,
     "pf": 1.39
    },
    "EMA trend (20/50/200)": {
-    "n": 908,
+    "n": 909,
     "hit": 25,
-    "avgR": 0.305,
+    "avgR": 0.304,
     "pf": 1.62
    },
    "RSI (14)": {
-    "n": 942,
+    "n": 943,
     "hit": 28,
-    "avgR": 0.192,
-    "pf": 1.39
+    "avgR": 0.191,
+    "pf": 1.38
    },
    "Bollinger Bands (20/2)": {
     "n": 588,
@@ -13271,10 +13271,10 @@
     "pf": 0.51
    },
    "Volatility (ATR 14)": {
-    "n": 202,
+    "n": 203,
     "hit": 28,
-    "avgR": -0.07,
-    "pf": 0.9
+    "avgR": -0.075,
+    "pf": 0.89
    }
   },
   "sym": {
@@ -13297,10 +13297,10 @@
     "pf": 0.37
    },
    "ETHUSD": {
-    "n": 185,
+    "n": 186,
     "hit": 23,
-    "avgR": 0.493,
-    "pf": 2.06
+    "avgR": 0.485,
+    "pf": 2.04
    },
    "SOLUSD": {
     "n": 184,
@@ -13365,10 +13365,10 @@
     "pf": 0.77
    },
    "TSMOM multi-lookback trend": {
-    "n": 446,
+    "n": 447,
     "hit": 22,
-    "avgR": 0.268,
-    "pf": 1.56
+    "avgR": 0.265,
+    "pf": 1.55
    },
    "MTF top-down pullback": {
     "n": 24,
@@ -13450,12 +13450,12 @@
    }
   },
   "all": {
-   "n": 1357,
+   "n": 1358,
    "hit": 24,
-   "avgR": 0.245,
-   "pf": 1.5
+   "avgR": 0.244,
+   "pf": 1.49
   },
-  "open": 36,
+  "open": 35,
   "total": 1420
  },
  "rates": {
