@@ -185048,7 +185048,7 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0005741205568120472,
@@ -185103,7 +185103,10 @@
   "edge": false,
   "trail_stop": 0.92545,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 0.82,
+  "exit": "time exit",
+  "closed_at": "2026-11-19T12:44+01:00"
  },
  {
   "id": "EURCHF-15m-1795077000000",
@@ -185471,7 +185474,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.036910884984010385,
@@ -185526,6 +185529,9 @@
   "edge": false,
   "trail_stop": 159.863,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-19T12:44+01:00"
  }
 ]
