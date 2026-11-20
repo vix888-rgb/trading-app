@@ -167004,7 +167004,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 15.996479806704004,
@@ -167056,9 +167056,12 @@
    "pat": []
   },
   "edge": true,
-  "trail_stop": 3655.394099226816,
+  "trail_stop": 3649.629009226816,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 9.18,
+  "exit": "time exit",
+  "closed_at": "2026-11-20T02:06+01:00"
  },
  {
   "id": "EURUSD-1h-1794960000000",
@@ -187927,7 +187930,7 @@
   "edge": false,
   "trail_stop": 1.3109716717494495,
   "tp1_hit": true,
-  "bars_open": 31
+  "bars_open": 32
  },
  {
   "id": "BTCUSD-5m-1795100100000",
@@ -190054,7 +190057,7 @@
   "edge": false,
   "trail_stop": 1.311923,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "EURUSD-5m-1795104900000",
@@ -191585,9 +191588,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3631.1304493464004,
+  "trail_stop": 3625.3653593464005,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "USDCHF-1h-1795107600000",
@@ -192279,7 +192282,7 @@
   "edge": false,
   "trail_stop": 62802.552137984334,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "EURCHF-1h-1795111200000",
@@ -192419,7 +192422,7 @@
   "edge": false,
   "trail_stop": 0.924231,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "ETHUSD-5m-1795114800000",
@@ -192694,7 +192697,7 @@
   "edge": false,
   "trail_stop": 1777.71,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "ETHUSD-1h-1795111200000",
@@ -192828,7 +192831,7 @@
   "edge": false,
   "trail_stop": 1777.71,
   "tp1_hit": true,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "EURUSD-5m-1795115400000",
@@ -193107,7 +193110,7 @@
   "edge": false,
   "trail_stop": 0.9713,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "ETHUSD-5m-1795117200000",
@@ -193380,7 +193383,7 @@
   "edge": false,
   "trail_stop": 73.66,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "EURUSD-5m-1795118400000",
@@ -194082,7 +194085,7 @@
   "edge": false,
   "trail_stop": 1.098469,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "SOLUSD-1h-1795122000000",
@@ -194221,7 +194224,7 @@
   "edge": false,
   "trail_stop": 73.59696,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "XRPUSD-5m-1795125600000",
@@ -194496,7 +194499,7 @@
   "edge": false,
   "trail_stop": 0.971158,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "EURUSD-5m-1795126200000",
@@ -194771,7 +194774,7 @@
   "edge": false,
   "trail_stop": 1.309571,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 13
  },
  {
   "id": "EURUSD-15m-1795126500000",
@@ -195049,7 +195052,7 @@
   "edge": false,
   "trail_stop": 0.841925,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "XAUUSD-5m-1795129800000",
@@ -195739,7 +195742,7 @@
   "edge": false,
   "trail_stop": 62283.761,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "USDCHF-5m-1795131600000",
@@ -196300,7 +196303,7 @@
   "edge": true,
   "trail_stop": 1.098145,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-5m-1795134600000",
@@ -196434,7 +196437,7 @@
   "edge": false,
   "trail_stop": 1764.546,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1795135200000",
@@ -196570,7 +196573,7 @@
   "edge": false,
   "trail_stop": 73.2593,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "EURUSD-5m-1795135800000",
@@ -196704,7 +196707,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.097854,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-5m-1795135800000",
@@ -196788,7 +196794,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.002560233067072345,
@@ -196837,6 +196843,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.96284,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-20T02:06+01:00"
  }
 ]
