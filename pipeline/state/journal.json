@@ -203154,7 +203154,7 @@
    "TSMOM multi-lookback trend",
    "AB=CD (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.005299615442662595,
@@ -203206,7 +203206,10 @@
   "edge": false,
   "trail_stop": 0.9053984617706503,
   "tp1_hit": true,
-  "bars_open": 41
+  "bars_open": 41,
+  "R": 6.44,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-20T22:46+01:00"
  },
  {
   "id": "USDCHF-5m-1795175400000",
@@ -205665,7 +205668,7 @@
   "strategies": [
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 10.14110112860073,
@@ -205717,7 +205720,10 @@
   "edge": false,
   "trail_stop": 1622.034404514403,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 30,
+  "R": 8.7,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-20T22:46+01:00"
  },
  {
   "id": "XAUUSD-15m-1795183200000",
@@ -205855,7 +205861,7 @@
   "edge": false,
   "trail_stop": 3551.7129150354403,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "XAUUSD-5m-1795185000000",
@@ -208028,7 +208034,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.000263227656381019,
@@ -208080,7 +208086,10 @@
   "edge": false,
   "trail_stop": 1.0974238460655876,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 3.35,
+  "exit": "time exit",
+  "closed_at": "2026-11-20T22:46+01:00"
  },
  {
   "id": "EURUSD-15m-1795197600000",
@@ -208216,9 +208225,9 @@
    "pat": []
   },
   "edge": true,
-  "trail_stop": 1.098214,
-  "tp1_hit": false,
-  "bars_open": 13
+  "trail_stop": 1.097333,
+  "tp1_hit": true,
+  "bars_open": 14
  },
  {
   "id": "ETHUSD-5m-1795199400000",
@@ -208304,7 +208313,7 @@
    "ICT/SMC sweep + CHoCH",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 9.116587115151608,
@@ -208356,7 +208365,10 @@
   "edge": false,
   "trail_stop": 1617.9363484606065,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 36,
+  "R": 1.39,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-20T22:46+01:00"
  },
  {
   "id": "XRPUSD-5m-1795199400000",
@@ -208631,7 +208643,7 @@
   "edge": false,
   "trail_stop": 1.30962,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "SOLUSD-5m-1795200600000",
@@ -208718,7 +208730,7 @@
    "TSMOM multi-lookback trend",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.363634495158539,
@@ -208770,7 +208782,10 @@
   "edge": false,
   "trail_stop": 68.60453798063416,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 32,
+  "R": 0.89,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-20T22:46+01:00"
  },
  {
   "id": "XRPUSD-5m-1795201200000",
@@ -208855,7 +208870,7 @@
    "TSMOM multi-lookback trend",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.004603746116898416,
@@ -208907,7 +208922,10 @@
   "edge": false,
   "trail_stop": 0.9026149844675937,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 30,
+  "R": 0.01,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-20T22:46+01:00"
  },
  {
   "id": "XAUUSD-5m-1795202400000",
@@ -209185,7 +209203,7 @@
   "edge": false,
   "trail_stop": 1.308541,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "XAUUSD-5m-1795206600000",
@@ -209409,7 +209427,7 @@
    1.02
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.6423826424196855,
@@ -209463,7 +209481,10 @@
   "edge": false,
   "trail_stop": 68.44,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-20T22:46+01:00"
  },
  {
   "id": "BTCUSD-15m-1795208400000",
@@ -209545,7 +209566,7 @@
    1.1
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 462.2829263080175,
@@ -209597,7 +209618,10 @@
   "edge": false,
   "trail_stop": 59051.714,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-20T22:46+01:00"
  },
  {
   "id": "BTCUSD-5m-1795209600000",
@@ -209681,7 +209705,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 255.40530161995284,
@@ -209733,6 +209757,9 @@
   "edge": false,
   "trail_stop": 59022.938,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-20T22:46+01:00"
  }
 ]
