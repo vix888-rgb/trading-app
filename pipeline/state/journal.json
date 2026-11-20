@@ -202786,9 +202786,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 71.95031436553786,
+  "trail_stop": 71.28031436553786,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "GBPUSD-5m-1795171800000",
@@ -203201,9 +203201,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.9543984617706505,
+  "trail_stop": 0.9473984617706503,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "USDCHF-5m-1795175400000",
@@ -205523,7 +205523,7 @@
    "Liquidity Entry Zones",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 272.5066488505204,
@@ -205575,7 +205575,10 @@
   "edge": false,
   "trail_stop": 61882.0,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-20T16:16+01:00"
  },
  {
   "id": "ETHUSD-15m-1795182300000",
@@ -205711,7 +205714,7 @@
   "edge": false,
   "trail_stop": 1754.43,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XAUUSD-15m-1795183200000",
@@ -205849,7 +205852,7 @@
   "edge": false,
   "trail_stop": 3596.846,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-5m-1795185000000",
@@ -206684,7 +206687,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3584.685,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "BTCUSD-5m-1795186800000",
@@ -206818,7 +206824,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 61588.35,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-5m-1795186800000",
@@ -206951,7 +206960,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 70.77,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-5m-1795186800000",
@@ -207082,6 +207094,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.9413,
+  "tp1_hit": true,
+  "bars_open": 2
  }
 ]
