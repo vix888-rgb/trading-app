@@ -187928,9 +187928,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.3109716717494495,
+  "trail_stop": 1.310851866413451,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 37
  },
  {
   "id": "BTCUSD-5m-1795100100000",
@@ -191588,9 +191588,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3598.3144893464005,
+  "trail_stop": 3574.6811593464004,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 33
  },
  {
   "id": "USDCHF-1h-1795107600000",
@@ -192280,9 +192280,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 62669.29213798433,
+  "trail_stop": 62664.872137984334,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "EURCHF-1h-1795111200000",
@@ -192700,7 +192700,7 @@
   "edge": false,
   "trail_stop": 1770.4973083807151,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "ETHUSD-1h-1795111200000",
@@ -193113,7 +193113,7 @@
   "edge": false,
   "trail_stop": 0.9713,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "ETHUSD-5m-1795117200000",
@@ -193384,9 +193384,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 73.66,
+  "trail_stop": 73.5672220094427,
   "tp1_hit": true,
-  "bars_open": 25
+  "bars_open": 26
  },
  {
   "id": "EURUSD-5m-1795118400000",
@@ -196312,7 +196312,7 @@
   "edge": true,
   "trail_stop": 1.097574,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "ETHUSD-5m-1795134600000",
@@ -196725,7 +196725,7 @@
   "edge": false,
   "trail_stop": 1.0972370193857681,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "XRPUSD-5m-1795135800000",
@@ -196998,9 +196998,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 62007.92535681803,
+  "trail_stop": 62003.50535681803,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1795138800000",
@@ -197134,9 +197134,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 72.77,
+  "trail_stop": 72.64505410685203,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1795139400000",
@@ -197279,7 +197279,7 @@
   "edge": false,
   "trail_stop": 1744.367,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-5m-1795139400000",
@@ -197417,8 +197417,139 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.308861,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 1.308472,
+  "tp1_hit": true,
+  "bars_open": 4
+ },
+ {
+  "id": "USDCHF-5m-1795140600000",
+  "logged": "2026-11-20T03:16+01:00",
+  "bar_t": 1795140600000,
+  "bar_time": "Fri 20 Nov 03:10",
+  "sym": "USDCHF",
+  "tf": "5m",
+  "side": "long",
+  "score": 25,
+  "entry": 0.84372,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.843212,
+  "tp": [
+   0.844228,
+   0.844736,
+   0.845243
+  ],
+  "inv": 0.84271,
+  "votes": [
+   0,
+   1,
+   1,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   0.9,
+   0.43,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.62,
+   0.0,
+   0.32,
+   1.56,
+   0.01,
+   0.0,
+   1.0,
+   1.0,
+   1.0,
+   0.34,
+   0.26,
+   0.0,
+   0.23,
+   0.34,
+   1.0,
+   1.0,
+   0.31,
+   1.56
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0003384965737500865,
+  "filters": {
+   "carry": 3.92,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 82,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.84328469,
+    "side200": 1,
+    "stack": 0,
+    "st": -1,
+    "dh": 0.84385997,
+    "dl": 0.84266001,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": 1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
