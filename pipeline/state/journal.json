@@ -202788,7 +202788,7 @@
   "edge": false,
   "trail_stop": 72.04031436553787,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "GBPUSD-5m-1795171800000",
@@ -203203,7 +203203,7 @@
   "edge": false,
   "trail_stop": 0.9543984617706505,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "USDCHF-5m-1795175400000",
@@ -205575,7 +205575,7 @@
   "edge": false,
   "trail_stop": 62290.76,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-15m-1795182300000",
@@ -205711,7 +205711,7 @@
   "edge": false,
   "trail_stop": 1769.642,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "XAUUSD-15m-1795183200000",
@@ -205849,6 +205849,137 @@
   "edge": false,
   "trail_stop": 3596.846,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
+ },
+ {
+  "id": "XAUUSD-5m-1795185000000",
+  "logged": "2026-11-20T15:36+01:00",
+  "bar_t": 1795185000000,
+  "bar_time": "Fri 20 Nov 15:30",
+  "sym": "XAUUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -27,
+  "entry": 3574.278,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 3584.552,
+  "tp": [
+   3564.003,
+   3553.728,
+   3543.453
+  ],
+  "inv": 3579.482,
+  "votes": [
+   0,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.18,
+   1.0,
+   0.66,
+   0.43,
+   1.0,
+   1.0,
+   1.16,
+   1.15,
+   0.76,
+   0.0,
+   0.0,
+   0.06,
+   1.09,
+   0.0,
+   0.0,
+   1.09,
+   1.0,
+   1.0,
+   0.45,
+   0.0,
+   0.0,
+   0.1,
+   0.34,
+   1.0,
+   1.0,
+   0.7,
+   1.02
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 6.849821637986375,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 54,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 3587.44432636,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 3581.53361,
+    "dl": 3554.16548,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
