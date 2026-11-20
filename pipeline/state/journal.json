@@ -187927,7 +187927,7 @@
   "edge": false,
   "trail_stop": 1.3109716717494495,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "BTCUSD-5m-1795100100000",
@@ -191587,7 +191587,7 @@
   "edge": false,
   "trail_stop": 3631.1304493464004,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 25
  },
  {
   "id": "USDCHF-1h-1795107600000",
@@ -192279,7 +192279,7 @@
   "edge": false,
   "trail_stop": 62802.552137984334,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "EURCHF-1h-1795111200000",
@@ -192694,7 +192694,7 @@
   "edge": false,
   "trail_stop": 1777.71,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "ETHUSD-1h-1795111200000",
@@ -193107,7 +193107,7 @@
   "edge": false,
   "trail_stop": 0.9713,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "ETHUSD-5m-1795117200000",
@@ -193380,7 +193380,7 @@
   "edge": false,
   "trail_stop": 73.66,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "EURUSD-5m-1795118400000",
@@ -194582,7 +194582,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00022805815970965824,
@@ -194634,7 +194634,10 @@
   "edge": false,
   "trail_stop": 1.097435,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-20T01:17+01:00"
  },
  {
   "id": "GBPUSD-5m-1795126200000",
@@ -194768,7 +194771,7 @@
   "edge": false,
   "trail_stop": 1.309571,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 3
  },
  {
   "id": "EURUSD-15m-1795126500000",
@@ -194907,7 +194910,7 @@
   "edge": true,
   "trail_stop": 1.097764,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "USDCHF-1h-1795125600000",
@@ -195405,7 +195408,7 @@
    "TSMOM multi-lookback trend",
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.217846885319784,
@@ -195457,7 +195460,10 @@
   "edge": false,
   "trail_stop": 3612.279567541279,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": 1.85,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-20T01:17+01:00"
  },
  {
   "id": "ETHUSD-5m-1795131000000",
@@ -195730,7 +195736,7 @@
   "edge": false,
   "trail_stop": 62283.761,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "USDCHF-5m-1795131600000",
@@ -195866,7 +195872,7 @@
   "edge": false,
   "trail_stop": 0.843581,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 3
  },
  {
   "id": "USDCHF-15m-1795131000000",
@@ -196002,6 +196008,6 @@
   "edge": false,
   "trail_stop": 0.843253,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  }
 ]
