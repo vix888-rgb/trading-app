@@ -192852,7 +192852,7 @@
   "edge": false,
   "trail_stop": 1777.71,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "EURUSD-5m-1795115400000",
@@ -194252,9 +194252,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 73.59696,
-  "tp1_hit": false,
-  "bars_open": 14
+  "trail_stop": 72.24,
+  "tp1_hit": true,
+  "bars_open": 15
  },
  {
   "id": "XRPUSD-5m-1795125600000",
@@ -199431,7 +199431,7 @@
   "edge": false,
   "trail_stop": 63022.515,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-15m-1795157100000",
@@ -199565,7 +199565,7 @@
   "edge": false,
   "trail_stop": 1750.06,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "SOLUSD-15m-1795159800000",
@@ -200268,7 +200268,7 @@
   "edge": false,
   "trail_stop": 1.311561,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "EURUSD-15m-1795162500000",
@@ -201195,7 +201195,7 @@
   "strategies": [
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0009736194781208639,
@@ -201247,7 +201247,10 @@
   "edge": false,
   "trail_stop": 1.098433,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 3,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-20T14:06+01:00"
  },
  {
   "id": "USDCHF-1h-1795161600000",
@@ -201669,7 +201672,7 @@
   "edge": false,
   "trail_stop": 0.977137,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-15m-1795164300000",
@@ -202779,7 +202782,7 @@
   "edge": false,
   "trail_stop": 72.35031436553787,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "GBPUSD-5m-1795171800000",
@@ -203054,7 +203057,7 @@
   "edge": false,
   "trail_stop": 0.9537816363790554,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "XRPUSD-15m-1795172400000",
@@ -203191,7 +203194,7 @@
   "edge": false,
   "trail_stop": 0.9566,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "USDCHF-5m-1795175400000",
@@ -204026,7 +204029,7 @@
   "edge": false,
   "trail_stop": 3588.579,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "BTCUSD-5m-1795176600000",
@@ -204307,7 +204310,7 @@
   "edge": false,
   "trail_stop": 61818.442,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "GBPUSD-5m-1795176600000",
@@ -204585,7 +204588,7 @@
   "edge": false,
   "trail_stop": 1747.273,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "SOLUSD-5m-1795177800000",
@@ -204719,7 +204722,7 @@
   "edge": false,
   "trail_stop": 71.61122,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "BTCUSD-5m-1795178400000",
@@ -204855,7 +204858,7 @@
   "edge": false,
   "trail_stop": 61818.995,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "XAUUSD-5m-1795179000000",
@@ -204941,7 +204944,7 @@
    "Wyckoff spring / upthrust",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.643682435896472,
@@ -204990,6 +204993,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3577.32,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-20T14:06+01:00"
  }
 ]
