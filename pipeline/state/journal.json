@@ -203206,7 +203206,7 @@
   "edge": false,
   "trail_stop": 0.9212984617706503,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "USDCHF-5m-1795175400000",
@@ -205717,7 +205717,7 @@
   "edge": false,
   "trail_stop": 1659.254404514403,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "XAUUSD-15m-1795183200000",
@@ -205853,9 +205853,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3558.10905503544,
+  "trail_stop": 3554.8877550354405,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "XAUUSD-5m-1795185000000",
@@ -206691,9 +206691,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3547.4332674792163,
+  "trail_stop": 3544.2119674792166,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 44
  },
  {
   "id": "BTCUSD-5m-1795186800000",
@@ -207246,9 +207246,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.310879,
-  "tp1_hit": false,
-  "bars_open": 30
+  "trail_stop": 1.31017,
+  "tp1_hit": true,
+  "bars_open": 32
  },
  {
   "id": "GBPUSD-1h-1795186800000",
@@ -207932,7 +207932,7 @@
   "edge": false,
   "trail_stop": 59557.77,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "EURUSD-5m-1795196400000",
@@ -208071,7 +208071,7 @@
   "edge": false,
   "trail_stop": 1.097815,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "EURUSD-15m-1795197600000",
@@ -208209,7 +208209,7 @@
   "edge": true,
   "trail_stop": 1.098214,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-5m-1795199400000",
@@ -208344,7 +208344,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1650.575,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-5m-1795199400000",
@@ -208475,7 +208478,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.91645,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-15m-1795198500000",
@@ -208610,6 +208616,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.310616,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
