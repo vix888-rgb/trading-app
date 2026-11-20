@@ -193404,7 +193404,7 @@
   "edge": false,
   "trail_stop": 73.5372220094427,
   "tp1_hit": true,
-  "bars_open": 45
+  "bars_open": 46
  },
  {
   "id": "EURUSD-5m-1795118400000",
@@ -199125,7 +199125,7 @@
   "edge": false,
   "trail_stop": 0.923948,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "BTCUSD-15m-1795157100000",
@@ -199256,7 +199256,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 62499.769,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "BTCUSD-1h-1795154400000",
@@ -199413,7 +199416,10 @@
     }
    ]
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 63022.515,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "ETHUSD-15m-1795157100000",
@@ -199544,6 +199550,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1765.709,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
