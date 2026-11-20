@@ -210042,7 +210042,7 @@
   "edge": false,
   "trail_stop": 1644.398,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "BTCUSD-15m-1795212000000",
@@ -210179,7 +210179,7 @@
   "edge": false,
   "trail_stop": 59914.749,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "EURUSD-15m-1795213786000",
@@ -210317,5 +210317,138 @@
   "trail_stop": 1.098012,
   "tp1_hit": false,
   "bars_open": 0
+ },
+ {
+  "id": "SOLUSD-15m-1795217400000",
+  "logged": "2026-11-21T00:46+01:00",
+  "bar_t": 1795217400000,
+  "bar_time": "Sat 21 Nov 00:30",
+  "sym": "SOLUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -25,
+  "entry": 69.11,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 69.97124,
+  "tp": [
+   68.24876,
+   67.38751,
+   66.52627
+  ],
+  "inv": 69.77,
+  "votes": [
+   0,
+   1,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.29,
+   0.43,
+   0.7,
+   1.0,
+   1.0,
+   1.14,
+   1.0,
+   0.6,
+   0.0,
+   0.0,
+   0.15,
+   1.23,
+   0.0,
+   0.0,
+   1.01,
+   1.4,
+   1.36,
+   0.0,
+   0.0,
+   0.0,
+   0.01,
+   0.34,
+   1.0,
+   1.0,
+   0.62,
+   1.02
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.5741618626373325,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 87,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 71.78174376,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 69.64,
+    "dl": 67.15,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
