@@ -187930,7 +187930,7 @@
   "edge": false,
   "trail_stop": 1.310851866413451,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 39
  },
  {
   "id": "BTCUSD-5m-1795100100000",
@@ -191588,9 +191588,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3572.2925693464003,
+  "trail_stop": 3562.4550093464004,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 35
  },
  {
   "id": "USDCHF-1h-1795107600000",
@@ -192282,7 +192282,7 @@
   "edge": false,
   "trail_stop": 62664.872137984334,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 31
  },
  {
   "id": "EURCHF-1h-1795111200000",
@@ -192700,7 +192700,7 @@
   "edge": false,
   "trail_stop": 1770.4973083807151,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 31
  },
  {
   "id": "ETHUSD-1h-1795111200000",
@@ -193113,7 +193113,7 @@
   "edge": false,
   "trail_stop": 0.9713,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "ETHUSD-5m-1795117200000",
@@ -193384,9 +193384,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 73.5672220094427,
+  "trail_stop": 73.5372220094427,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "EURUSD-5m-1795118400000",
@@ -196312,7 +196312,7 @@
   "edge": true,
   "trail_stop": 1.097574,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "ETHUSD-5m-1795134600000",
@@ -197003,7 +197003,7 @@
   "edge": false,
   "trail_stop": 62003.50535681803,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "SOLUSD-5m-1795138800000",
@@ -197139,7 +197139,7 @@
   "edge": false,
   "trail_stop": 72.61505410685203,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "ETHUSD-5m-1795139400000",
@@ -197282,7 +197282,7 @@
   "edge": false,
   "trail_stop": 1744.367,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "GBPUSD-5m-1795139400000",
@@ -197698,7 +197698,7 @@
   "edge": false,
   "trail_stop": 0.958998,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-5m-1795141200000",
@@ -197783,7 +197783,7 @@
    "Wyckoff spring / upthrust",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0002797276362195437,
@@ -197835,6 +197835,140 @@
   "edge": false,
   "trail_stop": 1.309097,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-20T03:46+01:00"
+ },
+ {
+  "id": "EURUSD-5m-1795142400000",
+  "logged": "2026-11-20T03:46+01:00",
+  "bar_t": 1795142400000,
+  "bar_time": "Fri 20 Nov 03:40",
+  "sym": "EURUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -35,
+  "entry": 1.097213,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.09751,
+  "tp": [
+   1.096916,
+   1.096619,
+   1.096321
+  ],
+  "inv": 1.097454,
+  "votes": [
+   0,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.0,
+   1.0,
+   0.64,
+   0.43,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.65,
+   0.0,
+   0.15,
+   1.36,
+   0.5,
+   0.0,
+   1.0,
+   1.79,
+   1.27,
+   0.0,
+   0.01,
+   0.0,
+   0.0,
+   0.34,
+   1.0,
+   1.0,
+   1.09,
+   1.36
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00019814358990091484,
+  "filters": {
+   "carry": -1.38,
+   "carryDir": -1,
+   "vol": true,
+   "atrPct": 32,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.09804954,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 1.09769487,
+    "dl": 1.09649122,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
