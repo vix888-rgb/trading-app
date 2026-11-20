@@ -199565,7 +199565,7 @@
   "edge": false,
   "trail_stop": 1765.709,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "SOLUSD-15m-1795159800000",
@@ -199702,7 +199702,7 @@
   "edge": false,
   "trail_stop": 73.15085,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "BTCUSD-5m-1795161000000",
@@ -200404,7 +200404,7 @@
   "edge": true,
   "trail_stop": 1.097936,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "EURUSD-5m-1795164000000",
@@ -200679,9 +200679,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.097462,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 1.097093,
+  "tp1_hit": true,
+  "bars_open": 4
  },
  {
   "id": "USDCHF-5m-1795164600000",
@@ -200819,7 +200819,7 @@
   "edge": false,
   "trail_stop": 0.842338,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-5m-1795164600000",
@@ -200956,7 +200956,7 @@
   "edge": false,
   "trail_stop": 1.3106,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-15m-1795164300000",
@@ -201090,7 +201090,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 62229.365,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "EURUSD-1h-1795161600000",
@@ -201223,7 +201226,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.098433,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "USDCHF-1h-1795161600000",
@@ -201360,7 +201366,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.8414,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "XRPUSD-15m-1795164300000",
@@ -201493,7 +201502,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.968012,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "XRPUSD-1h-1795161600000",
@@ -201630,7 +201642,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.977137,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "GBPUSD-15m-1795164300000",
@@ -201766,6 +201781,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.310966,
+  "tp1_hit": false,
+  "bars_open": 1
  }
 ]
