@@ -202788,7 +202788,7 @@
   "edge": false,
   "trail_stop": 72.04031436553787,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "GBPUSD-5m-1795171800000",
@@ -203203,7 +203203,7 @@
   "edge": false,
   "trail_stop": 0.9543984617706505,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "USDCHF-5m-1795175400000",
@@ -203983,7 +203983,7 @@
    1.03
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 11.158238835048857,
@@ -204038,7 +204038,10 @@
   "edge": false,
   "trail_stop": 3571.841,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 7,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-20T15:16+01:00"
  },
  {
   "id": "BTCUSD-5m-1795176600000",
@@ -205242,7 +205245,7 @@
    1.02
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 6.404186441390508,
@@ -205294,7 +205297,10 @@
   "edge": false,
   "trail_stop": 3578.442,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-20T15:16+01:00"
  },
  {
   "id": "SOLUSD-5m-1795182600000",
@@ -205428,7 +205434,7 @@
   "edge": false,
   "trail_stop": 71.57824,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-15m-1795182300000",
@@ -205563,7 +205569,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 62290.76,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "ETHUSD-15m-1795182300000",
@@ -205685,6 +205694,144 @@
     "dl": 1727.53,
     "brk": -1,
     "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1769.642,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "XAUUSD-15m-1795183200000",
+  "logged": "2026-11-20T15:16+01:00",
+  "bar_t": 1795183200000,
+  "bar_time": "Fri 20 Nov 15:00",
+  "sym": "XAUUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -43,
+  "entry": 3578.945,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 3596.846,
+  "tp": [
+   3561.044,
+   3543.143,
+   3525.242
+  ],
+  "inv": 3595.508,
+  "votes": [
+   0,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.11,
+   1.0,
+   0.43,
+   0.61,
+   1.0,
+   1.0,
+   1.0,
+   1.15,
+   0.76,
+   0.0,
+   0.0,
+   0.34,
+   1.25,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   1.23,
+   0.0,
+   0.29,
+   0.0,
+   0.44,
+   0.6,
+   1.0,
+   1.06,
+   0.59,
+   1.03
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "TSMOM multi-lookback trend",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 11.933976258860016,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 83,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 3661.32454447,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 3595.50819,
+    "dl": 3554.16548,
+    "brk": -1,
+    "sqz": "on",
     "mom": -1,
     "sess": true,
     "gate": false,
