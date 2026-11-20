@@ -205382,7 +205382,7 @@
    1.24
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.27216105876345614,
@@ -205434,7 +205434,10 @@
   "edge": false,
   "trail_stop": 71.57824,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-20T15:26+01:00"
  },
  {
   "id": "BTCUSD-15m-1795182300000",
@@ -205843,6 +205846,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3596.846,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
