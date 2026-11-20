@@ -198224,7 +198224,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 8.523080097608025,
@@ -198276,7 +198276,10 @@
   "edge": false,
   "trail_stop": 1739.34,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 30,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-20T06:56+01:00"
  },
  {
   "id": "XAUUSD-5m-1795147200000",
@@ -198358,7 +198361,7 @@
    1.02
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 10.868294573306569,
@@ -198410,7 +198413,10 @@
   "edge": false,
   "trail_stop": 3546.262,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 20,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-20T06:56+01:00"
  },
  {
   "id": "BTCUSD-5m-1795147200000",
@@ -198492,7 +198498,7 @@
    1.98
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 209.5096563833846,
@@ -198544,7 +198550,10 @@
   "edge": false,
   "trail_stop": 61922.39,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 20,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-20T06:56+01:00"
  },
  {
   "id": "SOLUSD-5m-1795148400000",
@@ -198763,7 +198772,7 @@
    1.24
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.25633041985367633,
@@ -198815,7 +198824,10 @@
   "edge": false,
   "trail_stop": 72.5745,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-20T06:56+01:00"
  },
  {
   "id": "XAUUSD-15m-1795152600000",
@@ -198948,6 +198960,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3540.462,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
