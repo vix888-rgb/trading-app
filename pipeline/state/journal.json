@@ -203054,7 +203054,7 @@
   "edge": false,
   "trail_stop": 0.9537816363790554,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "XRPUSD-15m-1795172400000",
@@ -204585,7 +204585,7 @@
   "edge": false,
   "trail_stop": 1747.273,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1795177800000",
@@ -204719,7 +204719,7 @@
   "edge": false,
   "trail_stop": 71.61122,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-5m-1795178400000",
@@ -204848,6 +204848,144 @@
     "d1": -1,
     "dgate": false,
     "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 61818.995,
+  "tp1_hit": false,
+  "bars_open": 2
+ },
+ {
+  "id": "XAUUSD-5m-1795179000000",
+  "logged": "2026-11-20T13:56+01:00",
+  "bar_t": 1795179000000,
+  "bar_time": "Fri 20 Nov 13:50",
+  "sym": "XAUUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -67,
+  "entry": 3570.355,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 3577.32,
+  "tp": [
+   3563.389,
+   3556.423,
+   3549.458
+  ],
+  "inv": 3581.754,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   1.18,
+   1.0,
+   0.66,
+   0.43,
+   1.0,
+   1.0,
+   1.16,
+   1.15,
+   0.76,
+   0.0,
+   0.0,
+   0.06,
+   1.09,
+   0.0,
+   0.0,
+   1.09,
+   1.0,
+   1.0,
+   0.45,
+   0.0,
+   0.0,
+   0.1,
+   0.34,
+   1.0,
+   1.0,
+   0.7,
+   1.02
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Wyckoff spring / upthrust",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 4.643682435896472,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 20,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 3591.46723678,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 3590.40643,
+    "dl": 3566.84263,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
     "vxgate": false
    },
    "pat": []
