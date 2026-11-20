@@ -205981,9 +205981,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3584.552,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 3574.278,
+  "tp1_hit": true,
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-5m-1795185600000",
@@ -206067,7 +206067,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 184.55983881300796,
@@ -206116,7 +206116,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 61737.91,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-20T15:56+01:00"
  },
  {
   "id": "ETHUSD-5m-1795185600000",
@@ -206251,7 +206256,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1745.033,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-5m-1795185600000",
@@ -206386,7 +206394,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 71.1435,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-5m-1795185600000",
@@ -206520,6 +206531,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.945352,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
