@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T08:56+01:00",
+ "updated": "2026-11-21T09:06+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13109,46 +13109,46 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 1505,
+    "n": 1506,
     "hit": 32,
-    "avgR": 0.131,
+    "avgR": 0.134,
     "pf": 1.24
    },
    "Stochastic (14/3/3)": {
-    "n": 1505,
+    "n": 1506,
     "hit": 38,
-    "avgR": 0.013,
+    "avgR": 0.01,
     "pf": 1.02
    },
    "ADX trend strength (14)": {
-    "n": 892,
-    "hit": 29,
-    "avgR": 0.314,
-    "pf": 1.67
+    "n": 893,
+    "hit": 30,
+    "avgR": 0.319,
+    "pf": 1.68
    },
    "Ichimoku cloud": {
-    "n": 1316,
+    "n": 1317,
     "hit": 26,
-    "avgR": 0.241,
-    "pf": 1.49
+    "avgR": 0.244,
+    "pf": 1.5
    },
    "Supertrend (10/3)": {
-    "n": 1505,
+    "n": 1506,
     "hit": 31,
-    "avgR": 0.259,
+    "avgR": 0.262,
     "pf": 1.53
    },
    "Volume / OBV": {
-    "n": 839,
+    "n": 840,
     "hit": 28,
-    "avgR": 0.215,
-    "pf": 1.38
+    "avgR": 0.22,
+    "pf": 1.39
    },
    "VWAP (rolling 50 bars)": {
-    "n": 783,
+    "n": 784,
     "hit": 28,
-    "avgR": 0.177,
-    "pf": 1.31
+    "avgR": 0.182,
+    "pf": 1.32
    },
    "Candlestick patterns": {
     "n": 692,
@@ -13157,94 +13157,94 @@
     "pf": 0.65
    },
    "RSI divergence": {
-    "n": 212,
+    "n": 213,
     "hit": 38,
-    "avgR": -0.164,
-    "pf": 0.74
+    "avgR": -0.185,
+    "pf": 0.71
    },
    "Multi-timeframe confirmation": {
-    "n": 1377,
+    "n": 1378,
     "hit": 25,
-    "avgR": 0.284,
-    "pf": 1.59
+    "avgR": 0.287,
+    "pf": 1.6
    },
    "News sentiment": {
-    "n": 980,
+    "n": 981,
     "hit": 26,
-    "avgR": 0.096,
+    "avgR": 0.101,
     "pf": 1.18
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 1505,
+    "n": 1506,
     "hit": 30,
-    "avgR": 0.227,
+    "avgR": 0.23,
     "pf": 1.45
    },
    "Order blocks": {
-    "n": 585,
+    "n": 586,
     "hit": 38,
-    "avgR": 0.292,
-    "pf": 1.61
+    "avgR": 0.299,
+    "pf": 1.63
    },
    "Fair value gaps": {
-    "n": 1088,
+    "n": 1089,
     "hit": 31,
-    "avgR": 0.222,
-    "pf": 1.43
+    "avgR": 0.226,
+    "pf": 1.44
    },
    "Liquidity sweeps": {
-    "n": 528,
+    "n": 529,
     "hit": 41,
-    "avgR": -0.231,
-    "pf": 0.68
+    "avgR": -0.239,
+    "pf": 0.67
    },
    "Volume profile / POC": {
-    "n": 1505,
+    "n": 1506,
     "hit": 35,
-    "avgR": -0.089,
-    "pf": 0.87
+    "avgR": -0.092,
+    "pf": 0.86
    },
    "Anchored VWAP": {
-    "n": 1284,
+    "n": 1285,
     "hit": 31,
-    "avgR": -0.046,
-    "pf": 0.93
+    "avgR": -0.05,
+    "pf": 0.92
    },
    "Heikin Ashi trend": {
-    "n": 1505,
+    "n": 1506,
     "hit": 28,
-    "avgR": -0.017,
+    "avgR": -0.02,
     "pf": 0.97
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 1505,
+    "n": 1506,
     "hit": 31,
-    "avgR": 0.225,
-    "pf": 1.44
+    "avgR": 0.228,
+    "pf": 1.45
    },
    "Hull MA (55)": {
-    "n": 1505,
+    "n": 1506,
     "hit": 31,
-    "avgR": 0.173,
-    "pf": 1.32
+    "avgR": 0.176,
+    "pf": 1.33
    },
    "Daily pivot points": {
-    "n": 1505,
+    "n": 1506,
     "hit": 27,
-    "avgR": 0.236,
+    "avgR": 0.238,
     "pf": 1.47
    },
    "EMA trend (20/50/200)": {
-    "n": 1011,
+    "n": 1012,
     "hit": 25,
-    "avgR": 0.33,
+    "avgR": 0.335,
     "pf": 1.69
    },
    "RSI (14)": {
-    "n": 1044,
+    "n": 1045,
     "hit": 28,
-    "avgR": 0.208,
-    "pf": 1.41
+    "avgR": 0.212,
+    "pf": 1.42
    },
    "Bollinger Bands (20/2)": {
     "n": 645,
@@ -13285,10 +13285,10 @@
     "pf": 2.06
    },
    "BTCUSD": {
-    "n": 219,
-    "hit": 19,
-    "avgR": 0.312,
-    "pf": 1.6
+    "n": 220,
+    "hit": 20,
+    "avgR": 0.332,
+    "pf": 1.64
    },
    "EURCHF": {
     "n": 51,
@@ -13425,10 +13425,10 @@
     "pf": 2.13
    },
    "AB=CD (pattern)": {
-    "n": 20,
-    "hit": 25,
-    "avgR": 1.304,
-    "pf": 4.05
+    "n": 21,
+    "hit": 29,
+    "avgR": 1.456,
+    "pf": 4.58
    },
    "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)": {
     "n": 20,
@@ -13450,12 +13450,12 @@
    }
   },
   "all": {
-   "n": 1505,
+   "n": 1506,
    "hit": 24,
-   "avgR": 0.274,
-   "pf": 1.56
+   "avgR": 0.277,
+   "pf": 1.57
   },
-  "open": 24,
+  "open": 23,
   "total": 1556
  },
  "rates": {
