@@ -210040,9 +210040,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1619.25,
+  "trail_stop": 1605.0620639055483,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 25
  },
  {
   "id": "BTCUSD-15m-1795212000000",
@@ -210177,9 +210177,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 58286.05168974212,
+  "trail_stop": 57441.60168974212,
   "tp1_hit": true,
-  "bars_open": 23
+  "bars_open": 24
  },
  {
   "id": "EURUSD-15m-1795213786000",
@@ -210450,9 +210450,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 68.06664745054933,
+  "trail_stop": 67.45664745054933,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "XRPUSD-15m-1795223700000",
@@ -210586,9 +210586,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.8956327919708925,
+  "trail_stop": 0.8911327919708926,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "XRPUSD-5m-1795230000000",
@@ -211431,9 +211431,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 56774.9,
+  "trail_stop": 56696.77885921203,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1795232400000",
@@ -211569,9 +211569,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1581.986,
-  "tp1_hit": false,
-  "bars_open": 4
+  "trail_stop": 1567.02,
+  "tp1_hit": true,
+  "bars_open": 6
  },
  {
   "id": "XRPUSD-5m-1795232400000",
@@ -211656,7 +211656,7 @@
    "Turtle 20-bar breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.005618797452448789,
@@ -211706,8 +211706,11 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.887528,
-  "tp1_hit": false,
-  "bars_open": 4
+  "trail_stop": 0.8791,
+  "tp1_hit": true,
+  "bars_open": 4,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-21T05:16+01:00"
  }
 ]
