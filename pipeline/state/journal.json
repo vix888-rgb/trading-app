@@ -212230,7 +212230,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00454342823569713,
@@ -212282,6 +212282,9 @@
   "edge": false,
   "trail_stop": 0.893415,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-21T10:16+01:00"
  }
 ]
