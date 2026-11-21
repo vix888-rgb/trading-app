@@ -209990,7 +209990,7 @@
    "Trend-follow + ADX filter",
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 16.765515976387093,
@@ -210042,7 +210042,10 @@
   "edge": false,
   "trail_stop": 1605.0620639055483,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 34,
+  "R": 0.56,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-21T07:46+01:00"
  },
  {
   "id": "BTCUSD-15m-1795212000000",
@@ -210127,7 +210130,7 @@
    "ICT/SMC sweep + CHoCH",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 471.51292243552933,
@@ -210179,7 +210182,10 @@
   "edge": false,
   "trail_stop": 57016.05168974212,
   "tp1_hit": true,
-  "bars_open": 33
+  "bars_open": 33,
+  "R": 3.1,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-21T07:46+01:00"
  },
  {
   "id": "EURUSD-15m-1795213786000",
@@ -210400,7 +210406,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.5741618626373325,
@@ -210452,7 +210458,10 @@
   "edge": false,
   "trail_stop": 67.16664745054933,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 27,
+  "R": 2.26,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-21T07:46+01:00"
  },
  {
   "id": "XRPUSD-15m-1795223700000",
@@ -210536,7 +210545,7 @@
   "strategies": [
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.005833197992723138,
@@ -210588,7 +210597,10 @@
   "edge": false,
   "trail_stop": 0.8833327919708925,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 20,
+  "R": 2.74,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-21T07:46+01:00"
  },
  {
   "id": "XRPUSD-5m-1795230000000",
@@ -212073,7 +212085,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.005843456158865889,
@@ -212125,6 +212137,9 @@
   "edge": false,
   "trail_stop": 0.8767,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 18,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-21T07:46+01:00"
  }
 ]
