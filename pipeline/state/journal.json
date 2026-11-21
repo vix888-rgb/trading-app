@@ -212373,7 +212373,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 1.2379923966963027,
@@ -212425,7 +212425,10 @@
   "edge": false,
   "trail_stop": 70.71699,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-21T15:07+01:00"
  },
  {
   "id": "XRPUSD-1h-1795258800000",
@@ -212507,7 +212510,7 @@
    1.81
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.015289355768773737,
@@ -212559,6 +212562,9 @@
   "edge": false,
   "trail_stop": 0.926534,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-21T15:07+01:00"
  }
 ]
