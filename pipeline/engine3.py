@@ -22,6 +22,9 @@ PARAMS_DEFAULT.update({"news_weight":0.0,"pending_expiry_bars":12,"latch":True,"
 # breakeven at +1R, 4xATR chandelier, 48 bars). The old order-block/FVG limit + swing stop ("zone") is shown as an alternative only:
 # its stop tested worse on both halves (VAL +0.38R vs +0.53R, TEST +0.27R vs +0.30R) and limit/pullback entries were rejected in round 2.
 PARAMS_DEFAULT.update({"tested_edge":["XAUUSD|1d","XAUUSD|4h","XAUUSD|1h","BTCUSD|1d","USDJPY|1d","USDCHF|1d","EURUSD|15m"],"plan_mode":"tested","plan_stop_atr":1.5,"params_round":4})
+# Weekly tune-up 21 Nov 2026 (round 5): USDCHF 1D leaves the phone-alert list (display only). Rebuilt walk-forward, live-style
+# edge+stack simulation: VAL -0.169R/trade (n31, PF 0.63) and unseen TEST -0.057R (n18, PF 0.89), both <= 0 (pre-registered drop rule).
+PARAMS_DEFAULT.update({"tested_edge":["XAUUSD|1d","XAUUSD|4h","XAUUSD|1h","BTCUSD|1d","USDJPY|1d","EURUSD|15m"],"params_round":5})
 WPATH=os.path.join(STATE,"weights.json"); JPATH=os.path.join(STATE,"journal.json")
 W=json.load(open(WPATH)) if os.path.exists(WPATH) else {}
 PRM={**PARAMS_DEFAULT,**W.get("params",{})}
@@ -31,6 +34,8 @@ if W.get("params",{}).get("params_round",1)<3:  # round-3 rebuild overrides once
     for _k in ("news_weight","pending_expiry_bars","latch","refit_max_age_days","params_round"): PRM[_k]=PARAMS_DEFAULT[_k]
 if W.get("params",{}).get("params_round",1)<4:  # round-4 rebuild overrides once
     for _k in ("tested_edge","plan_mode","plan_stop_atr","params_round"): PRM[_k]=PARAMS_DEFAULT[_k]
+if W.get("params",{}).get("params_round",1)<5:  # round-5 weekly tune-up (21 Nov 2026) overrides once
+    for _k in ("tested_edge","params_round"): PRM[_k]=PARAMS_DEFAULT[_k]
 LPATH=os.path.join(STATE,"latch.json")
 def refit_due(raw_keys):
     """Agent weights are refit only by the weekly tune-up (TRADING_REFIT=1), when a combo has no stored weights, or when the last refit is too old.
