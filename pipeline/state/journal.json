@@ -215454,7 +215454,7 @@
    "TSMOM multi-lookback trend",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.7589890455815045,
@@ -215506,7 +215506,10 @@
   "edge": false,
   "trail_stop": 1713.16,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 22,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-22T18:09+01:00"
  },
  {
   "id": "BTCUSD-5m-1795363200000",
@@ -215590,7 +215593,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 128.27216697485474,
@@ -215645,6 +215648,9 @@
   "edge": false,
   "trail_stop": 60950.91,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-22T18:09+01:00"
  }
 ]
