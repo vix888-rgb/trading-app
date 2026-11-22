@@ -155122,7 +155122,7 @@
   "edge": false,
   "trail_stop": 72.83,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 33
  },
  {
   "id": "XRPUSD-4h-1794873600000",
@@ -181626,7 +181626,7 @@
   "edge": false,
   "trail_stop": 0.9542697836184377,
   "tp1_hit": true,
-  "bars_open": 21
+  "bars_open": 22
  },
  {
   "id": "GBPUSD-5m-1795032600000",
@@ -214815,7 +214815,7 @@
   "edge": false,
   "trail_stop": 1778.422,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "XRPUSD-15m-1795349700000",
@@ -214951,7 +214951,7 @@
   "edge": false,
   "trail_stop": 0.92962,
   "tp1_hit": false,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "XRPUSD-5m-1795353600000",
@@ -215503,6 +215503,142 @@
   "edge": false,
   "trail_stop": 1713.16,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
+ },
+ {
+  "id": "BTCUSD-5m-1795363200000",
+  "logged": "2026-11-22T17:09+01:00",
+  "bar_t": 1795363200000,
+  "bar_time": "Sun 22 Nov 17:00",
+  "sym": "BTCUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 34,
+  "entry": 60950.91,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 60758.502,
+  "tp": [
+   61143.318,
+   61335.727,
+   61528.135
+  ],
+  "inv": 60757.77,
+  "votes": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   1,
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.23,
+   1.0,
+   1.0,
+   0.43,
+   0.43,
+   1.14,
+   1.62,
+   1.21,
+   1.0,
+   0.68,
+   0.0,
+   0.12,
+   0.0,
+   1.98,
+   0.01,
+   0.0,
+   1.21,
+   1.69,
+   1.68,
+   0.1,
+   0.36,
+   0.18,
+   0.15,
+   0.34,
+   1.19,
+   1.19,
+   0.31,
+   1.98
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 128.27216697485474,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 43,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 60757.77,
+    "hi": 61002.01,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 60260.0527922,
+    "side200": 1,
+    "stack": 1,
+    "st": -1,
+    "dh": 61068.0,
+    "dl": 60618.0,
+    "brk": 0,
+    "sqz": "on",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
