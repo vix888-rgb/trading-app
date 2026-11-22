@@ -214897,7 +214897,7 @@
    1.1
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.005146362406550895,
@@ -214951,7 +214951,10 @@
   "edge": false,
   "trail_stop": 0.92962,
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 15,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-22T17:39+01:00"
  },
  {
   "id": "XRPUSD-5m-1795353600000",
@@ -215503,7 +215506,7 @@
   "edge": false,
   "trail_stop": 1713.16,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "BTCUSD-5m-1795363200000",
@@ -215642,6 +215645,6 @@
   "edge": false,
   "trail_stop": 60950.91,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  }
 ]
