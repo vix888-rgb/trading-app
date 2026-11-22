@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T23:49+01:00",
+ "updated": "2026-11-22T23:59+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13141,51 +13141,51 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 1534,
+    "n": 1535,
     "hit": 32,
     "avgR": 0.131,
-    "pf": 1.24
+    "pf": 1.23
    },
    "Stochastic (14/3/3)": {
-    "n": 1534,
+    "n": 1535,
     "hit": 38,
-    "avgR": 0.012,
+    "avgR": 0.011,
     "pf": 1.02
    },
    "ADX trend strength (14)": {
-    "n": 912,
+    "n": 913,
     "hit": 29,
-    "avgR": 0.313,
+    "avgR": 0.312,
     "pf": 1.67
    },
    "Ichimoku cloud": {
-    "n": 1339,
+    "n": 1340,
     "hit": 27,
-    "avgR": 0.253,
+    "avgR": 0.252,
     "pf": 1.52
    },
    "Supertrend (10/3)": {
-    "n": 1534,
+    "n": 1535,
     "hit": 32,
-    "avgR": 0.27,
+    "avgR": 0.269,
     "pf": 1.55
    },
    "Volume / OBV": {
-    "n": 868,
+    "n": 869,
     "hit": 28,
-    "avgR": 0.212,
+    "avgR": 0.211,
     "pf": 1.38
    },
    "VWAP (rolling 50 bars)": {
-    "n": 811,
+    "n": 812,
     "hit": 29,
-    "avgR": 0.198,
+    "avgR": 0.197,
     "pf": 1.36
    },
    "Candlestick patterns": {
-    "n": 705,
+    "n": 706,
     "hit": 25,
-    "avgR": -0.243,
+    "avgR": -0.244,
     "pf": 0.64
    },
    "RSI divergence": {
@@ -13195,9 +13195,9 @@
     "pf": 0.69
    },
    "Multi-timeframe confirmation": {
-    "n": 1401,
+    "n": 1402,
     "hit": 25,
-    "avgR": 0.291,
+    "avgR": 0.29,
     "pf": 1.61
    },
    "News sentiment": {
@@ -13207,9 +13207,9 @@
     "pf": 1.21
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 1534,
+    "n": 1535,
     "hit": 30,
-    "avgR": 0.226,
+    "avgR": 0.225,
     "pf": 1.44
    },
    "Order blocks": {
@@ -13225,45 +13225,45 @@
     "pf": 1.46
    },
    "Liquidity sweeps": {
-    "n": 537,
+    "n": 538,
     "hit": 41,
-    "avgR": -0.252,
-    "pf": 0.65
+    "avgR": -0.249,
+    "pf": 0.66
    },
    "Volume profile / POC": {
-    "n": 1534,
+    "n": 1535,
     "hit": 35,
-    "avgR": -0.101,
+    "avgR": -0.1,
     "pf": 0.85
    },
    "Anchored VWAP": {
-    "n": 1310,
+    "n": 1311,
     "hit": 30,
-    "avgR": -0.047,
-    "pf": 0.93
+    "avgR": -0.048,
+    "pf": 0.92
    },
    "Heikin Ashi trend": {
-    "n": 1534,
+    "n": 1535,
     "hit": 28,
     "avgR": -0.015,
     "pf": 0.98
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 1534,
+    "n": 1535,
     "hit": 31,
-    "avgR": 0.233,
+    "avgR": 0.234,
     "pf": 1.46
    },
    "Hull MA (55)": {
-    "n": 1534,
+    "n": 1535,
     "hit": 31,
-    "avgR": 0.187,
-    "pf": 1.35
+    "avgR": 0.188,
+    "pf": 1.36
    },
    "Daily pivot points": {
-    "n": 1534,
+    "n": 1535,
     "hit": 27,
-    "avgR": 0.231,
+    "avgR": 0.232,
     "pf": 1.46
    },
    "EMA trend (20/50/200)": {
@@ -13273,21 +13273,21 @@
     "pf": 1.69
    },
    "RSI (14)": {
-    "n": 1063,
-    "hit": 29,
-    "avgR": 0.22,
+    "n": 1064,
+    "hit": 28,
+    "avgR": 0.219,
     "pf": 1.44
    },
    "Bollinger Bands (20/2)": {
-    "n": 656,
+    "n": 657,
     "hit": 31,
-    "avgR": 0.065,
-    "pf": 1.12
+    "avgR": 0.064,
+    "pf": 1.11
    },
    "Williams %R / CCI": {
-    "n": 621,
-    "hit": 43,
-    "avgR": 0.177,
+    "n": 622,
+    "hit": 42,
+    "avgR": 0.175,
     "pf": 1.35
    },
    "Fibonacci confluence": {
@@ -13335,10 +13335,10 @@
     "pf": 2.25
    },
    "SOLUSD": {
-    "n": 208,
+    "n": 209,
     "hit": 26,
-    "avgR": 0.293,
-    "pf": 1.61
+    "avgR": 0.287,
+    "pf": 1.59
    },
    "XRPUSD": {
     "n": 212,
@@ -13415,10 +13415,10 @@
     "pf": 1.41
    },
    "ICT/SMC sweep + CHoCH": {
-    "n": 132,
+    "n": 133,
     "hit": 32,
-    "avgR": 0.263,
-    "pf": 1.59
+    "avgR": 0.254,
+    "pf": 1.56
    },
    "Liquidity Entry Zones": {
     "n": 65,
@@ -13482,13 +13482,13 @@
    }
   },
   "all": {
-   "n": 1534,
+   "n": 1535,
    "hit": 25,
-   "avgR": 0.279,
+   "avgR": 0.278,
    "pf": 1.58
   },
-  "open": 22,
-  "total": 1583
+  "open": 23,
+  "total": 1585
  },
  "rates": {
   "_ts": 1795387183.4245553,
