@@ -155122,7 +155122,7 @@
   "edge": false,
   "trail_stop": 72.83,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 31
  },
  {
   "id": "XRPUSD-4h-1794873600000",
@@ -166648,7 +166648,7 @@
   "edge": false,
   "trail_stop": 1721.5908320752458,
   "tp1_hit": true,
-  "bars_open": 25
+  "bars_open": 26
  },
  {
   "id": "USDCHF-15m-1794960000000",
@@ -181623,7 +181623,7 @@
   "edge": false,
   "trail_stop": 0.9542697836184377,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "GBPUSD-5m-1795032600000",
@@ -213554,7 +213554,7 @@
   "edge": false,
   "trail_stop": 70.76892,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "BTCUSD-5m-1795320000000",
@@ -213641,7 +213641,7 @@
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 144.2918581221819,
@@ -213693,7 +213693,10 @@
   "edge": false,
   "trail_stop": 59345.67743248873,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 2.16,
+  "exit": "time exit",
+  "closed_at": "2026-11-22T09:08+01:00"
  },
  {
   "id": "ETHUSD-5m-1795320000000",
@@ -214060,7 +214063,7 @@
    "ICT/SMC sweep + CHoCH",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0023700782537147127,
@@ -214112,7 +214115,10 @@
   "edge": false,
   "trail_stop": 0.9212,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 1.55,
+  "exit": "time exit",
+  "closed_at": "2026-11-22T09:08+01:00"
  },
  {
   "id": "ETHUSD-5m-1795322400000",
@@ -214387,7 +214393,7 @@
   "edge": false,
   "trail_stop": 69.49626927282189,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 40
  },
  {
   "id": "ETHUSD-1h-1795323600000",
@@ -214524,7 +214530,7 @@
   "edge": false,
   "trail_stop": 1684.36,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-5m-1795328400000",
