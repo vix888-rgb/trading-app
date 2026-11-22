@@ -214951,7 +214951,7 @@
   "edge": false,
   "trail_stop": 0.92962,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "XRPUSD-5m-1795353600000",
@@ -215310,7 +215310,7 @@
    "Squeeze momentum breakout",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 150.40554689882978,
@@ -215362,7 +215362,10 @@
   "edge": false,
   "trail_stop": 60765.222,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-22T16:50+01:00"
  },
  {
   "id": "ETHUSD-5m-1795359600000",
@@ -215500,6 +215503,6 @@
   "edge": false,
   "trail_stop": 1713.16,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  }
 ]
