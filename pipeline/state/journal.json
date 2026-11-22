@@ -213693,7 +213693,7 @@
   "edge": false,
   "trail_stop": 59566.73,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1795320000000",
@@ -213830,7 +213830,7 @@
   "edge": false,
   "trail_stop": 1666.88,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1795320000000",
@@ -213916,7 +213916,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.19845301261482143,
@@ -213968,7 +213968,10 @@
   "edge": false,
   "trail_stop": 69.69,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-22T05:38+01:00"
  },
  {
   "id": "XRPUSD-5m-1795320000000",
@@ -214106,6 +214109,6 @@
   "edge": false,
   "trail_stop": 0.924755,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  }
 ]
