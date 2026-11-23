@@ -208615,7 +208615,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0006636930859084994,
@@ -208667,7 +208667,10 @@
   "edge": false,
   "trail_stop": 1.30962,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 16,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-23T01:19+01:00"
  },
  {
   "id": "SOLUSD-5m-1795200600000",
@@ -210288,7 +210291,7 @@
    1.31
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00037204169003443,
@@ -210343,7 +210346,10 @@
   "edge": true,
   "trail_stop": 1.098012,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 0,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-23T01:19+01:00"
  },
  {
   "id": "SOLUSD-15m-1795217400000",
@@ -216489,7 +216495,7 @@
   "edge": false,
   "trail_stop": 61001.9,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "ETHUSD-5m-1795389000000",
@@ -216623,7 +216629,7 @@
   "edge": false,
   "trail_stop": 1719.38,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "SOLUSD-5m-1795392000000",
@@ -216754,6 +216760,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 70.39201,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
