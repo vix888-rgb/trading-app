@@ -219428,7 +219428,7 @@
   "edge": false,
   "trail_stop": 72.13,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "BTCUSD-5m-1795423200000",
@@ -219649,7 +219649,7 @@
    1.43
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0022006001624799675,
@@ -219701,7 +219701,10 @@
   "edge": false,
   "trail_stop": 0.937599,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-23T10:59+01:00"
  },
  {
   "id": "ETHUSD-5m-1795426200000",
@@ -219786,7 +219789,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.696225202056619,
@@ -219838,7 +219841,10 @@
   "edge": false,
   "trail_stop": 1722.836,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-23T10:59+01:00"
  },
  {
   "id": "BTCUSD-5m-1795426800000",
@@ -219920,7 +219926,7 @@
    1.98
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 132.17684414250022,
@@ -219969,7 +219975,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 61298.685,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-23T10:59+01:00"
  },
  {
   "id": "EURUSD-15m-1795426200000",
@@ -220103,6 +220114,9 @@
    },
    "pat": []
   },
-  "edge": true
+  "edge": true,
+  "trail_stop": 1.099025,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
