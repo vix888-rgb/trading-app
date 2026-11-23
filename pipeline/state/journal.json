@@ -219379,7 +219379,7 @@
    "London breakout",
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.18900156096465184,
@@ -219431,7 +219431,10 @@
   "edge": false,
   "trail_stop": 72.13,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 0.95,
+  "exit": "time exit",
+  "closed_at": "2026-11-23T13:29+01:00"
  },
  {
   "id": "BTCUSD-5m-1795423200000",
@@ -220536,7 +220539,7 @@
   "edge": false,
   "trail_stop": 1.3108703123569643,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "EURUSD-1h-1795428000000",
@@ -220813,6 +220816,6 @@
   "edge": false,
   "trail_stop": 1.096681,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  }
 ]
