@@ -83172,7 +83172,7 @@
   "edge": false,
   "trail_stop": 0.8335840513921134,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 47
  },
  {
   "id": "EURCHF-15m-1794411900000",
@@ -89555,7 +89555,7 @@
   "edge": false,
   "trail_stop": 1.1051904649439357,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 45
  },
  {
   "id": "SOLUSD-5m-1794444900000",
@@ -109446,7 +109446,7 @@
   "edge": false,
   "trail_stop": 1.3178953962063704,
   "tp1_hit": true,
-  "bars_open": 37
+  "bars_open": 38
  },
  {
   "id": "XRPUSD-5m-1794545400000",
@@ -155070,7 +155070,7 @@
    1.26
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 2.039726725289875,
@@ -155125,7 +155125,10 @@
   "edge": false,
   "trail_stop": 72.83,
   "tp1_hit": true,
-  "bars_open": 37
+  "bars_open": 37,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-23T13:09+01:00"
  },
  {
   "id": "XRPUSD-4h-1794873600000",
@@ -181629,7 +181632,7 @@
   "edge": false,
   "trail_stop": 0.9542697836184377,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "GBPUSD-5m-1795032600000",
@@ -214833,7 +214836,7 @@
   "edge": false,
   "trail_stop": 1778.422,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "XRPUSD-15m-1795349700000",
@@ -217619,7 +217622,7 @@
   "edge": false,
   "trail_stop": 158.927,
   "tp1_hit": true,
-  "bars_open": 35
+  "bars_open": 36
  },
  {
   "id": "SOLUSD-5m-1795402800000",
@@ -219428,7 +219431,7 @@
   "edge": false,
   "trail_stop": 72.13,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 44
  },
  {
   "id": "BTCUSD-5m-1795423200000",
@@ -220115,9 +220118,9 @@
    "pat": []
   },
   "edge": true,
-  "trail_stop": 1.0981905925056112,
+  "trail_stop": 1.098070429541744,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "GBPUSD-5m-1795428600000",
@@ -220533,7 +220536,7 @@
   "edge": false,
   "trail_stop": 1.311131,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "EURUSD-1h-1795428000000",
@@ -220673,6 +220676,140 @@
   "edge": false,
   "trail_stop": 1.098226,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
+ },
+ {
+  "id": "EURUSD-5m-1795435200000",
+  "logged": "2026-11-23T13:09+01:00",
+  "bar_t": 1795435200000,
+  "bar_time": "Mon 23 Nov 13:00",
+  "sym": "EURUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -58,
+  "entry": 1.096371,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.096681,
+  "tp": [
+   1.096061,
+   1.09575,
+   1.09544
+  ],
+  "inv": 1.096852,
+  "votes": [
+   -1,
+   1,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.58,
+   1.57,
+   1.52,
+   0.05,
+   0.98,
+   1.22,
+   1.31,
+   1.77,
+   1.15,
+   1.02,
+   0.0,
+   0.27,
+   0.15,
+   1.77,
+   0.49,
+   0.0,
+   1.36,
+   1.21,
+   1.2,
+   0.15,
+   0.19,
+   0.48,
+   0.32,
+   0.69,
+   1.67,
+   1.5,
+   1.45,
+   1.59
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00020695125008672298,
+  "filters": {
+   "carry": -1.38,
+   "carryDir": -1,
+   "vol": true,
+   "atrPct": 46,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 1.09613073,
+    "hi": 1.09685206,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.09828067,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.09745395,
+    "dl": 1.09613073,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
