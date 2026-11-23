@@ -220074,7 +220074,7 @@
    "TSMOM multi-lookback trend",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00048492520503134567,
@@ -220126,7 +220126,10 @@
   "edge": true,
   "trail_stop": 1.093404458739437,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 17,
+  "R": 6.73,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-23T15:19+01:00"
  },
  {
   "id": "GBPUSD-5m-1795428600000",
@@ -221244,7 +221247,7 @@
   "edge": false,
   "trail_stop": 1.3081059432331983,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "GBPUSD-1h-1795435200000",
@@ -221521,7 +221524,7 @@
   "edge": false,
   "trail_stop": 0.83996,
   "tp1_hit": true,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "XRPUSD-5m-1795439400000",
