@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T02:59+01:00",
+ "updated": "2026-11-23T03:10+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13141,45 +13141,45 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 1545,
+    "n": 1547,
     "hit": 32,
-    "avgR": 0.129,
+    "avgR": 0.128,
     "pf": 1.23
    },
    "Stochastic (14/3/3)": {
-    "n": 1545,
+    "n": 1547,
     "hit": 37,
     "avgR": 0.009,
     "pf": 1.01
    },
    "ADX trend strength (14)": {
-    "n": 920,
+    "n": 921,
     "hit": 29,
-    "avgR": 0.308,
+    "avgR": 0.307,
     "pf": 1.66
    },
    "Ichimoku cloud": {
-    "n": 1347,
-    "hit": 27,
-    "avgR": 0.248,
+    "n": 1349,
+    "hit": 26,
+    "avgR": 0.246,
     "pf": 1.51
    },
    "Supertrend (10/3)": {
-    "n": 1545,
+    "n": 1547,
     "hit": 32,
-    "avgR": 0.265,
+    "avgR": 0.264,
     "pf": 1.54
    },
    "Volume / OBV": {
-    "n": 875,
+    "n": 876,
     "hit": 28,
-    "avgR": 0.206,
+    "avgR": 0.205,
     "pf": 1.37
    },
    "VWAP (rolling 50 bars)": {
-    "n": 818,
+    "n": 819,
     "hit": 28,
-    "avgR": 0.194,
+    "avgR": 0.193,
     "pf": 1.35
    },
    "Candlestick patterns": {
@@ -13195,87 +13195,87 @@
     "pf": 0.69
    },
    "Multi-timeframe confirmation": {
-    "n": 1408,
+    "n": 1409,
     "hit": 25,
-    "avgR": 0.288,
+    "avgR": 0.287,
     "pf": 1.6
    },
    "News sentiment": {
-    "n": 1013,
+    "n": 1014,
     "hit": 27,
-    "avgR": 0.109,
+    "avgR": 0.108,
     "pf": 1.2
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 1545,
+    "n": 1547,
     "hit": 30,
-    "avgR": 0.224,
+    "avgR": 0.223,
     "pf": 1.44
    },
    "Order blocks": {
-    "n": 602,
+    "n": 604,
     "hit": 38,
-    "avgR": 0.279,
+    "avgR": 0.282,
     "pf": 1.58
    },
    "Fair value gaps": {
-    "n": 1114,
+    "n": 1115,
     "hit": 31,
-    "avgR": 0.234,
+    "avgR": 0.233,
     "pf": 1.46
    },
    "Liquidity sweeps": {
-    "n": 540,
+    "n": 541,
     "hit": 41,
-    "avgR": -0.247,
+    "avgR": -0.244,
     "pf": 0.66
    },
    "Volume profile / POC": {
-    "n": 1545,
+    "n": 1547,
     "hit": 35,
-    "avgR": -0.098,
-    "pf": 0.85
+    "avgR": -0.097,
+    "pf": 0.86
    },
    "Anchored VWAP": {
-    "n": 1320,
+    "n": 1322,
     "hit": 30,
     "avgR": -0.05,
     "pf": 0.92
    },
    "Heikin Ashi trend": {
-    "n": 1545,
+    "n": 1547,
     "hit": 28,
-    "avgR": -0.016,
+    "avgR": -0.017,
     "pf": 0.97
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 1545,
+    "n": 1547,
     "hit": 31,
-    "avgR": 0.232,
+    "avgR": 0.23,
     "pf": 1.46
    },
    "Hull MA (55)": {
-    "n": 1545,
+    "n": 1547,
     "hit": 31,
-    "avgR": 0.186,
+    "avgR": 0.185,
     "pf": 1.35
    },
    "Daily pivot points": {
-    "n": 1545,
+    "n": 1547,
     "hit": 27,
-    "avgR": 0.231,
-    "pf": 1.46
+    "avgR": 0.229,
+    "pf": 1.45
    },
    "EMA trend (20/50/200)": {
-    "n": 1030,
+    "n": 1032,
     "hit": 25,
-    "avgR": 0.33,
-    "pf": 1.69
+    "avgR": 0.327,
+    "pf": 1.68
    },
    "RSI (14)": {
-    "n": 1069,
+    "n": 1070,
     "hit": 28,
-    "avgR": 0.216,
+    "avgR": 0.215,
     "pf": 1.43
    },
    "Bollinger Bands (20/2)": {
@@ -13335,10 +13335,10 @@
     "pf": 2.22
    },
    "SOLUSD": {
-    "n": 210,
+    "n": 211,
     "hit": 26,
-    "avgR": 0.281,
-    "pf": 1.58
+    "avgR": 0.275,
+    "pf": 1.56
    },
    "XRPUSD": {
     "n": 213,
@@ -13353,10 +13353,10 @@
     "pf": 1.2
    },
    "EURUSD": {
-    "n": 121,
+    "n": 122,
     "hit": 28,
-    "avgR": 0.371,
-    "pf": 1.79
+    "avgR": 0.36,
+    "pf": 1.76
    },
    "USDJPY": {
     "n": 82,
@@ -13397,9 +13397,9 @@
     "pf": 0.8
    },
    "TSMOM multi-lookback trend": {
-    "n": 513,
+    "n": 514,
     "hit": 24,
-    "avgR": 0.28,
+    "avgR": 0.278,
     "pf": 1.59
    },
    "MTF top-down pullback": {
@@ -13482,12 +13482,12 @@
    }
   },
   "all": {
-   "n": 1545,
+   "n": 1547,
    "hit": 24,
-   "avgR": 0.275,
+   "avgR": 0.273,
    "pf": 1.57
   },
-  "open": 20,
+  "open": 18,
   "total": 1592
  },
  "rates": {
