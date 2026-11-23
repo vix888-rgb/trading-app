@@ -217570,7 +217570,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.11067854607562155,
@@ -217622,7 +217622,10 @@
   "edge": false,
   "trail_stop": 158.927,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 38,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-23T13:49+01:00"
  },
  {
   "id": "SOLUSD-5m-1795402800000",
@@ -220121,9 +220124,9 @@
    "pat": []
   },
   "edge": true,
-  "trail_stop": 1.098070429541744,
+  "trail_stop": 1.0975900161048544,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "GBPUSD-5m-1795428600000",
@@ -220537,9 +220540,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.3108703123569643,
+  "trail_stop": 1.3102362381458437,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "EURUSD-1h-1795428000000",
@@ -220953,6 +220956,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.0964110615428357,
+  "tp1_hit": true,
+  "bars_open": 2
  }
 ]
