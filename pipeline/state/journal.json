@@ -220540,9 +220540,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.3085085379123842,
+  "trail_stop": 1.3068195806980287,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "EURUSD-1h-1795428000000",
@@ -221797,7 +221797,7 @@
   "edge": false,
   "trail_stop": 72.27254,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "EURUSD-5m-1795440600000",
@@ -221931,9 +221931,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.095035,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 1.0930205066442484,
+  "tp1_hit": true,
+  "bars_open": 4
  },
  {
   "id": "XRPUSD-5m-1795441200000",
@@ -222017,7 +222017,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00221187102596825,
@@ -222068,6 +222068,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.938482,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-23T14:59+01:00"
  }
 ]
