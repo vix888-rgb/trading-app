@@ -221247,7 +221247,7 @@
   "edge": false,
   "trail_stop": 1.3059794879261915,
   "tp1_hit": true,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "GBPUSD-1h-1795435200000",
@@ -221524,7 +221524,7 @@
   "edge": false,
   "trail_stop": 0.8406724441232509,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "XRPUSD-5m-1795439400000",
@@ -222221,6 +222221,139 @@
   "edge": false,
   "trail_stop": 1.092538,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
+ },
+ {
+  "id": "XRPUSD-5m-1795447800000",
+  "logged": "2026-11-23T16:39+01:00",
+  "bar_t": 1795447800000,
+  "bar_time": "Mon 23 Nov 16:30",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 60,
+  "entry": 1.0014,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.98961,
+  "tp": [
+   1.01319,
+   1.024981,
+   1.036771
+  ],
+  "inv": 0.9831,
+  "votes": [
+   1,
+   -1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.46,
+   0.66,
+   1.39,
+   0.44,
+   0.41,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.02,
+   0.0,
+   0.0,
+   0.0,
+   1.08,
+   0.0,
+   0.0,
+   1.02,
+   1.42,
+   1.0,
+   1.0,
+   0.0,
+   0.2,
+   0.32,
+   0.0,
+   1.0,
+   0.86,
+   1.69,
+   1.43
+  ],
+  "strategies": [
+   "Keltner volatility breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.007860324362694217,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 95,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.9463214,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 1.026,
+    "dl": 0.9384,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
