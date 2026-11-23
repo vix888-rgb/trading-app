@@ -220124,9 +220124,9 @@
    "pat": []
   },
   "edge": true,
-  "trail_stop": 1.0955529677650107,
+  "trail_stop": 1.093404458739437,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "GBPUSD-5m-1795428600000",
@@ -220487,7 +220487,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00037247506380466374,
@@ -220542,7 +220542,10 @@
   "edge": false,
   "trail_stop": 1.3068195806980287,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 36,
+  "R": 7.71,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-23T15:09+01:00"
  },
  {
   "id": "EURUSD-1h-1795428000000",
@@ -220680,9 +220683,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.096732,
+  "trail_stop": 1.0954486719943806,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "EURUSD-5m-1795435200000",
@@ -221239,9 +221242,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.308267,
+  "trail_stop": 1.3081059432331983,
   "tp1_hit": true,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-1h-1795435200000",
@@ -221378,9 +221381,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.310338,
-  "tp1_hit": false,
-  "bars_open": 0
+  "trail_stop": 1.308267,
+  "tp1_hit": true,
+  "bars_open": 1
  },
  {
   "id": "USDCHF-15m-1795438800000",
@@ -221516,9 +221519,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.838858,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 0.83996,
+  "tp1_hit": true,
+  "bars_open": 3
  },
  {
   "id": "XRPUSD-5m-1795439400000",
@@ -221745,7 +221748,7 @@
    1.24
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.17163991554243496,
@@ -221795,9 +221798,12 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 72.27254,
-  "tp1_hit": false,
-  "bars_open": 6
+  "trail_stop": 76.07344033783026,
+  "tp1_hit": true,
+  "bars_open": 6,
+  "R": 13.76,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-23T15:09+01:00"
  },
  {
   "id": "EURUSD-5m-1795440600000",
@@ -221881,7 +221887,7 @@
   "strategies": [
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00038893718123420663,
@@ -221933,7 +221939,10 @@
   "edge": false,
   "trail_stop": 1.0930205066442484,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": 2.45,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-23T15:09+01:00"
  },
  {
   "id": "XRPUSD-5m-1795441200000",
