@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T14:29+01:00",
+ "updated": "2026-11-23T14:39+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13141,13 +13141,13 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 1577,
+    "n": 1578,
     "hit": 32,
     "avgR": 0.121,
     "pf": 1.22
    },
    "Stochastic (14/3/3)": {
-    "n": 1577,
+    "n": 1578,
     "hit": 38,
     "avgR": 0.02,
     "pf": 1.03
@@ -13159,31 +13159,31 @@
     "pf": 1.67
    },
    "Ichimoku cloud": {
-    "n": 1372,
+    "n": 1373,
     "hit": 26,
     "avgR": 0.25,
     "pf": 1.51
    },
    "Supertrend (10/3)": {
-    "n": 1577,
+    "n": 1578,
     "hit": 31,
     "avgR": 0.265,
     "pf": 1.55
    },
    "Volume / OBV": {
-    "n": 897,
+    "n": 898,
     "hit": 27,
     "avgR": 0.196,
     "pf": 1.35
    },
    "VWAP (rolling 50 bars)": {
-    "n": 839,
+    "n": 840,
     "hit": 28,
     "avgR": 0.187,
     "pf": 1.34
    },
    "Candlestick patterns": {
-    "n": 723,
+    "n": 724,
     "hit": 25,
     "avgR": -0.235,
     "pf": 0.65
@@ -13201,21 +13201,21 @@
     "pf": 1.6
    },
    "News sentiment": {
-    "n": 1035,
+    "n": 1036,
     "hit": 27,
     "avgR": 0.12,
     "pf": 1.23
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 1577,
+    "n": 1578,
     "hit": 29,
     "avgR": 0.222,
     "pf": 1.44
    },
    "Order blocks": {
-    "n": 614,
+    "n": 615,
     "hit": 38,
-    "avgR": 0.281,
+    "avgR": 0.28,
     "pf": 1.58
    },
    "Fair value gaps": {
@@ -13231,61 +13231,61 @@
     "pf": 0.67
    },
    "Volume profile / POC": {
-    "n": 1577,
+    "n": 1578,
     "hit": 35,
     "avgR": -0.107,
     "pf": 0.84
    },
    "Anchored VWAP": {
-    "n": 1347,
+    "n": 1348,
     "hit": 30,
     "avgR": -0.053,
     "pf": 0.92
    },
    "Heikin Ashi trend": {
-    "n": 1577,
+    "n": 1578,
     "hit": 28,
     "avgR": -0.017,
     "pf": 0.97
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 1577,
+    "n": 1578,
     "hit": 31,
     "avgR": 0.227,
     "pf": 1.45
    },
    "Hull MA (55)": {
-    "n": 1577,
+    "n": 1578,
     "hit": 31,
-    "avgR": 0.17,
+    "avgR": 0.169,
     "pf": 1.32
    },
    "Daily pivot points": {
-    "n": 1577,
+    "n": 1578,
     "hit": 28,
     "avgR": 0.234,
     "pf": 1.47
    },
    "EMA trend (20/50/200)": {
-    "n": 1050,
+    "n": 1051,
     "hit": 25,
-    "avgR": 0.329,
+    "avgR": 0.328,
     "pf": 1.69
    },
    "RSI (14)": {
-    "n": 1093,
+    "n": 1094,
     "hit": 28,
     "avgR": 0.221,
     "pf": 1.45
    },
    "Bollinger Bands (20/2)": {
-    "n": 672,
+    "n": 673,
     "hit": 31,
     "avgR": 0.082,
     "pf": 1.15
    },
    "Williams %R / CCI": {
-    "n": 636,
+    "n": 637,
     "hit": 42,
     "avgR": 0.17,
     "pf": 1.34
@@ -13297,9 +13297,9 @@
     "pf": 0.64
    },
    "Support / resistance": {
-    "n": 333,
+    "n": 334,
     "hit": 45,
-    "avgR": -0.412,
+    "avgR": -0.411,
     "pf": 0.57
    },
    "Volatility (ATR 14)": {
@@ -13341,9 +13341,9 @@
     "pf": 1.6
    },
    "XRPUSD": {
-    "n": 220,
+    "n": 221,
     "hit": 25,
-    "avgR": 0.211,
+    "avgR": 0.21,
     "pf": 1.4
    },
    "GBPUSD": {
@@ -13373,7 +13373,7 @@
   },
   "strat": {
    "Turtle 20-bar breakout": {
-    "n": 470,
+    "n": 471,
     "hit": 21,
     "avgR": 0.129,
     "pf": 1.27
@@ -13397,9 +13397,9 @@
     "pf": 0.83
    },
    "TSMOM multi-lookback trend": {
-    "n": 519,
+    "n": 520,
     "hit": 24,
-    "avgR": 0.276,
+    "avgR": 0.275,
     "pf": 1.58
    },
    "MTF top-down pullback": {
@@ -13415,9 +13415,9 @@
     "pf": 1.42
    },
    "ICT/SMC sweep + CHoCH": {
-    "n": 137,
+    "n": 138,
     "hit": 33,
-    "avgR": 0.281,
+    "avgR": 0.279,
     "pf": 1.63
    },
    "Liquidity Entry Zones": {
@@ -13445,7 +13445,7 @@
     "pf": 2.64
    },
    "Donchian-20 breakout + EMA200 + HTF (round 4)": {
-    "n": 430,
+    "n": 431,
     "hit": 21,
     "avgR": 0.105,
     "pf": 1.23
@@ -13469,9 +13469,9 @@
     "pf": 1.24
    },
    "Harmonic XABCD: Gartley/Bat/Butterfly/Crab/Shark (pattern)": {
-    "n": 9,
-    "hit": 56,
-    "avgR": 1.187,
+    "n": 10,
+    "hit": 50,
+    "avgR": 1.068,
     "pf": 6.34
    },
    "Wolfe Wave (pattern)": {
@@ -13482,13 +13482,13 @@
    }
   },
   "all": {
-   "n": 1577,
+   "n": 1578,
    "hit": 24,
    "avgR": 0.271,
    "pf": 1.56
   },
   "open": 21,
-  "total": 1625
+  "total": 1626
  },
  "rates": {
   "_ts": 1795387183.4245553,
