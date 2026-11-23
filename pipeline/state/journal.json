@@ -217613,7 +217613,7 @@
   "edge": false,
   "trail_stop": 158.761,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-5m-1795402800000",
@@ -217752,7 +217752,7 @@
   "edge": false,
   "trail_stop": 70.91089454598198,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-15m-1795401900000",
@@ -218028,7 +218028,7 @@
   "edge": false,
   "trail_stop": 61248.48784921099,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "XRPUSD-15m-1795402800000",
@@ -218113,7 +218113,7 @@
    "Turtle 20-bar breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00430450386825427,
@@ -218165,6 +218165,9 @@
   "edge": false,
   "trail_stop": 0.931457,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 0,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-23T04:39+01:00"
  }
 ]
