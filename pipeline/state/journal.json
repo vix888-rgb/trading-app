@@ -217619,7 +217619,7 @@
   "edge": false,
   "trail_stop": 158.927,
   "tp1_hit": true,
-  "bars_open": 31
+  "bars_open": 32
  },
  {
   "id": "SOLUSD-5m-1795402800000",
@@ -219428,7 +219428,7 @@
   "edge": false,
   "trail_stop": 72.13,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 32
  },
  {
   "id": "BTCUSD-5m-1795423200000",
@@ -220117,7 +220117,7 @@
   "edge": true,
   "trail_stop": 1.098298,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "GBPUSD-5m-1795428600000",
@@ -220390,7 +220390,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.939002,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-5m-1795431000000",
@@ -220514,6 +220517,146 @@
     "brk": -1,
     "sqz": "off",
     "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.31169,
+  "tp1_hit": false,
+  "bars_open": 2
+ },
+ {
+  "id": "EURUSD-1h-1795428000000",
+  "logged": "2026-11-23T12:09+01:00",
+  "bar_t": 1795428000000,
+  "bar_time": "Mon 23 Nov 11:00",
+  "sym": "EURUSD",
+  "tf": "1h",
+  "side": "short",
+  "score": -41,
+  "entry": 1.096732,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.098226,
+  "tp": [
+   1.095238,
+   1.093744,
+   1.09225
+  ],
+  "inv": 1.100837,
+  "votes": [
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   1,
+   -1
+  ],
+  "weights": [
+   1.66,
+   0.96,
+   1.22,
+   0.05,
+   0.41,
+   1.3,
+   1.75,
+   1.27,
+   1.15,
+   1.02,
+   0.0,
+   0.08,
+   0.03,
+   1.73,
+   0.15,
+   0.0,
+   1.0,
+   1.0,
+   1.41,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.14,
+   1.48,
+   1.0,
+   0.88,
+   1.14
+  ],
+  "strategies": [
+   "London breakout",
+   "ICT/SMC sweep + CHoCH",
+   "Wyckoff spring / upthrust",
+   "TSMOM multi-lookback trend",
+   "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0009959785187672863,
+  "filters": {
+   "carry": -1.38,
+   "carryDir": -1,
+   "vol": true,
+   "atrPct": 57,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.10279437,
+    "side200": -1,
+    "stack": 0,
+    "st": -1,
+    "dh": 1.10083663,
+    "dl": 1.09637094,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
     "sess": true,
     "gate": false,
     "sgate": false,
