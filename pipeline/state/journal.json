@@ -222230,7 +222230,7 @@
   "edge": false,
   "trail_stop": 1.0906488628115225,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 46
  },
  {
   "id": "XRPUSD-5m-1795447800000",
@@ -223418,7 +223418,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0005526551565538215,
@@ -223473,7 +223473,10 @@
   "edge": false,
   "trail_stop": 1.302573,
   "tp1_hit": false,
-  "bars_open": 20
+  "bars_open": 20,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-23T19:59+01:00"
  },
  {
   "id": "EURUSD-15m-1795457700000",
