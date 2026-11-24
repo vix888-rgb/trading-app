@@ -109402,7 +109402,7 @@
    "Turtle 20-bar breakout",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0025653500491359363,
@@ -109455,7 +109455,10 @@
   "edge": false,
   "trail_stop": 1.3114129142498885,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 44,
+  "R": 3.2,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-24T17:02+01:00"
  },
  {
   "id": "XRPUSD-5m-1794545400000",
@@ -228384,7 +228387,7 @@
   "edge": false,
   "trail_stop": 0.9295047314699583,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "XAUUSD-15m-1795509900000",
@@ -228804,7 +228807,7 @@
   "edge": false,
   "trail_stop": 61169.63,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "ETHUSD-5m-1795510500000",
@@ -229218,7 +229221,7 @@
   "edge": false,
   "trail_stop": 1712.5,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "USDJPY-5m-1795514700000",
@@ -229773,7 +229776,7 @@
   "edge": false,
   "trail_stop": 62543.759,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "EURUSD-4h-1795507200000",
@@ -229907,7 +229910,7 @@
   "edge": false,
   "trail_stop": 1.099787,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "SOLUSD-15m-1795520700000",
@@ -230043,7 +230046,7 @@
   "edge": false,
   "trail_stop": 70.14851398204418,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "BTCUSD-15m-1795521600000",
@@ -230457,9 +230460,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.946376,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 0.9288,
+  "tp1_hit": true,
+  "bars_open": 3
  },
  {
   "id": "XAUUSD-5m-1795525500000",
@@ -231440,7 +231443,7 @@
   "edge": false,
   "trail_stop": 1693.42,
   "tp1_hit": true,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "SOLUSD-5m-1795527300000",
@@ -231714,9 +231717,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3618.486,
+  "trail_stop": 3606.273039010482,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "SOLUSD-1h-1795525200000",
@@ -231854,7 +231857,7 @@
   "edge": false,
   "trail_stop": 71.1448,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "XAUUSD-5m-1795529100000",
@@ -232270,9 +232273,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3606.906003563193,
+  "trail_stop": 3595.9039735631927,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "BTCUSD-15m-1795532400000",
@@ -232409,6 +232412,137 @@
   "edge": false,
   "trail_stop": 60540.002,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
+ },
+ {
+  "id": "SOLUSD-4h-1795521600000",
+  "logged": "2026-11-24T17:02+01:00",
+  "bar_t": 1795521600000,
+  "bar_time": "Tue 24 Nov 13:00",
+  "sym": "SOLUSD",
+  "tf": "4h",
+  "side": "short",
+  "score": -33,
+  "entry": 69.05,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 72.09419,
+  "tp": [
+   66.00581,
+   62.96163,
+   59.91744
+  ],
+  "inv": 78.48,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.85,
+   1.0,
+   1.15,
+   0.43,
+   0.43,
+   1.18,
+   1.18,
+   1.19,
+   1.0,
+   0.74,
+   0.3,
+   0.14,
+   0.0,
+   1.34,
+   0.56,
+   0.0,
+   1.38,
+   1.0,
+   1.62,
+   0.0,
+   0.07,
+   0.06,
+   0.15,
+   0.47,
+   1.01,
+   1.28,
+   0.31,
+   1.26
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 2.0294581568861734,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 93,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 84.39315255,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 78.48,
+    "dl": 64.87,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
