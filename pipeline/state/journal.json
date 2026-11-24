@@ -232226,7 +232226,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 7.138093390798213,
@@ -232278,7 +232278,10 @@
   "edge": false,
   "trail_stop": 3582.5915435631928,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 4.46,
+  "exit": "time exit",
+  "closed_at": "2026-11-24T20:13+01:00"
  },
  {
   "id": "BTCUSD-15m-1795532400000",
@@ -233652,7 +233655,7 @@
   "edge": false,
   "trail_stop": 159.173,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "BTCUSD-5m-1795545900000",
@@ -233786,9 +233789,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 60343.777,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 60072.01,
+  "tp1_hit": true,
+  "bars_open": 4
  },
  {
   "id": "ETHUSD-5m-1795546500000",
@@ -233922,7 +233925,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1686.227,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-5m-1795546500000",
@@ -234053,6 +234059,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 69.67293,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
