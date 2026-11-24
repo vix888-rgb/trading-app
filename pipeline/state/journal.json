@@ -226921,7 +226921,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003089722813369686,
@@ -226973,7 +226973,10 @@
   "edge": false,
   "trail_stop": 1.304053,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-24T09:11+01:00"
  },
  {
   "id": "EURUSD-5m-1795505100000",
@@ -227057,7 +227060,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003314176745219782,
@@ -227109,7 +227112,10 @@
   "edge": false,
   "trail_stop": 1.09101,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-24T09:11+01:00"
  },
  {
   "id": "USDCHF-5m-1795505100000",
@@ -227602,7 +227608,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003388634485132586,
@@ -227651,6 +227657,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.841562,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-24T09:11+01:00"
  }
 ]
