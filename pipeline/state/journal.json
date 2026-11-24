@@ -227747,7 +227747,7 @@
    "London breakout",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004057601328570236,
@@ -227799,7 +227799,10 @@
   "edge": false,
   "trail_stop": 0.842221,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-24T09:41+01:00"
  },
  {
   "id": "GBPUSD-5m-1795508100000",
@@ -228075,7 +228078,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 60315.461,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-5m-1795508700000",
@@ -228211,7 +228217,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1697.33,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-15m-1795508100000",
@@ -228342,6 +228351,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.949464,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
