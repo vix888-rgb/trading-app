@@ -226549,7 +226549,7 @@
   "edge": false,
   "trail_stop": 71.55164,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "USDCHF-5m-1795503900000",
@@ -226962,9 +226962,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.304517,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 1.304053,
+  "tp1_hit": true,
+  "bars_open": 4
  },
  {
   "id": "EURUSD-5m-1795505100000",
@@ -227097,7 +227097,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.09101,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "USDCHF-5m-1795505100000",
@@ -227228,6 +227231,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.841743,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
