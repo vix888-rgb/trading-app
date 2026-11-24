@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T09:51+01:00",
+ "updated": "2026-11-24T10:01+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13141,31 +13141,31 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 1628,
+    "n": 1629,
     "hit": 33,
     "avgR": 0.15,
     "pf": 1.27
    },
    "Stochastic (14/3/3)": {
-    "n": 1628,
+    "n": 1629,
     "hit": 38,
     "avgR": -0.002,
     "pf": 1.0
    },
    "ADX trend strength (14)": {
-    "n": 981,
+    "n": 982,
     "hit": 30,
     "avgR": 0.321,
     "pf": 1.69
    },
    "Ichimoku cloud": {
-    "n": 1418,
+    "n": 1419,
     "hit": 26,
     "avgR": 0.256,
     "pf": 1.53
    },
    "Supertrend (10/3)": {
-    "n": 1628,
+    "n": 1629,
     "hit": 31,
     "avgR": 0.272,
     "pf": 1.56
@@ -13195,19 +13195,19 @@
     "pf": 0.7
    },
    "Multi-timeframe confirmation": {
-    "n": 1463,
+    "n": 1464,
     "hit": 25,
-    "avgR": 0.3,
+    "avgR": 0.299,
     "pf": 1.63
    },
    "News sentiment": {
-    "n": 1064,
+    "n": 1065,
     "hit": 27,
     "avgR": 0.128,
     "pf": 1.24
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 1628,
+    "n": 1629,
     "hit": 29,
     "avgR": 0.209,
     "pf": 1.4
@@ -13219,7 +13219,7 @@
     "pf": 1.47
    },
    "Fair value gaps": {
-    "n": 1171,
+    "n": 1172,
     "hit": 31,
     "avgR": 0.228,
     "pf": 1.44
@@ -13231,37 +13231,37 @@
     "pf": 0.67
    },
    "Volume profile / POC": {
-    "n": 1628,
+    "n": 1629,
     "hit": 35,
     "avgR": -0.086,
     "pf": 0.87
    },
    "Anchored VWAP": {
-    "n": 1391,
+    "n": 1392,
     "hit": 31,
     "avgR": -0.032,
     "pf": 0.95
    },
    "Heikin Ashi trend": {
-    "n": 1628,
+    "n": 1629,
     "hit": 29,
     "avgR": 0.006,
     "pf": 1.01
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 1628,
+    "n": 1629,
     "hit": 31,
     "avgR": 0.221,
     "pf": 1.43
    },
    "Hull MA (55)": {
-    "n": 1628,
+    "n": 1629,
     "hit": 31,
     "avgR": 0.166,
     "pf": 1.31
    },
    "Daily pivot points": {
-    "n": 1628,
+    "n": 1629,
     "hit": 28,
     "avgR": 0.237,
     "pf": 1.47
@@ -13273,7 +13273,7 @@
     "pf": 1.7
    },
    "RSI (14)": {
-    "n": 1130,
+    "n": 1131,
     "hit": 28,
     "avgR": 0.229,
     "pf": 1.46
@@ -13311,9 +13311,9 @@
   },
   "sym": {
    "XAUUSD": {
-    "n": 156,
+    "n": 157,
     "hit": 30,
-    "avgR": 0.464,
+    "avgR": 0.461,
     "pf": 2.14
    },
    "BTCUSD": {
@@ -13397,7 +13397,7 @@
     "pf": 0.79
    },
    "TSMOM multi-lookback trend": {
-    "n": 533,
+    "n": 534,
     "hit": 24,
     "avgR": 0.287,
     "pf": 1.6
@@ -13482,13 +13482,13 @@
    }
   },
   "all": {
-   "n": 1628,
-   "hit": 25,
+   "n": 1629,
+   "hit": 24,
    "avgR": 0.28,
    "pf": 1.58
   },
-  "open": 17,
-  "total": 1672
+  "open": 20,
+  "total": 1676
  },
  "rates": {
   "_ts": 1795474181.9404395,
