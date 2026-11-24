@@ -228384,7 +228384,7 @@
   "edge": false,
   "trail_stop": 0.942,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "XAUUSD-15m-1795509900000",
@@ -228471,7 +228471,7 @@
    "Wyckoff spring / upthrust",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 10.587306807704076,
@@ -228523,7 +228523,10 @@
   "edge": false,
   "trail_stop": 3637.639,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 14,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-24T13:52+01:00"
  },
  {
   "id": "BTCUSD-5m-1795510500000",
@@ -230040,7 +230043,7 @@
   "edge": false,
   "trail_stop": 71.48819,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "BTCUSD-15m-1795521600000",
@@ -230174,7 +230177,7 @@
   "edge": false,
   "trail_stop": 60666.041,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "ETHUSD-15m-1795521600000",
@@ -230311,6 +230314,6 @@
   "edge": false,
   "trail_stop": 1709.833,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  }
 ]
