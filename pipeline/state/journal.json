@@ -224045,7 +224045,7 @@
   "edge": false,
   "trail_stop": 61034.66,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 39
  },
  {
   "id": "ETHUSD-15m-1795462200000",
@@ -224181,7 +224181,7 @@
   "edge": false,
   "trail_stop": 1723.37,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 39
  },
  {
   "id": "XRPUSD-15m-1795465800000",
@@ -224457,7 +224457,7 @@
   "edge": false,
   "trail_stop": 72.23869651111687,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "GBPUSD-15m-1795473000000",
@@ -225437,7 +225437,7 @@
   "edge": false,
   "trail_stop": 3642.89,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "XRPUSD-5m-1795494600000",
@@ -225713,6 +225713,139 @@
   "edge": false,
   "trail_stop": 0.948894,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
+ },
+ {
+  "id": "ETHUSD-5m-1795498200000",
+  "logged": "2026-11-24T06:40+01:00",
+  "bar_t": 1795498200000,
+  "bar_time": "Tue 24 Nov 06:30",
+  "sym": "ETHUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 45,
+  "entry": 1708.06,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1701.346,
+  "tp": [
+   1714.774,
+   1721.487,
+   1728.201
+  ],
+  "inv": 1697.77,
+  "votes": [
+   0,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   1
+  ],
+  "weights": [
+   1.0,
+   1.27,
+   1.11,
+   0.43,
+   0.43,
+   1.0,
+   1.0,
+   1.09,
+   1.0,
+   0.6,
+   0.35,
+   0.0,
+   0.07,
+   1.1,
+   0.0,
+   0.0,
+   1.0,
+   1.12,
+   1.36,
+   0.56,
+   0.04,
+   0.0,
+   0.79,
+   0.34,
+   1.0,
+   1.0,
+   0.54,
+   1.1
+  ],
+  "strategies": [
+   "Wyckoff spring / upthrust"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 4.4756704644002205,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 26,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1717.56656723,
+    "side200": -1,
+    "stack": 0,
+    "st": 1,
+    "dh": 1709.69,
+    "dl": 1692.72,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
