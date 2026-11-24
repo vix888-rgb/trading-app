@@ -223765,7 +223765,7 @@
   "edge": true,
   "trail_stop": 1.091354,
   "tp1_hit": false,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "XAUUSD-5m-1795462800000",
@@ -224042,7 +224042,7 @@
   "edge": false,
   "trail_stop": 61719.473,
   "tp1_hit": false,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "ETHUSD-15m-1795462200000",
@@ -224178,7 +224178,7 @@
   "edge": false,
   "trail_stop": 1745.488,
   "tp1_hit": false,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "XRPUSD-15m-1795465800000",
@@ -224315,7 +224315,7 @@
   "edge": false,
   "trail_stop": 0.951137,
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "SOLUSD-15m-1795471200000",
@@ -224451,7 +224451,7 @@
   "edge": false,
   "trail_stop": 73.03826,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "GBPUSD-15m-1795473000000",
@@ -224588,7 +224588,7 @@
   "edge": false,
   "trail_stop": 1.30435,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "EURUSD-4h-1795464000000",
@@ -224730,5 +224730,140 @@
   "trail_stop": 1.094886,
   "tp1_hit": false,
   "bars_open": 0
+ },
+ {
+  "id": "XAUUSD-5m-1795480800000",
+  "logged": "2026-11-24T01:50+01:00",
+  "bar_t": 1795480800000,
+  "bar_time": "Tue 24 Nov 01:40",
+  "sym": "XAUUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 42,
+  "entry": 3659.118,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 3649.783,
+  "tp": [
+   3668.452,
+   3677.787,
+   3687.122
+  ],
+  "inv": 3620.565,
+  "votes": [
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   1
+  ],
+  "weights": [
+   1.35,
+   0.66,
+   1.32,
+   0.66,
+   0.41,
+   1.06,
+   1.51,
+   1.44,
+   1.15,
+   1.02,
+   0.14,
+   0.0,
+   0.69,
+   1.9,
+   0.0,
+   0.0,
+   1.23,
+   1.03,
+   1.09,
+   0.6,
+   0.09,
+   0.07,
+   0.0,
+   0.0,
+   1.0,
+   1.21,
+   1.8,
+   1.76
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Keltner volatility breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 6.223131086352835,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 82,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 3634.30393745,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 3657.24317,
+    "dl": 3620.56481,
+    "brk": 1,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
