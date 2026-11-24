@@ -228647,7 +228647,7 @@
   "edge": false,
   "trail_stop": 59984.04340477413,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 32
  },
  {
   "id": "BTCUSD-1h-1795507200000",
@@ -229561,7 +229561,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.8069686303946755,
@@ -229613,6 +229613,9 @@
   "edge": false,
   "trail_stop": 1690.9,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-24T12:41+01:00"
  }
 ]
