@@ -228382,9 +228382,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.9357047314699583,
+  "trail_stop": 0.9336047314699583,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "XAUUSD-15m-1795509900000",
@@ -230041,9 +230041,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 70.9,
+  "trail_stop": 70.71851398204419,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "BTCUSD-15m-1795521600000",
@@ -231438,9 +231438,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1708.844,
-  "tp1_hit": false,
-  "bars_open": 6
+  "trail_stop": 1693.42,
+  "tp1_hit": true,
+  "bars_open": 7
  },
  {
   "id": "SOLUSD-5m-1795527300000",
@@ -231714,9 +231714,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3633.082,
-  "tp1_hit": false,
-  "bars_open": 5
+  "trail_stop": 3618.486,
+  "tp1_hit": true,
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-1h-1795525200000",
@@ -232259,6 +232259,143 @@
     "brk": -1,
     "sqz": "fired",
     "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 3607.112,
+  "tp1_hit": true,
+  "bars_open": 2
+ },
+ {
+  "id": "BTCUSD-15m-1795532400000",
+  "logged": "2026-11-24T16:22+01:00",
+  "bar_t": 1795532400000,
+  "bar_time": "Tue 24 Nov 16:00",
+  "sym": "BTCUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -46,
+  "entry": 59981.54,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 60540.002,
+  "tp": [
+   59423.078,
+   58864.615,
+   58306.153
+  ],
+  "inv": 60642.85,
+  "votes": [
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   0.66,
+   1.0,
+   0.35,
+   0.8,
+   1.0,
+   1.0,
+   1.28,
+   1.0,
+   0.88,
+   0.42,
+   0.09,
+   0.0,
+   1.19,
+   0.04,
+   0.0,
+   1.0,
+   1.23,
+   1.15,
+   0.0,
+   0.77,
+   0.0,
+   0.0,
+   0.2,
+   1.0,
+   0.86,
+   1.59,
+   1.0
+  ],
+  "strategies": [
+   "Wyckoff spring / upthrust",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 372.3081858834177,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 88,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 60781.38673931,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 60687.53,
+    "dl": 59390.86,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
     "sess": true,
     "gate": false,
     "sgate": false,
