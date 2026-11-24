@@ -231935,7 +231935,7 @@
   "strategies": [
    "Wyckoff spring / upthrust"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.863271366747034,
@@ -231987,7 +231987,10 @@
   "edge": false,
   "trail_stop": 3624.857,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-24T15:42+01:00"
  },
  {
   "id": "SOLUSD-5m-1795529100000",
@@ -232121,8 +232124,8 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 70.47774,
-  "tp1_hit": false,
-  "bars_open": 4
+  "trail_stop": 70.03,
+  "tp1_hit": true,
+  "bars_open": 6
  }
 ]
