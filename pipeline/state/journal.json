@@ -229227,7 +229227,7 @@
   "edge": false,
   "trail_stop": 1712.5,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "USDJPY-5m-1795514700000",
@@ -230052,7 +230052,7 @@
   "edge": false,
   "trail_stop": 70.13851398204417,
   "tp1_hit": true,
-  "bars_open": 35
+  "bars_open": 36
  },
  {
   "id": "BTCUSD-15m-1795521600000",
@@ -230468,7 +230468,7 @@
   "edge": false,
   "trail_stop": 0.9288,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "XAUUSD-5m-1795525500000",
@@ -231449,7 +231449,7 @@
   "edge": false,
   "trail_stop": 1693.42,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "SOLUSD-5m-1795527300000",
@@ -231725,7 +231725,7 @@
   "edge": false,
   "trail_stop": 3586.0807590104823,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "SOLUSD-1h-1795525200000",
@@ -231863,7 +231863,7 @@
   "edge": false,
   "trail_stop": 71.1448,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "XAUUSD-5m-1795529100000",
@@ -233381,7 +233381,7 @@
   "edge": false,
   "trail_stop": 60484.453,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "ETHUSD-5m-1795540500000",
@@ -233885,7 +233885,7 @@
    "ICT/SMC sweep + CHoCH",
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.917996158990064,
@@ -233937,7 +233937,10 @@
   "edge": false,
   "trail_stop": 1678.85,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 22,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-24T22:03+01:00"
  },
  {
   "id": "SOLUSD-5m-1795546500000",
@@ -234211,7 +234214,7 @@
   "edge": false,
   "trail_stop": 59952.0,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "XAUUSD-1h-1795546800000",
@@ -234373,7 +234376,7 @@
   "edge": true,
   "trail_stop": 3586.115,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "ETHUSD-4h-1795536000000",
@@ -234778,6 +234781,6 @@
   "edge": false,
   "trail_stop": 0.924237,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  }
 ]
