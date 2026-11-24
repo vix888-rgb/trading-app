@@ -232275,7 +232275,7 @@
   "edge": false,
   "trail_stop": 3589.2987035631927,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "BTCUSD-15m-1795532400000",
@@ -232631,7 +232631,7 @@
    1.43
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.003987236233315087,
@@ -232683,7 +232683,10 @@
   "edge": false,
   "trail_stop": 0.920881,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 16,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-24T18:43+01:00"
  },
  {
   "id": "SOLUSD-5m-1795536900000",
@@ -233178,7 +233181,7 @@
    1.24
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.36250558344653283,
@@ -233230,7 +233233,10 @@
   "edge": false,
   "trail_stop": 69.77376,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-24T18:43+01:00"
  },
  {
   "id": "BTCUSD-15m-1795539600000",
@@ -233450,7 +233456,7 @@
   "strategies": [
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 7.328806038522707,
@@ -233502,7 +233508,10 @@
   "edge": false,
   "trail_stop": 1685.793,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-24T18:43+01:00"
  },
  {
   "id": "USDJPY-5m-1795541100000",
@@ -233637,6 +233646,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 159.173,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
