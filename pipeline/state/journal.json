@@ -225017,7 +225017,7 @@
   "edge": false,
   "trail_stop": 3658.898,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "BTCUSD-5m-1795482000000",
@@ -225103,7 +225103,7 @@
    "TSMOM multi-lookback trend",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 133.9864853026152,
@@ -225155,7 +225155,10 @@
   "edge": false,
   "trail_stop": 61395.13,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-24T03:00+01:00"
  },
  {
   "id": "XRPUSD-5m-1795482000000",
@@ -225292,6 +225295,6 @@
   "edge": false,
   "trail_stop": 0.9453,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  }
 ]
