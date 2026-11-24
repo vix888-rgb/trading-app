@@ -230052,7 +230052,7 @@
   "edge": false,
   "trail_stop": 70.13851398204417,
   "tp1_hit": true,
-  "bars_open": 37
+  "bars_open": 38
  },
  {
   "id": "BTCUSD-15m-1795521600000",
@@ -231449,7 +231449,7 @@
   "edge": false,
   "trail_stop": 1693.42,
   "tp1_hit": true,
-  "bars_open": 31
+  "bars_open": 32
  },
  {
   "id": "SOLUSD-5m-1795527300000",
@@ -231725,7 +231725,7 @@
   "edge": false,
   "trail_stop": 3586.0807590104823,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 31
  },
  {
   "id": "SOLUSD-1h-1795525200000",
@@ -233381,7 +233381,7 @@
   "edge": false,
   "trail_stop": 60484.453,
   "tp1_hit": false,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "ETHUSD-5m-1795540500000",
@@ -234162,7 +234162,7 @@
    "Squeeze momentum breakout",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 165.54050566860963,
@@ -234214,7 +234214,10 @@
   "edge": false,
   "trail_stop": 59952.0,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 24,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-24T22:33+01:00"
  },
  {
   "id": "XAUUSD-1h-1795546800000",
@@ -234781,6 +234784,6 @@
   "edge": false,
   "trail_stop": 0.924237,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  }
 ]
