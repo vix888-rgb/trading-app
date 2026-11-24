@@ -228647,7 +228647,7 @@
   "edge": false,
   "trail_stop": 59984.04340477413,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 26
  },
  {
   "id": "BTCUSD-1h-1795507200000",
@@ -229007,7 +229007,7 @@
    1.1
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.163415068730913,
@@ -229061,7 +229061,10 @@
   "edge": false,
   "trail_stop": 1686.28,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 14,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-24T12:11+01:00"
  },
  {
   "id": "ETHUSD-1h-1795510800000",
