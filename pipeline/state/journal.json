@@ -228384,7 +228384,7 @@
   "edge": false,
   "trail_stop": 0.9357047314699583,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 25
  },
  {
   "id": "XAUUSD-15m-1795509900000",
@@ -230043,7 +230043,7 @@
   "edge": false,
   "trail_stop": 70.9,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "BTCUSD-15m-1795521600000",
@@ -231246,7 +231246,7 @@
    "Trend-follow + ADX filter",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 332.48810342536785,
@@ -231298,7 +231298,10 @@
   "edge": false,
   "trail_stop": 60627.512,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-24T15:52+01:00"
  },
  {
   "id": "ETHUSD-15m-1795526100000",
@@ -231437,7 +231440,7 @@
   "edge": false,
   "trail_stop": 1708.844,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "SOLUSD-5m-1795527300000",
@@ -231713,7 +231716,7 @@
   "edge": false,
   "trail_stop": 3633.082,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "SOLUSD-1h-1795525200000",
@@ -232074,7 +232077,7 @@
   "strategies": [
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.2984918271472905,
@@ -232126,6 +232129,9 @@
   "edge": false,
   "trail_stop": 70.03,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-24T15:52+01:00"
  }
 ]
