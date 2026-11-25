@@ -230422,7 +230422,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.011717316680530089,
@@ -230474,7 +230474,10 @@
   "edge": false,
   "trail_stop": 0.9288,
   "tp1_hit": true,
-  "bars_open": 29
+  "bars_open": 29,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-25T20:03+01:00"
  },
  {
   "id": "XAUUSD-5m-1795525500000",
@@ -249666,7 +249669,7 @@
   "edge": false,
   "trail_stop": 60663.159,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "ETHUSD-1h-1795626000000",
@@ -249800,6 +249803,6 @@
   "edge": false,
   "trail_stop": 1714.022,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  }
 ]
