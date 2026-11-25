@@ -233390,7 +233390,7 @@
   "edge": false,
   "trail_stop": 59878.59,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 37
  },
  {
   "id": "ETHUSD-5m-1795540500000",
@@ -235916,7 +235916,7 @@
   "edge": false,
   "trail_stop": 1667.9607493080102,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "USDJPY-5m-1795569900000",
@@ -236002,7 +236002,7 @@
    "Liquidity Entry Zones",
    "Wyckoff spring/UTAD \u2192 SOS/SOW \u2192 LPS/LPSY (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.05447149132762686,
@@ -236057,7 +236057,10 @@
   "edge": false,
   "trail_stop": 159.206,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-25T03:33+01:00"
  },
  {
   "id": "ETHUSD-15m-1795569300000",
@@ -236193,7 +236196,7 @@
   "edge": false,
   "trail_stop": 1666.23,
   "tp1_hit": true,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-5m-1795570500000",
@@ -236559,7 +236562,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 7.093215688957572,
@@ -236611,7 +236614,10 @@
   "edge": false,
   "trail_stop": 3560.843,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-25T03:33+01:00"
  },
  {
   "id": "XAUUSD-15m-1795570200000",
@@ -236695,7 +236701,7 @@
   "strategies": [
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 9.84182175564486,
@@ -236747,7 +236753,10 @@
   "edge": false,
   "trail_stop": 3568.865,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-25T03:33+01:00"
  },
  {
   "id": "SOLUSD-5m-1795571100000",
@@ -237022,7 +237031,7 @@
   "edge": false,
   "trail_stop": 59272.01,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1795571700000",
@@ -237160,7 +237169,7 @@
   "edge": false,
   "trail_stop": 69.03,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-15m-1795571100000",
@@ -237297,9 +237306,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 69.48711,
-  "tp1_hit": false,
-  "bars_open": 1
+  "trail_stop": 69.03,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-5m-1795571700000",
@@ -237439,7 +237448,7 @@
   "edge": false,
   "trail_stop": 0.917216,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "XRPUSD-15m-1795571100000",
@@ -237577,6 +237586,6 @@
   "edge": false,
   "trail_stop": 0.919114,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  }
 ]
