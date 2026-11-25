@@ -238437,7 +238437,7 @@
   "edge": false,
   "trail_stop": 68.69920808723302,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 37
  },
  {
   "id": "XAUUSD-5m-1795577100000",
@@ -238710,7 +238710,7 @@
   "edge": false,
   "trail_stop": 1663.55,
   "tp1_hit": true,
-  "bars_open": 35
+  "bars_open": 36
  },
  {
   "id": "XRPUSD-15m-1795576500000",
@@ -239346,7 +239346,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 9.955247599536802,
@@ -239398,7 +239398,10 @@
   "edge": false,
   "trail_stop": 3524.2629603981472,
   "tp1_hit": true,
-  "bars_open": 33
+  "bars_open": 33,
+  "R": 1.63,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-25T13:33+01:00"
  },
  {
   "id": "USDJPY-5m-1795578900000",
@@ -242321,7 +242324,7 @@
   "edge": false,
   "trail_stop": 1650.43,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 46
  },
  {
   "id": "SOLUSD-5m-1795595700000",
@@ -242457,7 +242460,7 @@
   "edge": false,
   "trail_stop": 68.12,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 46
  },
  {
   "id": "BTCUSD-15m-1795595400000",
@@ -242597,7 +242600,7 @@
   "edge": false,
   "trail_stop": 59278.2,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "USDJPY-5m-1795596300000",
@@ -242877,7 +242880,7 @@
   "edge": false,
   "trail_stop": 0.9175,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "XAUUSD-5m-1795598700000",
@@ -243289,7 +243292,7 @@
   "edge": false,
   "trail_stop": 0.9148,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 36
  },
  {
   "id": "EURUSD-5m-1795599900000",
@@ -243702,7 +243705,7 @@
   "edge": false,
   "trail_stop": 59062.01,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "GBPUSD-15m-1795602600000",
@@ -243786,7 +243789,7 @@
   "strategies": [
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.000658573534683188,
@@ -243838,7 +243841,10 @@
   "edge": false,
   "trail_stop": 1.30748,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-25T13:33+01:00"
  },
  {
   "id": "EURUSD-5m-1795604100000",
@@ -245100,5 +245106,141 @@
   "exit": "stop",
   "tp1_hit": false,
   "closed_at": "2026-11-25T13:23+01:00"
+ },
+ {
+  "id": "XAUUSD-15m-1795608900000",
+  "logged": "2026-11-25T13:33+01:00",
+  "bar_t": 1795608900000,
+  "bar_time": "Wed 25 Nov 13:15",
+  "sym": "XAUUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -73,
+  "entry": 3523.928,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 3541.147,
+  "tp": [
+   3506.708,
+   3489.488,
+   3472.269
+  ],
+  "inv": 3537.819,
+  "votes": [
+   0,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.07,
+   1.04,
+   1.0,
+   0.29,
+   1.2,
+   1.11,
+   1.06,
+   1.0,
+   1.15,
+   1.02,
+   0.0,
+   0.0,
+   0.09,
+   1.86,
+   0.0,
+   0.0,
+   1.1,
+   1.5,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.66,
+   0.09,
+   1.43,
+   1.02,
+   1.03,
+   1.27
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Wyckoff spring / upthrust",
+   "Keltner volatility breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 11.479752338827408,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 79,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 3579.8428729,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 3539.59733,
+    "dl": 3484.44197,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
