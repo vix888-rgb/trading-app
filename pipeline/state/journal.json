@@ -245225,7 +245225,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 11.479752338827408,
@@ -245277,7 +245277,10 @@
   "edge": false,
   "trail_stop": 3472.3985793553097,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 18,
+  "R": 2.99,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-25T18:23+01:00"
  },
  {
   "id": "GBPUSD-15m-1795609800000",
@@ -247940,7 +247943,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.007528678249991241,
@@ -247992,7 +247995,10 @@
   "edge": false,
   "trail_stop": 0.909393,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 7,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-25T18:23+01:00"
  },
  {
   "id": "GBPUSD-15m-1795618800000",
@@ -248766,7 +248772,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 470.83110770383513,
@@ -248818,7 +248824,10 @@
   "edge": false,
   "trail_stop": 59396.537,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-25T18:23+01:00"
  },
  {
   "id": "SOLUSD-15m-1795623300000",
@@ -248952,7 +248961,7 @@
   "edge": false,
   "trail_stop": 68.93683,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "BTCUSD-5m-1795625100000",
@@ -249177,7 +249186,7 @@
    "TSMOM multi-lookback trend",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 15.55497788115772,
@@ -249229,7 +249238,10 @@
   "edge": false,
   "trail_stop": 1654.252,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 1,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-25T18:23+01:00"
  },
  {
   "id": "XAUUSD-5m-1795625700000",
