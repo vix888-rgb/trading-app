@@ -238437,7 +238437,7 @@
   "edge": false,
   "trail_stop": 68.69920808723302,
   "tp1_hit": true,
-  "bars_open": 39
+  "bars_open": 40
  },
  {
   "id": "XAUUSD-5m-1795577100000",
@@ -238710,7 +238710,7 @@
   "edge": false,
   "trail_stop": 1663.55,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 39
  },
  {
   "id": "XRPUSD-15m-1795576500000",
@@ -242606,7 +242606,7 @@
   "edge": false,
   "trail_stop": 59278.2,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "USDJPY-5m-1795596300000",
@@ -242886,7 +242886,7 @@
   "edge": false,
   "trail_stop": 0.9175,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "XAUUSD-5m-1795598700000",
@@ -243298,7 +243298,7 @@
   "edge": false,
   "trail_stop": 0.9148,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 46
  },
  {
   "id": "EURUSD-5m-1795599900000",
@@ -243711,7 +243711,7 @@
   "edge": false,
   "trail_stop": 59062.01,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "GBPUSD-15m-1795602600000",
@@ -245250,7 +245250,7 @@
   "edge": false,
   "trail_stop": 3541.147,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "GBPUSD-15m-1795609800000",
@@ -245388,9 +245388,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.308469,
-  "tp1_hit": false,
-  "bars_open": 1
+  "trail_stop": 1.307412,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "EURUSD-1h-1795608000000",
@@ -245662,7 +245662,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3514.824,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "EURUSD-5m-1795611900000",
@@ -245798,7 +245801,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.094479,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-5m-1795611900000",
@@ -245883,7 +245889,7 @@
    "TSMOM multi-lookback trend",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003751249961576008,
@@ -245916,6 +245922,285 @@
    "why": "",
    "ind": {
     "e200": 1.30831401,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.30794179,
+    "dl": 1.30568755,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.306677,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-25T14:23+01:00"
+ },
+ {
+  "id": "USDJPY-5m-1795612500000",
+  "logged": "2026-11-25T14:23+01:00",
+  "bar_t": 1795612500000,
+  "bar_time": "Wed 25 Nov 14:15",
+  "sym": "USDJPY",
+  "tf": "5m",
+  "side": "long",
+  "score": 33,
+  "entry": 159.311,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 159.227,
+  "tp": [
+   159.395,
+   159.478,
+   159.562
+  ],
+  "inv": 159.178,
+  "votes": [
+   0,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.7,
+   0.66,
+   1.25,
+   0.22,
+   1.32,
+   1.15,
+   1.21,
+   1.02,
+   1.15,
+   1.02,
+   0.0,
+   0.35,
+   0.0,
+   1.0,
+   0.54,
+   0.0,
+   1.38,
+   1.25,
+   1.27,
+   0.0,
+   0.21,
+   0.0,
+   0.18,
+   0.0,
+   1.0,
+   0.86,
+   1.53,
+   1.08
+  ],
+  "strategies": [
+   "ICT/SMC sweep + CHoCH"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.055807841736678444,
+  "filters": {
+   "carry": 2.65,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 60,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 159.23500061,
+    "hi": 159.35099792,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "Core PCE Price Index m/m",
+    "at": "2026-11-25T08:30:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 159.28888269,
+    "side200": 1,
+    "stack": 0,
+    "st": -1,
+    "dh": 159.38200378,
+    "dl": 159.17799377,
+    "brk": 0,
+    "sqz": "on",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": 1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
+ },
+ {
+  "id": "GBPUSD-5m-1795612500000",
+  "logged": "2026-11-25T14:23+01:00",
+  "bar_t": 1795612500000,
+  "bar_time": "Wed 25 Nov 14:15",
+  "sym": "GBPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -38,
+  "entry": 1.306558,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.307122,
+  "tp": [
+   1.305993,
+   1.305429,
+   1.304865
+  ],
+  "inv": 1.307942,
+  "votes": [
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.0,
+   0.66,
+   1.0,
+   0.39,
+   1.11,
+   1.48,
+   1.25,
+   1.05,
+   1.15,
+   1.02,
+   0.2,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   1.15,
+   1.0,
+   1.41,
+   0.36,
+   0.0,
+   0.3,
+   0.28,
+   0.04,
+   1.0,
+   0.86,
+   1.05,
+   1.0
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend",
+   "Keltner volatility breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00037621249708395083,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 81,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "Core PCE Price Index m/m",
+    "at": "2026-11-25T08:30:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.30827992,
     "side200": -1,
     "stack": -1,
     "st": -1,
