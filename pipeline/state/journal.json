@@ -238435,9 +238435,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 68.69920808723302,
+  "trail_stop": 68.26920808723301,
   "tp1_hit": true,
-  "bars_open": 41
+  "bars_open": 42
  },
  {
   "id": "XAUUSD-5m-1795577100000",
@@ -238708,9 +238708,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1663.55,
+  "trail_stop": 1658.0400851291272,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 41
  },
  {
   "id": "XRPUSD-15m-1795576500000",
@@ -242606,7 +242606,7 @@
   "edge": false,
   "trail_stop": 59278.2,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "USDJPY-5m-1795596300000",
@@ -242884,9 +242884,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.9175,
+  "trail_stop": 0.9161372609814901,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "XAUUSD-5m-1795598700000",
@@ -243712,9 +243712,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 58844.21128010405,
+  "trail_stop": 58609.94128010405,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 44
  },
  {
   "id": "GBPUSD-15m-1795602600000",
@@ -245251,9 +245251,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3523.928,
+  "trail_stop": 3515.0332893553095,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "GBPUSD-15m-1795609800000",
@@ -245338,7 +245338,7 @@
    "ICT/SMC sweep + CHoCH",
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0007049179110319686,
@@ -245393,7 +245393,10 @@
   "edge": false,
   "trail_stop": 1.307412,
   "tp1_hit": true,
-  "bars_open": 3
+  "bars_open": 3,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-25T14:53+01:00"
  },
  {
   "id": "EURUSD-1h-1795608000000",
@@ -245666,9 +245669,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3510.1691218372916,
+  "trail_stop": 3499.3053118372914,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "EURUSD-5m-1795611900000",
@@ -246372,9 +246375,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.9085550498650197,
+  "trail_stop": 0.9044550498650196,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "ETHUSD-5m-1795613700000",
@@ -246511,7 +246514,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1640.22,
+  "tp1_hit": true,
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-5m-1795613700000",
@@ -246641,6 +246647,147 @@
     "dl": 66.92,
     "brk": -1,
     "sqz": "on",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 67.38,
+  "tp1_hit": true,
+  "bars_open": 2
+ },
+ {
+  "id": "GBPUSD-15m-1795613400000",
+  "logged": "2026-11-25T14:53+01:00",
+  "bar_t": 1795613400000,
+  "bar_time": "Wed 25 Nov 14:30",
+  "sym": "GBPUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -42,
+  "entry": 1.30695,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.308065,
+  "tp": [
+   1.305836,
+   1.304722,
+   1.303607
+  ],
+  "inv": 1.307942,
+  "votes": [
+   -1,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.21,
+   0.66,
+   1.0,
+   0.05,
+   0.5,
+   1.5,
+   1.25,
+   1.21,
+   1.15,
+   1.02,
+   0.46,
+   0.0,
+   0.0,
+   1.78,
+   0.0,
+   0.0,
+   1.14,
+   1.07,
+   1.17,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.11,
+   0.86,
+   0.88,
+   1.14
+  ],
+  "strategies": [
+   "Trend-follow + ADX filter"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0007429160747897103,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 87,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 1.30568755,
+    "hi": 1.30794179,
+    "src": "15m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "Core PCE Price Index m/m",
+    "at": "2026-11-25T08:30:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.30853846,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1.30824983,
+    "dl": 1.30568755,
+    "brk": 0,
+    "sqz": "off",
     "mom": 1,
     "sess": true,
     "gate": false,
