@@ -245686,7 +245686,7 @@
   "edge": false,
   "trail_stop": 3456.6706018372915,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "EURUSD-5m-1795611900000",
@@ -248189,7 +248189,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0003897508111902697,
@@ -248238,6 +248238,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.094916,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-25T16:43+01:00"
  }
 ]
