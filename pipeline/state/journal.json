@@ -242318,7 +242318,7 @@
   "edge": false,
   "trail_stop": 1650.43,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "SOLUSD-5m-1795595700000",
@@ -242454,7 +242454,7 @@
   "edge": false,
   "trail_stop": 68.12,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "BTCUSD-15m-1795595400000",
@@ -243286,7 +243286,7 @@
   "edge": false,
   "trail_stop": 0.919129,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "EURUSD-5m-1795599900000",
@@ -243699,7 +243699,7 @@
   "edge": false,
   "trail_stop": 59062.01,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "GBPUSD-15m-1795602600000",
@@ -243968,7 +243968,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.09468,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-1h-1795600800000",
@@ -244104,6 +244107,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.308768,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
