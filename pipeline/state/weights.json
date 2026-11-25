@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T02:33+01:00",
+ "updated": "2026-11-25T02:43+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13141,49 +13141,49 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 1678,
+    "n": 1680,
     "hit": 33,
     "avgR": 0.152,
     "pf": 1.28
    },
    "Stochastic (14/3/3)": {
-    "n": 1678,
+    "n": 1680,
     "hit": 38,
     "avgR": -0.001,
     "pf": 1.0
    },
    "ADX trend strength (14)": {
-    "n": 1013,
+    "n": 1015,
     "hit": 29,
-    "avgR": 0.308,
+    "avgR": 0.307,
     "pf": 1.66
    },
    "Ichimoku cloud": {
-    "n": 1460,
+    "n": 1462,
     "hit": 26,
-    "avgR": 0.251,
+    "avgR": 0.25,
     "pf": 1.52
    },
    "Supertrend (10/3)": {
-    "n": 1678,
+    "n": 1680,
     "hit": 31,
-    "avgR": 0.262,
+    "avgR": 0.261,
     "pf": 1.54
    },
    "Volume / OBV": {
-    "n": 953,
+    "n": 954,
     "hit": 28,
     "avgR": 0.199,
     "pf": 1.36
    },
    "VWAP (rolling 50 bars)": {
-    "n": 891,
+    "n": 892,
     "hit": 28,
-    "avgR": 0.185,
+    "avgR": 0.184,
     "pf": 1.34
    },
    "Candlestick patterns": {
-    "n": 768,
+    "n": 770,
     "hit": 26,
     "avgR": -0.188,
     "pf": 0.72
@@ -13195,93 +13195,93 @@
     "pf": 0.68
    },
    "Multi-timeframe confirmation": {
-    "n": 1513,
+    "n": 1515,
     "hit": 25,
     "avgR": 0.29,
     "pf": 1.61
    },
    "News sentiment": {
-    "n": 1086,
+    "n": 1087,
     "hit": 27,
     "avgR": 0.124,
     "pf": 1.24
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 1678,
+    "n": 1680,
     "hit": 29,
     "avgR": 0.203,
     "pf": 1.39
    },
    "Order blocks": {
-    "n": 652,
+    "n": 653,
     "hit": 37,
     "avgR": 0.228,
     "pf": 1.44
    },
    "Fair value gaps": {
-    "n": 1212,
+    "n": 1213,
     "hit": 31,
     "avgR": 0.224,
     "pf": 1.44
    },
    "Liquidity sweeps": {
-    "n": 594,
+    "n": 595,
     "hit": 42,
     "avgR": -0.226,
     "pf": 0.68
    },
    "Volume profile / POC": {
-    "n": 1678,
+    "n": 1680,
     "hit": 35,
     "avgR": -0.082,
     "pf": 0.88
    },
    "Anchored VWAP": {
-    "n": 1428,
+    "n": 1430,
     "hit": 31,
     "avgR": -0.027,
     "pf": 0.96
    },
    "Heikin Ashi trend": {
-    "n": 1678,
+    "n": 1680,
     "hit": 29,
     "avgR": 0.008,
     "pf": 1.01
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 1678,
-    "hit": 31,
-    "avgR": 0.216,
+    "n": 1680,
+    "hit": 30,
+    "avgR": 0.215,
     "pf": 1.42
    },
    "Hull MA (55)": {
-    "n": 1678,
+    "n": 1680,
     "hit": 31,
-    "avgR": 0.165,
+    "avgR": 0.164,
     "pf": 1.31
    },
    "Daily pivot points": {
-    "n": 1678,
+    "n": 1680,
     "hit": 27,
-    "avgR": 0.222,
+    "avgR": 0.221,
     "pf": 1.44
    },
    "EMA trend (20/50/200)": {
-    "n": 1112,
+    "n": 1113,
     "hit": 25,
-    "avgR": 0.32,
+    "avgR": 0.319,
     "pf": 1.66
    },
    "RSI (14)": {
-    "n": 1165,
+    "n": 1166,
     "hit": 28,
     "avgR": 0.219,
     "pf": 1.44
    },
    "Bollinger Bands (20/2)": {
-    "n": 718,
+    "n": 719,
     "hit": 31,
-    "avgR": 0.095,
+    "avgR": 0.094,
     "pf": 1.17
    },
    "Williams %R / CCI": {
@@ -13303,7 +13303,7 @@
     "pf": 0.58
    },
    "Volatility (ATR 14)": {
-    "n": 268,
+    "n": 269,
     "hit": 29,
     "avgR": -0.074,
     "pf": 0.89
@@ -13311,15 +13311,15 @@
   },
   "sym": {
    "XAUUSD": {
-    "n": 163,
+    "n": 164,
     "hit": 30,
-    "avgR": 0.454,
+    "avgR": 0.451,
     "pf": 2.11
    },
    "BTCUSD": {
-    "n": 249,
+    "n": 250,
     "hit": 21,
-    "avgR": 0.301,
+    "avgR": 0.3,
     "pf": 1.61
    },
    "EURCHF": {
@@ -13415,9 +13415,9 @@
     "pf": 1.51
    },
    "ICT/SMC sweep + CHoCH": {
-    "n": 145,
+    "n": 146,
     "hit": 33,
-    "avgR": 0.302,
+    "avgR": 0.3,
     "pf": 1.72
    },
    "Liquidity Entry Zones": {
@@ -13482,13 +13482,13 @@
    }
   },
   "all": {
-   "n": 1678,
+   "n": 1680,
    "hit": 24,
    "avgR": 0.272,
    "pf": 1.56
   },
   "open": 23,
-  "total": 1728
+  "total": 1730
  },
  "rates": {
   "_ts": 1795560773.5015914,
