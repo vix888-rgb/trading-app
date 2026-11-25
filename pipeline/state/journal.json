@@ -238437,7 +238437,7 @@
   "edge": false,
   "trail_stop": 69.119208087233,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "XAUUSD-5m-1795577100000",
@@ -238710,7 +238710,7 @@
   "edge": false,
   "trail_stop": 1663.55,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "XRPUSD-15m-1795576500000",
@@ -238792,7 +238792,7 @@
    1.1
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0037549345703940273,
@@ -238844,7 +238844,10 @@
   "edge": false,
   "trail_stop": 0.9201,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 19,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-25T09:33+01:00"
  },
  {
   "id": "BTCUSD-5m-1795577700000",
@@ -239119,7 +239122,7 @@
   "edge": true,
   "trail_stop": 1.094931,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "ETHUSD-5m-1795578300000",
@@ -239392,7 +239395,7 @@
   "edge": false,
   "trail_stop": 3548.552,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "USDJPY-5m-1795578900000",
@@ -239941,7 +239944,7 @@
   "edge": false,
   "trail_stop": 59142.22,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "XRPUSD-5m-1795584300000",
@@ -240634,7 +240637,7 @@
   "edge": false,
   "trail_stop": 1.308335,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 5
  },
  {
   "id": "XAUUSD-5m-1795591500000",
@@ -240912,7 +240915,7 @@
   "edge": false,
   "trail_stop": 59059.54,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "ETHUSD-5m-1795592100000",
@@ -241055,7 +241058,7 @@
   "edge": false,
   "trail_stop": 1650.432,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "XRPUSD-5m-1795592100000",
@@ -241695,7 +241698,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.094175020148579,
@@ -241747,7 +241750,10 @@
   "edge": false,
   "trail_stop": 3529.647,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-25T09:33+01:00"
  },
  {
   "id": "SOLUSD-5m-1795593900000",
@@ -241885,7 +241891,7 @@
   "edge": false,
   "trail_stop": 68.31806,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "XRPUSD-5m-1795593900000",
@@ -242019,6 +242025,141 @@
   "edge": false,
   "trail_stop": 0.921069,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "USDJPY-15m-1795594500000",
+  "logged": "2026-11-25T09:33+01:00",
+  "bar_t": 1795594500000,
+  "bar_time": "Wed 25 Nov 09:15",
+  "sym": "USDJPY",
+  "tf": "15m",
+  "side": "long",
+  "score": 32,
+  "entry": 159.389,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 159.226,
+  "tp": [
+   159.552,
+   159.716,
+   159.879
+  ],
+  "inv": 158.992,
+  "votes": [
+   1,
+   -1,
+   1,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   1.25,
+   0.66,
+   1.18,
+   0.05,
+   0.51,
+   1.63,
+   1.6,
+   1.44,
+   1.15,
+   1.02,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   0.15,
+   0.0,
+   1.24,
+   2.0,
+   1.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0,
+   1.22,
+   0.88,
+   1.0
+  ],
+  "strategies": [
+   "ICT/SMC sweep + CHoCH",
+   "Wyckoff spring / upthrust",
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.10885815438997923,
+  "filters": {
+   "carry": 2.65,
+   "carryDir": 1,
+   "vol": true,
+   "atrPct": 71,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 159.19852243,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 159.4960022,
+    "dl": 158.99200439,
+    "brk": 0,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": 1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
