@@ -243662,7 +243662,7 @@
    1.98
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 155.0528200260116,
@@ -243714,7 +243714,10 @@
   "edge": false,
   "trail_stop": 58609.94128010405,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 3.41,
+  "exit": "time exit",
+  "closed_at": "2026-11-25T15:13+01:00"
  },
  {
   "id": "GBPUSD-15m-1795602600000",
@@ -245671,7 +245674,7 @@
   "edge": false,
   "trail_stop": 3495.633941837292,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "EURUSD-5m-1795611900000",
@@ -246377,7 +246380,7 @@
   "edge": false,
   "trail_stop": 0.9026550498650197,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "ETHUSD-5m-1795613700000",
@@ -246517,7 +246520,7 @@
   "edge": false,
   "trail_stop": 1640.22,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "SOLUSD-5m-1795613700000",
@@ -246661,7 +246664,7 @@
   "edge": false,
   "trail_stop": 67.38,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "GBPUSD-15m-1795613400000",
