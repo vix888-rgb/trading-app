@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T13:33+01:00",
+ "updated": "2026-11-25T13:43+01:00",
  "params": {
   "version": 1,
   "horizon_bars": 12,
@@ -13141,46 +13141,46 @@
  "live": {
   "agent": {
    "MACD (12/26/9)": {
-    "n": 1737,
+    "n": 1739,
     "hit": 33,
-    "avgR": 0.145,
+    "avgR": 0.144,
     "pf": 1.27
    },
    "Stochastic (14/3/3)": {
-    "n": 1737,
+    "n": 1739,
     "hit": 38,
-    "avgR": 0.009,
+    "avgR": 0.008,
     "pf": 1.01
    },
    "ADX trend strength (14)": {
-    "n": 1039,
+    "n": 1041,
     "hit": 29,
-    "avgR": 0.294,
+    "avgR": 0.292,
     "pf": 1.63
    },
    "Ichimoku cloud": {
-    "n": 1509,
+    "n": 1511,
     "hit": 26,
-    "avgR": 0.236,
-    "pf": 1.48
+    "avgR": 0.237,
+    "pf": 1.49
    },
    "Supertrend (10/3)": {
-    "n": 1737,
+    "n": 1739,
     "hit": 31,
     "avgR": 0.246,
     "pf": 1.5
    },
    "Volume / OBV": {
-    "n": 983,
+    "n": 985,
     "hit": 27,
-    "avgR": 0.185,
+    "avgR": 0.186,
     "pf": 1.34
    },
    "VWAP (rolling 50 bars)": {
-    "n": 918,
-    "hit": 27,
-    "avgR": 0.165,
-    "pf": 1.3
+    "n": 920,
+    "hit": 28,
+    "avgR": 0.166,
+    "pf": 1.31
    },
    "Candlestick patterns": {
     "n": 798,
@@ -13189,16 +13189,16 @@
     "pf": 0.72
    },
    "RSI divergence": {
-    "n": 250,
+    "n": 251,
     "hit": 38,
-    "avgR": -0.186,
-    "pf": 0.71
+    "avgR": -0.19,
+    "pf": 0.7
    },
    "Multi-timeframe confirmation": {
-    "n": 1571,
+    "n": 1573,
     "hit": 25,
     "avgR": 0.27,
-    "pf": 1.56
+    "pf": 1.57
    },
    "News sentiment": {
     "n": 1122,
@@ -13207,21 +13207,21 @@
     "pf": 1.23
    },
    "SMC market structure (BOS/CHoCH)": {
-    "n": 1737,
+    "n": 1739,
     "hit": 29,
     "avgR": 0.19,
     "pf": 1.37
    },
    "Order blocks": {
-    "n": 679,
+    "n": 680,
     "hit": 37,
-    "avgR": 0.231,
+    "avgR": 0.229,
     "pf": 1.46
    },
    "Fair value gaps": {
-    "n": 1250,
+    "n": 1251,
     "hit": 31,
-    "avgR": 0.215,
+    "avgR": 0.214,
     "pf": 1.42
    },
    "Liquidity sweeps": {
@@ -13231,49 +13231,49 @@
     "pf": 0.7
    },
    "Volume profile / POC": {
-    "n": 1737,
+    "n": 1739,
     "hit": 36,
-    "avgR": -0.074,
-    "pf": 0.89
+    "avgR": -0.075,
+    "pf": 0.88
    },
    "Anchored VWAP": {
-    "n": 1476,
+    "n": 1477,
     "hit": 31,
     "avgR": -0.029,
     "pf": 0.95
    },
    "Heikin Ashi trend": {
-    "n": 1737,
+    "n": 1739,
     "hit": 29,
-    "avgR": 0.013,
+    "avgR": 0.012,
     "pf": 1.02
    },
    "TTM Squeeze (BB in Keltner)": {
-    "n": 1737,
+    "n": 1739,
     "hit": 30,
-    "avgR": 0.199,
+    "avgR": 0.2,
     "pf": 1.39
    },
    "Hull MA (55)": {
-    "n": 1737,
+    "n": 1739,
     "hit": 31,
-    "avgR": 0.144,
+    "avgR": 0.145,
     "pf": 1.27
    },
    "Daily pivot points": {
-    "n": 1737,
+    "n": 1739,
     "hit": 27,
     "avgR": 0.203,
     "pf": 1.4
    },
    "EMA trend (20/50/200)": {
-    "n": 1151,
+    "n": 1152,
     "hit": 25,
-    "avgR": 0.302,
+    "avgR": 0.303,
     "pf": 1.63
    },
    "RSI (14)": {
-    "n": 1199,
+    "n": 1200,
     "hit": 28,
     "avgR": 0.21,
     "pf": 1.42
@@ -13297,15 +13297,15 @@
     "pf": 0.62
    },
    "Support / resistance": {
-    "n": 365,
+    "n": 366,
     "hit": 45,
     "avgR": -0.381,
     "pf": 0.59
    },
    "Volatility (ATR 14)": {
-    "n": 277,
+    "n": 278,
     "hit": 29,
-    "avgR": -0.066,
+    "avgR": -0.068,
     "pf": 0.9
    }
   },
@@ -13329,16 +13329,16 @@
     "pf": 0.29
    },
    "ETHUSD": {
-    "n": 237,
-    "hit": 23,
-    "avgR": 0.447,
-    "pf": 2.0
+    "n": 238,
+    "hit": 24,
+    "avgR": 0.448,
+    "pf": 2.01
    },
    "SOLUSD": {
-    "n": 234,
+    "n": 235,
     "hit": 26,
-    "avgR": 0.334,
-    "pf": 1.71
+    "avgR": 0.336,
+    "pf": 1.72
    },
    "XRPUSD": {
     "n": 242,
@@ -13415,10 +13415,10 @@
     "pf": 1.46
    },
    "ICT/SMC sweep + CHoCH": {
-    "n": 149,
+    "n": 150,
     "hit": 34,
-    "avgR": 0.338,
-    "pf": 1.81
+    "avgR": 0.342,
+    "pf": 1.82
    },
    "Liquidity Entry Zones": {
     "n": 75,
@@ -13482,12 +13482,12 @@
    }
   },
   "all": {
-   "n": 1737,
+   "n": 1739,
    "hit": 24,
-   "avgR": 0.256,
+   "avgR": 0.257,
    "pf": 1.53
   },
-  "open": 29,
+  "open": 27,
   "total": 1793
  },
  "rates": {

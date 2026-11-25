@@ -242272,7 +242272,7 @@
    1.1
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 5.4233194425388325,
@@ -242324,7 +242324,10 @@
   "edge": false,
   "trail_stop": 1650.43,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 0.59,
+  "exit": "time exit",
+  "closed_at": "2026-11-25T13:43+01:00"
  },
  {
   "id": "SOLUSD-5m-1795595700000",
@@ -242408,7 +242411,7 @@
   "strategies": [
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.2563655487921902,
@@ -242460,7 +242463,10 @@
   "edge": false,
   "trail_stop": 68.12,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 0.99,
+  "exit": "time exit",
+  "closed_at": "2026-11-25T13:43+01:00"
  },
  {
   "id": "BTCUSD-15m-1795595400000",
@@ -243292,7 +243298,7 @@
   "edge": false,
   "trail_stop": 0.9148,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "EURUSD-5m-1795599900000",
@@ -243705,7 +243711,7 @@
   "edge": false,
   "trail_stop": 59062.01,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "GBPUSD-15m-1795602600000",
@@ -245241,6 +245247,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3541.147,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
