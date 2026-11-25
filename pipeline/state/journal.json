@@ -242312,7 +242312,7 @@
   "edge": false,
   "trail_stop": 1650.43,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "SOLUSD-5m-1795595700000",
@@ -242448,7 +242448,7 @@
   "edge": false,
   "trail_stop": 68.12,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "BTCUSD-15m-1795595400000",
@@ -242725,7 +242725,7 @@
   "edge": false,
   "trail_stop": 159.279,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "XRPUSD-15m-1795597200000",
@@ -242998,7 +242998,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3533.141,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "BTCUSD-5m-1795598700000",
@@ -243129,7 +243132,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 59195.923,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-5m-1795598700000",
@@ -243262,6 +243268,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.919129,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
