@@ -238437,7 +238437,7 @@
   "edge": false,
   "trail_stop": 68.69920808723302,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 41
  },
  {
   "id": "XAUUSD-5m-1795577100000",
@@ -238710,7 +238710,7 @@
   "edge": false,
   "trail_stop": 1663.55,
   "tp1_hit": true,
-  "bars_open": 39
+  "bars_open": 40
  },
  {
   "id": "XRPUSD-15m-1795576500000",
@@ -242606,7 +242606,7 @@
   "edge": false,
   "trail_stop": 59278.2,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "USDJPY-5m-1795596300000",
@@ -242886,7 +242886,7 @@
   "edge": false,
   "trail_stop": 0.9175,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 17
  },
  {
   "id": "XAUUSD-5m-1795598700000",
@@ -243246,7 +243246,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00288618882630979,
@@ -243298,7 +243298,10 @@
   "edge": false,
   "trail_stop": 0.9148,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 1.41,
+  "exit": "time exit",
+  "closed_at": "2026-11-25T14:33+01:00"
  },
  {
   "id": "EURUSD-5m-1795599900000",
@@ -243711,7 +243714,7 @@
   "edge": false,
   "trail_stop": 59062.01,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 40
  },
  {
   "id": "GBPUSD-15m-1795602600000",
@@ -245248,9 +245251,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3541.147,
-  "tp1_hit": false,
-  "bars_open": 3
+  "trail_stop": 3523.928,
+  "tp1_hit": true,
+  "bars_open": 4
  },
  {
   "id": "GBPUSD-15m-1795609800000",
@@ -245390,7 +245393,7 @@
   "edge": false,
   "trail_stop": 1.307412,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 3
  },
  {
   "id": "EURUSD-1h-1795608000000",
@@ -245665,7 +245668,7 @@
   "edge": false,
   "trail_stop": 3514.824,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "EURUSD-5m-1795611900000",
@@ -245750,7 +245753,7 @@
    "TSMOM multi-lookback trend",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00033757020213910665,
@@ -245804,7 +245807,10 @@
   "edge": false,
   "trail_stop": 1.094479,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-25T14:33+01:00"
  },
  {
   "id": "GBPUSD-5m-1795611900000",
@@ -246083,7 +246089,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 159.227,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-5m-1795612500000",
@@ -246168,7 +246177,7 @@
    "TSMOM multi-lookback trend",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00037621249708395083,
@@ -246215,6 +246224,146 @@
     "d1": -1,
     "dgate": false,
     "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 1.307122,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-25T14:33+01:00"
+ },
+ {
+  "id": "XRPUSD-5m-1795613100000",
+  "logged": "2026-11-25T14:33+01:00",
+  "bar_t": 1795613100000,
+  "bar_time": "Wed 25 Nov 14:25",
+  "sym": "XRPUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -39,
+  "entry": 0.9087,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 0.912396,
+  "tp": [
+   0.905004,
+   0.901309,
+   0.897613
+  ],
+  "inv": 0.9122,
+  "votes": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.46,
+   0.66,
+   1.39,
+   0.44,
+   0.41,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.02,
+   0.0,
+   0.0,
+   0.0,
+   1.08,
+   0.0,
+   0.0,
+   1.02,
+   1.42,
+   1.0,
+   1.0,
+   0.0,
+   0.2,
+   0.32,
+   0.0,
+   1.0,
+   0.86,
+   1.69,
+   1.43
+  ],
+  "strategies": [
+   "TTM squeeze fire + EMA200 (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0024637624662549114,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 76,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": true,
+    "title": "Core PCE Price Index m/m",
+    "at": "2026-11-25T08:30:00-05:00",
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 0.91724934,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 0.9124,
+    "dl": 0.9042,
+    "brk": 0,
+    "sqz": "on",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
     "vxgate": false
    },
    "pat": []
