@@ -251156,7 +251156,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 6.026545197825494,
@@ -251208,7 +251208,10 @@
   "edge": false,
   "trail_stop": 3568.458,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 0.76,
+  "exit": "time exit",
+  "closed_at": "2026-11-26T12:14+01:00"
  },
  {
   "id": "GBPUSD-5m-1795680300000",
@@ -251290,7 +251293,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0002885683420718204,
@@ -251345,7 +251348,10 @@
   "edge": false,
   "trail_stop": 1.3106996122823475,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 34,
+  "R": 0.11,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-26T12:14+01:00"
  },
  {
   "id": "ETHUSD-5m-1795682700000",
