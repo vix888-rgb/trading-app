@@ -250878,7 +250878,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0028238649545079065,
@@ -250930,6 +250930,9 @@
   "edge": false,
   "trail_stop": 0.953,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 0.71,
+  "exit": "time exit",
+  "closed_at": "2026-11-26T07:14+01:00"
  }
 ]
