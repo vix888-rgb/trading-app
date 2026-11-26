@@ -254166,7 +254166,7 @@
   "edge": false,
   "trail_stop": 0.95,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "BTCUSD-15m-1795708800000",
@@ -254302,7 +254302,7 @@
   "edge": false,
   "trail_stop": 60930.406,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "GBPUSD-5m-1795709700000",
@@ -254580,6 +254580,142 @@
   "edge": false,
   "trail_stop": 71.04,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
+ },
+ {
+  "id": "ETHUSD-5m-1795720500000",
+  "logged": "2026-11-26T20:25+01:00",
+  "bar_t": 1795720500000,
+  "bar_time": "Thu 26 Nov 20:15",
+  "sym": "ETHUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 77,
+  "entry": 1703.62,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1698.648,
+  "tp": [
+   1708.592,
+   1713.565,
+   1718.537
+  ],
+  "inv": 1698.03,
+  "votes": [
+   1,
+   1,
+   1,
+   -1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   1,
+   -1,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.0,
+   1.27,
+   1.11,
+   0.43,
+   0.43,
+   1.0,
+   1.0,
+   1.09,
+   1.0,
+   0.6,
+   0.35,
+   0.0,
+   0.07,
+   1.1,
+   0.0,
+   0.0,
+   1.0,
+   1.12,
+   1.36,
+   0.56,
+   0.04,
+   0.0,
+   0.79,
+   0.34,
+   1.0,
+   1.0,
+   0.54,
+   1.1
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 3.3149825720984607,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 44,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": true,
+    "lo": 1698.03,
+    "hi": 1704.33,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1694.30063232,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 1704.33,
+    "dl": 1690.23,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
