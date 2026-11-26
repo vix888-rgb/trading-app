@@ -252343,7 +252343,7 @@
   "edge": false,
   "trail_stop": 60690.294,
   "tp1_hit": false,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "SOLUSD-5m-1795697100000",
@@ -252477,7 +252477,7 @@
   "edge": false,
   "trail_stop": 70.95550361872066,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 26
  },
  {
   "id": "GBPUSD-5m-1795697100000",
@@ -252982,7 +252982,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00027065641182443597,
@@ -253034,6 +253034,9 @@
   "edge": false,
   "trail_stop": 1.310605,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-26T16:05+01:00"
  }
 ]
