@@ -254531,7 +254531,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.22933331162541065,
@@ -254583,7 +254583,10 @@
   "edge": false,
   "trail_stop": 71.04,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 0.87,
+  "exit": "time exit",
+  "closed_at": "2026-11-26T21:55+01:00"
  },
  {
   "id": "ETHUSD-5m-1795720500000",
