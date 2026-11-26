@@ -252340,7 +252340,7 @@
   "edge": false,
   "trail_stop": 60690.294,
   "tp1_hit": false,
-  "bars_open": 22
+  "bars_open": 24
  },
  {
   "id": "SOLUSD-5m-1795697100000",
@@ -252474,7 +252474,7 @@
   "edge": false,
   "trail_stop": 70.95550361872066,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "GBPUSD-5m-1795697100000",
@@ -252837,7 +252837,7 @@
    "TSMOM multi-lookback trend",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0002955045602367432,
@@ -252892,6 +252892,142 @@
   "edge": false,
   "trail_stop": 1.3111539497766311,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": 0.28,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-26T15:44+01:00"
+ },
+ {
+  "id": "GBPUSD-5m-1795703700000",
+  "logged": "2026-11-26T15:44+01:00",
+  "bar_t": 1795703700000,
+  "bar_time": "Thu 26 Nov 15:35",
+  "sym": "GBPUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 34,
+  "entry": 1.311011,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.310605,
+  "tp": [
+   1.311417,
+   1.311823,
+   1.312229
+  ],
+  "inv": 1.309998,
+  "votes": [
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   1,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.0,
+   0.66,
+   1.0,
+   0.39,
+   1.11,
+   1.48,
+   1.25,
+   1.05,
+   1.15,
+   1.02,
+   0.2,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   1.15,
+   1.0,
+   1.41,
+   0.36,
+   0.0,
+   0.3,
+   0.28,
+   0.04,
+   1.0,
+   0.86,
+   1.05,
+   1.0
+  ],
+  "strategies": [
+   "TSMOM multi-lookback trend"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.00027065641182443597,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 66,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.31065341,
+    "side200": 1,
+    "stack": 1,
+    "st": -1,
+    "dh": 1.31233597,
+    "dl": 1.30999792,
+    "brk": 1,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
