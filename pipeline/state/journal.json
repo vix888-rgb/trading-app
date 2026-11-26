@@ -250596,7 +250596,7 @@
   "strategies": [
    "Liquidity Entry Zones"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 8.261949693351406,
@@ -250645,6 +250645,11 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 3574.513,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-26T02:23+01:00"
  }
 ]
