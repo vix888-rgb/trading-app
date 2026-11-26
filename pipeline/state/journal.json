@@ -229925,7 +229925,7 @@
   "edge": false,
   "trail_stop": 1.099787,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "SOLUSD-15m-1795520700000",
@@ -234634,7 +234634,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0252535558614659,
@@ -234686,7 +234686,10 @@
   "edge": false,
   "trail_stop": 0.95548,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 7,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-26T05:04+01:00"
  },
  {
   "id": "XRPUSD-15m-1795551300000",
@@ -250102,7 +250105,7 @@
   "edge": false,
   "trail_stop": 1747.516,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "SOLUSD-4h-1795622400000",
@@ -250239,7 +250242,7 @@
   "edge": false,
   "trail_stop": 73.31749,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "BTCUSD-4h-1795636800000",
@@ -250376,7 +250379,7 @@
   "edge": false,
   "trail_stop": 62396.997,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "USDCHF-1d-1795564800000",
@@ -250927,6 +250930,6 @@
   "edge": false,
   "trail_stop": 0.953,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  }
 ]
