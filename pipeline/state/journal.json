@@ -254253,7 +254253,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 235.44376999922028,
@@ -254305,7 +254305,10 @@
   "edge": false,
   "trail_stop": 60930.406,
   "tp1_hit": false,
-  "bars_open": 21
+  "bars_open": 21,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-26T22:45+01:00"
  },
  {
   "id": "GBPUSD-5m-1795709700000",
