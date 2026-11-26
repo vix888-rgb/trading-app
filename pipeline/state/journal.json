@@ -249632,7 +249632,7 @@
   "strategies": [
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 706.605715057678,
@@ -249684,7 +249684,10 @@
   "edge": false,
   "trail_stop": 60663.159,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-26T02:03+01:00"
  },
  {
   "id": "ETHUSD-1h-1795626000000",
@@ -249766,7 +249769,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 23.247762010065667,
@@ -249818,7 +249821,10 @@
   "edge": false,
   "trail_stop": 1714.022,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-26T02:03+01:00"
  },
  {
   "id": "GBPUSD-5m-1795633500000",
