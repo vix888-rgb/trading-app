@@ -252291,7 +252291,7 @@
   "strategies": [
    "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 106.4704346362313,
@@ -252343,7 +252343,10 @@
   "edge": false,
   "trail_stop": 60690.294,
   "tp1_hit": false,
-  "bars_open": 28
+  "bars_open": 28,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-26T16:15+01:00"
  },
  {
   "id": "SOLUSD-5m-1795697100000",
@@ -252425,7 +252428,7 @@
    1.24
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.15862409531983637,
@@ -252477,7 +252480,10 @@
   "edge": false,
   "trail_stop": 70.95550361872066,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 26,
+  "R": 0.07,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-26T16:15+01:00"
  },
  {
   "id": "GBPUSD-5m-1795697100000",
