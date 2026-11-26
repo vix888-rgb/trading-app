@@ -251208,7 +251208,7 @@
   "edge": false,
   "trail_stop": 3568.458,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 44
  },
  {
   "id": "GBPUSD-5m-1795680300000",
@@ -251345,7 +251345,7 @@
   "edge": false,
   "trail_stop": 1.3106996122823475,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 32
  },
  {
   "id": "ETHUSD-5m-1795682700000",
@@ -251434,7 +251434,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.258866049337427,
@@ -251486,7 +251486,10 @@
   "edge": false,
   "trail_stop": 1696.612,
   "tp1_hit": false,
-  "bars_open": 22
+  "bars_open": 22,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-26T11:54+01:00"
  },
  {
   "id": "BTCUSD-5m-1795683300000",
