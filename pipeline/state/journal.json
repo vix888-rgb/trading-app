@@ -253971,7 +253971,7 @@
    1.24
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.24889354826988438,
@@ -254023,7 +254023,10 @@
   "edge": false,
   "trail_stop": 70.68666,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 6,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-26T17:45+01:00"
  },
  {
   "id": "XRPUSD-5m-1795709100000",
@@ -254157,7 +254160,7 @@
   "edge": false,
   "trail_stop": 0.945825,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "BTCUSD-15m-1795708800000",
@@ -254377,7 +254380,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0002367282991055639,
@@ -254432,6 +254435,9 @@
   "edge": false,
   "trail_stop": 1.310828,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-26T17:45+01:00"
  }
 ]
