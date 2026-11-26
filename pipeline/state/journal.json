@@ -253698,7 +253698,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 7.548199039182327,
@@ -253750,7 +253750,10 @@
   "edge": false,
   "trail_stop": 1699.622,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-26T19:35+01:00"
  },
  {
   "id": "SOLUSD-15m-1795707000000",
@@ -253835,7 +253838,7 @@
    "Turtle 20-bar breakout",
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.3465208964745891,
@@ -253889,7 +253892,10 @@
   "edge": false,
   "trail_stop": 71.31978,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-26T19:35+01:00"
  },
  {
   "id": "SOLUSD-5m-1795708500000",
@@ -254160,7 +254166,7 @@
   "edge": false,
   "trail_stop": 0.95,
   "tp1_hit": true,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "BTCUSD-15m-1795708800000",
@@ -254296,7 +254302,7 @@
   "edge": false,
   "trail_stop": 60930.406,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "GBPUSD-5m-1795709700000",
@@ -254572,8 +254578,8 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 70.696,
-  "tp1_hit": false,
-  "bars_open": 18
+  "trail_stop": 71.04,
+  "tp1_hit": true,
+  "bars_open": 20
  }
 ]
