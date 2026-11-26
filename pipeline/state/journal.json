@@ -254114,7 +254114,7 @@
    1.43
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.002783117614032664,
@@ -254166,7 +254166,10 @@
   "edge": false,
   "trail_stop": 0.95,
   "tp1_hit": true,
-  "bars_open": 46
+  "bars_open": 46,
+  "R": 0.72,
+  "exit": "time exit",
+  "closed_at": "2026-11-26T21:15+01:00"
  },
  {
   "id": "BTCUSD-15m-1795708800000",
@@ -254580,7 +254583,7 @@
   "edge": false,
   "trail_stop": 71.04,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 40
  },
  {
   "id": "ETHUSD-5m-1795720500000",
@@ -254664,7 +254667,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.3149825720984607,
@@ -254719,6 +254722,9 @@
   "edge": false,
   "trail_stop": 1703.62,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-26T21:15+01:00"
  }
 ]
