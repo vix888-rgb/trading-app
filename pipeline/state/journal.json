@@ -257837,7 +257837,7 @@
   "edge": false,
   "trail_stop": 159.36044588375066,
   "tp1_hit": true,
-  "bars_open": 21
+  "bars_open": 22
  },
  {
   "id": "XAUUSD-5m-1795759200000",
@@ -259528,7 +259528,7 @@
   "edge": false,
   "trail_stop": 159.41493144879843,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 32
  },
  {
   "id": "ETHUSD-5m-1795767600000",
@@ -259757,7 +259757,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 144.98379816401,
@@ -259809,7 +259809,10 @@
   "edge": false,
   "trail_stop": 61561.894,
   "tp1_hit": false,
-  "bars_open": 28
+  "bars_open": 28,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-27T12:06+01:00"
  },
  {
   "id": "EURUSD-15m-1795767300000",
@@ -260038,7 +260041,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.19920226221590961,
@@ -260090,7 +260093,10 @@
   "edge": false,
   "trail_stop": 73.19,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 28,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-27T12:06+01:00"
  },
  {
   "id": "ETHUSD-5m-1795771800000",
@@ -260365,7 +260371,7 @@
   "edge": false,
   "trail_stop": 0.914929,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 16
  },
  {
   "id": "XRPUSD-5m-1795772400000",
@@ -260783,7 +260789,7 @@
   "edge": true,
   "trail_stop": 1.097229,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "USDCHF-5m-1795773600000",
@@ -261057,7 +261063,7 @@
   "edge": false,
   "trail_stop": 1.312543,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "XRPUSD-5m-1795775400000",
@@ -261339,7 +261345,7 @@
   "edge": false,
   "trail_stop": 3671.621,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "XRPUSD-5m-1795776600000",
@@ -261473,6 +261479,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.976805,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
