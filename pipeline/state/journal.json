@@ -255716,7 +255716,7 @@
   "edge": false,
   "trail_stop": 0.914309,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "SOLUSD-5m-1795740000000",
@@ -255855,7 +255855,7 @@
   "edge": false,
   "trail_stop": 71.17552,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "XAUUSD-5m-1795741200000",
@@ -256083,7 +256083,7 @@
   "strategies": [
    "ICT/SMC sweep + CHoCH"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0415756585666406,
@@ -256138,7 +256138,10 @@
   "edge": false,
   "trail_stop": 159.229,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-27T02:45+01:00"
  },
  {
   "id": "BTCUSD-5m-1795742400000",
@@ -256278,6 +256281,6 @@
   "edge": false,
   "trail_stop": 60570.821,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  }
 ]
