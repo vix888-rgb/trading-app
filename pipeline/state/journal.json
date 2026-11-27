@@ -259473,7 +259473,7 @@
    "Wyckoff spring / upthrust",
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.039768419538674625,
@@ -259528,7 +259528,10 @@
   "edge": false,
   "trail_stop": 159.41493144879843,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 40,
+  "R": 0.58,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-27T12:56+01:00"
  },
  {
   "id": "ETHUSD-5m-1795767600000",
@@ -261296,7 +261299,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.7745341881906214,
@@ -261351,7 +261354,10 @@
   "edge": false,
   "trail_stop": 3671.621,
   "tp1_hit": false,
-  "bars_open": 12
+  "bars_open": 12,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-27T12:56+01:00"
  },
  {
   "id": "XRPUSD-5m-1795776600000",
