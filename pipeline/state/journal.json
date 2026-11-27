@@ -263777,7 +263777,7 @@
   "edge": false,
   "trail_stop": 1.094475,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "USDCHF-5m-1795795200000",
@@ -263864,7 +263864,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0005138855581100232,
@@ -263916,7 +263916,10 @@
   "edge": false,
   "trail_stop": 0.835729,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-27T17:57+01:00"
  },
  {
   "id": "USDJPY-5m-1795795800000",
@@ -264464,7 +264467,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 60884.455,
+  "tp1_hit": false,
+  "bars_open": 0
  },
  {
   "id": "ETHUSD-15m-1795797000000",
@@ -264595,6 +264601,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1699.191,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
