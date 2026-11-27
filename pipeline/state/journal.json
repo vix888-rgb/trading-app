@@ -255716,7 +255716,7 @@
   "edge": false,
   "trail_stop": 0.914309,
   "tp1_hit": false,
-  "bars_open": 36
+  "bars_open": 38
  },
  {
   "id": "SOLUSD-5m-1795740000000",
@@ -256374,7 +256374,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00023042994058361624,
@@ -256426,7 +256426,10 @@
   "edge": false,
   "trail_stop": 1.3121379678521063,
   "tp1_hit": true,
-  "bars_open": 22
+  "bars_open": 22,
+  "R": 2.81,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-27T04:56+01:00"
  },
  {
   "id": "XAUUSD-5m-1795744800000",
@@ -256566,7 +256569,7 @@
   "edge": false,
   "trail_stop": 3613.3806550757386,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "ETHUSD-5m-1795745400000",
@@ -256705,7 +256708,7 @@
   "edge": false,
   "trail_stop": 1718.8709383416087,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "XRPUSD-5m-1795745400000",
@@ -256845,7 +256848,7 @@
   "edge": false,
   "trail_stop": 0.9569437844129882,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "SOLUSD-5m-1795748400000",
@@ -256929,7 +256932,7 @@
   "strategies": [
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.2570315579055377,
@@ -256981,7 +256984,10 @@
   "edge": false,
   "trail_stop": 72.69,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-27T04:56+01:00"
  },
  {
   "id": "BTCUSD-5m-1795750200000",
@@ -257115,6 +257121,268 @@
   "edge": false,
   "trail_stop": 61334.64,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
+ },
+ {
+  "id": "SOLUSD-5m-1795751400000",
+  "logged": "2026-11-27T04:56+01:00",
+  "bar_t": 1795751400000,
+  "bar_time": "Fri 27 Nov 04:50",
+  "sym": "SOLUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 54,
+  "entry": 72.76,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 72.40277,
+  "tp": [
+   73.11723,
+   73.47446,
+   73.83169
+  ],
+  "inv": 72.34,
+  "votes": [
+   1,
+   -1,
+   1,
+   -1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.0,
+   1.22,
+   1.0,
+   0.62,
+   0.43,
+   1.0,
+   1.0,
+   1.77,
+   1.0,
+   0.6,
+   0.69,
+   0.55,
+   0.15,
+   1.31,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   1.23,
+   0.25,
+   0.0,
+   0.0,
+   0.83,
+   0.34,
+   1.0,
+   1.0,
+   0.31,
+   1.24
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.2381523111167296,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 87,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 71.41242629,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 73.21,
+    "dl": 72.03,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
+ },
+ {
+  "id": "GBPUSD-5m-1795751400000",
+  "logged": "2026-11-27T04:56+01:00",
+  "bar_t": 1795751400000,
+  "bar_time": "Fri 27 Nov 04:50",
+  "sym": "GBPUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 27,
+  "entry": 1.311992,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1.311651,
+  "tp": [
+   1.312332,
+   1.312673,
+   1.313013
+  ],
+  "inv": 1.309415,
+  "votes": [
+   0,
+   -1,
+   0,
+   1,
+   0,
+   1,
+   1,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   0,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.0,
+   0.66,
+   1.0,
+   0.39,
+   1.11,
+   1.48,
+   1.25,
+   1.05,
+   1.15,
+   1.02,
+   0.2,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   1.15,
+   1.0,
+   1.41,
+   0.36,
+   0.0,
+   0.3,
+   0.28,
+   0.04,
+   1.0,
+   0.86,
+   1.05,
+   1.0
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.0002270902697492188,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 36,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1.31097022,
+    "side200": 1,
+    "stack": 1,
+    "st": -1,
+    "dh": 1.31305969,
+    "dl": 1.31164753,
+    "brk": 1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
