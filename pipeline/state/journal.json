@@ -257837,7 +257837,7 @@
   "edge": false,
   "trail_stop": 159.36743440914128,
   "tp1_hit": true,
-  "bars_open": 35
+  "bars_open": 36
  },
  {
   "id": "XAUUSD-5m-1795759200000",
@@ -261777,7 +261777,7 @@
   "edge": true,
   "trail_stop": 1.0963633941260265,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "USDJPY-5m-1795783800000",
@@ -261859,7 +261859,7 @@
    1.08
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.03578592856108973,
@@ -261911,7 +261911,10 @@
   "edge": false,
   "trail_stop": 159.479,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 18,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-27T15:37+01:00"
  },
  {
   "id": "USDCHF-5m-1795786200000",
