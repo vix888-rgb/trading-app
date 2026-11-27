@@ -257837,7 +257837,7 @@
   "edge": false,
   "trail_stop": 159.262,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 13
  },
  {
   "id": "XAUUSD-5m-1795759200000",
@@ -257971,7 +257971,7 @@
   "edge": false,
   "trail_stop": 3652.409976328302,
   "tp1_hit": true,
-  "bars_open": 30
+  "bars_open": 32
  },
  {
   "id": "USDJPY-5m-1795759200000",
@@ -258390,7 +258390,7 @@
   "edge": false,
   "trail_stop": 0.9784149680909332,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 30
  },
  {
   "id": "ETHUSD-5m-1795760400000",
@@ -258951,9 +258951,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.914783,
-  "tp1_hit": false,
-  "bars_open": 12
+  "trail_stop": 0.9157,
+  "tp1_hit": true,
+  "bars_open": 14
  },
  {
   "id": "SOLUSD-5m-1795765800000",
@@ -259519,7 +259519,7 @@
   "edge": false,
   "trail_stop": 159.32,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "ETHUSD-5m-1795767600000",
@@ -259797,7 +259797,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 61561.894,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "EURUSD-15m-1795767300000",
@@ -259932,7 +259935,10 @@
    },
    "pat": []
   },
-  "edge": true
+  "edge": true,
+  "trail_stop": 1.097598,
+  "tp1_hit": false,
+  "bars_open": 1
  },
  {
   "id": "SOLUSD-5m-1795768200000",
@@ -260069,6 +260075,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 72.8912,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
