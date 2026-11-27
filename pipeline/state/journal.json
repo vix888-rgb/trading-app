@@ -257837,7 +257837,7 @@
   "edge": false,
   "trail_stop": 159.36743440914128,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 37
  },
  {
   "id": "XAUUSD-5m-1795759200000",
@@ -261777,7 +261777,7 @@
   "edge": true,
   "trail_stop": 1.0963633941260265,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "USDJPY-5m-1795783800000",
@@ -262332,5 +262332,144 @@
   "trail_stop": 1.096725,
   "tp1_hit": false,
   "bars_open": 0
+ },
+ {
+  "id": "BTCUSD-15m-1795789800000",
+  "logged": "2026-11-27T15:47+01:00",
+  "bar_t": 1795789800000,
+  "bar_time": "Fri 27 Nov 15:30",
+  "sym": "BTCUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -65,
+  "entry": 60224.43,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 60642.569,
+  "tp": [
+   59806.291,
+   59388.151,
+   58970.012
+  ],
+  "inv": 61833.58,
+  "votes": [
+   0,
+   -1,
+   1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   1
+  ],
+  "weights": [
+   1.0,
+   0.66,
+   1.0,
+   0.35,
+   0.8,
+   1.0,
+   1.0,
+   1.28,
+   1.0,
+   0.88,
+   0.42,
+   0.09,
+   0.0,
+   1.19,
+   0.04,
+   0.0,
+   1.0,
+   1.23,
+   1.15,
+   0.0,
+   0.77,
+   0.0,
+   0.0,
+   0.2,
+   1.0,
+   0.86,
+   1.59,
+   1.0
+  ],
+  "strategies": [
+   "Turtle 20-bar breakout",
+   "Wyckoff spring / upthrust",
+   "Squeeze momentum breakout",
+   "TSMOM multi-lookback trend",
+   "Keltner volatility breakout",
+   "Donchian-20 breakout + EMA200 + HTF (round 4)",
+   "TTM squeeze fire + EMA200 (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 278.7596218555769,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 77,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 60851.45206465,
+    "side200": -1,
+    "stack": 1,
+    "st": -1,
+    "dh": 61861.58,
+    "dl": 61250.0,
+    "brk": -1,
+    "sqz": "fired",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
