@@ -257837,7 +257837,7 @@
   "edge": false,
   "trail_stop": 159.36044588375066,
   "tp1_hit": true,
-  "bars_open": 24
+  "bars_open": 25
  },
  {
   "id": "XAUUSD-5m-1795759200000",
@@ -259528,7 +259528,7 @@
   "edge": false,
   "trail_stop": 159.41493144879843,
   "tp1_hit": true,
-  "bars_open": 38
+  "bars_open": 40
  },
  {
   "id": "ETHUSD-5m-1795767600000",
@@ -260319,7 +260319,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0006942489890217031,
@@ -260371,7 +260371,10 @@
   "edge": false,
   "trail_stop": 0.914929,
   "tp1_hit": false,
-  "bars_open": 22
+  "bars_open": 22,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-27T12:46+01:00"
  },
  {
   "id": "XRPUSD-5m-1795772400000",
@@ -260789,7 +260792,7 @@
   "edge": true,
   "trail_stop": 1.097229,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "USDCHF-5m-1795773600000",
@@ -261008,7 +261011,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00036110873987488175,
@@ -261063,7 +261066,10 @@
   "edge": false,
   "trail_stop": 1.312543,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 16,
+  "R": 0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-27T12:46+01:00"
  },
  {
   "id": "XRPUSD-5m-1795775400000",
@@ -261345,7 +261351,7 @@
   "edge": false,
   "trail_stop": 3671.621,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "XRPUSD-5m-1795776600000",
@@ -261430,7 +261436,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.002263272826099965,
@@ -261482,6 +261488,9 @@
   "edge": false,
   "trail_stop": 0.976805,
   "tp1_hit": false,
-  "bars_open": 8
+  "bars_open": 8,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-27T12:46+01:00"
  }
 ]
