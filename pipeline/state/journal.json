@@ -255716,7 +255716,7 @@
   "edge": false,
   "trail_stop": 0.914309,
   "tp1_hit": false,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "SOLUSD-5m-1795740000000",
@@ -255853,9 +255853,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 71.90804570445039,
+  "trail_stop": 72.38804570445038,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 22
  },
  {
   "id": "XAUUSD-5m-1795741200000",
@@ -256226,7 +256226,7 @@
    "Turtle 20-bar breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 89.22612610492254,
@@ -256279,9 +256279,12 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 61143.01549558031,
+  "trail_stop": 61524.12549558031,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 12,
+  "R": 6.12,
+  "exit": "trailing stop",
+  "closed_at": "2026-11-27T03:36+01:00"
  },
  {
   "id": "GBPUSD-5m-1795744200000",
@@ -256418,9 +256421,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1.311166,
+  "trail_stop": 1.311689860132685,
   "tp1_hit": true,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "XAUUSD-5m-1795744800000",
@@ -256558,9 +256561,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3600.5825750757385,
+  "trail_stop": 3605.8746650757384,
   "tp1_hit": true,
-  "bars_open": 4
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1795745400000",
@@ -256697,9 +256700,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 1715.85,
+  "trail_stop": 1718.8709383416087,
   "tp1_hit": true,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "XRPUSD-5m-1795745400000",
@@ -256837,8 +256840,8 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 0.952891,
-  "tp1_hit": false,
-  "bars_open": 2
+  "trail_stop": 0.9568437844129882,
+  "tp1_hit": true,
+  "bars_open": 4
  }
 ]
