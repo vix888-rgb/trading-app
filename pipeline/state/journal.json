@@ -261780,7 +261780,7 @@
   "edge": true,
   "trail_stop": 1.0951666520682262,
   "tp1_hit": true,
-  "bars_open": 36
+  "bars_open": 37
  },
  {
   "id": "USDJPY-5m-1795783800000",
@@ -262334,7 +262334,7 @@
   "edge": false,
   "trail_stop": 1.09529,
   "tp1_hit": true,
-  "bars_open": 7
+  "bars_open": 8
  },
  {
   "id": "BTCUSD-15m-1795789800000",
@@ -264206,7 +264206,7 @@
   "edge": false,
   "trail_stop": 1.310868,
   "tp1_hit": false,
-  "bars_open": 22
+  "bars_open": 23
  },
  {
   "id": "XRPUSD-15m-1795796100000",
@@ -264343,7 +264343,7 @@
   "edge": false,
   "trail_stop": 0.956222,
   "tp1_hit": false,
-  "bars_open": 21
+  "bars_open": 22
  },
  {
   "id": "BTCUSD-15m-1795797000000",
@@ -264479,7 +264479,7 @@
   "edge": false,
   "trail_stop": 60298.01,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "ETHUSD-15m-1795797000000",
@@ -264613,7 +264613,7 @@
   "edge": false,
   "trail_stop": 1680.72,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "SOLUSD-15m-1795798800000",
@@ -264747,7 +264747,7 @@
   "edge": false,
   "trail_stop": 72.76824,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "USDJPY-15m-1795799700000",
@@ -264884,7 +264884,7 @@
   "edge": false,
   "trail_stop": 159.485,
   "tp1_hit": true,
-  "bars_open": 17
+  "bars_open": 18
  },
  {
   "id": "USDJPY-5m-1795801200000",
@@ -265299,7 +265299,7 @@
   "edge": false,
   "trail_stop": 3645.333,
   "tp1_hit": true,
-  "bars_open": 42
+  "bars_open": 43
  },
  {
   "id": "SOLUSD-5m-1795807800000",
@@ -265661,7 +265661,7 @@
   "strategies": [
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.1796522283898545,
@@ -265713,6 +265713,9 @@
   "edge": false,
   "trail_stop": 71.78052,
   "tp1_hit": false,
-  "bars_open": 24
+  "bars_open": 24,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-27T23:08+01:00"
  }
 ]
