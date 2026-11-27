@@ -257837,7 +257837,7 @@
   "edge": false,
   "trail_stop": 159.38144197750066,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 45
  },
  {
   "id": "XAUUSD-5m-1795759200000",
@@ -261777,7 +261777,7 @@
   "edge": true,
   "trail_stop": 1.0955253528204845,
   "tp1_hit": true,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "USDJPY-5m-1795783800000",
@@ -263440,7 +263440,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 397.05281676993525,
@@ -263492,7 +263492,10 @@
   "edge": false,
   "trail_stop": 60418.089,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-27T17:47+01:00"
  },
  {
   "id": "ETHUSD-15m-1795792500000",
@@ -263580,7 +263583,7 @@
    "Donchian-20 breakout + EMA200 + HTF (round 4)",
    "TTM squeeze fire + EMA200 (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 12.697803582377036,
@@ -263634,7 +263637,10 @@
   "edge": false,
   "trail_stop": 1682.717,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-27T17:47+01:00"
  },
  {
   "id": "EURUSD-5m-1795795200000",
@@ -263771,7 +263777,7 @@
   "edge": false,
   "trail_stop": 1.094475,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "USDCHF-5m-1795795200000",
@@ -263910,7 +263916,7 @@
   "edge": false,
   "trail_stop": 0.835729,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "USDJPY-5m-1795795800000",
@@ -263992,7 +263998,7 @@
    1.08
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0424904401268461,
@@ -264047,7 +264053,10 @@
   "edge": false,
   "trail_stop": 159.49,
   "tp1_hit": false,
-  "bars_open": 4
+  "bars_open": 4,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-27T17:47+01:00"
  },
  {
   "id": "GBPUSD-15m-1795795200000",
@@ -264185,7 +264194,7 @@
   "edge": false,
   "trail_stop": 1.310868,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "XRPUSD-15m-1795796100000",
@@ -264306,6 +264315,273 @@
     "st": -1,
     "dh": 0.9817,
     "dl": 0.9312,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false,
+  "trail_stop": 0.956222,
+  "tp1_hit": false,
+  "bars_open": 1
+ },
+ {
+  "id": "BTCUSD-15m-1795797000000",
+  "logged": "2026-11-27T17:47+01:00",
+  "bar_t": 1795797000000,
+  "bar_time": "Fri 27 Nov 17:30",
+  "sym": "BTCUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -70,
+  "entry": 60298.01,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 60884.455,
+  "tp": [
+   59711.565,
+   59125.12,
+   58538.674
+  ],
+  "inv": 61833.58,
+  "votes": [
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   1.0,
+   0.66,
+   1.0,
+   0.35,
+   0.8,
+   1.0,
+   1.0,
+   1.28,
+   1.0,
+   0.88,
+   0.42,
+   0.09,
+   0.0,
+   1.19,
+   0.04,
+   0.0,
+   1.0,
+   1.23,
+   1.15,
+   0.0,
+   0.77,
+   0.0,
+   0.0,
+   0.2,
+   1.0,
+   0.86,
+   1.59,
+   1.0
+  ],
+  "strategies": [
+   "Keltner volatility breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 390.9634723012726,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 88,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 60780.33165991,
+    "side200": -1,
+    "stack": 0,
+    "st": -1,
+    "dh": 61833.58,
+    "dl": 58792.37,
+    "brk": -1,
+    "sqz": "off",
+    "mom": -1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
+ },
+ {
+  "id": "ETHUSD-15m-1795797000000",
+  "logged": "2026-11-27T17:47+01:00",
+  "bar_t": 1795797000000,
+  "bar_time": "Fri 27 Nov 17:30",
+  "sym": "ETHUSD",
+  "tf": "15m",
+  "side": "short",
+  "score": -44,
+  "entry": 1680.72,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1699.191,
+  "tp": [
+   1662.249,
+   1643.777,
+   1625.306
+  ],
+  "inv": 1728.59,
+  "votes": [
+   0,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "weights": [
+   1.35,
+   1.0,
+   1.0,
+   0.43,
+   0.43,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.6,
+   0.0,
+   0.0,
+   0.0,
+   1.83,
+   0.51,
+   0.0,
+   1.0,
+   1.56,
+   1.61,
+   0.0,
+   0.06,
+   0.0,
+   1.0,
+   0.34,
+   1.0,
+   1.0,
+   1.31,
+   1.21
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 12.314235354895867,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 89,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1702.98278704,
+    "side200": -1,
+    "stack": 0,
+    "st": -1,
+    "dh": 1731.72,
+    "dl": 1634.03,
     "brk": -1,
     "sqz": "off",
     "mom": -1,
