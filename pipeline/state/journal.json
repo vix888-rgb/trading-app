@@ -257837,7 +257837,7 @@
   "edge": false,
   "trail_stop": 159.36044588375066,
   "tp1_hit": true,
-  "bars_open": 27
+  "bars_open": 28
  },
  {
   "id": "XAUUSD-5m-1795759200000",
@@ -260743,7 +260743,7 @@
    "Keltner volatility breakout",
    "Donchian-20 breakout + EMA200 + HTF (round 4)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0004918704251386531,
@@ -260795,7 +260795,10 @@
   "edge": true,
   "trail_stop": 1.097229,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 9,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-27T13:36+01:00"
  },
  {
   "id": "USDCHF-5m-1795773600000",
@@ -261634,6 +261637,6 @@
   "edge": false,
   "trail_stop": 1.312983,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  }
 ]
