@@ -263783,7 +263783,7 @@
   "edge": false,
   "trail_stop": 1.094475,
   "tp1_hit": false,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "USDCHF-5m-1795795200000",
@@ -265018,7 +265018,7 @@
   "edge": false,
   "trail_stop": 159.452,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
  },
  {
   "id": "USDCHF-5m-1795801200000",
@@ -265154,6 +265154,139 @@
   "edge": false,
   "trail_stop": 0.835591,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
+ },
+ {
+  "id": "XAUUSD-5m-1795803600000",
+  "logged": "2026-11-27T19:27+01:00",
+  "bar_t": 1795803600000,
+  "bar_time": "Fri 27 Nov 19:20",
+  "sym": "XAUUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 54,
+  "entry": 3645.333,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 3637.148,
+  "tp": [
+   3653.518,
+   3661.703,
+   3669.888
+  ],
+  "inv": 3629.678,
+  "votes": [
+   1,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.35,
+   0.66,
+   1.32,
+   0.66,
+   0.41,
+   1.06,
+   1.51,
+   1.44,
+   1.15,
+   1.02,
+   0.14,
+   0.0,
+   0.69,
+   1.9,
+   0.0,
+   0.0,
+   1.23,
+   1.03,
+   1.09,
+   0.6,
+   0.09,
+   0.07,
+   0.0,
+   0.0,
+   1.0,
+   1.21,
+   1.8,
+   1.76
+  ],
+  "strategies": [
+   "Donchian-20 breakout + EMA200 + HTF (round 4)"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 5.4566830293470705,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 59,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 3636.69417447,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 3657.12627,
+    "dl": 3625.68435,
+    "brk": 1,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
