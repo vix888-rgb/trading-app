@@ -263771,7 +263771,7 @@
   "edge": false,
   "trail_stop": 1.094475,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "USDCHF-5m-1795795200000",
@@ -263910,7 +263910,7 @@
   "edge": false,
   "trail_stop": 0.835729,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 4
  },
  {
   "id": "USDJPY-5m-1795795800000",
@@ -264044,7 +264044,10 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 159.49,
+  "tp1_hit": false,
+  "bars_open": 2
  },
  {
   "id": "GBPUSD-15m-1795795200000",
@@ -264179,6 +264182,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 1.310868,
+  "tp1_hit": false,
+  "bars_open": 0
  }
 ]
