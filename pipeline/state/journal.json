@@ -255716,7 +255716,7 @@
   "edge": false,
   "trail_stop": 0.914309,
   "tp1_hit": false,
-  "bars_open": 26
+  "bars_open": 28
  },
  {
   "id": "SOLUSD-5m-1795740000000",
@@ -256426,7 +256426,7 @@
   "edge": false,
   "trail_stop": 1.3119311397347357,
   "tp1_hit": true,
-  "bars_open": 12
+  "bars_open": 14
  },
  {
   "id": "XAUUSD-5m-1795744800000",
@@ -256564,9 +256564,9 @@
    "pat": []
   },
   "edge": false,
-  "trail_stop": 3609.5449650757387,
+  "trail_stop": 3613.3806550757386,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 12
  },
  {
   "id": "ETHUSD-5m-1795745400000",
@@ -256705,7 +256705,7 @@
   "edge": false,
   "trail_stop": 1718.8709383416087,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
  },
  {
   "id": "XRPUSD-5m-1795745400000",
@@ -256845,6 +256845,139 @@
   "edge": false,
   "trail_stop": 0.9568437844129882,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 10
+ },
+ {
+  "id": "SOLUSD-5m-1795748400000",
+  "logged": "2026-11-27T04:06+01:00",
+  "bar_t": 1795748400000,
+  "bar_time": "Fri 27 Nov 04:00",
+  "sym": "SOLUSD",
+  "tf": "5m",
+  "side": "long",
+  "score": 88,
+  "entry": 72.69,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 72.30445,
+  "tp": [
+   73.07555,
+   73.46109,
+   73.84664
+  ],
+  "inv": 71.34,
+  "votes": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "weights": [
+   1.0,
+   1.22,
+   1.0,
+   0.62,
+   0.43,
+   1.0,
+   1.0,
+   1.77,
+   1.0,
+   0.6,
+   0.69,
+   0.55,
+   0.15,
+   1.31,
+   0.0,
+   0.0,
+   1.0,
+   1.0,
+   1.23,
+   0.25,
+   0.0,
+   0.0,
+   0.83,
+   0.34,
+   1.0,
+   1.0,
+   0.31,
+   1.24
+  ],
+  "strategies": [
+   "Keltner volatility breakout"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 0.2570315579055377,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 94,
+   "trend": 1,
+   "htf": 1,
+   "agree": true,
+   "sigRaw": "BUY",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 71.25481363,
+    "side200": 1,
+    "stack": 1,
+    "st": 1,
+    "dh": 72.96,
+    "dl": 71.34,
+    "brk": 1,
+    "sqz": "off",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": true,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
