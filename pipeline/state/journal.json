@@ -46755,7 +46755,7 @@
   "edge": false,
   "trail_stop": 1.0915587136245906,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 19
  },
  {
   "id": "XRPUSD-1h-1794096000000",
@@ -88037,7 +88037,7 @@
   "edge": false,
   "trail_stop": 1.116894,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "ETHUSD-15m-1794440700000",
@@ -106559,7 +106559,7 @@
   "edge": true,
   "trail_stop": 158.146,
   "tp1_hit": false,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "USDCHF-1d-1794441600000",
@@ -106835,7 +106835,7 @@
   "edge": false,
   "trail_stop": 1924.9307256619134,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "SOLUSD-1d-1794441600000",
@@ -106971,7 +106971,7 @@
   "edge": false,
   "trail_stop": 81.72,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 14
  },
  {
   "id": "USDCHF-5m-1794529800000",
@@ -124403,7 +124403,7 @@
   "edge": false,
   "trail_stop": 1.323136,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "ETHUSD-15m-1794616200000",
@@ -229925,7 +229925,7 @@
   "edge": false,
   "trail_stop": 1.099787,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "SOLUSD-15m-1795520700000",
@@ -250105,7 +250105,7 @@
   "edge": false,
   "trail_stop": 1747.516,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "SOLUSD-4h-1795622400000",
@@ -250242,7 +250242,7 @@
   "edge": false,
   "trail_stop": 73.31749,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 7
  },
  {
   "id": "BTCUSD-4h-1795636800000",
@@ -250379,7 +250379,7 @@
   "edge": false,
   "trail_stop": 62396.997,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "USDCHF-1d-1795564800000",
@@ -250515,7 +250515,7 @@
   "edge": false,
   "trail_stop": 0.825333,
   "tp1_hit": false,
-  "bars_open": 0
+  "bars_open": 1
  },
  {
   "id": "XAUUSD-5m-1795655100000",
@@ -255094,7 +255094,7 @@
    1.0
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.00017884494010467057,
@@ -255149,7 +255149,10 @@
   "edge": false,
   "trail_stop": 1.310588,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-27T01:05+01:00"
  },
  {
   "id": "USDJPY-5m-1795737000000",
@@ -255286,6 +255289,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 159.29,
+  "tp1_hit": true,
+  "bars_open": 1
  }
 ]
