@@ -257270,7 +257270,7 @@
   "edge": false,
   "trail_stop": 72.76,
   "tp1_hit": true,
-  "bars_open": 44
+  "bars_open": 46
  },
  {
   "id": "GBPUSD-5m-1795751400000",
@@ -257828,7 +257828,7 @@
   "edge": false,
   "trail_stop": 159.262,
   "tp1_hit": true,
-  "bars_open": 8
+  "bars_open": 9
  },
  {
   "id": "XAUUSD-5m-1795759200000",
@@ -257962,7 +257962,7 @@
   "edge": false,
   "trail_stop": 3646.175,
   "tp1_hit": true,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "USDJPY-5m-1795759200000",
@@ -258102,7 +258102,7 @@
   "edge": false,
   "trail_stop": 159.276,
   "tp1_hit": false,
-  "bars_open": 18
+  "bars_open": 20
  },
  {
   "id": "ETHUSD-5m-1795759800000",
@@ -258378,7 +258378,7 @@
   "edge": false,
   "trail_stop": 0.9721,
   "tp1_hit": true,
-  "bars_open": 16
+  "bars_open": 18
  },
  {
   "id": "ETHUSD-5m-1795760400000",
@@ -258462,7 +258462,7 @@
   "strategies": [
    "Trend-follow + ADX filter"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 4.36179867295286,
@@ -258514,7 +258514,10 @@
   "edge": false,
   "trail_stop": 1730.897,
   "tp1_hit": false,
-  "bars_open": 14
+  "bars_open": 14,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-27T08:46+01:00"
  },
  {
   "id": "GBPUSD-5m-1795762800000",
@@ -258738,7 +258741,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 105.34683851386826,
@@ -258790,7 +258793,12 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 61667.25,
+  "R": -1.0,
+  "exit": "stop",
+  "tp1_hit": false,
+  "closed_at": "2026-11-27T08:46+01:00"
  },
  {
   "id": "EURCHF-5m-1795764600000",
@@ -258930,6 +258938,9 @@
    },
    "pat": []
   },
-  "edge": false
+  "edge": false,
+  "trail_stop": 0.914783,
+  "tp1_hit": false,
+  "bars_open": 2
  }
 ]
