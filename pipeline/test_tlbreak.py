@@ -102,7 +102,10 @@ class TL(unittest.TestCase):
         root = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
         html = open(os.path.join(root, "index.html")).read(); sw = open(os.path.join(root, "sw.js")).read()
         self.assertIn('#tl5', html); self.assertIn("backtest: 5m +0.13R/trade vs 15m +0.45R", html)
-        self.assertIn("signal-desk-v19", sw)
+        self.assertIn("signal-desk-v20", sw)
+        self.assertIn("Setup i mundshëm", html)
+        self.assertIn("Sinjalet e kaluara", html)
+        self.assertIn("Asnjë setup aktiv tani", html)
         self.assertIn("Njoftimet: vetëm ari", html)
         self.assertIn('"?sym="', html)
         self.assertIn('data-tlsym="XAUUSD"', html)
@@ -258,4 +261,57 @@ class TLAlerts(unittest.TestCase):
         self.assertGreater(len(live), 0)
         self.assertTrue(all("XAUUSD" in it["body"] and it["body"].find("BTC") < 0 and "EUR" not in it["body"] and "JPY" not in it["body"] and "CHF" not in it["body"] for it in live))
         self.assertTrue(all(it["tf"] in ("15m", "5m") for it in live))
+
+def line_frame(n=46, start="2026-11-26 08:00", step=900_000):
+    """Two lower highs (bars 10 and 30) with closes still under the falling line."""
+    t0 = int(pd.Timestamp(start, tz="Europe/Belgrade").timestamp() * 1000)
+    c = np.full(n, 100.0); h = np.full(n, 100.3); l = np.full(n, 99.7); o = c.copy()
+    h[10], h[30] = 110.0, 105.0
+    return pd.DataFrame({"t": t0 + np.arange(n) * step, "o": o, "h": h, "l": l, "c": c, "v": 0.0})
+
+class TLSetups(unittest.TestCase):
+    def test_active_line_no_lookahead_and_invalidated_when_broken(self):
+        df = line_frame()
+        step = T.TF_STEP["15m"]
+        d = T.frame(df)
+        full = T.active_setups(d, step, "BTCUSD")
+        buys = [s for s in full if s["side"] == "BUY" and s["a"] == 10 and s["b"] == 30]
+        self.assertEqual(len(buys), 1)
+        self.assertLessEqual(sum(s["side"] == "BUY" for s in full), 2)
+        self.assertLessEqual(sum(s["side"] == "SELL" for s in full), 2)
+        # The later swing is not confirmed until three bars after it.
+        early = T.active_setups(T.frame(df.iloc[:33]), step, "BTCUSD")
+        self.assertFalse(any(s["a"] == 10 and s["b"] == 30 for s in early))
+        # A longer future does not change the setups known on the prefix.
+        ext = df.copy()
+        trigger = buys[0]["trigger"]
+        ext.loc[len(ext)] = {"t": int(df.t.iloc[-1]) + step, "o": trigger, "h": trigger + 1.2, "l": trigger - 0.4, "c": trigger + 1.0, "v": 0.0}
+        prefix = T.active_setups(T.frame(ext.iloc[:len(df)]), step, "BTCUSD")
+        self.assertEqual([(s["side"], s["a"], s["b"]) for s in prefix], [(s["side"], s["a"], s["b"]) for s in full])
+        after = T.active_setups(T.frame(ext), step, "BTCUSD")
+        self.assertFalse(any(s["a"] == 10 and s["b"] == 30 for s in after))
+        # Close sitting on the approach side, well inside half an ATR, is Afër and not a skip.
+        near_df = df.copy()
+        near_df.loc[near_df.index[-1], "c"] = buys[0]["now"] - 0.01
+        near_df.loc[near_df.index[-1], "l"] = min(near_df.l.iloc[-1], near_df.c.iloc[-1] - 0.05)
+        near = [s for s in T.active_setups(T.frame(near_df), step, "XAUUSD") if s["a"] == 10 and s["b"] == 30][0]
+        self.assertTrue(near["near"])
+        self.assertFalse(near["skip"])
+        self.assertIn("riskUsd", near)
+        self.assertEqual(near["lot"], 0.02)
+        self.assertEqual(len(near["tp"]), 3)
+        far_df = df.copy()
+        far_df.loc[far_df.index[-1], "c"] = buys[0]["now"] - 30
+        far_df.loc[far_df.index[-1], "l"] = far_df.c.iloc[-1] - 0.2
+        far = [s for s in T.active_setups(T.frame(far_df), step, "BTCUSD") if s["a"] == 10 and s["b"] == 30][0]
+        self.assertFalse(far["near"])
+        self.assertNotIn("riskUsd", far)
+        self.assertEqual(far["near"], abs(far["dist"]) <= T.NEAR_ATR * far["atr"])
+        self.assertEqual(far["skip"], abs(far["price"] - far["sl"]) > T.MAX_ATR * far["atr"])
+        # Next bar after 20:15 Belgrade is outside the entry window.
+        late = T.active_setups(T.frame(line_frame(n=50)), step, "BTCUSD")
+        self.assertTrue(any(s["a"] == 10 and s["b"] == 30 and s["window"] is False for s in late))
+        gates = T.trade_gates(d, step, [{"status": "active", "bar_t": int(df.t.iloc[-1])}] * 3)
+        self.assertTrue(gates["cap"])
+        self.assertTrue(gates["busy"])
 if __name__ == "__main__": unittest.main()

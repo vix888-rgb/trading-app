@@ -50,6 +50,8 @@ body.tlview main>*:not(#tlCard){display:none}body.tlview #sym,body.tlview #tfs,b
 #tlAlertNote{margin:6px 0 0;font-size:12px}
 @media(max-width:420px){.tlnjoft{margin-left:0}.tlsyms button{padding:4px 7px}}
 #tlTitle{min-width:0}#tlTest{margin:6px 0 0}
+.tlh3{font-size:14px;margin:14px 0 8px}
+.tlnote{font-size:12px;color:var(--warn);margin:6px 0 0}
 @media(max-width:420px){#tlCard{padding:12px}#tlCard h2{font-size:15px;line-height:1.3}#tlCard .tlg{grid-template-columns:1fr 1fr}#tlCard .tlsig{padding:8px 10px}}
 </style>
 </head>
@@ -72,6 +74,9 @@ body.tlview main>*:not(#tlCard){display:none}body.tlview #sym,body.tlview #tfs,b
     <p class="muted" id="tlTest" hidden>backtest: 5m +0.13R/trade vs 15m +0.45R</p>
     <div class="row" style="margin:8px 0"><span class="pill n">display only</span><span class="muted" id="tlMeta"></span></div>
     <div id="tlLines" class="muted" style="margin-bottom:10px"></div>
+    <h2 class="tlh3">Setup i mundshëm</h2>
+    <div id="tlSetups"></div>
+    <h2 class="tlh3" id="tlPastHead">Sinjalet e kaluara</h2>
     <div id="tlList"></div>
     <div id="tlFwd" class="muted" style="margin:6px 0"></div>
     <p class="muted" id="tlRule"></p>
@@ -286,14 +291,20 @@ function tlRow(r,p,money){const sd=r.side==="BUY"?pill("BUY","b"):pill("SELL","s
  const lot=money&&r.riskUsd!=null?`<div>Risk at 0.02 lot<b>$${r.riskUsd.toFixed(0)}</b></div>`:"";
  return `<div class="tlsig"><div class="tlhd">${sd}<b>${esc(r.t)}</b>${st}</div><div class="tlg"><div>Entry<b>${a}${fp(r.entry,p)}</b></div><div>SL<b>${fp(r.sl,p)}</b></div><div>TP1<b>${fp(r.tp[0],p)}</b></div><div>TP2<b>${fp(r.tp[1],p)}</b></div><div>TP3<b>${fp(r.tp[2],p)}</b></div>${lot}<div>Result<b>${res}</b></div></div></div>`}
 function tlData(){const tf=tlTf==="5m"?"5m":"15m";const book=D&&D[tf==="5m"?"tl5_by_symbol":"tl15_by_symbol"];if(book)return book[tlSym]||null;if(tlSym==="XAUUSD"&&D)return D[tf==="5m"?"tl5":"tl15"]||null;return null}
+function tlSetup(s,p,money){const sd=s.side==="BUY"?pill("BUY","b"):pill("SELL","s");const near=s.near?pill("Afër","w"):pill("Larg","n");const skip=s.skip?pill("skip","s"):"";
+ const way=s.side==="BUY"?"mbi":"nën";const notes=[];if(s.window===false)notes.push("jashtë 01:00–20:30");if(s.cap)notes.push("3 tregti sot");if(s.busy)notes.push("tashmë në tregti");
+ const lot=money&&s.riskUsd!=null?`<div>0.02 lot<b>$${Number(s.riskUsd).toFixed(0)}</b></div>`:"";
+ return `<div class="tlsig"><div class="tlhd">${sd}${near}${skip}</div><div>Hyrje nëse qiriri mbyllet ${way} <b>${fp(s.trigger,p)}</b></div><div class="tlg"><div>Çmimi<b>${fp(s.price,p)}</b></div><div>Distanca<b>${fp(Math.abs(s.dist),p)} · ${Math.abs(s.distAtr).toFixed(2)} ATR</b></div><div>SL<b>${fp(s.sl,p)}</b></div><div>TP1<b>${fp(s.tp[0],p)}</b></div><div>TP2<b>${fp(s.tp[1],p)}</b></div><div>TP3<b>${fp(s.tp[2],p)}</b></div>${lot}</div>${notes.length?`<div class="tlnote">${notes.map(esc).join(" · ")}</div>`:""}</div>`}
 function renderTL(){const c=$("tlCard");if(!c||c.style.display==="none")return;const tf=tlTf==="5m"?"5m":"15m";tlTf=tf;if(TLSYMS.indexOf(tlSym)<0)tlSym="XAUUSD";
  document.querySelectorAll("#tlTabs button").forEach(b=>b.classList.toggle("on",b.dataset.tltf===tf));
  document.querySelectorAll("#tlSyms button").forEach(b=>b.classList.toggle("on",b.dataset.tlsym===tlSym));
  $("tlTitle").textContent=tf+" trendline break · "+tlSym;$("tlTest").hidden=!(tf==="5m"&&tlSym==="XAUUSD");
  const gold=tlSym==="XAUUSD";$("tlFootGold").hidden=!gold;$("tlFootOther").hidden=gold;
- const T=tlData();if(!T){$("tlMeta").textContent="";$("tlLines").textContent="";$("tlFwd").textContent="";$("tlRule").textContent="";$("tlList").innerHTML='<p class="muted">No data for '+esc(tlSym)+" "+tf+' yet.</p>';return}
+ const T=tlData();if(!T){$("tlMeta").textContent="";$("tlLines").textContent="";$("tlFwd").textContent="";$("tlRule").textContent="";$("tlSetups").innerHTML="";$("tlPastHead").hidden=true;$("tlList").innerHTML='<p class="muted">No data for '+esc(tlSym)+" "+tf+' yet.</p>';return}
  const p=T.p||2,money=T.phone!==false&&T.lot!=null;
- $("tlMeta").textContent="Last closed "+tf+" candle ends "+T.asof+" · price "+fp(T.last,p)+" · ATR "+fp(T.atr,p);
+ $("tlMeta").textContent="Last closed "+tf+" candle ends "+T.asof+" · price "+fp(T.last,p)+" · ATR "+fp(T.atr,p)+(T.updated?" · përditësuar "+T.updated:"");
+ const setups=T.setups||[];$("tlPastHead").hidden=false;
+ $("tlSetups").innerHTML=setups.length?setups.map(s=>tlSetup(s,p,money)).join(""):'<p class="muted">Asnjë setup aktiv tani</p>';
  const L=T.lines||{},bits=[];if(L.falling)bits.push("Falling line now "+fp(L.falling.now,p)+" (next candle "+fp(L.falling.next,p)+") – a "+tf+" close above it = BUY signal");if(L.rising)bits.push("Rising line now "+fp(L.rising.now,p)+" (next candle "+fp(L.rising.next,p)+") – a "+tf+" close below it = SELL signal");
  $("tlLines").innerHTML=bits.length?bits.map(esc).join("<br>"):"No valid trendline right now.";
  const act=(T.sigs||[]).filter(r=>r.status==="pending"||r.status==="active");

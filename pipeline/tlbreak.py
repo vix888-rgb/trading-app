@@ -39,6 +39,7 @@ SL_ATR, MIN_ATR, MAX_ATR = 1.5, 0.7, 3.5
 NEAR_ATR = 0.5          # pre-alert when the close is this close to the line, on the approach side
 WIN = (1.0, 20.5); MAXTR = 3
 W = 3; MIN_GAP = 8; MAX_AGE = 150
+SWING_KEEP = 8   # recent confirmed swings considered for a live, still-unbroken line
 NAME = "15m trendline break (gold)"
 RULE = ("Falling line through the last two swing highs (or rising line through the last two swing lows). A 15m close through the line, after a close on the other side, "
         "enters at the next candle open. SL 1.5×ATR(14) beyond the line. TP 1R / 2R / 3R (1/3 each), SL to entry after TP1, flat at day end. "
@@ -238,6 +239,91 @@ def rule_for(tf, sym):
     return ("Same bar rules as gold: 3-bar swings, 8-bar gap, SL 1.5×ATR, TP 1R/2R/3R, flat at the Belgrade day end, "
             "entries 01:00–20:30, max 3 a day. Display only, no phone alert.")
 
+def _line_at(a, pa, b, pb, x):
+    return pa + (pb - pa) * (x - a) / (b - a)
+
+def _broken(side, c, a, pa, b, pb, i):
+    """True once a close has gone through the line after the later swing. Uses only bars <= i."""
+    for k in range(int(b) + 1, int(i) + 1):
+        lv = _line_at(a, pa, b, pb, k)
+        if side > 0 and c[k] > lv: return True
+        if side < 0 and c[k] < lv: return True
+    return False
+
+def trade_gates(d, step_ms, rows):
+    """Session window for the next bar, today's filled-trade cap, and whether a position is still open."""
+    i = len(d) - 1
+    nxt = d.ts.iloc[i] + pd.Timedelta(milliseconds=int(step_ms))
+    hh = nxt.hour + nxt.minute / 60.0
+    window = nxt.strftime("%Y-%m-%d") == str(d.day.iloc[i]) and WIN[0] <= hh < WIN[1]
+    today = str(d.day.iloc[i])
+    taken = 0
+    busy = False
+    for r in rows or []:
+        if r.get("status") in ("pending", "active"): busy = True
+        if r.get("status") == "skipped" or r.get("bar_t") is None: continue
+        if datetime.fromtimestamp(r["bar_t"] / 1000, TZ).strftime("%Y-%m-%d") == today: taken += 1
+    return {"window": bool(window), "cap": taken >= MAXTR, "busy": bool(busy)}
+
+def active_setups(d, step_ms, sym=SYM, rows=None):
+    """Unbroken qualifying lines on the last bar. At most two per side, nearest to price.
+
+    A line uses only swings confirmed by this bar, and it drops out after a close through it.
+    """
+    if len(d) < W * 2 + 2: return []
+    A = atr14(d)
+    i = len(d) - 1
+    atr = float(A[i]) if np.isfinite(A[i]) else float("nan")
+    if not np.isfinite(atr) or atr <= 0: return []
+    price = float(d.c.iloc[i])
+    c = d.c.values
+    swh, swl = _swings(d)
+    cands = []
+    for side, sw, falling in ((1, swh[-SWING_KEEP:], True), (-1, swl[-SWING_KEEP:], False)):
+        for p in range(len(sw)):
+            for q in range(p + 1, len(sw)):
+                a, pa = sw[p]; b, pb = sw[q]
+                if b - a < MIN_GAP or i - b >= MAX_AGE: continue
+                if falling and not pb < pa: continue
+                if not falling and not pb > pa: continue
+                if _broken(side, c, a, pa, b, pb, i): continue
+                now = _line_at(a, pa, b, pb, i)
+                cands.append((side, int(a), float(pa), int(b), float(pb), float(now), abs(price - now)))
+    picked = []
+    for side in (1, -1):
+        group = [x for x in cands if x[0] == side]
+        group.sort(key=lambda x: (x[6], x[3]))
+        picked.extend(group[:2])
+    if rows is None: rows = run(d, step_ms, sym)
+    gates = trade_gates(d, step_ms, rows)
+    gold = sym == SYM
+    out = []
+    for side, a, pa, b, pb, now, _dist in picked:
+        trigger = float(_line_at(a, pa, b, pb, i + 1))
+        sl = trigger - side * SL_ATR * atr
+        span = abs(trigger - sl)
+        tp = [trigger + side * span * k for k in (1, 2, 3)]
+        dist = price - now
+        item = {"side": "BUY" if side > 0 else "SELL", "a": a, "b": b, "near": abs(dist) <= NEAR_ATR * atr,
+                "now": now, "trigger": trigger, "price": price, "dist": float(dist), "distAtr": float(dist / atr),
+                "sl": float(sl), "tp": [float(x) for x in tp], "skip": abs(price - sl) > MAX_ATR * atr,
+                "atr": atr, **gates}
+        if gold:
+            item["riskUsd"] = float(span * OZ); item["lot"] = LOT
+        out.append(item)
+    out.sort(key=lambda r: (0 if r["side"] == "BUY" else 1, abs(r["distAtr"]), r["b"]))
+    return out
+
+def public_setup(s, dec, gold):
+    o = {k: s[k] for k in ("side", "near", "skip", "window", "cap", "busy")}
+    for k in ("now", "trigger", "price", "dist", "sl", "atr"):
+        o[k] = round(float(s[k]), dec)
+    o["distAtr"] = round(float(s["distAtr"]), 2)
+    o["tp"] = [round(float(x), dec) for x in s["tp"]]
+    if gold and s.get("riskUsd") is not None:
+        o["riskUsd"] = round(float(s["riskUsd"]), 2); o["lot"] = LOT
+    return o
+
 def panel(df, state_dir=None, now_ms=None, tf="15m", sym=SYM):
     if tf not in TF_STEP: raise ValueError(f"unsupported timeframe {tf}")
     if sym not in SYMS: raise ValueError(f"unsupported symbol {sym}")
@@ -252,14 +338,17 @@ def panel(df, state_dir=None, now_ms=None, tf="15m", sym=SYM):
     pub = [public_row(r, step_ms, dec, gold) for r in recent if r["status"] != "skipped"][::-1][:20]
     nskip = sum(r["status"] == "skipped" for r in recent)
     lines = current_lines(d)
+    setups = [public_setup(s, dec, gold) for s in active_setups(d, step_ms, sym, rows)]
     log = update_log(os.path.join(state_dir, log_file(tf, sym)), rows, now_ms, step_ms, tf, sym, dec, gold) if state_dir else None
     fwd = log["stats"] if log else {"n": 0}
     last = float(d.c.iloc[-1]); a = float(atr14(d)[-1])
     out = {"v": 1, "name": NAMES[tf] if gold else f"{tf} trendline break ({sym})", "rule": rule_for(tf, sym),
            "sym": sym, "tf": tf, "p": dec, "lot": LOT if gold else None, "displayOnly": True, "phone": gold,
            "bt": BT[tf] if gold else {"note": "same bar rules as gold; not a separate backtest", "span": tf},
-           "asof": fmt_t(int(d.t.iloc[-1]) + step_ms), "last": round(last, dec), "atr": round(a, dec),
+           "asof": fmt_t(int(d.t.iloc[-1]) + step_ms), "updated": datetime.fromtimestamp(now_ms / 1000, TZ).strftime("%H:%M"),
+           "last": round(last, dec), "atr": round(a, dec),
            "lines": {k: {kk: round(float(vv), dec) for kk, vv in v.items()} for k, v in lines.items()},
+           "setups": setups,
            "sigs": pub, "skipped": nskip, "fwd": fwd, "since": log["since_txt"] if log else None,
            "n_replay": len(rows)}
     if gold: out["oz"] = OZ
