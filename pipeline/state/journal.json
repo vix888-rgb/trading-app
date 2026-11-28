@@ -267207,7 +267207,7 @@
    "TSMOM multi-lookback trend",
    "AB=CD (pattern)"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.26605089380209357,
@@ -267259,7 +267259,10 @@
   "edge": false,
   "trail_stop": 71.13420357520837,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 2.03,
+  "exit": "time exit",
+  "closed_at": "2026-11-28T20:21+01:00"
  },
  {
   "id": "XRPUSD-15m-1795849200000",
@@ -267341,7 +267344,7 @@
    1.1
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0033335257884883457,
@@ -267396,7 +267399,10 @@
   "edge": false,
   "trail_stop": 0.9459,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 1.7,
+  "exit": "time exit",
+  "closed_at": "2026-11-28T20:21+01:00"
  },
  {
   "id": "XRPUSD-5m-1795856400000",
@@ -269909,7 +269915,7 @@
   "edge": false,
   "trail_stop": 1656.642,
   "tp1_hit": false,
-  "bars_open": 5
+  "bars_open": 6
  },
  {
   "id": "ETHUSD-5m-1795888200000",
@@ -270049,6 +270055,6 @@
   "edge": false,
   "trail_stop": 1650.688,
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 17
  }
 ]
