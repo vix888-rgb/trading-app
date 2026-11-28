@@ -269571,7 +269571,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.0016876459101868217,
@@ -269626,7 +269626,10 @@
   "edge": false,
   "trail_stop": 0.9387,
   "tp1_hit": true,
-  "bars_open": 13
+  "bars_open": 13,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-28T19:41+01:00"
  },
  {
   "id": "SOLUSD-5m-1795887000000",
@@ -269710,7 +269713,7 @@
   "strategies": [
    "TSMOM multi-lookback trend"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.14255950792720995,
@@ -269765,7 +269768,10 @@
   "edge": false,
   "trail_stop": 70.49,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 11,
+  "R": -0.0,
+  "exit": "breakeven",
+  "closed_at": "2026-11-28T19:41+01:00"
  },
  {
   "id": "ETHUSD-15m-1795887000000",
@@ -270043,6 +270049,6 @@
   "edge": false,
   "trail_stop": 1650.688,
   "tp1_hit": false,
-  "bars_open": 7
+  "bars_open": 9
  }
 ]
