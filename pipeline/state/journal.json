@@ -269011,7 +269011,7 @@
   "strategies": [
    "MTF top-down pullback"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 0.1583695492415681,
@@ -269063,7 +269063,10 @@
   "edge": false,
   "trail_stop": 70.76755,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 10,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-28T17:00+01:00"
  },
  {
   "id": "ETHUSD-5m-1795879800000",
@@ -269145,7 +269148,7 @@
    1.46
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 3.097062658527658,
@@ -269200,6 +269203,9 @@
   "edge": false,
   "trail_stop": 1649.236,
   "tp1_hit": false,
-  "bars_open": 2
+  "bars_open": 2,
+  "R": -1.0,
+  "exit": "stop",
+  "closed_at": "2026-11-28T17:00+01:00"
  }
 ]
