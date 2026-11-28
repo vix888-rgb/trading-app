@@ -102,8 +102,12 @@ class TL(unittest.TestCase):
         root = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
         html = open(os.path.join(root, "index.html")).read(); sw = open(os.path.join(root, "sw.js")).read()
         self.assertIn('#tl5', html); self.assertIn("backtest: 5m +0.13R/trade vs 15m +0.45R", html)
-        self.assertIn("signal-desk-v18", sw)
-        self.assertIn("Njoftimet: ON", html)
+        self.assertIn("signal-desk-v19", sw)
+        self.assertIn("Njoftimet: vetëm ari", html)
+        self.assertIn('"?sym="', html)
+        self.assertIn('data-tlsym="XAUUSD"', html)
+        self.assertIn('data-tlsym="BTCUSD"', html)
+        self.assertLess(html.index('data-tlsym="XAUUSD"'), html.index('data-tlsym="BTCUSD"'))
 
 def swing_frame(start="2026-11-26 10:00", step=900_000, n=40, cross=False, close_at=None):
     """Two lower highs, then either a flat approach or one close up through the falling line."""
@@ -207,4 +211,51 @@ class TLAlerts(unittest.TestCase):
         self.assertEqual(pushed, [])
         self.assertGreater(len(json.load(open(os.path.join(storm, "tl_alerts_sent.json")))["ids"]), 0)
         self.assertFalse(os.path.exists(os.path.join(storm, "alerts_sent.json")))
+
+    def test_nongold_is_display_only_and_never_alerted(self):
+        df = series(n=420)
+        state = tempfile.mkdtemp()
+        p = T.panel(df, state, now_ms=int(df.t.iloc[300]), tf="15m", sym="BTCUSD")
+        self.assertEqual(p["sym"], "BTCUSD")
+        self.assertFalse(p["phone"])
+        self.assertIsNone(p["lot"])
+        self.assertNotIn("oz", p)
+        self.assertTrue(p["displayOnly"])
+        self.assertEqual(p["p"], 2)
+        for r in p["sigs"]:
+            self.assertNotIn("riskUsd", r)
+            self.assertNotIn("usd", r)
+            self.assertEqual(len(r["tp"]), 3)
+            self.assertIn("R", r)
+        self.assertTrue(os.path.exists(os.path.join(state, "tl15_BTCUSD_log.json")))
+        self.assertFalse(os.path.exists(os.path.join(state, "tl15_log.json")))
+        eur = T.panel(df, now_ms=int(df.t.iloc[-1]), tf="5m", sym="EURUSD")
+        self.assertEqual(eur["p"], 5)
+        self.assertFalse(eur["phone"])
+        jpy = T.panel(df, now_ms=int(df.t.iloc[-1]), tf="15m", sym="USDJPY")
+        self.assertEqual(jpy["p"], 3)
+        # Missing frames are skipped. Gold keeps its own log. Nested books do not alert BTC or EUR.
+        books = {"BTCUSD": {"15m": df}, "EURUSD": {}, "USDCHF": {"5m": df}, "XAUUSD": {"15m": series(n=200, seed=3)}}
+        gold, by, failed = T.build(books, state, now_ms=int(df.t.iloc[300]))
+        self.assertIn("XAUUSD", by["15m"])
+        self.assertIn("BTCUSD", by["15m"])
+        self.assertIn("USDCHF", by["5m"])
+        self.assertNotIn("EURUSD", by["15m"])
+        self.assertNotIn("EURUSD", by["5m"])
+        self.assertEqual(gold["15m"]["sym"], "XAUUSD")
+        self.assertEqual(gold["15m"]["lot"], 0.02)
+        self.assertTrue(os.path.exists(os.path.join(state, "tl15_log.json")))
+        box = []
+        sent_path = os.path.join(state, "tl_alerts_sent.json")
+        json.dump({"v": 1, "ids": []}, open(sent_path, "w"))
+        only_fx = {"BTCUSD": {"15m": df, "5m": df}, "EURUSD": {"15m": df}, "USDJPY": {"5m": df}, "USDCHF": {"15m": df}, "EURCHF": {"5m": df}}
+        self.assertEqual(T.collect_alerts(only_fx), [])
+        self.assertEqual(T.dispatch(only_fx, state, send_fn=box.append), [])
+        self.assertEqual(box, [])
+        mixed = dict(only_fx)
+        mixed["XAUUSD"] = {"15m": swing_frame(cross=True), "5m": swing_frame(step=300_000, cross=True)}
+        live = T.dispatch(mixed, state, send_fn=box.append)
+        self.assertGreater(len(live), 0)
+        self.assertTrue(all("XAUUSD" in it["body"] and it["body"].find("BTC") < 0 and "EUR" not in it["body"] and "JPY" not in it["body"] and "CHF" not in it["body"] for it in live))
+        self.assertTrue(all(it["tf"] in ("15m", "5m") for it in live))
 if __name__ == "__main__": unittest.main()

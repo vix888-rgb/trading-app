@@ -1,14 +1,12 @@
-"""Trendline break for gold (XAUUSD), 15m and 5m (15m added 28 Nov 2026, 5m the same day).
+"""Trendline break, 15m and 5m (gold since 28 Nov 2026; BTC and the four FX pairs are display-only).
 
-Nothing here changes the agents, the main gated signals, or the main phone-alert list. It reads the closed gold bars the scan
-already saved (RAW_PKL; if a frame is missing, the gold-feed cache those bars were built from — no new request), finds
-trendline-break entries, replays the exit model on the same bars and writes:
-  * data.json -> "tl15" and "tl5"  (live + recent signals for the dedicated page in the app)
-  * state/tl15_log.json and state/tl5_log.json  (forward trade logs from the first scan that ran each timeframe)
-  * state/tl_alerts_sent.json  (ids already pushed to ntfy, so a line is not announced twice)
-Its own ntfy messages use the same topic as the main alerts: a "gati" pre-alert when price is within 0.5×ATR of a live line,
-and an ENTRY alert when a close breaks that line inside the session rules. The first run only records history and sends nothing.
-A failure here is caught by run.sh and never stops the scan.
+Nothing here changes the agents, the main gated signals, or the main phone-alert list. It reads closed bars the scan already
+saved (RAW_PKL). Gold can also be rebuilt from the gold-feed cache when a frame is missing — no new request. It writes:
+  * data.json -> "tl15" and "tl5" (gold, unchanged shape) plus "tl15_by_symbol" and "tl5_by_symbol"
+  * state/tl15_log.json and state/tl5_log.json for gold, and state/tl15_<SYM>_log.json for each other symbol
+  * state/tl_alerts_sent.json (gold line ids already pushed to ntfy)
+Phone alerts stay XAUUSD only. Other symbols are display-only: same bar rules, R without the gold spread, no lot and no ntfy.
+A missing symbol or timeframe is skipped. A failure here is caught by run.sh and never stops the scan.
 
 Rule (same bar parameters on both timeframes). 15m backtest of 5-27 Nov 2026: 34 trades, +0.45R/trade, PF 2.69, spread $0.30.
 5m backtest on the same idea: +0.13R/trade. Small samples, not a proven edge:
@@ -29,8 +27,12 @@ TZ = ZoneInfo("Europe/Belgrade")
 SYM, TF, STEP_MS = "XAUUSD", "15m", 900_000   # STEP_MS stays the 15m bar so existing callers keep that clock
 TFS = ("15m", "5m")
 TF_STEP = {"15m": 900_000, "5m": 300_000}
+# XAUUSD first, BTC second, then the FX pairs the scan already downloads. Phone alerts are gold only.
+SYMS = ("XAUUSD", "BTCUSD", "EURUSD", "USDJPY", "USDCHF", "EURCHF")
+DECIMALS = {"XAUUSD": 2, "BTCUSD": 2, "EURUSD": 5, "USDJPY": 3, "USDCHF": 5, "EURCHF": 5}
 LOG_NAME = {"15m": "tl15_log.json", "5m": "tl5_log.json"}
 DATA_KEY = {"15m": "tl15", "5m": "tl5"}
+BY_KEY = {"15m": "tl15_by_symbol", "5m": "tl5_by_symbol"}
 COST = 0.30            # spread, price units ($) per trade
 LOT = 0.02; OZ = LOT * 100   # 0.02 lot = 2 oz -> $2 per $1 move ($0.20 per pip)
 SL_ATR, MIN_ATR, MAX_ATR = 1.5, 0.7, 3.5
@@ -130,7 +132,7 @@ def simulate(d, E, s, sl, j):
         if hit == 3: return dict(R=real, xi=b, hits=3, kind="tp3")
     return dict(R=real + rem * s * (c[n - 1] - E) / R0, xi=n - 1, hits=hit, kind="open")
 
-def run(d, step_ms=None):
+def run(d, step_ms=None, sym=SYM):
     """All signals with their outcome. Same filters and order as the backtest (one position at a time, 3 a day, window, risk)."""
     step_ms = STEP_MS if step_ms is None else int(step_ms)
     sigs, A = signals(d); n = len(d)
@@ -161,14 +163,18 @@ def run(d, step_ms=None):
             res.append({**base, "status": "skipped", "why": "risk above 3.5×ATR"}); continue
         if risk < MIN_ATR * a: sl = E - s * MIN_ATR * a; risk = MIN_ATR * a
         tp = [E + s * risk * k for k in (1, 2, 3)]
-        row = {**base, "entry": E, "approx": pending, "sl": sl, "tp": tp, "risk": risk, "riskUsd": risk * OZ, "lot": LOT}
+        row = {**base, "entry": E, "approx": pending, "sl": sl, "tp": tp, "risk": risk}
+        if sym == SYM:
+            row["riskUsd"] = risk * OZ; row["lot"] = LOT
         if pending:
             row.update(status="pending", hits=0, R=None, usd=None, exit_t=None); res.append(row)
             last_exit = n - 1; cnt[day[i]] = cnt.get(day[i], 0) + 1; continue
-        j = i + 1; r = simulate(d, E, s, sl, j); net = r["R"] - COST / risk
+        j = i + 1; r = simulate(d, E, s, sl, j); net = r["R"] - (COST / risk if sym == SYM else 0.0)
         status = {"sl": "sl", "tp3": "tp3", "be": "tp1be" if r["hits"] == 1 else "tp2be", "eod": "eod", "open": "active"}[r["kind"]]
-        row.update(status=status, hits=r["hits"], R=float(net), usd=float(net * risk * OZ), entry_t=int(d.t.iloc[j]),
+        row.update(status=status, hits=r["hits"], R=float(net), entry_t=int(d.t.iloc[j]),
                    exit_t=None if r["kind"] == "open" else int(d.t.iloc[r["xi"]]))
+        if sym == SYM:
+            row["usd"] = float(net * risk * OZ)
         res.append(row); last_exit = r["xi"]; cnt[day[i]] = cnt.get(day[i], 0) + 1
     return res
 
@@ -179,24 +185,31 @@ def stats(rows):
     rs = [r["R"] for r in rows if r.get("R") is not None and r["status"] not in ("active", "pending")]
     if not rs: return {"n": 0}
     w = sum(x for x in rs if x > 0); lo = -sum(x for x in rs if x < 0)
-    usd = sum(r["usd"] for r in rows if r.get("usd") is not None and r["status"] not in ("active", "pending"))
-    return {"n": len(rs), "win": round(100 * sum(x > 0 for x in rs) / len(rs)), "avgR": round(float(np.mean(rs)), 2),
-            "pf": round(w / lo, 2) if lo > 0 else None, "sumR": round(float(sum(rs)), 2), "usd": round(float(usd), 1)}
+    out = {"n": len(rs), "win": round(100 * sum(x > 0 for x in rs) / len(rs)), "avgR": round(float(np.mean(rs)), 2),
+           "pf": round(w / lo, 2) if lo > 0 else None, "sumR": round(float(sum(rs)), 2)}
+    money = [r["usd"] for r in rows if r.get("usd") is not None and r["status"] not in ("active", "pending")]
+    if money: out["usd"] = round(float(sum(money)), 1)
+    return out
 
-def public_row(r, step_ms=None):
+def public_row(r, step_ms=None, digits=2, money=True):
     step_ms = STEP_MS if step_ms is None else int(step_ms)
     o = {k: r.get(k) for k in ("bar_t", "side", "status", "why", "hits")}
     o["t"] = fmt_t(r["bar_t"] + step_ms)           # signal candle closes here; entry is the next open
-    for k in ("entry", "sl", "risk", "riskUsd", "R", "usd"):
-        if r.get(k) is not None: o[k] = round(float(r[k]), 2)
-    if r.get("tp"): o["tp"] = [round(float(x), 2) for x in r["tp"]]
+    keys = ("entry", "sl", "risk", "riskUsd", "R", "usd") if money else ("entry", "sl", "risk", "R")
+    for k in keys:
+        if r.get(k) is not None: o[k] = round(float(r[k]), digits)
+    if r.get("tp"): o["tp"] = [round(float(x), digits) for x in r["tp"]]
     if r.get("approx"): o["approx"] = True
     if r.get("exit_t"): o["x"] = fmt_t(r["exit_t"] + step_ms)
     return o
 
-def update_log(path, rows, now_ms, step_ms=None, tf="15m"):
+def update_log(path, rows, now_ms, step_ms=None, tf="15m", sym=SYM, digits=2, money=True):
     step_ms = STEP_MS if step_ms is None else int(step_ms)
-    log = {"v": 1, "since": now_ms, "since_txt": fmt_t(now_ms), "note": f"forward log of the display-only {tf} trendline break (gold); R and $ at 0.02 lot include a $0.30 spread", "trades": {}}
+    if sym == SYM:
+        note = f"forward log of the display-only {tf} trendline break (gold); R and $ at 0.02 lot include a $0.30 spread"
+    else:
+        note = f"forward log of the display-only {tf} trendline break ({sym}); R only, no phone alert"
+    log = {"v": 1, "since": now_ms, "since_txt": fmt_t(now_ms), "note": note, "trades": {}}
     try:
         if os.path.exists(path): log = {**log, **json.load(open(path))}
     except Exception: pass
@@ -205,7 +218,7 @@ def update_log(path, rows, now_ms, step_ms=None, tf="15m"):
         if r["status"] in ("skipped",) or r["bar_t"] < log["since"] - step_ms: continue   # forward only: signal candle must be at/after the first scan
         key = str(r["bar_t"]); old = tr.get(key)
         if old and old.get("status") not in ("pending", "active"): continue            # closed trades are final
-        row = public_row(r, step_ms); row["entry_t"] = r.get("entry_t"); row["exit_t"] = r.get("exit_t")
+        row = public_row(r, step_ms, digits, money); row["entry_t"] = r.get("entry_t"); row["exit_t"] = r.get("exit_t")
         tr[key] = row
     log["trades"] = dict(sorted(tr.items(), key=lambda kv: int(kv[0])))
     log["stats"] = stats(list(log["trades"].values()))
@@ -213,25 +226,44 @@ def update_log(path, rows, now_ms, step_ms=None, tf="15m"):
     tmp = path + ".tmp"; json.dump(log, open(tmp, "w"), separators=(",", ":")); os.replace(tmp, path)
     return log
 
-def panel(df, state_dir=None, now_ms=None, tf="15m"):
+def digits_for(sym):
+    return DECIMALS.get(sym, 5)
+
+def log_file(tf, sym):
+    if sym == SYM: return LOG_NAME[tf]
+    return f"{DATA_KEY[tf]}_{sym}_log.json"
+
+def rule_for(tf, sym):
+    if sym == SYM: return RULES[tf]
+    return ("Same bar rules as gold: 3-bar swings, 8-bar gap, SL 1.5×ATR, TP 1R/2R/3R, flat at the Belgrade day end, "
+            "entries 01:00–20:30, max 3 a day. Display only, no phone alert.")
+
+def panel(df, state_dir=None, now_ms=None, tf="15m", sym=SYM):
     if tf not in TF_STEP: raise ValueError(f"unsupported timeframe {tf}")
+    if sym not in SYMS: raise ValueError(f"unsupported symbol {sym}")
     step_ms = TF_STEP[tf]
+    dec = digits_for(sym)
+    gold = sym == SYM
     now_ms = int(time.time() * 1000) if now_ms is None else now_ms
     d = frame(df)
     if len(d) < 60: raise ValueError(f"only {len(d)} closed {tf} bars")
-    rows = run(d, step_ms)
+    rows = run(d, step_ms, sym)
     recent = [r for r in rows if r["bar_t"] >= d.t.iloc[-1] - 3 * 86_400_000]   # about the last 3 days
-    pub = [public_row(r, step_ms) for r in recent if r["status"] != "skipped"][::-1][:20]
+    pub = [public_row(r, step_ms, dec, gold) for r in recent if r["status"] != "skipped"][::-1][:20]
     nskip = sum(r["status"] == "skipped" for r in recent)
     lines = current_lines(d)
-    log = update_log(os.path.join(state_dir, LOG_NAME[tf]), rows, now_ms, step_ms, tf) if state_dir else None
+    log = update_log(os.path.join(state_dir, log_file(tf, sym)), rows, now_ms, step_ms, tf, sym, dec, gold) if state_dir else None
     fwd = log["stats"] if log else {"n": 0}
     last = float(d.c.iloc[-1]); a = float(atr14(d)[-1])
-    return {"v": 1, "name": NAMES[tf], "rule": RULES[tf], "sym": SYM, "tf": tf, "lot": LOT, "oz": OZ, "displayOnly": True, "bt": BT[tf],
-            "asof": fmt_t(int(d.t.iloc[-1]) + step_ms), "last": round(last, 2), "atr": round(a, 2),
-            "lines": {k: {kk: round(float(vv), 2) for kk, vv in v.items()} for k, v in lines.items()},
-            "sigs": pub, "skipped": nskip, "fwd": fwd, "since": log["since_txt"] if log else None,
-            "n_replay": len(rows)}
+    out = {"v": 1, "name": NAMES[tf] if gold else f"{tf} trendline break ({sym})", "rule": rule_for(tf, sym),
+           "sym": sym, "tf": tf, "p": dec, "lot": LOT if gold else None, "displayOnly": True, "phone": gold,
+           "bt": BT[tf] if gold else {"note": "same bar rules as gold; not a separate backtest", "span": tf},
+           "asof": fmt_t(int(d.t.iloc[-1]) + step_ms), "last": round(last, dec), "atr": round(a, dec),
+           "lines": {k: {kk: round(float(vv), dec) for kk, vv in v.items()} for k, v in lines.items()},
+           "sigs": pub, "skipped": nskip, "fwd": fwd, "since": log["since_txt"] if log else None,
+           "n_replay": len(rows)}
+    if gold: out["oz"] = OZ
+    return out
 
 SENT_NAME = "tl_alerts_sent.json"
 
@@ -345,10 +377,21 @@ def entry_candidates(d, tf):
         })
     return found
 
+def gold_frames(frames):
+    """Gold bars only. A {tf: df} book is the original gold shape; a {sym: {tf: df}} book contributes XAUUSD alone."""
+    if not isinstance(frames, dict) or not frames:
+        return {}
+    if all(k in TF_STEP for k in frames):
+        return frames
+    book = frames.get(SYM)
+    if not isinstance(book, dict):
+        return {}
+    return {tf: df for tf, df in book.items() if tf in TF_STEP}
+
 def collect_alerts(frames):
+    """Phone alerts for XAUUSD only. Other symbols in the book are ignored."""
     items = []
-    for tf in TFS:
-        df = frames.get(tf)
+    for tf, df in gold_frames(frames).items():
         if df is None or len(df) < 20:
             continue
         d = frame(df)
@@ -401,55 +444,72 @@ def dispatch(frames, state_dir, send_fn=None):
     return delivered
 
 def scan_frames():
-    """Closed XAUUSD bars for 15m and 5m. Prefer the pickle this scan just wrote.
+    """Closed 15m and 5m bars for each TL symbol, from the pickle this scan just wrote.
 
-    If a frame is missing, rebuild it from the gold-feed cache the scan already saved. That read does not fetch and does not write the cache.
+    Gold, if missing there, is rebuilt from the gold-feed cache. That read does not fetch. Other symbols are never requested here.
     """
     from paths import RAW_PKL
-    found = {}
+    found = {sym: {} for sym in SYMS}
     if os.path.exists(RAW_PKL):
         try:
             raw = pickle.load(open(RAW_PKL, "rb"))[2]
         except Exception:
             raw = {}
         if isinstance(raw, dict):
-            for tf in TFS:
-                df = raw.get((SYM, tf))
-                if df is not None and len(df) >= 60:
-                    found[tf] = df
-    if any(tf not in found for tf in TFS):
+            for sym in SYMS:
+                for tf in TFS:
+                    df = raw.get((sym, tf))
+                    if df is not None and len(df) >= 60:
+                        found[sym][tf] = df
+    if any(tf not in found[SYM] for tf in TFS):
         import goldfeed
         built, _terr = goldfeed._build(goldfeed._load(), time.time() * 1000)
         for tf in TFS:
-            if tf in found: continue
+            if tf in found[SYM]: continue
             df = built.get(tf)
             if df is not None and len(df) >= 60:
-                found[tf] = df
+                found[SYM][tf] = df
     return found
+
+def build(books, state_dir=None, now_ms=None):
+    """Panels for every symbol that has bars. A missing frame is skipped, not an error."""
+    gold, by, failed = {}, {tf: {} for tf in TFS}, []
+    for sym in SYMS:
+        got = books.get(sym) if isinstance(books, dict) else None
+        if not isinstance(got, dict):
+            continue
+        for tf in TFS:
+            df = got.get(tf)
+            if df is None:
+                continue
+            try:
+                p = panel(df, state_dir, now_ms=now_ms, tf=tf, sym=sym)
+            except Exception:
+                failed.append(sym + " " + tf); continue
+            by[tf][sym] = p
+            if sym == SYM:
+                gold[tf] = p
+    return gold, by, failed
 
 def main():
     from paths import STATE, DATA_JSON
-    frames = scan_frames()
-    if not frames: raise ValueError("no XAUUSD 15m or 5m bars in the scan data")
+    books = scan_frames()
     os.makedirs(STATE, exist_ok=True)
     d = json.load(open(DATA_JSON))
-    failed = []
+    gold, by, failed = build(books, STATE)
     wrote = []
     for tf in TFS:
-        key = DATA_KEY[tf]
-        df = frames.get(tf)
-        if df is None:
-            failed.append(tf); continue
-        try:
-            p = panel(df, STATE, tf=tf)
-        except Exception:
-            failed.append(tf); continue
-        d[key] = p; wrote.append(key)
-        print(key, "ok", len(p["sigs"]), "signals shown; forward log", p["fwd"].get("n", 0), "closed")
+        if gold.get(tf):
+            d[DATA_KEY[tf]] = gold[tf]
+            wrote.append(DATA_KEY[tf])
+        d[BY_KEY[tf]] = by[tf]
+        names = " ".join(by[tf]) if by[tf] else "none"
+        print(BY_KEY[tf], names)
+    if not wrote and not any(by[tf] for tf in TFS):
+        raise RuntimeError("tl break failed")
     tmp = DATA_JSON + ".tmp"; json.dump(d, open(tmp, "w"), separators=(",", ":"), ensure_ascii=False); os.replace(tmp, DATA_JSON)
-    if not wrote: raise RuntimeError("tl break failed")
     try:
-        nsent = dispatch(frames, STATE)
+        nsent = dispatch(books, STATE)
         print("tl alerts", len(nsent))
     except Exception:
         print("tl alerts skipped")
