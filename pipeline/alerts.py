@@ -139,18 +139,18 @@ def message_for(doc, sym, tf, sig):
     return title, body
 
 
-def send(title, body, url):
-    proc = subprocess.run(
-        [
-            "curl", "-fsS", "--retry", "3", "--retry-delay", "2", "--max-time", "30",
-            "-H", f"Title: {title}",
-            "-H", "Tags: chart_with_upwards_trend",
-            "-H", f"Click: {CLICK}",
-            "-d", body,
-            url,
-        ],
-        capture_output=True, text=True,
-    )
+def send(title, body, url, priority=None, click=None, tags=None):
+    """POST one ntfy message. Optional priority/click/tags leave the main alerts unchanged when omitted."""
+    cmd = [
+        "curl", "-fsS", "--retry", "3", "--retry-delay", "2", "--max-time", "30",
+        "-H", f"Title: {title}",
+        "-H", f"Tags: {tags or 'chart_with_upwards_trend'}",
+        "-H", f"Click: {click or CLICK}",
+    ]
+    if priority:
+        cmd.extend(["-H", f"Priority: {priority}"])
+    cmd.extend(["-d", body, url])
+    proc = subprocess.run(cmd, capture_output=True, text=True)
     if proc.returncode != 0:
         err = (proc.stderr or proc.stdout or "").strip()
         raise RuntimeError(f"ntfy failed for {title}: {err}")

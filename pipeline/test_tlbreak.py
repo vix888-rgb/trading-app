@@ -102,5 +102,109 @@ class TL(unittest.TestCase):
         root = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
         html = open(os.path.join(root, "index.html")).read(); sw = open(os.path.join(root, "sw.js")).read()
         self.assertIn('#tl5', html); self.assertIn("backtest: 5m +0.13R/trade vs 15m +0.45R", html)
-        self.assertIn("signal-desk-v17", sw)
+        self.assertIn("signal-desk-v18", sw)
+        self.assertIn("Njoftimet: ON", html)
+
+def swing_frame(start="2026-11-26 10:00", step=900_000, n=40, cross=False, close_at=None):
+    """Two lower highs, then either a flat approach or one close up through the falling line."""
+    t0 = int(pd.Timestamp(start, tz="Europe/Belgrade").timestamp() * 1000)
+    c = np.full(n, 100.0); h = np.full(n, 100.4); l = np.full(n, 99.6); o = c.copy()
+    h[5], h[16] = 102.0, 101.0
+    if cross:
+        c[21], c[22] = 100.40, 100.70
+        h[22] = 100.80
+        o[22] = c[21]; o[23] = c[22]
+    if close_at is not None:
+        c[-1] = close_at
+        h[-1] = max(h[-1], close_at + 0.15)
+        l[-1] = min(l[-1], close_at - 0.15)
+        o[-1] = close_at
+    return pd.DataFrame({"t": t0 + np.arange(n) * step, "o": o, "h": h, "l": l, "c": c, "v": 0.0})
+
+class TLAlerts(unittest.TestCase):
+    def test_pre_alert_proximity(self):
+        base = swing_frame()
+        d = T.frame(base)
+        watch = [x for x in T.watch_lines(d) if x["side"] == "BUY"]
+        self.assertEqual(len(watch), 1)
+        line, atr = watch[0]["line"], watch[0]["atr"]
+        self.assertGreater(atr, 0)
+        near = swing_frame(close_at=line - 0.4 * atr)
+        got = T.pre_candidates(T.frame(near), "15m")
+        self.assertEqual(len(got), 1)
+        body = got[0]["body"]
+        self.assertTrue(body.startswith("TL15 gati BUY XAUUSD — vija ~"))
+        self.assertIn("çmimi ", body)
+        self.assertIn("Prit mbylljen mbi ", body)
+        self.assertIn("SL ", body)
+        self.assertNotIn("skip", body)
+        self.assertEqual(got[0]["priority"], "default")
+        far = swing_frame(close_at=line - 0.6 * atr)
+        self.assertEqual(T.pre_candidates(T.frame(far), "15m"), [])
+        above = swing_frame(close_at=line + 0.2 * atr)   # already through the line: not a pre-alert
+        self.assertEqual(T.pre_candidates(T.frame(above), "15m"), [])
+        self.assertTrue(T.near_line(100, 100.4, 1))
+        self.assertFalse(T.near_line(100, 100.6, 1))
+        skip = T.pre_message("15m", "BUY", 100, 99.5, 50, True)
+        self.assertTrue(skip.endswith("skip"))
+        self.assertIn("SL 50.00", skip)
+        self.assertTrue(T.risk_skip(99.5, 50, 10))
+        self.assertFalse(T.risk_skip(99.5, 98, 10))
+        five = T.pre_candidates(T.frame(swing_frame(step=300_000, close_at=line - 0.2 * atr)), "5m")
+        self.assertEqual(len(five), 1)
+        self.assertTrue(five[0]["body"].startswith("TL5 (TEST) gati BUY XAUUSD"))
+        self.assertEqual(five[0]["priority"], "min")
+
+    def test_entry_alert_and_session_window(self):
+        inside = swing_frame(cross=True)
+        d = T.frame(inside)
+        rows = T.run(d, T.TF_STEP["15m"])
+        self.assertTrue(any(r["status"] != "skipped" and r["side"] == "BUY" for r in rows))
+        got = T.entry_candidates(d, "15m")
+        self.assertEqual(len(got), 1)
+        self.assertEqual(got[0]["priority"], "high")
+        self.assertRegex(got[0]["body"], r"^TL15 ENTRY BUY XAUUSD @ \d+\.\d{2}, SL \d+\.\d{2}, TP1 1R / TP2 2R / TP3 3R, 0.02 lot, BE pas TP1\.$")
+        outside = swing_frame(start="2026-11-26 18:00", cross=True)
+        od = T.frame(outside)
+        orows = T.run(od, T.TF_STEP["15m"])
+        self.assertTrue(any(r.get("why") == "outside 01:00–20:30" for r in orows))
+        self.assertEqual(T.entry_candidates(od, "15m"), [])
+        five = T.entry_candidates(T.frame(swing_frame(step=300_000, cross=True)), "5m")
+        self.assertEqual(len(five), 1)
+        self.assertTrue(five[0]["body"].startswith("TL5 (TEST) ENTRY BUY XAUUSD @ "))
+        self.assertEqual(five[0]["priority"], "low")
+        self.assertLess({"min": 1, "low": 2, "default": 3, "high": 4}[five[0]["priority"]],
+                        {"min": 1, "low": 2, "default": 3, "high": 4}[got[0]["priority"]])
+
+    def test_dedup_and_seed_no_storm(self):
+        df = swing_frame(cross=True)
+        state = tempfile.mkdtemp()
+        box = []
+        first = T.dispatch({"15m": df}, state, send_fn=box.append)
+        self.assertEqual(first, [])
+        self.assertEqual(box, [])
+        sent = json.load(open(os.path.join(state, "tl_alerts_sent.json")))
+        self.assertGreater(len(sent["ids"]), 0)
+        self.assertTrue(any("|entry|" in x for x in sent["ids"]))
+        again = T.dispatch({"15m": df}, state, send_fn=box.append)
+        self.assertEqual(again, [])
+        self.assertEqual(box, [])
+        # An initialized empty book sends the live entry once, then never again.
+        state2 = tempfile.mkdtemp()
+        json.dump({"v": 1, "ids": []}, open(os.path.join(state2, "tl_alerts_sent.json"), "w"))
+        live = T.dispatch({"15m": df, "5m": swing_frame(step=300_000, cross=True)}, state2, send_fn=box.append)
+        self.assertEqual(len(live), 2)
+        self.assertEqual({x["tf"] for x in live}, {"15m", "5m"})
+        self.assertEqual(T.dispatch({"15m": df, "5m": swing_frame(step=300_000, cross=True)}, state2, send_fn=box.append), [])
+        self.assertEqual(len(box), 2)
+        ids = json.load(open(os.path.join(state2, "tl_alerts_sent.json")))["ids"]
+        self.assertEqual(len(ids), len(set(ids)))
+        # Historical random-walk signals are seeded, not pushed.
+        storm = tempfile.mkdtemp()
+        pushed = []
+        none = T.dispatch({"15m": series(n=420)}, storm, send_fn=pushed.append)
+        self.assertEqual(none, [])
+        self.assertEqual(pushed, [])
+        self.assertGreater(len(json.load(open(os.path.join(storm, "tl_alerts_sent.json")))["ids"]), 0)
+        self.assertFalse(os.path.exists(os.path.join(storm, "alerts_sent.json")))
 if __name__ == "__main__": unittest.main()

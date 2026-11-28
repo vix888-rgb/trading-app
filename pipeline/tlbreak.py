@@ -1,10 +1,13 @@
-"""Trendline break for gold (XAUUSD), 15m and 5m: DISPLAY-ONLY module (15m added 28 Nov 2026, 5m the same day).
+"""Trendline break for gold (XAUUSD), 15m and 5m (15m added 28 Nov 2026, 5m the same day).
 
-Nothing here feeds the agents, weights, journal, gated signals or phone alerts. It reads the closed gold bars the scan already
-saved (RAW_PKL; if a frame is missing, the gold-feed cache those bars were built from — no new request), finds trendline-break
-entries, replays the exit model on the same bars and writes:
+Nothing here changes the agents, the main gated signals, or the main phone-alert list. It reads the closed gold bars the scan
+already saved (RAW_PKL; if a frame is missing, the gold-feed cache those bars were built from — no new request), finds
+trendline-break entries, replays the exit model on the same bars and writes:
   * data.json -> "tl15" and "tl5"  (live + recent signals for the dedicated page in the app)
   * state/tl15_log.json and state/tl5_log.json  (forward trade logs from the first scan that ran each timeframe)
+  * state/tl_alerts_sent.json  (ids already pushed to ntfy, so a line is not announced twice)
+Its own ntfy messages use the same topic as the main alerts: a "gati" pre-alert when price is within 0.5×ATR of a live line,
+and an ENTRY alert when a close breaks that line inside the session rules. The first run only records history and sends nothing.
 A failure here is caught by run.sh and never stops the scan.
 
 Rule (same bar parameters on both timeframes). 15m backtest of 5-27 Nov 2026: 34 trades, +0.45R/trade, PF 2.69, spread $0.30.
@@ -31,6 +34,7 @@ DATA_KEY = {"15m": "tl15", "5m": "tl5"}
 COST = 0.30            # spread, price units ($) per trade
 LOT = 0.02; OZ = LOT * 100   # 0.02 lot = 2 oz -> $2 per $1 move ($0.20 per pip)
 SL_ATR, MIN_ATR, MAX_ATR = 1.5, 0.7, 3.5
+NEAR_ATR = 0.5          # pre-alert when the close is this close to the line, on the approach side
 WIN = (1.0, 20.5); MAXTR = 3
 W = 3; MIN_GAP = 8; MAX_AGE = 150
 NAME = "15m trendline break (gold)"
@@ -83,13 +87,13 @@ def signals(d):
             if pb < pa and b - a >= MIN_GAP and i - b < MAX_AGE:
                 f = lambda x: pa + (pb - pa) * (x - a) / (b - a)
                 if c[i] > f(i) and c[i - 1] <= f(i - 1):
-                    out.append(dict(i=i, side=1, line=f(i), sl=f(i) - SL_ATR * A[i]))
+                    out.append(dict(i=i, side=1, line=f(i), sl=f(i) - SL_ATR * A[i], a=int(a), b=int(b)))
         if len(swl) >= 2:
             (a, pa), (b, pb) = swl[-2], swl[-1]
             if pb > pa and b - a >= MIN_GAP and i - b < MAX_AGE:
                 f = lambda x: pa + (pb - pa) * (x - a) / (b - a)
                 if c[i] < f(i) and c[i - 1] >= f(i - 1):
-                    out.append(dict(i=i, side=-1, line=f(i), sl=f(i) + SL_ATR * A[i]))
+                    out.append(dict(i=i, side=-1, line=f(i), sl=f(i) + SL_ATR * A[i], a=int(a), b=int(b)))
     return out, A
 
 def current_lines(d):
@@ -135,6 +139,8 @@ def run(d, step_ms=None):
     for sg in sorted(sigs, key=lambda x: x["i"]):
         i, s = sg["i"], sg["side"]
         base = dict(bar_t=int(d.t.iloc[i]), side="BUY" if s > 0 else "SELL", line=float(sg["line"]), atr=float(A[i]))
+        if "a" in sg and "b" in sg:
+            base["a_t"] = int(d.t.iloc[int(sg["a"])]); base["b_t"] = int(d.t.iloc[int(sg["b"])])
         if i <= last_exit:
             res.append({**base, "status": "skipped", "why": "already in a trade"}); continue
         pending = i + 1 >= n
@@ -227,6 +233,173 @@ def panel(df, state_dir=None, now_ms=None, tf="15m"):
             "sigs": pub, "skipped": nskip, "fwd": fwd, "since": log["since_txt"] if log else None,
             "n_replay": len(rows)}
 
+SENT_NAME = "tl_alerts_sent.json"
+
+def px(x):
+    return f"{float(x):.2f}"
+
+def alert_prefix(tf):
+    return "TL15" if tf == "15m" else "TL5 (TEST)"
+
+def priority_for(tf, kind):
+    """15m ENTRY is high. 5m is lower than the matching 15m alert."""
+    if tf == "5m":
+        return "min" if kind == "pre" else "low"
+    return "high" if kind == "entry" else "default"
+
+def line_key(tf, kind, side, a_t, b_t):
+    return f"{tf}|{kind}|{side}|{int(a_t)}|{int(b_t)}"
+
+def near_line(close, line, atr):
+    return atr > 0 and abs(float(close) - float(line)) <= NEAR_ATR * float(atr)
+
+def risk_skip(close, sl, atr):
+    return atr > 0 and abs(float(close) - float(sl)) > MAX_ATR * float(atr)
+
+def pre_message(tf, side, line, price, sl, skip):
+    way = "mbi" if side == "BUY" else "nën"
+    msg = (f"{alert_prefix(tf)} gati {side} XAUUSD — vija ~{px(line)}, çmimi {px(price)}. "
+           f"Prit mbylljen {way} {px(line)}. SL {px(sl)}")
+    if skip:
+        msg += " skip"
+    return msg
+
+def entry_message(tf, side, entry, sl):
+    return (f"{alert_prefix(tf)} ENTRY {side} XAUUSD @ {px(entry)}, SL {px(sl)}, "
+            f"TP1 1R / TP2 2R / TP3 3R, 0.02 lot, BE pas TP1.")
+
+def _swings(d):
+    h, l = d.h.values, d.l.values
+    n = len(d)
+    swh, swl = [], []
+    for i in range(n):
+        j = i - W
+        if j >= W:
+            if h[j] == h[j - W:j + W + 1].max() and h[j] > h[j - W:j].max(): swh.append((j, float(h[j])))
+            if l[j] == l[j - W:j + W + 1].min() and l[j] < l[j - W:j].min(): swl.append((j, float(l[j])))
+    return swh, swl
+
+def watch_lines(d):
+    """Qualified falling/rising lines on the last closed bar, with the level and the swing timestamps."""
+    if len(d) < 2:
+        return []
+    A = atr14(d)
+    i = len(d) - 1
+    atr = float(A[i]) if np.isfinite(A[i]) else float("nan")
+    close = float(d.c.iloc[i])
+    swh, swl = _swings(d)
+    out = []
+    for side, sw, ok, sl_sign in (
+        ("BUY", swh, lambda pa, pb: pb < pa, -1.0),
+        ("SELL", swl, lambda pa, pb: pb > pa, 1.0),
+    ):
+        if len(sw) < 2:
+            continue
+        (a, pa), (b, pb) = sw[-2], sw[-1]
+        if not (ok(pa, pb) and b - a >= MIN_GAP and i - b < MAX_AGE):
+            continue
+        line = pa + (pb - pa) * (i - a) / (b - a)
+        sl = line + sl_sign * SL_ATR * atr if np.isfinite(atr) else float("nan")
+        out.append({"side": side, "line": float(line), "atr": atr, "close": close, "sl": float(sl),
+                    "a_t": int(d.t.iloc[a]), "b_t": int(d.t.iloc[b])})
+    return out
+
+def pre_candidates(d, tf):
+    """One pre-alert per live line whose close is still on the approach side and within 0.5×ATR."""
+    found = []
+    for ln in watch_lines(d):
+        atr, line, close = ln["atr"], ln["line"], ln["close"]
+        if not np.isfinite(atr) or atr <= 0 or not np.isfinite(line):
+            continue
+        if ln["side"] == "BUY" and close > line:
+            continue
+        if ln["side"] == "SELL" and close < line:
+            continue
+        if not near_line(close, line, atr):
+            continue
+        skip = risk_skip(close, ln["sl"], atr)
+        side = ln["side"]
+        found.append({
+            "id": line_key(tf, "pre", side, ln["a_t"], ln["b_t"]),
+            "tf": tf, "kind": "pre", "side": side, "priority": priority_for(tf, "pre"),
+            "title": f"{alert_prefix(tf)} gati {side} XAUUSD",
+            "body": pre_message(tf, side, line, close, ln["sl"], skip),
+        })
+    return found
+
+def entry_candidates(d, tf):
+    """Confirmed breaks that pass the same session, daily cap, and one-position rules as the panel."""
+    step = TF_STEP[tf]
+    found, seen = [], set()
+    for r in run(d, step):
+        if r.get("status") == "skipped" or r.get("a_t") is None or r.get("entry") is None:
+            continue
+        eid = line_key(tf, "entry", r["side"], r["a_t"], r["b_t"])
+        if eid in seen:
+            continue
+        seen.add(eid)
+        found.append({
+            "id": eid, "tf": tf, "kind": "entry", "side": r["side"], "priority": priority_for(tf, "entry"),
+            "title": f"{alert_prefix(tf)} ENTRY {r['side']} XAUUSD",
+            "body": entry_message(tf, r["side"], r["entry"], r["sl"]),
+        })
+    return found
+
+def collect_alerts(frames):
+    items = []
+    for tf in TFS:
+        df = frames.get(tf)
+        if df is None or len(df) < 20:
+            continue
+        d = frame(df)
+        items.extend(pre_candidates(d, tf))
+        items.extend(entry_candidates(d, tf))
+    return items
+
+def _load_sent(path):
+    """None when the file is missing, so the caller can seed instead of sending."""
+    if not os.path.exists(path):
+        return None
+    try:
+        doc = json.load(open(path))
+    except Exception:
+        return None
+    ids = doc.get("ids") if isinstance(doc, dict) else None
+    if not isinstance(ids, list):
+        return None
+    return set(str(x) for x in ids)
+
+def _save_sent(path, ids):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    doc = {"v": 1, "ids": sorted(set(ids))}
+    tmp = path + ".tmp"
+    json.dump(doc, open(tmp, "w"), separators=(",", ":"))
+    os.replace(tmp, path)
+
+def _ntfy(item):
+    import alerts
+    click = alerts.CLICK.split("#")[0] + ("#tl5" if item["tf"] == "5m" else "#tl")
+    alerts.send(item["title"], item["body"], alerts.NTFY_URL, priority=item["priority"], click=click, tags="bell")
+
+def dispatch(frames, state_dir, send_fn=None):
+    """Send new TL alerts. The first call (no sent-file) records every current id and sends nothing."""
+    path = os.path.join(state_dir, SENT_NAME)
+    items = collect_alerts(frames)
+    sent = _load_sent(path)
+    if sent is None:
+        _save_sent(path, [it["id"] for it in items])
+        return []
+    fresh = [it for it in items if it["id"] not in sent]
+    if send_fn is None:
+        send_fn = _ntfy
+    delivered = []
+    for it in fresh:
+        send_fn(it)
+        sent.add(it["id"])
+        _save_sent(path, sent)
+        delivered.append(it)
+    return delivered
+
 def scan_frames():
     """Closed XAUUSD bars for 15m and 5m. Prefer the pickle this scan just wrote.
 
@@ -275,6 +448,11 @@ def main():
         print(key, "ok", len(p["sigs"]), "signals shown; forward log", p["fwd"].get("n", 0), "closed")
     tmp = DATA_JSON + ".tmp"; json.dump(d, open(tmp, "w"), separators=(",", ":"), ensure_ascii=False); os.replace(tmp, DATA_JSON)
     if not wrote: raise RuntimeError("tl break failed")
+    try:
+        nsent = dispatch(frames, STATE)
+        print("tl alerts", len(nsent))
+    except Exception:
+        print("tl alerts skipped")
     if failed: print("tl partial", " ".join(failed))
 
 if __name__ == "__main__":
