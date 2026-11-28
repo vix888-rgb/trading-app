@@ -266841,7 +266841,7 @@
   "edge": false,
   "trail_stop": 59613.075918084,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 33
  },
  {
   "id": "ETHUSD-5m-1795849800000",
@@ -267116,7 +267116,7 @@
   "edge": false,
   "trail_stop": 1654.68,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 33
  },
  {
   "id": "SOLUSD-15m-1795849200000",
@@ -267253,7 +267253,7 @@
   "edge": false,
   "trail_stop": 71.19420357520838,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 33
  },
  {
   "id": "XRPUSD-15m-1795849200000",
@@ -267390,7 +267390,7 @@
   "edge": false,
   "trail_stop": 0.9459,
   "tp1_hit": true,
-  "bars_open": 32
+  "bars_open": 33
  },
  {
   "id": "XRPUSD-5m-1795856400000",
@@ -269063,6 +269063,140 @@
   "edge": false,
   "trail_stop": 70.76755,
   "tp1_hit": false,
-  "bars_open": 6
+  "bars_open": 8
+ },
+ {
+  "id": "ETHUSD-5m-1795879800000",
+  "logged": "2026-11-28T16:40+01:00",
+  "bar_t": 1795879800000,
+  "bar_time": "Sat 28 Nov 16:30",
+  "sym": "ETHUSD",
+  "tf": "5m",
+  "side": "short",
+  "score": -33,
+  "entry": 1644.59,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1649.236,
+  "tp": [
+   1639.944,
+   1635.299,
+   1630.653
+  ],
+  "inv": 1650.72,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.54,
+   0.7,
+   1.16,
+   0.26,
+   0.56,
+   1.0,
+   1.58,
+   1.31,
+   0.99,
+   1.1,
+   0.74,
+   0.0,
+   0.0,
+   1.0,
+   0.0,
+   0.0,
+   0.88,
+   0.99,
+   1.08,
+   0.0,
+   0.0,
+   0.33,
+   0.0,
+   0.3,
+   0.91,
+   0.67,
+   1.25,
+   1.46
+  ],
+  "strategies": [],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 3.097062658527658,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 78,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": true,
+    "lo": 1643.39,
+    "hi": 1650.72,
+    "src": "1m",
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1657.02129436,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 1653.45,
+    "dl": 1635.71,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
