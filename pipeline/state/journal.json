@@ -250385,7 +250385,7 @@
   "edge": false,
   "trail_stop": 62396.997,
   "tp1_hit": false,
-  "bars_open": 15
+  "bars_open": 16
  },
  {
   "id": "USDCHF-1d-1795564800000",
@@ -265866,7 +265866,7 @@
   "edge": false,
   "trail_stop": 1719.662,
   "tp1_hit": false,
-  "bars_open": 3
+  "bars_open": 4
  },
  {
   "id": "BTCUSD-5m-1795843200000",
@@ -266841,7 +266841,7 @@
   "edge": false,
   "trail_stop": 59613.075918084,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 35
  },
  {
   "id": "ETHUSD-5m-1795849800000",
@@ -267116,7 +267116,7 @@
   "edge": false,
   "trail_stop": 1654.68,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 35
  },
  {
   "id": "SOLUSD-15m-1795849200000",
@@ -267253,7 +267253,7 @@
   "edge": false,
   "trail_stop": 71.19420357520838,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 35
  },
  {
   "id": "XRPUSD-15m-1795849200000",
@@ -267390,7 +267390,7 @@
   "edge": false,
   "trail_stop": 0.9459,
   "tp1_hit": true,
-  "bars_open": 34
+  "bars_open": 35
  },
  {
   "id": "XRPUSD-5m-1795856400000",
@@ -269207,5 +269207,138 @@
   "R": -1.0,
   "exit": "stop",
   "closed_at": "2026-11-28T17:00+01:00"
+ },
+ {
+  "id": "SOLUSD-4h-1795867200000",
+  "logged": "2026-11-28T17:10+01:00",
+  "bar_t": 1795867200000,
+  "bar_time": "Sat 28 Nov 13:00",
+  "sym": "SOLUSD",
+  "tf": "4h",
+  "side": "short",
+  "score": -29,
+  "entry": 70.7,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 72.89662,
+  "tp": [
+   68.50338,
+   66.30676,
+   64.11013
+  ],
+  "inv": 73.93,
+  "votes": [
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   -1,
+   1,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.94,
+   0.59,
+   0.99,
+   0.02,
+   0.32,
+   1.15,
+   1.4,
+   1.05,
+   0.82,
+   0.97,
+   0.55,
+   0.0,
+   0.3,
+   1.22,
+   0.59,
+   0.0,
+   1.05,
+   1.08,
+   1.58,
+   0.0,
+   0.34,
+   0.12,
+   0.15,
+   0.46,
+   0.91,
+   0.75,
+   0.47,
+   1.67
+  ],
+  "strategies": [
+   "Liquidity Entry Zones"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 1.4644145490853775,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 55,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 81.49547454,
+    "side200": -1,
+    "stack": -1,
+    "st": 1,
+    "dh": 73.93,
+    "dl": 65.84,
+    "brk": 0,
+    "sqz": "off",
+    "mom": 1,
+    "sess": true,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
