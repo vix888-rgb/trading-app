@@ -46755,7 +46755,7 @@
   "edge": false,
   "trail_stop": 1.0915587136245906,
   "tp1_hit": true,
-  "bars_open": 19
+  "bars_open": 20
  },
  {
   "id": "XRPUSD-1h-1794096000000",
@@ -88037,7 +88037,7 @@
   "edge": false,
   "trail_stop": 1.116894,
   "tp1_hit": true,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "ETHUSD-15m-1794440700000",
@@ -106559,7 +106559,7 @@
   "edge": true,
   "trail_stop": 158.146,
   "tp1_hit": false,
-  "bars_open": 10
+  "bars_open": 11
  },
  {
   "id": "USDCHF-1d-1794441600000",
@@ -106835,7 +106835,7 @@
   "edge": false,
   "trail_stop": 1924.9307256619134,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "SOLUSD-1d-1794441600000",
@@ -106971,7 +106971,7 @@
   "edge": false,
   "trail_stop": 81.72,
   "tp1_hit": true,
-  "bars_open": 14
+  "bars_open": 15
  },
  {
   "id": "USDCHF-5m-1794529800000",
@@ -124403,7 +124403,7 @@
   "edge": false,
   "trail_stop": 1.323136,
   "tp1_hit": true,
-  "bars_open": 9
+  "bars_open": 10
  },
  {
   "id": "ETHUSD-15m-1794616200000",
@@ -229925,7 +229925,7 @@
   "edge": false,
   "trail_stop": 1.099787,
   "tp1_hit": false,
-  "bars_open": 20
+  "bars_open": 21
  },
  {
   "id": "SOLUSD-15m-1795520700000",
@@ -250385,7 +250385,7 @@
   "edge": false,
   "trail_stop": 62396.997,
   "tp1_hit": false,
-  "bars_open": 11
+  "bars_open": 12
  },
  {
   "id": "USDCHF-1d-1795564800000",
@@ -250521,7 +250521,7 @@
   "edge": false,
   "trail_stop": 0.825333,
   "tp1_hit": false,
-  "bars_open": 1
+  "bars_open": 2
  },
  {
   "id": "XAUUSD-5m-1795655100000",
@@ -261780,7 +261780,7 @@
   "edge": true,
   "trail_stop": 1.0951666520682262,
   "tp1_hit": true,
-  "bars_open": 40
+  "bars_open": 39
  },
  {
   "id": "USDJPY-5m-1795783800000",
@@ -262334,7 +262334,7 @@
   "edge": false,
   "trail_stop": 1.09529,
   "tp1_hit": true,
-  "bars_open": 10
+  "bars_open": 9
  },
  {
   "id": "BTCUSD-15m-1795789800000",
@@ -264206,7 +264206,7 @@
   "edge": false,
   "trail_stop": 1.310868,
   "tp1_hit": false,
-  "bars_open": 26
+  "bars_open": 25
  },
  {
   "id": "XRPUSD-15m-1795796100000",
@@ -264343,7 +264343,7 @@
   "edge": false,
   "trail_stop": 0.956222,
   "tp1_hit": false,
-  "bars_open": 29
+  "bars_open": 30
  },
  {
   "id": "BTCUSD-15m-1795797000000",
@@ -264479,7 +264479,7 @@
   "edge": false,
   "trail_stop": 60298.01,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "ETHUSD-15m-1795797000000",
@@ -264613,7 +264613,7 @@
   "edge": false,
   "trail_stop": 1680.72,
   "tp1_hit": true,
-  "bars_open": 28
+  "bars_open": 29
  },
  {
   "id": "SOLUSD-15m-1795798800000",
@@ -264747,7 +264747,7 @@
   "edge": false,
   "trail_stop": 72.76824,
   "tp1_hit": false,
-  "bars_open": 26
+  "bars_open": 27
  },
  {
   "id": "USDJPY-15m-1795799700000",
@@ -264884,7 +264884,7 @@
   "edge": false,
   "trail_stop": 159.485,
   "tp1_hit": true,
-  "bars_open": 20
+  "bars_open": 19
  },
  {
   "id": "USDJPY-5m-1795801200000",
@@ -265717,5 +265717,140 @@
   "R": -1.0,
   "exit": "stop",
   "closed_at": "2026-11-27T23:08+01:00"
+ },
+ {
+  "id": "ETHUSD-4h-1795809600000",
+  "logged": "2026-11-28T01:08+01:00",
+  "bar_t": 1795809600000,
+  "bar_time": "Fri 27 Nov 21:00",
+  "sym": "ETHUSD",
+  "tf": "4h",
+  "side": "short",
+  "score": -51,
+  "entry": 1662.48,
+  "entry_type": "market",
+  "filled": true,
+  "stop": 1719.662,
+  "tp": [
+   1605.298,
+   1548.116,
+   1490.935
+  ],
+  "inv": 1755.22,
+  "votes": [
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   1,
+   -1,
+   0,
+   0,
+   -1,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1
+  ],
+  "weights": [
+   1.48,
+   0.66,
+   1.08,
+   0.05,
+   0.65,
+   1.3,
+   1.0,
+   1.28,
+   1.0,
+   0.88,
+   0.0,
+   0.0,
+   0.0,
+   1.62,
+   0.01,
+   0.0,
+   1.0,
+   1.23,
+   1.45,
+   0.0,
+   0.0,
+   0.0,
+   0.81,
+   0.0,
+   1.03,
+   1.1,
+   0.88,
+   1.0
+  ],
+  "strategies": [
+   "ICT/SMC sweep + CHoCH",
+   "TSMOM multi-lookback trend",
+   "ICT/TJR sweep \u2192 MSS \u2192 FVG retrace"
+  ],
+  "status": "open",
+  "exit_mode": "chandelier",
+  "trail_atr": 4.0,
+  "atr": 38.12121267476929,
+  "filters": {
+   "carry": null,
+   "carryDir": 0,
+   "vol": true,
+   "atrPct": 74,
+   "trend": -1,
+   "htf": -1,
+   "agree": true,
+   "sigRaw": "SELL",
+   "range": {
+    "on": false,
+    "alert": false
+   },
+   "sweep": {
+    "on": false,
+    "blockLong": false,
+    "blockShort": false,
+    "dir": 0,
+    "alert": true
+   },
+   "news": {
+    "on": false,
+    "alert": false
+   },
+   "why": "",
+   "ind": {
+    "e200": 1969.17325229,
+    "side200": -1,
+    "stack": -1,
+    "st": -1,
+    "dh": 1755.22,
+    "dl": 1608.86,
+    "brk": 0,
+    "sqz": "on",
+    "mom": 1,
+    "sess": false,
+    "gate": false,
+    "sgate": false,
+    "d1": -1,
+    "dgate": false,
+    "vx": false,
+    "vxgate": false
+   },
+   "pat": []
+  },
+  "edge": false
  }
 ]
