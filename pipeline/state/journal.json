@@ -264430,7 +264430,7 @@
   "strategies": [
    "Keltner volatility breakout"
   ],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 390.9634723012726,
@@ -264482,7 +264482,10 @@
   "edge": false,
   "trail_stop": 60298.01,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 0.47,
+  "exit": "time exit",
+  "closed_at": "2026-11-28T05:48+01:00"
  },
  {
   "id": "ETHUSD-15m-1795797000000",
@@ -264564,7 +264567,7 @@
    1.21
   ],
   "strategies": [],
-  "status": "open",
+  "status": "closed",
   "exit_mode": "chandelier",
   "trail_atr": 4.0,
   "atr": 12.314235354895867,
@@ -264616,7 +264619,10 @@
   "edge": false,
   "trail_stop": 1680.72,
   "tp1_hit": true,
-  "bars_open": 47
+  "bars_open": 47,
+  "R": 0.92,
+  "exit": "time exit",
+  "closed_at": "2026-11-28T05:48+01:00"
  },
  {
   "id": "SOLUSD-15m-1795798800000",
@@ -264750,7 +264756,7 @@
   "edge": false,
   "trail_stop": 72.76824,
   "tp1_hit": false,
-  "bars_open": 45
+  "bars_open": 46
  },
  {
   "id": "USDJPY-15m-1795799700000",
