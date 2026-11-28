@@ -7,3 +7,5 @@ python3 engine2.py
 python3 engine3.py
 python3 compact3.py
 python3 compact_pwa.py
+# Display-only 15m trendline break page (gold). Never fails the scan.
+python3 tlbreak.py || echo "tl15 skipped (display-only module failed)"

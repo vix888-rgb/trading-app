@@ -38,6 +38,11 @@ svg text{fill:var(--tx2);font-size:12px}
 #analysisBox ul{margin:6px 0 0;padding-left:18px}
 tr.fresh td{background:rgba(245,197,66,.16)}
 .newmark{display:inline-block;margin-right:4px;padding:1px 6px;border-radius:99px;background:rgba(245,197,66,.28);color:var(--yl);font-size:11px;font-weight:700;letter-spacing:.03em}
+body.tlview main>*:not(#tlCard){display:none}body.tlview #sym,body.tlview #tfs,body.tlview #analyze{display:none}
+.tlsig{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:0 0 10px;background:rgba(127,127,127,.04)}.tlsig.sk{opacity:.55}
+.tlhd{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;margin-bottom:8px}.tlhd b{font-size:15px}
+.tlg{display:grid;grid-template-columns:repeat(auto-fit,minmax(92px,1fr));gap:6px 10px}.tlg div{font-size:12px;color:var(--tx2)}.tlg b{display:block;font-size:15px;color:var(--tx);font-variant-numeric:tabular-nums}
+.tlbig{font-size:18px}#tlbtn.on{background:var(--ac);color:#fff;border-color:var(--ac)}
 </style>
 </head>
 <body>
@@ -47,9 +52,19 @@ tr.fresh td{background:rgba(245,197,66,.16)}
   <div class="seg" id="tfs"></div>
   <button id="refresh" title="Reload latest snapshot and live crypto price">Refresh</button>
   <button id="analyze" type="button">Analyze chart</button>
+  <button id="tlbtn" type="button" title="15m trendline break for gold, display only">15m TL break</button>
   <label class="muted"><input type="checkbox" id="auto"> auto 60s</label>
 </header>
 <main>
+  <div class="card" id="tlCard" style="display:none">
+    <div class="row" style="justify-content:space-between"><h2 style="margin:0">15m trendline break · Gold</h2><button id="tlClose" type="button">Back</button></div>
+    <div class="row" style="margin:8px 0"><span class="pill n">display only</span><span class="muted" id="tlMeta"></span></div>
+    <div id="tlLines" class="muted" style="margin-bottom:10px"></div>
+    <div id="tlList"></div>
+    <div id="tlFwd" class="muted" style="margin:6px 0"></div>
+    <p class="muted" id="tlRule"></p>
+    <p class="muted">Signals are statistical, not guarantees. This page does not send alerts and does not change the main signals or weights. Lot 0.02 = $0.20 per pip; results include a $0.30 spread. Times are Europe/Belgrade. Entry is the next 15m candle open after the signal candle closes (shown with ≈ when that candle has not opened yet).</p>
+  </div>
   <div class="note"><b>Not financial advice.</b> Signals are statistical opinions, not guarantees. Backtests show little to no proven edge, so size small. <span id="gen" class="muted"></span> <span class="muted">Auto-refresh every 10 min.</span></div>
   <div class="card"><div class="grid four" id="metrics"></div><div id="filters" class="row" style="margin-top:8px"></div><div id="edge" style="margin-top:6px"></div><div id="live" class="muted" style="margin-top:8px"></div></div>
   <div class="card"><div id="chart"></div><dl id="session" style="margin-top:10px"></dl></div>
@@ -235,7 +250,7 @@ let freshSet=new Set(),loading=false;
 const SCAN_MEM="signal-desk-gated";
 function isFresh(sym,tf){return freshSet.has(sym+"|"+tf)}
 function rememberScan(d){let prev=null;try{prev=JSON.parse(sessionStorage.getItem(SCAN_MEM)||"null")}catch(e){}const now={};freshSet=new Set();for(const r of (d&&d.scan)||[]){if(!r||r.length<12||r[2]==null)continue;const k=r[0]+"|"+r[1];now[k]=r[11];if(prev&&Object.prototype.hasOwnProperty.call(prev,k)&&prev[k]!==r[11])freshSet.add(k)}try{sessionStorage.setItem(SCAN_MEM,JSON.stringify(now))}catch(e){}}
-async function load(){if(loading)return;loading=true;try{const r=await fetch("./data.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error(String(r.status));const next=await r.json();rememberScan(next);D=next;render()}catch(e){if(!D){$("metrics").textContent="Could not load data.json"}}finally{loading=false}}
+async function load(){if(loading)return;loading=true;try{const r=await fetch("./data.json?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error(String(r.status));const next=await r.json();rememberScan(next);D=next;render();renderTL()}catch(e){if(!D){$("metrics").textContent="Could not load data.json"}}finally{loading=false}}
 function initUI(){$("sym").innerHTML=PRI.map(s=>`<option value="${s}">${s}</option>`).join("");$("sym").onchange=e=>{S.sym=e.target.value;resetQuote();render();connectLive(S.sym);if(analysisOpen())analyze()};
  $("tfs").innerHTML=TFS.map(x=>`<button data-tf="${x}" class="${x===S.tf?"on":""}">${x}</button>`).join("");
  document.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
@@ -247,6 +262,22 @@ function initUI(){$("sym").innerHTML=PRI.map(s=>`<option value="${s}">${s}</opti
  ["riskUsd","bal","rpct"].forEach(id=>$(id).addEventListener("input",render));
  $("refresh").onclick=load;$("auto").onchange=e=>{clearInterval(timer);if(e.target.checked)timer=setInterval(load,60000)};
  $("analyze").onclick=()=>{analyze();$("analysisCard").scrollIntoView({block:"nearest"})};$("analysisClose").onclick=()=>{analysisToken++;destroyAnalysisChart();$("analysisCard").style.display="none";$("analyze").disabled=false};}
+
+const TLST={pending:["Entry on the next candle","w"],active:["Active","b"],tp3:["TP3 hit","b"],tp1be:["TP1 hit, rest stopped at entry","b"],tp2be:["TP1 + TP2 hit, rest stopped at entry","b"],sl:["SL hit","s"],eod:["Closed at day end","n"]};
+function tlRow(r){const sd=r.side==="BUY"?pill("BUY","b"):pill("SELL","s");let st;if(r.status==="skipped")st=pill("Skipped: "+esc(r.why||""),"n");else{const m=TLST[r.status]||[r.status,"n"];let t=m[0];if(r.status==="active"&&r.hits)t+=" · TP"+r.hits+" hit, SL at entry";st=pill(esc(t),m[1])}
+ if(r.status==="skipped")return `<div class="tlsig sk"><div class="tlhd">${sd}<b>${esc(r.t)}</b>${st}</div></div>`;
+ const a=r.approx?"≈ ":"",res=r.R==null?"–":`${r.R>0?"+":""}${r.R.toFixed(2)}R · ${r.usd>=0?"+":"−"}$${Math.abs(r.usd).toFixed(0)}`;
+ return `<div class="tlsig"><div class="tlhd">${sd}<b>${esc(r.t)}</b>${st}</div><div class="tlg"><div>Entry<b>${a}${fp(r.entry,2)}</b></div><div>SL<b>${fp(r.sl,2)}</b></div><div>TP1<b>${fp(r.tp[0],2)}</b></div><div>TP2<b>${fp(r.tp[1],2)}</b></div><div>TP3<b>${fp(r.tp[2],2)}</b></div><div>Risk at 0.02 lot<b>$${r.riskUsd.toFixed(0)}</b></div><div>Result<b>${res}</b></div></div></div>`}
+function renderTL(){const T=D&&D.tl15,c=$("tlCard");if(!c||c.style.display==="none")return;if(!T){$("tlMeta").textContent="";$("tlList").innerHTML='<p class="muted">No data for this module yet. It appears after the next scan.</p>';return}
+ $("tlMeta").textContent="Last closed 15m candle ends "+T.asof+" · price "+fp(T.last,2)+" · ATR "+fp(T.atr,2);
+ const L=T.lines||{},bits=[];if(L.falling)bits.push("Falling line now "+fp(L.falling.now,2)+" (next candle "+fp(L.falling.next,2)+") – a 15m close above it = BUY signal");if(L.rising)bits.push("Rising line now "+fp(L.rising.now,2)+" (next candle "+fp(L.rising.next,2)+") – a 15m close below it = SELL signal");
+ $("tlLines").innerHTML=bits.length?bits.map(esc).join("<br>"):"No valid trendline right now.";
+ const act=(T.sigs||[]).filter(r=>r.status==="pending"||r.status==="active");
+ $("tlList").innerHTML=((T.sigs||[]).length?((act.length?"":'<p class="muted">No active signal right now. Recent signals (last ~3 days):</p>')+T.sigs.map(tlRow).join("")):'<p class="muted">No tradable signal in the last ~3 days.</p>')+(T.skipped?`<p class="muted">${T.skipped} more break${T.skipped>1?"s":""} in the last ~3 days were skipped by the rules (outside 01:00–20:30, already in a trade, or 3 trades that day).</p>`:"");
+ const f=T.fwd||{};$("tlFwd").textContent=(f.n?`Forward log since ${T.since}: ${f.n} closed · ${f.win}% wins · avg ${f.avgR>0?"+":""}${f.avgR}R · PF ${f.pf==null?"–":f.pf} · ${f.usd>=0?"+":"−"}$${Math.abs(f.usd)} at 0.02 lot`:`Forward log since ${T.since||"–"}: no closed trade yet`)+` · Backtest ${T.bt.span}: ${T.bt.n} trades, ${T.bt.win}% wins, avg +${T.bt.avgR}R, PF ${T.bt.pf} (small sample).`;
+ $("tlRule").textContent="Rule: "+T.rule}
+function tlOpen(on){$("tlCard").style.display=on?"":"none";document.body.classList.toggle("tlview",on);$("tlbtn").classList.toggle("on",on);if(on){renderTL();window.scrollTo(0,0)}if(history.replaceState)history.replaceState(null,"",on?"#tl":location.pathname+location.search)}
+$("tlbtn").onclick=()=>tlOpen($("tlCard").style.display==="none");$("tlClose").onclick=()=>tlOpen(false);if(location.hash==="#tl")tlOpen(true);
 initUI();load();connectLive(S.sym);setInterval(paintLive,1000);setInterval(load,300000);
 if("serviceWorker" in navigator)navigator.serviceWorker.register("./sw.js",{scope:"./"});
 </script>
