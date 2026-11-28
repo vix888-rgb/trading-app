@@ -1,17 +1,19 @@
-"""15m trendline break for gold (XAUUSD): DISPLAY-ONLY module (added 28 Nov 2026).
+"""Trendline break for gold (XAUUSD), 15m and 5m: DISPLAY-ONLY module (15m added 28 Nov 2026, 5m the same day).
 
-Nothing here feeds the agents, weights, journal, gated signals or phone alerts. It reads the closed 15m gold bars the scan already
-saved (RAW_PKL), finds trendline-break entries, replays the exit model on the same bars and writes:
-  * data.json -> "tl15"  (live + recent signals for the dedicated page in the app)
-  * state/tl15_log.json  (forward trade log from the first scan that ran this module, for the nightly review)
+Nothing here feeds the agents, weights, journal, gated signals or phone alerts. It reads the closed gold bars the scan already
+saved (RAW_PKL; if a frame is missing, the gold-feed cache those bars were built from — no new request), finds trendline-break
+entries, replays the exit model on the same bars and writes:
+  * data.json -> "tl15" and "tl5"  (live + recent signals for the dedicated page in the app)
+  * state/tl15_log.json and state/tl5_log.json  (forward trade logs from the first scan that ran each timeframe)
 A failure here is caught by run.sh and never stops the scan.
 
-Rule (backtest of 5-27 Nov 2026, 15m, 34 trades, +0.45R/trade, PF 2.69, spread $0.30; small sample, not a proven edge):
+Rule (same bar parameters on both timeframes). 15m backtest of 5-27 Nov 2026: 34 trades, +0.45R/trade, PF 2.69, spread $0.30.
+5m backtest on the same idea: +0.13R/trade. Small samples, not a proven edge:
   swing = 3-bar fractal (confirmed 3 bars later). Falling line through the last two swing highs (2nd lower, >= 8 bars apart, last one < 150 bars old):
-  a 15m close above the line after a close at/below it -> BUY at the next candle open. Rising line through the last two swing lows (2nd higher): close below -> SELL.
+  a close above the line after a close at/below it -> BUY at the next candle open. Rising line through the last two swing lows (2nd higher): close below -> SELL.
   SL = line value at the break -/+ 1.5 x ATR(14). Skip if risk > 3.5 x ATR, widen to 0.7 x ATR if tighter.
   Exit: 1/3 at 1R, 1/3 at 2R, 1/3 at 3R, SL to entry after TP1, flat at the end of the Belgrade day.
-  Entries 01:00-20:30 Belgrade, max 3 trades per day, one position at a time.
+  Entries 01:00-20:30 Belgrade, max 3 trades per day, one position at a time. Lot 0.02.
 """
 import os, sys, json, pickle, time
 import numpy as np, pandas as pd
@@ -21,7 +23,11 @@ _PIPE = os.path.dirname(os.path.abspath(__file__))
 if _PIPE not in sys.path: sys.path.insert(0, _PIPE)
 
 TZ = ZoneInfo("Europe/Belgrade")
-SYM, TF, STEP_MS = "XAUUSD", "15m", 900_000
+SYM, TF, STEP_MS = "XAUUSD", "15m", 900_000   # STEP_MS stays the 15m bar so existing callers keep that clock
+TFS = ("15m", "5m")
+TF_STEP = {"15m": 900_000, "5m": 300_000}
+LOG_NAME = {"15m": "tl15_log.json", "5m": "tl5_log.json"}
+DATA_KEY = {"15m": "tl15", "5m": "tl5"}
 COST = 0.30            # spread, price units ($) per trade
 LOT = 0.02; OZ = LOT * 100   # 0.02 lot = 2 oz -> $2 per $1 move ($0.20 per pip)
 SL_ATR, MIN_ATR, MAX_ATR = 1.5, 0.7, 3.5
@@ -32,6 +38,13 @@ RULE = ("Falling line through the last two swing highs (or rising line through t
         "enters at the next candle open. SL 1.5×ATR(14) beyond the line. TP 1R / 2R / 3R (1/3 each), SL to entry after TP1, flat at day end. "
         "Entries 01:00–20:30 Belgrade, max 3 a day. Backtest 5–27 Nov (34 trades): +0.45R, PF 2.69, 71% wins, spread $0.30 included. Small sample, display only.")
 BT_REF = {"n": 34, "win": 71, "avgR": 0.45, "pf": 2.69, "span": "5–26 Nov 2026, 15m", "note": "backtest, not live"}
+_RULE5 = ("Falling line through the last two swing highs (or rising line through the last two swing lows). A 5m close through the line, after a close on the other side, "
+          "enters at the next candle open. SL 1.5×ATR(14) beyond the line. TP 1R / 2R / 3R (1/3 each), SL to entry after TP1, flat at day end. "
+          "Entries 01:00–20:30 Belgrade, max 3 a day. Same bar rules as 15m. backtest: 5m +0.13R/trade vs 15m +0.45R. Small sample, display only.")
+_BT5 = {"avgR": 0.13, "span": "5m vs 15m +0.45R", "note": "backtest: 5m +0.13R/trade vs 15m +0.45R", "test": True}
+RULES = {"15m": RULE, "5m": _RULE5}
+BT = {"15m": BT_REF, "5m": _BT5}
+NAMES = {"15m": NAME, "5m": "5m trendline break (gold)"}
 
 def frame(df):
     """Closed 15m bars with Belgrade-time helpers. df has t (ms UTC), o,h,l,c."""
@@ -113,8 +126,9 @@ def simulate(d, E, s, sl, j):
         if hit == 3: return dict(R=real, xi=b, hits=3, kind="tp3")
     return dict(R=real + rem * s * (c[n - 1] - E) / R0, xi=n - 1, hits=hit, kind="open")
 
-def run(d):
+def run(d, step_ms=None):
     """All signals with their outcome. Same filters and order as the backtest (one position at a time, 3 a day, window, risk)."""
+    step_ms = STEP_MS if step_ms is None else int(step_ms)
     sigs, A = signals(d); n = len(d)
     o, day, hr = d.o.values, d.day.values, d.hr.values
     res = []; last_exit = -1; cnt = {}
@@ -125,7 +139,7 @@ def run(d):
             res.append({**base, "status": "skipped", "why": "already in a trade"}); continue
         pending = i + 1 >= n
         if pending:
-            nxt = d.ts.iloc[i] + pd.Timedelta(milliseconds=STEP_MS)
+            nxt = d.ts.iloc[i] + pd.Timedelta(milliseconds=step_ms)
             dd = nxt.strftime("%Y-%m-%d"); hh = nxt.hour + nxt.minute / 60
         else:
             dd, hh = day[i + 1], hr[i + 1]
@@ -163,27 +177,29 @@ def stats(rows):
     return {"n": len(rs), "win": round(100 * sum(x > 0 for x in rs) / len(rs)), "avgR": round(float(np.mean(rs)), 2),
             "pf": round(w / lo, 2) if lo > 0 else None, "sumR": round(float(sum(rs)), 2), "usd": round(float(usd), 1)}
 
-def public_row(r):
+def public_row(r, step_ms=None):
+    step_ms = STEP_MS if step_ms is None else int(step_ms)
     o = {k: r.get(k) for k in ("bar_t", "side", "status", "why", "hits")}
-    o["t"] = fmt_t(r["bar_t"] + STEP_MS)           # signal candle closes here; entry is the next open
+    o["t"] = fmt_t(r["bar_t"] + step_ms)           # signal candle closes here; entry is the next open
     for k in ("entry", "sl", "risk", "riskUsd", "R", "usd"):
         if r.get(k) is not None: o[k] = round(float(r[k]), 2)
     if r.get("tp"): o["tp"] = [round(float(x), 2) for x in r["tp"]]
     if r.get("approx"): o["approx"] = True
-    if r.get("exit_t"): o["x"] = fmt_t(r["exit_t"] + STEP_MS)
+    if r.get("exit_t"): o["x"] = fmt_t(r["exit_t"] + step_ms)
     return o
 
-def update_log(path, rows, now_ms):
-    log = {"v": 1, "since": now_ms, "since_txt": fmt_t(now_ms), "note": "forward log of the display-only 15m trendline break (gold); R and $ at 0.02 lot include a $0.30 spread", "trades": {}}
+def update_log(path, rows, now_ms, step_ms=None, tf="15m"):
+    step_ms = STEP_MS if step_ms is None else int(step_ms)
+    log = {"v": 1, "since": now_ms, "since_txt": fmt_t(now_ms), "note": f"forward log of the display-only {tf} trendline break (gold); R and $ at 0.02 lot include a $0.30 spread", "trades": {}}
     try:
         if os.path.exists(path): log = {**log, **json.load(open(path))}
     except Exception: pass
     tr = log["trades"]
     for r in rows:
-        if r["status"] in ("skipped",) or r["bar_t"] < log["since"] - STEP_MS: continue   # forward only: signal candle must be at/after the first scan
+        if r["status"] in ("skipped",) or r["bar_t"] < log["since"] - step_ms: continue   # forward only: signal candle must be at/after the first scan
         key = str(r["bar_t"]); old = tr.get(key)
         if old and old.get("status") not in ("pending", "active"): continue            # closed trades are final
-        row = public_row(r); row["entry_t"] = r.get("entry_t"); row["exit_t"] = r.get("exit_t")
+        row = public_row(r, step_ms); row["entry_t"] = r.get("entry_t"); row["exit_t"] = r.get("exit_t")
         tr[key] = row
     log["trades"] = dict(sorted(tr.items(), key=lambda kv: int(kv[0])))
     log["stats"] = stats(list(log["trades"].values()))
@@ -191,34 +207,75 @@ def update_log(path, rows, now_ms):
     tmp = path + ".tmp"; json.dump(log, open(tmp, "w"), separators=(",", ":")); os.replace(tmp, path)
     return log
 
-def panel(df, state_dir=None, now_ms=None):
+def panel(df, state_dir=None, now_ms=None, tf="15m"):
+    if tf not in TF_STEP: raise ValueError(f"unsupported timeframe {tf}")
+    step_ms = TF_STEP[tf]
     now_ms = int(time.time() * 1000) if now_ms is None else now_ms
     d = frame(df)
-    if len(d) < 60: raise ValueError(f"only {len(d)} closed 15m bars")
-    rows = run(d)
+    if len(d) < 60: raise ValueError(f"only {len(d)} closed {tf} bars")
+    rows = run(d, step_ms)
     recent = [r for r in rows if r["bar_t"] >= d.t.iloc[-1] - 3 * 86_400_000]   # about the last 3 days
-    pub = [public_row(r) for r in recent if r["status"] != "skipped"][::-1][:20]
+    pub = [public_row(r, step_ms) for r in recent if r["status"] != "skipped"][::-1][:20]
     nskip = sum(r["status"] == "skipped" for r in recent)
     lines = current_lines(d)
-    log = update_log(os.path.join(state_dir, "tl15_log.json"), rows, now_ms) if state_dir else None
+    log = update_log(os.path.join(state_dir, LOG_NAME[tf]), rows, now_ms, step_ms, tf) if state_dir else None
     fwd = log["stats"] if log else {"n": 0}
     last = float(d.c.iloc[-1]); a = float(atr14(d)[-1])
-    return {"v": 1, "name": NAME, "rule": RULE, "sym": SYM, "tf": TF, "lot": LOT, "oz": OZ, "displayOnly": True, "bt": BT_REF,
-            "asof": fmt_t(int(d.t.iloc[-1]) + STEP_MS), "last": round(last, 2), "atr": round(a, 2),
+    return {"v": 1, "name": NAMES[tf], "rule": RULES[tf], "sym": SYM, "tf": tf, "lot": LOT, "oz": OZ, "displayOnly": True, "bt": BT[tf],
+            "asof": fmt_t(int(d.t.iloc[-1]) + step_ms), "last": round(last, 2), "atr": round(a, 2),
             "lines": {k: {kk: round(float(vv), 2) for kk, vv in v.items()} for k, v in lines.items()},
             "sigs": pub, "skipped": nskip, "fwd": fwd, "since": log["since_txt"] if log else None,
             "n_replay": len(rows)}
 
+def scan_frames():
+    """Closed XAUUSD bars for 15m and 5m. Prefer the pickle this scan just wrote.
+
+    If a frame is missing, rebuild it from the gold-feed cache the scan already saved. That read does not fetch and does not write the cache.
+    """
+    from paths import RAW_PKL
+    found = {}
+    if os.path.exists(RAW_PKL):
+        try:
+            raw = pickle.load(open(RAW_PKL, "rb"))[2]
+        except Exception:
+            raw = {}
+        if isinstance(raw, dict):
+            for tf in TFS:
+                df = raw.get((SYM, tf))
+                if df is not None and len(df) >= 60:
+                    found[tf] = df
+    if any(tf not in found for tf in TFS):
+        import goldfeed
+        built, _terr = goldfeed._build(goldfeed._load(), time.time() * 1000)
+        for tf in TFS:
+            if tf in found: continue
+            df = built.get(tf)
+            if df is not None and len(df) >= 60:
+                found[tf] = df
+    return found
+
 def main():
-    from paths import RAW_PKL, STATE, DATA_JSON
-    raw = pickle.load(open(RAW_PKL, "rb"))[2]
-    df = raw.get((SYM, TF))
-    if df is None: raise ValueError("no XAUUSD 15m frame in the scan data")
+    from paths import STATE, DATA_JSON
+    frames = scan_frames()
+    if not frames: raise ValueError("no XAUUSD 15m or 5m bars in the scan data")
     os.makedirs(STATE, exist_ok=True)
-    p = panel(df, STATE)
-    d = json.load(open(DATA_JSON)); d["tl15"] = p
+    d = json.load(open(DATA_JSON))
+    failed = []
+    wrote = []
+    for tf in TFS:
+        key = DATA_KEY[tf]
+        df = frames.get(tf)
+        if df is None:
+            failed.append(tf); continue
+        try:
+            p = panel(df, STATE, tf=tf)
+        except Exception:
+            failed.append(tf); continue
+        d[key] = p; wrote.append(key)
+        print(key, "ok", len(p["sigs"]), "signals shown; forward log", p["fwd"].get("n", 0), "closed")
     tmp = DATA_JSON + ".tmp"; json.dump(d, open(tmp, "w"), separators=(",", ":"), ensure_ascii=False); os.replace(tmp, DATA_JSON)
-    print("tl15 ok", len(p["sigs"]), "signals shown; forward log", p["fwd"].get("n", 0), "closed")
+    if not wrote: raise RuntimeError("tl break failed")
+    if failed: print("tl partial", " ".join(failed))
 
 if __name__ == "__main__":
     main()
